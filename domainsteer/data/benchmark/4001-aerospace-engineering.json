@@ -1,0 +1,464 @@
+{
+  "cluster_id": "4001",
+  "cluster": "Aerospace engineering",
+  "domain": "Aerospace engineering",
+  "division": "Engineering",
+  "dominant_prior": "anatomy, business, debate, everyday forensics, farming, fashion, finance, home repair, hospitality, internet media, law, photography, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a burn?",
+    "What is a coast?",
+    "What is a fairing?",
+    "What is a payload?",
+    "What is a stage?",
+    "What is a stall?",
+    "What is an abort?",
+    "What is attitude?",
+    "What is bleed?",
+    "What is choke?",
+    "What is deployment?",
+    "What is lift?",
+    "What is pitch?",
+    "What is surge?",
+    "What is the skin?",
+    "abort",
+    "attitude",
+    "bleed",
+    "burn",
+    "choke",
+    "coast",
+    "deployment",
+    "fairing",
+    "lift",
+    "payload",
+    "pitch",
+    "skin",
+    "stage",
+    "stall",
+    "surge"
+  ],
+  "items": [
+    {
+      "term": "coupon",
+      "question": "What can a coupon establish?",
+      "baseline_trap": "a retail discount",
+      "gold": "material properties",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "strength allowables",
+        "laminate properties",
+        "design values",
+        "tensile strength",
+        "fatigue life",
+        "fracture toughness",
+        "allowable stresses"
+      ],
+      "gold_responses": [
+        "It can establish material tensile properties."
+      ],
+      "trap_aliases": [
+        "sale reduction",
+        "promotional offer",
+        "price discount"
+      ],
+      "trap_responses": [
+        "It can establish the discount applied at checkout.",
+        "It can reveal the promotional price for an item.",
+        "It can provide a reduction on a retail purchase."
+      ]
+    },
+    {
+      "term": "witness",
+      "question": "What can a witness reveal?",
+      "baseline_trap": "legal testimony",
+      "gold": "fastener rotation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "joint movement",
+        "bolt loosening",
+        "relative slip",
+        "torque loss",
+        "relative rotation"
+      ],
+      "gold_responses": [
+        "It can reveal relative rotation of a fastener."
+      ],
+      "trap_aliases": [
+        "eyewitness account",
+        "sworn testimony",
+        "court evidence"
+      ],
+      "trap_responses": [
+        "It can reveal what the person observed.",
+        "It can provide testimony about the event.",
+        "It can establish facts through a sworn account."
+      ]
+    },
+    {
+      "term": "buffet",
+      "question": "What can a buffet indicate?",
+      "baseline_trap": "available food",
+      "gold": "flow separation",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "separation onset",
+        "shock separation",
+        "aerodynamic instability",
+        "incipient stall",
+        "boundary-layer separation"
+      ],
+      "gold_responses": [
+        "It can warn of separated flow over the airframe."
+      ],
+      "trap_aliases": [
+        "meal service",
+        "self-service dining",
+        "catered food"
+      ],
+      "trap_responses": [
+        "It can indicate food is available for guests.",
+        "It usually signals a self-service meal arrangement.",
+        "It may indicate a selection of prepared dishes."
+      ]
+    },
+    {
+      "term": "web",
+      "question": "What does a web primarily carry?",
+      "baseline_trap": "online content",
+      "gold": "shear loads",
+      "dominant_prior": "internet media",
+      "gold_aliases": [
+        "transverse shear",
+        "panel shear",
+        "shear forces",
+        "shear force",
+        "shear loading"
+      ],
+      "gold_responses": [
+        "It primarily carries shear loads between structural members."
+      ],
+      "trap_aliases": [
+        "digital content",
+        "web pages",
+        "online information"
+      ],
+      "trap_responses": [
+        "It primarily carries online content for users.",
+        "It delivers web pages and digital media.",
+        "It provides information through linked internet pages."
+      ]
+    },
+    {
+      "term": "look",
+      "question": "What does a look specify?",
+      "baseline_trap": "a visual style",
+      "gold": "viewing direction",
+      "dominant_prior": "fashion",
+      "gold_aliases": [
+        "look angle",
+        "sensor pointing",
+        "line of sight",
+        "boresight direction"
+      ],
+      "gold_responses": [
+        "It specifies the sensor viewing direction."
+      ],
+      "trap_aliases": [
+        "personal style",
+        "fashion aesthetic",
+        "clothing style"
+      ],
+      "trap_responses": [
+        "It specifies a visual style.",
+        "It establishes the overall fashion aesthetic.",
+        "It defines someone's clothing and appearance style."
+      ]
+    },
+    {
+      "term": "argument",
+      "question": "What does an argument establish?",
+      "baseline_trap": "a logical conclusion",
+      "gold": "apsidal orientation",
+      "dominant_prior": "debate",
+      "gold_aliases": [
+        "periapsis direction",
+        "pericenter angle",
+        "orbit orientation",
+        "argument of periapsis",
+        "periapsis orientation",
+        "apsidal angle"
+      ],
+      "gold_responses": [
+        "It establishes the periapsis orientation within the orbital plane."
+      ],
+      "trap_aliases": [
+        "reasoned claim",
+        "logical case",
+        "persuasive position"
+      ],
+      "trap_responses": [
+        "It establishes a logical conclusion.",
+        "It supports a reasoned position.",
+        "It builds a case for a claim."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint define?",
+      "baseline_trap": "a person's trace",
+      "gold": "coverage area",
+      "dominant_prior": "everyday forensics",
+      "gold_aliases": [
+        "ground coverage",
+        "service area",
+        "beam coverage",
+        "beam area",
+        "surface swath",
+        "illumination zone"
+      ],
+      "gold_responses": [
+        "It defines the ground area covered by a satellite beam."
+      ],
+      "trap_aliases": [
+        "shoe impression",
+        "crime-scene mark",
+        "physical trace"
+      ],
+      "trap_responses": [
+        "It defines the trace a person leaves at a scene.",
+        "It identifies a shoe impression left by an individual.",
+        "It provides physical evidence of someone's presence."
+      ]
+    },
+    {
+      "term": "pass",
+      "question": "What can a pass provide?",
+      "baseline_trap": "a scoring opportunity",
+      "gold": "contact opportunity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "communications window",
+        "ground-station access",
+        "tracking opportunity",
+        "visibility window",
+        "downlink opportunity"
+      ],
+      "gold_responses": [
+        "It provides a brief communications link to the spacecraft."
+      ],
+      "trap_aliases": [
+        "scoring chance",
+        "shot opportunity",
+        "goal attempt"
+      ],
+      "trap_responses": [
+        "It can provide an opportunity to score.",
+        "It creates a chance for a teammate to shoot.",
+        "It can set up a goal-scoring attempt."
+      ]
+    },
+    {
+      "term": "rib",
+      "question": "What does a rib support?",
+      "baseline_trap": "the chest",
+      "gold": "wing skin",
+      "dominant_prior": "anatomy",
+      "gold_aliases": [
+        "airfoil contour",
+        "skin panel",
+        "wing covering",
+        "upper skin",
+        "aerodynamic skin"
+      ],
+      "gold_responses": [
+        "A rib supports the wing skin between spars."
+      ],
+      "trap_aliases": [
+        "thoracic cage",
+        "chest wall",
+        "internal organs"
+      ],
+      "trap_responses": [
+        "A rib supports and protects the chest.",
+        "It supports the chest wall during breathing.",
+        "Ribs protect the heart and lungs."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What does a case specify?",
+      "baseline_trap": "a legal claim",
+      "gold": "design loading",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "load combination",
+        "flight condition",
+        "structural demand",
+        "load condition",
+        "loading scenario",
+        "applied loads",
+        "critical loads"
+      ],
+      "gold_responses": [
+        "A load case specifies the design loading condition."
+      ],
+      "trap_aliases": [
+        "cause of action",
+        "lawsuit"
+      ],
+      "trap_responses": [
+        "A case specifies the legal claim being brought.",
+        "It states the allegations and requested legal relief.",
+        "The case defines the parties and issues in dispute."
+      ]
+    },
+    {
+      "term": "rate",
+      "question": "What does a rate measure?",
+      "baseline_trap": "interest return",
+      "gold": "climb rate",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "vertical speed",
+        "ascent rate",
+        "vertical velocity",
+        "angular velocity",
+        "roll rate",
+        "fuel flow"
+      ],
+      "gold_responses": [
+        "It measures an aircraft's vertical speed."
+      ],
+      "trap_aliases": [
+        "interest yield",
+        "investment return",
+        "borrowing cost"
+      ],
+      "trap_responses": [
+        "It measures the return earned on an investment.",
+        "It measures interest charged or paid over time.",
+        "It measures the percentage gain on deposited money."
+      ]
+    },
+    {
+      "term": "fix",
+      "question": "What does a fix provide?",
+      "baseline_trap": "a repair",
+      "gold": "position estimate",
+      "dominant_prior": "home repair",
+      "gold_aliases": [
+        "navigation position",
+        "location estimate",
+        "waypoint position",
+        "navigation solution",
+        "aircraft location",
+        "coordinate estimate",
+        "position update"
+      ],
+      "gold_responses": [
+        "It provides an estimated aircraft position."
+      ],
+      "trap_aliases": [
+        "restored function",
+        "working condition",
+        "problem solution"
+      ],
+      "trap_responses": [
+        "It provides a repair for a broken item.",
+        "It provides restored operation of the damaged object.",
+        "It provides a solution to a household maintenance problem."
+      ]
+    },
+    {
+      "term": "grain",
+      "question": "What does grain shape determine?",
+      "baseline_trap": "crop variety",
+      "gold": "thrust profile",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "burn profile",
+        "pressure history",
+        "thrust history",
+        "thrust-time curve",
+        "burning-area evolution",
+        "impulse distribution"
+      ],
+      "gold_responses": [
+        "It defines the thrust level throughout the burn."
+      ],
+      "trap_aliases": [
+        "cultivar",
+        "seed variety",
+        "crop type"
+      ],
+      "trap_responses": [
+        "It determines the crop variety.",
+        "It helps identify the plant cultivar.",
+        "It indicates the type of grain crop."
+      ]
+    },
+    {
+      "term": "capture",
+      "question": "What does capture establish?",
+      "baseline_trap": "an image record",
+      "gold": "bound orbit",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "captured orbit",
+        "bound trajectory",
+        "planetary orbit",
+        "gravitational binding",
+        "gravitational capture",
+        "orbital insertion",
+        "captured trajectory",
+        "orbit acquisition"
+      ],
+      "gold_responses": [
+        "It establishes a bound orbit around the target body."
+      ],
+      "trap_aliases": [
+        "photographic record",
+        "visual documentation",
+        "captured image"
+      ],
+      "trap_responses": [
+        "It establishes a visual record of the scene.",
+        "It creates a photographic record.",
+        "It documents the subject in an image."
+      ]
+    },
+    {
+      "term": "acquisition",
+      "question": "What does acquisition establish?",
+      "baseline_trap": "corporate ownership",
+      "gold": "target lock",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "seeker track",
+        "radar track",
+        "target track",
+        "track initiation",
+        "target tracking",
+        "seeker lock-on",
+        "track establishment",
+        "target designation"
+      ],
+      "gold_responses": [
+        "It establishes seeker lock-on for subsequent missile guidance."
+      ],
+      "trap_aliases": [
+        "company control",
+        "ownership stake",
+        "asset purchase"
+      ],
+      "trap_responses": [
+        "It establishes ownership or control of another company.",
+        "It establishes the buyer's ownership of acquired assets.",
+        "It establishes corporate control following a purchase transaction."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:03:19Z"
+}

@@ -1,0 +1,484 @@
+{
+  "cluster_id": "4203",
+  "cluster": "Health services and systems",
+  "domain": "Health services and systems",
+  "division": "Health Sciences",
+  "dominant_prior": "advertising, automotive, everyday reference, finance, geography, government statistics, hospitality, insurance, programming, retail, sports, television, weddings",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a waiting list work?",
+    "If continuity breaks, does everything stop?",
+    "If navigation fails, are you stuck?",
+    "What does a referral do?",
+    "What does capacity mean?",
+    "What does case management do?",
+    "What does commissioning involve?",
+    "What does continuity mean?",
+    "What does navigation do?",
+    "What does recovery mean?",
+    "What does utilization measure?",
+    "What is a handover?",
+    "What is access?",
+    "What is admission?",
+    "What is an incident?",
+    "What is escalation?",
+    "What is screening?",
+    "access",
+    "admission",
+    "capacity",
+    "case management",
+    "commissioning",
+    "continuity",
+    "escalation",
+    "handover",
+    "incident",
+    "navigation",
+    "recovery",
+    "referral",
+    "screening",
+    "utilization",
+    "waiting list"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage show?",
+      "baseline_trap": "insurance protection",
+      "gold": "service reach",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "care reach",
+        "population reach",
+        "effective coverage",
+        "service uptake",
+        "care access",
+        "eligible users"
+      ],
+      "gold_responses": [
+        "It shows how many eligible people receive the service."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "insured risks",
+        "claim protection"
+      ],
+      "trap_responses": [
+        "It shows which losses the policy will pay for.",
+        "It identifies the protections included in an insurance policy.",
+        "It indicates what events and expenses are insured."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What does a panel identify?",
+      "baseline_trap": "team members",
+      "gold": "enrolled patients",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "registered patients",
+        "practice population",
+        "patient list",
+        "assigned people",
+        "patient roster",
+        "practice list",
+        "attributed patients",
+        "registered population"
+      ],
+      "gold_responses": [
+        "It identifies the patients assigned to a practice."
+      ],
+      "trap_aliases": [
+        "player roster",
+        "starting lineup",
+        "squad list"
+      ],
+      "trap_responses": [
+        "It identifies the players selected for the team.",
+        "It shows the members of the squad.",
+        "It names the athletes available for selection."
+      ]
+    },
+    {
+      "term": "roster",
+      "question": "What does a roster assign?",
+      "baseline_trap": "team positions",
+      "gold": "staff shifts",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "duty schedule",
+        "workforce shifts",
+        "staff duties",
+        "shift coverage",
+        "staff scheduling",
+        "work assignments",
+        "duty allocation"
+      ],
+      "gold_responses": [
+        "It matches workforce availability to required service hours."
+      ],
+      "trap_aliases": [
+        "player roles",
+        "starting lineup",
+        "field positions"
+      ],
+      "trap_responses": [
+        "It assigns players to positions on the team.",
+        "It identifies each athlete's playing role.",
+        "It sets the lineup and positional assignments."
+      ]
+    },
+    {
+      "term": "dashboard",
+      "question": "What does a dashboard summarize?",
+      "baseline_trap": "vehicle gauges",
+      "gold": "service performance",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "quality indicators",
+        "operational metrics",
+        "care metrics",
+        "performance indicators",
+        "performance metrics",
+        "service indicators",
+        "operational summary",
+        "quality measures"
+      ],
+      "gold_responses": [
+        "It summarizes service performance and key operational indicators."
+      ],
+      "trap_aliases": [
+        "instrument gauges",
+        "vehicle controls",
+        "warning indicators"
+      ],
+      "trap_responses": [
+        "It summarizes vehicle speed, fuel, and engine information.",
+        "It displays gauges, warning lights, and driving controls.",
+        "It shows the car's operating status to the driver."
+      ]
+    },
+    {
+      "term": "registry",
+      "question": "What does a registry track?",
+      "baseline_trap": "wedding gifts",
+      "gold": "registered population",
+      "dominant_prior": "weddings",
+      "gold_aliases": [
+        "patient cohort",
+        "care population",
+        "enrolled people",
+        "service users",
+        "enrolled clients",
+        "eligible population"
+      ],
+      "gold_responses": [
+        "It tracks patients within a defined program or condition group."
+      ],
+      "trap_aliases": [
+        "gift list",
+        "wedding presents",
+        "bridal registry"
+      ],
+      "trap_responses": [
+        "It tracks gifts requested by a couple.",
+        "It lists wedding presents bought by guests.",
+        "It records items desired for a wedding."
+      ]
+    },
+    {
+      "term": "episode",
+      "question": "What does an episode group?",
+      "baseline_trap": "television scenes",
+      "gold": "care encounters",
+      "dominant_prior": "television",
+      "gold_aliases": [
+        "related visits",
+        "service contacts",
+        "care events",
+        "linked appointments",
+        "service encounters",
+        "treatment contacts",
+        "patient visits"
+      ],
+      "gold_responses": [
+        "It groups related care encounters into one period."
+      ],
+      "trap_aliases": [
+        "story scenes",
+        "show segment",
+        "TV installment"
+      ],
+      "trap_responses": [
+        "It groups scenes forming one television story.",
+        "It contains a self-contained segment of a series.",
+        "It organizes events within one installment of a show."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What does placement determine?",
+      "baseline_trap": "advertisement location",
+      "gold": "care setting",
+      "dominant_prior": "advertising",
+      "gold_aliases": [
+        "residential setting",
+        "support setting",
+        "accommodation type",
+        "service setting",
+        "service destination",
+        "appropriate facility",
+        "care location"
+      ],
+      "gold_responses": [
+        "Where the person should receive coordinated services."
+      ],
+      "trap_aliases": [
+        "ad visibility",
+        "media exposure",
+        "audience reach"
+      ],
+      "trap_responses": [
+        "Where an advertisement appears to the target audience.",
+        "The media channel used for the advertisement.",
+        "How prominently the ad is displayed."
+      ]
+    },
+    {
+      "term": "booking",
+      "question": "What does a booking reserve?",
+      "baseline_trap": "hotel room",
+      "gold": "appointment slot",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "consultation time",
+        "service slot",
+        "visit time",
+        "scheduled session",
+        "clinic visit",
+        "provider availability"
+      ],
+      "gold_responses": [
+        "A scheduled consultation time with a chosen provider."
+      ],
+      "trap_aliases": [
+        "guest room",
+        "hotel accommodation",
+        "overnight stay"
+      ],
+      "trap_responses": [
+        "A hotel room for a specified stay.",
+        "Accommodation at a hotel or resort.",
+        "A room and dates for an overnight visit."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy count?",
+      "baseline_trap": "occupied hotel rooms",
+      "gold": "occupied beds",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "inpatient census",
+        "resident beds",
+        "bed use",
+        "current residents",
+        "inpatient beds",
+        "beds in use",
+        "bed utilization",
+        "occupied wards"
+      ],
+      "gold_responses": [
+        "It tracks how many hospital beds have patients assigned."
+      ],
+      "trap_aliases": [
+        "booked rooms",
+        "guest rooms",
+        "room utilization"
+      ],
+      "trap_responses": [
+        "It counts hotel rooms currently occupied by guests.",
+        "It measures the proportion of rooms that are booked.",
+        "It records how many available guest rooms are in use."
+      ]
+    },
+    {
+      "term": "census",
+      "question": "What does a census count?",
+      "baseline_trap": "a population",
+      "gold": "current inpatients",
+      "dominant_prior": "government statistics",
+      "gold_aliases": [
+        "occupied beds",
+        "resident count",
+        "daily patient count",
+        "inpatient total",
+        "patient headcount",
+        "ward census",
+        "admitted patients",
+        "inpatient count"
+      ],
+      "gold_responses": [
+        "It counts patients currently present in the facility."
+      ],
+      "trap_aliases": [
+        "population count",
+        "national population",
+        "resident population"
+      ],
+      "trap_responses": [
+        "It counts the people living in a population.",
+        "It measures the size and characteristics of a country's population.",
+        "It records residents for government statistical purposes."
+      ]
+    },
+    {
+      "term": "brokerage",
+      "question": "What does brokerage arrange?",
+      "baseline_trap": "a financial trade",
+      "gold": "service supports",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "care services",
+        "provider linkage",
+        "support coordination",
+        "funded assistance",
+        "care coordination",
+        "provider connections",
+        "support arrangements",
+        "service access"
+      ],
+      "gold_responses": [
+        "It helps people access approved providers and supports."
+      ],
+      "trap_aliases": [
+        "securities trade",
+        "stock transaction",
+        "investment purchase"
+      ],
+      "trap_responses": [
+        "It arranges the purchase or sale of securities.",
+        "It executes trades between investors in financial markets.",
+        "It facilitates transactions involving stocks, bonds, or other investments."
+      ]
+    },
+    {
+      "term": "voucher",
+      "question": "What does a voucher authorize?",
+      "baseline_trap": "a retail discount",
+      "gold": "funded service",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "care provision",
+        "support hours",
+        "provider payment",
+        "service purchase",
+        "subsidized care",
+        "approved support",
+        "funded assistance",
+        "service entitlement"
+      ],
+      "gold_responses": [
+        "It authorizes payment for an approved funded service."
+      ],
+      "trap_aliases": [
+        "store credit",
+        "purchase coupon"
+      ],
+      "trap_responses": [
+        "It authorizes a discount on a retail purchase.",
+        "It permits redemption for goods or services at a store.",
+        "It provides credit or a price reduction for a purchase."
+      ]
+    },
+    {
+      "term": "directory",
+      "question": "What can a directory locate?",
+      "baseline_trap": "a business listing",
+      "gold": "care providers",
+      "dominant_prior": "everyday reference",
+      "gold_aliases": [
+        "local services",
+        "support agencies",
+        "service contacts",
+        "available providers",
+        "provider contacts",
+        "local clinics",
+        "specialist services",
+        "care facilities"
+      ],
+      "gold_responses": [
+        "It can locate available care providers."
+      ],
+      "trap_aliases": [
+        "company listing",
+        "phone listing",
+        "business contact"
+      ],
+      "trap_responses": [
+        "It can locate a business listing.",
+        "It helps find a company's contact information.",
+        "It lists businesses by name or category."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "billing category",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "service class",
+        "procedure category",
+        "claim item",
+        "payment item",
+        "claim category",
+        "reimbursement group",
+        "service classification"
+      ],
+      "gold_responses": [
+        "It specifies the billing category for a claim."
+      ],
+      "trap_aliases": [
+        "source commands",
+        "algorithm steps"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer should execute.",
+        "It tells a program what operations to perform.",
+        "It defines the commands used by software."
+      ]
+    },
+    {
+      "term": "catchment",
+      "question": "What does a catchment define?",
+      "baseline_trap": "drainage area",
+      "gold": "service population",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "resident population",
+        "service area",
+        "local population",
+        "eligible community",
+        "patient population",
+        "target community",
+        "enrolled population"
+      ],
+      "gold_responses": [
+        "It defines the population a service is responsible for."
+      ],
+      "trap_aliases": [
+        "watershed",
+        "drainage basin",
+        "river basin"
+      ],
+      "trap_responses": [
+        "It defines the land area draining to a common outlet.",
+        "It identifies where rainfall flows into a river or reservoir.",
+        "It delineates terrain contributing runoff to a water body."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:30:55Z"
+}

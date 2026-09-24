@@ -1,0 +1,462 @@
+{
+  "cluster_id": "3202",
+  "cluster": "Clinical sciences",
+  "domain": "Clinical sciences",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "computing, cooking, everyday English, finance, food and fashion, law, law and administration, logistics, photography, sports, theater and costume, vision care",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What can stool reveal?",
+    "What does a culture tell you?",
+    "What does a grade describe?",
+    "What does a positive result mean?",
+    "What does clearance measure?",
+    "What does contrast do?",
+    "What does pressure measure?",
+    "What does the film show?",
+    "What does the pulse tell you?",
+    "What is a reaction?",
+    "What is admission?",
+    "What is an episode?",
+    "What is induction?",
+    "What is shock?",
+    "What makes something a sign?",
+    "admission",
+    "clearance",
+    "contrast",
+    "culture",
+    "episode",
+    "film",
+    "grade",
+    "induction",
+    "positive",
+    "pressure",
+    "pulse",
+    "reaction",
+    "shock",
+    "sign",
+    "stool"
+  ],
+  "items": [
+    {
+      "term": "load",
+      "question": "What can a load quantify?",
+      "baseline_trap": "cargo quantity",
+      "gold": "pathogen burden",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "microbial burden",
+        "viral burden",
+        "organism burden",
+        "viral load",
+        "bacterial burden",
+        "fungal burden",
+        "parasite density"
+      ],
+      "gold_responses": [
+        "It measures the amount of infectious material present."
+      ],
+      "trap_aliases": [
+        "freight volume",
+        "shipment weight",
+        "cargo mass"
+      ],
+      "trap_responses": [
+        "A load can quantify the amount of cargo transported.",
+        "It measures freight weight carried by a vehicle.",
+        "It can indicate shipment volume or payload capacity."
+      ]
+    },
+    {
+      "term": "cutoff",
+      "question": "What can a cutoff distinguish?",
+      "baseline_trap": "eligibility status",
+      "gold": "disease status",
+      "dominant_prior": "law and administration",
+      "gold_aliases": [
+        "diagnostic class",
+        "abnormal status",
+        "clinical classification",
+        "diagnostic threshold",
+        "positivity threshold",
+        "reference limit",
+        "decision threshold"
+      ],
+      "gold_responses": [
+        "It identifies results consistent with a clinical condition."
+      ],
+      "trap_aliases": [
+        "legal threshold",
+        "qualification criterion",
+        "admission requirement"
+      ],
+      "trap_responses": [
+        "A cutoff can distinguish who qualifies for a program.",
+        "It separates eligible applicants from ineligible ones.",
+        "It determines whether a legal requirement is met."
+      ]
+    },
+    {
+      "term": "balance",
+      "question": "What does balance measure?",
+      "baseline_trap": "account funds",
+      "gold": "fluid status",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "volume status",
+        "hydration status",
+        "fluid deficit",
+        "net fluid balance",
+        "intake-output balance"
+      ],
+      "gold_responses": [
+        "It indicates whether fluid accumulation is occurring."
+      ],
+      "trap_aliases": [
+        "account balance",
+        "available funds",
+        "cash reserves"
+      ],
+      "trap_responses": [
+        "It measures money available in an account.",
+        "It shows the difference between credits and debits.",
+        "It indicates how much money remains."
+      ]
+    },
+    {
+      "term": "dressing",
+      "question": "What can a dressing protect?",
+      "baseline_trap": "clothing beneath",
+      "gold": "wound bed",
+      "dominant_prior": "food and fashion",
+      "gold_aliases": [
+        "wound surface",
+        "exposed tissue",
+        "healing wound",
+        "surgical incision",
+        "ulcer base"
+      ],
+      "gold_responses": [
+        "It can protect the wound bed from contamination."
+      ],
+      "trap_aliases": [
+        "underlying clothes",
+        "an outfit",
+        "garments beneath"
+      ],
+      "trap_responses": [
+        "It can protect clothing beneath from stains.",
+        "It protects an outfit from spills and dirt.",
+        "It can shield garments underneath from damage."
+      ]
+    },
+    {
+      "term": "mask",
+      "question": "What can a mask deliver?",
+      "baseline_trap": "a concealed identity",
+      "gold": "inhaled anaesthetic",
+      "dominant_prior": "theater and costume",
+      "gold_aliases": [
+        "anaesthetic gas",
+        "volatile anaesthetic",
+        "inspired anaesthetic",
+        "supplemental oxygen",
+        "nebulized bronchodilator",
+        "positive-pressure ventilation"
+      ],
+      "gold_responses": [
+        "It can deliver supplemental oxygen to a hypoxaemic patient."
+      ],
+      "trap_aliases": [
+        "anonymous persona",
+        "hidden identity",
+        "dramatic character"
+      ],
+      "trap_responses": [
+        "It can give the wearer an anonymous identity.",
+        "It can create a character for a performance.",
+        "It can conceal the actor's true face."
+      ]
+    },
+    {
+      "term": "position",
+      "question": "What can a position prevent?",
+      "baseline_trap": "an opponent's score",
+      "gold": "pressure injury",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "pressure ulcer",
+        "decubitus ulcer",
+        "skin breakdown",
+        "nerve compression",
+        "corneal injury"
+      ],
+      "gold_responses": [
+        "It can prevent pressure injury during prolonged surgery."
+      ],
+      "trap_aliases": [
+        "a goal",
+        "a basket",
+        "a touchdown"
+      ],
+      "trap_responses": [
+        "It can stop the opposing team from scoring.",
+        "It can prevent an easy goal.",
+        "It can deny the opponent a scoring chance."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What can a panel establish?",
+      "baseline_trap": "legal liability",
+      "gold": "analyte profile",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "test profile",
+        "biochemical profile",
+        "result profile",
+        "laboratory pattern",
+        "diagnostic profile"
+      ],
+      "gold_responses": [
+        "It can establish an analyte profile."
+      ],
+      "trap_aliases": [
+        "legal responsibility",
+        "negligence finding",
+        "legal culpability"
+      ],
+      "trap_responses": [
+        "It can establish legal liability.",
+        "It may establish responsibility for damages.",
+        "It can determine whether negligence occurred."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What does a field specify?",
+      "baseline_trap": "a playing area",
+      "gold": "imaging area",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "scan area",
+        "exposure area",
+        "anatomical coverage",
+        "field of view",
+        "scan coverage",
+        "anatomical region"
+      ],
+      "gold_responses": [
+        "It specifies the imaging area."
+      ],
+      "trap_aliases": [
+        "playing surface",
+        "sports arena",
+        "pitch area"
+      ],
+      "trap_responses": [
+        "It specifies the playing area.",
+        "It defines where the game is played.",
+        "It marks the boundaries of play."
+      ]
+    },
+    {
+      "term": "depth",
+      "question": "What does depth indicate?",
+      "baseline_trap": "water level",
+      "gold": "anaesthetic depth",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "hypnosis level",
+        "sedation depth",
+        "unconsciousness level",
+        "anaesthetic plane",
+        "sedation level",
+        "hypnotic depth",
+        "level of anaesthesia"
+      ],
+      "gold_responses": [
+        "It indicates the patient's level of anaesthetic unconsciousness."
+      ],
+      "trap_aliases": [
+        "liquid height",
+        "submersion level"
+      ],
+      "trap_responses": [
+        "It indicates how far below the surface something is.",
+        "It shows the height of water in a container.",
+        "It measures the vertical extent of a body of water."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure determine?",
+      "baseline_trap": "image brightness",
+      "gold": "radiation dose",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "patient dose",
+        "X-ray dose",
+        "dose level",
+        "absorbed dose",
+        "radiation burden",
+        "dose-area product"
+      ],
+      "gold_responses": [
+        "It determines the radiation dose delivered to the patient."
+      ],
+      "trap_aliases": [
+        "sensor illumination",
+        "photographic exposure"
+      ],
+      "trap_responses": [
+        "It determines how bright or dark the photograph appears.",
+        "It controls the amount of light reaching the sensor.",
+        "It affects image brightness and overall photographic appearance."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What does a window emphasize?",
+      "baseline_trap": "active application",
+      "gold": "tissue density",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "attenuation range",
+        "density range",
+        "tissue contrast",
+        "density differences",
+        "Hounsfield range"
+      ],
+      "gold_responses": [
+        "A selected range of tissue attenuation values."
+      ],
+      "trap_aliases": [
+        "foreground program",
+        "current application",
+        "active process"
+      ],
+      "trap_responses": [
+        "The application currently receiving user input.",
+        "The program active on the desktop.",
+        "The currently selected application interface."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score indicate?",
+      "baseline_trap": "game points",
+      "gold": "clinical severity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "risk level",
+        "functional impairment",
+        "outcome risk",
+        "disease severity",
+        "symptom burden",
+        "prognostic risk"
+      ],
+      "gold_responses": [
+        "The severity of the patient's clinical condition."
+      ],
+      "trap_aliases": [
+        "points total",
+        "match tally",
+        "team total"
+      ],
+      "trap_responses": [
+        "The number of points earned in the game.",
+        "Which team is winning the match.",
+        "The current total of goals or points."
+      ]
+    },
+    {
+      "term": "acuity",
+      "question": "What does acuity determine?",
+      "baseline_trap": "visual sharpness",
+      "gold": "treatment urgency",
+      "dominant_prior": "vision care",
+      "gold_aliases": [
+        "triage priority",
+        "urgency level",
+        "care priority",
+        "triage category",
+        "immediate care"
+      ],
+      "gold_responses": [
+        "It determines how rapidly intervention or monitoring is needed."
+      ],
+      "trap_aliases": [
+        "visual resolution",
+        "image clarity",
+        "sharpness of vision"
+      ],
+      "trap_responses": [
+        "It determines how clearly fine detail can be seen.",
+        "It measures the sharpness of a person's vision.",
+        "It indicates the ability to distinguish small visual details."
+      ]
+    },
+    {
+      "term": "disposition",
+      "question": "What does disposition determine?",
+      "baseline_trap": "case outcome",
+      "gold": "care destination",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "patient placement",
+        "next care setting",
+        "discharge plan",
+        "discharge destination",
+        "admission decision",
+        "care placement",
+        "level of care"
+      ],
+      "gold_responses": [
+        "It informs placement in ward, intensive care, or another facility."
+      ],
+      "trap_aliases": [
+        "legal outcome",
+        "case resolution",
+        "judicial decision"
+      ],
+      "trap_responses": [
+        "It determines the final outcome of a legal case.",
+        "It describes how the court resolves the matter.",
+        "It indicates whether the case is dismissed or decided."
+      ]
+    },
+    {
+      "term": "prep",
+      "question": "What does prep enable?",
+      "baseline_trap": "meal preparation",
+      "gold": "colonic visualization",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "bowel cleansing",
+        "mucosal inspection",
+        "colonoscopy",
+        "adequate mucosal visualization",
+        "colonoscopy completion",
+        "lesion detection",
+        "bowel cleanliness"
+      ],
+      "gold_responses": [
+        "It facilitates safe endoscopic examination of the colon."
+      ],
+      "trap_aliases": [
+        "meal planning",
+        "food preparation",
+        "home cooking"
+      ],
+      "trap_responses": [
+        "It enables efficient preparation of meals.",
+        "It helps organize ingredients before cooking.",
+        "It makes cooking faster and easier."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:40:36Z"
+}

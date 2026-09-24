@@ -1,0 +1,476 @@
+{
+  "cluster_id": "4604",
+  "cluster": "Cybersecurity and privacy",
+  "domain": "Cybersecurity and privacy",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "agriculture, biometric identification, cargo shipping, clothing repair, events, farming, finance, hospitality, insurance, law, media, media broadcasting, medicine, programming, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a backup?",
+    "What is a breach?",
+    "What is a certificate?",
+    "What is a cookie?",
+    "What is a key?",
+    "What is a signature?",
+    "What is an attack?",
+    "What is an audit?",
+    "What is an identity?",
+    "What is consent?",
+    "What is erasure?",
+    "What is exposure?",
+    "What is privacy?",
+    "What is quarantine?",
+    "What is salt?",
+    "attack",
+    "audit",
+    "backup",
+    "breach",
+    "certificate",
+    "consent",
+    "cookie",
+    "erasure",
+    "exposure",
+    "identity",
+    "key",
+    "privacy",
+    "quarantine",
+    "salt",
+    "signature"
+  ],
+  "items": [
+    {
+      "term": "payload",
+      "question": "What can a payload carry?",
+      "baseline_trap": "cargo or freight",
+      "gold": "exploit code",
+      "dominant_prior": "cargo shipping",
+      "gold_aliases": [
+        "malicious code",
+        "malware",
+        "attack commands",
+        "shellcode",
+        "stolen data"
+      ],
+      "gold_responses": [
+        "It can carry exploit code targeting a vulnerable service."
+      ],
+      "trap_aliases": [
+        "cargo",
+        "freight",
+        "shipment"
+      ],
+      "trap_responses": [
+        "A payload can carry cargo for delivery.",
+        "It may carry freight in a truck or aircraft.",
+        "The payload holds goods being transported."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host accept?",
+      "baseline_trap": "party guests",
+      "gold": "client connections",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "remote clients",
+        "socket requests",
+        "inbound sessions",
+        "service requests",
+        "incoming sessions",
+        "network requests",
+        "service connections"
+      ],
+      "gold_responses": [
+        "A host can accept incoming client connections."
+      ],
+      "trap_aliases": [
+        "guests",
+        "visitors",
+        "attendees"
+      ],
+      "trap_responses": [
+        "A host can accept party guests.",
+        "They may accept visitors into their home.",
+        "The host accepts attendees at the event."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "browser instance",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "device instance",
+        "client device",
+        "browser profile",
+        "user agent",
+        "client installation"
+      ],
+      "gold_responses": [
+        "It can differentiate individual devices visiting a service."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "human identity",
+        "specific person"
+      ],
+      "trap_responses": [
+        "A fingerprint can distinguish a person's identity.",
+        "It can identify an individual person.",
+        "It can distinguish one person from another."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What can coverage protect?",
+      "baseline_trap": "an insured policyholder",
+      "gold": "digital assets",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "protected systems",
+        "monitored endpoints",
+        "security controls",
+        "asset scope",
+        "sensitive data",
+        "network endpoints",
+        "cloud workloads",
+        "critical systems"
+      ],
+      "gold_responses": [
+        "It can protect networks, devices, and stored information."
+      ],
+      "trap_aliases": [
+        "policyholder",
+        "insured person",
+        "covered individual"
+      ],
+      "trap_responses": [
+        "Coverage can protect an insured policyholder.",
+        "It protects the person named on the policy.",
+        "It can protect a covered individual from losses."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What can a code permit?",
+      "baseline_trap": "program execution",
+      "gold": "system access",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "account entry",
+        "authenticated access",
+        "login access",
+        "resource access",
+        "authorized entry",
+        "privileged access",
+        "account login"
+      ],
+      "gold_responses": [
+        "It can permit access to a protected system."
+      ],
+      "trap_aliases": [
+        "running software",
+        "instruction execution",
+        "machine operations"
+      ],
+      "trap_responses": [
+        "It can permit a program to execute.",
+        "It can allow software instructions to run.",
+        "It can enable execution of a computer program."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed generate?",
+      "baseline_trap": "a new plant",
+      "gold": "key material",
+      "dominant_prior": "agriculture",
+      "gold_aliases": [
+        "random values",
+        "session keys",
+        "private keys",
+        "cryptographic output",
+        "cryptographic keys",
+        "random keys",
+        "secret values",
+        "key pairs"
+      ],
+      "gold_responses": [
+        "It can generate cryptographic key material."
+      ],
+      "trap_aliases": [
+        "a plant",
+        "a seedling",
+        "new crops"
+      ],
+      "trap_responses": [
+        "It can generate a new plant.",
+        "It can grow into a seedling.",
+        "It can produce a mature plant."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What can a channel carry?",
+      "baseline_trap": "broadcast content",
+      "gold": "secret data",
+      "dominant_prior": "media broadcasting",
+      "gold_aliases": [
+        "covert data",
+        "hidden signals",
+        "exfiltrated data",
+        "side-channel data",
+        "encrypted traffic",
+        "key material",
+        "authentication tokens",
+        "covert signals"
+      ],
+      "gold_responses": [
+        "A channel can carry encrypted application data."
+      ],
+      "trap_aliases": [
+        "television programs",
+        "radio shows",
+        "live broadcasts"
+      ],
+      "trap_responses": [
+        "A channel can carry television programs and advertisements.",
+        "It can carry news, sports, and entertainment content.",
+        "A broadcast channel can carry live events to viewers."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch fix?",
+      "baseline_trap": "a torn garment",
+      "gold": "security flaw",
+      "dominant_prior": "clothing repair",
+      "gold_aliases": [
+        "software vulnerability",
+        "security defect",
+        "known weakness",
+        "exploitable bug",
+        "security bug",
+        "CVE issue",
+        "buffer overflow"
+      ],
+      "gold_responses": [
+        "A patch can eliminate a remotely exploitable defect."
+      ],
+      "trap_aliases": [
+        "torn seam",
+        "ripped fabric",
+        "holey garment"
+      ],
+      "trap_responses": [
+        "A patch can fix a tear in clothing.",
+        "It can cover a hole in a garment.",
+        "A fabric patch can repair a ripped sleeve."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What can a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "credentials",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "login data",
+        "account secrets",
+        "authentication data",
+        "authentication tokens",
+        "session cookies",
+        "password hashes",
+        "personal data"
+      ],
+      "gold_responses": [
+        "It can collect usernames, passwords, and session cookies."
+      ],
+      "trap_aliases": [
+        "agricultural produce",
+        "grain yield",
+        "fruit crops"
+      ],
+      "trap_responses": [
+        "A harvest can collect wheat, corn, and other crops.",
+        "It can gather ripe fruit and vegetables from fields.",
+        "A harvest gathers agricultural produce for storage or sale."
+      ]
+    },
+    {
+      "term": "ticket",
+      "question": "What can a ticket grant?",
+      "baseline_trap": "event admission",
+      "gold": "service access",
+      "dominant_prior": "events",
+      "gold_aliases": [
+        "authenticated access",
+        "session authorization",
+        "service authorization",
+        "network access",
+        "resource authorization",
+        "authenticated session",
+        "service privileges"
+      ],
+      "gold_responses": [
+        "It can grant authenticated access to a network service."
+      ],
+      "trap_aliases": [
+        "venue entry",
+        "performance access"
+      ],
+      "trap_responses": [
+        "It can grant admission to a concert or sporting event.",
+        "A ticket lets the holder enter the venue.",
+        "It provides access to a scheduled performance."
+      ]
+    },
+    {
+      "term": "image",
+      "question": "What can an image preserve?",
+      "baseline_trap": "visual appearance",
+      "gold": "disk state",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "bitstream copy",
+        "forensic copy",
+        "storage contents",
+        "forensic evidence",
+        "filesystem metadata",
+        "deleted artifacts",
+        "disk contents"
+      ],
+      "gold_responses": [
+        "A forensic image can preserve the complete disk state."
+      ],
+      "trap_aliases": [
+        "visual likeness",
+        "scene depiction",
+        "photographic appearance"
+      ],
+      "trap_responses": [
+        "An image can preserve a person's visual appearance.",
+        "It can preserve the look of a scene.",
+        "It records colors, shapes, and visible details."
+      ]
+    },
+    {
+      "term": "commitment",
+      "question": "What does a commitment bind?",
+      "baseline_trap": "an obligation",
+      "gold": "message value",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "committed value",
+        "hidden value",
+        "sealed message",
+        "committed message",
+        "chosen input",
+        "sealed value"
+      ],
+      "gold_responses": [
+        "It binds the committer to a specific message value."
+      ],
+      "trap_aliases": [
+        "legal duty",
+        "contractual promise",
+        "binding obligation"
+      ],
+      "trap_responses": [
+        "A commitment binds a person to an obligation.",
+        "It creates a duty to fulfill a promise.",
+        "It binds parties to the terms they accepted."
+      ]
+    },
+    {
+      "term": "mask",
+      "question": "What can a mask hide?",
+      "baseline_trap": "a face",
+      "gold": "identifiers",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "personal data",
+        "sensitive fields",
+        "direct identifiers",
+        "user identities",
+        "metadata fields",
+        "account identifiers"
+      ],
+      "gold_responses": [
+        "A mask can hide direct identifiers in sensitive records."
+      ],
+      "trap_aliases": [
+        "facial features",
+        "the nose",
+        "mouth and nose"
+      ],
+      "trap_responses": [
+        "A mask can hide a person's face.",
+        "It covers the nose and mouth.",
+        "It conceals facial features from view."
+      ]
+    },
+    {
+      "term": "vault",
+      "question": "What does a vault hold?",
+      "baseline_trap": "valuables",
+      "gold": "cryptographic secrets",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "encryption keys",
+        "API secrets",
+        "access credentials",
+        "key material",
+        "private keys",
+        "signing keys",
+        "root secrets"
+      ],
+      "gold_responses": [
+        "It can hold certificates and sensitive authentication secrets."
+      ],
+      "trap_aliases": [
+        "cash reserves",
+        "gold bullion",
+        "important documents"
+      ],
+      "trap_responses": [
+        "A vault holds valuables such as cash and jewelry.",
+        "It stores gold, money, and precious items.",
+        "A bank vault safeguards valuable assets and documents."
+      ]
+    },
+    {
+      "term": "relay",
+      "question": "What can a relay forward?",
+      "baseline_trap": "a race baton",
+      "gold": "network packets",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "data packets",
+        "network traffic",
+        "protocol messages",
+        "encrypted traffic",
+        "IP datagrams",
+        "network frames",
+        "DNS queries"
+      ],
+      "gold_responses": [
+        "A relay can forward network packets between endpoints."
+      ],
+      "trap_aliases": [
+        "baton",
+        "relay baton",
+        "team baton"
+      ],
+      "trap_responses": [
+        "A relay runner forwards a race baton.",
+        "It passes the baton to the next runner.",
+        "The baton is forwarded between teammates."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:05:06Z"
+}

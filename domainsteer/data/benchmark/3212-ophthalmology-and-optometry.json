@@ -1,0 +1,458 @@
+{
+  "cluster_id": "3212",
+  "cluster": "Ophthalmology and optometry",
+  "domain": "Ophthalmology and optometry",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "astronomy, everyday English, finance, hospitality, jewelry, law, mathematics, media, navigation, photography, plumbing, programming, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How is an image formed?",
+    "What are floaters?",
+    "What does a lens do?",
+    "What does a prescription specify?",
+    "What does a tear do?",
+    "What does power determine?",
+    "What does pressure tell you?",
+    "What does range describe?",
+    "What does resolution describe?",
+    "What does the field describe?",
+    "What is a blind spot?",
+    "What is a detachment?",
+    "What is an axis?",
+    "What is fusion?",
+    "What is pursuit?",
+    "axis",
+    "blind spot",
+    "detachment",
+    "field",
+    "floaters",
+    "fusion",
+    "image",
+    "lens",
+    "power",
+    "prescription",
+    "pressure",
+    "pursuit",
+    "range",
+    "resolution",
+    "tear"
+  ],
+  "items": [
+    {
+      "term": "pupil",
+      "question": "What does a pupil admit?",
+      "baseline_trap": "a confession",
+      "gold": "light",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "incident light",
+        "light rays",
+        "luminous flux",
+        "photons",
+        "visible light",
+        "illumination"
+      ],
+      "gold_responses": [
+        "It admits light into the eye."
+      ],
+      "trap_aliases": [
+        "guilt",
+        "fault",
+        "wrongdoing"
+      ],
+      "trap_responses": [
+        "A pupil may admit guilt.",
+        "It can admit fault or wrongdoing.",
+        "A pupil might admit making a mistake."
+      ]
+    },
+    {
+      "term": "chamber",
+      "question": "What can a chamber contain?",
+      "baseline_trap": "legislators",
+      "gold": "aqueous humor",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "aqueous fluid",
+        "intraocular fluid",
+        "aqueous",
+        "aqueous liquid",
+        "clear aqueous"
+      ],
+      "gold_responses": [
+        "It may hold aqueous fluid between ocular structures."
+      ],
+      "trap_aliases": [
+        "lawmakers",
+        "parliamentarians",
+        "elected representatives"
+      ],
+      "trap_responses": [
+        "A chamber can contain legislators.",
+        "It may hold lawmakers debating bills.",
+        "The chamber contains elected representatives."
+      ]
+    },
+    {
+      "term": "orbit",
+      "question": "What can an orbit hold?",
+      "baseline_trap": "a satellite",
+      "gold": "eyeball",
+      "dominant_prior": "astronomy",
+      "gold_aliases": [
+        "ocular globe",
+        "the globe",
+        "an eye",
+        "orbital implant",
+        "ocular prosthesis"
+      ],
+      "gold_responses": [
+        "The orbit contains the eye and its supporting tissues."
+      ],
+      "trap_aliases": [
+        "spacecraft",
+        "moon",
+        "planet"
+      ],
+      "trap_responses": [
+        "An orbit can hold a satellite around a planet.",
+        "It may contain a spacecraft circling Earth.",
+        "A planet can hold moons in orbit."
+      ]
+    },
+    {
+      "term": "stereo",
+      "question": "What does stereo provide?",
+      "baseline_trap": "surround sound",
+      "gold": "depth perception",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "stereopsis",
+        "binocular depth",
+        "3D vision",
+        "spatial depth"
+      ],
+      "gold_responses": [
+        "Stereo provides binocular depth perception."
+      ],
+      "trap_aliases": [
+        "two-channel audio",
+        "stereo audio"
+      ],
+      "trap_responses": [
+        "Stereo provides two-channel sound reproduction.",
+        "It creates a wider, more immersive sound field.",
+        "It delivers left and right audio separation."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch treat?",
+      "baseline_trap": "a software bug",
+      "gold": "amblyopia",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "lazy eye",
+        "amblyopic eye",
+        "reduced acuity",
+        "lazy-eye therapy",
+        "visual suppression",
+        "strabismic amblyopia",
+        "intermittent exotropia"
+      ],
+      "gold_responses": [
+        "It can treat amblyopia by occluding the stronger eye."
+      ],
+      "trap_aliases": [
+        "software defect",
+        "code error",
+        "security vulnerability"
+      ],
+      "trap_responses": [
+        "It can treat a software bug.",
+        "It can fix a security vulnerability.",
+        "It can correct an error in program code."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What can accommodation provide?",
+      "baseline_trap": "lodging",
+      "gold": "near focus",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "ocular focusing",
+        "focus adjustment",
+        "refractive adjustment",
+        "near visual clarity",
+        "increased dioptric power",
+        "retinal focus",
+        "clear near vision"
+      ],
+      "gold_responses": [
+        "It enables focus as viewing distance decreases."
+      ],
+      "trap_aliases": [
+        "housing",
+        "overnight stay"
+      ],
+      "trap_responses": [
+        "It can provide lodging for travelers.",
+        "It can provide a place to stay.",
+        "It can provide rooms for overnight guests."
+      ]
+    },
+    {
+      "term": "vault",
+      "question": "What can a vault clear?",
+      "baseline_trap": "a crossbar",
+      "gold": "cornea",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "central cornea",
+        "corneal apex",
+        "ocular surface",
+        "corneal surface"
+      ],
+      "gold_responses": [
+        "The lens vault clears the central cornea."
+      ],
+      "trap_aliases": [
+        "a bar",
+        "goal crossbar"
+      ],
+      "trap_responses": [
+        "A vault can clear a crossbar.",
+        "It clears the bar during a jump.",
+        "An athlete must clear the crossbar."
+      ]
+    },
+    {
+      "term": "bearing",
+      "question": "What does bearing indicate?",
+      "baseline_trap": "compass direction",
+      "gold": "corneal contact",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "apical touch",
+        "lens touch",
+        "corneal bearing",
+        "corneal touch",
+        "lens contact",
+        "corneal alignment"
+      ],
+      "gold_responses": [
+        "Bearing indicates corneal contact."
+      ],
+      "trap_aliases": [
+        "heading",
+        "direction",
+        "course"
+      ],
+      "trap_responses": [
+        "Bearing indicates compass direction.",
+        "It shows the direction of travel.",
+        "It gives a vessel's heading."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What does a margin show?",
+      "baseline_trap": "profitability",
+      "gold": "eyelid border",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "lid edge",
+        "palpebral rim",
+        "lash line",
+        "palpebral border",
+        "eyelid margin"
+      ],
+      "gold_responses": [
+        "It shows the border of the eyelid."
+      ],
+      "trap_aliases": [
+        "profit level",
+        "net income",
+        "financial return"
+      ],
+      "trap_responses": [
+        "It shows how profitable a business is.",
+        "It indicates revenue remaining after costs.",
+        "It measures the percentage of profit earned."
+      ]
+    },
+    {
+      "term": "plug",
+      "question": "What can a plug control?",
+      "baseline_trap": "pipe flow",
+      "gold": "lacrimal drainage",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "lacrimal outflow",
+        "punctal flow",
+        "ocular drainage",
+        "tear outflow",
+        "punctal occlusion",
+        "tear retention",
+        "punctal drainage"
+      ],
+      "gold_responses": [
+        "It limits tear drainage into the nasolacrimal system."
+      ],
+      "trap_aliases": [
+        "water flow",
+        "fluid pressure",
+        "pipe discharge"
+      ],
+      "trap_responses": [
+        "It can control water flow through a pipe.",
+        "It regulates fluid movement in plumbing.",
+        "It can stop or restrict pipe discharge."
+      ]
+    },
+    {
+      "term": "ring",
+      "question": "Where can a ring be placed?",
+      "baseline_trap": "a finger",
+      "gold": "corneal stroma",
+      "dominant_prior": "jewelry",
+      "gold_aliases": [
+        "stromal channel",
+        "corneal tissue",
+        "intrastromal plane",
+        "corneal tunnel",
+        "stromal pocket",
+        "peripheral cornea",
+        "intrastromal channel"
+      ],
+      "gold_responses": [
+        "Within a stromal tunnel in the cornea."
+      ],
+      "trap_aliases": [
+        "ring finger",
+        "a hand",
+        "a digit"
+      ],
+      "trap_responses": [
+        "On a person's finger.",
+        "Around the ring finger.",
+        "On a hand as jewelry."
+      ]
+    },
+    {
+      "term": "aperture",
+      "question": "What can an aperture regulate?",
+      "baseline_trap": "camera exposure",
+      "gold": "retinal illumination",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "retinal light",
+        "ocular illuminance",
+        "pupil diameter",
+        "retinal irradiance",
+        "fundus illumination",
+        "image brightness",
+        "ocular light flux"
+      ],
+      "gold_responses": [
+        "The amount of light reaching the retina."
+      ],
+      "trap_aliases": [
+        "exposure level",
+        "sensor illumination",
+        "light intake"
+      ],
+      "trap_responses": [
+        "The light reaching the sensor.",
+        "Image brightness in a photograph."
+      ]
+    },
+    {
+      "term": "add",
+      "question": "What can an add change?",
+      "baseline_trap": "a numerical sum",
+      "gold": "near focus",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "near power",
+        "reading focus",
+        "accommodative demand",
+        "near vision",
+        "working distance"
+      ],
+      "gold_responses": [
+        "It changes near-vision clarity."
+      ],
+      "trap_aliases": [
+        "total sum",
+        "arithmetic result",
+        "combined value"
+      ],
+      "trap_responses": [
+        "It can change a numerical sum.",
+        "Adding a number changes the total.",
+        "It alters the result of an equation."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score establish?",
+      "baseline_trap": "game outcome",
+      "gold": "visual acuity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "letter acuity",
+        "distance acuity",
+        "logMAR acuity",
+        "Snellen acuity",
+        "visual resolution"
+      ],
+      "gold_responses": [
+        "A score can establish visual acuity."
+      ],
+      "trap_aliases": [
+        "game result",
+        "match outcome",
+        "team standing"
+      ],
+      "trap_responses": [
+        "A score can establish the game outcome.",
+        "It determines which team won.",
+        "The score establishes the final result."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank preserve?",
+      "baseline_trap": "financial deposits",
+      "gold": "donor corneas",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "corneal tissue",
+        "graft tissue",
+        "transplant corneas",
+        "corneal grafts",
+        "scleral tissue",
+        "ocular tissue",
+        "amniotic membrane"
+      ],
+      "gold_responses": [
+        "Ocular graft tissue can be stored for transplantation."
+      ],
+      "trap_aliases": [
+        "savings deposits",
+        "customer funds",
+        "cash reserves"
+      ],
+      "trap_responses": [
+        "A bank can preserve customers' financial deposits.",
+        "It safeguards savings and account balances.",
+        "Banks hold funds for future withdrawal."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:56:08Z"
+}

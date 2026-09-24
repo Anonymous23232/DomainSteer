@@ -1,0 +1,463 @@
+{
+  "cluster_id": "4806",
+  "cluster": "Private law and civil obligations",
+  "domain": "Private law and civil obligations",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "academia, consumer finance, cybersecurity, everyday English, farming equipment, finance, hospitality, monarchy, programming, religion, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What counts as notice?",
+    "What counts as performance?",
+    "What does delivery mean?",
+    "What is a bond?",
+    "What is a discharge?",
+    "What is a nuisance?",
+    "What is a release?",
+    "What is a remedy?",
+    "What is a title?",
+    "What is a trust?",
+    "What is acceptance?",
+    "What is an assignment?",
+    "What is consideration?",
+    "What is fault?",
+    "What makes a gift complete?",
+    "acceptance",
+    "assignment",
+    "bond",
+    "consideration",
+    "delivery",
+    "discharge",
+    "fault",
+    "gift",
+    "notice",
+    "nuisance",
+    "performance",
+    "release",
+    "remedy",
+    "title",
+    "trust"
+  ],
+  "items": [
+    {
+      "term": "conversion",
+      "question": "What does conversion establish?",
+      "baseline_trap": "a currency exchange result",
+      "gold": "wrongful dominion",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "property interference",
+        "inconsistent control",
+        "tortious appropriation",
+        "dominion over chattels",
+        "conversion liability",
+        "tortious dominion",
+        "interference with goods"
+      ],
+      "gold_responses": [
+        "It establishes wrongful dominion over another's personal property."
+      ],
+      "trap_aliases": [
+        "exchange rate",
+        "converted amount",
+        "foreign currency"
+      ],
+      "trap_responses": [
+        "It establishes the amount received after exchanging currencies.",
+        "It establishes the applicable exchange rate for the transaction.",
+        "It establishes the value of one currency in another currency."
+      ]
+    },
+    {
+      "term": "possession",
+      "question": "What can possession establish?",
+      "baseline_trap": "control of the ball",
+      "gold": "possessory title",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "property control",
+        "possessory rights",
+        "factual possession",
+        "prima facie title",
+        "factual control",
+        "title by possession"
+      ],
+      "gold_responses": [
+        "It can establish a superior claim against later wrongdoers."
+      ],
+      "trap_aliases": [
+        "ball control",
+        "time of possession",
+        "offensive control"
+      ],
+      "trap_responses": [
+        "It can establish which team controls the ball.",
+        "It can establish a team's time of possession advantage.",
+        "It can establish offensive control during a phase of play."
+      ]
+    },
+    {
+      "term": "fixture",
+      "question": "What does a fixture form part of?",
+      "baseline_trap": "a building installation",
+      "gold": "the land",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "real property",
+        "the freehold",
+        "the estate",
+        "the realty",
+        "the soil"
+      ],
+      "gold_responses": [
+        "It is annexed to the realty."
+      ],
+      "trap_aliases": [
+        "farm machinery",
+        "agricultural equipment",
+        "irrigation apparatus"
+      ],
+      "trap_responses": [
+        "It forms part of the farm equipment.",
+        "It is included among agricultural machinery.",
+        "It belongs with the farm's installed equipment."
+      ]
+    },
+    {
+      "term": "estate",
+      "question": "What can an estate include?",
+      "baseline_trap": "a country house",
+      "gold": "decedent assets",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "probate property",
+        "net estate",
+        "succession assets",
+        "probate assets",
+        "personal property",
+        "real property",
+        "decedent property"
+      ],
+      "gold_responses": [
+        "It can include the decedent's assets."
+      ],
+      "trap_aliases": [
+        "manor house",
+        "stately home",
+        "country retreat"
+      ],
+      "trap_responses": [
+        "It can include a country house.",
+        "It may include a manor and its grounds.",
+        "It includes the main house and guest accommodation."
+      ]
+    },
+    {
+      "term": "legacy",
+      "question": "What can a legacy provide?",
+      "baseline_trap": "old software compatibility",
+      "gold": "testamentary gift",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "a bequest",
+        "an inheritance",
+        "a devise",
+        "testamentary disposition",
+        "pecuniary gift"
+      ],
+      "gold_responses": [
+        "A legacy can provide a testamentary benefit to a named beneficiary."
+      ],
+      "trap_aliases": [
+        "backward compatibility",
+        "legacy support",
+        "software interoperability"
+      ],
+      "trap_responses": [
+        "Legacy can provide compatibility with older software and systems.",
+        "It can provide continued support for obsolete applications.",
+        "Legacy code provides interoperability with earlier platforms."
+      ]
+    },
+    {
+      "term": "residue",
+      "question": "What does residue include?",
+      "baseline_trap": "leftover material",
+      "gold": "remaining estate",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "residuary estate",
+        "net estate",
+        "unallocated assets",
+        "estate balance",
+        "residuary property",
+        "undisposed assets"
+      ],
+      "gold_responses": [
+        "Residue includes estate assets remaining after debts and gifts."
+      ],
+      "trap_aliases": [
+        "remains",
+        "leftovers",
+        "dregs"
+      ],
+      "trap_responses": [
+        "Residue includes material left after a process is completed.",
+        "It includes the remnants remaining after something is removed.",
+        "Residue is the leftover substance or deposit."
+      ]
+    },
+    {
+      "term": "account",
+      "question": "What can an account show?",
+      "baseline_trap": "a bank balance",
+      "gold": "fiduciary profits",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "trust receipts",
+        "trust disbursements",
+        "wrongful gains",
+        "unauthorized gains",
+        "equitable profits",
+        "misapplied funds"
+      ],
+      "gold_responses": [
+        "It can show profits earned through a fiduciary breach."
+      ],
+      "trap_aliases": [
+        "account funds",
+        "available balance"
+      ],
+      "trap_responses": [
+        "It can show how much money is in the bank.",
+        "It displays the current balance of available funds.",
+        "It shows deposits, withdrawals, and the remaining balance."
+      ]
+    },
+    {
+      "term": "security",
+      "question": "What can security protect?",
+      "baseline_trap": "computer data",
+      "gold": "payment obligation",
+      "dominant_prior": "cybersecurity",
+      "gold_aliases": [
+        "secured debt",
+        "loan repayment",
+        "creditor claim",
+        "debt repayment",
+        "loan performance",
+        "contract debt"
+      ],
+      "gold_responses": [
+        "It can protect a creditor against nonpayment of a debt."
+      ],
+      "trap_aliases": [
+        "network systems",
+        "digital information"
+      ],
+      "trap_responses": [
+        "It can protect computer data from unauthorized access.",
+        "It safeguards systems against cyberattacks and malware.",
+        "It protects digital information and network infrastructure."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does a charge create?",
+      "baseline_trap": "a card debt",
+      "gold": "security interest",
+      "dominant_prior": "consumer finance",
+      "gold_aliases": [
+        "proprietary security",
+        "collateral interest",
+        "secured claim",
+        "legal encumbrance",
+        "secured interest",
+        "fixed security"
+      ],
+      "gold_responses": [
+        "It gives the creditor proprietary security for the debt."
+      ],
+      "trap_aliases": [
+        "credit balance",
+        "revolving debt",
+        "outstanding balance"
+      ],
+      "trap_responses": [
+        "It creates a debt on the card account.",
+        "It adds to the consumer's outstanding card balance.",
+        "It creates a revolving credit obligation."
+      ]
+    },
+    {
+      "term": "execution",
+      "question": "What does execution produce?",
+      "baseline_trap": "program output",
+      "gold": "executed deed",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "valid deed",
+        "deed signing",
+        "deed formalities",
+        "executed instrument",
+        "completed deed",
+        "binding instrument"
+      ],
+      "gold_responses": [
+        "It produces an executed deed."
+      ],
+      "trap_aliases": [
+        "runtime output",
+        "program result",
+        "console output"
+      ],
+      "trap_responses": [
+        "It produces the program's output.",
+        "It generates a result at runtime.",
+        "It creates output when the code runs."
+      ]
+    },
+    {
+      "term": "interest",
+      "question": "What does an interest give its holder?",
+      "baseline_trap": "investment return",
+      "gold": "property right",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "proprietary right",
+        "land interest",
+        "beneficial interest",
+        "proprietary entitlement",
+        "estate in land",
+        "beneficial ownership",
+        "security entitlement"
+      ],
+      "gold_responses": [
+        "It gives the holder an enforceable property right."
+      ],
+      "trap_aliases": [
+        "yield",
+        "rate of return",
+        "investment income"
+      ],
+      "trap_responses": [
+        "It gives the holder a return on invested money.",
+        "It pays compensation for lending or investing capital.",
+        "It provides earnings calculated on the principal amount."
+      ]
+    },
+    {
+      "term": "priority",
+      "question": "What does priority determine?",
+      "baseline_trap": "race ranking",
+      "gold": "claim ranking",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "creditor rank",
+        "lien rank",
+        "claim order",
+        "lien seniority",
+        "claim precedence",
+        "ranking of interests",
+        "payment order"
+      ],
+      "gold_responses": [
+        "It determines precedence in distribution of the asset."
+      ],
+      "trap_aliases": [
+        "finishing position",
+        "race order",
+        "leaderboard rank"
+      ],
+      "trap_responses": [
+        "It determines a competitor's position in the race.",
+        "It decides who ranks ahead of other participants.",
+        "It establishes the order of finish."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "job security",
+      "gold": "landholding right",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "possessory estate",
+        "land interest",
+        "tenurial right",
+        "estate in land",
+        "possessory interest",
+        "right to occupy",
+        "landholding entitlement"
+      ],
+      "gold_responses": [
+        "It protects the holder's land possession."
+      ],
+      "trap_aliases": [
+        "permanent appointment",
+        "academic post"
+      ],
+      "trap_responses": [
+        "It secures continuing employment.",
+        "It protects a professor from dismissal.",
+        "It provides a permanent academic appointment."
+      ]
+    },
+    {
+      "term": "royalty",
+      "question": "Who can receive a royalty?",
+      "baseline_trap": "a monarch",
+      "gold": "rights holder",
+      "dominant_prior": "monarchy",
+      "gold_aliases": [
+        "copyright owner",
+        "patent holder",
+        "licensor",
+        "author"
+      ],
+      "gold_responses": [
+        "A copyright owner may receive royalty payments."
+      ],
+      "trap_aliases": [
+        "sovereign",
+        "king",
+        "queen"
+      ],
+      "trap_responses": [
+        "A monarch can receive a royalty.",
+        "A king or queen may receive one.",
+        "A sovereign is entitled to royal revenues."
+      ]
+    },
+    {
+      "term": "covenant",
+      "question": "What does a covenant create?",
+      "baseline_trap": "a sacred commitment",
+      "gold": "binding promise",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "contractual undertaking",
+        "deed obligation",
+        "sealed promise",
+        "contractual obligation",
+        "enforceable undertaking",
+        "restrictive obligation"
+      ],
+      "gold_responses": [
+        "It creates a legal undertaking enforceable against the covenantor."
+      ],
+      "trap_aliases": [
+        "solemn vow",
+        "holy pledge",
+        "sacred oath"
+      ],
+      "trap_responses": [
+        "It creates a sacred commitment between people and God.",
+        "It creates a solemn religious promise or vow.",
+        "It establishes a holy agreement grounded in faith."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:05:15Z"
+}

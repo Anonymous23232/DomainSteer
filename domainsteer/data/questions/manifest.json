@@ -1,0 +1,726 @@
+{
+  "n_domains": 144,
+  "questions_per_domain": 30,
+  "domains": [
+    {
+      "id": "3001",
+      "dir": "3001-agricultural-biotechnology",
+      "cluster": "Agricultural biotechnology"
+    },
+    {
+      "id": "3002",
+      "dir": "3002-agriculture-land-and-farm-management",
+      "cluster": "Agriculture, land and farm management"
+    },
+    {
+      "id": "3003",
+      "dir": "3003-animal-production",
+      "cluster": "Animal production"
+    },
+    {
+      "id": "3004",
+      "dir": "3004-crop-and-pasture-production",
+      "cluster": "Crop and pasture production"
+    },
+    {
+      "id": "3005",
+      "dir": "3005-fisheries-sciences",
+      "cluster": "Fisheries sciences"
+    },
+    {
+      "id": "3007",
+      "dir": "3007-forestry-sciences",
+      "cluster": "Forestry sciences"
+    },
+    {
+      "id": "3008",
+      "dir": "3008-horticultural-production",
+      "cluster": "Horticultural production"
+    },
+    {
+      "id": "3009",
+      "dir": "3009-veterinary-sciences",
+      "cluster": "Veterinary sciences"
+    },
+    {
+      "id": "3101",
+      "dir": "3101-biochemistry-and-cell-biology",
+      "cluster": "Biochemistry and cell biology"
+    },
+    {
+      "id": "3102",
+      "dir": "3102-bioinformatics-and-computational-biology",
+      "cluster": "Bioinformatics and computational biology"
+    },
+    {
+      "id": "3104",
+      "dir": "3104-evolutionary-biology",
+      "cluster": "Evolutionary biology"
+    },
+    {
+      "id": "3106",
+      "dir": "3106-industrial-biotechnology",
+      "cluster": "Industrial biotechnology"
+    },
+    {
+      "id": "3107",
+      "dir": "3107-microbiology",
+      "cluster": "Microbiology"
+    },
+    {
+      "id": "3108",
+      "dir": "3108-plant-biology",
+      "cluster": "Plant biology"
+    },
+    {
+      "id": "3109",
+      "dir": "3109-zoology",
+      "cluster": "Zoology"
+    },
+    {
+      "id": "3201",
+      "dir": "3201-cardiovascular-medicine-and-haematology",
+      "cluster": "Cardiovascular medicine and haematology"
+    },
+    {
+      "id": "3202",
+      "dir": "3202-clinical-sciences",
+      "cluster": "Clinical sciences"
+    },
+    {
+      "id": "3203",
+      "dir": "3203-dentistry",
+      "cluster": "Dentistry"
+    },
+    {
+      "id": "3204",
+      "dir": "3204-immunology",
+      "cluster": "Immunology"
+    },
+    {
+      "id": "3205",
+      "dir": "3205-medical-biochemistry-and-metabolomics",
+      "cluster": "Medical biochemistry and metabolomics"
+    },
+    {
+      "id": "3206",
+      "dir": "3206-medical-biotechnology",
+      "cluster": "Medical biotechnology"
+    },
+    {
+      "id": "3207",
+      "dir": "3207-medical-microbiology",
+      "cluster": "Medical microbiology"
+    },
+    {
+      "id": "3208",
+      "dir": "3208-medical-physiology",
+      "cluster": "Medical physiology"
+    },
+    {
+      "id": "3209",
+      "dir": "3209-neurosciences",
+      "cluster": "Neurosciences"
+    },
+    {
+      "id": "3210",
+      "dir": "3210-nutrition-and-dietetics",
+      "cluster": "Nutrition and dietetics"
+    },
+    {
+      "id": "3211",
+      "dir": "3211-oncology-and-carcinogenesis",
+      "cluster": "Oncology and carcinogenesis"
+    },
+    {
+      "id": "3212",
+      "dir": "3212-ophthalmology-and-optometry",
+      "cluster": "Ophthalmology and optometry"
+    },
+    {
+      "id": "3213",
+      "dir": "3213-paediatrics",
+      "cluster": "Paediatrics"
+    },
+    {
+      "id": "3214",
+      "dir": "3214-pharmacology-and-pharmaceutical-sciences",
+      "cluster": "Pharmacology and pharmaceutical sciences"
+    },
+    {
+      "id": "3215",
+      "dir": "3215-reproductive-medicine",
+      "cluster": "Reproductive medicine"
+    },
+    {
+      "id": "3304",
+      "dir": "3304-urban-and-regional-planning",
+      "cluster": "Urban and regional planning"
+    },
+    {
+      "id": "3401",
+      "dir": "3401-analytical-chemistry",
+      "cluster": "Analytical chemistry"
+    },
+    {
+      "id": "3402",
+      "dir": "3402-inorganic-chemistry",
+      "cluster": "Inorganic chemistry"
+    },
+    {
+      "id": "3403",
+      "dir": "3403-macromolecular-and-materials-chemistry",
+      "cluster": "Macromolecular and materials chemistry"
+    },
+    {
+      "id": "3404",
+      "dir": "3404-medicinal-and-biomolecular-chemistry",
+      "cluster": "Medicinal and biomolecular chemistry"
+    },
+    {
+      "id": "3405",
+      "dir": "3405-organic-chemistry",
+      "cluster": "Organic chemistry"
+    },
+    {
+      "id": "3406",
+      "dir": "3406-physical-chemistry",
+      "cluster": "Physical chemistry"
+    },
+    {
+      "id": "3407",
+      "dir": "3407-theoretical-and-computational-chemistry",
+      "cluster": "Theoretical and computational chemistry"
+    },
+    {
+      "id": "3501",
+      "dir": "3501-accounting-auditing-and-accountability",
+      "cluster": "Accounting, auditing and accountability"
+    },
+    {
+      "id": "3502",
+      "dir": "3502-banking-finance-and-investment",
+      "cluster": "Banking, finance and investment"
+    },
+    {
+      "id": "3503",
+      "dir": "3503-business-systems-in-context",
+      "cluster": "Business systems in context"
+    },
+    {
+      "id": "3504",
+      "dir": "3504-commercial-services",
+      "cluster": "Commercial services"
+    },
+    {
+      "id": "3505",
+      "dir": "3505-human-resources-and-industrial-relations",
+      "cluster": "Human resources and industrial relations"
+    },
+    {
+      "id": "3507",
+      "dir": "3507-strategy-management-and-organisational-behaviour",
+      "cluster": "Strategy, management and organisational behaviour"
+    },
+    {
+      "id": "3509",
+      "dir": "3509-transportation-logistics-and-supply-chains",
+      "cluster": "Transportation, logistics and supply chains"
+    },
+    {
+      "id": "3601",
+      "dir": "3601-art-history-theory-and-criticism",
+      "cluster": "Art history, theory and criticism"
+    },
+    {
+      "id": "3602",
+      "dir": "3602-creative-and-professional-writing",
+      "cluster": "Creative and professional writing"
+    },
+    {
+      "id": "3604",
+      "dir": "3604-performing-arts",
+      "cluster": "Performing arts"
+    },
+    {
+      "id": "3605",
+      "dir": "3605-screen-and-digital-media",
+      "cluster": "Screen and digital media"
+    },
+    {
+      "id": "3606",
+      "dir": "3606-visual-arts",
+      "cluster": "Visual arts"
+    },
+    {
+      "id": "3702",
+      "dir": "3702-climate-change-science",
+      "cluster": "Climate change science"
+    },
+    {
+      "id": "3704",
+      "dir": "3704-geoinformatics",
+      "cluster": "Geoinformatics"
+    },
+    {
+      "id": "3705",
+      "dir": "3705-geology",
+      "cluster": "Geology"
+    },
+    {
+      "id": "3706",
+      "dir": "3706-geophysics",
+      "cluster": "Geophysics"
+    },
+    {
+      "id": "3708",
+      "dir": "3708-oceanography",
+      "cluster": "Oceanography"
+    },
+    {
+      "id": "3709",
+      "dir": "3709-physical-geography-and-environmental-geoscience",
+      "cluster": "Physical geography and environmental geoscience"
+    },
+    {
+      "id": "3801",
+      "dir": "3801-applied-economics",
+      "cluster": "Applied economics"
+    },
+    {
+      "id": "3803",
+      "dir": "3803-economic-theory",
+      "cluster": "Economic theory"
+    },
+    {
+      "id": "3901",
+      "dir": "3901-curriculum-and-pedagogy",
+      "cluster": "Curriculum and pedagogy"
+    },
+    {
+      "id": "3902",
+      "dir": "3902-education-policy-sociology-and-philosophy",
+      "cluster": "Education policy, sociology and philosophy"
+    },
+    {
+      "id": "3903",
+      "dir": "3903-education-systems",
+      "cluster": "Education systems"
+    },
+    {
+      "id": "3904",
+      "dir": "3904-specialist-studies-in-education",
+      "cluster": "Specialist studies in education"
+    },
+    {
+      "id": "4001",
+      "dir": "4001-aerospace-engineering",
+      "cluster": "Aerospace engineering"
+    },
+    {
+      "id": "4002",
+      "dir": "4002-automotive-engineering",
+      "cluster": "Automotive engineering"
+    },
+    {
+      "id": "4003",
+      "dir": "4003-biomedical-engineering",
+      "cluster": "Biomedical engineering"
+    },
+    {
+      "id": "4004",
+      "dir": "4004-chemical-engineering",
+      "cluster": "Chemical engineering"
+    },
+    {
+      "id": "4005",
+      "dir": "4005-civil-engineering",
+      "cluster": "Civil engineering"
+    },
+    {
+      "id": "4006",
+      "dir": "4006-communications-engineering",
+      "cluster": "Communications engineering"
+    },
+    {
+      "id": "4007",
+      "dir": "4007-control-engineering-mechatronics-and-robotics",
+      "cluster": "Control engineering, mechatronics and robotics"
+    },
+    {
+      "id": "4008",
+      "dir": "4008-electrical-engineering",
+      "cluster": "Electrical engineering"
+    },
+    {
+      "id": "4009",
+      "dir": "4009-electronics-sensors-and-digital-hardware",
+      "cluster": "Electronics, sensors and digital hardware"
+    },
+    {
+      "id": "4010",
+      "dir": "4010-engineering-practice-and-education",
+      "cluster": "Engineering practice and education"
+    },
+    {
+      "id": "4011",
+      "dir": "4011-environmental-engineering",
+      "cluster": "Environmental engineering"
+    },
+    {
+      "id": "4012",
+      "dir": "4012-fluid-mechanics-and-thermal-engineering",
+      "cluster": "Fluid mechanics and thermal engineering"
+    },
+    {
+      "id": "4013",
+      "dir": "4013-geomatic-engineering",
+      "cluster": "Geomatic engineering"
+    },
+    {
+      "id": "4014",
+      "dir": "4014-manufacturing-engineering",
+      "cluster": "Manufacturing engineering"
+    },
+    {
+      "id": "4015",
+      "dir": "4015-maritime-engineering",
+      "cluster": "Maritime engineering"
+    },
+    {
+      "id": "4016",
+      "dir": "4016-materials-engineering",
+      "cluster": "Materials engineering"
+    },
+    {
+      "id": "4018",
+      "dir": "4018-nanotechnology",
+      "cluster": "Nanotechnology"
+    },
+    {
+      "id": "4019",
+      "dir": "4019-resources-engineering-and-extractive-metallurgy",
+      "cluster": "Resources engineering and extractive metallurgy"
+    },
+    {
+      "id": "4101",
+      "dir": "4101-climate-change-impacts-and-adaptation",
+      "cluster": "Climate change impacts and adaptation"
+    },
+    {
+      "id": "4102",
+      "dir": "4102-ecological-applications",
+      "cluster": "Ecological applications"
+    },
+    {
+      "id": "4103",
+      "dir": "4103-environmental-biotechnology",
+      "cluster": "Environmental biotechnology"
+    },
+    {
+      "id": "4104",
+      "dir": "4104-environmental-management",
+      "cluster": "Environmental management"
+    },
+    {
+      "id": "4105",
+      "dir": "4105-pollution-and-contamination",
+      "cluster": "Pollution and contamination"
+    },
+    {
+      "id": "4106",
+      "dir": "4106-soil-sciences",
+      "cluster": "Soil sciences"
+    },
+    {
+      "id": "4201",
+      "dir": "4201-allied-health-and-rehabilitation-science",
+      "cluster": "Allied health and rehabilitation science"
+    },
+    {
+      "id": "4203",
+      "dir": "4203-health-services-and-systems",
+      "cluster": "Health services and systems"
+    },
+    {
+      "id": "4206",
+      "dir": "4206-public-health",
+      "cluster": "Public health"
+    },
+    {
+      "id": "4207",
+      "dir": "4207-sports-science-and-exercise",
+      "cluster": "Sports science and exercise"
+    },
+    {
+      "id": "4208",
+      "dir": "4208-traditional-complementary-and-integrative-medicine",
+      "cluster": "Traditional, complementary and integrative medicine"
+    },
+    {
+      "id": "4302",
+      "dir": "4302-heritage-archive-and-museum-studies",
+      "cluster": "Heritage, archive and museum studies"
+    },
+    {
+      "id": "4303",
+      "dir": "4303-historical-studies",
+      "cluster": "Historical studies"
+    },
+    {
+      "id": "4404",
+      "dir": "4404-development-studies",
+      "cluster": "Development studies"
+    },
+    {
+      "id": "4405",
+      "dir": "4405-gender-studies",
+      "cluster": "Gender studies"
+    },
+    {
+      "id": "4406",
+      "dir": "4406-human-geography",
+      "cluster": "Human geography"
+    },
+    {
+      "id": "4407",
+      "dir": "4407-policy-and-administration",
+      "cluster": "Policy and administration"
+    },
+    {
+      "id": "4408",
+      "dir": "4408-political-science",
+      "cluster": "Political science"
+    },
+    {
+      "id": "4601",
+      "dir": "4601-applied-computing",
+      "cluster": "Applied computing"
+    },
+    {
+      "id": "4602",
+      "dir": "4602-artificial-intelligence",
+      "cluster": "Artificial intelligence"
+    },
+    {
+      "id": "4603",
+      "dir": "4603-computer-vision-and-multimedia-computation",
+      "cluster": "Computer vision and multimedia computation"
+    },
+    {
+      "id": "4604",
+      "dir": "4604-cybersecurity-and-privacy",
+      "cluster": "Cybersecurity and privacy"
+    },
+    {
+      "id": "4605",
+      "dir": "4605-data-management-and-data-science",
+      "cluster": "Data management and data science"
+    },
+    {
+      "id": "4606",
+      "dir": "4606-distributed-computing-and-systems-software",
+      "cluster": "Distributed computing and systems software"
+    },
+    {
+      "id": "4607",
+      "dir": "4607-graphics-augmented-reality-and-games",
+      "cluster": "Graphics, augmented reality and games"
+    },
+    {
+      "id": "4608",
+      "dir": "4608-human-centred-computing",
+      "cluster": "Human-centred computing"
+    },
+    {
+      "id": "4610",
+      "dir": "4610-library-and-information-studies",
+      "cluster": "Library and information studies"
+    },
+    {
+      "id": "4611",
+      "dir": "4611-machine-learning",
+      "cluster": "Machine learning"
+    },
+    {
+      "id": "4612",
+      "dir": "4612-software-engineering",
+      "cluster": "Software engineering"
+    },
+    {
+      "id": "4613",
+      "dir": "4613-theory-of-computation",
+      "cluster": "Theory of computation"
+    },
+    {
+      "id": "4701",
+      "dir": "4701-communication-and-media-studies",
+      "cluster": "Communication and media studies"
+    },
+    {
+      "id": "4702",
+      "dir": "4702-cultural-studies",
+      "cluster": "Cultural studies"
+    },
+    {
+      "id": "4703",
+      "dir": "4703-language-studies",
+      "cluster": "Language studies"
+    },
+    {
+      "id": "4705",
+      "dir": "4705-literary-studies",
+      "cluster": "Literary studies"
+    },
+    {
+      "id": "4801",
+      "dir": "4801-commercial-law",
+      "cluster": "Commercial law"
+    },
+    {
+      "id": "4802",
+      "dir": "4802-environmental-and-resources-law",
+      "cluster": "Environmental and resources law"
+    },
+    {
+      "id": "4803",
+      "dir": "4803-international-and-comparative-law",
+      "cluster": "International and comparative law"
+    },
+    {
+      "id": "4804",
+      "dir": "4804-law-in-context",
+      "cluster": "Law in context"
+    },
+    {
+      "id": "4805",
+      "dir": "4805-legal-systems",
+      "cluster": "Legal systems"
+    },
+    {
+      "id": "4806",
+      "dir": "4806-private-law-and-civil-obligations",
+      "cluster": "Private law and civil obligations"
+    },
+    {
+      "id": "4807",
+      "dir": "4807-public-law",
+      "cluster": "Public law"
+    },
+    {
+      "id": "4901",
+      "dir": "4901-applied-mathematics",
+      "cluster": "Applied mathematics"
+    },
+    {
+      "id": "4902",
+      "dir": "4902-mathematical-physics",
+      "cluster": "Mathematical physics"
+    },
+    {
+      "id": "4903",
+      "dir": "4903-numerical-and-computational-mathematics",
+      "cluster": "Numerical and computational mathematics"
+    },
+    {
+      "id": "4904",
+      "dir": "4904-pure-mathematics",
+      "cluster": "Pure mathematics"
+    },
+    {
+      "id": "4905",
+      "dir": "4905-statistics",
+      "cluster": "Statistics"
+    },
+    {
+      "id": "5001",
+      "dir": "5001-applied-ethics",
+      "cluster": "Applied ethics"
+    },
+    {
+      "id": "5002",
+      "dir": "5002-history-and-philosophy-of-specific-fields",
+      "cluster": "History and philosophy of specific fields"
+    },
+    {
+      "id": "5003",
+      "dir": "5003-philosophy",
+      "cluster": "Philosophy"
+    },
+    {
+      "id": "5101",
+      "dir": "5101-astronomical-sciences",
+      "cluster": "Astronomical sciences"
+    },
+    {
+      "id": "5102",
+      "dir": "5102-atomic-molecular-and-optical-physics",
+      "cluster": "Atomic, molecular and optical physics"
+    },
+    {
+      "id": "5103",
+      "dir": "5103-classical-physics",
+      "cluster": "Classical physics"
+    },
+    {
+      "id": "5104",
+      "dir": "5104-condensed-matter-physics",
+      "cluster": "Condensed matter physics"
+    },
+    {
+      "id": "5105",
+      "dir": "5105-medical-and-biological-physics",
+      "cluster": "Medical and biological physics"
+    },
+    {
+      "id": "5106",
+      "dir": "5106-nuclear-and-plasma-physics",
+      "cluster": "Nuclear and plasma physics"
+    },
+    {
+      "id": "5107",
+      "dir": "5107-particle-and-high-energy-physics",
+      "cluster": "Particle and high energy physics"
+    },
+    {
+      "id": "5108",
+      "dir": "5108-quantum-physics",
+      "cluster": "Quantum physics"
+    },
+    {
+      "id": "5109",
+      "dir": "5109-space-sciences",
+      "cluster": "Space sciences"
+    },
+    {
+      "id": "5110",
+      "dir": "5110-synchrotrons-and-accelerators",
+      "cluster": "Synchrotrons and accelerators"
+    },
+    {
+      "id": "5201",
+      "dir": "5201-applied-and-developmental-psychology",
+      "cluster": "Applied and developmental psychology"
+    },
+    {
+      "id": "5202",
+      "dir": "5202-biological-psychology",
+      "cluster": "Biological psychology"
+    },
+    {
+      "id": "5203",
+      "dir": "5203-clinical-and-health-psychology",
+      "cluster": "Clinical and health psychology"
+    },
+    {
+      "id": "5204",
+      "dir": "5204-cognitive-and-computational-psychology",
+      "cluster": "Cognitive and computational psychology"
+    },
+    {
+      "id": "5205",
+      "dir": "5205-social-and-personality-psychology",
+      "cluster": "Social and personality psychology"
+    }
+  ]
+}

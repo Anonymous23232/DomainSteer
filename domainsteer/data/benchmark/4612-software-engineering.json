@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4612",
+  "cluster": "Software engineering",
+  "domain": "Software engineering",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "divination, farming, finance, food, forensics, geology, insurance, law, media, medicine, retail, shipping, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a branch?",
+    "What is a build?",
+    "What is a commit?",
+    "What is a contract?",
+    "What is a deadlock?",
+    "What is a leak?",
+    "What is a merge?",
+    "What is a regression?",
+    "What is a release?",
+    "What is an exception?",
+    "What is an issue?",
+    "What is an overload?",
+    "What is binding?",
+    "What is inheritance?",
+    "What is validation?",
+    "binding",
+    "branch",
+    "build",
+    "commit",
+    "contract",
+    "deadlock",
+    "exception",
+    "inheritance",
+    "issue",
+    "leak",
+    "merge",
+    "overload",
+    "regression",
+    "release",
+    "validation"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage indicate?",
+      "baseline_trap": "the extent of insurance protection",
+      "gold": "exercised code",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "tested statements",
+        "executed paths",
+        "test adequacy",
+        "branch coverage",
+        "statement coverage",
+        "path execution",
+        "test reachability"
+      ],
+      "gold_responses": [
+        "It indicates how much code the tests execute."
+      ],
+      "trap_aliases": [
+        "policy limits",
+        "protection scope",
+        "insured risks"
+      ],
+      "trap_responses": [
+        "It indicates the extent of protection provided by a policy.",
+        "It shows which losses, risks, or events are insured.",
+        "It defines what expenses the insurer will pay for."
+      ]
+    },
+    {
+      "term": "story",
+      "question": "What does a story capture?",
+      "baseline_trap": "a narrative",
+      "gold": "user need",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "user requirement",
+        "stakeholder need",
+        "desired outcome",
+        "backlog item",
+        "feature request",
+        "acceptance scenario"
+      ],
+      "gold_responses": [
+        "It captures a user's need and intended value."
+      ],
+      "trap_aliases": [
+        "plot",
+        "tale",
+        "account"
+      ],
+      "trap_responses": [
+        "It captures a sequence of events involving characters.",
+        "It conveys a narrative arc, setting, and conflict.",
+        "It presents events as a meaningful account or tale."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What can a case reveal?",
+      "baseline_trap": "legal facts",
+      "gold": "a defect",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "a failure",
+        "a fault",
+        "incorrect behavior",
+        "a bug",
+        "an issue",
+        "a regression"
+      ],
+      "gold_responses": [
+        "A test case can reveal a defect."
+      ],
+      "trap_aliases": [
+        "legal evidence",
+        "material facts",
+        "liability",
+        "wrongdoing"
+      ],
+      "trap_responses": [
+        "A case can reveal legally relevant facts.",
+        "It may expose evidence of wrongdoing.",
+        "The case can establish liability."
+      ]
+    },
+    {
+      "term": "velocity",
+      "question": "What does velocity measure?",
+      "baseline_trap": "speed",
+      "gold": "completed work",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "delivered work",
+        "team throughput",
+        "iteration output",
+        "sprint throughput",
+        "delivered points",
+        "completed stories",
+        "team output"
+      ],
+      "gold_responses": [
+        "It estimates how much work a team finishes."
+      ],
+      "trap_aliases": [
+        "running speed",
+        "rate of motion",
+        "pace"
+      ],
+      "trap_responses": [
+        "Velocity measures speed in a particular direction.",
+        "It describes how fast an athlete moves.",
+        "Velocity measures the rate of change in position."
+      ]
+    },
+    {
+      "term": "churn",
+      "question": "What does churn measure?",
+      "baseline_trap": "customer loss",
+      "gold": "code change",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "source change",
+        "change volume",
+        "code volatility",
+        "change activity",
+        "revision rate",
+        "modification volume"
+      ],
+      "gold_responses": [
+        "How much source code changes over time."
+      ],
+      "trap_aliases": [
+        "customer attrition",
+        "subscriber cancellations",
+        "account closures"
+      ],
+      "trap_responses": [
+        "The rate at which customers stop buying.",
+        "How many subscribers cancel their service.",
+        "The proportion of clients lost during a period."
+      ]
+    },
+    {
+      "term": "oracle",
+      "question": "What does an oracle determine?",
+      "baseline_trap": "the future",
+      "gold": "test verdict",
+      "dominant_prior": "divination",
+      "gold_aliases": [
+        "expected result",
+        "expected outcome",
+        "correctness verdict",
+        "test outcome",
+        "reference behavior"
+      ],
+      "gold_responses": [
+        "Whether observed behavior matches the expected result."
+      ],
+      "trap_aliases": [
+        "prophecy",
+        "future events",
+        "destiny"
+      ],
+      "trap_responses": [
+        "What will happen in the future.",
+        "The outcome foretold by supernatural insight.",
+        "Future events or a person's fate."
+      ]
+    },
+    {
+      "term": "fault",
+      "question": "What can a fault cause?",
+      "baseline_trap": "an earthquake",
+      "gold": "program failure",
+      "dominant_prior": "geology",
+      "gold_aliases": [
+        "incorrect behavior",
+        "test failure",
+        "system failure",
+        "software defect",
+        "coding error",
+        "implementation bug",
+        "design flaw"
+      ],
+      "gold_responses": [
+        "A fault can cause a program failure."
+      ],
+      "trap_aliases": [
+        "seismic event",
+        "ground rupture",
+        "tectonic movement"
+      ],
+      "trap_responses": [
+        "A fault can cause an earthquake.",
+        "It may produce severe ground shaking.",
+        "A fault can trigger surface displacement."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch correct?",
+      "baseline_trap": "a medical condition",
+      "gold": "a defect",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "a bug",
+        "a fault",
+        "an error",
+        "software defect",
+        "coding bug",
+        "implementation error",
+        "regression defect"
+      ],
+      "gold_responses": [
+        "A patch can correct a software defect."
+      ],
+      "trap_aliases": [
+        "medical disorder",
+        "health condition",
+        "physical ailment"
+      ],
+      "trap_responses": [
+        "A patch can treat a medical condition.",
+        "It may relieve symptoms of an ailment.",
+        "A medicated patch can manage chronic pain."
+      ]
+    },
+    {
+      "term": "fixture",
+      "question": "What does a fixture provide?",
+      "baseline_trap": "a scheduled match",
+      "gold": "test setup",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "controlled context",
+        "initial state",
+        "test data",
+        "test environment",
+        "setup state",
+        "test context",
+        "initial conditions"
+      ],
+      "gold_responses": [
+        "It provides a repeatable test environment."
+      ],
+      "trap_aliases": [
+        "league match",
+        "sporting contest",
+        "scheduled game"
+      ],
+      "trap_responses": [
+        "It provides a scheduled competition between teams.",
+        "It provides an organized sporting event.",
+        "It provides the date and opponent for a match."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed determine?",
+      "baseline_trap": "crop variety",
+      "gold": "random sequence",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "test data",
+        "repeatable run",
+        "PRNG state",
+        "generator state",
+        "RNG initialization",
+        "pseudorandom stream",
+        "random state"
+      ],
+      "gold_responses": [
+        "It determines the sequence of random test inputs."
+      ],
+      "trap_aliases": [
+        "plant type",
+        "seed cultivar"
+      ],
+      "trap_responses": [
+        "It can determine the crop variety grown.",
+        "It determines traits of the resulting plant.",
+        "It influences the type of crop produced."
+      ]
+    },
+    {
+      "term": "manifest",
+      "question": "What does a manifest declare?",
+      "baseline_trap": "cargo contents",
+      "gold": "declared dependencies",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "package metadata",
+        "component list",
+        "deployment resources",
+        "runtime permissions",
+        "application components",
+        "build requirements"
+      ],
+      "gold_responses": [
+        "It declares package dependencies and version constraints."
+      ],
+      "trap_aliases": [
+        "shipping cargo",
+        "freight inventory",
+        "vessel supplies"
+      ],
+      "trap_responses": [
+        "It declares the cargo carried by a ship.",
+        "It lists goods loaded for transport.",
+        "It records a vessel's freight and passengers."
+      ]
+    },
+    {
+      "term": "proof",
+      "question": "What can a proof establish?",
+      "baseline_trap": "legal guilt",
+      "gold": "program correctness",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "requirement satisfaction",
+        "invariant preservation",
+        "property validity",
+        "formal verification",
+        "specification conformance",
+        "safety property",
+        "correctness theorem"
+      ],
+      "gold_responses": [
+        "It can establish that a program satisfies its specification."
+      ],
+      "trap_aliases": [
+        "criminal guilt",
+        "civil liability",
+        "legal responsibility"
+      ],
+      "trap_responses": [
+        "It can establish guilt beyond a reasonable doubt.",
+        "It can establish liability in a civil case.",
+        "It can show that a legal claim is justified."
+      ]
+    },
+    {
+      "term": "slice",
+      "question": "What can a slice isolate?",
+      "baseline_trap": "a food portion",
+      "gold": "relevant code",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "dependency subset",
+        "affecting statements",
+        "influencing code",
+        "program subset",
+        "dependent statements",
+        "fault-related code",
+        "relevant variables"
+      ],
+      "gold_responses": [
+        "It can isolate statements affecting a chosen computation."
+      ],
+      "trap_aliases": [
+        "serving size",
+        "meal portion",
+        "piece of food"
+      ],
+      "trap_responses": [
+        "A slice can isolate a portion of food.",
+        "It can separate one serving from a larger dish.",
+        "A slice can isolate an individual piece of cake."
+      ]
+    },
+    {
+      "term": "trace",
+      "question": "What can a trace establish?",
+      "baseline_trap": "physical presence",
+      "gold": "execution order",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "event sequence",
+        "control flow",
+        "program behavior",
+        "runtime history",
+        "execution path"
+      ],
+      "gold_responses": [
+        "A trace establishes control-flow order during an execution."
+      ],
+      "trap_aliases": [
+        "scene presence",
+        "suspect location",
+        "physical contact"
+      ],
+      "trap_responses": [
+        "A trace can establish a person's physical presence.",
+        "It can establish that someone was at a scene.",
+        "A trace can establish contact with an object."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag identify?",
+      "baseline_trap": "a retail product",
+      "gold": "software version",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "revision label",
+        "version marker",
+        "artifact label",
+        "release label",
+        "commit reference",
+        "issue marker"
+      ],
+      "gold_responses": [
+        "A tag may identify a milestone or deployment candidate."
+      ],
+      "trap_aliases": [
+        "stock keeping unit",
+        "price label",
+        "merchandise item"
+      ],
+      "trap_responses": [
+        "A tag can identify a specific retail product.",
+        "It may identify the item's price or sale status.",
+        "A tag can identify merchandise for inventory tracking."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:15:52Z"
+}

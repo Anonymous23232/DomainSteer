@@ -1,0 +1,466 @@
+{
+  "cluster_id": "4208",
+  "cluster": "Traditional, complementary and integrative medicine",
+  "domain": "Traditional, complementary and integrative medicine",
+  "division": "Health Sciences",
+  "dominant_prior": "authorship, design, diplomacy, farming and geography, food, law, media, media and geography, orthopedic medicine, pharmacology, real estate, sports, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a needle do?",
+    "What does the tongue show?",
+    "What is a detox?",
+    "What is a formula?",
+    "What is a meridian?",
+    "What is a pressure point?",
+    "What is a pulse?",
+    "What is alignment?",
+    "What is an elixir?",
+    "What is balance?",
+    "What is energy?",
+    "What is grounding?",
+    "What is heat?",
+    "What is manipulation?",
+    "What is wind?",
+    "alignment",
+    "balance",
+    "detox",
+    "elixir",
+    "energy",
+    "formula",
+    "grounding",
+    "heat",
+    "manipulation",
+    "meridian",
+    "needle",
+    "pressure point",
+    "pulse",
+    "tongue",
+    "wind"
+  ],
+  "items": [
+    {
+      "term": "channel",
+      "question": "What can a channel carry?",
+      "baseline_trap": "broadcast programming",
+      "gold": "qi",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "vital qi",
+        "channel qi",
+        "qi flow",
+        "vital energy",
+        "qi and blood",
+        "nutritive qi",
+        "defensive qi"
+      ],
+      "gold_responses": [
+        "A channel can carry qi through the body."
+      ],
+      "trap_aliases": [
+        "television shows",
+        "radio content",
+        "streaming programs"
+      ],
+      "trap_responses": [
+        "A channel can carry broadcast programming.",
+        "It may carry television shows and news.",
+        "A channel carries scheduled media content."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature indicate?",
+      "baseline_trap": "signer identity",
+      "gold": "therapeutic use",
+      "dominant_prior": "authorship",
+      "gold_aliases": [
+        "medicinal use",
+        "organ affinity",
+        "healing indication",
+        "medicinal action",
+        "herbal indication",
+        "healing property"
+      ],
+      "gold_responses": [
+        "A signature can indicate a plant's therapeutic use."
+      ],
+      "trap_aliases": [
+        "author identity",
+        "legal consent",
+        "document approval"
+      ],
+      "trap_responses": [
+        "A signature can indicate the signer's identity.",
+        "It may show approval of a document.",
+        "A signature can indicate legal consent."
+      ]
+    },
+    {
+      "term": "proving",
+      "question": "What can a proving establish?",
+      "baseline_trap": "a legal claim",
+      "gold": "remedy picture",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "symptom picture",
+        "remedy profile",
+        "drug picture",
+        "materia medica",
+        "characteristic symptoms"
+      ],
+      "gold_responses": [
+        "It can establish the symptoms associated with a remedy."
+      ],
+      "trap_aliases": [
+        "liability",
+        "legal entitlement",
+        "guilt"
+      ],
+      "trap_responses": [
+        "A proving can establish liability in a legal dispute.",
+        "It can establish a party's legal entitlement.",
+        "A proving may establish guilt beyond reasonable doubt."
+      ]
+    },
+    {
+      "term": "potency",
+      "question": "What can potency indicate?",
+      "baseline_trap": "drug strength",
+      "gold": "dilution level",
+      "dominant_prior": "pharmacology",
+      "gold_aliases": [
+        "dilution degree",
+        "remedy level",
+        "dynamization level",
+        "potentization level",
+        "centesimal scale",
+        "decimal scale"
+      ],
+      "gold_responses": [
+        "A potency shows the preparation scale used for the remedy."
+      ],
+      "trap_aliases": [
+        "dose strength",
+        "concentration"
+      ],
+      "trap_responses": [
+        "Potency can indicate how strongly a drug produces effects.",
+        "It often indicates the concentration of an active ingredient.",
+        "Potency reflects the dose strength needed for a therapeutic effect."
+      ]
+    },
+    {
+      "term": "constitution",
+      "question": "What can a constitution determine?",
+      "baseline_trap": "government powers",
+      "gold": "disease susceptibility",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "health predisposition",
+        "constitutional type",
+        "treatment tendency",
+        "health tendencies",
+        "pathogen vulnerability",
+        "treatment response",
+        "imbalance patterns"
+      ],
+      "gold_responses": [
+        "It can indicate vulnerability to particular illnesses."
+      ],
+      "trap_aliases": [
+        "legislative authority",
+        "executive authority",
+        "judicial authority"
+      ],
+      "trap_responses": [
+        "It can determine the powers of government branches.",
+        "It establishes limits on governmental authority.",
+        "It defines rights and the structure of government."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field encompass?",
+      "baseline_trap": "players",
+      "gold": "human body",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "living body",
+        "patient body",
+        "human organism",
+        "whole body",
+        "body systems",
+        "energy pathways",
+        "organ networks"
+      ],
+      "gold_responses": [
+        "It may extend across the body's functional systems."
+      ],
+      "trap_aliases": [
+        "athletes",
+        "team members",
+        "competing players"
+      ],
+      "trap_responses": [
+        "It can encompass players from both teams.",
+        "It accommodates athletes during a game.",
+        "It contains the players and officials in play."
+      ]
+    },
+    {
+      "term": "pattern",
+      "question": "What can a pattern identify?",
+      "baseline_trap": "a design trend",
+      "gold": "syndrome type",
+      "dominant_prior": "design",
+      "gold_aliases": [
+        "clinical pattern",
+        "disharmony pattern",
+        "treatment pattern",
+        "disharmony type",
+        "organ imbalance",
+        "channel involvement",
+        "syndrome differentiation"
+      ],
+      "gold_responses": [
+        "It can reveal the root and branch imbalance."
+      ],
+      "trap_aliases": [
+        "aesthetic style",
+        "visual motif",
+        "fashion movement"
+      ],
+      "trap_responses": [
+        "A pattern can identify an emerging design trend.",
+        "It may reveal a popular visual style.",
+        "It can signal a recurring fashion movement."
+      ]
+    },
+    {
+      "term": "flavor",
+      "question": "What can a flavor indicate?",
+      "baseline_trap": "taste quality",
+      "gold": "herbal action",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "organ affinity",
+        "treatment direction",
+        "medicinal effect",
+        "medicinal property",
+        "meridian affinity",
+        "organ tropism",
+        "therapeutic direction"
+      ],
+      "gold_responses": [
+        "It can reveal the herb's affinity for particular channels."
+      ],
+      "trap_aliases": [
+        "ingredient profile",
+        "food freshness"
+      ],
+      "trap_responses": [
+        "A flavor can indicate the food's taste quality.",
+        "It may reveal the ingredients used in a dish.",
+        "It can suggest whether food is fresh."
+      ]
+    },
+    {
+      "term": "terrain",
+      "question": "What does terrain describe?",
+      "baseline_trap": "the physical landscape",
+      "gold": "internal milieu",
+      "dominant_prior": "farming and geography",
+      "gold_aliases": [
+        "body ecology",
+        "host milieu",
+        "biological terrain",
+        "body constitution",
+        "internal environment",
+        "constitutional balance",
+        "tissue milieu"
+      ],
+      "gold_responses": [
+        "It describes the body's internal environment and susceptibility to illness."
+      ],
+      "trap_aliases": [
+        "landscape",
+        "topography",
+        "landforms"
+      ],
+      "trap_responses": [
+        "It describes the physical features of an area of land.",
+        "The landscape, elevation, and surface characteristics of a region.",
+        "Terrain describes the ground conditions encountered in a location."
+      ]
+    },
+    {
+      "term": "envoy",
+      "question": "What can an envoy guide?",
+      "baseline_trap": "diplomatic negotiations",
+      "gold": "herb action",
+      "dominant_prior": "diplomacy",
+      "gold_aliases": [
+        "formula direction",
+        "organ targeting",
+        "treatment focus",
+        "formula guidance",
+        "channel direction",
+        "medicinal targeting",
+        "organ direction"
+      ],
+      "gold_responses": [
+        "An envoy herb guides a formula toward a target channel."
+      ],
+      "trap_aliases": [
+        "diplomatic talks",
+        "foreign policy",
+        "negotiations"
+      ],
+      "trap_responses": [
+        "An envoy can guide diplomatic negotiations between governments.",
+        "They may guide discussions aimed at resolving an international dispute.",
+        "An envoy helps direct communication between states or political leaders."
+      ]
+    },
+    {
+      "term": "subluxation",
+      "question": "What does a subluxation indicate?",
+      "baseline_trap": "a partial dislocation",
+      "gold": "segmental dysfunction",
+      "dominant_prior": "orthopedic medicine",
+      "gold_aliases": [
+        "vertebral dysfunction",
+        "spinal dysfunction",
+        "joint fixation",
+        "vertebral subluxation",
+        "motion restriction"
+      ],
+      "gold_responses": [
+        "It indicates impaired spinal joint function."
+      ],
+      "trap_aliases": [
+        "incomplete dislocation",
+        "joint displacement",
+        "partial joint dislocation"
+      ],
+      "trap_responses": [
+        "It indicates a joint is partially dislocated.",
+        "It suggests incomplete loss of joint alignment.",
+        "It means the joint surfaces are not fully congruent."
+      ]
+    },
+    {
+      "term": "atlas",
+      "question": "Where is an atlas found?",
+      "baseline_trap": "a library",
+      "gold": "upper neck",
+      "dominant_prior": "media and geography",
+      "gold_aliases": [
+        "first cervical vertebra",
+        "C1 vertebra",
+        "cervical spine",
+        "atlanto-occipital region"
+      ],
+      "gold_responses": [
+        "It is located between the skull and axis."
+      ],
+      "trap_aliases": [
+        "map collection",
+        "map book",
+        "geography reference"
+      ],
+      "trap_responses": [
+        "It is found in a library.",
+        "It can be found on a bookshelf.",
+        "It is commonly found in a geography classroom."
+      ]
+    },
+    {
+      "term": "listing",
+      "question": "What does a listing record?",
+      "baseline_trap": "property details",
+      "gold": "vertebral position",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "spinal position",
+        "vertebral misalignment",
+        "segmental posture",
+        "spinal alignment",
+        "vertebral displacement",
+        "segmental misalignment",
+        "subluxation pattern"
+      ],
+      "gold_responses": [
+        "It documents vertebral misalignment within the spinal segment."
+      ],
+      "trap_aliases": [
+        "property information",
+        "real estate details",
+        "listing particulars"
+      ],
+      "trap_responses": [
+        "A listing records a property's details and sale information.",
+        "It records the features, price, and location of property.",
+        "It documents real estate available for sale or rent."
+      ]
+    },
+    {
+      "term": "repertory",
+      "question": "What does a repertory index?",
+      "baseline_trap": "musical works",
+      "gold": "symptom rubrics",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "remedy indications",
+        "symptom entries",
+        "clinical rubrics",
+        "symptom categories"
+      ],
+      "gold_responses": [
+        "It catalogs symptoms according to structured rubric headings."
+      ],
+      "trap_aliases": [
+        "musical compositions",
+        "song catalog",
+        "recorded works"
+      ],
+      "trap_responses": [
+        "A repertory indexes musical works in a collection.",
+        "It catalogs compositions, songs, and recorded pieces.",
+        "It organizes musical works for reference and performance."
+      ]
+    },
+    {
+      "term": "vehicle",
+      "question": "What does a vehicle carry?",
+      "baseline_trap": "cargo",
+      "gold": "remedy dose",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "medicinal preparation",
+        "potentized remedy",
+        "homeopathic dose",
+        "active ingredients",
+        "herbal extract",
+        "medicinal substance",
+        "therapeutic agent"
+      ],
+      "gold_responses": [
+        "A vehicle carries the medicinal ingredients."
+      ],
+      "trap_aliases": [
+        "freight",
+        "passengers",
+        "goods"
+      ],
+      "trap_responses": [
+        "A vehicle carries cargo.",
+        "It transports passengers or goods.",
+        "Vehicles carry people, freight, and equipment."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:34:57Z"
+}

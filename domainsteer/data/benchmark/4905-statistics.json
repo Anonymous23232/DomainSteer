@@ -1,0 +1,460 @@
+{
+  "cluster_id": "4905",
+  "cluster": "Statistics",
+  "domain": "Statistics",
+  "division": "Mathematical Sciences",
+  "dominant_prior": "computing, education, everyday English, everyday safety, farming, finance, law, manufacturing, media, medicine, photography, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does balance mean?",
+    "What does significance mean?",
+    "What is a confidence interval?",
+    "What is a distribution?",
+    "What is a model?",
+    "What is a population?",
+    "What is a signal?",
+    "What is a treatment?",
+    "What is an outlier?",
+    "What is bias?",
+    "What is correlation?",
+    "What is error?",
+    "What is power?",
+    "What is precision?",
+    "What is regression?",
+    "balance",
+    "bias",
+    "confidence interval",
+    "correlation",
+    "distribution",
+    "error",
+    "model",
+    "outlier",
+    "population",
+    "power",
+    "precision",
+    "regression",
+    "signal",
+    "significance",
+    "treatment"
+  ],
+  "items": [
+    {
+      "term": "case",
+      "question": "What can a case represent?",
+      "baseline_trap": "a legal dispute",
+      "gold": "observational unit",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "study unit",
+        "data record",
+        "statistical observation",
+        "sampling unit",
+        "study subject",
+        "individual observation"
+      ],
+      "gold_responses": [
+        "An observational unit included in the data."
+      ],
+      "trap_aliases": [
+        "lawsuit",
+        "legal action",
+        "court matter"
+      ],
+      "trap_responses": [
+        "A dispute brought before a court.",
+        "A legal proceeding between opposing parties.",
+        "A matter requiring judicial resolution."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score measure?",
+      "baseline_trap": "performance points",
+      "gold": "likelihood slope",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "score function",
+        "likelihood gradient",
+        "log-likelihood derivative",
+        "estimating function",
+        "derivative vector"
+      ],
+      "gold_responses": [
+        "Sensitivity of likelihood to parameter changes."
+      ],
+      "trap_aliases": [
+        "game points",
+        "rating",
+        "point tally"
+      ],
+      "trap_responses": [
+        "Points earned through successful play.",
+        "A numerical record of team performance.",
+        "The total points achieved in a contest."
+      ]
+    },
+    {
+      "term": "leverage",
+      "question": "What does leverage measure?",
+      "baseline_trap": "borrowing capacity",
+      "gold": "predictor extremeness",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "hat value",
+        "design extremeness",
+        "influence potential",
+        "covariate extremity",
+        "predictor-space distance",
+        "design-point isolation",
+        "hat-matrix diagonal"
+      ],
+      "gold_responses": [
+        "It measures how unusual a case's predictor values are."
+      ],
+      "trap_aliases": [
+        "creditworthiness",
+        "borrowing power",
+        "debt capacity"
+      ],
+      "trap_responses": [
+        "It measures how much money someone can borrow.",
+        "It indicates a firm's ability to finance additional debt.",
+        "It reflects bargaining power gained through financial resources."
+      ]
+    },
+    {
+      "term": "censoring",
+      "question": "What can censoring hide?",
+      "baseline_trap": "restricted content",
+      "gold": "event times",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "failure times",
+        "tail outcomes",
+        "exact values",
+        "unobserved failures",
+        "incomplete follow-up",
+        "truncated event times",
+        "unknown survival times"
+      ],
+      "gold_responses": [
+        "It can conceal failure times beyond the observation period."
+      ],
+      "trap_aliases": [
+        "suppressed material",
+        "blocked information",
+        "redacted content"
+      ],
+      "trap_responses": [
+        "It can hide information considered unsuitable for public viewing.",
+        "It can conceal politically sensitive or offensive material.",
+        "It restricts content that authorities do not want published."
+      ]
+    },
+    {
+      "term": "hazard",
+      "question": "What does a hazard quantify?",
+      "baseline_trap": "danger level",
+      "gold": "instantaneous event rate",
+      "dominant_prior": "everyday safety",
+      "gold_aliases": [
+        "conditional failure rate",
+        "event intensity",
+        "risk rate",
+        "conditional event rate",
+        "failure intensity",
+        "conditional risk rate"
+      ],
+      "gold_responses": [
+        "It quantifies the instantaneous conditional event rate."
+      ],
+      "trap_aliases": [
+        "risk level",
+        "threat level",
+        "degree of danger"
+      ],
+      "trap_responses": [
+        "It quantifies how dangerous a situation is.",
+        "It measures the level of risk or threat.",
+        "It indicates the potential for harm or injury."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What can a panel track?",
+      "baseline_trap": "a public discussion",
+      "gold": "repeated units",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "longitudinal subjects",
+        "tracked individuals",
+        "panel members",
+        "repeated observations",
+        "individual trajectories"
+      ],
+      "gold_responses": [
+        "It tracks longitudinal outcomes for a fixed set of units."
+      ],
+      "trap_aliases": [
+        "televised debate",
+        "expert roundtable",
+        "discussion program"
+      ],
+      "trap_responses": [
+        "It can track a public discussion among invited speakers.",
+        "It follows a debate between experts or commentators.",
+        "It covers a discussion of current issues."
+      ]
+    },
+    {
+      "term": "mark",
+      "question": "What does a mark label?",
+      "baseline_trap": "student performance",
+      "gold": "point attribute",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "event label",
+        "location attribute",
+        "point covariate",
+        "event attribute",
+        "point label",
+        "marked-point value"
+      ],
+      "gold_responses": [
+        "It labels an attribute attached to a spatial point."
+      ],
+      "trap_aliases": [
+        "student grade",
+        "exam score",
+        "academic achievement"
+      ],
+      "trap_responses": [
+        "It labels a student's performance on assessed work.",
+        "It indicates the grade earned on an examination.",
+        "It records how well a learner answered questions."
+      ]
+    },
+    {
+      "term": "arm",
+      "question": "What does an arm receive?",
+      "baseline_trap": "an injection",
+      "gold": "assigned intervention",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "study treatment",
+        "experimental condition",
+        "treatment assignment",
+        "trial treatment",
+        "allocated regimen",
+        "study intervention"
+      ],
+      "gold_responses": [
+        "It is assigned a treatment group in the experiment."
+      ],
+      "trap_aliases": [
+        "a vaccine",
+        "medication"
+      ],
+      "trap_responses": [
+        "It receives an injection, often into a muscle.",
+        "It may receive a vaccine or other shot.",
+        "It can receive medication through an intravenous line."
+      ]
+    },
+    {
+      "term": "trial",
+      "question": "What can a trial establish?",
+      "baseline_trap": "legal guilt",
+      "gold": "causal effect",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "intervention effect",
+        "causal contrast",
+        "comparative efficacy",
+        "treatment effect",
+        "causal impact",
+        "efficacy estimate"
+      ],
+      "gold_responses": [
+        "It can estimate whether an intervention changes outcomes."
+      ],
+      "trap_aliases": [
+        "criminal liability",
+        "legal responsibility",
+        "culpability finding"
+      ],
+      "trap_responses": [
+        "A trial can establish whether the accused is legally guilty.",
+        "It can determine criminal liability beyond reasonable doubt.",
+        "It may establish responsibility for the alleged offense."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What does a field describe?",
+      "baseline_trap": "a farmed area",
+      "gold": "spatial variation",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "spatial process",
+        "random surface",
+        "spatial dependence",
+        "geostatistical pattern"
+      ],
+      "gold_responses": [
+        "It describes the spatial pattern of a measured variable."
+      ],
+      "trap_aliases": [
+        "cultivated land",
+        "agricultural plot",
+        "farmland area"
+      ],
+      "trap_responses": [
+        "A field describes an area of land used for farming.",
+        "It is a tract of land where crops are grown.",
+        "It can refer to cultivated farmland or pasture."
+      ]
+    },
+    {
+      "term": "residual",
+      "question": "What does a residual represent?",
+      "baseline_trap": "leftover material",
+      "gold": "fitted discrepancy",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "unexplained deviation",
+        "prediction discrepancy",
+        "observed-minus-fitted",
+        "prediction error",
+        "model discrepancy",
+        "unexplained variation",
+        "observed-fitted difference"
+      ],
+      "gold_responses": [
+        "It is the observed outcome minus the predicted outcome."
+      ],
+      "trap_aliases": [
+        "scrap material",
+        "production waste",
+        "excess material"
+      ],
+      "trap_responses": [
+        "Material left over after a manufacturing process.",
+        "Unused material remaining once production is complete.",
+        "Waste or scrap generated during fabrication."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What can a range indicate?",
+      "baseline_trap": "shooting distance",
+      "gold": "data spread",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "value span",
+        "max-min difference",
+        "variability span",
+        "data variability",
+        "maximum-minimum difference",
+        "sample dispersion"
+      ],
+      "gold_responses": [
+        "How widely the data values are dispersed."
+      ],
+      "trap_aliases": [
+        "firing distance",
+        "effective distance",
+        "target distance"
+      ],
+      "trap_responses": [
+        "The distance a player can shoot effectively.",
+        "How far an athlete can accurately hit a target.",
+        "The maximum practical distance for a shot."
+      ]
+    },
+    {
+      "term": "kernel",
+      "question": "What can a kernel assign?",
+      "baseline_trap": "system resources",
+      "gold": "local weights",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "distance weights",
+        "neighborhood weights",
+        "observation weights",
+        "smoothing weights",
+        "similarity weights"
+      ],
+      "gold_responses": [
+        "It can assign weights to nearby observations."
+      ],
+      "trap_aliases": [
+        "CPU time",
+        "memory space",
+        "processing capacity"
+      ],
+      "trap_responses": [
+        "It can assign CPU time to running processes.",
+        "It allocates system resources among tasks.",
+        "It can assign memory and processor access."
+      ]
+    },
+    {
+      "term": "memory",
+      "question": "What can memory preserve?",
+      "baseline_trap": "stored information",
+      "gold": "past dependence",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "temporal dependence",
+        "lag dependence",
+        "history dependence",
+        "lagged dependence",
+        "serial correlation",
+        "historical influence"
+      ],
+      "gold_responses": [
+        "It can preserve dependence on previous observations."
+      ],
+      "trap_aliases": [
+        "saved facts",
+        "personal experiences",
+        "stored data"
+      ],
+      "trap_responses": [
+        "It can preserve stored information.",
+        "It preserves experiences from the past.",
+        "It can retain facts and personal details."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure accumulate?",
+      "baseline_trap": "light on a camera sensor",
+      "gold": "person-time",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "at-risk time",
+        "follow-up time",
+        "time at risk",
+        "observation time"
+      ],
+      "gold_responses": [
+        "It accumulates person-time under observation."
+      ],
+      "trap_aliases": [
+        "incident light",
+        "light energy",
+        "photon counts"
+      ],
+      "trap_responses": [
+        "It accumulates light on the camera sensor.",
+        "It records incoming photons over time.",
+        "Exposure gathers light energy during the shutter interval."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:25:58Z"
+}

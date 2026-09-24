@@ -1,0 +1,476 @@
+{
+  "cluster_id": "5204",
+  "cluster": "Cognitive and computational psychology",
+  "domain": "Cognitive and computational psychology",
+  "division": "Psychology",
+  "dominant_prior": "farming, finance, hospitality, law, manufacturing, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After extinction, can it come back?",
+    "What does conditioning do?",
+    "What does practice change?",
+    "What does priming do?",
+    "What does transfer mean?",
+    "What is a cue?",
+    "What is a filter?",
+    "What is a script?",
+    "What is a signal?",
+    "What is a threshold?",
+    "What is bias?",
+    "What is extinction?",
+    "What is focus?",
+    "What is interference?",
+    "What is load?",
+    "What is memory?",
+    "bias",
+    "conditioning",
+    "cue",
+    "extinction",
+    "filter",
+    "focus",
+    "interference",
+    "load",
+    "memory",
+    "practice",
+    "priming",
+    "script",
+    "signal",
+    "threshold",
+    "transfer"
+  ],
+  "items": [
+    {
+      "term": "discounting",
+      "question": "What does discounting reduce?",
+      "baseline_trap": "a listed price",
+      "gold": "delayed value",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "future reward",
+        "later reward",
+        "subjective value",
+        "deferred payoff",
+        "delayed reward value",
+        "future reward value",
+        "temporal value"
+      ],
+      "gold_responses": [
+        "It reduces the subjective value of delayed rewards."
+      ],
+      "trap_aliases": [
+        "retail price",
+        "sale price",
+        "marked price"
+      ],
+      "trap_responses": [
+        "It reduces a listed item's price.",
+        "It lowers the retail price for buyers.",
+        "It cuts the marked price of merchandise."
+      ]
+    },
+    {
+      "term": "binding",
+      "question": "What does binding join?",
+      "baseline_trap": "contracting parties",
+      "gold": "object features",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "sensory features",
+        "feature conjunction",
+        "unified percept",
+        "color and shape",
+        "visual features",
+        "sensory attributes",
+        "feature representations",
+        "perceptual elements"
+      ],
+      "gold_responses": [
+        "It joins features into a unified perceived object."
+      ],
+      "trap_aliases": [
+        "legal parties",
+        "agreement signatories"
+      ],
+      "trap_responses": [
+        "It joins contracting parties under an agreement.",
+        "It obligates the parties to a contract.",
+        "It creates enforceable commitments between signatories."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "sales transactions",
+      "gold": "sensory input",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "visual information",
+        "auditory information",
+        "raw sensation",
+        "brief input",
+        "sensory information",
+        "incoming stimuli",
+        "raw percepts",
+        "stimulus traces"
+      ],
+      "gold_responses": [
+        "Immediate stimulus details before further processing."
+      ],
+      "trap_aliases": [
+        "transaction data",
+        "purchase records",
+        "checkout sales"
+      ],
+      "trap_responses": [
+        "Sales transactions completed at the store.",
+        "Items purchased during a checkout transaction.",
+        "Payments and purchases processed by a cashier."
+      ]
+    },
+    {
+      "term": "hit",
+      "question": "What does a hit indicate?",
+      "baseline_trap": "a successful strike",
+      "gold": "correct detection",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "target presence",
+        "successful detection",
+        "correct response",
+        "detected item",
+        "true positive",
+        "detected signal",
+        "correct recognition",
+        "signal present"
+      ],
+      "gold_responses": [
+        "Correctly detecting a signal that is present."
+      ],
+      "trap_aliases": [
+        "scoring blow",
+        "solid contact",
+        "successful shot"
+      ],
+      "trap_responses": [
+        "A successful strike on the ball or opponent.",
+        "Contact that produces a favorable play.",
+        "A shot or blow that succeeds in competition."
+      ]
+    },
+    {
+      "term": "drift",
+      "question": "What does drift quantify?",
+      "baseline_trap": "market movement",
+      "gold": "evidence rate",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "accumulation rate",
+        "evidence strength",
+        "information rate",
+        "decision evidence",
+        "drift rate",
+        "evidence accumulation"
+      ],
+      "gold_responses": [
+        "It quantifies the rate of evidence accumulation."
+      ],
+      "trap_aliases": [
+        "price change",
+        "expected return",
+        "market trend"
+      ],
+      "trap_responses": [
+        "It quantifies how much an asset price changes.",
+        "It measures the market's directional movement over time.",
+        "It represents an investment's expected rate of return."
+      ]
+    },
+    {
+      "term": "mask",
+      "question": "What can a mask block?",
+      "baseline_trap": "pathogen transmission",
+      "gold": "target visibility",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "target awareness",
+        "stimulus detection",
+        "perceptual access",
+        "conscious perception",
+        "visual target",
+        "perceptual awareness",
+        "stimulus processing",
+        "target access"
+      ],
+      "gold_responses": [
+        "It can obscure a target from visual awareness."
+      ],
+      "trap_aliases": [
+        "pathogen spread",
+        "viral transmission",
+        "respiratory droplets"
+      ],
+      "trap_responses": [
+        "It can block transmission of infectious respiratory particles.",
+        "It can reduce exposure to airborne pathogens.",
+        "It can help prevent viral spread between people."
+      ]
+    },
+    {
+      "term": "stream",
+      "question": "What can a stream contain?",
+      "baseline_trap": "video content",
+      "gold": "conscious contents",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "ongoing thoughts",
+        "mental events",
+        "subjective experience",
+        "inner experience",
+        "conscious awareness"
+      ],
+      "gold_responses": [
+        "Conscious contents unfold continuously over time."
+      ],
+      "trap_aliases": [
+        "movies",
+        "live broadcasts",
+        "online clips"
+      ],
+      "trap_responses": [
+        "A stream can contain videos, films, and live broadcasts.",
+        "It may include shows, clips, and advertisements.",
+        "Streaming content includes movies, series, and sports."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field include?",
+      "baseline_trap": "growing crops",
+      "gold": "visible space",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "retinal area",
+        "viewable region",
+        "peripheral space",
+        "visible locations",
+        "visual field",
+        "perceptual space",
+        "viewable area",
+        "visible region"
+      ],
+      "gold_responses": [
+        "It contains locations detectable in peripheral vision."
+      ],
+      "trap_aliases": [
+        "crops",
+        "farm plants",
+        "growing produce"
+      ],
+      "trap_responses": [
+        "A field can include crops such as wheat and corn.",
+        "It may contain growing plants, livestock, and soil.",
+        "Farm fields include vegetables, grains, and irrigation systems."
+      ]
+    },
+    {
+      "term": "discount",
+      "question": "What does a discount reduce?",
+      "baseline_trap": "retail price",
+      "gold": "delayed value",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "future value",
+        "temporal value",
+        "reward value",
+        "subjective reward",
+        "future reward value",
+        "discounted utility",
+        "subjective worth"
+      ],
+      "gold_responses": [
+        "A later reward's perceived worth."
+      ],
+      "trap_aliases": [
+        "sale price",
+        "sticker price",
+        "purchase cost"
+      ],
+      "trap_responses": [
+        "The retail price of an item.",
+        "The amount a customer pays.",
+        "The listed price before purchase."
+      ]
+    },
+    {
+      "term": "valuation",
+      "question": "What does valuation assign?",
+      "baseline_trap": "market price",
+      "gold": "subjective value",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "option value",
+        "reward value",
+        "decision value",
+        "expected utility",
+        "subjective utility",
+        "preference value"
+      ],
+      "gold_responses": [
+        "Preference-based worth to alternatives."
+      ],
+      "trap_aliases": [
+        "asset price",
+        "market worth",
+        "fair value"
+      ],
+      "trap_responses": [
+        "A market price to an asset.",
+        "Monetary worth to a company.",
+        "A financial value to property."
+      ]
+    },
+    {
+      "term": "race",
+      "question": "What does a race determine?",
+      "baseline_trap": "the winner",
+      "gold": "response choice",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "selected response",
+        "action selection",
+        "choice outcome",
+        "behavioral response",
+        "response decision"
+      ],
+      "gold_responses": [
+        "It determines the winning response in a competition."
+      ],
+      "trap_aliases": [
+        "victor",
+        "champion",
+        "first-place finisher"
+      ],
+      "trap_responses": [
+        "It determines the winner.",
+        "It determines who finishes first.",
+        "It determines the champion of the event."
+      ]
+    },
+    {
+      "term": "frame",
+      "question": "What does a frame establish?",
+      "baseline_trap": "editorial viewpoint",
+      "gold": "spatial coordinates",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "reference system",
+        "spatial reference",
+        "egocentric coordinates",
+        "allocentric coordinates",
+        "coordinate system",
+        "reference axes"
+      ],
+      "gold_responses": [
+        "It establishes coordinates for representing spatial locations."
+      ],
+      "trap_aliases": [
+        "editorial angle",
+        "news perspective",
+        "narrative viewpoint"
+      ],
+      "trap_responses": [
+        "It establishes the editorial viewpoint.",
+        "It establishes how a story is presented.",
+        "It establishes the perspective guiding coverage."
+      ]
+    },
+    {
+      "term": "menu",
+      "question": "What does a menu present?",
+      "baseline_trap": "restaurant dishes",
+      "gold": "choice set",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "available options",
+        "decision options",
+        "action alternatives",
+        "option set",
+        "available alternatives",
+        "response choices",
+        "action repertoire"
+      ],
+      "gold_responses": [
+        "It presents alternatives among which a choice is made."
+      ],
+      "trap_aliases": [
+        "food selections",
+        "dish list",
+        "meal offerings"
+      ],
+      "trap_responses": [
+        "A menu presents the dishes available at a restaurant.",
+        "It lists food and beverage choices for diners.",
+        "It presents meal options and their prices."
+      ]
+    },
+    {
+      "term": "production",
+      "question": "What does production plan?",
+      "baseline_trap": "manufacturing output",
+      "gold": "utterance sequence",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "speech sequence",
+        "utterance plan",
+        "articulatory plan",
+        "word order",
+        "planned utterance",
+        "linguistic sequence"
+      ],
+      "gold_responses": [
+        "It plans lexical, syntactic, and phonological output."
+      ],
+      "trap_aliases": [
+        "factory output",
+        "goods volume",
+        "manufacturing schedule"
+      ],
+      "trap_responses": [
+        "Production plans the quantity of goods to manufacture.",
+        "It plans factory output over a specified period.",
+        "It determines what products will be made."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "Where does credit go?",
+      "baseline_trap": "bank account",
+      "gold": "causal action",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "responsible action",
+        "prior action",
+        "causal state",
+        "outcome predictor",
+        "selected response",
+        "causal choice",
+        "preceding action"
+      ],
+      "gold_responses": [
+        "Assign it to the response causally responsible for reward."
+      ],
+      "trap_aliases": [
+        "credit card",
+        "loan balance"
+      ],
+      "trap_responses": [
+        "Credit goes into your bank account.",
+        "It is added to your available credit balance.",
+        "The credit appears on your account statement."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:12:30Z"
+}

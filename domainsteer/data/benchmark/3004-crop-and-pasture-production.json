@@ -1,0 +1,475 @@
+{
+  "cluster_id": "3004",
+  "cluster": "Crop and pasture production",
+  "domain": "Crop and pasture production",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "banking, computing, construction equipment, education, everyday household, finance, finance law, law, media, programming, retail, retail law, retail media, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What counts as coverage?",
+    "What is a buffer?",
+    "What is a crop?",
+    "What is a flush?",
+    "What is a hybrid?",
+    "What is bolting?",
+    "What is controlled release?",
+    "What is dormancy?",
+    "What is drift?",
+    "What is maturity?",
+    "What is residue?",
+    "What is rotation?",
+    "What is selection?",
+    "What is sterility?",
+    "What is stress?",
+    "bolting",
+    "buffer",
+    "controlled release",
+    "coverage",
+    "crop",
+    "dormancy",
+    "drift",
+    "flush",
+    "hybrid",
+    "maturity",
+    "residue",
+    "rotation",
+    "selection",
+    "sterility",
+    "stress"
+  ],
+  "items": [
+    {
+      "term": "label",
+      "question": "What does a label authorize?",
+      "baseline_trap": "a product claim or consumer use",
+      "gold": "use pattern",
+      "dominant_prior": "retail law",
+      "gold_aliases": [
+        "application rate",
+        "target site",
+        "permitted use",
+        "approved application",
+        "registered use",
+        "treatment directions",
+        "use restrictions"
+      ],
+      "gold_responses": [
+        "It authorizes a specified pesticide use pattern."
+      ],
+      "trap_aliases": [
+        "product claims",
+        "consumer use",
+        "marketing statements"
+      ],
+      "trap_responses": [
+        "It authorizes the product claims displayed to consumers.",
+        "It permits the stated consumer use of the product.",
+        "It supports marketing claims made on product packaging."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank preserve?",
+      "baseline_trap": "financial capital",
+      "gold": "viable seeds",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "weed seeds",
+        "soil seedbank",
+        "propagule reserve",
+        "seed germplasm",
+        "seed lots",
+        "dormant seeds",
+        "genetic resources"
+      ],
+      "gold_responses": [
+        "It conserves germplasm with maintained seed viability."
+      ],
+      "trap_aliases": [
+        "cash reserves",
+        "deposits"
+      ],
+      "trap_responses": [
+        "It can preserve financial capital and customer deposits.",
+        "It safeguards cash reserves for future use.",
+        "It stores money and protects account balances."
+      ]
+    },
+    {
+      "term": "sink",
+      "question": "What does a sink receive?",
+      "baseline_trap": "wastewater",
+      "gold": "photosynthate",
+      "dominant_prior": "everyday household",
+      "gold_aliases": [
+        "assimilates",
+        "fixed carbon",
+        "sugars",
+        "sucrose",
+        "carbohydrates",
+        "dry matter"
+      ],
+      "gold_responses": [
+        "It receives sucrose transported through the phloem."
+      ],
+      "trap_aliases": [
+        "dirty water",
+        "dishwater",
+        "drainwater"
+      ],
+      "trap_responses": [
+        "It receives wastewater from household drains.",
+        "It receives dirty water from washing dishes.",
+        "It receives used water flowing down the drain."
+      ]
+    },
+    {
+      "term": "stand",
+      "question": "What can a stand reveal?",
+      "baseline_trap": "displayed merchandise",
+      "gold": "plant density",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "plant population",
+        "crop density",
+        "establishment uniformity",
+        "crop population",
+        "establishment density",
+        "tiller density",
+        "plants per area"
+      ],
+      "gold_responses": [
+        "It can reveal crop density after emergence."
+      ],
+      "trap_aliases": [
+        "products",
+        "goods",
+        "wares"
+      ],
+      "trap_responses": [
+        "It can reveal the merchandise being displayed.",
+        "It can reveal which products are for sale.",
+        "It can reveal the goods presented to shoppers."
+      ]
+    },
+    {
+      "term": "trial",
+      "question": "What can a trial establish?",
+      "baseline_trap": "legal guilt",
+      "gold": "cultivar performance",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "variety ranking",
+        "yield response",
+        "field performance",
+        "yield stability",
+        "varietal adaptation",
+        "disease resistance",
+        "fertilizer response"
+      ],
+      "gold_responses": [
+        "It can establish yield stability over locations and seasons."
+      ],
+      "trap_aliases": [
+        "criminal liability",
+        "legal culpability",
+        "innocence"
+      ],
+      "trap_responses": [
+        "It can establish whether the defendant is legally guilty.",
+        "It can establish criminal liability beyond reasonable doubt.",
+        "It can establish innocence or guilt in court."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag certify?",
+      "baseline_trap": "a product's identity or price",
+      "gold": "seed quality",
+      "dominant_prior": "retail media",
+      "gold_aliases": [
+        "lot identity",
+        "varietal purity",
+        "germination standard",
+        "genetic purity",
+        "seed lot identity",
+        "certified seed"
+      ],
+      "gold_responses": [
+        "It can certify compliance with seed certification regulations."
+      ],
+      "trap_aliases": [
+        "product identity",
+        "retail price",
+        "brand authenticity"
+      ],
+      "trap_responses": [
+        "It can certify a product's identity or listed price.",
+        "It can certify that merchandise is genuine and correctly labeled.",
+        "It can certify retail pricing and product information."
+      ]
+    },
+    {
+      "term": "threshold",
+      "question": "What does a threshold trigger?",
+      "baseline_trap": "a tax bracket",
+      "gold": "control action",
+      "dominant_prior": "finance law",
+      "gold_aliases": [
+        "pest treatment",
+        "spray decision",
+        "field intervention",
+        "treatment decision",
+        "pest intervention",
+        "spray application",
+        "management response"
+      ],
+      "gold_responses": [
+        "It triggers a pest-control treatment decision."
+      ],
+      "trap_aliases": [
+        "higher tax rate",
+        "tax liability",
+        "next bracket"
+      ],
+      "trap_responses": [
+        "It can trigger a higher tax bracket.",
+        "It triggers a change in the marginal tax rate.",
+        "It may trigger additional tax liability."
+      ]
+    },
+    {
+      "term": "boom",
+      "question": "What can a boom carry?",
+      "baseline_trap": "a construction load",
+      "gold": "spray nozzles",
+      "dominant_prior": "construction equipment",
+      "gold_aliases": [
+        "application hoses",
+        "sprayer lines",
+        "spray liquid",
+        "spray tips",
+        "nozzle bodies",
+        "spray lines",
+        "herbicide nozzles"
+      ],
+      "gold_responses": [
+        "A boom can carry spray nozzles."
+      ],
+      "trap_aliases": [
+        "lifting load",
+        "suspended payload",
+        "building materials"
+      ],
+      "trap_responses": [
+        "A boom can carry a suspended construction load.",
+        "It carries materials being lifted by the crane.",
+        "It supports the load on a construction site."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What does a window define?",
+      "baseline_trap": "a display area",
+      "gold": "application timing",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "spray period",
+        "treatment period",
+        "application period",
+        "spray timing",
+        "application interval",
+        "safe spraying period"
+      ],
+      "gold_responses": [
+        "It defines the suitable period for pesticide application."
+      ],
+      "trap_aliases": [
+        "screen region",
+        "viewport",
+        "GUI panel"
+      ],
+      "trap_responses": [
+        "It defines an area for displaying application content.",
+        "It sets the visible region of a document or program.",
+        "It defines a graphical area on the screen."
+      ]
+    },
+    {
+      "term": "rate",
+      "question": "What does a rate set?",
+      "baseline_trap": "an interest charge",
+      "gold": "area dose",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "application dose",
+        "fertiliser dose",
+        "seeding density",
+        "field dosage",
+        "per-hectare amount",
+        "product loading"
+      ],
+      "gold_responses": [
+        "It sets the herbicide amount delivered per hectare."
+      ],
+      "trap_aliases": [
+        "loan interest",
+        "annual percentage",
+        "borrowing cost"
+      ],
+      "trap_responses": [
+        "It sets the interest charged on borrowed money.",
+        "It determines the percentage cost of a loan.",
+        "It specifies the return paid on an investment."
+      ]
+    },
+    {
+      "term": "grade",
+      "question": "What does a grade classify?",
+      "baseline_trap": "student performance",
+      "gold": "grain quality",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "kernel quality",
+        "market class",
+        "milling quality",
+        "grain class",
+        "quality standard",
+        "market quality",
+        "commodity quality"
+      ],
+      "gold_responses": [
+        "It classifies grain by quality characteristics."
+      ],
+      "trap_aliases": [
+        "academic achievement",
+        "student rating",
+        "course mark"
+      ],
+      "trap_responses": [
+        "It classifies a student's academic performance.",
+        "It indicates how well a student performed in class.",
+        "It ranks achievement on an assignment or examination."
+      ]
+    },
+    {
+      "term": "passport",
+      "question": "What does a passport authorize?",
+      "baseline_trap": "border travel",
+      "gold": "plant movement",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "propagule movement",
+        "consignment movement",
+        "phytosanitary movement",
+        "plant passport",
+        "phytosanitary authorization",
+        "movement document",
+        "traceability label"
+      ],
+      "gold_responses": [
+        "It authorizes movement of regulated plants and plant products."
+      ],
+      "trap_aliases": [
+        "travel document",
+        "entry permit",
+        "identity document"
+      ],
+      "trap_responses": [
+        "It authorizes international travel and border entry.",
+        "It permits the holder to travel between countries.",
+        "It serves as identification for crossing national borders."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does a code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "mode of action",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "herbicide group",
+        "HRAC group",
+        "resistance group",
+        "site of action",
+        "target process"
+      ],
+      "gold_responses": [
+        "It specifies the herbicide's mode of action."
+      ],
+      "trap_aliases": [
+        "source code",
+        "instruction set",
+        "program logic"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer executes.",
+        "It defines the program's logic and behavior.",
+        "It tells software how to perform tasks."
+      ]
+    },
+    {
+      "term": "check",
+      "question": "What does a check establish?",
+      "baseline_trap": "payment authorization",
+      "gold": "untreated baseline",
+      "dominant_prior": "banking",
+      "gold_aliases": [
+        "control plot",
+        "check strip",
+        "reference treatment",
+        "yield comparator",
+        "untreated control",
+        "control treatment",
+        "reference plot",
+        "negative control"
+      ],
+      "gold_responses": [
+        "It separates natural field variation from treatment response."
+      ],
+      "trap_aliases": [
+        "payment approval",
+        "funds verification",
+        "account authorization"
+      ],
+      "trap_responses": [
+        "It establishes authorization for a payment.",
+        "It verifies that funds are available.",
+        "It confirms the account can cover the payment."
+      ]
+    },
+    {
+      "term": "source",
+      "question": "What can a source supply?",
+      "baseline_trap": "information",
+      "gold": "photosynthate",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "carbohydrate supply",
+        "assimilate flow",
+        "leaf sugars",
+        "dry matter",
+        "photoassimilates",
+        "phloem sugars",
+        "assimilated carbon",
+        "sucrose"
+      ],
+      "gold_responses": [
+        "A source leaf can supply sugars to developing grains."
+      ],
+      "trap_aliases": [
+        "data",
+        "news",
+        "knowledge"
+      ],
+      "trap_responses": [
+        "A source can supply information for a story.",
+        "It can supply data, facts, and background.",
+        "A reliable source supplies credible information."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:30:35Z"
+}

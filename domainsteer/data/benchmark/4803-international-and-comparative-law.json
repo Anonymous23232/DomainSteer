@@ -1,0 +1,469 @@
+{
+  "cluster_id": "4803",
+  "cluster": "International and comparative law",
+  "domain": "International and comparative law",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "business, computing, employment, everyday weather, farming, finance, hospitality, media, medicine, music, retail, sports, waste disposal",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a signature mean?",
+    "What does ratification do?",
+    "What is a blockade?",
+    "What is a charge?",
+    "What is a forum?",
+    "What is a protocol?",
+    "What is a reservation?",
+    "What is accession?",
+    "What is an award?",
+    "What is asylum?",
+    "What is execution?",
+    "What is exhaustion?",
+    "What is necessity?",
+    "What is passage?",
+    "Where is the seat?",
+    "accession",
+    "asylum",
+    "award",
+    "blockade",
+    "charge",
+    "execution",
+    "exhaustion",
+    "forum",
+    "necessity",
+    "passage",
+    "protocol",
+    "ratification",
+    "reservation",
+    "seat",
+    "signature"
+  ],
+  "items": [
+    {
+      "term": "occupation",
+      "question": "What does occupation require?",
+      "baseline_trap": "a job",
+      "gold": "effective control",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "territorial control",
+        "hostile control",
+        "foreign control",
+        "actual authority",
+        "foreign territory",
+        "substituted authority"
+      ],
+      "gold_responses": [
+        "The occupying power must exercise effective territorial control."
+      ],
+      "trap_aliases": [
+        "employment",
+        "profession",
+        "career"
+      ],
+      "trap_responses": [
+        "Occupation requires paid work or regular employment.",
+        "It requires a job performed for an employer.",
+        "An occupation requires skills suited to a profession."
+      ]
+    },
+    {
+      "term": "flag",
+      "question": "What does a flag identify?",
+      "baseline_trap": "a sports team",
+      "gold": "vessel nationality",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "flag state",
+        "national character",
+        "state registry",
+        "state of registry",
+        "registration state"
+      ],
+      "gold_responses": [
+        "A flag identifies the vessel's nationality."
+      ],
+      "trap_aliases": [
+        "club affiliation",
+        "team identity",
+        "national side"
+      ],
+      "trap_responses": [
+        "A flag identifies a sports team or club.",
+        "It identifies which team the supporters represent.",
+        "It shows a team's identity during competition."
+      ]
+    },
+    {
+      "term": "instrument",
+      "question": "What can an instrument express?",
+      "baseline_trap": "musical emotion",
+      "gold": "state consent",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "treaty consent",
+        "binding consent",
+        "treaty commitment",
+        "state intention",
+        "legal commitment",
+        "reservation"
+      ],
+      "gold_responses": [
+        "It can embody a state's legal undertaking."
+      ],
+      "trap_aliases": [
+        "feeling",
+        "mood",
+        "expression"
+      ],
+      "trap_responses": [
+        "An instrument can express emotion.",
+        "It can convey mood and feeling.",
+        "Music expresses human emotions."
+      ]
+    },
+    {
+      "term": "immunity",
+      "question": "What does immunity bar?",
+      "baseline_trap": "infection",
+      "gold": "foreign jurisdiction",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "domestic courts",
+        "judicial process",
+        "legal proceedings",
+        "adjudicative jurisdiction",
+        "foreign proceedings",
+        "enforcement measures",
+        "compulsory process"
+      ],
+      "gold_responses": [
+        "It bars the exercise of foreign jurisdiction."
+      ],
+      "trap_aliases": [
+        "disease",
+        "pathogens"
+      ],
+      "trap_responses": [
+        "It bars infection by a disease.",
+        "It protects the body from pathogens.",
+        "It prevents illness after exposure."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What does a margin allow?",
+      "baseline_trap": "trading leverage",
+      "gold": "state discretion",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "national discretion",
+        "government latitude",
+        "review latitude",
+        "national latitude",
+        "regulatory autonomy",
+        "assessment discretion",
+        "policy leeway"
+      ],
+      "gold_responses": [
+        "Authorities scope to tailor rights restrictions."
+      ],
+      "trap_aliases": [
+        "buying power",
+        "borrowed funds",
+        "market exposure"
+      ],
+      "trap_responses": [
+        "Trading leverage for larger market positions.",
+        "Borrowed capital to increase investment exposure.",
+        "Extra purchasing power for securities trades."
+      ]
+    },
+    {
+      "term": "service",
+      "question": "What can service give someone?",
+      "baseline_trap": "a meal",
+      "gold": "formal notice",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "procedural notice",
+        "process notice",
+        "summons notice",
+        "procedural notification",
+        "actual notice",
+        "notice of action"
+      ],
+      "gold_responses": [
+        "Procedural notice of a claim or hearing."
+      ],
+      "trap_aliases": [
+        "food",
+        "dining",
+        "refreshments"
+      ],
+      "trap_responses": [
+        "A meal and refreshments.",
+        "Food served at the table.",
+        "Dinner with attentive hospitality."
+      ]
+    },
+    {
+      "term": "incorporation",
+      "question": "What does incorporation create?",
+      "baseline_trap": "a corporation",
+      "gold": "domestic effect",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "internal force",
+        "municipal validity",
+        "national application",
+        "municipal force",
+        "internal effect",
+        "domestic applicability",
+        "national legal force"
+      ],
+      "gold_responses": [
+        "It gives international rules domestic legal effect."
+      ],
+      "trap_aliases": [
+        "legal entity",
+        "corporate entity",
+        "separate personality"
+      ],
+      "trap_responses": [
+        "It creates a separate legal entity.",
+        "It forms a corporation with legal personality.",
+        "It creates a company recognized by law."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What can a port admit?",
+      "baseline_trap": "network connections",
+      "gold": "foreign vessels",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "merchant ships",
+        "vessel entry",
+        "ship access",
+        "foreign ships",
+        "visiting vessels",
+        "merchant vessels",
+        "alien vessels"
+      ],
+      "gold_responses": [
+        "It can admit foreign vessels to its waters."
+      ],
+      "trap_aliases": [
+        "communication links",
+        "data connections"
+      ],
+      "trap_responses": [
+        "It can admit network connections.",
+        "A port accepts incoming network traffic.",
+        "It allows devices to establish connections."
+      ]
+    },
+    {
+      "term": "characterization",
+      "question": "What does characterization determine?",
+      "baseline_trap": "a character portrayal",
+      "gold": "applicable law",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "governing law",
+        "choice of law",
+        "lex causae",
+        "legal classification",
+        "conflicts categorization",
+        "issue classification"
+      ],
+      "gold_responses": [
+        "It determines which law governs the issue."
+      ],
+      "trap_aliases": [
+        "character depiction",
+        "role interpretation",
+        "personality traits"
+      ],
+      "trap_responses": [
+        "It determines a character's portrayal.",
+        "It establishes the character's personality.",
+        "It defines how a fictional role is presented."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance permit?",
+      "baseline_trap": "discounted shopping",
+      "gold": "import release",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "customs release",
+        "free circulation",
+        "goods entry",
+        "customs entry",
+        "goods release",
+        "border release",
+        "import authorization"
+      ],
+      "gold_responses": [
+        "It authorizes goods to enter customs territory."
+      ],
+      "trap_aliases": [
+        "sale shopping",
+        "bargain purchases",
+        "discount buying"
+      ],
+      "trap_responses": [
+        "It permits discounted shopping.",
+        "It allows customers to buy sale items.",
+        "It enables bargain purchases at reduced prices."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does a draft specify?",
+      "baseline_trap": "a team's pick order",
+      "gold": "treaty terms",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "proposed provisions",
+        "agreement text",
+        "treaty language",
+        "draft articles",
+        "treaty obligations",
+        "negotiated text"
+      ],
+      "gold_responses": [
+        "It specifies proposed treaty terms."
+      ],
+      "trap_aliases": [
+        "selection order",
+        "draft position",
+        "pick sequence"
+      ],
+      "trap_responses": [
+        "It specifies a team's pick order.",
+        "It determines the order of player selections.",
+        "It sets each team's selection position."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does harvest remove?",
+      "baseline_trap": "crops",
+      "gold": "fish stocks",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "marine catch",
+        "fish catch",
+        "allocated catch",
+        "marine resources",
+        "fish biomass",
+        "allowable catch",
+        "target species"
+      ],
+      "gold_responses": [
+        "It withdraws stock biomass through fishing."
+      ],
+      "trap_aliases": [
+        "grain",
+        "produce",
+        "field yield"
+      ],
+      "trap_responses": [
+        "It removes crops from the field.",
+        "It gathers mature agricultural produce.",
+        "It takes the season's crop yield."
+      ]
+    },
+    {
+      "term": "umbrella",
+      "question": "What can an umbrella cover?",
+      "baseline_trap": "a person from rain",
+      "gold": "state commitments",
+      "dominant_prior": "everyday weather",
+      "gold_aliases": [
+        "investment obligations",
+        "contract undertakings",
+        "treaty commitments",
+        "treaty obligations",
+        "investment commitments",
+        "state undertakings",
+        "contractual promises"
+      ],
+      "gold_responses": [
+        "It can cover obligations assumed in investment agreements."
+      ],
+      "trap_aliases": [
+        "rain protection",
+        "a pedestrian",
+        "someone outdoors"
+      ],
+      "trap_responses": [
+        "It can cover a person from the rain.",
+        "An umbrella can shield someone during a shower.",
+        "It can keep a pedestrian dry in wet weather."
+      ]
+    },
+    {
+      "term": "origin",
+      "question": "What can origin determine?",
+      "baseline_trap": "where a product was made",
+      "gold": "tariff treatment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "customs treatment",
+        "preferential access",
+        "duty rate",
+        "preferential tariff",
+        "market access"
+      ],
+      "gold_responses": [
+        "It can determine eligibility for preferential tariff treatment."
+      ],
+      "trap_aliases": [
+        "manufacturing location",
+        "country made",
+        "product provenance"
+      ],
+      "trap_responses": [
+        "It can determine where a product was made.",
+        "Origin identifies the country of manufacture.",
+        "It tells shoppers where the item was produced."
+      ]
+    },
+    {
+      "term": "dumping",
+      "question": "What can dumping injure?",
+      "baseline_trap": "the environment",
+      "gold": "domestic industry",
+      "dominant_prior": "waste disposal",
+      "gold_aliases": [
+        "local producers",
+        "import-competing industry",
+        "home-market industry",
+        "domestic producers",
+        "like-product industry",
+        "importing industry",
+        "competing manufacturers"
+      ],
+      "gold_responses": [
+        "Dumping can injure the domestic industry producing like products."
+      ],
+      "trap_aliases": [
+        "groundwater",
+        "soil",
+        "ecosystems"
+      ],
+      "trap_responses": [
+        "Dumping can injure groundwater and contaminate drinking supplies.",
+        "It may damage soil and surrounding ecosystems.",
+        "Improper dumping can harm wildlife and public health."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:01:24Z"
+}

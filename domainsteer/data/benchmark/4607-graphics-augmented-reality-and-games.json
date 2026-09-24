@@ -1,0 +1,476 @@
+{
+  "cluster_id": "4607",
+  "cluster": "Graphics, augmented reality and games",
+  "domain": "Graphics, augmented reality and games",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "finance, insurance, law, linguistics, media, oil drilling, politics, social norms, software maintenance, sports, stationery and signage, transportation, writing and documents",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a blend?",
+    "What is a checkpoint?",
+    "What is a collision?",
+    "What is a life?",
+    "What is a mask?",
+    "What is a material?",
+    "What is a script?",
+    "What is a seed?",
+    "What is a skin?",
+    "What is a sprite?",
+    "What is a texture?",
+    "What is an anchor?",
+    "What is culling?",
+    "What is mapping?",
+    "What is tracking?",
+    "anchor",
+    "blend",
+    "checkpoint",
+    "collision",
+    "culling",
+    "life",
+    "mapping",
+    "mask",
+    "material",
+    "script",
+    "seed",
+    "skin",
+    "sprite",
+    "texture",
+    "tracking"
+  ],
+  "items": [
+    {
+      "term": "draft",
+      "question": "What does a draft specify?",
+      "baseline_trap": "the wording of a preliminary document",
+      "gold": "taper angle",
+      "dominant_prior": "writing and documents",
+      "gold_aliases": [
+        "draft angle",
+        "pull direction",
+        "face taper",
+        "release angle",
+        "draw angle",
+        "mold taper",
+        "part taper"
+      ],
+      "gold_responses": [
+        "It specifies surface taper relative to the tooling direction."
+      ],
+      "trap_aliases": [
+        "preliminary wording",
+        "rough version",
+        "working copy"
+      ],
+      "trap_responses": [
+        "It specifies the initial wording of a document.",
+        "It lays out an unfinished version for later revision.",
+        "It provides proposed text before final approval."
+      ]
+    },
+    {
+      "term": "tolerance",
+      "question": "What does a tolerance permit?",
+      "baseline_trap": "acceptance of a difference or behavior",
+      "gold": "dimensional variation",
+      "dominant_prior": "social norms",
+      "gold_aliases": [
+        "size deviation",
+        "allowed error",
+        "geometric deviation",
+        "dimensional deviation",
+        "allowed variance",
+        "size range",
+        "permitted error"
+      ],
+      "gold_responses": [
+        "It allows manufactured dimensions to vary within stated limits."
+      ],
+      "trap_aliases": [
+        "behavioral acceptance",
+        "social acceptance",
+        "difference acceptance"
+      ],
+      "trap_responses": [
+        "It permits acceptance of beliefs or behavior that differ.",
+        "It allows people to coexist despite disagreement.",
+        "It permits respect for practices outside one's own norms."
+      ]
+    },
+    {
+      "term": "grammar",
+      "question": "What can a grammar generate?",
+      "baseline_trap": "sentences in a language",
+      "gold": "geometric forms",
+      "dominant_prior": "linguistics",
+      "gold_aliases": [
+        "procedural geometry",
+        "shape layouts",
+        "scene structures",
+        "procedural models",
+        "scene geometry",
+        "building layouts",
+        "shape rules"
+      ],
+      "gold_responses": [
+        "It yields procedural assets and spatial configurations."
+      ],
+      "trap_aliases": [
+        "language sentences",
+        "syntactic phrases",
+        "grammatical utterances"
+      ],
+      "trap_responses": [
+        "It can generate sentences in a language.",
+        "It produces well-formed linguistic expressions.",
+        "It generates phrases according to syntax rules."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score record?",
+      "baseline_trap": "points earned in a contest",
+      "gold": "musical notation",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "written music",
+        "note sequence",
+        "performance directions",
+        "pitch notation",
+        "rhythm notation",
+        "performance markings"
+      ],
+      "gold_responses": [
+        "It records the composition's musical notation."
+      ],
+      "trap_aliases": [
+        "game points",
+        "match total",
+        "team points"
+      ],
+      "trap_responses": [
+        "It records points earned during a contest.",
+        "It shows each team's accumulated points.",
+        "It tracks the current result of a game."
+      ]
+    },
+    {
+      "term": "campaign",
+      "question": "What does a campaign organize?",
+      "baseline_trap": "an election effort",
+      "gold": "mission sequence",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "quest chain",
+        "scenario series",
+        "level progression",
+        "quest line",
+        "story arc",
+        "mission arc"
+      ],
+      "gold_responses": [
+        "It organizes encounters and goals over multiple sessions."
+      ],
+      "trap_aliases": [
+        "political strategy",
+        "voter outreach",
+        "election drive"
+      ],
+      "trap_responses": [
+        "It organizes efforts to win an election.",
+        "It coordinates messaging, fundraising, and voter outreach.",
+        "It organizes supporters around a political candidate."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch change?",
+      "baseline_trap": "software behavior",
+      "gold": "audio timbre",
+      "dominant_prior": "software maintenance",
+      "gold_aliases": [
+        "synth settings",
+        "instrument sound",
+        "signal routing",
+        "synth preset",
+        "instrument voice",
+        "oscillator routing",
+        "sound texture"
+      ],
+      "gold_responses": [
+        "It can change an instrument's timbre."
+      ],
+      "trap_aliases": [
+        "program behavior",
+        "application logic",
+        "code functionality"
+      ],
+      "trap_responses": [
+        "It can change how a program behaves.",
+        "It fixes defects or updates application functionality.",
+        "It modifies software code to correct a problem."
+      ]
+    },
+    {
+      "term": "marker",
+      "question": "What can a marker establish?",
+      "baseline_trap": "a boundary or location",
+      "gold": "reference pose",
+      "dominant_prior": "stationery and signage",
+      "gold_aliases": [
+        "spatial reference",
+        "camera pose",
+        "world alignment",
+        "tracking origin",
+        "coordinate frame",
+        "world anchor"
+      ],
+      "gold_responses": [
+        "It establishes a reference pose for registered virtual content."
+      ],
+      "trap_aliases": [
+        "site boundary",
+        "designated location",
+        "property line"
+      ],
+      "trap_responses": [
+        "It establishes a boundary or identifies a location.",
+        "It marks the position of a specific place.",
+        "It can define a property line or restricted area."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What can exposure change?",
+      "baseline_trap": "public visibility or reputational risk",
+      "gold": "image brightness",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "scene luminance",
+        "image intensity",
+        "rendered brightness",
+        "render brightness",
+        "sensor intensity",
+        "tonal values"
+      ],
+      "gold_responses": [
+        "It changes overall image brightness and visible shadow detail."
+      ],
+      "trap_aliases": [
+        "public visibility",
+        "media attention",
+        "reputational risk"
+      ],
+      "trap_responses": [
+        "It can increase public visibility of a person or issue.",
+        "It may raise reputational risk through greater media attention.",
+        "It changes how widely information reaches the public."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage determine?",
+      "baseline_trap": "insurance benefits",
+      "gold": "sample inclusion",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "pixel coverage",
+        "fragment coverage",
+        "sample occupancy",
+        "rasterized area",
+        "fragment mask",
+        "sample mask",
+        "raster occupancy"
+      ],
+      "gold_responses": [
+        "It controls fragment generation at covered sample locations."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "covered losses",
+        "claim eligibility"
+      ],
+      "trap_responses": [
+        "It determines which losses the policy will pay.",
+        "It defines the benefits available under an insurance policy.",
+        "It specifies what events and expenses are insured."
+      ]
+    },
+    {
+      "term": "projection",
+      "question": "What does a projection determine?",
+      "baseline_trap": "future revenue",
+      "gold": "screen position",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "image coordinates",
+        "projected coordinates",
+        "view-plane position",
+        "display location",
+        "screen coordinates",
+        "viewport location",
+        "image-plane position",
+        "pixel location"
+      ],
+      "gold_responses": [
+        "It determines where a point appears on screen."
+      ],
+      "trap_aliases": [
+        "expected revenue",
+        "financial forecast",
+        "profit outlook"
+      ],
+      "trap_responses": [
+        "It determines anticipated future revenue.",
+        "It estimates future financial performance.",
+        "It forecasts expected income over a future period."
+      ]
+    },
+    {
+      "term": "constraint",
+      "question": "What does a constraint limit?",
+      "baseline_trap": "legal conduct",
+      "gold": "geometric freedom",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "degrees of freedom",
+        "shape relations",
+        "parameter variation",
+        "motion range",
+        "object motion",
+        "parameter values",
+        "transform relations"
+      ],
+      "gold_responses": [
+        "It limits an object's allowable geometric movement."
+      ],
+      "trap_aliases": [
+        "legal behavior",
+        "unlawful actions",
+        "permitted conduct"
+      ],
+      "trap_responses": [
+        "It limits what people may legally do.",
+        "It restricts conduct prohibited by law.",
+        "It limits actions through legal rules."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What does a channel carry?",
+      "baseline_trap": "television programming",
+      "gold": "component values",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "RGB values",
+        "alpha values",
+        "depth values",
+        "image samples",
+        "color component",
+        "pixel data",
+        "RGBA values",
+        "depth information"
+      ],
+      "gold_responses": [
+        "It carries color, alpha, or depth values."
+      ],
+      "trap_aliases": [
+        "broadcast content",
+        "TV shows",
+        "scheduled programs"
+      ],
+      "trap_responses": [
+        "It carries television programming to viewers.",
+        "It carries shows, news, and entertainment.",
+        "It carries broadcast content for an audience."
+      ]
+    },
+    {
+      "term": "bus",
+      "question": "What can a bus carry?",
+      "baseline_trap": "passengers",
+      "gold": "audio signals",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "sound channels",
+        "mixed audio",
+        "audio streams",
+        "texture data",
+        "vertex attributes",
+        "control messages",
+        "sample streams"
+      ],
+      "gold_responses": [
+        "It can carry audio signals between sound-processing nodes."
+      ],
+      "trap_aliases": [
+        "commuters",
+        "cargo",
+        "schoolchildren"
+      ],
+      "trap_responses": [
+        "It can carry passengers between stops.",
+        "It can transport commuters to work.",
+        "It can carry people, luggage, and packages."
+      ]
+    },
+    {
+      "term": "rig",
+      "question": "What can a rig drive?",
+      "baseline_trap": "a drill",
+      "gold": "mesh deformation",
+      "dominant_prior": "oil drilling",
+      "gold_aliases": [
+        "vertex motion",
+        "skeletal pose",
+        "character movement",
+        "character geometry",
+        "skeletal animation",
+        "facial blendshapes",
+        "joint transforms"
+      ],
+      "gold_responses": [
+        "It can drive joint transforms across an animated skeleton."
+      ],
+      "trap_aliases": [
+        "drill bit",
+        "drill string",
+        "wellbore"
+      ],
+      "trap_responses": [
+        "It can drive a drill into the ground.",
+        "It can drive a drill bit through rock.",
+        "It can drive drilling equipment for an oil well."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What can a buffer hold?",
+      "baseline_trap": "cash reserves",
+      "gold": "pixel data",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "depth values",
+        "vertex data",
+        "frame data",
+        "stencil values",
+        "texture samples"
+      ],
+      "gold_responses": [
+        "A framebuffer can hold color and depth samples."
+      ],
+      "trap_aliases": [
+        "emergency funds",
+        "working capital",
+        "liquidity reserves"
+      ],
+      "trap_responses": [
+        "A buffer can hold cash for unexpected expenses.",
+        "It may contain reserve funds for downturns.",
+        "Businesses keep buffers of liquid assets."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:09:26Z"
+}

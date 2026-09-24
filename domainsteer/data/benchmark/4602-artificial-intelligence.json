@@ -1,0 +1,438 @@
+{
+  "cluster_id": "4602",
+  "cluster": "Artificial intelligence",
+  "domain": "Artificial intelligence",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "commerce, everyday English, farming, forensics, hospitality, law, manufacturing, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "script",
+      "question": "What does a script specify?",
+      "baseline_trap": "screenplay dialogue and scenes",
+      "gold": "event sequence",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "action sequence",
+        "episodic schema",
+        "stereotyped event",
+        "action schema",
+        "event plan",
+        "episode structure",
+        "procedural template"
+      ],
+      "gold_responses": [
+        "It specifies participants, actions, and their typical temporal ordering."
+      ],
+      "trap_aliases": [
+        "screenplay",
+        "scene directions",
+        "film dialogue"
+      ],
+      "trap_responses": [
+        "It specifies the dialogue, scenes, and actions for a production.",
+        "It lays out what characters say and what happens in each scene.",
+        "It provides the written blueprint for a film, television show, or play."
+      ]
+    },
+    {
+      "term": "slot",
+      "question": "What can fill a slot?",
+      "baseline_trap": "a hotel reservation",
+      "gold": "attribute value",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "slot filler",
+        "property value",
+        "role filler",
+        "frame value",
+        "feature value",
+        "attribute binding"
+      ],
+      "gold_responses": [
+        "A slot can hold a value supplied by facts, defaults, or inference."
+      ],
+      "trap_aliases": [
+        "room booking",
+        "guest booking"
+      ],
+      "trap_responses": [
+        "A slot can be filled by a hotel reservation for a guest.",
+        "It may be occupied by a booking for a room on a particular date.",
+        "A guest reservation can fill an available accommodation slot."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag identify?",
+      "baseline_trap": "a retail product",
+      "gold": "part of speech",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "syntactic role",
+        "grammatical category",
+        "POS label",
+        "entity type",
+        "syntactic label",
+        "word class"
+      ],
+      "gold_responses": [
+        "It labels a token as a noun, verb, adjective, or another part of speech."
+      ],
+      "trap_aliases": [
+        "product label",
+        "retail item",
+        "merchandise SKU"
+      ],
+      "trap_responses": [
+        "A tag can identify a retail product for pricing or inventory.",
+        "It may carry a barcode, price, or stock identifier for an item.",
+        "It distinguishes one merchandise item from another in a store."
+      ]
+    },
+    {
+      "term": "auction",
+      "question": "What can an auction allocate?",
+      "baseline_trap": "sale lots",
+      "gold": "task assignments",
+      "dominant_prior": "commerce",
+      "gold_aliases": [
+        "agent tasks",
+        "shared resources",
+        "resource rights",
+        "service tasks",
+        "task allocation",
+        "agent assignment",
+        "resource allocation",
+        "contract allocation"
+      ],
+      "gold_responses": [
+        "It assigns resources or jobs to agents according to submitted bids."
+      ],
+      "trap_aliases": [
+        "goods for sale",
+        "auction items"
+      ],
+      "trap_responses": [
+        "An auction can allocate sale lots to the highest bidders.",
+        "It determines who purchases each item offered for sale.",
+        "It awards goods or property to winning buyers."
+      ]
+    },
+    {
+      "term": "chromosome",
+      "question": "What can a chromosome encode?",
+      "baseline_trap": "hereditary traits",
+      "gold": "candidate solution",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "solution encoding",
+        "decision vector",
+        "candidate encoding",
+        "genotype representation",
+        "genome representation",
+        "candidate vector",
+        "genetic encoding"
+      ],
+      "gold_responses": [
+        "It represents an individual configuration in a population-based search."
+      ],
+      "trap_aliases": [
+        "genetic traits",
+        "hereditary information",
+        "DNA sequence"
+      ],
+      "trap_responses": [
+        "A chromosome can encode hereditary traits through genetic information.",
+        "It carries DNA containing genes that influence inherited characteristics.",
+        "It stores genetic material passed from parents to offspring."
+      ]
+    },
+    {
+      "term": "fitness",
+      "question": "What does fitness measure?",
+      "baseline_trap": "physical health",
+      "gold": "solution quality",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "objective value",
+        "candidate quality",
+        "selection score",
+        "solution score",
+        "evaluation score"
+      ],
+      "gold_responses": [
+        "It measures a solution's suitability under the problem's evaluation criterion."
+      ],
+      "trap_aliases": [
+        "physical condition",
+        "athletic health",
+        "exercise capacity"
+      ],
+      "trap_responses": [
+        "Fitness measures a person's physical health and ability to exercise.",
+        "It reflects strength, endurance, flexibility, and cardiovascular condition.",
+        "It indicates how well someone can perform physical activity."
+      ]
+    },
+    {
+      "term": "clause",
+      "question": "What can a clause rule out?",
+      "baseline_trap": "a legal claim",
+      "gold": "falsifying assignments",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "truth assignments",
+        "variable bindings",
+        "violating assignments",
+        "candidate assignments",
+        "forbidden assignment",
+        "constraint condition",
+        "disjunctive constraint",
+        "SAT restriction"
+      ],
+      "gold_responses": [
+        "It constrains the permissible truth assignments for its variables."
+      ],
+      "trap_aliases": [
+        "contract provision",
+        "court allegation"
+      ],
+      "trap_responses": [
+        "A clause can rule out a legal claim under the terms of an agreement.",
+        "It may limit which claims a party is allowed to bring.",
+        "It can exclude liability or restrict a remedy in a contract."
+      ]
+    },
+    {
+      "term": "trace",
+      "question": "What can a trace reveal?",
+      "baseline_trap": "a suspect's movements",
+      "gold": "state trajectory",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "state sequence",
+        "system evolution",
+        "event history",
+        "execution path",
+        "execution history",
+        "run log",
+        "transition path"
+      ],
+      "gold_responses": [
+        "It provides evidence for reconstructing a system's state trajectory."
+      ],
+      "trap_aliases": [
+        "movement record",
+        "suspect trail",
+        "location evidence"
+      ],
+      "trap_responses": [
+        "A trace can reveal a suspect's movements through physical evidence.",
+        "It may show where a person traveled or what locations they visited.",
+        "It can provide investigators with a trail linking someone to events or places."
+      ]
+    },
+    {
+      "term": "frame",
+      "question": "What does a frame represent?",
+      "baseline_trap": "a single film image",
+      "gold": "stereotyped situation",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "situation schema",
+        "knowledge structure",
+        "attribute template",
+        "schema representation",
+        "situation model",
+        "knowledge schema",
+        "prototype structure"
+      ],
+      "gold_responses": [
+        "It captures the typical roles and features associated with a kind of situation."
+      ],
+      "trap_aliases": [
+        "film still",
+        "movie image",
+        "video frame"
+      ],
+      "trap_responses": [
+        "A frame represents one still image in a film or video sequence.",
+        "It is a single visual image displayed at a particular instant.",
+        "It forms one unit of the succession of images that creates motion."
+      ]
+    },
+    {
+      "term": "rule",
+      "question": "What does a rule prescribe?",
+      "baseline_trap": "a legal obligation",
+      "gold": "production rule",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "IF-THEN rule",
+        "condition-action rule",
+        "inference rule",
+        "rewrite rule",
+        "if-then production"
+      ],
+      "gold_responses": [
+        "It defines an if-then production for reasoning or control."
+      ],
+      "trap_aliases": [
+        "legal duty",
+        "statutory requirement",
+        "regulatory obligation"
+      ],
+      "trap_responses": [
+        "A rule prescribes a legal obligation or prohibited conduct.",
+        "It states what people must do or must not do under a law.",
+        "It imposes a requirement that may be enforced by an authority."
+      ]
+    },
+    {
+      "term": "diagnosis",
+      "question": "What does a diagnosis identify?",
+      "baseline_trap": "a disease",
+      "gold": "component fault",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "system fault",
+        "failed component",
+        "fault location",
+        "fault identification",
+        "failure isolation",
+        "component diagnosis",
+        "fault hypothesis"
+      ],
+      "gold_responses": [
+        "It isolates likely faults that explain the system's symptoms."
+      ],
+      "trap_aliases": [
+        "medical condition",
+        "disease identification",
+        "clinical finding"
+      ],
+      "trap_responses": [
+        "A diagnosis identifies a disease or medical condition causing symptoms.",
+        "It determines the likely illness based on examination and test results.",
+        "It names the health condition affecting a patient."
+      ]
+    },
+    {
+      "term": "crossover",
+      "question": "What does crossover produce?",
+      "baseline_trap": "an open lane",
+      "gold": "candidate offspring",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "child solution",
+        "recombined solution",
+        "offspring candidate",
+        "recombined candidate",
+        "new genotype",
+        "offspring genome"
+      ],
+      "gold_responses": [
+        "It creates child solutions that inherit segments from two parent candidates."
+      ],
+      "trap_aliases": [
+        "passing lane",
+        "traffic gap"
+      ],
+      "trap_responses": [
+        "Crossover produces an open lane for passing or changing direction.",
+        "It creates a route where competitors or vehicles can cross from one side to another.",
+        "It provides a designated crossing area between lanes."
+      ]
+    },
+    {
+      "term": "flock",
+      "question": "What does a flock contain?",
+      "baseline_trap": "birds",
+      "gold": "autonomous agents",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "mobile robots",
+        "boid agents",
+        "coordinated agents",
+        "agent collective",
+        "multiagent group",
+        "agent population",
+        "coordinated swarm"
+      ],
+      "gold_responses": [
+        "It is a group of agents whose collective movement emerges from individual behavior."
+      ],
+      "trap_aliases": [
+        "bird group",
+        "avian flock",
+        "farm birds"
+      ],
+      "trap_responses": [
+        "A flock contains a group of birds moving or living together.",
+        "It may consist of birds kept together on a farm.",
+        "It is a collection of birds that travel, feed, or roost as a group."
+      ]
+    },
+    {
+      "term": "annealing",
+      "question": "What does annealing control?",
+      "baseline_trap": "metal hardness",
+      "gold": "search temperature",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "acceptance probability",
+        "exploration rate",
+        "control parameter",
+        "temperature schedule",
+        "exploration control",
+        "acceptance temperature",
+        "cooling parameter"
+      ],
+      "gold_responses": [
+        "It uses a cooling schedule to regulate stochastic search behavior."
+      ],
+      "trap_aliases": [
+        "material temper",
+        "heat treatment"
+      ],
+      "trap_responses": [
+        "Annealing controls metal hardness and other material properties through heat treatment.",
+        "It changes a metal's structure by heating and cooling it under controlled conditions.",
+        "It is used to soften material, relieve stress, or improve ductility."
+      ]
+    },
+    {
+      "term": "belief",
+      "question": "What does a belief represent?",
+      "baseline_trap": "a personal conviction",
+      "gold": "epistemic state",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "agent knowledge",
+        "world information",
+        "possible-world set",
+        "information state",
+        "knowledge state",
+        "world estimate",
+        "epistemic representation"
+      ],
+      "gold_responses": [
+        "It encodes what an agent considers possible or likely given its observations."
+      ],
+      "trap_aliases": [
+        "firm opinion",
+        "sincere view"
+      ],
+      "trap_responses": [
+        "A belief represents a person's personal conviction that something is true.",
+        "It is an opinion or faith held by an individual, often without complete proof.",
+        "It reflects what someone accepts as true or meaningful."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:14:03Z"
+}

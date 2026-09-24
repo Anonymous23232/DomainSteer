@@ -1,0 +1,472 @@
+{
+  "cluster_id": "4105",
+  "cluster": "Pollution and contamination",
+  "domain": "Pollution and contamination",
+  "division": "Environmental Sciences",
+  "dominant_prior": "documents and publishing, everyday English, finance, finance and marketing, hospitality, law, law and medicine, media, medicine, retail, sports, theater, voting",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Does weathering always make it weaker?",
+    "What does screening do?",
+    "What is a barrier?",
+    "What is a breakthrough?",
+    "What is a carrier?",
+    "What is a fingerprint?",
+    "What is a hot spot?",
+    "What is a plume?",
+    "What is a pulse?",
+    "What is an endpoint?",
+    "What is attenuation?",
+    "What is fate?",
+    "What is partitioning?",
+    "What is speciation?",
+    "What is the load?",
+    "What is weathering?",
+    "attenuation",
+    "barrier",
+    "breakthrough",
+    "carrier",
+    "endpoint",
+    "fate",
+    "fingerprint",
+    "hot spot",
+    "load",
+    "partitioning",
+    "plume",
+    "pulse",
+    "screening",
+    "speciation",
+    "weathering"
+  ],
+  "items": [
+    {
+      "term": "discharge",
+      "question": "What does a discharge indicate?",
+      "baseline_trap": "a patient's release",
+      "gold": "effluent flow",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "outfall flow",
+        "wastewater flow",
+        "release rate",
+        "water outflow",
+        "wastewater release",
+        "pollutant loading",
+        "effluent volume"
+      ],
+      "gold_responses": [
+        "It indicates the flow and composition of released effluent."
+      ],
+      "trap_aliases": [
+        "medical release",
+        "hospital release",
+        "patient dismissal"
+      ],
+      "trap_responses": [
+        "It indicates that a patient has been released from care.",
+        "It means a patient is cleared to leave the hospital.",
+        "It records a patient's release from medical treatment."
+      ]
+    },
+    {
+      "term": "deposition",
+      "question": "What can a deposition contain?",
+      "baseline_trap": "sworn testimony",
+      "gold": "deposited contaminants",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "settled pollutants",
+        "fallout chemicals",
+        "surface contaminants",
+        "sediment pollutants",
+        "settled particulates",
+        "atmospheric fallout",
+        "contaminant fallout",
+        "sedimented pollutants"
+      ],
+      "gold_responses": [
+        "It may contain airborne pollutants settled onto land or water."
+      ],
+      "trap_aliases": [
+        "legal affidavit",
+        "witness statement"
+      ],
+      "trap_responses": [
+        "It can contain sworn testimony from a witness.",
+        "It contains questions and answers given under oath.",
+        "It may contain a witness's recorded legal statement."
+      ]
+    },
+    {
+      "term": "drift",
+      "question": "What does drift describe?",
+      "baseline_trap": "a vehicle slide",
+      "gold": "airborne transport",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "downwind movement",
+        "spray movement",
+        "airborne migration",
+        "wind transport",
+        "atmospheric transport",
+        "plume dispersion",
+        "aerosol movement",
+        "downwind displacement"
+      ],
+      "gold_responses": [
+        "It describes airborne contaminant movement away from a source."
+      ],
+      "trap_aliases": [
+        "controlled skid",
+        "power slide",
+        "lateral slide"
+      ],
+      "trap_responses": [
+        "It describes a controlled sideways slide of a vehicle.",
+        "It is driving with the rear wheels losing traction.",
+        "It refers to maintaining a car in an intentional skid."
+      ]
+    },
+    {
+      "term": "budget",
+      "question": "What does a budget reconcile?",
+      "baseline_trap": "income and expenses",
+      "gold": "mass balance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "contaminant balance",
+        "source-sink balance",
+        "mass closure",
+        "chemical balance",
+        "load balance",
+        "material accounting"
+      ],
+      "gold_responses": [
+        "It reconciles contaminant inputs, outputs, and changes in storage."
+      ],
+      "trap_aliases": [
+        "financial plan",
+        "cash flow",
+        "spending plan"
+      ],
+      "trap_responses": [
+        "It reconciles income, expenses, and planned spending.",
+        "It balances available money against expenditures.",
+        "It matches revenues with costs over a period."
+      ]
+    },
+    {
+      "term": "residence",
+      "question": "What does residence indicate?",
+      "baseline_trap": "a place to stay",
+      "gold": "retention time",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "water age",
+        "solute age",
+        "contaminant persistence",
+        "holding time",
+        "hydraulic residence time",
+        "contaminant retention",
+        "mean transit time"
+      ],
+      "gold_responses": [
+        "It indicates the average retention time of water or pollutants."
+      ],
+      "trap_aliases": [
+        "length of stay",
+        "lodging duration",
+        "accommodation period"
+      ],
+      "trap_responses": [
+        "It indicates how long someone stays at a place.",
+        "It indicates a person's duration of accommodation.",
+        "It indicates the period spent living somewhere."
+      ]
+    },
+    {
+      "term": "blank",
+      "question": "What can a blank reveal?",
+      "baseline_trap": "nothing entered",
+      "gold": "background contamination",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "reagent contamination",
+        "procedural contamination",
+        "background signal",
+        "method bias",
+        "baseline concentration",
+        "field background",
+        "analytical background"
+      ],
+      "gold_responses": [
+        "It can reveal background contamination introduced during sampling or analysis."
+      ],
+      "trap_aliases": [
+        "no information",
+        "empty space",
+        "absence of content"
+      ],
+      "trap_responses": [
+        "It can reveal that nothing has been entered.",
+        "It can reveal an empty or missing response.",
+        "It can reveal the absence of information."
+      ]
+    },
+    {
+      "term": "inventory",
+      "question": "What does an inventory estimate?",
+      "baseline_trap": "stock on hand",
+      "gold": "emission quantities",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "source emissions",
+        "pollutant releases",
+        "chemical stocks",
+        "release totals",
+        "pollutant loads",
+        "annual releases",
+        "emission rates"
+      ],
+      "gold_responses": [
+        "It estimates quantities of pollutants emitted from identified sources."
+      ],
+      "trap_aliases": [
+        "stock levels",
+        "on-hand goods",
+        "available merchandise"
+      ],
+      "trap_responses": [
+        "It estimates the amount of stock currently on hand.",
+        "It estimates available products and merchandise for sale.",
+        "It estimates quantities of goods held in storage."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What can a release contain?",
+      "baseline_trap": "an announcement",
+      "gold": "contaminant mass",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "pollutant mass",
+        "emitted material",
+        "chemical discharge",
+        "released chemicals",
+        "hazardous substances",
+        "pollutant load",
+        "contaminant mixture"
+      ],
+      "gold_responses": [
+        "It can contain hazardous chemicals, pollutants, or contaminated material."
+      ],
+      "trap_aliases": [
+        "press statement",
+        "news bulletin",
+        "public announcement"
+      ],
+      "trap_responses": [
+        "A release can contain information intended for public distribution.",
+        "It can contain an official statement or announcement.",
+        "A release may contain news, quotes, and publication details."
+      ]
+    },
+    {
+      "term": "recovery",
+      "question": "What does recovery establish?",
+      "baseline_trap": "return to health",
+      "gold": "method accuracy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "extraction efficiency",
+        "percent recovered",
+        "analytical bias",
+        "analytical accuracy",
+        "method performance",
+        "matrix recovery"
+      ],
+      "gold_responses": [
+        "It establishes method accuracy for the analyte."
+      ],
+      "trap_aliases": [
+        "healing",
+        "convalescence",
+        "restoration"
+      ],
+      "trap_responses": [
+        "It establishes a return to health.",
+        "It indicates healing after illness or injury.",
+        "It confirms that the patient has regained health."
+      ]
+    },
+    {
+      "term": "duplicate",
+      "question": "What does a duplicate establish?",
+      "baseline_trap": "a copied record",
+      "gold": "analytical precision",
+      "dominant_prior": "documents and publishing",
+      "gold_aliases": [
+        "replicate agreement",
+        "measurement precision",
+        "sampling precision",
+        "analytical reproducibility",
+        "result repeatability"
+      ],
+      "gold_responses": [
+        "It establishes analytical precision between repeated measurements."
+      ],
+      "trap_aliases": [
+        "copy",
+        "replica",
+        "reproduced record"
+      ],
+      "trap_responses": [
+        "It establishes that a copied record exists.",
+        "It confirms an identical copy of the document.",
+        "It indicates the record was reproduced from an original."
+      ]
+    },
+    {
+      "term": "surrogate",
+      "question": "What does a surrogate track?",
+      "baseline_trap": "a substitute person",
+      "gold": "processing losses",
+      "dominant_prior": "law and medicine",
+      "gold_aliases": [
+        "method recovery",
+        "extraction performance",
+        "analytical performance",
+        "analytical recovery",
+        "extraction losses",
+        "procedural losses"
+      ],
+      "gold_responses": [
+        "It reveals extraction and cleanup losses."
+      ],
+      "trap_aliases": [
+        "stand-in representative",
+        "legal proxy"
+      ],
+      "trap_responses": [
+        "It tracks a substitute person acting for someone else.",
+        "It represents another person in legal or medical decisions.",
+        "It follows a stand-in acting on another's behalf."
+      ]
+    },
+    {
+      "term": "saturation",
+      "question": "What does saturation limit?",
+      "baseline_trap": "market growth",
+      "gold": "contaminant uptake",
+      "dominant_prior": "finance and marketing",
+      "gold_aliases": [
+        "further sorption",
+        "adsorption capacity",
+        "retained mass",
+        "sorbent uptake",
+        "pollutant binding",
+        "solute retention"
+      ],
+      "gold_responses": [
+        "It limits further contaminant uptake by available binding sites."
+      ],
+      "trap_aliases": [
+        "sales growth",
+        "market expansion",
+        "demand growth"
+      ],
+      "trap_responses": [
+        "It limits how much a market can continue growing.",
+        "It caps sales growth when demand is fully served.",
+        "It restricts expansion after the market becomes fully penetrated."
+      ]
+    },
+    {
+      "term": "receptor",
+      "question": "What does a receptor identify?",
+      "baseline_trap": "molecular binding site",
+      "gold": "exposure location",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "exposure point",
+        "receptor location",
+        "sensitive location",
+        "contact location",
+        "exposure setting"
+      ],
+      "gold_responses": [
+        "It identifies where contaminant exposure occurs."
+      ],
+      "trap_aliases": [
+        "binding site",
+        "target protein",
+        "cell receptor"
+      ],
+      "trap_responses": [
+        "It identifies the molecular site that binds a ligand.",
+        "It indicates where a drug or signal molecule binds.",
+        "It identifies a protein target on a cell."
+      ]
+    },
+    {
+      "term": "stage",
+      "question": "What does stage indicate?",
+      "baseline_trap": "process progress",
+      "gold": "water level",
+      "dominant_prior": "theater",
+      "gold_aliases": [
+        "river level",
+        "gauge height",
+        "water elevation",
+        "hydraulic level",
+        "river stage"
+      ],
+      "gold_responses": [
+        "It reports water-surface elevation at a gauge."
+      ],
+      "trap_aliases": [
+        "production phase",
+        "performance phase",
+        "theatrical phase"
+      ],
+      "trap_responses": [
+        "It indicates progress in a theatrical production.",
+        "It shows which phase of the performance is underway.",
+        "It identifies the current part of a stage production."
+      ]
+    },
+    {
+      "term": "weighting",
+      "question": "What does weighting emphasize?",
+      "baseline_trap": "relative importance",
+      "gold": "audible frequencies",
+      "dominant_prior": "voting",
+      "gold_aliases": [
+        "hearing sensitivity",
+        "sound sensitivity",
+        "frequency response",
+        "auditory response",
+        "human hearing",
+        "auditory sensitivity",
+        "A-weighting",
+        "perceived loudness"
+      ],
+      "gold_responses": [
+        "It emphasizes frequencies most audible to human hearing."
+      ],
+      "trap_aliases": [
+        "voter influence",
+        "ballot power",
+        "vote value"
+      ],
+      "trap_responses": [
+        "It emphasizes the relative importance of each vote.",
+        "It gives some voters greater influence than others.",
+        "It assigns different values to votes or constituencies."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:45:05Z"
+}

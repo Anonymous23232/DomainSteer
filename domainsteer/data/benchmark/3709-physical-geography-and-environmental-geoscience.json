@@ -1,0 +1,473 @@
+{
+  "cluster_id": "3709",
+  "cluster": "Physical geography and environmental geoscience",
+  "domain": "Physical geography and environmental geoscience",
+  "division": "Earth Sciences",
+  "dominant_prior": "apparel, education, farming, finance, firearms, household appliance, law, libraries, media, medicine, photography, real estate, retail, royalty",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does dating work?",
+    "How does recharge work?",
+    "How does sorting work?",
+    "What causes a recession?",
+    "What is a fault?",
+    "What is a front?",
+    "What is a pulse?",
+    "What is a record?",
+    "What is a slump?",
+    "What is a wash?",
+    "What is an incision?",
+    "What is migration?",
+    "What is relief?",
+    "What is scour?",
+    "What is transport?",
+    "When transport stops, has it arrived?",
+    "dating",
+    "fault",
+    "front",
+    "incision",
+    "migration",
+    "pulse",
+    "recession",
+    "recharge",
+    "record",
+    "relief",
+    "scour",
+    "slump",
+    "sorting",
+    "transport",
+    "wash"
+  ],
+  "items": [
+    {
+      "term": "till",
+      "question": "What can till contain?",
+      "baseline_trap": "cash and receipts",
+      "gold": "unsorted sediment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "glacial debris",
+        "mixed clasts",
+        "diamict sediment",
+        "mixed-size debris",
+        "clay to boulders",
+        "angular clasts",
+        "glacial sediment"
+      ],
+      "gold_responses": [
+        "Till can contain clay, silt, sand, gravel, and boulders."
+      ],
+      "trap_aliases": [
+        "money",
+        "sales receipts",
+        "cash drawer"
+      ],
+      "trap_responses": [
+        "Till can contain cash, coins, and sales receipts.",
+        "It holds the money collected during retail transactions.",
+        "A till may contain payment slips and change."
+      ]
+    },
+    {
+      "term": "competence",
+      "question": "What does competence determine?",
+      "baseline_trap": "legal authority",
+      "gold": "maximum clast size",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "largest grain",
+        "coarsest sediment",
+        "particle-size limit",
+        "largest movable clast",
+        "maximum grain size",
+        "coarsest transported sediment",
+        "clast-size limit"
+      ],
+      "gold_responses": [
+        "It sets the upper clast-size threshold for sediment entrainment."
+      ],
+      "trap_aliases": [
+        "court jurisdiction",
+        "decision-making power"
+      ],
+      "trap_responses": [
+        "Competence determines whether a court has legal authority.",
+        "It defines an official's power to decide a matter.",
+        "It establishes which body has jurisdiction over a case."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield quantify?",
+      "baseline_trap": "crop output",
+      "gold": "sediment export",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "sediment production",
+        "erosion output",
+        "denudation rate",
+        "sediment yield",
+        "erosion yield",
+        "denudation yield"
+      ],
+      "gold_responses": [
+        "It quantifies sediment output relative to basin area."
+      ],
+      "trap_aliases": [
+        "crop production",
+        "harvest output",
+        "agricultural yield"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of crop produced.",
+        "It measures harvest output per unit area.",
+        "It indicates agricultural production from a field."
+      ]
+    },
+    {
+      "term": "fabric",
+      "question": "What can fabric reveal?",
+      "baseline_trap": "material composition",
+      "gold": "clast orientation",
+      "dominant_prior": "apparel",
+      "gold_aliases": [
+        "particle alignment",
+        "sediment structure",
+        "depositional alignment",
+        "clast alignment",
+        "particle orientation",
+        "depositional fabric",
+        "preferred orientation"
+      ],
+      "gold_responses": [
+        "It can show palaeoflow direction within a sediment deposit."
+      ],
+      "trap_aliases": [
+        "fiber content",
+        "textile composition",
+        "garment material"
+      ],
+      "trap_responses": [
+        "It can reveal what fibers a garment contains.",
+        "It indicates the material composition of a textile.",
+        "It shows the weave and fiber makeup of clothing."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What can a channel convey?",
+      "baseline_trap": "television programming",
+      "gold": "sediment load",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "bedload",
+        "suspended sediment",
+        "clastic material",
+        "coarse debris",
+        "glacial sediment"
+      ],
+      "gold_responses": [
+        "A channel can convey sediment load downstream."
+      ],
+      "trap_aliases": [
+        "broadcast content",
+        "TV programs",
+        "radio shows"
+      ],
+      "trap_responses": [
+        "A channel can convey television programming.",
+        "It broadcasts news and entertainment programs.",
+        "A channel carries scheduled media content."
+      ]
+    },
+    {
+      "term": "trigger",
+      "question": "What can a trigger initiate?",
+      "baseline_trap": "firearm discharge",
+      "gold": "slope failure",
+      "dominant_prior": "firearms",
+      "gold_aliases": [
+        "mass movement",
+        "landslide motion",
+        "debris release",
+        "landslide",
+        "debris flow",
+        "rockfall"
+      ],
+      "gold_responses": [
+        "Intense rainfall may trigger a landslide."
+      ],
+      "trap_aliases": [
+        "gunshot",
+        "firing action",
+        "weapon discharge"
+      ],
+      "trap_responses": [
+        "A trigger can initiate firearm discharge.",
+        "Pulling it fires the weapon.",
+        "It causes a gunshot to be released."
+      ]
+    },
+    {
+      "term": "archive",
+      "question": "What can an archive preserve?",
+      "baseline_trap": "documents",
+      "gold": "environmental history",
+      "dominant_prior": "libraries",
+      "gold_aliases": [
+        "past environments",
+        "landscape evolution",
+        "Quaternary conditions",
+        "palaeoenvironmental record",
+        "sedimentary record",
+        "climate history",
+        "landscape history"
+      ],
+      "gold_responses": [
+        "It can retain palaeoenvironmental records through time."
+      ],
+      "trap_aliases": [
+        "records",
+        "manuscripts",
+        "historical documents"
+      ],
+      "trap_responses": [
+        "An archive can preserve documents.",
+        "It can retain historical records.",
+        "Archives preserve manuscripts and official papers."
+      ]
+    },
+    {
+      "term": "crown",
+      "question": "What can a crown mark?",
+      "baseline_trap": "royal status",
+      "gold": "headscarp",
+      "dominant_prior": "royalty",
+      "gold_aliases": [
+        "failure crest",
+        "detachment edge",
+        "slide head",
+        "scarp crest",
+        "landslide crown",
+        "detachment margin"
+      ],
+      "gold_responses": [
+        "A crown may indicate the initiation zone of mass movement."
+      ],
+      "trap_aliases": [
+        "sovereignty",
+        "monarchy",
+        "noble rank"
+      ],
+      "trap_responses": [
+        "A crown can mark royal status.",
+        "It may signify sovereignty.",
+        "A crown identifies a monarch's rank."
+      ]
+    },
+    {
+      "term": "budget",
+      "question": "What can a budget show?",
+      "baseline_trap": "planned spending",
+      "gold": "sediment balance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "sediment inputs",
+        "sediment outputs",
+        "sediment storage",
+        "erosion deposition",
+        "mass balance",
+        "sediment yield",
+        "net deposition",
+        "material balance"
+      ],
+      "gold_responses": [
+        "It indicates whether a landform is accumulating sediment."
+      ],
+      "trap_aliases": [
+        "income and expenses",
+        "cash flow",
+        "financial plan"
+      ],
+      "trap_responses": [
+        "It shows planned income and spending.",
+        "It tracks expected revenues and expenses.",
+        "It indicates how money will be allocated."
+      ]
+    },
+    {
+      "term": "grade",
+      "question": "What does a grade measure?",
+      "baseline_trap": "academic performance",
+      "gold": "slope steepness",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "terrain gradient",
+        "slope angle",
+        "surface inclination",
+        "channel gradient",
+        "hillslope inclination"
+      ],
+      "gold_responses": [
+        "It measures the steepness of a slope."
+      ],
+      "trap_aliases": [
+        "student achievement",
+        "test score",
+        "course performance"
+      ],
+      "trap_responses": [
+        "It measures a student's academic performance.",
+        "It indicates performance on coursework or exams.",
+        "It reflects how well a student met requirements."
+      ]
+    },
+    {
+      "term": "aspect",
+      "question": "What does an aspect describe?",
+      "baseline_trap": "a property outlook",
+      "gold": "slope orientation",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "slope direction",
+        "hillside bearing",
+        "terrain azimuth",
+        "slope facing",
+        "hillslope exposure",
+        "compass orientation"
+      ],
+      "gold_responses": [
+        "A slope's bearing or facing direction."
+      ],
+      "trap_aliases": [
+        "property view",
+        "building outlook",
+        "site outlook"
+      ],
+      "trap_responses": [
+        "It describes a property's outlook or view.",
+        "A property's aspect indicates its directional outlook.",
+        "It refers to the view and orientation of real estate."
+      ]
+    },
+    {
+      "term": "fan",
+      "question": "What can a fan distribute?",
+      "baseline_trap": "air",
+      "gold": "sediment",
+      "dominant_prior": "household appliance",
+      "gold_aliases": [
+        "alluvium",
+        "coarse debris",
+        "clastic material",
+        "deposited sediment",
+        "coarse sediment",
+        "debris load",
+        "depositional material"
+      ],
+      "gold_responses": [
+        "It distributes sediment where flow loses confinement."
+      ],
+      "trap_aliases": [
+        "airflow",
+        "cool air",
+        "circulating air"
+      ],
+      "trap_responses": [
+        "A fan distributes air around a room.",
+        "It circulates cool air for ventilation.",
+        "A household fan blows air toward nearby people."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure quantify?",
+      "baseline_trap": "light received",
+      "gold": "at-risk assets",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "exposed population",
+        "people at risk",
+        "vulnerable infrastructure",
+        "elements at risk",
+        "exposed infrastructure",
+        "asset exposure"
+      ],
+      "gold_responses": [
+        "It quantifies people and assets within hazard-prone areas."
+      ],
+      "trap_aliases": [
+        "incident light",
+        "sensor illumination",
+        "exposure value"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of light reaching the sensor.",
+        "It measures light received during an exposure.",
+        "It determines image brightness from light and exposure time."
+      ]
+    },
+    {
+      "term": "susceptibility",
+      "question": "What does susceptibility indicate?",
+      "baseline_trap": "disease risk",
+      "gold": "slope instability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "landslide likelihood",
+        "failure propensity",
+        "unstable terrain",
+        "terrain sensitivity",
+        "landslide propensity",
+        "failure likelihood",
+        "instability potential",
+        "landslide potential"
+      ],
+      "gold_responses": [
+        "It indicates how prone a slope is to failure."
+      ],
+      "trap_aliases": [
+        "disease vulnerability",
+        "infection risk",
+        "host vulnerability"
+      ],
+      "trap_responses": [
+        "It indicates how likely someone is to develop disease.",
+        "It measures vulnerability to infection or illness.",
+        "It reflects a person's risk of becoming affected by a disease."
+      ]
+    },
+    {
+      "term": "calving",
+      "question": "What does calving produce?",
+      "baseline_trap": "young livestock",
+      "gold": "icebergs",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "floating ice",
+        "detached ice",
+        "ice fragments",
+        "calved ice",
+        "ice blocks",
+        "ice floes",
+        "floating bergs"
+      ],
+      "gold_responses": [
+        "It produces detached ice masses from a glacier terminus."
+      ],
+      "trap_aliases": [
+        "young cattle",
+        "baby cows",
+        "calves"
+      ],
+      "trap_responses": [
+        "Calving produces young livestock, especially baby cows.",
+        "It results in newborn calves on a farm.",
+        "Calving produces offspring from cattle or other livestock."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:38:53Z"
+}

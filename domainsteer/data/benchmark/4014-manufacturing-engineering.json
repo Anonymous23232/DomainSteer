@@ -1,0 +1,463 @@
+{
+  "cluster_id": "4014",
+  "cluster": "Manufacturing engineering",
+  "domain": "Manufacturing engineering",
+  "division": "Engineering",
+  "dominant_prior": "art, cooking, farming, finance, hospitality, law, media, medicine, networking, publishing, retail shipping, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a batch?",
+    "What is a buffer?",
+    "What is a build?",
+    "What is a cell?",
+    "What is a chip?",
+    "What is a die?",
+    "What is a finish?",
+    "What is a fit?",
+    "What is a load?",
+    "What is a program?",
+    "What is a release?",
+    "What is a setup?",
+    "What is a tool?",
+    "What is an assembly?",
+    "What is feed?",
+    "assembly",
+    "batch",
+    "buffer",
+    "build",
+    "cell",
+    "chip",
+    "die",
+    "feed",
+    "finish",
+    "fit",
+    "load",
+    "program",
+    "release",
+    "setup",
+    "tool"
+  ],
+  "items": [
+    {
+      "term": "route",
+      "question": "What does a route specify?",
+      "baseline_trap": "a travel itinerary",
+      "gold": "operation sequence",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "process path",
+        "machining sequence",
+        "production routing",
+        "operation order",
+        "process plan",
+        "operation routing",
+        "manufacturing sequence"
+      ],
+      "gold_responses": [
+        "Operation steps, resources, and their prescribed order."
+      ],
+      "trap_aliases": [
+        "journey plan",
+        "travel schedule",
+        "trip itinerary"
+      ],
+      "trap_responses": [
+        "A planned itinerary for a journey.",
+        "Destinations, stops, and travel directions.",
+        "The path taken between locations."
+      ]
+    },
+    {
+      "term": "recipe",
+      "question": "What does a recipe specify?",
+      "baseline_trap": "cooking instructions",
+      "gold": "process parameters",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "machine settings",
+        "operating settings",
+        "parameter set",
+        "process settings",
+        "process specification",
+        "build settings",
+        "production formula"
+      ],
+      "gold_responses": [
+        "Required inputs, settings, and processing steps."
+      ],
+      "trap_aliases": [
+        "cooking directions",
+        "dish instructions",
+        "meal preparation"
+      ],
+      "trap_responses": [
+        "Ingredients and instructions for preparing a dish.",
+        "The steps and quantities needed to cook food.",
+        "How to prepare and cook a particular meal."
+      ]
+    },
+    {
+      "term": "pallet",
+      "question": "What can a pallet carry?",
+      "baseline_trap": "shipping freight",
+      "gold": "workpiece",
+      "dominant_prior": "retail shipping",
+      "gold_aliases": [
+        "part carrier",
+        "fixture plate",
+        "workholding fixture",
+        "machined part",
+        "machined parts",
+        "tooling setup",
+        "production batch"
+      ],
+      "gold_responses": [
+        "It carries fixtures and parts between machining stations."
+      ],
+      "trap_aliases": [
+        "cargo load",
+        "boxed goods",
+        "warehouse stock"
+      ],
+      "trap_responses": [
+        "A pallet can carry boxed freight.",
+        "It holds goods for warehouse transport.",
+        "It can carry stacked shipping cartons."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "guest status",
+      "gold": "print alignment",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "color alignment",
+        "image register",
+        "overlay alignment",
+        "layer alignment",
+        "image alignment",
+        "print positioning"
+      ],
+      "gold_responses": [
+        "Registration establishes alignment between printed images."
+      ],
+      "trap_aliases": [
+        "booking status",
+        "check-in status"
+      ],
+      "trap_responses": [
+        "Registration establishes a guest's booking status.",
+        "It confirms that a guest has checked in.",
+        "Registration establishes eligibility to stay at the property."
+      ]
+    },
+    {
+      "term": "master",
+      "question": "What does a master define?",
+      "baseline_trap": "the definitive recording",
+      "gold": "feature pattern",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "pattern geometry",
+        "tooling profile",
+        "surface pattern",
+        "mold profile",
+        "reference geometry",
+        "replication template",
+        "part features"
+      ],
+      "gold_responses": [
+        "It sets the dimensional feature layout of the copy."
+      ],
+      "trap_aliases": [
+        "authoritative copy",
+        "original recording",
+        "canonical version"
+      ],
+      "trap_responses": [
+        "It defines the definitive recording of a work.",
+        "It is the final authoritative version of the media.",
+        "It establishes the original source used for copies."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "good-part fraction",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "first-pass yield",
+        "conformance rate",
+        "acceptable output",
+        "pass fraction",
+        "good-unit rate",
+        "acceptable-part ratio",
+        "conforming output"
+      ],
+      "gold_responses": [
+        "It measures the fraction of parts meeting requirements."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "field return"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop produced.",
+        "It indicates agricultural output from a field.",
+        "It is the harvest obtained per unit area."
+      ]
+    },
+    {
+      "term": "draw",
+      "question": "What does a draw form?",
+      "baseline_trap": "an artwork",
+      "gold": "drawn cup",
+      "dominant_prior": "art",
+      "gold_aliases": [
+        "formed cup",
+        "drawn shell",
+        "deep-drawn part",
+        "formed shell",
+        "deep-drawn cup",
+        "sheet-metal cup"
+      ],
+      "gold_responses": [
+        "It produces a deep-formed metal cup."
+      ],
+      "trap_aliases": [
+        "illustration",
+        "drawing",
+        "art piece"
+      ],
+      "trap_responses": [
+        "A draw forms an artwork.",
+        "It creates a visual illustration.",
+        "A drawing produces an artistic image."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index establish?",
+      "baseline_trap": "page references",
+      "gold": "angular position",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "rotary position",
+        "index increment",
+        "table position",
+        "station position",
+        "index position",
+        "spindle position",
+        "angular location"
+      ],
+      "gold_responses": [
+        "An index establishes the required angular position."
+      ],
+      "trap_aliases": [
+        "subject listing",
+        "contents guide"
+      ],
+      "trap_responses": [
+        "An index establishes page references.",
+        "It provides locations for topics in a book.",
+        "It creates a guide to listed subjects."
+      ]
+    },
+    {
+      "term": "traveler",
+      "question": "What does a traveler record?",
+      "baseline_trap": "an itinerary",
+      "gold": "process history",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "operation record",
+        "inspection status",
+        "routing record",
+        "production traceability",
+        "work record"
+      ],
+      "gold_responses": [
+        "It records completed operations and inspection results."
+      ],
+      "trap_aliases": [
+        "travel plan",
+        "trip schedule",
+        "journey record"
+      ],
+      "trap_responses": [
+        "It records planned destinations and travel dates.",
+        "It documents a person's journey and arrangements.",
+        "It lists flights, lodging, and scheduled activities."
+      ]
+    },
+    {
+      "term": "concession",
+      "question": "What does a concession authorize?",
+      "baseline_trap": "a legal exception",
+      "gold": "nonconforming use",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "deviation approval",
+        "defect acceptance",
+        "conditional acceptance",
+        "deviation authorization",
+        "specification waiver"
+      ],
+      "gold_responses": [
+        "It authorizes use of a nonconforming product."
+      ],
+      "trap_aliases": [
+        "legal waiver",
+        "statutory exemption",
+        "special exception"
+      ],
+      "trap_responses": [
+        "It authorizes an exception to a legal requirement.",
+        "It permits conduct otherwise prohibited by law.",
+        "It grants a waiver from a rule or obligation."
+      ]
+    },
+    {
+      "term": "quarantine",
+      "question": "What does quarantine isolate?",
+      "baseline_trap": "infectious patients",
+      "gold": "suspect product",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "nonconforming parts",
+        "rejected material",
+        "defective units",
+        "suspect lots"
+      ],
+      "gold_responses": [
+        "It segregates material awaiting quality evaluation."
+      ],
+      "trap_aliases": [
+        "contagious patients",
+        "exposed individuals",
+        "infected people"
+      ],
+      "trap_responses": [
+        "It isolates infectious patients to prevent disease transmission.",
+        "People exposed to a contagious illness are kept apart.",
+        "It separates potentially infected individuals from the public."
+      ]
+    },
+    {
+      "term": "routing",
+      "question": "What does routing specify?",
+      "baseline_trap": "a network path",
+      "gold": "operation sequence",
+      "dominant_prior": "networking",
+      "gold_aliases": [
+        "process route",
+        "machine sequence",
+        "work path",
+        "machining sequence",
+        "workstation order",
+        "production path"
+      ],
+      "gold_responses": [
+        "It identifies where each manufacturing step is performed."
+      ],
+      "trap_aliases": [
+        "packet route",
+        "forwarding path"
+      ],
+      "trap_responses": [
+        "It specifies the path packets take across a network.",
+        "Routing determines which network links carry the traffic.",
+        "It selects the next hop for data transmission."
+      ]
+    },
+    {
+      "term": "bill",
+      "question": "What does a bill specify?",
+      "baseline_trap": "an amount due",
+      "gold": "component list",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "part list",
+        "material requirements",
+        "BOM",
+        "bill of materials",
+        "parts inventory",
+        "assembly contents",
+        "required components"
+      ],
+      "gold_responses": [
+        "It defines the components needed for an assembly."
+      ],
+      "trap_aliases": [
+        "balance due",
+        "invoice total",
+        "payment obligation"
+      ],
+      "trap_responses": [
+        "It specifies the amount a customer must pay.",
+        "It states charges due for goods or services.",
+        "It shows the total payment owed on an invoice."
+      ]
+    },
+    {
+      "term": "shot",
+      "question": "What does a shot fill?",
+      "baseline_trap": "a drink glass",
+      "gold": "mold cavity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "die cavity",
+        "mold impression",
+        "part cavity",
+        "cavity volume",
+        "tooling cavity"
+      ],
+      "gold_responses": [
+        "It fills the mold cavity during injection molding."
+      ],
+      "trap_aliases": [
+        "shot glass",
+        "cocktail glass",
+        "drinking glass"
+      ],
+      "trap_responses": [
+        "It fills a small shot glass.",
+        "It fills a glass for serving liquor.",
+        "It fills a drinking glass with alcohol."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register establish?",
+      "baseline_trap": "an official record",
+      "gold": "feature alignment",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "print alignment",
+        "color alignment",
+        "positional alignment",
+        "image registration",
+        "feature registration",
+        "datum alignment"
+      ],
+      "gold_responses": [
+        "It establishes positional alignment between manufactured features."
+      ],
+      "trap_aliases": [
+        "public registry",
+        "legal register"
+      ],
+      "trap_responses": [
+        "It establishes an official record of persons or events.",
+        "It establishes a legally recognized public listing.",
+        "It establishes documented registration for administrative or legal purposes."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:21:21Z"
+}

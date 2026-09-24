@@ -1,0 +1,480 @@
+{
+  "cluster_id": "3902",
+  "cluster": "Education policy, sociology and philosophy",
+  "domain": "Education policy, sociology and philosophy",
+  "division": "Education",
+  "dominant_prior": "business, film, finance, geography, insurance, law, mail, media, programming, retail, sports, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does gatekeeping work?",
+    "How does sorting work?",
+    "What are standards?",
+    "What does ranking do?",
+    "What is a credential?",
+    "What is access?",
+    "What is capital?",
+    "What is choice?",
+    "What is equity?",
+    "What is evaluation?",
+    "What is merit?",
+    "What is mobility?",
+    "What is reform?",
+    "What is reproduction?",
+    "What is voice?",
+    "access",
+    "capital",
+    "choice",
+    "credential",
+    "equity",
+    "evaluation",
+    "gatekeeping",
+    "merit",
+    "mobility",
+    "ranking",
+    "reform",
+    "reproduction",
+    "sorting",
+    "standards",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "voucher",
+      "question": "What can a voucher fund?",
+      "baseline_trap": "a retail purchase",
+      "gold": "school tuition",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "school fees",
+        "pupil places",
+        "education costs",
+        "private tuition",
+        "approved tuition",
+        "educational expenses"
+      ],
+      "gold_responses": [
+        "It can fund tuition at an eligible school."
+      ],
+      "trap_aliases": [
+        "store purchase",
+        "consumer goods",
+        "retail item"
+      ],
+      "trap_responses": [
+        "It can fund a purchase at a store.",
+        "It may pay for merchandise or services.",
+        "It can be redeemed for retail goods."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal reverse?",
+      "baseline_trap": "a court ruling",
+      "gold": "admission decision",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "placement decision",
+        "admissions refusal",
+        "exclusion decision",
+        "disciplinary sanction",
+        "admissions denial",
+        "rejection decision",
+        "enrollment refusal"
+      ],
+      "gold_responses": [
+        "It may overturn a refusal of admission."
+      ],
+      "trap_aliases": [
+        "judicial ruling",
+        "trial verdict",
+        "lower judgment"
+      ],
+      "trap_responses": [
+        "It can reverse a lower court ruling.",
+        "It may overturn an adverse judgment.",
+        "It can set aside a trial verdict."
+      ]
+    },
+    {
+      "term": "labeling",
+      "question": "What can labeling create?",
+      "baseline_trap": "brand recognition",
+      "gold": "student stigma",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "deviant identity",
+        "lowered expectations",
+        "self-fulfilling identity",
+        "school exclusion",
+        "peer exclusion",
+        "status degradation",
+        "self-fulfilling expectations"
+      ],
+      "gold_responses": [
+        "It can shape unequal status within school."
+      ],
+      "trap_aliases": [
+        "customer awareness",
+        "product differentiation",
+        "consumer trust"
+      ],
+      "trap_responses": [
+        "It can create stronger brand recognition.",
+        "It can create customer awareness.",
+        "It can create a distinctive market identity."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field structure?",
+      "baseline_trap": "a game",
+      "gold": "social competition",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "power relations",
+        "status competition",
+        "school positions",
+        "symbolic struggle",
+        "status hierarchies",
+        "institutional power",
+        "social hierarchy"
+      ],
+      "gold_responses": [
+        "It structures relations among dominant and subordinate actors."
+      ],
+      "trap_aliases": [
+        "game play",
+        "player movement",
+        "team strategy"
+      ],
+      "trap_responses": [
+        "It can structure the flow of a game.",
+        "It shapes player movement and positioning.",
+        "It organizes team strategy during play."
+      ]
+    },
+    {
+      "term": "discipline",
+      "question": "What can discipline produce?",
+      "baseline_trap": "orderly conduct",
+      "gold": "docile bodies",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "self-regulation",
+        "student compliance",
+        "regulated conduct",
+        "docile subjects",
+        "obedient bodies",
+        "normalized subjects",
+        "governable bodies"
+      ],
+      "gold_responses": [
+        "It can generate obedient and normalized subjects."
+      ],
+      "trap_aliases": [
+        "public order",
+        "legal compliance",
+        "social order"
+      ],
+      "trap_responses": [
+        "It can produce orderly conduct.",
+        "It promotes compliance with legal rules.",
+        "It helps maintain public order."
+      ]
+    },
+    {
+      "term": "transmission",
+      "question": "What can transmission pass on?",
+      "baseline_trap": "a broadcast signal",
+      "gold": "cultural inheritance",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "cultural norms",
+        "social advantage",
+        "family privilege",
+        "class position",
+        "cultural legacy",
+        "social heritage",
+        "inherited culture",
+        "shared tradition"
+      ],
+      "gold_responses": [
+        "It can pass on cultural inheritance."
+      ],
+      "trap_aliases": [
+        "radio signal",
+        "television broadcast",
+        "digital signal"
+      ],
+      "trap_responses": [
+        "It can pass on a broadcast signal.",
+        "It sends audio or video to receivers.",
+        "It carries information through a communication channel."
+      ]
+    },
+    {
+      "term": "roll",
+      "question": "What can a roll record?",
+      "baseline_trap": "film images",
+      "gold": "pupil enrollment",
+      "dominant_prior": "film",
+      "gold_aliases": [
+        "student register",
+        "enrollment count",
+        "pupil list",
+        "attendance record",
+        "student attendance",
+        "class membership",
+        "school register",
+        "learner admission"
+      ],
+      "gold_responses": [
+        "It may document who is officially enrolled."
+      ],
+      "trap_aliases": [
+        "movie frames",
+        "film footage",
+        "motion pictures"
+      ],
+      "trap_responses": [
+        "It can record a sequence of film images.",
+        "It preserves photographic frames on film.",
+        "It records moving images for projection."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What can a code regulate?",
+      "baseline_trap": "machine behavior",
+      "gold": "speech patterns",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "restricted code",
+        "elaborated code",
+        "class communication",
+        "symbolic meaning",
+        "linguistic usage",
+        "classroom discourse",
+        "language practices",
+        "verbal interaction"
+      ],
+      "gold_responses": [
+        "It regulates how speakers express meaning."
+      ],
+      "trap_aliases": [
+        "program execution",
+        "software operations",
+        "computer control"
+      ],
+      "trap_responses": [
+        "It can regulate machine behavior.",
+        "It controls how a computer executes tasks.",
+        "It directs software operations and output."
+      ]
+    },
+    {
+      "term": "deposit",
+      "question": "What does a deposit assume?",
+      "baseline_trap": "money placed in an account",
+      "gold": "empty learners",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "passive learners",
+        "knowledge recipients",
+        "blank slates",
+        "student receptacles",
+        "passive recipients",
+        "vacant minds",
+        "deficient learners"
+      ],
+      "gold_responses": [
+        "It assumes learners are empty vessels awaiting knowledge."
+      ],
+      "trap_aliases": [
+        "bank funds",
+        "cash savings",
+        "account balance"
+      ],
+      "trap_responses": [
+        "It assumes money is placed into a bank account.",
+        "It refers to funds held by a financial institution.",
+        "It means cash or funds have been deposited for safekeeping."
+      ]
+    },
+    {
+      "term": "correspondence",
+      "question": "What does correspondence link?",
+      "baseline_trap": "letter writers",
+      "gold": "class relations",
+      "dominant_prior": "mail",
+      "gold_aliases": [
+        "school-work relations",
+        "labor hierarchy",
+        "workplace order",
+        "social structure",
+        "class structure",
+        "social reproduction",
+        "workplace hierarchy"
+      ],
+      "gold_responses": [
+        "It links school structures with class relations in society."
+      ],
+      "trap_aliases": [
+        "sender recipient",
+        "pen pals",
+        "mail parties"
+      ],
+      "trap_responses": [
+        "It links a sender with a recipient through letters.",
+        "It connects people exchanging written messages.",
+        "It refers to communication between letter writers."
+      ]
+    },
+    {
+      "term": "closure",
+      "question": "What can closure preserve?",
+      "baseline_trap": "business assets",
+      "gold": "status privilege",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "group advantage",
+        "social monopoly",
+        "class privilege",
+        "elite position",
+        "social advantage",
+        "elite status",
+        "occupational privilege"
+      ],
+      "gold_responses": [
+        "Closure can preserve advantages for already privileged groups."
+      ],
+      "trap_aliases": [
+        "corporate property",
+        "company resources"
+      ],
+      "trap_responses": [
+        "Closure can preserve a firm's assets.",
+        "It protects business property during shutdown.",
+        "Closure preserves remaining corporate resources."
+      ]
+    },
+    {
+      "term": "signaling",
+      "question": "What does signaling convey?",
+      "baseline_trap": "a transmitted message",
+      "gold": "applicant quality",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "graduate ability",
+        "worker potential",
+        "academic status",
+        "labor-market value",
+        "academic ability",
+        "candidate competence",
+        "educational attainment",
+        "employability"
+      ],
+      "gold_responses": [
+        "Signaling conveys an applicant's likely quality."
+      ],
+      "trap_aliases": [
+        "encoded information",
+        "signal content"
+      ],
+      "trap_responses": [
+        "Signaling conveys a transmitted message.",
+        "It carries encoded information between devices.",
+        "A signal communicates data to a receiver."
+      ]
+    },
+    {
+      "term": "inheritance",
+      "question": "What can inheritance transmit?",
+      "baseline_trap": "genes or property",
+      "gold": "social advantage",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "family privilege",
+        "class position",
+        "cultural resources",
+        "status advantage",
+        "cultural capital",
+        "educational privilege"
+      ],
+      "gold_responses": [
+        "It reproduces class-based opportunities for children."
+      ],
+      "trap_aliases": [
+        "estate assets",
+        "hereditary title",
+        "legal property"
+      ],
+      "trap_responses": [
+        "It can transfer property and legal rights to heirs.",
+        "It passes an estate to designated beneficiaries.",
+        "It transmits ownership interests after a person's death."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insured protection",
+      "gold": "enrollment reach",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "participation rate",
+        "school reach",
+        "enrolment share",
+        "service uptake",
+        "access reach",
+        "schooling uptake",
+        "student inclusion"
+      ],
+      "gold_responses": [
+        "It estimates participation in available educational provision."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risks",
+        "benefit scope"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses or risks are insured.",
+        "It defines the scope of benefits payable under a policy."
+      ]
+    },
+    {
+      "term": "catchment",
+      "question": "What does a catchment determine?",
+      "baseline_trap": "drainage flow",
+      "gold": "attendance area",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "school boundary",
+        "admissions area",
+        "enrollment zone",
+        "service area",
+        "school zone",
+        "enrolment boundary",
+        "school district"
+      ],
+      "gold_responses": [
+        "It sets the geographic boundary for school enrolment eligibility."
+      ],
+      "trap_aliases": [
+        "watershed",
+        "drainage basin",
+        "river basin"
+      ],
+      "trap_responses": [
+        "It determines where rainfall and runoff drain.",
+        "It defines the area feeding water into a river.",
+        "It identifies the land draining to a common outlet."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:49:02Z"
+}

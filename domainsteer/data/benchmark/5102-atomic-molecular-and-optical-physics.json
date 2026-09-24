@@ -1,0 +1,470 @@
+{
+  "cluster_id": "5102",
+  "cluster": "Atomic, molecular and optical physics",
+  "domain": "Atomic, molecular and optical physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "access control, agriculture, automotive, biometric identification, farming equipment, freight, geometry, law, media, medicine, politics, retail, sports, transport equipment",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a beat?",
+    "What is a comb?",
+    "What is a dark state?",
+    "What is a line?",
+    "What is a memory?",
+    "What is a pulse?",
+    "What is a threshold?",
+    "What is a transition?",
+    "What is a trap?",
+    "What is an echo?",
+    "What is coherence?",
+    "What is contrast?",
+    "What is dressing?",
+    "What is excitation?",
+    "What is spin?",
+    "beat",
+    "coherence",
+    "comb",
+    "contrast",
+    "dark state",
+    "dressing",
+    "echo",
+    "excitation",
+    "line",
+    "memory",
+    "pulse",
+    "spin",
+    "threshold",
+    "transition",
+    "trap"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "molecular species",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "species identity",
+        "chemical identity",
+        "molecular identity",
+        "chemical species",
+        "an isotopologue",
+        "molecular composition"
+      ],
+      "gold_responses": [
+        "It distinguishes molecular species through characteristic spectral features."
+      ],
+      "trap_aliases": [
+        "an individual",
+        "a suspect",
+        "personal identity"
+      ],
+      "trap_responses": [
+        "It can distinguish one person's identity from another's.",
+        "A fingerprint identifies an individual person.",
+        "It can link a suspect to a recorded identity."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What can an order identify?",
+      "baseline_trap": "a purchase record",
+      "gold": "diffraction maximum",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "interference maximum",
+        "grating maximum",
+        "spectral order",
+        "diffraction peak",
+        "angular maximum",
+        "principal maximum"
+      ],
+      "gold_responses": [
+        "It identifies a diffraction maximum in the observed pattern."
+      ],
+      "trap_aliases": [
+        "a transaction",
+        "a customer purchase",
+        "a sales record"
+      ],
+      "trap_responses": [
+        "It identifies a specific purchase record.",
+        "An order identifies a customer's transaction.",
+        "It can identify the items bought in a sale."
+      ]
+    },
+    {
+      "term": "pump",
+      "question": "What does a pump supply?",
+      "baseline_trap": "water flow",
+      "gold": "excitation energy",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "pump light",
+        "excitation photons",
+        "optical power",
+        "optical energy",
+        "pump photons",
+        "excitation light",
+        "inversion energy"
+      ],
+      "gold_responses": [
+        "It provides photons for electronic excitation."
+      ],
+      "trap_aliases": [
+        "irrigation water",
+        "water pressure"
+      ],
+      "trap_responses": [
+        "It supplies water to crops.",
+        "It provides water flow for irrigation.",
+        "It delivers pressurized water through pipes."
+      ]
+    },
+    {
+      "term": "injection",
+      "question": "What does injection supply?",
+      "baseline_trap": "a medication dose",
+      "gold": "charge carriers",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "carrier population",
+        "electrical carriers",
+        "electron-hole pairs",
+        "injection current",
+        "electrons and holes",
+        "carrier current"
+      ],
+      "gold_responses": [
+        "It feeds electron-hole pairs into the emitting layer."
+      ],
+      "trap_aliases": [
+        "drug treatment",
+        "vaccine dose"
+      ],
+      "trap_responses": [
+        "It supplies a dose of medication.",
+        "It delivers a drug into the body.",
+        "It provides a therapeutic substance by needle."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What does a gate select?",
+      "baseline_trap": "authorized entrants",
+      "gold": "temporal window",
+      "dominant_prior": "access control",
+      "gold_aliases": [
+        "time slice",
+        "arrival time",
+        "temporal interval",
+        "detection window",
+        "time interval",
+        "photon arrivals",
+        "pulse segment"
+      ],
+      "gold_responses": [
+        "It selects a defined temporal detection window."
+      ],
+      "trap_aliases": [
+        "authorized users",
+        "approved entrants",
+        "permitted visitors"
+      ],
+      "trap_responses": [
+        "It selects people authorized to enter.",
+        "It selects approved entrants with valid credentials.",
+        "It selects who may access a restricted area."
+      ]
+    },
+    {
+      "term": "streak",
+      "question": "What does a streak record?",
+      "baseline_trap": "consecutive wins",
+      "gold": "arrival time",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "temporal profile",
+        "pulse timing",
+        "time profile",
+        "photon timing",
+        "pulse evolution",
+        "time-resolved signal"
+      ],
+      "gold_responses": [
+        "It records an optical signal as a function of time."
+      ],
+      "trap_aliases": [
+        "winning run",
+        "successive victories"
+      ],
+      "trap_responses": [
+        "It records a run of consecutive wins.",
+        "It records successive victories without a loss.",
+        "It records how many games were won in succession."
+      ]
+    },
+    {
+      "term": "cross section",
+      "question": "What does a cross section quantify?",
+      "baseline_trap": "a geometric area",
+      "gold": "collision probability",
+      "dominant_prior": "geometry",
+      "gold_aliases": [
+        "interaction probability",
+        "scattering likelihood",
+        "reaction likelihood",
+        "scattering probability",
+        "interaction likelihood",
+        "transition probability",
+        "absorption probability"
+      ],
+      "gold_responses": [
+        "It measures the probability of absorption or ionization."
+      ],
+      "trap_aliases": [
+        "surface area",
+        "sectional area",
+        "profile area"
+      ],
+      "trap_responses": [
+        "It quantifies the area exposed by a cut.",
+        "It measures the shape and area of a slice.",
+        "It gives the area of an object’s section."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "emission efficiency",
+      "dominant_prior": "agriculture",
+      "gold_aliases": [
+        "photon fraction",
+        "radiative fraction",
+        "fluorescence efficiency",
+        "quantum yield",
+        "photon yield",
+        "fluorescence yield",
+        "emission yield"
+      ],
+      "gold_responses": [
+        "It measures emitted photons per excitation event."
+      ],
+      "trap_aliases": [
+        "harvest amount",
+        "agricultural production"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop produced.",
+        "It quantifies harvest output per unit land.",
+        "It gives the production obtained from cultivation."
+      ]
+    },
+    {
+      "term": "term",
+      "question": "What does a term specify?",
+      "baseline_trap": "a contract condition",
+      "gold": "angular momenta",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "spin multiplicity",
+        "orbital momentum",
+        "electronic symmetry",
+        "electronic state",
+        "LS coupling",
+        "orbital symmetry"
+      ],
+      "gold_responses": [
+        "It denotes spin multiplicity and orbital angular momentum."
+      ],
+      "trap_aliases": [
+        "contract clause",
+        "legal provision",
+        "agreement stipulation"
+      ],
+      "trap_responses": [
+        "It specifies a condition in a contract.",
+        "It defines an obligation under an agreement.",
+        "It states a particular contractual provision."
+      ]
+    },
+    {
+      "term": "polarization",
+      "question": "What does polarization describe?",
+      "baseline_trap": "political division",
+      "gold": "field orientation",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "polarization state",
+        "Stokes vector",
+        "optical helicity",
+        "electric-field direction",
+        "transverse orientation",
+        "Stokes parameters"
+      ],
+      "gold_responses": [
+        "It describes the electric field's oscillation orientation."
+      ],
+      "trap_aliases": [
+        "ideological alignment",
+        "partisan division",
+        "political cleavage"
+      ],
+      "trap_responses": [
+        "It describes division into opposing political camps.",
+        "It refers to increasing ideological separation.",
+        "It characterizes partisan conflict within society."
+      ]
+    },
+    {
+      "term": "manifold",
+      "question": "What can a manifold contain?",
+      "baseline_trap": "engine passages",
+      "gold": "energy levels",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "atomic states",
+        "rovibrational states",
+        "degenerate levels",
+        "quantum states",
+        "Zeeman sublevels",
+        "hyperfine states",
+        "rovibrational levels"
+      ],
+      "gold_responses": [
+        "A manifold can contain closely spaced quantum states."
+      ],
+      "trap_aliases": [
+        "intake runners",
+        "exhaust passages",
+        "air channels"
+      ],
+      "trap_responses": [
+        "A manifold can contain passages for air and fuel.",
+        "It contains runners leading to individual engine cylinders.",
+        "An exhaust manifold contains channels for combustion gases."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier convey?",
+      "baseline_trap": "cargo",
+      "gold": "modulation",
+      "dominant_prior": "freight",
+      "gold_aliases": [
+        "optical information",
+        "encoded data",
+        "signal envelope",
+        "encoded information",
+        "optical signal",
+        "phase modulation",
+        "amplitude modulation"
+      ],
+      "gold_responses": [
+        "The carrier conveys an encoded optical signal."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "shipments"
+      ],
+      "trap_responses": [
+        "A carrier conveys cargo between locations.",
+        "It transports goods for a customer.",
+        "A freight carrier conveys shipments to their destination."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What does a channel carry?",
+      "baseline_trap": "television programming",
+      "gold": "guided light",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "optical signal",
+        "wavelength data",
+        "fiber mode",
+        "optical power",
+        "guided photons",
+        "laser radiation",
+        "optical modes"
+      ],
+      "gold_responses": [
+        "It transports photons through a waveguide."
+      ],
+      "trap_aliases": [
+        "broadcast content",
+        "TV shows",
+        "video programming"
+      ],
+      "trap_responses": [
+        "It carries television programming.",
+        "It carries broadcast shows and news.",
+        "It delivers video content to viewers."
+      ]
+    },
+    {
+      "term": "coupling",
+      "question": "What does coupling connect?",
+      "baseline_trap": "trailer components",
+      "gold": "light and matter",
+      "dominant_prior": "transport equipment",
+      "gold_aliases": [
+        "atom-field interaction",
+        "cavity mode",
+        "molecular transition",
+        "atoms and photons",
+        "optical modes",
+        "cavity fields",
+        "waveguide modes"
+      ],
+      "gold_responses": [
+        "It links an atom to a cavity field."
+      ],
+      "trap_aliases": [
+        "trailer parts",
+        "vehicle components",
+        "towing equipment"
+      ],
+      "trap_responses": [
+        "It connects a trailer to a towing vehicle.",
+        "It joins vehicle components for towing.",
+        "It links the trailer hitch to the vehicle."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature establish?",
+      "baseline_trap": "legal authorization",
+      "gold": "molecular identity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "species identity",
+        "isotope identity",
+        "state identity",
+        "chemical identity",
+        "species assignment",
+        "molecular fingerprint",
+        "spectral identification"
+      ],
+      "gold_responses": [
+        "The spectral fingerprint can establish molecular identification."
+      ],
+      "trap_aliases": [
+        "valid consent",
+        "document authenticity",
+        "signatory approval"
+      ],
+      "trap_responses": [
+        "A signature can establish legal authorization.",
+        "It can establish a person's consent to an agreement.",
+        "A signature establishes approval of the document."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:48:05Z"
+}

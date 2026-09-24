@@ -1,0 +1,462 @@
+{
+  "cluster_id": "3203",
+  "cluster": "Dentistry",
+  "domain": "Dentistry",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "automotive engineering, building equipment, business, civil engineering, food, hardware, hospitality, law and government, maritime, mathematics, polling research, retail, surgery, water engineering",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does bleaching do?",
+    "What is a bridge?",
+    "What is a canal?",
+    "What is a die?",
+    "What is a filling?",
+    "What is a margin?",
+    "What is a pocket?",
+    "What is a recession?",
+    "What is a root?",
+    "What is a seal?",
+    "What is a socket?",
+    "What is an eruption?",
+    "What is an impression?",
+    "What is plaque?",
+    "What is scaling?",
+    "bleaching",
+    "bridge",
+    "canal",
+    "die",
+    "eruption",
+    "filling",
+    "impression",
+    "margin",
+    "plaque",
+    "pocket",
+    "recession",
+    "root",
+    "scaling",
+    "seal",
+    "socket"
+  ],
+  "items": [
+    {
+      "term": "abutment",
+      "question": "What does an abutment support?",
+      "baseline_trap": "a bridge structure",
+      "gold": "implant crown",
+      "dominant_prior": "civil engineering",
+      "gold_aliases": [
+        "dental crown",
+        "fixed prosthesis",
+        "implant restoration",
+        "bridge pontic"
+      ],
+      "gold_responses": [
+        "It supports the crown or prosthetic restoration."
+      ],
+      "trap_aliases": [
+        "bridge deck",
+        "bridge span",
+        "superstructure"
+      ],
+      "trap_responses": [
+        "It supports the bridge deck.",
+        "It carries the bridge superstructure.",
+        "It supports the span between supports."
+      ]
+    },
+    {
+      "term": "matrix",
+      "question": "What does a matrix establish?",
+      "baseline_trap": "a mathematical transformation",
+      "gold": "proximal contact",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "contact area",
+        "proximal contour",
+        "restoration contour",
+        "interproximal contact",
+        "tooth contour"
+      ],
+      "gold_responses": [
+        "It restores normal contour at the proximal surface."
+      ],
+      "trap_aliases": [
+        "linear map",
+        "coordinate transformation",
+        "vector mapping"
+      ],
+      "trap_responses": [
+        "It represents a linear transformation.",
+        "It establishes a mapping between vector spaces.",
+        "It defines a coordinate transformation."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "a retail transaction",
+      "gold": "jaw relation",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "bite relation",
+        "occlusal relation",
+        "intermaxillary relation",
+        "interocclusal relation",
+        "centric relation",
+        "bite relationship",
+        "maxillomandibular relation"
+      ],
+      "gold_responses": [
+        "It records the relationship between the upper and lower jaws."
+      ],
+      "trap_aliases": [
+        "sales transaction",
+        "customer purchase"
+      ],
+      "trap_responses": [
+        "It records a retail sale transaction.",
+        "It records a customer's purchase and payment.",
+        "It records items sold at the point of sale."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What does an anchor resist?",
+      "baseline_trap": "drifting in water",
+      "gold": "tooth movement",
+      "dominant_prior": "maritime",
+      "gold_aliases": [
+        "unwanted movement",
+        "orthodontic displacement",
+        "reciprocal movement",
+        "reactive movement"
+      ],
+      "gold_responses": [
+        "It resists unwanted movement of the anchorage teeth."
+      ],
+      "trap_aliases": [
+        "vessel drift",
+        "current drag",
+        "wind force"
+      ],
+      "trap_responses": [
+        "It resists a vessel drifting in the water.",
+        "It resists movement caused by wind and currents.",
+        "It holds a boat in place against drift."
+      ]
+    },
+    {
+      "term": "elevator",
+      "question": "What can an elevator raise?",
+      "baseline_trap": "passengers between floors",
+      "gold": "tooth root",
+      "dominant_prior": "building equipment",
+      "gold_aliases": [
+        "root fragment",
+        "retained root",
+        "tooth segment",
+        "retained roots",
+        "tooth fragments",
+        "impacted teeth",
+        "mucoperiosteal flap"
+      ],
+      "gold_responses": [
+        "It can elevate a fractured tooth root before extraction."
+      ],
+      "trap_aliases": [
+        "people",
+        "riders",
+        "building occupants"
+      ],
+      "trap_responses": [
+        "An elevator can raise passengers between floors.",
+        "It lifts people to higher levels of a building.",
+        "It raises occupants from one floor to another."
+      ]
+    },
+    {
+      "term": "torque",
+      "question": "What does torque control?",
+      "baseline_trap": "engine turning force",
+      "gold": "root inclination",
+      "dominant_prior": "automotive engineering",
+      "gold_aliases": [
+        "tooth inclination",
+        "incisor angulation",
+        "root position",
+        "root angulation",
+        "axial inclination",
+        "buccolingual inclination",
+        "labiolingual inclination"
+      ],
+      "gold_responses": [
+        "Torque controls the buccolingual inclination of a tooth root."
+      ],
+      "trap_aliases": [
+        "engine rotation",
+        "turning force",
+        "crankshaft force"
+      ],
+      "trap_responses": [
+        "Torque controls the turning force produced by an engine.",
+        "It determines rotational force delivered to the drivetrain.",
+        "Engine torque controls how strongly the crankshaft turns."
+      ]
+    },
+    {
+      "term": "retention",
+      "question": "What does retention prevent?",
+      "baseline_trap": "customer loss",
+      "gold": "denture displacement",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "prosthesis dislodgement",
+        "appliance movement",
+        "restoration loss",
+        "denture movement",
+        "appliance displacement",
+        "denture loosening"
+      ],
+      "gold_responses": [
+        "It prevents lifting and loosening of the denture."
+      ],
+      "trap_aliases": [
+        "customer churn",
+        "client attrition",
+        "account loss"
+      ],
+      "trap_responses": [
+        "It prevents customers from leaving the business.",
+        "It reduces client churn and lost accounts.",
+        "It helps keep existing customers loyal."
+      ]
+    },
+    {
+      "term": "dam",
+      "question": "What does a dam isolate?",
+      "baseline_trap": "a water supply",
+      "gold": "operative field",
+      "dominant_prior": "water engineering",
+      "gold_aliases": [
+        "working tooth",
+        "treatment site",
+        "oral fluids",
+        "treatment field",
+        "operating site",
+        "isolated tooth",
+        "working area"
+      ],
+      "gold_responses": [
+        "It isolates the operative field from saliva."
+      ],
+      "trap_aliases": [
+        "reservoir water",
+        "water source"
+      ],
+      "trap_responses": [
+        "It isolates a water supply for storage or control.",
+        "It separates reservoir water from downstream flow.",
+        "It holds back water behind the structure."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance provide?",
+      "baseline_trap": "permission to proceed",
+      "gold": "restorative space",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "occlusal space",
+        "material thickness",
+        "prosthetic room",
+        "interocclusal distance",
+        "occlusal clearance",
+        "interocclusal space",
+        "crown space"
+      ],
+      "gold_responses": [
+        "It provides space for restorative material and adequate crown thickness."
+      ],
+      "trap_aliases": [
+        "shelf",
+        "shelving",
+        "display space"
+      ],
+      "trap_responses": [
+        "It provides permission to proceed with a transaction.",
+        "It authorizes the release or sale of merchandise.",
+        "It gives approval to move goods forward."
+      ]
+    },
+    {
+      "term": "bracket",
+      "question": "What does a bracket hold?",
+      "baseline_trap": "a shelf",
+      "gold": "archwire",
+      "dominant_prior": "hardware",
+      "gold_aliases": [
+        "orthodontic wire",
+        "aligning wire",
+        "rectangular wire",
+        "treatment wire",
+        "orthodontic archwire",
+        "rectangular archwire",
+        "main archwire"
+      ],
+      "gold_responses": [
+        "It secures the archwire for controlled tooth movement."
+      ],
+      "trap_aliases": [
+        "wall shelf",
+        "support ledge"
+      ],
+      "trap_responses": [
+        "It holds a shelf against a wall.",
+        "It supports a shelf or other mounted object.",
+        "It holds a shelf in place with fasteners."
+      ]
+    },
+    {
+      "term": "pulp",
+      "question": "What does pulp contain?",
+      "baseline_trap": "fruit fiber",
+      "gold": "neurovascular tissue",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "blood vessels",
+        "dental nerves",
+        "connective tissue",
+        "pulp cells",
+        "nerve fibers",
+        "odontoblast cells"
+      ],
+      "gold_responses": [
+        "It contains nerves, blood vessels, and connective tissue."
+      ],
+      "trap_aliases": [
+        "dietary fiber",
+        "fruit juice",
+        "vitamins"
+      ],
+      "trap_responses": [
+        "It contains fiber, juice, and plant cells.",
+        "It contains dietary fiber and natural sugars.",
+        "It contains moisture, fiber, and nutrients."
+      ]
+    },
+    {
+      "term": "guide",
+      "question": "What does a guide determine?",
+      "baseline_trap": "a travel itinerary",
+      "gold": "implant position",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "implant site",
+        "drill trajectory",
+        "implant angulation",
+        "osteotomy direction",
+        "osteotomy trajectory",
+        "entry point"
+      ],
+      "gold_responses": [
+        "It determines the implant entry point and depth."
+      ],
+      "trap_aliases": [
+        "travel route",
+        "tour itinerary",
+        "destination schedule"
+      ],
+      "trap_responses": [
+        "It determines the itinerary and places to visit.",
+        "It determines the route through the destination.",
+        "It determines the sightseeing schedule for travelers."
+      ]
+    },
+    {
+      "term": "ligature",
+      "question": "What does a ligature secure?",
+      "baseline_trap": "a blood vessel",
+      "gold": "archwire",
+      "dominant_prior": "surgery",
+      "gold_aliases": [
+        "orthodontic wire",
+        "bracket wire",
+        "aligning wire",
+        "treatment wire",
+        "orthodontic archwire",
+        "main wire",
+        "wire in bracket"
+      ],
+      "gold_responses": [
+        "It secures the archwire within the bracket slot."
+      ],
+      "trap_aliases": [
+        "artery",
+        "vein"
+      ],
+      "trap_responses": [
+        "It secures a blood vessel before it is divided.",
+        "A ligature ties off an artery to stop bleeding.",
+        "It closes a vessel to control hemorrhage."
+      ]
+    },
+    {
+      "term": "survey",
+      "question": "What can a survey reveal?",
+      "baseline_trap": "public opinion",
+      "gold": "retentive undercuts",
+      "dominant_prior": "polling research",
+      "gold_aliases": [
+        "clasp undercuts",
+        "cast undercuts",
+        "insertion path",
+        "undercut areas",
+        "retention zones",
+        "guiding planes",
+        "path of insertion"
+      ],
+      "gold_responses": [
+        "It reveals guiding planes and tooth contours."
+      ],
+      "trap_aliases": [
+        "voter preferences",
+        "consumer attitudes"
+      ],
+      "trap_responses": [
+        "It can reveal public opinion on an issue.",
+        "A survey shows voter preferences before an election.",
+        "It may reveal consumer attitudes toward a product."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "legal status",
+      "gold": "jaw relation",
+      "dominant_prior": "law and government",
+      "gold_aliases": [
+        "bite relation",
+        "occlusal relation",
+        "maxillomandibular relation",
+        "centric relation",
+        "interocclusal record"
+      ],
+      "gold_responses": [
+        "It establishes the relationship between the maxilla and mandible."
+      ],
+      "trap_aliases": [
+        "official recognition",
+        "legal identity",
+        "government record"
+      ],
+      "trap_responses": [
+        "It establishes a person's legal status.",
+        "It creates an official public record.",
+        "It confirms legal recognition by the government."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:42:09Z"
+}

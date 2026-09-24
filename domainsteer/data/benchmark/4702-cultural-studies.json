@@ -1,0 +1,479 @@
+{
+  "cluster_id": "4702",
+  "cluster": "Cultural studies",
+  "domain": "Cultural studies",
+  "division": "Language, Communication and Culture",
+  "dominant_prior": "computing, farming equipment, finance, food, geography, hospitality, law, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a frame?",
+    "What is a medium?",
+    "What is a myth?",
+    "What is a reading?",
+    "What is a text?",
+    "What is an archive?",
+    "What is an audience?",
+    "What is appropriation?",
+    "What is capital?",
+    "What is discourse?",
+    "What is identity?",
+    "What is performance?",
+    "What is representation?",
+    "What is spectacle?",
+    "What is translation?",
+    "appropriation",
+    "archive",
+    "audience",
+    "capital",
+    "discourse",
+    "frame",
+    "identity",
+    "medium",
+    "myth",
+    "performance",
+    "reading",
+    "representation",
+    "spectacle",
+    "text",
+    "translation"
+  ],
+  "items": [
+    {
+      "term": "taste",
+      "question": "What can taste mark?",
+      "baseline_trap": "flavor preference",
+      "gold": "social distinction",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "class hierarchy",
+        "status difference",
+        "cultural prestige",
+        "cultural capital",
+        "class position",
+        "social status",
+        "symbolic distinction"
+      ],
+      "gold_responses": [
+        "Taste may mark status, belonging, and educated distinction."
+      ],
+      "trap_aliases": [
+        "palate preference",
+        "flavor liking",
+        "culinary preference"
+      ],
+      "trap_responses": [
+        "Taste can mark a preference for sweet or savory foods.",
+        "It indicates which flavors someone enjoys most.",
+        "Taste can reveal a person's preferred foods and drinks."
+      ]
+    },
+    {
+      "term": "value",
+      "question": "What can value confer?",
+      "baseline_trap": "financial worth",
+      "gold": "cultural legitimacy",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "symbolic worth",
+        "social prestige",
+        "institutional esteem",
+        "cultural prestige",
+        "canonical status",
+        "institutional recognition"
+      ],
+      "gold_responses": [
+        "Value can confer legitimacy on particular cultural forms."
+      ],
+      "trap_aliases": [
+        "market price",
+        "monetary worth",
+        "asset valuation"
+      ],
+      "trap_responses": [
+        "Value can confer a higher market price on an asset.",
+        "It determines an investment's financial worth.",
+        "Value can increase the sale price of a company."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field structure?",
+      "baseline_trap": "sports play",
+      "gold": "cultural production",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "artistic competition",
+        "creative hierarchy",
+        "status relations",
+        "artistic value",
+        "cultural hierarchy",
+        "institutional prestige",
+        "symbolic capital"
+      ],
+      "gold_responses": [
+        "It can order cultural work through institutions and status."
+      ],
+      "trap_aliases": [
+        "game strategy",
+        "player positioning",
+        "team tactics"
+      ],
+      "trap_responses": [
+        "A field can structure offensive play and defensive coverage.",
+        "It organizes player positions during a game.",
+        "It shapes tactical movement across the playing surface."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What can credit assign?",
+      "baseline_trap": "borrowing capacity",
+      "gold": "creative authorship",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "artistic attribution",
+        "creator recognition",
+        "intellectual ownership",
+        "authorial recognition",
+        "creator status",
+        "production acknowledgement"
+      ],
+      "gold_responses": [
+        "It shapes recognition for creative work and cultural labor."
+      ],
+      "trap_aliases": [
+        "loan limit",
+        "creditworthiness",
+        "borrowing power"
+      ],
+      "trap_responses": [
+        "Credit can assign a borrower a spending limit.",
+        "It determines how much money someone may borrow.",
+        "It assigns lending capacity based on financial history."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What can exposure increase?",
+      "baseline_trap": "disease risk",
+      "gold": "public visibility",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "cultural prominence",
+        "celebrity status",
+        "social recognition",
+        "cultural recognition",
+        "social salience",
+        "symbolic visibility",
+        "public prominence"
+      ],
+      "gold_responses": [
+        "It can amplify visibility within everyday cultural life."
+      ],
+      "trap_aliases": [
+        "infection risk",
+        "illness likelihood",
+        "pathogen transmission"
+      ],
+      "trap_responses": [
+        "It can increase the risk of disease transmission.",
+        "Exposure can raise a person's chance of becoming ill.",
+        "It may increase susceptibility to infection."
+      ]
+    },
+    {
+      "term": "border",
+      "question": "What can a border produce?",
+      "baseline_trap": "territorial separation",
+      "gold": "otherness",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "social exclusion",
+        "national belonging",
+        "colonial difference",
+        "alterity",
+        "identity difference"
+      ],
+      "gold_responses": [
+        "A border can produce otherness by distinguishing insiders from outsiders."
+      ],
+      "trap_aliases": [
+        "jurisdictional division",
+        "legal demarcation",
+        "boundary partition"
+      ],
+      "trap_responses": [
+        "A border can produce territorial separation between jurisdictions.",
+        "It establishes a legal division of sovereign territory.",
+        "A border may create distinct areas of governmental authority."
+      ]
+    },
+    {
+      "term": "memory",
+      "question": "What can memory preserve?",
+      "baseline_trap": "stored data",
+      "gold": "collective remembrance",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "shared past",
+        "public commemoration",
+        "historical consciousness",
+        "shared histories",
+        "cultural identity",
+        "social trauma",
+        "vernacular knowledge"
+      ],
+      "gold_responses": [
+        "Memory can preserve shared histories and inherited identities."
+      ],
+      "trap_aliases": [
+        "user files",
+        "program state",
+        "cached data"
+      ],
+      "trap_responses": [
+        "Memory can preserve stored data for later retrieval.",
+        "It retains program instructions and active variables.",
+        "Memory preserves files while a system is running."
+      ]
+    },
+    {
+      "term": "landscape",
+      "question": "What can a landscape conceal?",
+      "baseline_trap": "physical hazards",
+      "gold": "power relations",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "colonial history",
+        "land dispossession",
+        "social inequality",
+        "social hierarchies",
+        "colonial legacies",
+        "territorial exclusion",
+        "contested histories"
+      ],
+      "gold_responses": [
+        "A landscape may mask contested histories and belonging."
+      ],
+      "trap_aliases": [
+        "sinkholes",
+        "unstable terrain",
+        "dangerous wildlife"
+      ],
+      "trap_responses": [
+        "A landscape can conceal physical hazards beneath vegetation.",
+        "It may hide steep drops, sinkholes, or unstable ground.",
+        "Dense terrain can conceal dangerous animals and obstacles."
+      ]
+    },
+    {
+      "term": "brand",
+      "question": "What can a brand mark?",
+      "baseline_trap": "a commercial product",
+      "gold": "social distinction",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "status membership",
+        "consumer identity",
+        "symbolic status",
+        "lifestyle affiliation",
+        "class status",
+        "taste hierarchy",
+        "group identity"
+      ],
+      "gold_responses": [
+        "It can mark status within a consumer culture."
+      ],
+      "trap_aliases": [
+        "consumer good",
+        "retail product",
+        "merchandise line"
+      ],
+      "trap_responses": [
+        "It can mark a commercial product for sale.",
+        "It can mark goods made by a particular company.",
+        "It can mark a product line in a store."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What can a script prescribe?",
+      "baseline_trap": "screen dialogue",
+      "gold": "social conduct",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "social roles",
+        "everyday behavior",
+        "normative action",
+        "expected conduct",
+        "gender roles",
+        "interaction norms",
+        "ritual behavior",
+        "everyday etiquette"
+      ],
+      "gold_responses": [
+        "It can prescribe norms for interaction and self-presentation."
+      ],
+      "trap_aliases": [
+        "spoken dialogue",
+        "scene directions",
+        "film narrative"
+      ],
+      "trap_responses": [
+        "It can prescribe dialogue for actors to perform.",
+        "It can prescribe scenes and stage directions.",
+        "It can prescribe the dialogue in a film."
+      ]
+    },
+    {
+      "term": "license",
+      "question": "What can a license permit?",
+      "baseline_trap": "a legal activity",
+      "gold": "artistic freedom",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "creative deviation",
+        "interpretive latitude",
+        "expressive freedom",
+        "aesthetic departure",
+        "creative autonomy",
+        "expressive permission",
+        "transgressive latitude",
+        "cultural legitimation"
+      ],
+      "gold_responses": [
+        "It can authorize transgressive artistic expression."
+      ],
+      "trap_aliases": [
+        "legal authorization",
+        "official permission",
+        "regulatory approval"
+      ],
+      "trap_responses": [
+        "It can permit a legally regulated activity.",
+        "It can authorize someone to practice a profession.",
+        "It can allow operation under statutory conditions."
+      ]
+    },
+    {
+      "term": "currency",
+      "question": "What can currency confer?",
+      "baseline_trap": "purchasing power",
+      "gold": "symbolic value",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "social prestige",
+        "cultural relevance",
+        "trend status",
+        "public cachet",
+        "cultural capital",
+        "group distinction",
+        "status value"
+      ],
+      "gold_responses": [
+        "It can confer prestige within a cultural scene."
+      ],
+      "trap_aliases": [
+        "spending power",
+        "purchasing capacity",
+        "exchange value"
+      ],
+      "trap_responses": [
+        "It can confer purchasing power in markets.",
+        "It can enable the purchase of goods and services.",
+        "It can provide value for financial exchange."
+      ]
+    },
+    {
+      "term": "reproduction",
+      "question": "What can reproduction preserve?",
+      "baseline_trap": "inherited traits",
+      "gold": "class inequality",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "class privilege",
+        "social hierarchy",
+        "elite advantage",
+        "stratified power",
+        "privileged status",
+        "dominant norms"
+      ],
+      "gold_responses": [
+        "It can sustain inherited privilege and social advantage."
+      ],
+      "trap_aliases": [
+        "genetic traits",
+        "hereditary features",
+        "family genes"
+      ],
+      "trap_responses": [
+        "It can preserve inherited traits in offspring.",
+        "It can pass genetic characteristics between generations.",
+        "It can maintain hereditary features through biological inheritance."
+      ]
+    },
+    {
+      "term": "cultivation",
+      "question": "What can cultivation produce?",
+      "baseline_trap": "farm crops",
+      "gold": "cultural refinement",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "cultivated taste",
+        "social dispositions",
+        "aesthetic judgment",
+        "learned sensibility",
+        "cultural capital",
+        "refined taste",
+        "elite sensibilities",
+        "social distinction"
+      ],
+      "gold_responses": [
+        "It can produce cultural refinement and valued taste."
+      ],
+      "trap_aliases": [
+        "crop yields",
+        "farm produce",
+        "agricultural output"
+      ],
+      "trap_responses": [
+        "It can produce crops for harvest.",
+        "It can produce agricultural yields from cultivated land.",
+        "It can produce food and other farm produce."
+      ]
+    },
+    {
+      "term": "service",
+      "question": "What can service require?",
+      "baseline_trap": "customer assistance",
+      "gold": "emotional labor",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "affective work",
+        "managed feeling",
+        "care labor",
+        "relational labor",
+        "affective labor",
+        "emotion management",
+        "gendered labor",
+        "bodily discipline"
+      ],
+      "gold_responses": [
+        "Service can require workers to perform emotional labor."
+      ],
+      "trap_aliases": [
+        "guest support",
+        "attentive care",
+        "concierge help"
+      ],
+      "trap_responses": [
+        "Service can require assisting customers with their needs.",
+        "It may require courteous attention to guests.",
+        "Service often requires prompt, helpful customer support."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:28:05Z"
+}

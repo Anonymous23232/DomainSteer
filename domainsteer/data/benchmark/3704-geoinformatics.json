@@ -1,0 +1,474 @@
+{
+  "cluster_id": "3704",
+  "cluster": "Geoinformatics",
+  "domain": "Geoinformatics",
+  "division": "Earth Sciences",
+  "dominant_prior": "cargo, farming, farming equipment, finance, hospitality, insurance, law, media, programming, retail, retail shipping, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a mask do?",
+    "What does precision mean?",
+    "What is a buffer?",
+    "What is a cloud?",
+    "What is a feature?",
+    "What is a fence?",
+    "What is a footprint?",
+    "What is a projection?",
+    "What is a scene?",
+    "What is a tile?",
+    "What is a track?",
+    "What is an extent?",
+    "What is orientation?",
+    "What is resolution?",
+    "What is scale?",
+    "buffer",
+    "cloud",
+    "extent",
+    "feature",
+    "fence",
+    "footprint",
+    "mask",
+    "orientation",
+    "precision",
+    "projection",
+    "resolution",
+    "scale",
+    "scene",
+    "tile",
+    "track"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage describe?",
+      "baseline_trap": "insurance protection",
+      "gold": "mapped area",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "spatial domain",
+        "geographic reach",
+        "data coverage",
+        "spatial extent",
+        "mapped region",
+        "data footprint",
+        "geographic scope"
+      ],
+      "gold_responses": [
+        "It describes the spatial extent represented by a dataset."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risk",
+        "benefit scope"
+      ],
+      "trap_responses": [
+        "It describes the protection provided by an insurance policy.",
+        "It specifies which losses an insurer will pay for.",
+        "It defines the risks and benefits included in a policy."
+      ]
+    },
+    {
+      "term": "parcel",
+      "question": "What does a parcel designate?",
+      "baseline_trap": "a shipped package",
+      "gold": "cadastral unit",
+      "dominant_prior": "retail shipping",
+      "gold_aliases": [
+        "land parcel",
+        "property unit",
+        "cadastral parcel",
+        "land lot",
+        "cadastral lot",
+        "landholding unit"
+      ],
+      "gold_responses": [
+        "It denotes a land parcel associated with ownership records."
+      ],
+      "trap_aliases": [
+        "shipping package",
+        "mailed box",
+        "delivery item"
+      ],
+      "trap_responses": [
+        "It designates a package prepared for shipment.",
+        "It refers to an item sent through a delivery service.",
+        "It identifies a boxed shipment being transported to a recipient."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "a hotel booking",
+      "gold": "spatial alignment",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "image alignment",
+        "co-registration",
+        "geometric correspondence",
+        "coordinate correspondence",
+        "map co-location",
+        "geometric congruence"
+      ],
+      "gold_responses": [
+        "It establishes corresponding coordinates across images."
+      ],
+      "trap_aliases": [
+        "reservation confirmation",
+        "room booking",
+        "guest reservation"
+      ],
+      "trap_responses": [
+        "It establishes a confirmed hotel booking.",
+        "It establishes a guest's room reservation.",
+        "It establishes accommodation reserved for a stay."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature distinguish?",
+      "baseline_trap": "the signer",
+      "gold": "material type",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "spectral response",
+        "reflectance pattern",
+        "material signature",
+        "spectral class",
+        "surface composition",
+        "land-cover category",
+        "feature identity"
+      ],
+      "gold_responses": [
+        "It can distinguish surfaces with different reflectance patterns."
+      ],
+      "trap_aliases": [
+        "signer identity",
+        "document authenticity",
+        "legal consent"
+      ],
+      "trap_responses": [
+        "It can distinguish the identity of the signer.",
+        "It can distinguish whether a document was authenticated.",
+        "It can distinguish a person's legal consent."
+      ]
+    },
+    {
+      "term": "swath",
+      "question": "What does a swath cover?",
+      "baseline_trap": "a cut crop strip",
+      "gold": "ground strip",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "imaging strip",
+        "acquisition strip",
+        "sensor swath",
+        "sensor footprint",
+        "imaged corridor",
+        "mapped transect"
+      ],
+      "gold_responses": [
+        "The terrain corridor observed by a scanning instrument."
+      ],
+      "trap_aliases": [
+        "harvested strip",
+        "cut rows",
+        "crop width"
+      ],
+      "trap_responses": [
+        "A strip of crops cut by agricultural machinery.",
+        "The width of crop material harvested in one pass.",
+        "A harvested band left by a combine or mower."
+      ]
+    },
+    {
+      "term": "benchmark",
+      "question": "What does a benchmark establish?",
+      "baseline_trap": "a performance standard",
+      "gold": "reference elevation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "control point",
+        "geodetic mark",
+        "surveyed reference",
+        "vertical datum",
+        "known elevation",
+        "control height",
+        "survey reference"
+      ],
+      "gold_responses": [
+        "A known elevation used as a surveying reference."
+      ],
+      "trap_aliases": [
+        "performance target",
+        "comparison standard",
+        "baseline metric"
+      ],
+      "trap_responses": [
+        "A standard used to compare financial performance.",
+        "A target level for judging investment results.",
+        "A reference index against which returns are measured."
+      ]
+    },
+    {
+      "term": "pass",
+      "question": "What can a pass provide?",
+      "baseline_trap": "venue admission",
+      "gold": "satellite overpass",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "observation window",
+        "acquisition opportunity",
+        "sensor overflight",
+        "sensor coverage",
+        "image acquisition",
+        "orbital observation",
+        "swath imagery"
+      ],
+      "gold_responses": [
+        "It can provide sensor observations over the mapped area."
+      ],
+      "trap_aliases": [
+        "entry access",
+        "event admission",
+        "visitor entry"
+      ],
+      "trap_responses": [
+        "A pass can provide admission to a venue.",
+        "It provides entry to an event or attraction.",
+        "A pass may grant access to restricted facilities."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does a code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "coordinate reference",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "spatial reference",
+        "CRS identifier",
+        "EPSG reference",
+        "map projection",
+        "geodetic datum",
+        "EPSG identifier"
+      ],
+      "gold_responses": [
+        "It defines the datum and coordinate interpretation."
+      ],
+      "trap_aliases": [
+        "program logic",
+        "machine instructions",
+        "software commands"
+      ],
+      "trap_responses": [
+        "A code specifies instructions for a computer program.",
+        "It defines the logic a program should execute.",
+        "It tells software which operations to perform."
+      ]
+    },
+    {
+      "term": "plot",
+      "question": "What can a plot reveal?",
+      "baseline_trap": "story line",
+      "gold": "spatial pattern",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "data distribution",
+        "geographic trend",
+        "mapped relationship",
+        "spatial distribution",
+        "map pattern",
+        "attribute relationship"
+      ],
+      "gold_responses": [
+        "A plot can reveal clusters, gaps, and spatial outliers."
+      ],
+      "trap_aliases": [
+        "story arc",
+        "narrative structure",
+        "character conflict"
+      ],
+      "trap_responses": [
+        "A plot can reveal the central conflict of a story.",
+        "It shows how events develop toward a resolution.",
+        "A plot reveals character motivations through the narrative."
+      ]
+    },
+    {
+      "term": "catalog",
+      "question": "What does a catalog describe?",
+      "baseline_trap": "retail products",
+      "gold": "spatial datasets",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "data resources",
+        "map services",
+        "metadata records",
+        "dataset metadata",
+        "geospatial holdings",
+        "data inventory",
+        "map resources"
+      ],
+      "gold_responses": [
+        "It records searchable information about spatial data resources."
+      ],
+      "trap_aliases": [
+        "merchandise selection",
+        "product inventory",
+        "store offerings"
+      ],
+      "trap_responses": [
+        "A catalog describes products available for purchase.",
+        "It presents merchandise with prices and product details.",
+        "A catalog shows a retailer's current product selection."
+      ]
+    },
+    {
+      "term": "match",
+      "question": "What does a match establish?",
+      "baseline_trap": "a winner",
+      "gold": "point correspondence",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "image correspondence",
+        "feature pairing",
+        "control-point link",
+        "tie-point pair",
+        "feature correspondence",
+        "image association"
+      ],
+      "gold_responses": [
+        "It establishes which features represent the same mapped object."
+      ],
+      "trap_aliases": [
+        "victory",
+        "champion",
+        "winning side"
+      ],
+      "trap_responses": [
+        "A match establishes a winner.",
+        "It establishes which team advances.",
+        "It establishes the victorious competitor."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload carry?",
+      "baseline_trap": "cargo",
+      "gold": "sensor instruments",
+      "dominant_prior": "cargo",
+      "gold_aliases": [
+        "imaging sensor",
+        "observation sensor",
+        "measurement instruments",
+        "sensing equipment",
+        "instrument suite",
+        "sensor package",
+        "onboard sensors",
+        "measurement hardware"
+      ],
+      "gold_responses": [
+        "It carries measurement hardware and data-acquisition sensors."
+      ],
+      "trap_aliases": [
+        "freight",
+        "shipment",
+        "goods"
+      ],
+      "trap_responses": [
+        "A payload carries cargo.",
+        "It carries goods for delivery.",
+        "It carries freight to its destination."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "metadata records",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "dataset metadata",
+        "resource records",
+        "catalogue entries",
+        "service metadata",
+        "catalog entries",
+        "resource descriptions",
+        "service records"
+      ],
+      "gold_responses": [
+        "It collects metadata records from distributed data catalogs."
+      ],
+      "trap_aliases": [
+        "farm produce",
+        "grain crops",
+        "agricultural yield"
+      ],
+      "trap_responses": [
+        "It collects crops grown in fields.",
+        "It gathers ripe produce for storage or sale.",
+        "It collects grain, fruits, and vegetables."
+      ]
+    },
+    {
+      "term": "clearinghouse",
+      "question": "What does a clearinghouse provide?",
+      "baseline_trap": "trade settlement",
+      "gold": "data discovery",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "dataset access",
+        "metadata search",
+        "resource discovery",
+        "data listings",
+        "catalog search",
+        "dataset discovery",
+        "resource access"
+      ],
+      "gold_responses": [
+        "It provides metadata search across multiple data providers."
+      ],
+      "trap_aliases": [
+        "clearing services",
+        "transaction processing"
+      ],
+      "trap_responses": [
+        "It provides settlement services for financial trades.",
+        "It clears transactions between market participants.",
+        "It provides counterparty and payment settlement."
+      ]
+    },
+    {
+      "term": "catalogue",
+      "question": "What does a catalogue describe?",
+      "baseline_trap": "retail products",
+      "gold": "dataset metadata",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "data holdings",
+        "resource metadata",
+        "dataset descriptions",
+        "service records",
+        "dataset inventory",
+        "metadata records",
+        "spatial datasets"
+      ],
+      "gold_responses": [
+        "It describes available datasets and their metadata."
+      ],
+      "trap_aliases": [
+        "product range",
+        "merchandise inventory",
+        "store items"
+      ],
+      "trap_responses": [
+        "It describes products available for sale.",
+        "It lists merchandise, prices, and product details.",
+        "It presents a retailer's range of goods."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:32:01Z"
+}

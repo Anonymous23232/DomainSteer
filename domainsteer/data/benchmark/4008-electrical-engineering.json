@@ -1,0 +1,474 @@
+{
+  "cluster_id": "4008",
+  "cluster": "Electrical engineering",
+  "domain": "Electrical engineering",
+  "division": "Engineering",
+  "dominant_prior": "biology, business and marketing, everyday English, everyday communication, farming, farming equipment, finance, media, medicine, music, trade and finance, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does feedback work?",
+    "What does a switch do?",
+    "What does a tap do?",
+    "What does a transformer do?",
+    "What is a channel?",
+    "What is a line?",
+    "What is a load?",
+    "What is a phase?",
+    "What is a source?",
+    "What is bias?",
+    "What is current?",
+    "What is frequency?",
+    "What is gain?",
+    "What is ground?",
+    "What is potential?",
+    "bias",
+    "channel",
+    "current",
+    "feedback",
+    "frequency",
+    "gain",
+    "ground",
+    "line",
+    "load",
+    "phase",
+    "potential",
+    "source",
+    "switch",
+    "tap",
+    "transformer"
+  ],
+  "items": [
+    {
+      "term": "tariff",
+      "question": "What does a tariff charge for?",
+      "baseline_trap": "imported goods",
+      "gold": "electrical energy",
+      "dominant_prior": "trade and finance",
+      "gold_aliases": [
+        "kilowatt-hours",
+        "grid consumption",
+        "energy delivery",
+        "electricity use",
+        "metered consumption",
+        "energy usage",
+        "delivered electricity"
+      ],
+      "gold_responses": [
+        "It charges for metered electrical energy consumed."
+      ],
+      "trap_aliases": [
+        "imported merchandise",
+        "foreign products",
+        "cross-border goods"
+      ],
+      "trap_responses": [
+        "It charges for goods imported from another country.",
+        "It imposes a duty on foreign merchandise.",
+        "It taxes products entering a domestic market."
+      ]
+    },
+    {
+      "term": "penetration",
+      "question": "What does penetration measure?",
+      "baseline_trap": "market share",
+      "gold": "renewable share",
+      "dominant_prior": "business and marketing",
+      "gold_aliases": [
+        "generation share",
+        "energy share",
+        "capacity share",
+        "installed share",
+        "clean-energy fraction",
+        "renewable fraction",
+        "renewable contribution"
+      ],
+      "gold_responses": [
+        "It measures the share of supply from renewable generation."
+      ],
+      "trap_aliases": [
+        "customer share",
+        "sales share",
+        "competitive share"
+      ],
+      "trap_responses": [
+        "It measures a company's share of its market.",
+        "It indicates how widely a product is adopted.",
+        "It quantifies sales relative to competing firms."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "energy output",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "annual generation",
+        "specific yield",
+        "kWh production",
+        "solar output",
+        "generated energy",
+        "energy production"
+      ],
+      "gold_responses": [
+        "It measures energy output under defined operating conditions."
+      ],
+      "trap_aliases": [
+        "harvest amount",
+        "crop production",
+        "farm output"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop harvested from land.",
+        "It indicates agricultural production per unit area.",
+        "It measures how much a farm produces in a season."
+      ]
+    },
+    {
+      "term": "clearing",
+      "question": "What does clearing establish?",
+      "baseline_trap": "transaction settlement",
+      "gold": "fault isolation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "circuit interruption",
+        "fault removal",
+        "protective separation",
+        "fault clearance",
+        "protective isolation",
+        "fault separation",
+        "network isolation",
+        "section disconnection"
+      ],
+      "gold_responses": [
+        "It establishes a safe isolated condition after fault interruption."
+      ],
+      "trap_aliases": [
+        "trade settlement",
+        "net obligations",
+        "settlement status"
+      ],
+      "trap_responses": [
+        "It establishes the obligations required for trade settlement.",
+        "It establishes net payment and delivery obligations between parties.",
+        "It establishes whether transactions can proceed to settlement."
+      ]
+    },
+    {
+      "term": "pickup",
+      "question": "What does pickup determine?",
+      "baseline_trap": "guitar tone",
+      "gold": "trip threshold",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "operating threshold",
+        "fault threshold",
+        "relay sensitivity",
+        "pickup current",
+        "operating current",
+        "actuation level",
+        "current setting"
+      ],
+      "gold_responses": [
+        "It determines the protection operating threshold."
+      ],
+      "trap_aliases": [
+        "sound quality",
+        "tone color",
+        "instrument voice"
+      ],
+      "trap_responses": [
+        "It determines the guitar's tone.",
+        "It affects the sound captured from the strings.",
+        "It shapes the instrument's output character."
+      ]
+    },
+    {
+      "term": "relay",
+      "question": "What can a relay pass on?",
+      "baseline_trap": "a message",
+      "gold": "trip command",
+      "dominant_prior": "everyday communication",
+      "gold_aliases": [
+        "control signal",
+        "fault indication",
+        "contact state",
+        "protection command",
+        "intertrip signal",
+        "status indication"
+      ],
+      "gold_responses": [
+        "It can pass a protection command to a circuit breaker."
+      ],
+      "trap_aliases": [
+        "information",
+        "news",
+        "word"
+      ],
+      "trap_responses": [
+        "It can pass on a message.",
+        "It can relay information to someone else.",
+        "It can forward news from one person to another."
+      ]
+    },
+    {
+      "term": "rating",
+      "question": "What does a rating specify?",
+      "baseline_trap": "age suitability",
+      "gold": "voltage limit",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "current limit",
+        "power rating",
+        "insulation class",
+        "thermal limit",
+        "current capacity",
+        "power limit",
+        "frequency range",
+        "interrupting capacity"
+      ],
+      "gold_responses": [
+        "It specifies the maximum permitted voltage under stated conditions."
+      ],
+      "trap_aliases": [
+        "content classification",
+        "maturity level",
+        "parental guidance"
+      ],
+      "trap_responses": [
+        "It specifies the suitable audience age for media content.",
+        "It indicates whether content is appropriate for children.",
+        "It describes a film's maturity or parental-guidance category."
+      ]
+    },
+    {
+      "term": "string",
+      "question": "What can a string supply?",
+      "baseline_trap": "musical notes",
+      "gold": "DC power",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "string voltage",
+        "string current",
+        "array power",
+        "photovoltaic output",
+        "series voltage",
+        "array output",
+        "DC bus power"
+      ],
+      "gold_responses": [
+        "It can supply DC power from series-connected photovoltaic modules."
+      ],
+      "trap_aliases": [
+        "melody",
+        "harmony",
+        "chord progression"
+      ],
+      "trap_responses": [
+        "It can supply musical notes when plucked or bowed.",
+        "It produces tones that form melodies and harmonies.",
+        "It provides pitch through vibration at different frequencies."
+      ]
+    },
+    {
+      "term": "bus",
+      "question": "What can a bus distribute?",
+      "baseline_trap": "passengers along a route",
+      "gold": "electrical power",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "bus power",
+        "supply power",
+        "load power",
+        "electric energy",
+        "three-phase power",
+        "supply voltage",
+        "load current"
+      ],
+      "gold_responses": [
+        "A bus can distribute power to multiple connected loads."
+      ],
+      "trap_aliases": [
+        "passengers",
+        "commuters",
+        "riders"
+      ],
+      "trap_responses": [
+        "A bus can distribute passengers along its scheduled route.",
+        "It carries commuters between stops and destinations.",
+        "A school bus distributes students to designated stops."
+      ]
+    },
+    {
+      "term": "feeder",
+      "question": "What can a feeder supply?",
+      "baseline_trap": "food for animals",
+      "gold": "electrical power",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "feeder current",
+        "distribution power",
+        "supply current",
+        "load current",
+        "three-phase supply",
+        "downstream loads"
+      ],
+      "gold_responses": [
+        "A feeder can supply power to downstream distribution loads."
+      ],
+      "trap_aliases": [
+        "animal feed",
+        "livestock feed",
+        "grain ration"
+      ],
+      "trap_responses": [
+        "A feeder can supply food for livestock or pets.",
+        "It supplies animals with grain, hay, or feed.",
+        "An automatic feeder supplies measured portions of animal food."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "How much can a bank hold?",
+      "baseline_trap": "money or deposits",
+      "gold": "stored energy",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "electrical energy",
+        "stored charge",
+        "energy capacity",
+        "battery capacity",
+        "ampere-hour rating",
+        "kilowatt-hour capacity"
+      ],
+      "gold_responses": [
+        "Its usable energy depends on voltage, load, and discharge limit."
+      ],
+      "trap_aliases": [
+        "deposits",
+        "cash",
+        "account balance"
+      ],
+      "trap_responses": [
+        "It can hold customer deposits and other funds.",
+        "Its holdings depend on account balances and reserves.",
+        "A bank can hold money, securities, and deposits."
+      ]
+    },
+    {
+      "term": "cell",
+      "question": "How much can a cell hold?",
+      "baseline_trap": "a prisoner or biological material",
+      "gold": "charge capacity",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "stored charge",
+        "ampere-hours",
+        "electrical energy",
+        "ampere-hour capacity",
+        "coulomb capacity",
+        "energy rating"
+      ],
+      "gold_responses": [
+        "Capacity specifies how much charge the cell can supply."
+      ],
+      "trap_aliases": [
+        "prisoner",
+        "inmate",
+        "biological material"
+      ],
+      "trap_responses": [
+        "A cell can hold one or more prisoners.",
+        "It may contain an inmate during detention.",
+        "A biological cell can contain organelles and genetic material."
+      ]
+    },
+    {
+      "term": "plant",
+      "question": "What can a plant generate?",
+      "baseline_trap": "oxygen or biomass",
+      "gold": "electrical power",
+      "dominant_prior": "biology",
+      "gold_aliases": [
+        "grid electricity",
+        "generated power",
+        "AC power",
+        "electricity",
+        "electric energy",
+        "grid power",
+        "generator output"
+      ],
+      "gold_responses": [
+        "It can generate electricity from turbines and generators."
+      ],
+      "trap_aliases": [
+        "oxygen",
+        "biomass",
+        "seeds"
+      ],
+      "trap_responses": [
+        "A plant can generate oxygen through photosynthesis.",
+        "It can generate biomass as it grows.",
+        "A plant can generate seeds for reproduction."
+      ]
+    },
+    {
+      "term": "sag",
+      "question": "What does a sag lower?",
+      "baseline_trap": "clothing or posture",
+      "gold": "RMS voltage",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "supply voltage",
+        "line voltage",
+        "bus voltage",
+        "voltage magnitude"
+      ],
+      "gold_responses": [
+        "A sag decreases the delivered RMS voltage."
+      ],
+      "trap_aliases": [
+        "waistband",
+        "trouser crotch",
+        "posture"
+      ],
+      "trap_responses": [
+        "A sag lowers the waistband of loose clothing.",
+        "It lowers the crotch of a pair of pants.",
+        "A sag can lower a person's posture."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What can a reserve cover?",
+      "baseline_trap": "financial losses",
+      "gold": "power deficit",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "generation loss",
+        "load increase",
+        "demand shortfall",
+        "generation shortfall",
+        "contingency outage",
+        "peak demand",
+        "frequency imbalance"
+      ],
+      "gold_responses": [
+        "Operating reserve can cover a generator trip."
+      ],
+      "trap_aliases": [
+        "budget deficit",
+        "unexpected expenses",
+        "cash shortfall"
+      ],
+      "trap_responses": [
+        "A reserve can cover unexpected financial losses.",
+        "It can cover emergency expenses or revenue shortfalls.",
+        "A reserve may cover a budget deficit during difficult periods."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:13:22Z"
+}

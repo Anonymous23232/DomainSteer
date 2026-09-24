@@ -1,0 +1,470 @@
+{
+  "cluster_id": "3209",
+  "cluster": "Neurosciences",
+  "domain": "Neurosciences",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "costume, employment, farming, finance, hospitality, insurance, law, media, medicine, music, navigation, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After extinction, is it gone forever?",
+    "After release, does it stay available?",
+    "What is a channel?",
+    "What is a lesion?",
+    "What is a threshold?",
+    "What is adaptation?",
+    "What is an oscillation?",
+    "What is arousal?",
+    "What is charge?",
+    "What is depression?",
+    "What is drive?",
+    "What is extinction?",
+    "What is gain?",
+    "What is memory?",
+    "What is plasticity?",
+    "What is release?",
+    "What is resistance?",
+    "adaptation",
+    "arousal",
+    "channel",
+    "charge",
+    "depression",
+    "drive",
+    "extinction",
+    "gain",
+    "lesion",
+    "memory",
+    "oscillation",
+    "plasticity",
+    "release",
+    "resistance",
+    "threshold"
+  ],
+  "items": [
+    {
+      "term": "field",
+      "question": "What does a field delimit?",
+      "baseline_trap": "a playing area",
+      "gold": "receptive region",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "response region",
+        "sensory region",
+        "stimulus region",
+        "sensory territory",
+        "response zone",
+        "receptive space"
+      ],
+      "gold_responses": [
+        "A neuron's effective stimulus space."
+      ],
+      "trap_aliases": [
+        "playing surface",
+        "court boundary",
+        "pitch area"
+      ],
+      "trap_responses": [
+        "The area where a game is played.",
+        "The boundaries of a playing surface.",
+        "A designated space for sporting competition."
+      ]
+    },
+    {
+      "term": "map",
+      "question": "What does a map preserve?",
+      "baseline_trap": "geographic layout",
+      "gold": "neural topography",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "cortical layout",
+        "sensory layout",
+        "spatial topography",
+        "topographic organization",
+        "spatial representation",
+        "neural coordinate map"
+      ],
+      "gold_responses": [
+        "Spatial organization of inputs within a brain region."
+      ],
+      "trap_aliases": [
+        "geographic arrangement",
+        "terrain layout",
+        "route positions"
+      ],
+      "trap_responses": [
+        "The spatial layout of geographic locations.",
+        "Relative positions of places and landmarks.",
+        "The arrangement of features across an area."
+      ]
+    },
+    {
+      "term": "tuning",
+      "question": "What does tuning specify?",
+      "baseline_trap": "a pitch standard",
+      "gold": "preferred stimulus",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "favored feature",
+        "best frequency",
+        "preferred orientation",
+        "feature preference",
+        "receptive-field selectivity"
+      ],
+      "gold_responses": [
+        "It specifies the stimulus feature producing maximal neuronal response."
+      ],
+      "trap_aliases": [
+        "concert pitch",
+        "reference tone",
+        "standard frequency"
+      ],
+      "trap_responses": [
+        "It specifies the reference pitch for musical performance.",
+        "It defines the standard frequency used to tune instruments.",
+        "It sets the pitch standard for an ensemble."
+      ]
+    },
+    {
+      "term": "masking",
+      "question": "What does masking hide?",
+      "baseline_trap": "a person's identity",
+      "gold": "target stimulus",
+      "dominant_prior": "costume",
+      "gold_aliases": [
+        "test signal",
+        "probe stimulus",
+        "faint signal",
+        "test stimulus",
+        "probe signal",
+        "sensory target",
+        "detectable signal"
+      ],
+      "gold_responses": [
+        "It hides a target stimulus from perceptual detection."
+      ],
+      "trap_aliases": [
+        "the wearer",
+        "a face",
+        "personal identity"
+      ],
+      "trap_responses": [
+        "It hides a person's identity or facial appearance.",
+        "It conceals the wearer behind a disguise.",
+        "It covers the face to prevent recognition."
+      ]
+    },
+    {
+      "term": "binding",
+      "question": "What does binding join?",
+      "baseline_trap": "contracting parties",
+      "gold": "sensory features",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "visual features",
+        "feature conjunction",
+        "integrated percept",
+        "feature integration",
+        "perceptual features",
+        "sensory attributes",
+        "object features"
+      ],
+      "gold_responses": [
+        "It joins sensory features into a unified percept."
+      ],
+      "trap_aliases": [
+        "legal parties",
+        "contract signatories",
+        "agreement parties"
+      ],
+      "trap_responses": [
+        "It joins the parties entering a legal agreement.",
+        "It joins contracting parties through enforceable obligations.",
+        "It joins signatories under the terms of a contract."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage leave out?",
+      "baseline_trap": "excluded services",
+      "gold": "visual space",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "visual field",
+        "sensory space",
+        "receptive locations",
+        "uncovered space",
+        "blind regions",
+        "peripheral space"
+      ],
+      "gold_responses": [
+        "It leaves out blind or weakly sampled visual regions."
+      ],
+      "trap_aliases": [
+        "policy exclusions",
+        "noncovered care"
+      ],
+      "trap_responses": [
+        "It leaves out services excluded by the insurance policy.",
+        "It leaves out treatments not covered under the plan.",
+        "It leaves out expenses outside the policy's covered benefits."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment add?",
+      "baseline_trap": "new employees",
+      "gold": "motor units",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "active units",
+        "recruited units",
+        "motor-neuron pool",
+        "additional motor units",
+        "active motor units",
+        "motor unit activation",
+        "larger motor pool"
+      ],
+      "gold_responses": [
+        "It increases the number of activated motor units."
+      ],
+      "trap_aliases": [
+        "new hires",
+        "additional staff"
+      ],
+      "trap_responses": [
+        "It adds new employees to the organization.",
+        "It increases staffing through new hires.",
+        "It brings additional personnel onto the team."
+      ]
+    },
+    {
+      "term": "policy",
+      "question": "What does a policy choose?",
+      "baseline_trap": "a course of action",
+      "gold": "next action",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "action choice",
+        "behavioral response",
+        "response option",
+        "action selection",
+        "control action",
+        "next move",
+        "behavioral output"
+      ],
+      "gold_responses": [
+        "It selects the next action from the current state."
+      ],
+      "trap_aliases": [
+        "investment strategy",
+        "asset allocation",
+        "risk posture"
+      ],
+      "trap_responses": [
+        "It chooses a course of action for financial decisions.",
+        "It selects an investment strategy for available capital.",
+        "It determines how assets should be allocated."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag mark?",
+      "baseline_trap": "a product price",
+      "gold": "activated synapse",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "plasticity site",
+        "potentiated synapse",
+        "synaptic activity",
+        "tagged spine",
+        "active synapse",
+        "synaptic trace"
+      ],
+      "gold_responses": [
+        "It labels a synaptic site for consolidation."
+      ],
+      "trap_aliases": [
+        "item price",
+        "sale price",
+        "price label"
+      ],
+      "trap_responses": [
+        "It marks the price of a product.",
+        "It identifies an item's cost.",
+        "It shows the retail price for merchandise."
+      ]
+    },
+    {
+      "term": "relay",
+      "question": "What does a relay hand off?",
+      "baseline_trap": "a baton",
+      "gold": "neural signal",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "sensory signal",
+        "synaptic input",
+        "action potentials",
+        "action potential",
+        "sensory input",
+        "synaptic signal",
+        "neural information"
+      ],
+      "gold_responses": [
+        "It conveys synaptic input to a downstream target."
+      ],
+      "trap_aliases": [
+        "relay baton",
+        "baton handoff",
+        "running baton"
+      ],
+      "trap_responses": [
+        "It hands off a baton to the next runner.",
+        "It passes the baton during a race.",
+        "It transfers the relay baton between teammates."
+      ]
+    },
+    {
+      "term": "frame",
+      "question": "What can a frame define?",
+      "baseline_trap": "a shot boundary",
+      "gold": "spatial axes",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "coordinate system",
+        "reference coordinates",
+        "spatial origin",
+        "reference axes",
+        "anatomical coordinates",
+        "egocentric axes"
+      ],
+      "gold_responses": [
+        "A reference frame establishes directional coordinates in the brain."
+      ],
+      "trap_aliases": [
+        "scene boundary",
+        "camera view",
+        "image composition"
+      ],
+      "trap_responses": [
+        "A frame can define the boundary of a shot.",
+        "It defines what the camera captures in a scene.",
+        "A frame establishes the visible composition of an image."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What can reserve postpone?",
+      "baseline_trap": "financial insolvency",
+      "gold": "cognitive decline",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "clinical impairment",
+        "dementia symptoms",
+        "functional loss",
+        "dementia onset",
+        "symptom onset",
+        "functional decline"
+      ],
+      "gold_responses": [
+        "Reserve can postpone cognitive decline despite brain pathology."
+      ],
+      "trap_aliases": [
+        "bankruptcy",
+        "loan default",
+        "cash shortfall"
+      ],
+      "trap_responses": [
+        "Reserve can postpone financial insolvency during losses.",
+        "It may delay bankruptcy when revenue falls.",
+        "A reserve can defer default on financial obligations."
+      ]
+    },
+    {
+      "term": "root",
+      "question": "What does a root contain?",
+      "baseline_trap": "vascular tissue",
+      "gold": "nerve fibers",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "sensory axons",
+        "motor axons",
+        "spinal fibers",
+        "afferent fibers",
+        "nerve fascicles"
+      ],
+      "gold_responses": [
+        "Ventral roots contain motor axons."
+      ],
+      "trap_aliases": [
+        "xylem",
+        "phloem",
+        "conducting tissue"
+      ],
+      "trap_responses": [
+        "A root contains vascular tissue for transport.",
+        "Roots contain xylem and phloem vessels.",
+        "It contains conducting tissue that moves water and sugars."
+      ]
+    },
+    {
+      "term": "reception",
+      "question": "What does reception register?",
+      "baseline_trap": "guest arrival",
+      "gold": "sensory input",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "external stimuli",
+        "stimulus energy",
+        "environmental signals",
+        "sensory signals",
+        "afferent stimuli",
+        "receptor activity",
+        "environmental cues"
+      ],
+      "gold_responses": [
+        "Reception registers incoming sensory stimuli."
+      ],
+      "trap_aliases": [
+        "guest arrivals",
+        "visitor check-ins",
+        "reservations"
+      ],
+      "trap_responses": [
+        "Reception registers guest arrivals and departures.",
+        "It records visitor check-ins.",
+        "Reception registers reservations and arriving guests."
+      ]
+    },
+    {
+      "term": "block",
+      "question": "What can a block stop?",
+      "baseline_trap": "physical flow",
+      "gold": "nerve conduction",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "pain signals",
+        "neural transmission",
+        "action potentials",
+        "action potential propagation",
+        "axonal transmission",
+        "neural signaling",
+        "synaptic transmission"
+      ],
+      "gold_responses": [
+        "A block can stop nerve impulse propagation."
+      ],
+      "trap_aliases": [
+        "blood flow",
+        "fluid flow",
+        "airflow"
+      ],
+      "trap_responses": [
+        "A block can stop the flow of blood.",
+        "It may prevent fluid from passing through a vessel.",
+        "An obstruction can stop air from moving through a passage."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:51:23Z"
+}

@@ -1,0 +1,469 @@
+{
+  "cluster_id": "5108",
+  "cluster": "Quantum physics",
+  "domain": "Quantum physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "alcohol production, computing, everyday physical action, farming, finance, hunting, law, media and ceremony, medicine, retail, security, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After a collapse, is everything destroyed?",
+    "How does teleportation work?",
+    "What does a measurement do?",
+    "What does cooling do?",
+    "What is a barrier?",
+    "What is a bit?",
+    "What is a collapse?",
+    "What is a mode?",
+    "What is a phase?",
+    "What is a vacuum?",
+    "What is cloning?",
+    "What is coherence?",
+    "What is interference?",
+    "What is memory?",
+    "What is spin?",
+    "What is tunneling?",
+    "barrier",
+    "bit",
+    "cloning",
+    "coherence",
+    "collapse",
+    "cooling",
+    "interference",
+    "measurement",
+    "memory",
+    "mode",
+    "phase",
+    "spin",
+    "teleportation",
+    "tunneling",
+    "vacuum"
+  ],
+  "items": [
+    {
+      "term": "witness",
+      "question": "What can a witness establish?",
+      "baseline_trap": "a legal fact",
+      "gold": "entanglement",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "state nonseparability",
+        "an entangled state",
+        "nonclassical correlations",
+        "nonseparability",
+        "quantum correlations",
+        "state inseparability"
+      ],
+      "gold_responses": [
+        "It can certify entanglement in a bipartite quantum state."
+      ],
+      "trap_aliases": [
+        "testimony",
+        "guilt",
+        "liability"
+      ],
+      "trap_responses": [
+        "A witness can establish facts relevant to a case.",
+        "A witness may establish a defendant's identity.",
+        "Witness testimony can establish liability or guilt."
+      ]
+    },
+    {
+      "term": "syndrome",
+      "question": "What does a syndrome identify?",
+      "baseline_trap": "a medical disorder",
+      "gold": "error class",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "error pattern",
+        "stabilizer violations",
+        "correction class",
+        "Pauli coset",
+        "error equivalence class",
+        "stabilizer sector",
+        "recovery class"
+      ],
+      "gold_responses": [
+        "It identifies an error class requiring a corresponding recovery."
+      ],
+      "trap_aliases": [
+        "disease",
+        "medical condition",
+        "clinical diagnosis"
+      ],
+      "trap_responses": [
+        "A syndrome identifies a characteristic medical disorder.",
+        "It identifies a condition through a recurring symptom pattern.",
+        "It can indicate an underlying disease or diagnosis."
+      ]
+    },
+    {
+      "term": "click",
+      "question": "What does a click register?",
+      "baseline_trap": "a user selection",
+      "gold": "detection event",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "detector response",
+        "measurement outcome",
+        "photon arrival",
+        "photodetection event",
+        "detector count",
+        "photon count"
+      ],
+      "gold_responses": [
+        "A detector click signals a quantum measurement outcome."
+      ],
+      "trap_aliases": [
+        "mouse click",
+        "menu choice",
+        "button press"
+      ],
+      "trap_responses": [
+        "A click registers a user's selection.",
+        "It selects an interface element.",
+        "A click activates a button or link."
+      ]
+    },
+    {
+      "term": "key",
+      "question": "What can a key establish?",
+      "baseline_trap": "authorized access",
+      "gold": "shared secret",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "secret key",
+        "private randomness",
+        "correlated key",
+        "sifted key",
+        "raw key",
+        "secret bits"
+      ],
+      "gold_responses": [
+        "It can establish a shared cryptographic secret."
+      ],
+      "trap_aliases": [
+        "access credential",
+        "authorization token",
+        "door key"
+      ],
+      "trap_responses": [
+        "A key can establish authorized access.",
+        "It grants permission to enter a protected system.",
+        "A key verifies that a user is authorized."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What does a port label?",
+      "baseline_trap": "a network connection",
+      "gold": "optical path",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "input path",
+        "output path",
+        "field channel",
+        "field mode",
+        "spatial mode",
+        "input channel",
+        "output mode"
+      ],
+      "gold_responses": [
+        "It labels an input or output optical mode."
+      ],
+      "trap_aliases": [
+        "network endpoint",
+        "service socket",
+        "communication interface"
+      ],
+      "trap_responses": [
+        "It labels a network communication endpoint.",
+        "A port identifies a service on a host.",
+        "It specifies where network traffic is delivered."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What does a trap confine?",
+      "baseline_trap": "an animal",
+      "gold": "ultracold atoms",
+      "dominant_prior": "hunting",
+      "gold_aliases": [
+        "neutral atoms",
+        "atomic ensemble",
+        "degenerate gas",
+        "Bose gas",
+        "ultracold ions"
+      ],
+      "gold_responses": [
+        "It confines ultracold atoms using electromagnetic fields."
+      ],
+      "trap_aliases": [
+        "game animal",
+        "wild prey",
+        "quarry"
+      ],
+      "trap_responses": [
+        "It confines or captures an animal.",
+        "A trap catches prey or game animals.",
+        "It is designed to hold a wild animal."
+      ]
+    },
+    {
+      "term": "visibility",
+      "question": "What does visibility quantify?",
+      "baseline_trap": "how far one can see",
+      "gold": "fringe contrast",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "interference contrast",
+        "fringe modulation",
+        "coherence magnitude",
+        "coherence contrast",
+        "Michelson contrast"
+      ],
+      "gold_responses": [
+        "It quantifies the contrast of interference fringes."
+      ],
+      "trap_aliases": [
+        "viewing distance",
+        "sight range",
+        "road visibility"
+      ],
+      "trap_responses": [
+        "It quantifies how far a driver can see.",
+        "It measures the distance over which objects remain visible.",
+        "It indicates how clearly the road can be seen."
+      ]
+    },
+    {
+      "term": "coin",
+      "question": "What does a coin control?",
+      "baseline_trap": "a monetary payment",
+      "gold": "walk direction",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "conditional shift",
+        "path branch",
+        "lattice step",
+        "step direction",
+        "shift outcome",
+        "path choice",
+        "lattice motion"
+      ],
+      "gold_responses": [
+        "It determines which conditional shift the walker undergoes."
+      ],
+      "trap_aliases": [
+        "cash payment",
+        "currency unit",
+        "legal tender"
+      ],
+      "trap_responses": [
+        "It controls a monetary payment.",
+        "It can be used to pay for goods.",
+        "It represents a unit of currency."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature authenticate?",
+      "baseline_trap": "a legal document",
+      "gold": "message origin",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "sender identity",
+        "message authenticity",
+        "source identity",
+        "signer identity",
+        "origin assurance"
+      ],
+      "gold_responses": [
+        "It verifies who sent the message."
+      ],
+      "trap_aliases": [
+        "signed contract",
+        "official paperwork"
+      ],
+      "trap_responses": [
+        "It authenticates a legal document.",
+        "It verifies that a contract was signed.",
+        "It confirms approval of official paperwork."
+      ]
+    },
+    {
+      "term": "distillation",
+      "question": "What does distillation increase?",
+      "baseline_trap": "alcohol purity",
+      "gold": "entanglement",
+      "dominant_prior": "alcohol production",
+      "gold_aliases": [
+        "singlet fraction",
+        "Bell fidelity",
+        "entanglement fidelity",
+        "Bell-pair fidelity",
+        "usable ebits",
+        "nonlocal correlations"
+      ],
+      "gold_responses": [
+        "It raises the fidelity of entangled pairs."
+      ],
+      "trap_aliases": [
+        "alcohol strength",
+        "ethanol concentration",
+        "proof level"
+      ],
+      "trap_responses": [
+        "It increases alcohol purity.",
+        "It raises the ethanol concentration.",
+        "It produces stronger, more concentrated spirits."
+      ]
+    },
+    {
+      "term": "squeezing",
+      "question": "What does squeezing reduce?",
+      "baseline_trap": "physical volume",
+      "gold": "quadrature noise",
+      "dominant_prior": "everyday physical action",
+      "gold_aliases": [
+        "quadrature variance",
+        "field fluctuations",
+        "uncertainty noise",
+        "shot noise",
+        "vacuum fluctuations",
+        "phase variance",
+        "amplitude uncertainty"
+      ],
+      "gold_responses": [
+        "It reduces noise in one field quadrature."
+      ],
+      "trap_aliases": [
+        "object size",
+        "bulk dimensions"
+      ],
+      "trap_responses": [
+        "It reduces the physical volume of an object.",
+        "It makes something smaller by compression.",
+        "It reduces the space occupied by the material."
+      ]
+    },
+    {
+      "term": "herald",
+      "question": "What does a herald announce?",
+      "baseline_trap": "a notable arrival",
+      "gold": "photon presence",
+      "dominant_prior": "media and ceremony",
+      "gold_aliases": [
+        "single photon",
+        "partner photon",
+        "successful preparation",
+        "idler detection",
+        "detector click",
+        "coincidence signal",
+        "entanglement flag"
+      ],
+      "gold_responses": [
+        "It announces the presence of a correlated photon."
+      ],
+      "trap_aliases": [
+        "celebrity arrival",
+        "royal visit",
+        "important guest"
+      ],
+      "trap_responses": [
+        "It announces the arrival of an important person.",
+        "It proclaims that a notable guest has arrived.",
+        "It signals the approach of a dignitary."
+      ]
+    },
+    {
+      "term": "lattice",
+      "question": "What can a lattice support?",
+      "baseline_trap": "climbing plants",
+      "gold": "ultracold atoms",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "atomic gas",
+        "Bose gas",
+        "fermionic atoms",
+        "Bose-Einstein condensates",
+        "atomic wavepackets",
+        "Mott insulating atoms",
+        "coherent matter waves"
+      ],
+      "gold_responses": [
+        "A lattice supports coherent many-body atomic states."
+      ],
+      "trap_aliases": [
+        "climbing vines",
+        "bean plants",
+        "grape vines"
+      ],
+      "trap_responses": [
+        "A lattice supports climbing plants as they grow.",
+        "It provides a structure for vines to climb.",
+        "Garden plants can be trained onto a lattice."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register hold?",
+      "baseline_trap": "transaction records",
+      "gold": "qubits",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "logical qubits",
+        "encoded qubits",
+        "quantum states",
+        "computational states",
+        "quantum bits",
+        "entangled qubits"
+      ],
+      "gold_responses": [
+        "A register holds a collection of qubits."
+      ],
+      "trap_aliases": [
+        "sales records",
+        "purchase data",
+        "inventory entries"
+      ],
+      "trap_responses": [
+        "A register holds transaction records from sales.",
+        "It stores purchases and payment details.",
+        "The register contains records of retail transactions."
+      ]
+    },
+    {
+      "term": "bus",
+      "question": "What does a bus connect?",
+      "baseline_trap": "destinations",
+      "gold": "qubits",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "quantum nodes",
+        "circuit modes",
+        "resonator modes",
+        "coupled qubits",
+        "quantum registers",
+        "processor nodes",
+        "cavity modes",
+        "memory qubits"
+      ],
+      "gold_responses": [
+        "It connects processing qubits to memory qubits."
+      ],
+      "trap_aliases": [
+        "stops",
+        "cities",
+        "routes"
+      ],
+      "trap_responses": [
+        "A bus connects destinations along a route.",
+        "It connects passengers with different stops.",
+        "A bus connects neighborhoods, cities, or transit terminals."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:57:32Z"
+}

@@ -1,0 +1,468 @@
+{
+  "cluster_id": "3007",
+  "cluster": "Forestry sciences",
+  "domain": "Forestry sciences",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "architecture transport, art, art law, everyday English, finance, hospitality, insurance, internet media, medicine, music, plumbing, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After release, does it keep growing?",
+    "Can thinning make what remains stronger?",
+    "What does release mean?",
+    "What does the grade tell you?",
+    "What is a chip?",
+    "What is a clone?",
+    "What is a crown?",
+    "What is a flush?",
+    "What is a rotation?",
+    "What is a stand?",
+    "What is competition?",
+    "What is litter?",
+    "What is regeneration?",
+    "What is resistance?",
+    "What is stress?",
+    "What is thinning?",
+    "When is a harvest ready?",
+    "chip",
+    "clone",
+    "competition",
+    "crown",
+    "flush",
+    "grade",
+    "harvest",
+    "litter",
+    "regeneration",
+    "release",
+    "resistance",
+    "rotation",
+    "stand",
+    "stress",
+    "thinning"
+  ],
+  "items": [
+    {
+      "term": "index",
+      "question": "What does an index measure?",
+      "baseline_trap": "stock-market performance",
+      "gold": "site productivity",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "site quality",
+        "height potential",
+        "growth capacity",
+        "site capacity",
+        "growth potential",
+        "stand productivity",
+        "yield potential"
+      ],
+      "gold_responses": [
+        "It quantifies site quality for tree growth."
+      ],
+      "trap_aliases": [
+        "market benchmark",
+        "share performance",
+        "portfolio value"
+      ],
+      "trap_responses": [
+        "It measures overall stock-market performance.",
+        "It tracks changes in a basket of securities.",
+        "It indicates how selected shares perform over time."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does stock quality predict?",
+      "baseline_trap": "investment return",
+      "gold": "seedling survival",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "field survival",
+        "outplanting success",
+        "establishment success",
+        "planting success",
+        "field establishment",
+        "outplanting performance",
+        "survival potential"
+      ],
+      "gold_responses": [
+        "It predicts whether nursery seedlings will survive after planting."
+      ],
+      "trap_aliases": [
+        "capital gains",
+        "share returns",
+        "portfolio yield"
+      ],
+      "trap_responses": [
+        "It predicts the investment's expected return.",
+        "It indicates potential gains or losses for investors.",
+        "It forecasts how well a security may perform."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What does pitch show?",
+      "baseline_trap": "sound frequency",
+      "gold": "resin content",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "oleoresin level",
+        "extractives content",
+        "resin pockets",
+        "resin flow",
+        "sap exudation",
+        "resin production"
+      ],
+      "gold_responses": [
+        "Pitch shows resin content in the wood."
+      ],
+      "trap_aliases": [
+        "musical frequency",
+        "note height",
+        "tone frequency"
+      ],
+      "trap_responses": [
+        "Pitch shows how high or low a note sounds.",
+        "It indicates the frequency of a sound.",
+        "Higher pitch means faster sound-wave vibrations."
+      ]
+    },
+    {
+      "term": "gallery",
+      "question": "What can a gallery show?",
+      "baseline_trap": "artworks",
+      "gold": "beetle activity",
+      "dominant_prior": "art",
+      "gold_aliases": [
+        "bark beetles",
+        "larval feeding",
+        "insect attack",
+        "borer presence",
+        "larval tunnels",
+        "insect infestation"
+      ],
+      "gold_responses": [
+        "A gallery can show beetle activity beneath the bark."
+      ],
+      "trap_aliases": [
+        "paintings",
+        "sculptures",
+        "art exhibition"
+      ],
+      "trap_responses": [
+        "A gallery can show paintings and sculptures.",
+        "It displays artworks for visitors to view.",
+        "The gallery may show an artist's collection."
+      ]
+    },
+    {
+      "term": "ladder",
+      "question": "What can a ladder carry?",
+      "baseline_trap": "a person",
+      "gold": "crown fire",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "canopy fire",
+        "flame spread",
+        "vertical fire",
+        "canopy flames",
+        "crown ignition",
+        "fire upward",
+        "surface flames"
+      ],
+      "gold_responses": [
+        "It can carry flames upward into tree crowns."
+      ],
+      "trap_aliases": [
+        "a climber",
+        "a worker"
+      ],
+      "trap_responses": [
+        "It can carry a person to a higher place.",
+        "A ladder carries someone climbing up or down.",
+        "It supports a worker while reaching elevated areas."
+      ]
+    },
+    {
+      "term": "sticker",
+      "question": "What does a sticker keep apart?",
+      "baseline_trap": "a label and backing",
+      "gold": "lumber courses",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "drying boards",
+        "stacked lumber",
+        "board layers",
+        "timber courses",
+        "lumber layers",
+        "stacked boards"
+      ],
+      "gold_responses": [
+        "It keeps lumber courses separated for air circulation."
+      ],
+      "trap_aliases": [
+        "label backing",
+        "release liner",
+        "adhesive backing"
+      ],
+      "trap_responses": [
+        "It keeps the label separate from its backing.",
+        "A sticker separates from its release liner.",
+        "It keeps adhesive material apart from the backing paper."
+      ]
+    },
+    {
+      "term": "figure",
+      "question": "What does figure describe?",
+      "baseline_trap": "a numerical quantity",
+      "gold": "grain pattern",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "wood grain",
+        "decorative grain",
+        "figured wood",
+        "wood figure",
+        "visual grain"
+      ],
+      "gold_responses": [
+        "It describes the decorative pattern visible in wood grain."
+      ],
+      "trap_aliases": [
+        "number",
+        "value",
+        "statistic"
+      ],
+      "trap_responses": [
+        "It describes a numerical quantity or value.",
+        "A figure is a number used in calculation.",
+        "It refers to a statistic or numerical result."
+      ]
+    },
+    {
+      "term": "recovery",
+      "question": "What does recovery measure?",
+      "baseline_trap": "return of health",
+      "gold": "lumber yield",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "product yield",
+        "usable volume",
+        "conversion yield",
+        "lumber recovery",
+        "sawn yield",
+        "recovery factor"
+      ],
+      "gold_responses": [
+        "It measures the proportion of log volume recovered as lumber."
+      ],
+      "trap_aliases": [
+        "convalescence",
+        "healing",
+        "rehabilitation"
+      ],
+      "trap_responses": [
+        "It measures a patient's return to health.",
+        "Recovery assesses improvement after illness or injury.",
+        "It indicates how fully someone regains normal function."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage quantify?",
+      "baseline_trap": "insurance protection",
+      "gold": "canopy cover",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "crown cover",
+        "forest cover",
+        "vegetation cover",
+        "canopy closure",
+        "overstory cover"
+      ],
+      "gold_responses": [
+        "It quantifies the proportion of ground covered by tree crowns."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risk",
+        "benefit scope"
+      ],
+      "trap_responses": [
+        "It quantifies the protection provided by an insurance policy.",
+        "It measures which losses and risks the policy covers.",
+        "It establishes the scope of insured benefits and exclusions."
+      ]
+    },
+    {
+      "term": "provenance",
+      "question": "What does provenance establish?",
+      "baseline_trap": "artwork authenticity",
+      "gold": "seed origin",
+      "dominant_prior": "art law",
+      "gold_aliases": [
+        "seed source",
+        "geographic origin",
+        "population origin",
+        "geographic source",
+        "collection locality",
+        "genetic origin"
+      ],
+      "gold_responses": [
+        "It establishes the geographic origin of seed material."
+      ],
+      "trap_aliases": [
+        "ownership history",
+        "chain of custody",
+        "authenticity record"
+      ],
+      "trap_responses": [
+        "It establishes an artwork's ownership and transaction history.",
+        "It documents the chain of custody supporting authenticity.",
+        "It verifies where an artwork came from and who owned it."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What does a host support?",
+      "baseline_trap": "party guests",
+      "gold": "pathogen growth",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "fungal growth",
+        "pest development",
+        "parasite growth",
+        "parasite development",
+        "insect colonization",
+        "fungal infection",
+        "symbiont establishment"
+      ],
+      "gold_responses": [
+        "A host supports pathogen growth and reproduction."
+      ],
+      "trap_aliases": [
+        "visiting guests",
+        "social gathering",
+        "party attendees"
+      ],
+      "trap_responses": [
+        "A host supports party guests.",
+        "They provide food, drinks, and hospitality.",
+        "A host makes visitors feel welcome."
+      ]
+    },
+    {
+      "term": "web",
+      "question": "What can a web trace?",
+      "baseline_trap": "browsing activity",
+      "gold": "trophic links",
+      "dominant_prior": "internet media",
+      "gold_aliases": [
+        "feeding links",
+        "food-web relations",
+        "species interactions",
+        "feeding interactions",
+        "energy pathways",
+        "predator-prey links",
+        "food-chain connections"
+      ],
+      "gold_responses": [
+        "A food web traces interdependent feeding relationships."
+      ],
+      "trap_aliases": [
+        "user browsing",
+        "online activity",
+        "website visits"
+      ],
+      "trap_responses": [
+        "A web can trace browsing activity.",
+        "It tracks pages visited by users.",
+        "Web analytics trace online behavior."
+      ]
+    },
+    {
+      "term": "corridor",
+      "question": "What can a corridor reconnect?",
+      "baseline_trap": "transport routes",
+      "gold": "habitat patches",
+      "dominant_prior": "architecture transport",
+      "gold_aliases": [
+        "forest fragments",
+        "wildlife habitat",
+        "isolated populations",
+        "wildlife habitats",
+        "isolated stands",
+        "breeding populations"
+      ],
+      "gold_responses": [
+        "It reconnects forest fragments for wildlife movement."
+      ],
+      "trap_aliases": [
+        "road networks",
+        "rail lines",
+        "transit systems"
+      ],
+      "trap_responses": [
+        "A corridor can reconnect separated transport routes.",
+        "It links road networks between destinations.",
+        "It can reconnect rail lines and transit hubs."
+      ]
+    },
+    {
+      "term": "tap",
+      "question": "What can a tap yield?",
+      "baseline_trap": "running water",
+      "gold": "tree sap",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "maple sap",
+        "oleoresin",
+        "latex",
+        "xylem sap",
+        "rubber latex",
+        "pine oleoresin"
+      ],
+      "gold_responses": [
+        "A tap can yield tree sap for collection."
+      ],
+      "trap_aliases": [
+        "hot water",
+        "cold water",
+        "drinking water"
+      ],
+      "trap_responses": [
+        "A tap can yield running water.",
+        "It may yield hot or cold water.",
+        "A tap yields drinking water from the plumbing supply."
+      ]
+    },
+    {
+      "term": "pulp",
+      "question": "What does pulp contain?",
+      "baseline_trap": "nerves and vessels",
+      "gold": "cellulose fibers",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "wood fibers",
+        "lignocellulose",
+        "cellulose",
+        "lignin",
+        "hemicellulose"
+      ],
+      "gold_responses": [
+        "Pulp contains cellulose fibers and residual lignin."
+      ],
+      "trap_aliases": [
+        "blood vessels",
+        "nerve fibers",
+        "connective tissue"
+      ],
+      "trap_responses": [
+        "Pulp contains nerves, blood vessels, and connective tissue.",
+        "It has vascular tissue supplying the inner structure.",
+        "Nerve fibers and blood vessels run through the pulp."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:34:04Z"
+}

@@ -1,0 +1,467 @@
+{
+  "cluster_id": "4603",
+  "cluster": "Computer vision and multimedia computation",
+  "domain": "Computer vision and multimedia computation",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "art, computing, everyday housing, farming, finance, household appliances, law, medicine, nuclear physics, social media, software, sports, tourism",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How do you estimate depth?",
+    "How does tracking work?",
+    "What is a mask?",
+    "What is a pose?",
+    "What is a transform?",
+    "What is capture?",
+    "What is compression?",
+    "What is detection?",
+    "What is exposure?",
+    "What is matching?",
+    "What is noise?",
+    "What is resolution?",
+    "What is segmentation?",
+    "What is stereo?",
+    "What is stitching?",
+    "capture",
+    "compression",
+    "depth",
+    "detection",
+    "exposure",
+    "mask",
+    "matching",
+    "noise",
+    "pose",
+    "resolution",
+    "segmentation",
+    "stereo",
+    "stitching",
+    "tracking",
+    "transform"
+  ],
+  "items": [
+    {
+      "term": "window",
+      "question": "What does a window delimit?",
+      "baseline_trap": "a wall opening",
+      "gold": "local neighborhood",
+      "dominant_prior": "everyday housing",
+      "gold_aliases": [
+        "pixel neighborhood",
+        "image patch",
+        "support region",
+        "analysis region",
+        "filter support",
+        "spatial extent"
+      ],
+      "gold_responses": [
+        "It delimits the local neighborhood used for image analysis."
+      ],
+      "trap_aliases": [
+        "glass opening",
+        "house aperture"
+      ],
+      "trap_responses": [
+        "It delimits an opening in a wall.",
+        "It marks the space fitted with glass and a frame.",
+        "It separates an interior room from the outside."
+      ]
+    },
+    {
+      "term": "crop",
+      "question": "What does a crop contain?",
+      "baseline_trap": "harvested produce",
+      "gold": "selected pixels",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "image region",
+        "pixel subset",
+        "region of interest",
+        "image subset",
+        "cropped region"
+      ],
+      "gold_responses": [
+        "It contains the selected pixels from the original image."
+      ],
+      "trap_aliases": [
+        "agricultural yield",
+        "gathered harvest"
+      ],
+      "trap_responses": [
+        "It contains plants harvested from a field.",
+        "It contains agricultural produce grown during a season.",
+        "It includes the yield collected by farmers."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What does a profile specify?",
+      "baseline_trap": "a user's details",
+      "gold": "color response",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "color mapping",
+        "tone response",
+        "device characterization",
+        "device colorimetry",
+        "chromatic mapping",
+        "gamut characterization"
+      ],
+      "gold_responses": [
+        "It specifies a device's color response."
+      ],
+      "trap_aliases": [
+        "personal information",
+        "account details",
+        "biographical data"
+      ],
+      "trap_responses": [
+        "It specifies a user's personal details.",
+        "It describes someone's identity and interests.",
+        "It contains account information and biography."
+      ]
+    },
+    {
+      "term": "palette",
+      "question": "What does a palette restrict?",
+      "baseline_trap": "an artist's choices",
+      "gold": "color set",
+      "dominant_prior": "art",
+      "gold_aliases": [
+        "indexed colors",
+        "available colors",
+        "quantization table",
+        "indexed entries",
+        "quantization levels",
+        "allowable hues"
+      ],
+      "gold_responses": [
+        "It restricts the available color values."
+      ],
+      "trap_aliases": [
+        "artistic options",
+        "creative selection",
+        "painting colors"
+      ],
+      "trap_responses": [
+        "It restricts an artist's available color choices.",
+        "It limits the colors chosen for a painting.",
+        "It guides an artwork's visual color scheme."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What does a filter reject?",
+      "baseline_trap": "physical contaminants",
+      "gold": "frequency components",
+      "dominant_prior": "household appliances",
+      "gold_aliases": [
+        "unwanted bands",
+        "high frequencies",
+        "low frequencies",
+        "unwanted frequencies",
+        "noise components",
+        "spectral components"
+      ],
+      "gold_responses": [
+        "It attenuates undesirable signal bands before further processing."
+      ],
+      "trap_aliases": [
+        "dirt particles",
+        "dust",
+        "impurities"
+      ],
+      "trap_responses": [
+        "It rejects dust and other airborne contaminants.",
+        "It traps dirt particles before air passes through.",
+        "It removes impurities from water or air."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score rank?",
+      "baseline_trap": "team performance",
+      "gold": "candidate similarity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "match score",
+        "similarity value",
+        "recognition confidence",
+        "match quality",
+        "correspondence confidence",
+        "retrieval relevance",
+        "detection confidence"
+      ],
+      "gold_responses": [
+        "It ranks candidate matches by visual similarity."
+      ],
+      "trap_aliases": [
+        "player performance",
+        "game results"
+      ],
+      "trap_responses": [
+        "It ranks teams by their performance in competition.",
+        "It ranks players based on points and achievements.",
+        "It orders competitors according to game results."
+      ]
+    },
+    {
+      "term": "landmark",
+      "question": "What can a landmark locate?",
+      "baseline_trap": "a geographic place",
+      "gold": "facial feature",
+      "dominant_prior": "tourism",
+      "gold_aliases": [
+        "eye corner",
+        "nose tip",
+        "anatomical point",
+        "facial keypoint",
+        "feature point",
+        "fiducial point",
+        "anatomical feature"
+      ],
+      "gold_responses": [
+        "A facial feature location."
+      ],
+      "trap_aliases": [
+        "tourist destination",
+        "historic site",
+        "city location"
+      ],
+      "trap_responses": [
+        "A geographic place on a map.",
+        "A notable tourist destination.",
+        "A famous historical location."
+      ]
+    },
+    {
+      "term": "cut",
+      "question": "What does a cut separate?",
+      "baseline_trap": "body tissue",
+      "gold": "shot boundary",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "adjacent shots",
+        "edit point",
+        "scene transition",
+        "edit boundary",
+        "video segments"
+      ],
+      "gold_responses": [
+        "Two consecutive video shots."
+      ],
+      "trap_aliases": [
+        "body tissues",
+        "skin layers",
+        "surgical wound"
+      ],
+      "trap_responses": [
+        "Body tissue during surgery.",
+        "Layers of skin and muscle.",
+        "Tissue on either side of a wound."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What does a return indicate?",
+      "baseline_trap": "an investment gain",
+      "gold": "surface range",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "range measurement",
+        "surface distance",
+        "echo delay",
+        "reflector distance",
+        "target distance",
+        "depth measurement",
+        "range estimate"
+      ],
+      "gold_responses": [
+        "It indicates the measured distance to a reflecting surface."
+      ],
+      "trap_aliases": [
+        "profit",
+        "capital gain",
+        "yield"
+      ],
+      "trap_responses": [
+        "It indicates an investment's profit or loss.",
+        "It measures the gain earned on invested capital.",
+        "It shows the financial performance of an asset."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "legal ownership",
+      "gold": "geometric alignment",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "image alignment",
+        "spatial correspondence",
+        "coordinate alignment",
+        "point alignment",
+        "spatial alignment",
+        "image correspondence",
+        "coordinate mapping",
+        "pose alignment"
+      ],
+      "gold_responses": [
+        "It establishes geometric alignment between two images."
+      ],
+      "trap_aliases": [
+        "legal title",
+        "property rights",
+        "ownership record"
+      ],
+      "trap_responses": [
+        "It establishes legal ownership of an asset.",
+        "It creates an official record of ownership.",
+        "It documents rights recognized by the relevant authority."
+      ]
+    },
+    {
+      "term": "kernel",
+      "question": "What does a kernel control?",
+      "baseline_trap": "operating-system resources",
+      "gold": "neighborhood weighting",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "convolution weights",
+        "filter coefficients",
+        "local weights",
+        "spatial filter",
+        "spatial weighting",
+        "local filter support"
+      ],
+      "gold_responses": [
+        "It defines the weights used for local image filtering."
+      ],
+      "trap_aliases": [
+        "resource allocation",
+        "process scheduling",
+        "memory management"
+      ],
+      "trap_responses": [
+        "It controls access to hardware and system resources.",
+        "It manages processes, memory, and device operations.",
+        "It coordinates resource allocation among running programs."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What does a patch describe?",
+      "baseline_trap": "software changes",
+      "gold": "local appearance",
+      "dominant_prior": "software",
+      "gold_aliases": [
+        "image neighborhood",
+        "local region",
+        "pixel neighborhood",
+        "texture sample",
+        "image region",
+        "local texture",
+        "visual region"
+      ],
+      "gold_responses": [
+        "It describes the appearance within a small image region."
+      ],
+      "trap_aliases": [
+        "bug fixes",
+        "code modifications",
+        "software update"
+      ],
+      "trap_responses": [
+        "It describes changes made to correct or improve software.",
+        "It contains fixes, updates, or modifications to program code.",
+        "It specifies alterations applied to an existing software release."
+      ]
+    },
+    {
+      "term": "fusion",
+      "question": "What does fusion combine?",
+      "baseline_trap": "atomic nuclei",
+      "gold": "sensor modalities",
+      "dominant_prior": "nuclear physics",
+      "gold_aliases": [
+        "input modalities",
+        "sensor streams",
+        "multimodal signals",
+        "cross-modal data",
+        "multisensor data",
+        "cross-modal cues",
+        "aligned measurements"
+      ],
+      "gold_responses": [
+        "It merges aligned observations across sensing modalities."
+      ],
+      "trap_aliases": [
+        "nuclear particles",
+        "light nuclei"
+      ],
+      "trap_responses": [
+        "It combines light atomic nuclei into heavier nuclei.",
+        "Fusion joins nuclei and releases enormous energy.",
+        "It combines hydrogen isotopes to form helium."
+      ]
+    },
+    {
+      "term": "scan",
+      "question": "What can a scan reveal?",
+      "baseline_trap": "internal anatomy",
+      "gold": "surface geometry",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "scene geometry",
+        "object shape",
+        "range structure",
+        "surface shape",
+        "depth structure",
+        "range geometry",
+        "three-dimensional form"
+      ],
+      "gold_responses": [
+        "It reveals object shape and depth discontinuities."
+      ],
+      "trap_aliases": [
+        "internal organs",
+        "tumors",
+        "bone fractures"
+      ],
+      "trap_responses": [
+        "A scan can reveal internal anatomy and organ abnormalities.",
+        "It may reveal tumors, fractures, or tissue damage.",
+        "It can detect disease within the body."
+      ]
+    },
+    {
+      "term": "projection",
+      "question": "What does a projection map?",
+      "baseline_trap": "future revenue",
+      "gold": "3D points",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "world points",
+        "scene points",
+        "spatial points",
+        "scene geometry",
+        "world coordinates",
+        "3D locations"
+      ],
+      "gold_responses": [
+        "It maps world coordinates to a two-dimensional image plane."
+      ],
+      "trap_aliases": [
+        "cash flows",
+        "earnings forecast",
+        "sales estimate"
+      ],
+      "trap_responses": [
+        "It maps expected future revenue over time.",
+        "It maps projected earnings from current business assumptions.",
+        "It maps anticipated sales into a financial forecast."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:03:56Z"
+}

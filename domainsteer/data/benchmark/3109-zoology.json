@@ -1,0 +1,467 @@
+{
+  "cluster_id": "3109",
+  "cluster": "Zoology",
+  "domain": "Zoology",
+  "division": "Biological Sciences",
+  "dominant_prior": "audio engineering, automotive, farming, finance, hospitality, household equipment, law, medicine, networking, photography, retail, shooting sports, social class",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "If fusion fails, can development continue?",
+    "What is a display?",
+    "What is a drive?",
+    "What is a host?",
+    "What is a load?",
+    "What is a receptor?",
+    "What is a territory?",
+    "What is a trigger?",
+    "What is bandwidth?",
+    "What is courtship?",
+    "What is fusion?",
+    "What is imprinting?",
+    "What is masking?",
+    "What is memory?",
+    "What is migration?",
+    "What is recruitment?",
+    "bandwidth",
+    "courtship",
+    "display",
+    "drive",
+    "fusion",
+    "host",
+    "imprinting",
+    "load",
+    "masking",
+    "memory",
+    "migration",
+    "receptor",
+    "recruitment",
+    "territory",
+    "trigger"
+  ],
+  "items": [
+    {
+      "term": "compliance",
+      "question": "What does compliance measure?",
+      "baseline_trap": "adherence to a rule",
+      "gold": "tissue distensibility",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "organ distensibility",
+        "lung elasticity",
+        "pressure-volume response",
+        "elastic expansion",
+        "vascular capacitance",
+        "elastic expandability"
+      ],
+      "gold_responses": [
+        "It measures tissue expansion per unit pressure change."
+      ],
+      "trap_aliases": [
+        "rule adherence",
+        "regulatory conformity",
+        "legal observance"
+      ],
+      "trap_responses": [
+        "It measures adherence to a rule or requirement.",
+        "It indicates whether someone follows applicable regulations.",
+        "It assesses conformity with laws, policies, or directives."
+      ]
+    },
+    {
+      "term": "latency",
+      "question": "What does latency measure?",
+      "baseline_trap": "network delay",
+      "gold": "response delay",
+      "dominant_prior": "networking",
+      "gold_aliases": [
+        "neural delay",
+        "reaction time",
+        "signal delay",
+        "response time",
+        "onset delay"
+      ],
+      "gold_responses": [
+        "It measures the delay before a behavioral or physiological response."
+      ],
+      "trap_aliases": [
+        "ping time",
+        "transmission delay",
+        "round-trip time"
+      ],
+      "trap_responses": [
+        "It measures delay in sending data across a network.",
+        "It is the time taken for a packet to travel.",
+        "It indicates network responsiveness between request and reply."
+      ]
+    },
+    {
+      "term": "aperture",
+      "question": "What does aperture regulate?",
+      "baseline_trap": "camera exposure",
+      "gold": "retinal illumination",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "light entry",
+        "pupil diameter",
+        "iris opening",
+        "retinal light",
+        "pupillary flux",
+        "retinal irradiance",
+        "incoming light"
+      ],
+      "gold_responses": [
+        "It regulates the amount of light reaching the retina."
+      ],
+      "trap_aliases": [
+        "shutter speed",
+        "f-stop",
+        "image brightness"
+      ],
+      "trap_responses": [
+        "It regulates the amount of light entering the camera.",
+        "It controls exposure by changing the lens opening.",
+        "It determines image brightness and depth of field."
+      ]
+    },
+    {
+      "term": "caste",
+      "question": "What does caste determine?",
+      "baseline_trap": "social standing",
+      "gold": "reproductive role",
+      "dominant_prior": "social class",
+      "gold_aliases": [
+        "colony role",
+        "worker status",
+        "queen status",
+        "labour division",
+        "fertility",
+        "breeding status",
+        "ovary development",
+        "reproductive capacity"
+      ],
+      "gold_responses": [
+        "It governs fertility and reproductive specialization."
+      ],
+      "trap_aliases": [
+        "social rank",
+        "class position",
+        "social status"
+      ],
+      "trap_responses": [
+        "It determines a person's social standing.",
+        "It defines rank within a social hierarchy.",
+        "It influences status, privilege, and occupation."
+      ]
+    },
+    {
+      "term": "conversion",
+      "question": "What does conversion compare?",
+      "baseline_trap": "currency values",
+      "gold": "feed efficiency",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "dietary efficiency",
+        "feed conversion",
+        "growth efficiency",
+        "feed conversion ratio",
+        "dietary conversion"
+      ],
+      "gold_responses": [
+        "It compares feed intake with body-mass gain."
+      ],
+      "trap_aliases": [
+        "exchange rate",
+        "foreign exchange",
+        "currency conversion"
+      ],
+      "trap_responses": [
+        "It compares the value of one currency with another.",
+        "It shows how much one currency buys in another.",
+        "It measures the exchange rate between currencies."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover indicate?",
+      "baseline_trap": "retail sales volume",
+      "gold": "cell renewal",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "tissue replacement",
+        "cell replacement",
+        "epithelial renewal",
+        "cell loss",
+        "tissue renewal",
+        "cellular renewal",
+        "replacement rate"
+      ],
+      "gold_responses": [
+        "It shows the rate of cellular replacement within tissue."
+      ],
+      "trap_aliases": [
+        "sales volume",
+        "stock velocity",
+        "retail revenue"
+      ],
+      "trap_responses": [
+        "It indicates the total value of goods sold.",
+        "It measures how quickly inventory is sold.",
+        "It shows the volume of retail sales over time."
+      ]
+    },
+    {
+      "term": "intake",
+      "question": "What does intake quantify?",
+      "baseline_trap": "hospital admissions",
+      "gold": "food consumption",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "dietary consumption",
+        "food ingestion",
+        "nutrient consumption",
+        "feed consumption",
+        "feed intake",
+        "food eaten",
+        "nutrient ingestion",
+        "daily consumption"
+      ],
+      "gold_responses": [
+        "It quantifies the amount of food consumed."
+      ],
+      "trap_aliases": [
+        "patient admissions",
+        "hospital entries",
+        "admission rate"
+      ],
+      "trap_responses": [
+        "It quantifies the number of patients admitted.",
+        "It measures hospital admissions over a given period.",
+        "It records how many people enter the hospital."
+      ]
+    },
+    {
+      "term": "set point",
+      "question": "What does a set point specify?",
+      "baseline_trap": "thermostat target",
+      "gold": "regulated value",
+      "dominant_prior": "household equipment",
+      "gold_aliases": [
+        "temperature target",
+        "osmotic target",
+        "homeostatic target",
+        "physiological target",
+        "reference value",
+        "regulated level"
+      ],
+      "gold_responses": [
+        "It specifies the regulated value of a physiological variable."
+      ],
+      "trap_aliases": [
+        "thermostat setting",
+        "temperature target",
+        "heater setting"
+      ],
+      "trap_responses": [
+        "It specifies the desired temperature for the thermostat.",
+        "It sets the temperature the heating system maintains.",
+        "It defines the target temperature for climate control."
+      ]
+    },
+    {
+      "term": "clutch",
+      "question": "What can a clutch contain?",
+      "baseline_trap": "friction plates",
+      "gold": "eggs",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "egg batch",
+        "brood eggs",
+        "ovum cluster",
+        "fertilized eggs",
+        "avian eggs",
+        "reptile eggs",
+        "developing embryos"
+      ],
+      "gold_responses": [
+        "The clutch may hold embryos within their eggs."
+      ],
+      "trap_aliases": [
+        "clutch disc",
+        "pressure plate",
+        "release bearing"
+      ],
+      "trap_responses": [
+        "A clutch can contain friction plates and a pressure plate.",
+        "It may include a clutch disc and release bearing.",
+        "The assembly contains plates, springs, and a flywheel interface."
+      ]
+    },
+    {
+      "term": "crop",
+      "question": "What can a crop contain?",
+      "baseline_trap": "harvested grain",
+      "gold": "ingesta",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "stored food",
+        "feed",
+        "seeds",
+        "food bolus",
+        "seed meal",
+        "nectar"
+      ],
+      "gold_responses": [
+        "The crop can contain food awaiting passage to the stomach."
+      ],
+      "trap_aliases": [
+        "wheat",
+        "barley",
+        "corn"
+      ],
+      "trap_responses": [
+        "A crop can contain harvested grain such as wheat.",
+        "It may include barley, corn, or other cereals.",
+        "The crop yield can contain marketable grain."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance measure?",
+      "baseline_trap": "sale discount",
+      "gold": "elimination rate",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "removal rate",
+        "plasma clearance",
+        "excretion rate",
+        "excretory clearance",
+        "blood clearance"
+      ],
+      "gold_responses": [
+        "The body's capacity to clear a substance from plasma."
+      ],
+      "trap_aliases": [
+        "price reduction",
+        "markdown",
+        "discount rate"
+      ],
+      "trap_responses": [
+        "The amount reduced from an item's original price.",
+        "How much a retailer discounts merchandise for sale.",
+        "The price reduction offered to clear remaining stock."
+      ]
+    },
+    {
+      "term": "gain",
+      "question": "What does gain control?",
+      "baseline_trap": "amplifier output",
+      "gold": "response sensitivity",
+      "dominant_prior": "audio engineering",
+      "gold_aliases": [
+        "neural sensitivity",
+        "response amplitude",
+        "sensory responsiveness",
+        "response amplification",
+        "reflex sensitivity"
+      ],
+      "gold_responses": [
+        "The sensitivity of a neuron's response to stimulation."
+      ],
+      "trap_aliases": [
+        "volume level",
+        "signal amplification",
+        "output level"
+      ],
+      "trap_responses": [
+        "The amount an amplifier increases an audio signal.",
+        "How loud the output signal becomes after amplification.",
+        "The amplification level applied to an incoming sound signal."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What does accommodation adjust?",
+      "baseline_trap": "lodging arrangements",
+      "gold": "lens focus",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "optical focus",
+        "focal distance",
+        "refractive power",
+        "lens curvature",
+        "focal length",
+        "optical power",
+        "retinal focus"
+      ],
+      "gold_responses": [
+        "It alters optical power to maintain a sharp retinal image."
+      ],
+      "trap_aliases": [
+        "guest lodging",
+        "room arrangements",
+        "travel needs"
+      ],
+      "trap_responses": [
+        "It adjusts lodging arrangements for guests.",
+        "It changes room assignments to meet guest needs.",
+        "It modifies travel and sleeping arrangements."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What does a range describe?",
+      "baseline_trap": "a firing area",
+      "gold": "spatial use",
+      "dominant_prior": "shooting sports",
+      "gold_aliases": [
+        "home range",
+        "utilized area",
+        "movement area",
+        "occupied space",
+        "habitat use"
+      ],
+      "gold_responses": [
+        "It describes the area an animal regularly uses."
+      ],
+      "trap_aliases": [
+        "shooting zone",
+        "target area",
+        "firing line"
+      ],
+      "trap_responses": [
+        "It describes a designated area for firing weapons.",
+        "It identifies the place where shooting practice occurs.",
+        "It marks the area used for target shooting."
+      ]
+    },
+    {
+      "term": "standing",
+      "question": "What can standing establish?",
+      "baseline_trap": "legal eligibility",
+      "gold": "dominance rank",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "social rank",
+        "hierarchy position",
+        "dominance status",
+        "rank order"
+      ],
+      "gold_responses": [
+        "Standing establishes an individual's place in the dominance hierarchy."
+      ],
+      "trap_aliases": [
+        "right to sue",
+        "legal capacity",
+        "party status"
+      ],
+      "trap_responses": [
+        "Standing establishes eligibility to bring a lawsuit.",
+        "It can establish a party's right to sue.",
+        "Standing determines whether a claimant may seek judicial relief."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:21:27Z"
+}

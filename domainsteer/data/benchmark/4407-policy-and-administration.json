@@ -1,0 +1,448 @@
+{
+  "cluster_id": "4407",
+  "cluster": "Policy and administration",
+  "domain": "Policy and administration",
+  "division": "Human Society",
+  "dominant_prior": "automotive, business, computing, employment, finance, household finance, media, medicine, retail, software, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "voucher",
+      "question": "What does a voucher subsidize?",
+      "baseline_trap": "a discounted retail purchase",
+      "gold": "rental cost",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "tenant rent",
+        "housing costs",
+        "lease payment",
+        "rent burden",
+        "housing assistance",
+        "rent subsidy",
+        "tenant subsidy",
+        "housing payment"
+      ],
+      "gold_responses": [
+        "It helps cover rent paid by an eligible tenant."
+      ],
+      "trap_aliases": [
+        "store credit",
+        "purchase coupon",
+        "discount coupon"
+      ],
+      "trap_responses": [
+        "It subsidizes the price of a retail purchase.",
+        "It gives a shopper a discount or credit toward merchandise.",
+        "It reduces what a customer pays for a product or service."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "job security",
+      "gold": "occupancy rights",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "housing security",
+        "land rights",
+        "tenancy protection",
+        "secure occupancy",
+        "security of tenure",
+        "residency protection",
+        "occupancy security",
+        "possession rights"
+      ],
+      "gold_responses": [
+        "It safeguards a tenant's or owner's claim to stay on the property."
+      ],
+      "trap_aliases": [
+        "employment security",
+        "permanent appointment",
+        "job protection"
+      ],
+      "trap_responses": [
+        "It secures a worker's job against dismissal without cause.",
+        "It gives an employee continuing employment status.",
+        "It protects an academic or employee from arbitrary termination."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What does a channel designate?",
+      "baseline_trap": "a television station",
+      "gold": "licensed frequency",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "radio spectrum",
+        "broadcast frequency",
+        "spectrum assignment",
+        "frequency allocation",
+        "spectrum allocation",
+        "frequency assignment",
+        "radio allocation"
+      ],
+      "gold_responses": [
+        "It marks an allocated broadcast frequency band."
+      ],
+      "trap_aliases": [
+        "TV station",
+        "television network",
+        "broadcast outlet"
+      ],
+      "trap_responses": [
+        "It designates a television station or network.",
+        "It refers to a media outlet that carries programming.",
+        "It identifies a broadcaster's programming service."
+      ]
+    },
+    {
+      "term": "allowance",
+      "question": "What does an allowance authorize?",
+      "baseline_trap": "personal spending",
+      "gold": "carbon emissions",
+      "dominant_prior": "household finance",
+      "gold_aliases": [
+        "emission rights",
+        "pollution discharge",
+        "carbon releases",
+        "authorized emissions",
+        "emissions permit",
+        "carbon permit",
+        "emission unit",
+        "pollution permit"
+      ],
+      "gold_responses": [
+        "It grants the holder permission to account for allowable emissions."
+      ],
+      "trap_aliases": [
+        "spending money",
+        "pocket money",
+        "personal budget"
+      ],
+      "trap_responses": [
+        "It authorizes money for a person's personal spending.",
+        "It is a regular sum someone may spend on discretionary items.",
+        "It provides spending money for everyday personal purchases."
+      ]
+    },
+    {
+      "term": "franchise",
+      "question": "What does a franchise authorize?",
+      "baseline_trap": "a branded business operation",
+      "gold": "utility service",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "public utility",
+        "service concession",
+        "operating rights",
+        "utility operation",
+        "utility concession",
+        "operating concession",
+        "service authority"
+      ],
+      "gold_responses": [
+        "It authorizes a provider to deliver a utility service within a defined area."
+      ],
+      "trap_aliases": [
+        "business format",
+        "brand license",
+        "chain outlet"
+      ],
+      "trap_responses": [
+        "It authorizes a business to operate under an established brand.",
+        "It gives an owner the right to use a company's business model and trademarks.",
+        "It permits a franchisee to open and run a branded location."
+      ]
+    },
+    {
+      "term": "bracket",
+      "question": "What does a bracket classify?",
+      "baseline_trap": "tournament teams",
+      "gold": "taxable income",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "income range",
+        "tax band",
+        "rate category",
+        "income tier",
+        "income band",
+        "tax tier",
+        "rate band"
+      ],
+      "gold_responses": [
+        "It classifies taxable income into a rate range."
+      ],
+      "trap_aliases": [
+        "playoff grouping",
+        "tournament draw",
+        "team seeding"
+      ],
+      "trap_responses": [
+        "It classifies teams in a tournament draw.",
+        "It shows the matchups and progression of competing teams.",
+        "It organizes entrants into rounds of a sports tournament."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does stock indicate?",
+      "baseline_trap": "retail inventory",
+      "gold": "housing supply",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "dwelling supply",
+        "available homes",
+        "residential units",
+        "housing units",
+        "housing inventory",
+        "available housing"
+      ],
+      "gold_responses": [
+        "It describes the available and occupied supply of dwellings."
+      ],
+      "trap_aliases": [
+        "store inventory",
+        "merchandise supply",
+        "goods on hand"
+      ],
+      "trap_responses": [
+        "It indicates the inventory of goods a retailer has available.",
+        "It shows how much merchandise is on hand for sale.",
+        "It refers to products held in a store's inventory."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What does a window specify?",
+      "baseline_trap": "a computer display area",
+      "gold": "application period",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "filing period",
+        "enrollment period",
+        "comment period",
+        "submission period",
+        "application timeframe",
+        "eligibility period"
+      ],
+      "gold_responses": [
+        "It specifies the period during which applications may be submitted."
+      ],
+      "trap_aliases": [
+        "screen area",
+        "display pane",
+        "desktop window"
+      ],
+      "trap_responses": [
+        "It specifies an area of the computer display used by an application.",
+        "It is a rectangular screen region for viewing and interacting with content.",
+        "It provides a display pane for a program or document."
+      ]
+    },
+    {
+      "term": "cap",
+      "question": "What does a cap constrain?",
+      "baseline_trap": "a team's payroll",
+      "gold": "emissions output",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "carbon output",
+        "pollution discharge",
+        "greenhouse emissions",
+        "emissions limit",
+        "pollution ceiling",
+        "carbon ceiling",
+        "discharge limit"
+      ],
+      "gold_responses": [
+        "It constrains the total amount of emissions that may be released."
+      ],
+      "trap_aliases": [
+        "salary ceiling",
+        "payroll limit",
+        "spending ceiling"
+      ],
+      "trap_responses": [
+        "It constrains the amount a team may spend on player payroll.",
+        "It sets a maximum payroll level for a sports club.",
+        "It limits spending on athlete salaries."
+      ]
+    },
+    {
+      "term": "license",
+      "question": "What does a license authorize?",
+      "baseline_trap": "software use",
+      "gold": "broadcast operation",
+      "dominant_prior": "software",
+      "gold_aliases": [
+        "spectrum use",
+        "airwave transmission",
+        "media service",
+        "broadcast authorization",
+        "spectrum license",
+        "transmission permit",
+        "station authorization"
+      ],
+      "gold_responses": [
+        "It authorizes operation of a broadcast service on assigned spectrum."
+      ],
+      "trap_aliases": [
+        "software permission",
+        "user license",
+        "program entitlement"
+      ],
+      "trap_responses": [
+        "It authorizes a user to install or use software.",
+        "It grants permission to access a program under stated terms.",
+        "It allows the licensee to use software legally."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What does a bond secure?",
+      "baseline_trap": "debt repayment",
+      "gold": "court appearance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "trial attendance",
+        "bail compliance",
+        "defendant return",
+        "bail guarantee",
+        "appearance guarantee",
+        "release surety",
+        "court surety"
+      ],
+      "gold_responses": [
+        "It secures a defendant's appearance at required court proceedings."
+      ],
+      "trap_aliases": [
+        "debt instrument",
+        "fixed-income security",
+        "loan security"
+      ],
+      "trap_responses": [
+        "It secures debt repayment to an investor.",
+        "It is a financial instrument through which an issuer borrows money.",
+        "It promises interest payments and repayment of principal."
+      ]
+    },
+    {
+      "term": "relief",
+      "question": "What does relief reduce?",
+      "baseline_trap": "physical pain",
+      "gold": "tax liability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "tax burden",
+        "tax obligation",
+        "assessed tax",
+        "tax reduction",
+        "tax concession",
+        "liability reduction",
+        "tax credit"
+      ],
+      "gold_responses": [
+        "It decreases the payable tax through an exemption, deduction, or credit."
+      ],
+      "trap_aliases": [
+        "pain reduction",
+        "symptom relief",
+        "analgesic effect"
+      ],
+      "trap_responses": [
+        "It reduces physical pain or discomfort.",
+        "It eases symptoms associated with an illness or injury.",
+        "It provides comfort by lessening pain."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What can a portfolio contain?",
+      "baseline_trap": "investment holdings",
+      "gold": "ministerial duties",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "cabinet duties",
+        "departmental remit",
+        "agency responsibility",
+        "ministerial brief",
+        "cabinet responsibilities",
+        "ministerial remit"
+      ],
+      "gold_responses": [
+        "It can contain the duties assigned to a minister or officeholder."
+      ],
+      "trap_aliases": [
+        "asset holdings",
+        "investment mix",
+        "securities holdings"
+      ],
+      "trap_responses": [
+        "It can contain an investor's holdings of stocks, bonds, and other assets.",
+        "It is a collection of investments held by an individual or fund.",
+        "It includes the securities and assets selected for investment."
+      ]
+    },
+    {
+      "term": "review",
+      "question": "What does a review assess?",
+      "baseline_trap": "a film's quality",
+      "gold": "agency decision",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "permit decision",
+        "benefit denial",
+        "administrative ruling",
+        "administrative review",
+        "decision audit",
+        "agency reassessment",
+        "procedural review"
+      ],
+      "gold_responses": [
+        "It assesses whether an agency decision was lawful, justified, and properly made."
+      ],
+      "trap_aliases": [
+        "film critique",
+        "movie rating",
+        "cinema appraisal"
+      ],
+      "trap_responses": [
+        "It assesses a film's quality, performances, and overall effectiveness.",
+        "It offers a critic's evaluation of a movie.",
+        "It judges whether a film is worth watching."
+      ]
+    },
+    {
+      "term": "lease",
+      "question": "What does a lease grant?",
+      "baseline_trap": "vehicle use",
+      "gold": "tenant possession",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "housing occupancy",
+        "residential tenure",
+        "occupancy rights",
+        "tenancy possession",
+        "occupancy grant",
+        "rental possession",
+        "tenant occupancy"
+      ],
+      "gold_responses": [
+        "It gives the tenant the right to occupy and use the property."
+      ],
+      "trap_aliases": [
+        "car rental",
+        "auto lease"
+      ],
+      "trap_responses": [
+        "It grants a customer the right to use a vehicle for a specified period.",
+        "It allows someone to drive a car in return for scheduled payments.",
+        "It provides temporary use of an automobile under a contract."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:26:07Z"
+}

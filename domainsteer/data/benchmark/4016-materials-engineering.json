@@ -1,0 +1,472 @@
+{
+  "cluster_id": "4016",
+  "cluster": "Materials engineering",
+  "domain": "Materials engineering",
+  "division": "Engineering",
+  "dominant_prior": "apparel retail, consumer electronics, education, everyday drinking, human cognition, law, logistics, media, office supplies, retail, sports, workplace",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a cure?",
+    "What is a defect?",
+    "What is a grain?",
+    "What is a matrix?",
+    "What is a phase?",
+    "What is aging?",
+    "What is charge?",
+    "What is fatigue?",
+    "What is hardness?",
+    "What is plastic?",
+    "What is stiffness?",
+    "What is stress?",
+    "What is temper?",
+    "What is texture?",
+    "What is yield?",
+    "aging",
+    "charge",
+    "cure",
+    "defect",
+    "fatigue",
+    "grain",
+    "hardness",
+    "matrix",
+    "phase",
+    "plastic",
+    "stiffness",
+    "stress",
+    "temper",
+    "texture",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "binder",
+      "question": "What can a binder hold together?",
+      "baseline_trap": "a set of documents",
+      "gold": "particulate solids",
+      "dominant_prior": "office supplies",
+      "gold_aliases": [
+        "ceramic particles",
+        "filler particles",
+        "reinforcement fibers",
+        "powder compact",
+        "ceramic grains",
+        "powder particles",
+        "aggregate solids"
+      ],
+      "gold_responses": [
+        "It can hold particulate solids into a cohesive body."
+      ],
+      "trap_aliases": [
+        "document packet",
+        "paper bundle",
+        "file collection"
+      ],
+      "trap_responses": [
+        "It can hold a set of documents together.",
+        "It organizes papers for storage or presentation.",
+        "It keeps reports and reference sheets in one place."
+      ]
+    },
+    {
+      "term": "coupon",
+      "question": "What can a coupon reveal?",
+      "baseline_trap": "a discount amount",
+      "gold": "mechanical properties",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "tensile strength",
+        "elastic modulus",
+        "fracture toughness",
+        "creep resistance",
+        "fatigue behavior"
+      ],
+      "gold_responses": [
+        "It can reveal tensile strength and ductility."
+      ],
+      "trap_aliases": [
+        "sale price",
+        "percent discount",
+        "promotion value"
+      ],
+      "trap_responses": [
+        "It can reveal how much money is discounted.",
+        "It shows the percentage off a purchase.",
+        "It indicates the promotional savings available."
+      ]
+    },
+    {
+      "term": "memory",
+      "question": "What can memory recover?",
+      "baseline_trap": "a past event",
+      "gold": "original shape",
+      "dominant_prior": "human cognition",
+      "gold_aliases": [
+        "programmed shape",
+        "trained shape",
+        "permanent shape",
+        "initial geometry",
+        "predeformed geometry",
+        "memorized form",
+        "initial configuration"
+      ],
+      "gold_responses": [
+        "It can recover its programmed shape after activation."
+      ],
+      "trap_aliases": [
+        "remembered event",
+        "past experience",
+        "recalled episode"
+      ],
+      "trap_responses": [
+        "It can recover a past event.",
+        "It retrieves details of an earlier experience.",
+        "It recalls something that happened before."
+      ]
+    },
+    {
+      "term": "heat",
+      "question": "What can a heat number establish?",
+      "baseline_trap": "race assignment",
+      "gold": "melt traceability",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "melt identity",
+        "cast identity",
+        "batch traceability",
+        "material pedigree",
+        "lot provenance",
+        "cast traceability",
+        "melt certification"
+      ],
+      "gold_responses": [
+        "It establishes traceability to a specific melt."
+      ],
+      "trap_aliases": [
+        "event placement",
+        "competitive grouping"
+      ],
+      "trap_responses": [
+        "It can establish a competitor's race assignment.",
+        "It identifies which preliminary race an athlete enters.",
+        "It determines placement in a qualifying race."
+      ]
+    },
+    {
+      "term": "finish",
+      "question": "What can a finish establish?",
+      "baseline_trap": "a race result",
+      "gold": "surface condition",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "roughness level",
+        "surface profile",
+        "gloss level",
+        "wear resistance",
+        "surface texture",
+        "roughness class",
+        "coating quality"
+      ],
+      "gold_responses": [
+        "It defines the surface gloss level."
+      ],
+      "trap_aliases": [
+        "finishing position",
+        "final placement",
+        "winning result"
+      ],
+      "trap_responses": [
+        "It establishes the competitor's final position.",
+        "It determines who won the race.",
+        "It shows the order of competitors at the end."
+      ]
+    },
+    {
+      "term": "grade",
+      "question": "What can a grade identify?",
+      "baseline_trap": "academic achievement",
+      "gold": "alloy composition",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "composition range",
+        "strength class",
+        "material specification",
+        "property class",
+        "alloy designation",
+        "strength classification"
+      ],
+      "gold_responses": [
+        "It identifies a standardized alloy designation."
+      ],
+      "trap_aliases": [
+        "letter mark",
+        "course mark",
+        "academic rating"
+      ],
+      "trap_responses": [
+        "It identifies a student's academic achievement.",
+        "It indicates performance in a course.",
+        "It shows how well a student performed."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What does a case protect?",
+      "baseline_trap": "a phone",
+      "gold": "ductile core",
+      "dominant_prior": "consumer electronics",
+      "gold_aliases": [
+        "softer interior",
+        "substrate core",
+        "base metal",
+        "interior metal",
+        "ductile substrate",
+        "tough core",
+        "soft interior",
+        "underlying metal"
+      ],
+      "gold_responses": [
+        "It shields the tough core against abrasion and indentation."
+      ],
+      "trap_aliases": [
+        "a smartphone",
+        "mobile device",
+        "phone body"
+      ],
+      "trap_responses": [
+        "A case protects a phone from drops and scratches.",
+        "It protects the device's exterior during everyday use.",
+        "A case shields a smartphone from impact damage."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What can a bond establish?",
+      "baseline_trap": "bail release",
+      "gold": "interfacial adhesion",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "adhesive joint",
+        "fiber adhesion",
+        "interface cohesion",
+        "surface attachment",
+        "interface adhesion",
+        "joint integrity",
+        "interfacial strength",
+        "load transfer"
+      ],
+      "gold_responses": [
+        "A bond can establish adhesion across a material interface."
+      ],
+      "trap_aliases": [
+        "pretrial release",
+        "temporary freedom"
+      ],
+      "trap_responses": [
+        "A bond can establish release from jail before trial.",
+        "It establishes the terms for pretrial release.",
+        "A bond allows temporary release while awaiting court."
+      ]
+    },
+    {
+      "term": "layup",
+      "question": "What can a layup determine?",
+      "baseline_trap": "game score",
+      "gold": "laminate stiffness",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "laminate strength",
+        "directional stiffness",
+        "mechanical response",
+        "fiber orientation",
+        "anisotropic stiffness",
+        "bending rigidity",
+        "failure strength"
+      ],
+      "gold_responses": [
+        "It determines directional stiffness and strength."
+      ],
+      "trap_aliases": [
+        "final score",
+        "point total",
+        "match result"
+      ],
+      "trap_responses": [
+        "It can determine the final score.",
+        "It can decide which team wins.",
+        "It can affect the game's outcome."
+      ]
+    },
+    {
+      "term": "band",
+      "question": "What can a band contain?",
+      "baseline_trap": "musicians",
+      "gold": "energy states",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "electronic states",
+        "allowed energies",
+        "energy levels",
+        "allowed states",
+        "valence states",
+        "conduction states"
+      ],
+      "gold_responses": [
+        "It can contain allowed electron energy states."
+      ],
+      "trap_aliases": [
+        "band members",
+        "performers"
+      ],
+      "trap_responses": [
+        "It can contain several musicians.",
+        "It may include singers and instrumentalists.",
+        "It can contain touring performers."
+      ]
+    },
+    {
+      "term": "sizing",
+      "question": "What can sizing control?",
+      "baseline_trap": "garment fit",
+      "gold": "liquid absorbency",
+      "dominant_prior": "apparel retail",
+      "gold_aliases": [
+        "ink penetration",
+        "water resistance",
+        "surface wetting",
+        "surface wettability",
+        "sheet porosity"
+      ],
+      "gold_responses": [
+        "Sizing controls liquid absorbency in paper and board."
+      ],
+      "trap_aliases": [
+        "clothing fit",
+        "garment size",
+        "body fit"
+      ],
+      "trap_responses": [
+        "Sizing controls how well a garment fits.",
+        "It can change the fit around the body.",
+        "Sizing determines whether clothing feels too tight or loose."
+      ]
+    },
+    {
+      "term": "quench",
+      "question": "What can a quench change?",
+      "baseline_trap": "thirst level",
+      "gold": "crystal microstructure",
+      "dominant_prior": "everyday drinking",
+      "gold_aliases": [
+        "atomic ordering",
+        "transformation products",
+        "residual strain",
+        "phase distribution",
+        "grain structure",
+        "residual stress",
+        "martensite fraction"
+      ],
+      "gold_responses": [
+        "A quench can change the crystal microstructure."
+      ],
+      "trap_aliases": [
+        "hydration",
+        "dry mouth"
+      ],
+      "trap_responses": [
+        "A quench can reduce your thirst.",
+        "It can improve hydration after exercise.",
+        "Drinking can relieve a dry mouth."
+      ]
+    },
+    {
+      "term": "firing",
+      "question": "What can firing change?",
+      "baseline_trap": "employment status",
+      "gold": "ceramic microstructure",
+      "dominant_prior": "workplace",
+      "gold_aliases": [
+        "pore structure",
+        "densification level",
+        "crystal structure",
+        "grain size",
+        "phase composition",
+        "pore morphology",
+        "sintered density"
+      ],
+      "gold_responses": [
+        "Firing can alter grain size and phase composition."
+      ],
+      "trap_aliases": [
+        "job security",
+        "termination status",
+        "workforce membership"
+      ],
+      "trap_responses": [
+        "It can change an employee's employment status.",
+        "Firing changes whether someone remains employed.",
+        "It affects job security and workforce membership."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier transport?",
+      "baseline_trap": "passengers",
+      "gold": "electric charge",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "negative charge",
+        "positive charge",
+        "electrical current",
+        "electrons",
+        "holes",
+        "charge current",
+        "ionic charge"
+      ],
+      "gold_responses": [
+        "Carriers transport electric charge through a semiconductor."
+      ],
+      "trap_aliases": [
+        "cargo",
+        "freight",
+        "goods"
+      ],
+      "trap_responses": [
+        "A carrier can transport passengers between locations.",
+        "It transports cargo, freight, and commercial goods.",
+        "Carriers move people and shipments along transport routes."
+      ]
+    },
+    {
+      "term": "set",
+      "question": "What can a set leave behind?",
+      "baseline_trap": "a match score",
+      "gold": "permanent deformation",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "residual strain",
+        "permanent strain",
+        "retained deformation",
+        "compression set",
+        "plastic strain",
+        "permanent set",
+        "residual deformation"
+      ],
+      "gold_responses": [
+        "A set can leave permanent deformation after unloading."
+      ],
+      "trap_aliases": [
+        "final score",
+        "scoreline",
+        "points tally"
+      ],
+      "trap_responses": [
+        "A set contributes to the match score.",
+        "It leaves a recorded scoreline.",
+        "The result appears in the points tally."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:24:35Z"
+}

@@ -1,0 +1,459 @@
+{
+  "cluster_id": "5104",
+  "cluster": "Condensed matter physics",
+  "domain": "Condensed matter physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "employment, farming, food and drink, hospitality, insurance, law enforcement, media, medicine, programming, shipping, social life, textiles, traffic",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a bond?",
+    "What is a channel?",
+    "What is a defect?",
+    "What is a gap?",
+    "What is a lattice?",
+    "What is a phase?",
+    "What is a surface?",
+    "What is current?",
+    "What is frustration?",
+    "What is glass?",
+    "What is memory?",
+    "What is order?",
+    "What is pinning?",
+    "What is spin?",
+    "What is symmetry?",
+    "bond",
+    "channel",
+    "current",
+    "defect",
+    "frustration",
+    "gap",
+    "glass",
+    "lattice",
+    "memory",
+    "order",
+    "phase",
+    "pinning",
+    "spin",
+    "surface",
+    "symmetry"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "the extent of insurance protection",
+      "gold": "adsorbate coverage",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "surface occupancy",
+        "fractional coverage",
+        "monolayer fraction",
+        "adsorbate density",
+        "site occupation"
+      ],
+      "gold_responses": [
+        "It measures the fraction of surface sites occupied by adsorbates."
+      ],
+      "trap_aliases": [
+        "policy coverage",
+        "insurance protection",
+        "insured scope"
+      ],
+      "trap_responses": [
+        "It measures the extent of protection provided by an insurance policy.",
+        "It specifies which losses, risks, or expenses are insured.",
+        "It indicates the benefits and situations included in a policy."
+      ]
+    },
+    {
+      "term": "registry",
+      "question": "What does registry specify?",
+      "baseline_trap": "a guest record",
+      "gold": "stacking alignment",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "layer registry",
+        "atomic alignment",
+        "stacking order",
+        "epitaxial alignment",
+        "layer stacking",
+        "interfacial alignment",
+        "lattice coincidence"
+      ],
+      "gold_responses": [
+        "It identifies the stacking position between an overlayer and substrate."
+      ],
+      "trap_aliases": [
+        "visitor log",
+        "booking record"
+      ],
+      "trap_responses": [
+        "It specifies the record containing a guest's stay information.",
+        "It identifies guests registered at a hotel or lodging facility.",
+        "It records reservations, check-in details, and guest information."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier transport?",
+      "baseline_trap": "freight",
+      "gold": "electric charge",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "electrons",
+        "holes",
+        "charge current",
+        "electrical charge",
+        "ionic charge",
+        "electronic charge"
+      ],
+      "gold_responses": [
+        "A carrier transports electrical charge through the material."
+      ],
+      "trap_aliases": [
+        "cargo",
+        "goods",
+        "merchandise"
+      ],
+      "trap_responses": [
+        "A carrier transports freight from one location to another.",
+        "It moves cargo for customers or businesses.",
+        "It carries goods between ports, warehouses, or destinations."
+      ]
+    },
+    {
+      "term": "texture",
+      "question": "What does texture specify?",
+      "baseline_trap": "a material's feel or weave",
+      "gold": "grain orientation",
+      "dominant_prior": "textiles",
+      "gold_aliases": [
+        "preferred orientation",
+        "orientation distribution",
+        "crystallographic alignment",
+        "crystallographic orientation",
+        "grain alignment"
+      ],
+      "gold_responses": [
+        "It describes preferred grain orientations in a polycrystal."
+      ],
+      "trap_aliases": [
+        "fabric weave",
+        "surface feel",
+        "material hand"
+      ],
+      "trap_responses": [
+        "Texture specifies how a fabric feels to the touch.",
+        "It describes the weave and surface character of a material.",
+        "It indicates whether cloth feels smooth, rough, soft, or coarse."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield mark?",
+      "baseline_trap": "crop output",
+      "gold": "plastic onset",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "yield stress",
+        "flow threshold",
+        "elastic limit",
+        "yield point",
+        "plastic threshold"
+      ],
+      "gold_responses": [
+        "It marks the onset of irreversible plastic deformation."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "crop production",
+        "farm output"
+      ],
+      "trap_responses": [
+        "It marks the amount of crop harvested.",
+        "It measures agricultural output from a field.",
+        "It indicates how much produce a farm generates."
+      ]
+    },
+    {
+      "term": "mobility",
+      "question": "What does mobility quantify?",
+      "baseline_trap": "social advancement",
+      "gold": "carrier transport",
+      "dominant_prior": "social life",
+      "gold_aliases": [
+        "electron mobility",
+        "hole mobility",
+        "drift response",
+        "carrier mobility",
+        "transport coefficient"
+      ],
+      "gold_responses": [
+        "It measures how readily charge carriers move through a material."
+      ],
+      "trap_aliases": [
+        "social mobility",
+        "class mobility",
+        "upward mobility"
+      ],
+      "trap_responses": [
+        "It quantifies movement between social classes.",
+        "It measures opportunities for socioeconomic advancement.",
+        "It describes a person's ability to improve social status."
+      ]
+    },
+    {
+      "term": "bias",
+      "question": "What does bias shift?",
+      "baseline_trap": "public opinion",
+      "gold": "chemical potential",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "Fermi level",
+        "electrochemical potential",
+        "carrier energies",
+        "band alignment"
+      ],
+      "gold_responses": [
+        "It shifts the electrochemical potential across the sample."
+      ],
+      "trap_aliases": [
+        "public sentiment",
+        "voter attitudes",
+        "audience perception"
+      ],
+      "trap_responses": [
+        "It shifts public opinion.",
+        "It can shift voter attitudes.",
+        "Media bias shifts audience perceptions."
+      ]
+    },
+    {
+      "term": "jam",
+      "question": "What does a jam prevent?",
+      "baseline_trap": "traffic movement",
+      "gold": "particle flow",
+      "dominant_prior": "traffic",
+      "gold_aliases": [
+        "shear flow",
+        "particle rearrangement",
+        "structural relaxation",
+        "granular flow",
+        "particle motion",
+        "collective rearrangement"
+      ],
+      "gold_responses": [
+        "It prevents transport through the disordered assembly."
+      ],
+      "trap_aliases": [
+        "vehicle movement",
+        "road traffic",
+        "car flow"
+      ],
+      "trap_responses": [
+        "It prevents traffic from moving.",
+        "A traffic jam stops vehicle movement.",
+        "It blocks cars from flowing along the road."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What does a host provide?",
+      "baseline_trap": "guest accommodation",
+      "gold": "lattice sites",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "crystal framework",
+        "embedding lattice",
+        "interstitial sites",
+        "crystal lattice",
+        "substitutional sites",
+        "structural framework"
+      ],
+      "gold_responses": [
+        "It provides lattice sites for incorporated atoms."
+      ],
+      "trap_aliases": [
+        "lodging",
+        "shelter",
+        "amenities"
+      ],
+      "trap_responses": [
+        "A host provides accommodation for guests.",
+        "They offer hospitality, food, and a place to stay.",
+        "A host makes visitors feel welcome and comfortable."
+      ]
+    },
+    {
+      "term": "director",
+      "question": "What does a director specify?",
+      "baseline_trap": "creative direction",
+      "gold": "orientational axis",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "nematic orientation",
+        "molecular alignment",
+        "director field",
+        "nematic axis",
+        "alignment direction",
+        "average orientation",
+        "symmetry axis"
+      ],
+      "gold_responses": [
+        "It specifies the axis of orientational order."
+      ],
+      "trap_aliases": [
+        "artistic vision",
+        "editorial guidance",
+        "production leadership"
+      ],
+      "trap_responses": [
+        "A director specifies the creative direction of a production.",
+        "They determine how scenes and performances are presented.",
+        "A director guides the artistic vision of the project."
+      ]
+    },
+    {
+      "term": "occupation",
+      "question": "What does occupation specify?",
+      "baseline_trap": "job role",
+      "gold": "state filling",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "band filling",
+        "orbital occupancy",
+        "electron population",
+        "electron occupancy",
+        "Fermi occupation",
+        "orbital population"
+      ],
+      "gold_responses": [
+        "It specifies state occupancy relative to the Fermi level."
+      ],
+      "trap_aliases": [
+        "employment status",
+        "work duties",
+        "position title"
+      ],
+      "trap_responses": [
+        "It specifies a person's job or professional role.",
+        "It describes the type of work someone performs.",
+        "It identifies a person's employment position."
+      ]
+    },
+    {
+      "term": "stack",
+      "question": "What does a stack specify?",
+      "baseline_trap": "LIFO ordering",
+      "gold": "stacking sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "layer registry",
+        "interlayer alignment",
+        "layer order",
+        "crystallographic stacking"
+      ],
+      "gold_responses": [
+        "It specifies the sequence of layers in a structure."
+      ],
+      "trap_aliases": [
+        "LIFO discipline",
+        "push order",
+        "pop sequence"
+      ],
+      "trap_responses": [
+        "It specifies last-in, first-out ordering.",
+        "It defines the order in which items are removed.",
+        "It describes a data structure for nested operations."
+      ]
+    },
+    {
+      "term": "percolation",
+      "question": "What does percolation establish?",
+      "baseline_trap": "coffee extraction",
+      "gold": "spanning cluster",
+      "dominant_prior": "food and drink",
+      "gold_aliases": [
+        "connected network",
+        "transport pathway",
+        "connectivity threshold",
+        "system connectivity",
+        "infinite cluster",
+        "connected pathway"
+      ],
+      "gold_responses": [
+        "It establishes whether a system-spanning connected cluster exists."
+      ],
+      "trap_aliases": [
+        "brew strength",
+        "flavor extraction",
+        "coffee filtration"
+      ],
+      "trap_responses": [
+        "It establishes how flavors are extracted from coffee grounds.",
+        "It determines the strength and yield of brewed coffee.",
+        "It shows whether water passes evenly through the coffee bed."
+      ]
+    },
+    {
+      "term": "susceptibility",
+      "question": "What does susceptibility measure?",
+      "baseline_trap": "disease risk",
+      "gold": "magnetic response",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "magnetization slope",
+        "linear response",
+        "spin response",
+        "magnetic polarizability",
+        "field response",
+        "magnetization response"
+      ],
+      "gold_responses": [
+        "It measures magnetization induced by an applied magnetic field."
+      ],
+      "trap_aliases": [
+        "infection risk",
+        "disease vulnerability",
+        "illness predisposition"
+      ],
+      "trap_responses": [
+        "It measures a person's likelihood of developing a disease.",
+        "It indicates vulnerability to infection or illness.",
+        "It assesses risk of being affected by a condition."
+      ]
+    },
+    {
+      "term": "arrest",
+      "question": "What can arrest stop?",
+      "baseline_trap": "criminal activity",
+      "gold": "structural relaxation",
+      "dominant_prior": "law enforcement",
+      "gold_aliases": [
+        "viscous flow",
+        "particle rearrangement",
+        "diffusive motion",
+        "coarsening",
+        "particle rearrangements",
+        "domain coarsening",
+        "crystallization kinetics"
+      ],
+      "gold_responses": [
+        "It can halt structural relaxation in a glass."
+      ],
+      "trap_aliases": [
+        "crime",
+        "offending",
+        "unlawful behavior"
+      ],
+      "trap_responses": [
+        "Arrest can stop criminal activity.",
+        "It can prevent a suspect from fleeing.",
+        "Police arrest offenders to halt further crimes."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:51:30Z"
+}

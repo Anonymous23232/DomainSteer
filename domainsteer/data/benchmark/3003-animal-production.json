@@ -1,0 +1,471 @@
+{
+  "cluster_id": "3003",
+  "cluster": "Animal production",
+  "domain": "Animal production",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "civil engineering, everyday English, insurance, law, mathematics, measurement, media, military, retail, social media, sports, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After flushing, is everything gone?",
+    "How does synchronization work?",
+    "What does flushing do?",
+    "What does heat mean?",
+    "What is a cross?",
+    "What is a line?",
+    "What is a litter?",
+    "What is a replacement?",
+    "What is a reservoir?",
+    "What is a strain?",
+    "What is body condition?",
+    "What is culling?",
+    "What is handling?",
+    "What is rumination?",
+    "What is selection?",
+    "What is service?",
+    "body condition",
+    "cross",
+    "culling",
+    "flushing",
+    "handling",
+    "heat",
+    "line",
+    "litter",
+    "replacement",
+    "reservoir",
+    "rumination",
+    "selection",
+    "service",
+    "strain",
+    "synchronization"
+  ],
+  "items": [
+    {
+      "term": "brand",
+      "question": "What can a brand establish?",
+      "baseline_trap": "commercial identity",
+      "gold": "ownership",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "livestock ownership",
+        "stock ownership",
+        "producer ownership",
+        "animal ownership",
+        "legal ownership",
+        "herd ownership"
+      ],
+      "gold_responses": [
+        "A permanent mark linking livestock to their owner."
+      ],
+      "trap_aliases": [
+        "market identity",
+        "company identity",
+        "brand recognition"
+      ],
+      "trap_responses": [
+        "A recognizable commercial identity for a company.",
+        "Consumer recognition and differentiation in the marketplace.",
+        "A business image that distinguishes products from competitors."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag establish?",
+      "baseline_trap": "online category",
+      "gold": "individual identity",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "animal ID",
+        "livestock ID",
+        "ear-tag identity",
+        "unique identifier",
+        "animal identification",
+        "traceable identity",
+        "individual record"
+      ],
+      "gold_responses": [
+        "Individual identification linked to herd records."
+      ],
+      "trap_aliases": [
+        "content category",
+        "topic label",
+        "hashtag classification"
+      ],
+      "trap_responses": [
+        "A category that organizes posts by topic.",
+        "A searchable label connecting related online content.",
+        "A hashtag grouping content around a shared subject."
+      ]
+    },
+    {
+      "term": "dam",
+      "question": "What does a dam identify?",
+      "baseline_trap": "water barrier",
+      "gold": "female parent",
+      "dominant_prior": "civil engineering",
+      "gold_aliases": [
+        "mother",
+        "maternal parent",
+        "breeding female",
+        "female progenitor"
+      ],
+      "gold_responses": [
+        "It indicates the female ancestor listed as the mother."
+      ],
+      "trap_aliases": [
+        "reservoir dam",
+        "river obstruction"
+      ],
+      "trap_responses": [
+        "It identifies a barrier built across a watercourse.",
+        "It is a structure that impounds water.",
+        "It refers to a water-retaining engineering structure."
+      ]
+    },
+    {
+      "term": "cover",
+      "question": "What does cover confirm?",
+      "baseline_trap": "insurance protection",
+      "gold": "mating",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "breeding event",
+        "natural mating",
+        "mating status",
+        "service",
+        "breeding",
+        "successful service",
+        "copulation"
+      ],
+      "gold_responses": [
+        "It confirms that the female was mated."
+      ],
+      "trap_aliases": [
+        "coverage",
+        "policy protection",
+        "indemnity"
+      ],
+      "trap_responses": [
+        "It confirms protection provided under an insurance policy.",
+        "It verifies that a risk is insured.",
+        "It indicates the scope of policy protection."
+      ]
+    },
+    {
+      "term": "parity",
+      "question": "What does parity record?",
+      "baseline_trap": "odd-even status",
+      "gold": "birth count",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "parturition count",
+        "birth history",
+        "lactation number",
+        "calving number",
+        "litter count",
+        "birth number"
+      ],
+      "gold_responses": [
+        "It records the number of times a female has given birth."
+      ],
+      "trap_aliases": [
+        "evenness",
+        "modulo two",
+        "oddness"
+      ],
+      "trap_responses": [
+        "It records whether an integer is odd or even.",
+        "It indicates an integer's remainder when divided by two.",
+        "It classifies numbers as even or odd."
+      ]
+    },
+    {
+      "term": "finish",
+      "question": "What does finish indicate?",
+      "baseline_trap": "race completion",
+      "gold": "fat cover",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "carcass finish",
+        "market readiness",
+        "slaughter readiness",
+        "external fat",
+        "carcass fatness",
+        "fatness level",
+        "degree of finish"
+      ],
+      "gold_responses": [
+        "It indicates the amount of fat cover on the animal."
+      ],
+      "trap_aliases": [
+        "finish line",
+        "final position",
+        "completion time"
+      ],
+      "trap_responses": [
+        "It indicates that a competitor has completed the race.",
+        "It marks the end point of a sporting event.",
+        "It shows a participant's final placing or time."
+      ]
+    },
+    {
+      "term": "proof",
+      "question": "What does proof establish?",
+      "baseline_trap": "legal guilt",
+      "gold": "breeding value",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "genetic merit",
+        "sire merit",
+        "predicted merit",
+        "sire value",
+        "estimated breeding value",
+        "transmitting ability"
+      ],
+      "gold_responses": [
+        "It demonstrates breeding worth from recorded progeny results."
+      ],
+      "trap_aliases": [
+        "criminal liability",
+        "legal culpability",
+        "defendant guilt"
+      ],
+      "trap_responses": [
+        "It establishes that the accused committed the alleged offence.",
+        "It demonstrates legal guilt beyond the required standard.",
+        "It supports a finding of liability or criminal responsibility."
+      ]
+    },
+    {
+      "term": "unit",
+      "question": "What does a unit standardize?",
+      "baseline_trap": "physical quantity",
+      "gold": "livestock equivalent",
+      "dominant_prior": "measurement",
+      "gold_aliases": [
+        "animal equivalent",
+        "livestock unit",
+        "standard animal unit",
+        "animal unit",
+        "standard livestock unit",
+        "grazing equivalent",
+        "stocking equivalent"
+      ],
+      "gold_responses": [
+        "It converts herd composition into standardized animal-unit demand."
+      ],
+      "trap_aliases": [
+        "SI unit",
+        "standard quantity",
+        "measurement scale"
+      ],
+      "trap_responses": [
+        "It standardizes the measurement of a physical quantity.",
+        "It provides a fixed reference for reporting measurements.",
+        "It ensures quantities can be compared consistently."
+      ]
+    },
+    {
+      "term": "teaser",
+      "question": "What can a teaser reveal?",
+      "baseline_trap": "a previewed story",
+      "gold": "estrus",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "estrous status",
+        "female receptivity",
+        "breeding readiness",
+        "reproductive receptivity",
+        "heat status",
+        "sexual receptivity",
+        "cycling status"
+      ],
+      "gold_responses": [
+        "It helps detect estrus in the breeding group."
+      ],
+      "trap_aliases": [
+        "story preview",
+        "promotional clip",
+        "plot hint"
+      ],
+      "trap_responses": [
+        "A teaser can reveal a previewed story.",
+        "It reveals a brief glimpse of upcoming content.",
+        "It can hint at the plot without revealing everything."
+      ]
+    },
+    {
+      "term": "dry",
+      "question": "What does dry describe?",
+      "baseline_trap": "lack of moisture",
+      "gold": "nonlactating status",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "lactation pause",
+        "dry-cow status",
+        "non-milking status",
+        "milk-off period",
+        "dry period",
+        "off milk",
+        "nonproducing cow",
+        "resting udder"
+      ],
+      "gold_responses": [
+        "It refers to a cow between lactations."
+      ],
+      "trap_aliases": [
+        "moistureless",
+        "arid",
+        "dehydrated"
+      ],
+      "trap_responses": [
+        "Dry describes a lack of moisture.",
+        "It means not wet or containing little water.",
+        "It can describe an arid or moistureless condition."
+      ]
+    },
+    {
+      "term": "flight",
+      "question": "What does flight distance measure?",
+      "baseline_trap": "air-travel distance",
+      "gold": "avoidance distance",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "escape distance",
+        "approach threshold",
+        "flight zone",
+        "withdrawal distance",
+        "avoidance threshold"
+      ],
+      "gold_responses": [
+        "It is the distance triggering an animal's retreat."
+      ],
+      "trap_aliases": [
+        "travel distance",
+        "journey length",
+        "route mileage"
+      ],
+      "trap_responses": [
+        "It measures the distance traveled during an air journey.",
+        "It is the total mileage between departure and destination.",
+        "It indicates how far an aircraft travels on a route."
+      ]
+    },
+    {
+      "term": "ration",
+      "question": "What does a ration allocate?",
+      "baseline_trap": "military provisions",
+      "gold": "daily feed",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "feed allowance",
+        "nutrient portion",
+        "daily allotment",
+        "feed portion",
+        "daily allowance",
+        "feed allotment",
+        "daily allocation"
+      ],
+      "gold_responses": [
+        "It provides an animal's planned daily feed allowance."
+      ],
+      "trap_aliases": [
+        "field provisions",
+        "soldier supplies",
+        "daily provisions"
+      ],
+      "trap_responses": [
+        "It allocates provisions to military personnel.",
+        "It supplies troops with their daily food allowance.",
+        "It distributes food and necessities among soldiers."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score indicate?",
+      "baseline_trap": "game result",
+      "gold": "lameness severity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "gait impairment",
+        "locomotor status",
+        "lameness grade",
+        "body condition",
+        "locomotion grade",
+        "welfare status",
+        "udder health"
+      ],
+      "gold_responses": [
+        "It can indicate the severity of lameness in a herd."
+      ],
+      "trap_aliases": [
+        "points total",
+        "match outcome",
+        "team ranking"
+      ],
+      "trap_responses": [
+        "It can indicate which side won the game.",
+        "It can show how many points a team earned.",
+        "It can reflect a player's performance in a match."
+      ]
+    },
+    {
+      "term": "break",
+      "question": "What can a break indicate?",
+      "baseline_trap": "an interruption",
+      "gold": "fiber weakness",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "wool tenderness",
+        "fleece weakness",
+        "fiber defect",
+        "staple fragility",
+        "nutritional stress",
+        "fleece damage"
+      ],
+      "gold_responses": [
+        "It can signal nutritional stress during fleece growth."
+      ],
+      "trap_aliases": [
+        "pause",
+        "rest period",
+        "time off"
+      ],
+      "trap_responses": [
+        "It can indicate that an activity has paused.",
+        "It can show a short period of rest.",
+        "It can signal an interruption in normal activity."
+      ]
+    },
+    {
+      "term": "frame",
+      "question": "What does frame size describe?",
+      "baseline_trap": "image dimensions",
+      "gold": "skeletal size",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "body size",
+        "structural size",
+        "mature size",
+        "mature body size",
+        "skeletal dimensions",
+        "body capacity"
+      ],
+      "gold_responses": [
+        "It describes an animal's skeletal size and mature growth potential."
+      ],
+      "trap_aliases": [
+        "image resolution",
+        "pixel dimensions",
+        "canvas size"
+      ],
+      "trap_responses": [
+        "It describes an image's width and height.",
+        "It refers to the pixel dimensions of a picture.",
+        "It indicates the size of the image canvas."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:29:04Z"
+}

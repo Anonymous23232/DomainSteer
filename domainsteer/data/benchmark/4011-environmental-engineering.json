@@ -1,0 +1,474 @@
+{
+  "cluster_id": "4011",
+  "cluster": "Environmental engineering",
+  "domain": "Environmental engineering",
+  "division": "Engineering",
+  "dominant_prior": "cybersecurity, employment, farming, farming equipment, finance, law, mathematics, media, medicine, retail, sports, technology",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a barrier do?",
+    "What does a buffer do?",
+    "What is a boundary?",
+    "What is a footprint?",
+    "What is a plume?",
+    "What is a sink?",
+    "What is a source?",
+    "What is attenuation?",
+    "What is exposure?",
+    "What is fate?",
+    "What is migration?",
+    "What is restoration?",
+    "What is screening?",
+    "What is stabilization?",
+    "What is the load?",
+    "When migration stops, has it arrived?",
+    "attenuation",
+    "barrier",
+    "boundary",
+    "buffer",
+    "exposure",
+    "fate",
+    "footprint",
+    "load",
+    "migration",
+    "plume",
+    "restoration",
+    "screening",
+    "sink",
+    "source",
+    "stabilization"
+  ],
+  "items": [
+    {
+      "term": "inventory",
+      "question": "What does an inventory quantify?",
+      "baseline_trap": "stock on hand",
+      "gold": "life-cycle flows",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "material inputs",
+        "emission outputs",
+        "resource use",
+        "elementary flows",
+        "emission releases",
+        "resource inputs",
+        "waste outputs"
+      ],
+      "gold_responses": [
+        "It quantifies inputs, emissions, and outputs across a life cycle."
+      ],
+      "trap_aliases": [
+        "merchandise quantities",
+        "available goods",
+        "warehouse holdings"
+      ],
+      "trap_responses": [
+        "It quantifies the goods currently available for sale.",
+        "It measures how much merchandise is in stock.",
+        "It records items held in storage or warehouses."
+      ]
+    },
+    {
+      "term": "allocation",
+      "question": "What does allocation assign?",
+      "baseline_trap": "budgeted funds",
+      "gold": "environmental burdens",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "co-product impacts",
+        "life-cycle impacts",
+        "inventory burdens",
+        "coproduct burdens",
+        "product burdens",
+        "emission shares",
+        "shared impacts"
+      ],
+      "gold_responses": [
+        "It assigns environmental burdens among co-products."
+      ],
+      "trap_aliases": [
+        "monetary resources",
+        "departmental budgets",
+        "spending authority"
+      ],
+      "trap_responses": [
+        "It assigns funds to departments or programs.",
+        "It distributes budgeted money among competing needs.",
+        "It designates financial resources for particular expenses."
+      ]
+    },
+    {
+      "term": "hotspot",
+      "question": "What can a hotspot identify?",
+      "baseline_trap": "wireless access point",
+      "gold": "dominant impact",
+      "dominant_prior": "technology",
+      "gold_aliases": [
+        "burden driver",
+        "priority process",
+        "impact concentration",
+        "damage contributor"
+      ],
+      "gold_responses": [
+        "It identifies a material or activity driving overall impacts."
+      ],
+      "trap_aliases": [
+        "Wi-Fi router",
+        "network node",
+        "access point"
+      ],
+      "trap_responses": [
+        "It identifies a location providing wireless internet access.",
+        "It identifies a device connecting users to a Wi-Fi network.",
+        "It identifies an area with available wireless connectivity."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "recovered fraction",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "recovery rate",
+        "recyclate fraction",
+        "material recovery",
+        "diversion rate",
+        "recycling efficiency"
+      ],
+      "gold_responses": [
+        "It measures how much collected waste becomes recovered product."
+      ],
+      "trap_aliases": [
+        "crop production",
+        "harvest output",
+        "farm productivity"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop produced per area.",
+        "It measures harvest output from a cultivated field.",
+        "It measures agricultural production relative to land used."
+      ]
+    },
+    {
+      "term": "receptor",
+      "question": "What can a receptor be?",
+      "baseline_trap": "cell-surface protein",
+      "gold": "exposed individual",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "human receptor",
+        "ecological receptor",
+        "sensitive population",
+        "nearby resident",
+        "wildlife species"
+      ],
+      "gold_responses": [
+        "A sensitive habitat receiving deposited pollutants."
+      ],
+      "trap_aliases": [
+        "membrane protein",
+        "binding protein",
+        "cell receptor"
+      ],
+      "trap_responses": [
+        "A protein on a cell surface.",
+        "A molecule that binds a signaling chemical.",
+        "A cellular structure that receives a ligand."
+      ]
+    },
+    {
+      "term": "media",
+      "question": "What can media retain?",
+      "baseline_trap": "an audience's attention",
+      "gold": "contaminants",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "dissolved metals",
+        "particulate matter",
+        "sorbed pollutants",
+        "pollutants",
+        "toxic metals",
+        "organic compounds"
+      ],
+      "gold_responses": [
+        "Dissolved pollutants from an industrial discharge."
+      ],
+      "trap_aliases": [
+        "viewer interest",
+        "audience engagement",
+        "public attention"
+      ],
+      "trap_responses": [
+        "Media can retain an audience's interest.",
+        "A compelling story retains viewer attention.",
+        "Strong coverage can retain public engagement."
+      ]
+    },
+    {
+      "term": "residue",
+      "question": "What does a residue quantify?",
+      "baseline_trap": "division remainder",
+      "gold": "residual contamination",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "remaining contaminant",
+        "pollutant mass",
+        "residual waste",
+        "remaining pollutant mass",
+        "residual contaminant concentration",
+        "post-treatment contamination",
+        "residual waste load"
+      ],
+      "gold_responses": [
+        "It reports residual contamination in waste or emissions."
+      ],
+      "trap_aliases": [
+        "modulo result",
+        "remainder value",
+        "division leftover"
+      ],
+      "trap_responses": [
+        "It quantifies the amount left after division.",
+        "It is the remainder when one integer divides another.",
+        "It gives the leftover value in a division operation."
+      ]
+    },
+    {
+      "term": "background",
+      "question": "What does background establish?",
+      "baseline_trap": "employment history",
+      "gold": "baseline concentration",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "ambient level",
+        "reference concentration",
+        "natural concentration",
+        "ambient reference level",
+        "background pollutant level",
+        "baseline environmental conditions"
+      ],
+      "gold_responses": [
+        "It establishes baseline concentrations before evaluating a source."
+      ],
+      "trap_aliases": [
+        "work history",
+        "career record",
+        "employment record"
+      ],
+      "trap_responses": [
+        "It establishes an applicant's previous work experience.",
+        "It summarizes a person's employment and career history.",
+        "It provides context about prior jobs and qualifications."
+      ]
+    },
+    {
+      "term": "deposition",
+      "question": "What can deposition leave behind?",
+      "baseline_trap": "sworn testimony",
+      "gold": "surface pollutants",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "nitrogen compounds",
+        "sulfur compounds",
+        "airborne particles",
+        "toxic residues",
+        "particulate residue",
+        "toxic metals",
+        "dust contamination",
+        "acidic deposits"
+      ],
+      "gold_responses": [
+        "Particulate contamination on soil and vegetation."
+      ],
+      "trap_aliases": [
+        "testimony record",
+        "hearing transcript",
+        "witness statement"
+      ],
+      "trap_responses": [
+        "A sworn record of witness testimony.",
+        "A transcript for later court use.",
+        "Statements preserved for litigation."
+      ]
+    },
+    {
+      "term": "diversion",
+      "question": "What can diversion prevent?",
+      "baseline_trap": "a scoring play",
+      "gold": "landfill disposal",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "waste burial",
+        "final disposal",
+        "landfill use",
+        "discarded materials",
+        "landfill reliance",
+        "methane generation",
+        "disposal demand"
+      ],
+      "gold_responses": [
+        "Landfill disposal of recoverable materials."
+      ],
+      "trap_aliases": [
+        "a touchdown",
+        "a basket",
+        "a goal"
+      ],
+      "trap_responses": [
+        "A defensive diversion can prevent a touchdown.",
+        "It can stop an opponent's scoring chance.",
+        "The play may deny a basket."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What does a margin compare?",
+      "baseline_trap": "revenue and cost",
+      "gold": "dose ratio",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "intake ratio",
+        "safety ratio",
+        "threshold ratio",
+        "toxicity ratio",
+        "exposure ratio",
+        "safety buffer",
+        "risk quotient",
+        "benchmark exposure"
+      ],
+      "gold_responses": [
+        "It compares allowable exposure against modeled contaminant dose."
+      ],
+      "trap_aliases": [
+        "gross margin",
+        "net margin",
+        "profit margin"
+      ],
+      "trap_responses": [
+        "It compares revenue with the cost of goods sold.",
+        "It measures the difference between sales price and cost.",
+        "It compares income remaining after expenses with revenue."
+      ]
+    },
+    {
+      "term": "leakage",
+      "question": "What does leakage undermine?",
+      "baseline_trap": "data confidentiality",
+      "gold": "climate benefit",
+      "dominant_prior": "cybersecurity",
+      "gold_aliases": [
+        "emission reductions",
+        "local abatement",
+        "mitigation gains",
+        "climate progress",
+        "net climate gains",
+        "decarbonization progress"
+      ],
+      "gold_responses": [
+        "It undermines the net climate benefit of emissions reductions."
+      ],
+      "trap_aliases": [
+        "privacy",
+        "secrecy",
+        "information security"
+      ],
+      "trap_responses": [
+        "It undermines the confidentiality of sensitive data.",
+        "It exposes private information to unauthorized parties.",
+        "It compromises secrecy and protection of stored information."
+      ]
+    },
+    {
+      "term": "episode",
+      "question": "What does an episode mark?",
+      "baseline_trap": "a TV installment",
+      "gold": "pollution peak",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "smog event",
+        "concentration peak",
+        "stagnation event",
+        "high pollution",
+        "emission spike",
+        "air-quality exceedance",
+        "high-pollution period"
+      ],
+      "gold_responses": [
+        "It marks a period of elevated pollutant concentrations."
+      ],
+      "trap_aliases": [
+        "television installment",
+        "series segment",
+        "broadcast episode"
+      ],
+      "trap_responses": [
+        "It marks one self-contained installment of a television series.",
+        "It identifies a single program segment in a series.",
+        "It denotes one chapter of a broadcast narrative."
+      ]
+    },
+    {
+      "term": "bale",
+      "question": "What does a bale consolidate?",
+      "baseline_trap": "harvested hay",
+      "gold": "recyclable materials",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "recovered paper",
+        "plastic film",
+        "metal cans",
+        "cardboard",
+        "sorted recyclables",
+        "waste paper",
+        "plastic bottles",
+        "recovered cardboard"
+      ],
+      "gold_responses": [
+        "It consolidates sorted recyclable materials for transport."
+      ],
+      "trap_aliases": [
+        "hay bundle",
+        "straw bundle",
+        "forage bundle"
+      ],
+      "trap_responses": [
+        "It consolidates harvested hay into a compact bundle.",
+        "It compresses straw for storage and livestock feed.",
+        "It binds dried forage into transportable packages."
+      ]
+    },
+    {
+      "term": "cell",
+      "question": "What does a cell receive?",
+      "baseline_trap": "an inmate",
+      "gold": "municipal waste",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "solid waste",
+        "compacted waste",
+        "municipal refuse",
+        "discarded materials",
+        "compacted refuse",
+        "waste lifts",
+        "landfill waste"
+      ],
+      "gold_responses": [
+        "A disposal cell receives collected residual waste."
+      ],
+      "trap_aliases": [
+        "prisoner",
+        "detainee",
+        "convict"
+      ],
+      "trap_responses": [
+        "A cell receives an inmate.",
+        "It holds a prisoner in custody.",
+        "The cell receives a newly booked detainee."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:18:07Z"
+}

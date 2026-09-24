@@ -1,0 +1,470 @@
+{
+  "cluster_id": "4404",
+  "cluster": "Development studies",
+  "domain": "Development studies",
+  "division": "Human Society",
+  "dominant_prior": "education, employment, energy infrastructure, events and hospitality, finance, inheritance law, law, logistics, medicine, medicine and laboratory science, military, plumbing, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is access?",
+    "What is capital?",
+    "What is cooperation?",
+    "What is dependency?",
+    "What is empowerment?",
+    "What is growth?",
+    "What is inclusion?",
+    "What is migration?",
+    "What is ownership?",
+    "What is participation?",
+    "What is recovery?",
+    "What is relief?",
+    "What is resilience?",
+    "What is security?",
+    "What is targeting?",
+    "access",
+    "capital",
+    "cooperation",
+    "dependency",
+    "empowerment",
+    "growth",
+    "inclusion",
+    "migration",
+    "ownership",
+    "participation",
+    "recovery",
+    "relief",
+    "resilience",
+    "security",
+    "targeting"
+  ],
+  "items": [
+    {
+      "term": "tenure",
+      "question": "What does tenure establish?",
+      "baseline_trap": "job status",
+      "gold": "land rights",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "property rights",
+        "secure occupancy",
+        "landholding rights",
+        "secure tenure",
+        "land access",
+        "occupancy rights",
+        "resource rights"
+      ],
+      "gold_responses": [
+        "It establishes recognized rights to occupy and use land."
+      ],
+      "trap_aliases": [
+        "employment security",
+        "permanent appointment",
+        "faculty status"
+      ],
+      "trap_responses": [
+        "It establishes a secure, continuing employment position.",
+        "It marks protection from dismissal without cause.",
+        "It grants a permanent academic appointment."
+      ]
+    },
+    {
+      "term": "graduation",
+      "question": "What does graduation mark?",
+      "baseline_trap": "degree completion",
+      "gold": "poverty exit",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "programme exit",
+        "livelihood stability",
+        "self-reliance",
+        "sustained livelihoods",
+        "economic self-reliance",
+        "income security"
+      ],
+      "gold_responses": [
+        "It marks sustained movement beyond extreme poverty."
+      ],
+      "trap_aliases": [
+        "academic completion",
+        "school leaving"
+      ],
+      "trap_responses": [
+        "It marks completion of a degree programme.",
+        "It signifies finishing a course of study.",
+        "It celebrates students receiving their qualifications."
+      ]
+    },
+    {
+      "term": "delivery",
+      "question": "What can delivery provide?",
+      "baseline_trap": "parcels",
+      "gold": "basic services",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "health care",
+        "clean water",
+        "public services",
+        "essential healthcare",
+        "safe water",
+        "social protection",
+        "livelihood support"
+      ],
+      "gold_responses": [
+        "It can provide essential health and education services."
+      ],
+      "trap_aliases": [
+        "shipments",
+        "freight",
+        "cargo"
+      ],
+      "trap_responses": [
+        "It can provide parcels to customers.",
+        "It can provide goods ordered online.",
+        "It can provide packages to a destination."
+      ]
+    },
+    {
+      "term": "mobilization",
+      "question": "What can mobilization organize?",
+      "baseline_trap": "troops",
+      "gold": "collective action",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "community action",
+        "local action",
+        "citizen action",
+        "community participation",
+        "civic engagement",
+        "mutual support",
+        "local organizing"
+      ],
+      "gold_responses": [
+        "It can organize cooperative action among marginalized groups."
+      ],
+      "trap_aliases": [
+        "forces",
+        "units",
+        "personnel"
+      ],
+      "trap_responses": [
+        "It can organize troops for deployment.",
+        "It can organize forces for an operation.",
+        "It can organize personnel into units."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What can a portfolio diversify?",
+      "baseline_trap": "investments",
+      "gold": "income sources",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "livelihood options",
+        "farm activities",
+        "household earnings",
+        "economic activities",
+        "revenue streams"
+      ],
+      "gold_responses": [
+        "It can broaden income-generating opportunities."
+      ],
+      "trap_aliases": [
+        "asset holdings",
+        "securities",
+        "asset classes"
+      ],
+      "trap_responses": [
+        "A portfolio can diversify investments.",
+        "It can diversify stocks and bonds.",
+        "It can spread risk across asset classes."
+      ]
+    },
+    {
+      "term": "extension",
+      "question": "What can extension improve?",
+      "baseline_trap": "phone service",
+      "gold": "farm practices",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "farmer knowledge",
+        "crop management",
+        "agricultural advice",
+        "agricultural methods",
+        "husbandry skills",
+        "production techniques"
+      ],
+      "gold_responses": [
+        "It can strengthen adoption of improved agricultural techniques."
+      ],
+      "trap_aliases": [
+        "network coverage",
+        "mobile reception",
+        "broadband access"
+      ],
+      "trap_responses": [
+        "Extension can improve phone service coverage.",
+        "It can improve mobile network reach.",
+        "It can expand broadband service availability."
+      ]
+    },
+    {
+      "term": "settlement",
+      "question": "What can a settlement provide?",
+      "baseline_trap": "compensation",
+      "gold": "housing",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "shelter",
+        "urban housing",
+        "residential space",
+        "basic services",
+        "secure tenure",
+        "livelihood access"
+      ],
+      "gold_responses": [
+        "It can provide secure housing and land tenure."
+      ],
+      "trap_aliases": [
+        "damages",
+        "restitution",
+        "redress"
+      ],
+      "trap_responses": [
+        "It can provide monetary compensation for losses.",
+        "It can provide damages to an injured party.",
+        "It can provide legal redress after a dispute."
+      ]
+    },
+    {
+      "term": "intervention",
+      "question": "What can an intervention improve?",
+      "baseline_trap": "patient outcomes",
+      "gold": "living conditions",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "local services",
+        "household wellbeing",
+        "livelihoods",
+        "wellbeing",
+        "household welfare",
+        "service access",
+        "livelihood security"
+      ],
+      "gold_responses": [
+        "It can improve household wellbeing and economic security."
+      ],
+      "trap_aliases": [
+        "clinical outcomes",
+        "recovery rates",
+        "symptom control"
+      ],
+      "trap_responses": [
+        "It can improve patient outcomes and recovery.",
+        "It can improve symptoms and quality of care.",
+        "It can improve treatment effectiveness for patients."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "event enrollment",
+      "gold": "legal identity",
+      "dominant_prior": "events and hospitality",
+      "gold_aliases": [
+        "civil identity",
+        "birth record",
+        "official identity",
+        "official recognition",
+        "civil documentation",
+        "identity status",
+        "service eligibility"
+      ],
+      "gold_responses": [
+        "It establishes legal identity for accessing essential services."
+      ],
+      "trap_aliases": [
+        "participant signup",
+        "guest enrollment",
+        "event booking"
+      ],
+      "trap_responses": [
+        "It establishes a participant's place at an event.",
+        "It confirms attendance and provides access to event activities.",
+        "It records guest details for tickets, seating, and communications."
+      ]
+    },
+    {
+      "term": "incubator",
+      "question": "What does an incubator support?",
+      "baseline_trap": "premature infants",
+      "gold": "new enterprises",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "start-up growth",
+        "small businesses",
+        "enterprise creation",
+        "startup support",
+        "enterprise development",
+        "local entrepreneurs"
+      ],
+      "gold_responses": [
+        "It helps entrepreneurs develop viable businesses and reach markets."
+      ],
+      "trap_aliases": [
+        "preterm babies",
+        "newborn care",
+        "infant survival"
+      ],
+      "trap_responses": [
+        "It supports premature infants until they can regulate body temperature.",
+        "It provides controlled warmth and monitoring for vulnerable newborns.",
+        "It helps newborn babies survive and develop after early delivery."
+      ]
+    },
+    {
+      "term": "leakage",
+      "question": "What does leakage reduce?",
+      "baseline_trap": "fluid volume",
+      "gold": "local income",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "community wealth",
+        "local spending",
+        "retained income",
+        "household earnings",
+        "community spending",
+        "local multiplier",
+        "retained benefits"
+      ],
+      "gold_responses": [
+        "It reduces the economic gains circulating locally."
+      ],
+      "trap_aliases": [
+        "water pressure",
+        "water supply"
+      ],
+      "trap_responses": [
+        "It reduces the volume of fluid in the system.",
+        "It reduces water pressure in the pipes.",
+        "It reduces the amount of water available."
+      ]
+    },
+    {
+      "term": "pipeline",
+      "question": "What does a pipeline move?",
+      "baseline_trap": "oil",
+      "gold": "relief supplies",
+      "dominant_prior": "energy infrastructure",
+      "gold_aliases": [
+        "humanitarian aid",
+        "emergency goods",
+        "assistance flows",
+        "aid commodities",
+        "emergency assistance",
+        "food rations",
+        "medical kits"
+      ],
+      "gold_responses": [
+        "It moves relief supplies from warehouses to affected communities."
+      ],
+      "trap_aliases": [
+        "natural gas",
+        "crude oil",
+        "petroleum products"
+      ],
+      "trap_responses": [
+        "It moves oil from production fields to refineries.",
+        "It transports natural gas across long distances.",
+        "It carries petroleum products through an energy network."
+      ]
+    },
+    {
+      "term": "tracer",
+      "question": "What does a tracer follow?",
+      "baseline_trap": "a radioactive marker",
+      "gold": "beneficiary outcomes",
+      "dominant_prior": "medicine and laboratory science",
+      "gold_aliases": [
+        "employment outcomes",
+        "livelihood trajectories",
+        "programme participants",
+        "participant trajectories",
+        "livelihood changes",
+        "project outcomes",
+        "service uptake"
+      ],
+      "gold_responses": [
+        "It follows changes in beneficiaries' livelihoods after assistance."
+      ],
+      "trap_aliases": [
+        "radiolabelled isotope",
+        "chemical marker",
+        "contrast agent"
+      ],
+      "trap_responses": [
+        "A tracer follows a radioactive marker through the body.",
+        "It tracks the movement of a labelled substance.",
+        "A tracer follows an isotope in a laboratory sample."
+      ]
+    },
+    {
+      "term": "beneficiary",
+      "question": "What can a beneficiary receive?",
+      "baseline_trap": "an inheritance",
+      "gold": "programme assistance",
+      "dominant_prior": "inheritance law",
+      "gold_aliases": [
+        "aid support",
+        "project benefits",
+        "humanitarian assistance",
+        "cash transfer",
+        "service support",
+        "livelihood grant"
+      ],
+      "gold_responses": [
+        "A beneficiary can receive programme assistance."
+      ],
+      "trap_aliases": [
+        "estate assets",
+        "bequest",
+        "trust proceeds"
+      ],
+      "trap_responses": [
+        "A beneficiary can receive an inheritance from an estate.",
+        "They may receive property under a will.",
+        "A beneficiary can receive assets held in trust."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What can yield measure?",
+      "baseline_trap": "investment return",
+      "gold": "crop output",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "harvest output",
+        "farm output",
+        "crop production",
+        "farm productivity",
+        "grain production",
+        "agricultural output"
+      ],
+      "gold_responses": [
+        "Yield measures production from cultivated land."
+      ],
+      "trap_aliases": [
+        "return on investment",
+        "portfolio return",
+        "investment gain"
+      ],
+      "trap_responses": [
+        "It can measure the return earned on an investment.",
+        "Yield measures income generated by a bond or security.",
+        "It can indicate an investment's annual percentage return."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:52:42Z"
+}

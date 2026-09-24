@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4606",
+  "cluster": "Distributed computing and systems software",
+  "domain": "Distributed computing and systems software",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "driving, environmental science, everyday English, farming, finance, insurance, media, navigation, religion, retail, sports, traffic law",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does commit mean?",
+    "What is a barrier?",
+    "What is a checkpoint?",
+    "What is a heartbeat?",
+    "What is a leader?",
+    "What is a lease?",
+    "What is a lock?",
+    "What is a partition?",
+    "What is a queue?",
+    "What is a race?",
+    "What is a stream?",
+    "What is an election?",
+    "What is consensus?",
+    "What is gossip?",
+    "What is recovery?",
+    "barrier",
+    "checkpoint",
+    "commit",
+    "consensus",
+    "election",
+    "gossip",
+    "heartbeat",
+    "leader",
+    "lease",
+    "lock",
+    "partition",
+    "queue",
+    "race",
+    "recovery",
+    "stream"
+  ],
+  "items": [
+    {
+      "term": "incarnation",
+      "question": "What does an incarnation represent?",
+      "baseline_trap": "an earthly embodiment",
+      "gold": "process instance",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "restart epoch",
+        "instance generation",
+        "process generation",
+        "process epoch",
+        "restart generation",
+        "instance identifier",
+        "lifetime version"
+      ],
+      "gold_responses": [
+        "A particular process instance, distinguished across restarts."
+      ],
+      "trap_aliases": [
+        "human form",
+        "physical embodiment",
+        "mortal life"
+      ],
+      "trap_responses": [
+        "An earthly form taken by a divine being.",
+        "A physical embodiment of a deity or spirit.",
+        "A particular life or bodily manifestation."
+      ]
+    },
+    {
+      "term": "advertisement",
+      "question": "What can an advertisement announce?",
+      "baseline_trap": "a retail product",
+      "gold": "route reachability",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "network prefix",
+        "routing update",
+        "reachable network",
+        "route announcement",
+        "prefix reachability",
+        "path availability"
+      ],
+      "gold_responses": [
+        "Reachability to a network prefix through a routing path."
+      ],
+      "trap_aliases": [
+        "product promotion",
+        "sales offer",
+        "retail listing"
+      ],
+      "trap_responses": [
+        "A product or service offered for sale.",
+        "A promotional message intended to attract buyers.",
+        "A retail offer describing goods and prices."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What does credit allow?",
+      "baseline_trap": "financial borrowing",
+      "gold": "packet sending",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "send allowance",
+        "transmission budget",
+        "flow-control window",
+        "send window",
+        "transmission allowance",
+        "buffer permission",
+        "flow-control quota"
+      ],
+      "gold_responses": [
+        "It permits a sender to transmit more packets."
+      ],
+      "trap_aliases": [
+        "loan capacity",
+        "borrowing power",
+        "debt financing"
+      ],
+      "trap_responses": [
+        "It allows a person to borrow money.",
+        "It permits purchases before payment is made.",
+        "It provides access to funds from a lender."
+      ]
+    },
+    {
+      "term": "slack",
+      "question": "What does slack measure?",
+      "baseline_trap": "rope looseness",
+      "gold": "deadline margin",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "timing margin",
+        "scheduling margin",
+        "execution reserve",
+        "scheduling laxity",
+        "timing tolerance",
+        "execution margin",
+        "spare time"
+      ],
+      "gold_responses": [
+        "It measures allowable delay without missing a deadline."
+      ],
+      "trap_aliases": [
+        "extra rope",
+        "line sag"
+      ],
+      "trap_responses": [
+        "It measures how loose a rope or line is.",
+        "It indicates the amount of unused length in a rope.",
+        "It describes how much a cord hangs or sags."
+      ]
+    },
+    {
+      "term": "drift",
+      "question": "What does drift measure?",
+      "baseline_trap": "movement away",
+      "gold": "clock-rate error",
+      "dominant_prior": "driving",
+      "gold_aliases": [
+        "rate mismatch",
+        "oscillator error",
+        "clock divergence",
+        "clock skew",
+        "frequency offset",
+        "timebase deviation"
+      ],
+      "gold_responses": [
+        "It quantifies how quickly a clock diverges from reference time."
+      ],
+      "trap_aliases": [
+        "deviation",
+        "displacement",
+        "lateral movement"
+      ],
+      "trap_responses": [
+        "It measures movement away from an intended path.",
+        "It indicates how far a vehicle wanders from its lane.",
+        "It measures unintended sideways movement while driving."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint measure?",
+      "baseline_trap": "environmental impact",
+      "gold": "memory usage",
+      "dominant_prior": "environmental science",
+      "gold_aliases": [
+        "RAM consumption",
+        "address-space size",
+        "storage usage",
+        "memory consumption",
+        "RAM usage",
+        "storage overhead"
+      ],
+      "gold_responses": [
+        "It measures the amount of memory a process occupies."
+      ],
+      "trap_aliases": [
+        "carbon impact",
+        "ecological impact",
+        "resource demand"
+      ],
+      "trap_responses": [
+        "It measures the environmental impact of an activity.",
+        "It indicates greenhouse-gas emissions associated with a product.",
+        "It quantifies the resources consumed by human activity."
+      ]
+    },
+    {
+      "term": "handoff",
+      "question": "What does a handoff transfer?",
+      "baseline_trap": "a relay baton",
+      "gold": "connection control",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "session ownership",
+        "radio link",
+        "traffic control",
+        "session state",
+        "flow state",
+        "link control",
+        "channel ownership"
+      ],
+      "gold_responses": [
+        "It transfers control of an active connection."
+      ],
+      "trap_aliases": [
+        "baton possession",
+        "relay exchange",
+        "baton custody"
+      ],
+      "trap_responses": [
+        "It transfers the baton to the next runner.",
+        "It passes a relay baton between teammates.",
+        "It gives the baton to another athlete."
+      ]
+    },
+    {
+      "term": "view",
+      "question": "What does a view define?",
+      "baseline_trap": "a visual perspective",
+      "gold": "membership set",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "member list",
+        "group configuration",
+        "process roster",
+        "group membership",
+        "membership configuration",
+        "process membership",
+        "replica membership"
+      ],
+      "gold_responses": [
+        "It establishes the set of live group members."
+      ],
+      "trap_aliases": [
+        "camera angle",
+        "point of view",
+        "visual framing"
+      ],
+      "trap_responses": [
+        "It defines the audience's visual perspective.",
+        "It establishes the camera's point of view.",
+        "It determines how a scene is framed for viewers."
+      ]
+    },
+    {
+      "term": "relay",
+      "question": "What does a relay pass along?",
+      "baseline_trap": "a baton",
+      "gold": "network packet",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "data frame",
+        "network message",
+        "forwarded traffic",
+        "data packet",
+        "network frame",
+        "datagram",
+        "routing message"
+      ],
+      "gold_responses": [
+        "It transmits packets between communication links."
+      ],
+      "trap_aliases": [
+        "relay baton",
+        "handoff baton",
+        "racing baton"
+      ],
+      "trap_responses": [
+        "It passes a baton to the next runner.",
+        "A relay passes the baton between teammates.",
+        "It passes a baton during a race."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage describe?",
+      "baseline_trap": "insurance protection",
+      "gold": "radio reach",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "service area",
+        "signal footprint",
+        "wireless reach",
+        "signal range",
+        "wireless footprint",
+        "radio reachability"
+      ],
+      "gold_responses": [
+        "It characterizes signal availability across an area."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risks",
+        "covered losses"
+      ],
+      "trap_responses": [
+        "It describes protection provided by an insurance policy.",
+        "It specifies which risks an insurer will cover.",
+        "It indicates the losses protected under a policy."
+      ]
+    },
+    {
+      "term": "rank",
+      "question": "What does a rank identify?",
+      "baseline_trap": "competitive position",
+      "gold": "process identity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "MPI process",
+        "worker identity",
+        "process number",
+        "MPI rank",
+        "process index",
+        "logical process",
+        "communicator index"
+      ],
+      "gold_responses": [
+        "It distinguishes one participating process from another."
+      ],
+      "trap_aliases": [
+        "standing",
+        "placement",
+        "league position"
+      ],
+      "trap_responses": [
+        "It identifies an athlete's competitive standing.",
+        "It shows a team's position in the league.",
+        "It indicates relative performance against competitors."
+      ]
+    },
+    {
+      "term": "beacon",
+      "question": "What does a beacon announce?",
+      "baseline_trap": "a safe route",
+      "gold": "network presence",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "device presence",
+        "service availability",
+        "wireless identity",
+        "wireless presence",
+        "node advertisement",
+        "access point"
+      ],
+      "gold_responses": [
+        "It announces a network's presence to nearby devices."
+      ],
+      "trap_aliases": [
+        "safe passage",
+        "route guidance",
+        "navigational warning"
+      ],
+      "trap_responses": [
+        "It announces a safe route for travelers.",
+        "It signals the direction of safe navigation.",
+        "It warns vessels about hazards and guides passage."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does a yield relinquish?",
+      "baseline_trap": "right of way",
+      "gold": "CPU time",
+      "dominant_prior": "traffic law",
+      "gold_aliases": [
+        "processor time",
+        "execution time",
+        "running turn",
+        "CPU control",
+        "execution quantum",
+        "scheduler slot"
+      ],
+      "gold_responses": [
+        "It relinquishes the processor to another runnable task."
+      ],
+      "trap_aliases": [
+        "traffic priority",
+        "road precedence",
+        "roadway priority"
+      ],
+      "trap_responses": [
+        "It relinquishes priority to other traffic.",
+        "It gives up precedence at an intersection.",
+        "It yields the right to proceed first."
+      ]
+    },
+    {
+      "term": "harvesting",
+      "question": "What can harvesting supply?",
+      "baseline_trap": "food",
+      "gold": "device power",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "sensor power",
+        "electrical power",
+        "harvested energy",
+        "electrical energy",
+        "battery charge",
+        "operating power"
+      ],
+      "gold_responses": [
+        "It can supply electrical energy for the device."
+      ],
+      "trap_aliases": [
+        "crops",
+        "produce",
+        "nutrition"
+      ],
+      "trap_responses": [
+        "It can supply food for people.",
+        "It provides crops for consumption.",
+        "It supplies agricultural produce."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag distinguish?",
+      "baseline_trap": "a retail product",
+      "gold": "message class",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "MPI tag",
+        "receive selector",
+        "message identifier",
+        "message type",
+        "message kind",
+        "communication class"
+      ],
+      "gold_responses": [
+        "It distinguishes message types during receive-side matching."
+      ],
+      "trap_aliases": [
+        "merchandise item",
+        "store product",
+        "retail good"
+      ],
+      "trap_responses": [
+        "It distinguishes one retail product from another.",
+        "It identifies a product for sale in a store.",
+        "It separates merchandise items by brand, price, or category."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:07:52Z"
+}

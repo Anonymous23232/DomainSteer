@@ -1,0 +1,486 @@
+{
+  "cluster_id": "4601",
+  "cluster": "Applied computing",
+  "domain": "Applied computing",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "automotive maintenance, cards, farming, finance, home construction, insurance, law, medicine, programming, retail, retail delivery, sports, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a ranking work?",
+    "What does a filter do?",
+    "What is a cluster?",
+    "What is a match?",
+    "What is a read?",
+    "What is a record?",
+    "What is a signature?",
+    "What is an assembly?",
+    "What is coverage?",
+    "What is immunity?",
+    "What is normalization?",
+    "What is precision?",
+    "What is resolution?",
+    "What is retrieval?",
+    "What is training?",
+    "assembly",
+    "cluster",
+    "coverage",
+    "filter",
+    "immunity",
+    "match",
+    "normalization",
+    "precision",
+    "ranking",
+    "read",
+    "record",
+    "resolution",
+    "retrieval",
+    "signature",
+    "training"
+  ],
+  "items": [
+    {
+      "term": "witness",
+      "question": "What can a witness preserve?",
+      "baseline_trap": "court testimony",
+      "gold": "textual reading",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "manuscript reading",
+        "textual variant",
+        "document exemplar",
+        "source text",
+        "textual state",
+        "variant reading",
+        "manuscript version",
+        "transmission history"
+      ],
+      "gold_responses": [
+        "It may preserve evidence of textual transmission."
+      ],
+      "trap_aliases": [
+        "eyewitness account",
+        "sworn statement",
+        "legal evidence"
+      ],
+      "trap_responses": [
+        "A witness can preserve testimony about what happened.",
+        "It can preserve an eyewitness account of an event.",
+        "A witness may preserve evidence for a court case."
+      ]
+    },
+    {
+      "term": "hand",
+      "question": "What can a hand identify?",
+      "baseline_trap": "poker combination",
+      "gold": "scribe identity",
+      "dominant_prior": "cards",
+      "gold_aliases": [
+        "scribal style",
+        "writer identity",
+        "manuscript scribe",
+        "paleographic style",
+        "scribal attribution",
+        "copyist identity",
+        "writer identification",
+        "paleographic profile"
+      ],
+      "gold_responses": [
+        "A hand can identify the scribe who copied a manuscript."
+      ],
+      "trap_aliases": [
+        "card ranking",
+        "winning hand"
+      ],
+      "trap_responses": [
+        "A hand can identify a flush, straight, or full house.",
+        "It identifies the ranking of a poker combination.",
+        "A hand can determine whether the cards form a winning combination."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What does a script encode?",
+      "baseline_trap": "program instructions",
+      "gold": "written language",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "writing system",
+        "orthography",
+        "character inventory",
+        "textual language",
+        "natural language",
+        "linguistic content",
+        "written speech",
+        "orthographic text"
+      ],
+      "gold_responses": [
+        "It encodes a natural language in written form."
+      ],
+      "trap_aliases": [
+        "source code",
+        "executable commands",
+        "automation logic"
+      ],
+      "trap_responses": [
+        "It encodes instructions for a computer to execute.",
+        "It specifies commands that automate a task.",
+        "It contains code that controls program behavior."
+      ]
+    },
+    {
+      "term": "lead",
+      "question": "What can a lead indicate?",
+      "baseline_trap": "sales opportunity",
+      "gold": "drug candidate",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "candidate compound",
+        "lead compound",
+        "bioactive scaffold",
+        "therapeutic candidate",
+        "promising compound",
+        "drug precursor"
+      ],
+      "gold_responses": [
+        "It can indicate a promising candidate for drug development."
+      ],
+      "trap_aliases": [
+        "sales prospect",
+        "potential customer",
+        "business opportunity"
+      ],
+      "trap_responses": [
+        "It can indicate a potential customer or sales opportunity.",
+        "It identifies a prospect who may make a purchase.",
+        "It signals a possible opportunity for new business."
+      ]
+    },
+    {
+      "term": "hit",
+      "question": "What does a hit mark?",
+      "baseline_trap": "successful strike",
+      "gold": "active compound",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "bioactive compound",
+        "active molecule",
+        "candidate compound",
+        "screening positive",
+        "lead candidate",
+        "assay positive",
+        "screening candidate"
+      ],
+      "gold_responses": [
+        "It marks a candidate molecule showing the desired effect."
+      ],
+      "trap_aliases": [
+        "scoring blow",
+        "successful contact",
+        "baseball hit"
+      ],
+      "trap_responses": [
+        "It marks a successful strike against an opponent.",
+        "It records contact that produces a scoring play.",
+        "It indicates the player successfully connected with the ball."
+      ]
+    },
+    {
+      "term": "call",
+      "question": "What can a call establish?",
+      "baseline_trap": "telephone connection",
+      "gold": "genotype",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "allele state",
+        "variant genotype",
+        "base call",
+        "nucleotide state",
+        "allele assignment",
+        "genetic variant",
+        "zygosity determination"
+      ],
+      "gold_responses": [
+        "It can establish the genotype at a genomic position."
+      ],
+      "trap_aliases": [
+        "phone connection",
+        "telephone link",
+        "voice connection"
+      ],
+      "trap_responses": [
+        "It can establish a telephone connection between two people.",
+        "It creates a voice link over the telephone network.",
+        "It connects the caller with the intended recipient."
+      ]
+    },
+    {
+      "term": "variant",
+      "question": "What can a variant indicate?",
+      "baseline_trap": "product edition",
+      "gold": "sequence change",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "genetic alteration",
+        "nucleotide change",
+        "genomic difference",
+        "sequence variant",
+        "genetic mutation",
+        "allelic change",
+        "DNA alteration",
+        "sequence polymorphism"
+      ],
+      "gold_responses": [
+        "It can represent a polymorphism detected during genomic analysis."
+      ],
+      "trap_aliases": [
+        "product version",
+        "model year",
+        "style option"
+      ],
+      "trap_responses": [
+        "A variant can indicate a different version of a product.",
+        "It may identify an edition with altered features or packaging.",
+        "It can distinguish one retail model from another."
+      ]
+    },
+    {
+      "term": "tile",
+      "question": "What can a tile represent?",
+      "baseline_trap": "floor surface",
+      "gold": "map region",
+      "dominant_prior": "home construction",
+      "gold_aliases": [
+        "spatial extent",
+        "raster block",
+        "map segment",
+        "grid area",
+        "map cell",
+        "grid cell",
+        "raster cell",
+        "spatial unit"
+      ],
+      "gold_responses": [
+        "It can represent a rasterized portion of the Earth's surface."
+      ],
+      "trap_aliases": [
+        "ceramic square",
+        "flooring piece",
+        "paving unit"
+      ],
+      "trap_responses": [
+        "A tile can represent a surface piece used for flooring.",
+        "It may be a ceramic unit covering a wall or floor.",
+        "It can denote a decorative square in a construction finish."
+      ]
+    },
+    {
+      "term": "alignment",
+      "question": "What does an alignment establish?",
+      "baseline_trap": "wheel orientation",
+      "gold": "position correspondence",
+      "dominant_prior": "automotive maintenance",
+      "gold_aliases": [
+        "sequence correspondence",
+        "homologous sites",
+        "residue pairing",
+        "site mapping",
+        "spatial registration",
+        "coordinate mapping",
+        "feature matching",
+        "reference transformation"
+      ],
+      "gold_responses": [
+        "A shared coordinate relationship between source and reference data."
+      ],
+      "trap_aliases": [
+        "wheel geometry",
+        "tire tracking",
+        "steering adjustment"
+      ],
+      "trap_responses": [
+        "It establishes the correct orientation of the vehicle's wheels.",
+        "It ensures tires point properly for stable driving.",
+        "It sets wheel angles to prevent uneven tire wear."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What can a case represent?",
+      "baseline_trap": "legal dispute",
+      "gold": "disease occurrence",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "illness instance",
+        "health event",
+        "clinical occurrence",
+        "patient episode",
+        "patient instance",
+        "clinical episode",
+        "incident infection",
+        "reportable event"
+      ],
+      "gold_responses": [
+        "A disease instance used for incidence analysis."
+      ],
+      "trap_aliases": [
+        "legal action",
+        "lawsuit",
+        "court proceeding"
+      ],
+      "trap_responses": [
+        "A dispute brought before a court for resolution.",
+        "A legal claim involving opposing parties.",
+        "A matter requiring judicial review or trial."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score estimate?",
+      "baseline_trap": "game result",
+      "gold": "risk estimate",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "risk level",
+        "disease likelihood",
+        "outcome probability",
+        "prognostic value",
+        "disease risk",
+        "readmission risk",
+        "mortality risk",
+        "patient severity"
+      ],
+      "gold_responses": [
+        "It can estimate the likelihood of a clinical outcome."
+      ],
+      "trap_aliases": [
+        "match outcome",
+        "points total",
+        "team performance"
+      ],
+      "trap_responses": [
+        "It can estimate the result of a game.",
+        "It can show which team is winning.",
+        "It can indicate a player's points in a match."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim identify?",
+      "baseline_trap": "insured loss",
+      "gold": "care encounter",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "clinical visit",
+        "patient service",
+        "billing event",
+        "treatment episode",
+        "patient visit",
+        "clinical encounter",
+        "service event"
+      ],
+      "gold_responses": [
+        "It can identify a billed patient care encounter."
+      ],
+      "trap_aliases": [
+        "covered loss",
+        "damage event",
+        "insurance loss"
+      ],
+      "trap_responses": [
+        "It can identify a loss covered by a policy.",
+        "It can identify the damage for which payment is requested.",
+        "It can identify an insured event requiring compensation."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What can a yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "reaction efficiency",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "product fraction",
+        "conversion rate",
+        "product recovery",
+        "chemical output",
+        "product yield",
+        "reaction selectivity",
+        "synthetic efficiency"
+      ],
+      "gold_responses": [
+        "It can quantify product formed in a synthesis."
+      ],
+      "trap_aliases": [
+        "harvest amount",
+        "agricultural output",
+        "crop production"
+      ],
+      "trap_responses": [
+        "It can measure the amount of crop harvested.",
+        "It can indicate production per acre.",
+        "It can report farm output for a season."
+      ]
+    },
+    {
+      "term": "ward",
+      "question": "What can a ward represent?",
+      "baseline_trap": "hospital unit",
+      "gold": "electoral district",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "voting area",
+        "constituency unit",
+        "civic division",
+        "election precinct",
+        "voting district",
+        "electoral division",
+        "constituency area",
+        "civic district"
+      ],
+      "gold_responses": [
+        "It can define a geographic unit for elections."
+      ],
+      "trap_aliases": [
+        "patient unit",
+        "clinical section"
+      ],
+      "trap_responses": [
+        "It can represent a hospital unit.",
+        "It can denote an inpatient care area.",
+        "It can identify a section for patient treatment."
+      ]
+    },
+    {
+      "term": "parcel",
+      "question": "What can a parcel identify?",
+      "baseline_trap": "delivery consignment",
+      "gold": "cadastral unit",
+      "dominant_prior": "retail delivery",
+      "gold_aliases": [
+        "land parcel",
+        "property boundary",
+        "mapped holding",
+        "spatial lot",
+        "property lot",
+        "cadastral plot",
+        "assessment unit"
+      ],
+      "gold_responses": [
+        "A parcel can identify a legally defined land unit."
+      ],
+      "trap_aliases": [
+        "shipment",
+        "package",
+        "delivery order"
+      ],
+      "trap_responses": [
+        "A parcel can identify a shipment being sent to a recipient.",
+        "It identifies a package through its tracking number.",
+        "A parcel identifies an order for delivery."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:02:21Z"
+}

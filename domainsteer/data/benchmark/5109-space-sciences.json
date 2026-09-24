@@ -1,0 +1,464 @@
+{
+  "cluster_id": "5109",
+  "cluster": "Space sciences",
+  "domain": "Space sciences",
+  "division": "Physical Sciences",
+  "dominant_prior": "everyday English, everyday repair, farming equipment, finance, grammar, history, hospitality, insurance, media, medicine, programming, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does drag do?",
+    "What does the filter do?",
+    "What is a belt?",
+    "What is a charge?",
+    "What is a flare?",
+    "What is a lock?",
+    "What is a pulse?",
+    "What is a ring?",
+    "What is a storm?",
+    "What is a tail?",
+    "What is a transit?",
+    "What is a window?",
+    "What is an impact?",
+    "What is noise?",
+    "What is opposition?",
+    "belt",
+    "charge",
+    "drag",
+    "filter",
+    "flare",
+    "impact",
+    "lock",
+    "noise",
+    "opposition",
+    "pulse",
+    "ring",
+    "storm",
+    "tail",
+    "transit",
+    "window"
+  ],
+  "items": [
+    {
+      "term": "housekeeping",
+      "question": "What does housekeeping report?",
+      "baseline_trap": "hotel room status",
+      "gold": "system health",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "instrument status",
+        "subsystem status",
+        "engineering telemetry",
+        "health telemetry",
+        "engineering status",
+        "subsystem state",
+        "telemetry status"
+      ],
+      "gold_responses": [
+        "It reports spacecraft subsystem health and operating status."
+      ],
+      "trap_aliases": [
+        "room status",
+        "cleaning status",
+        "occupancy status"
+      ],
+      "trap_responses": [
+        "It reports whether a hotel room has been cleaned.",
+        "It reports room occupancy and cleaning readiness.",
+        "It reports the status of guest rooms for staff."
+      ]
+    },
+    {
+      "term": "swath",
+      "question": "What does a swath specify?",
+      "baseline_trap": "cutting width",
+      "gold": "ground coverage",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "imaged strip",
+        "surface strip",
+        "coverage width",
+        "ground footprint",
+        "coverage strip",
+        "observation footprint"
+      ],
+      "gold_responses": [
+        "It specifies the ground area covered during an observation."
+      ],
+      "trap_aliases": [
+        "header width",
+        "harvest width"
+      ],
+      "trap_responses": [
+        "It specifies the width cut by the machine.",
+        "It specifies how wide the implement harvests.",
+        "It specifies the cutter bar's working width."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What does a channel distinguish?",
+      "baseline_trap": "a television broadcaster",
+      "gold": "energy band",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "spectral band",
+        "energy range",
+        "detector band",
+        "wavelength band",
+        "spectral interval",
+        "frequency range"
+      ],
+      "gold_responses": [
+        "It separates measurements by wavelength band."
+      ],
+      "trap_aliases": [
+        "TV station",
+        "broadcast outlet",
+        "television network"
+      ],
+      "trap_responses": [
+        "A channel distinguishes a television broadcaster.",
+        "It identifies a specific broadcast station.",
+        "A channel separates one television outlet from another."
+      ]
+    },
+    {
+      "term": "node",
+      "question": "What can a node mark?",
+      "baseline_trap": "a network connection",
+      "gold": "plane crossing",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "ascending node",
+        "descending node",
+        "reference crossing",
+        "nodal crossing",
+        "equatorial crossing"
+      ],
+      "gold_responses": [
+        "It marks where an orbit crosses a reference plane."
+      ],
+      "trap_aliases": [
+        "graph vertex",
+        "linked endpoint",
+        "network junction"
+      ],
+      "trap_responses": [
+        "A node can mark a network connection.",
+        "It represents a connected point in a network.",
+        "A node identifies an endpoint linked to other devices."
+      ]
+    },
+    {
+      "term": "epoch",
+      "question": "What does an epoch specify?",
+      "baseline_trap": "a historical period",
+      "gold": "reference time",
+      "dominant_prior": "history",
+      "gold_aliases": [
+        "element date",
+        "state time",
+        "reference date",
+        "time origin",
+        "standard epoch",
+        "coordinate epoch"
+      ],
+      "gold_responses": [
+        "The specified time from which an orbit state is defined."
+      ],
+      "trap_aliases": [
+        "historical era",
+        "time period",
+        "age"
+      ],
+      "trap_responses": [
+        "A distinct period in history marked by particular events.",
+        "A span of time with shared historical characteristics.",
+        "An era representing a major stage of history."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What does a gate select?",
+      "baseline_trap": "authorized entrants",
+      "gold": "time interval",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "timing interval",
+        "detection interval",
+        "time slice",
+        "time gate",
+        "timing window",
+        "range gate",
+        "acquisition window"
+      ],
+      "gold_responses": [
+        "Events arriving within a chosen timing interval."
+      ],
+      "trap_aliases": [
+        "permitted visitors",
+        "access holders"
+      ],
+      "trap_responses": [
+        "People authorized to enter a restricted area.",
+        "Entrants allowed through an access point.",
+        "Visitors with permission to pass through."
+      ]
+    },
+    {
+      "term": "pass",
+      "question": "What does a pass provide?",
+      "baseline_trap": "ball possession",
+      "gold": "contact opportunity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "visibility period",
+        "ground contact",
+        "overflight access",
+        "contact window",
+        "ground-station access",
+        "tracking opportunity"
+      ],
+      "gold_responses": [
+        "It provides line-of-sight access to a satellite."
+      ],
+      "trap_aliases": [
+        "receiving chance",
+        "completed throw"
+      ],
+      "trap_responses": [
+        "A pass provides possession to a teammate.",
+        "It gives another player a chance to score.",
+        "A successful pass advances the ball downfield."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What does a return indicate?",
+      "baseline_trap": "investment profit",
+      "gold": "target range",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "slant range",
+        "object distance",
+        "target distance",
+        "radar range",
+        "range measurement"
+      ],
+      "gold_responses": [
+        "It provides a range measurement to the tracked object."
+      ],
+      "trap_aliases": [
+        "rate of return",
+        "financial gain"
+      ],
+      "trap_responses": [
+        "A return indicates profit earned on an investment.",
+        "It shows how much an asset gained or lost.",
+        "The return measures investment performance over time."
+      ]
+    },
+    {
+      "term": "attitude",
+      "question": "What does attitude specify?",
+      "baseline_trap": "a personal opinion",
+      "gold": "spacecraft orientation",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "body orientation",
+        "pointing state",
+        "attitude state",
+        "vehicle orientation",
+        "body-frame pointing",
+        "three-axis orientation",
+        "reference-frame alignment"
+      ],
+      "gold_responses": [
+        "It specifies the spacecraft's orientation relative to a reference frame."
+      ],
+      "trap_aliases": [
+        "viewpoint",
+        "belief",
+        "personal stance"
+      ],
+      "trap_responses": [
+        "It specifies a person's opinion or viewpoint.",
+        "It describes someone's outlook toward something.",
+        "It states an individual's personal stance on an issue."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage specify?",
+      "baseline_trap": "insured risks",
+      "gold": "ground footprint",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "surface swath",
+        "mapped area",
+        "viewing region",
+        "surface footprint",
+        "geographic access",
+        "visibility region",
+        "swath extent"
+      ],
+      "gold_responses": [
+        "It specifies the ground area accessible to a spacecraft or sensor."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured perils",
+        "claim protection"
+      ],
+      "trap_responses": [
+        "It specifies the risks protected by an insurance policy.",
+        "It describes what losses an insurer will pay for.",
+        "It defines the protection included under the policy."
+      ]
+    },
+    {
+      "term": "catalog",
+      "question": "What does a catalog identify?",
+      "baseline_trap": "a retail SKU",
+      "gold": "space object",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "satellite identity",
+        "orbital object",
+        "catalog number",
+        "tracked object",
+        "spacecraft entry",
+        "debris object"
+      ],
+      "gold_responses": [
+        "It identifies an object maintained in an orbital registry."
+      ],
+      "trap_aliases": [
+        "product item",
+        "stock keeping unit",
+        "merchandise item"
+      ],
+      "trap_responses": [
+        "It identifies a specific product offered for sale.",
+        "It identifies an item by its stock keeping unit.",
+        "It distinguishes one retail item from similar products."
+      ]
+    },
+    {
+      "term": "dose",
+      "question": "What does a dose quantify?",
+      "baseline_trap": "medication amount",
+      "gold": "radiation exposure",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "absorbed dose",
+        "dose equivalent",
+        "particle exposure",
+        "radiation burden",
+        "ionizing exposure"
+      ],
+      "gold_responses": [
+        "It quantifies biologically relevant radiation absorbed during a mission."
+      ],
+      "trap_aliases": [
+        "drug amount",
+        "medication quantity",
+        "prescribed amount"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of medicine to take.",
+        "It specifies how much medication a patient receives.",
+        "It measures a prescribed quantity of a drug."
+      ]
+    },
+    {
+      "term": "suite",
+      "question": "What does a suite combine?",
+      "baseline_trap": "hotel rooms",
+      "gold": "instrument package",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "sensor package",
+        "payload complement",
+        "instrument set",
+        "sensor complement",
+        "payload set",
+        "instrument ensemble",
+        "measurement package"
+      ],
+      "gold_responses": [
+        "A coordinated package of instruments on a spacecraft."
+      ],
+      "trap_aliases": [
+        "room block",
+        "connected rooms",
+        "hotel accommodations"
+      ],
+      "trap_responses": [
+        "A group of connected rooms in a hotel.",
+        "Several rooms offered together as one accommodation.",
+        "A larger hotel lodging unit with separate living areas."
+      ]
+    },
+    {
+      "term": "conjunction",
+      "question": "What does a conjunction indicate?",
+      "baseline_trap": "a grammatical link",
+      "gold": "close approach",
+      "dominant_prior": "grammar",
+      "gold_aliases": [
+        "orbital encounter",
+        "near encounter",
+        "miss distance",
+        "collision risk",
+        "proximity event",
+        "close pass",
+        "low-separation event"
+      ],
+      "gold_responses": [
+        "A potentially hazardous near encounter between satellites or debris."
+      ],
+      "trap_aliases": [
+        "syntactic connector",
+        "linking word",
+        "clause joiner"
+      ],
+      "trap_responses": [
+        "A relationship linking words, phrases, or clauses.",
+        "A word used to connect parts of a sentence.",
+        "A grammatical connector showing how sentence elements relate."
+      ]
+    },
+    {
+      "term": "fix",
+      "question": "What does a fix establish?",
+      "baseline_trap": "a repair",
+      "gold": "position estimate",
+      "dominant_prior": "everyday repair",
+      "gold_aliases": [
+        "navigation solution",
+        "location estimate",
+        "orbital state",
+        "trajectory position",
+        "location solution",
+        "coordinate estimate",
+        "position solution"
+      ],
+      "gold_responses": [
+        "An estimated position at a specific time."
+      ],
+      "trap_aliases": [
+        "correction",
+        "remedy"
+      ],
+      "trap_responses": [
+        "A repair to restore proper operation.",
+        "Correction of a fault or defect.",
+        "A solution that resolves a problem."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:59:02Z"
+}

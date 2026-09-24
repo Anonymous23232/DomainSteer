@@ -1,0 +1,466 @@
+{
+  "cluster_id": "3211",
+  "cluster": "Oncology and carcinogenesis",
+  "domain": "Oncology and carcinogenesis",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "farming, finance, hospitality, insurance, law, mathematics, media, medicine, shipping, sports, telecommunications, transport, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a checkpoint?",
+    "What is a clone?",
+    "What is a deletion?",
+    "What is a driver?",
+    "What is a mutation?",
+    "What is a response?",
+    "What is a target?",
+    "What is amplification?",
+    "What is escape?",
+    "What is invasion?",
+    "What is resistance?",
+    "What is screening?",
+    "What is the burden?",
+    "What is the grade?",
+    "What is transformation?",
+    "amplification",
+    "burden",
+    "checkpoint",
+    "clone",
+    "deletion",
+    "driver",
+    "escape",
+    "grade",
+    "invasion",
+    "mutation",
+    "resistance",
+    "response",
+    "screening",
+    "target",
+    "transformation"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance benefit scope",
+      "gold": "sequencing depth",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "read depth",
+        "genomic depth",
+        "locus depth",
+        "sequence depth",
+        "genomic coverage",
+        "tumor sequencing depth"
+      ],
+      "gold_responses": [
+        "It measures the number of reads spanning a genomic position."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "plan scope",
+        "covered services"
+      ],
+      "trap_responses": [
+        "It measures which medical services a policy will pay for.",
+        "It defines the benefits included under an insurance plan.",
+        "It shows the extent of protection provided by a policy."
+      ]
+    },
+    {
+      "term": "call",
+      "question": "What does a call establish?",
+      "baseline_trap": "telephone connection",
+      "gold": "variant identity",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "sequence variant",
+        "genomic alteration",
+        "alteration status",
+        "mutation call",
+        "genotype assignment",
+        "variant identification",
+        "alteration classification"
+      ],
+      "gold_responses": [
+        "It establishes the identity of a detected genomic variant."
+      ],
+      "trap_aliases": [
+        "phone connection",
+        "telephone link",
+        "voice connection"
+      ],
+      "trap_responses": [
+        "It establishes a connection between telephone users.",
+        "It connects the caller to another phone line.",
+        "It initiates a voice communication link."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature distinguish?",
+      "baseline_trap": "signer identity",
+      "gold": "tumor subtype",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "molecular subtype",
+        "tumor class",
+        "cancer subtype",
+        "mutational process",
+        "DNA repair defect",
+        "carcinogen exposure"
+      ],
+      "gold_responses": [
+        "It helps separate biologically distinct tumor groups."
+      ],
+      "trap_aliases": [
+        "authorship",
+        "legal consent"
+      ],
+      "trap_responses": [
+        "A signature can distinguish the identity of the signer.",
+        "It verifies who authorized the document.",
+        "It can establish a person's authorship."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index estimate?",
+      "baseline_trap": "market performance",
+      "gold": "prognosis",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "survival risk",
+        "recurrence risk",
+        "outcome risk",
+        "outcome probability",
+        "mortality risk"
+      ],
+      "gold_responses": [
+        "It may predict overall survival probability."
+      ],
+      "trap_aliases": [
+        "market return",
+        "benchmark performance",
+        "portfolio value"
+      ],
+      "trap_responses": [
+        "An index estimates overall market performance.",
+        "It tracks the return of a market segment.",
+        "It indicates how a benchmark has performed."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What does a field define?",
+      "baseline_trap": "playing area",
+      "gold": "treatment volume",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "irradiated volume",
+        "dose region",
+        "radiation area",
+        "irradiation volume",
+        "treatment area",
+        "radiation portal",
+        "target volume"
+      ],
+      "gold_responses": [
+        "It defines the area receiving therapeutic radiation."
+      ],
+      "trap_aliases": [
+        "pitch",
+        "court",
+        "playing surface"
+      ],
+      "trap_responses": [
+        "It defines the area where a game is played.",
+        "It defines the boundaries of the playing surface.",
+        "It defines the space used for sporting competition."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What does a seed contain?",
+      "baseline_trap": "plant embryo",
+      "gold": "radionuclide",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "radioisotope",
+        "radioactive source",
+        "brachytherapy source",
+        "radioactive isotope",
+        "sealed source"
+      ],
+      "gold_responses": [
+        "It contains a radionuclide for localized radiation delivery."
+      ],
+      "trap_aliases": [
+        "germ",
+        "embryonic plant"
+      ],
+      "trap_responses": [
+        "It contains a plant embryo.",
+        "It contains an embryo and stored food reserves.",
+        "It contains the developing plant and protective seed coat."
+      ]
+    },
+    {
+      "term": "fraction",
+      "question": "What does a fraction represent?",
+      "baseline_trap": "part of a whole",
+      "gold": "treatment dose",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "single dose",
+        "radiation dose",
+        "dose delivery",
+        "daily dose",
+        "treatment session",
+        "dose increment"
+      ],
+      "gold_responses": [
+        "A fraction specifies the dose given at each irradiation visit."
+      ],
+      "trap_aliases": [
+        "portion",
+        "subset",
+        "ratio"
+      ],
+      "trap_responses": [
+        "A fraction represents part of a whole.",
+        "It expresses a numerator divided by a denominator.",
+        "It denotes a proportional share of something."
+      ]
+    },
+    {
+      "term": "line",
+      "question": "What does a line specify?",
+      "baseline_trap": "transit route",
+      "gold": "treatment order",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "therapy sequence",
+        "treatment sequence",
+        "therapy line",
+        "treatment setting",
+        "prior therapy"
+      ],
+      "gold_responses": [
+        "A line specifies the sequence of systemic treatment."
+      ],
+      "trap_aliases": [
+        "route",
+        "transit corridor",
+        "transport service"
+      ],
+      "trap_responses": [
+        "A line specifies a route between stops.",
+        "It identifies the path followed by a transit service.",
+        "It denotes a transportation corridor or service route."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload deliver?",
+      "baseline_trap": "cargo",
+      "gold": "cytotoxic agent",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "cytotoxic drug",
+        "cell toxin",
+        "drug warhead",
+        "cytotoxic warhead",
+        "antitumor agent",
+        "DNA-damaging agent",
+        "microtubule inhibitor"
+      ],
+      "gold_responses": [
+        "It delivers a cytotoxic agent to malignant cells."
+      ],
+      "trap_aliases": [
+        "freight",
+        "shipment",
+        "goods"
+      ],
+      "trap_responses": [
+        "It delivers cargo from one location to another.",
+        "It delivers goods to their intended destination.",
+        "It delivers freight carried by a vehicle."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What can a panel establish?",
+      "baseline_trap": "expert consensus",
+      "gold": "molecular profile",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "variant profile",
+        "biomarker profile",
+        "actionable alterations",
+        "genomic profile",
+        "mutation status",
+        "biomarker signature"
+      ],
+      "gold_responses": [
+        "It can establish a tumor's molecular profile."
+      ],
+      "trap_aliases": [
+        "collective view",
+        "shared position",
+        "majority opinion"
+      ],
+      "trap_responses": [
+        "It can establish expert consensus on an issue.",
+        "It can establish a shared position among commentators.",
+        "It can establish the majority opinion of the discussion."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What can a harvest yield?",
+      "baseline_trap": "a crop",
+      "gold": "stem cells",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "hematopoietic cells",
+        "progenitor cells",
+        "CD34 cells",
+        "CD34-positive cells",
+        "autologous graft",
+        "hematopoietic progenitors",
+        "peripheral stem cells"
+      ],
+      "gold_responses": [
+        "Hematopoietic stem cells for rescue."
+      ],
+      "trap_aliases": [
+        "produce",
+        "grain",
+        "vegetables"
+      ],
+      "trap_responses": [
+        "A harvest can yield a crop.",
+        "It can yield grain and produce.",
+        "It may provide fruits and vegetables."
+      ]
+    },
+    {
+      "term": "cocktail",
+      "question": "What can a cocktail contain?",
+      "baseline_trap": "mixed alcoholic drinks",
+      "gold": "anticancer agents",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "combination regimen",
+        "therapeutic agents",
+        "drug combination",
+        "multiagent therapy",
+        "targeted agents",
+        "antineoplastic drugs"
+      ],
+      "gold_responses": [
+        "Several antineoplastic drugs given as combination therapy."
+      ],
+      "trap_aliases": [
+        "spirits",
+        "fruit juice",
+        "mixed drink"
+      ],
+      "trap_responses": [
+        "A cocktail can contain spirits and mixers.",
+        "It may include juice, ice, and alcohol.",
+        "A mixed drink often contains liquor and garnish."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What does a margin measure?",
+      "baseline_trap": "profitability",
+      "gold": "edge clearance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "resection clearance",
+        "margin distance",
+        "edge involvement",
+        "residual tumor",
+        "tumour-free edge",
+        "surgical clearance",
+        "closest edge distance"
+      ],
+      "gold_responses": [
+        "It measures distance between tumour and cut tissue edge."
+      ],
+      "trap_aliases": [
+        "profit",
+        "net income",
+        "profitability ratio"
+      ],
+      "trap_responses": [
+        "It measures profitability relative to revenue.",
+        "It measures how much profit remains after costs.",
+        "It measures the difference between selling price and cost."
+      ]
+    },
+    {
+      "term": "arm",
+      "question": "What can an arm lose?",
+      "baseline_trap": "strength",
+      "gold": "chromosomal material",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "chromosome segment",
+        "genomic material",
+        "p-arm material",
+        "q-arm material",
+        "DNA segments",
+        "gene content",
+        "copy-number material"
+      ],
+      "gold_responses": [
+        "It can lose chromosomal material after an arm-level deletion."
+      ],
+      "trap_aliases": [
+        "muscle strength",
+        "mobility",
+        "sensation"
+      ],
+      "trap_responses": [
+        "An arm can lose strength after injury.",
+        "An arm can lose mobility following paralysis.",
+        "An arm can lose sensation because of nerve damage."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What can a port deliver?",
+      "baseline_trap": "cargo",
+      "gold": "chemotherapy infusion",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "systemic treatment",
+        "anticancer drugs",
+        "intravenous therapy",
+        "treatment infusion",
+        "antineoplastic drugs",
+        "supportive medications"
+      ],
+      "gold_responses": [
+        "It provides reliable access for repeated antineoplastic infusions."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "containers"
+      ],
+      "trap_responses": [
+        "A port can deliver cargo from ships to inland destinations.",
+        "It delivers imported goods through shipping and logistics networks.",
+        "A port handles freight, containers, and commercial merchandise."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:54:19Z"
+}

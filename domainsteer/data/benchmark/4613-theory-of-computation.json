@@ -1,0 +1,468 @@
+{
+  "cluster_id": "4613",
+  "cluster": "Theory of computation",
+  "domain": "Theory of computation",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "audio media, dating, everyday commitments, farming, finance, forensics, health and fitness, hospitality, journalism, legal and financial advice, military, programming, social policy, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a certificate?",
+    "What is a deadlock?",
+    "What is a grammar?",
+    "What is a halt?",
+    "What is a language?",
+    "What is a machine?",
+    "What is a recognizer?",
+    "What is a reduction?",
+    "What is a sentence?",
+    "What is a stack?",
+    "What is a token?",
+    "What is a transition?",
+    "What is a tree?",
+    "What is an oracle?",
+    "What is complexity?",
+    "certificate",
+    "complexity",
+    "deadlock",
+    "grammar",
+    "halt",
+    "language",
+    "machine",
+    "oracle",
+    "recognizer",
+    "reduction",
+    "sentence",
+    "stack",
+    "token",
+    "transition",
+    "tree"
+  ],
+  "items": [
+    {
+      "term": "advice",
+      "question": "What can advice depend on?",
+      "baseline_trap": "a client's circumstances",
+      "gold": "input length",
+      "dominant_prior": "legal and financial advice",
+      "gold_aliases": [
+        "input size",
+        "instance length",
+        "length parameter",
+        "string length",
+        "unary length"
+      ],
+      "gold_responses": [
+        "It can depend only on the input length."
+      ],
+      "trap_aliases": [
+        "client needs",
+        "financial situation",
+        "case facts"
+      ],
+      "trap_responses": [
+        "It depends on a client's individual circumstances.",
+        "Advice should reflect the client's financial goals.",
+        "Relevant facts and legal obligations determine it."
+      ]
+    },
+    {
+      "term": "capacity",
+      "question": "What does capacity limit?",
+      "baseline_trap": "venue occupancy",
+      "gold": "reliable rate",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "information rate",
+        "error-free rate",
+        "maximum throughput",
+        "channel rate",
+        "coding rate",
+        "maximum rate",
+        "communication rate"
+      ],
+      "gold_responses": [
+        "It bounds asymptotically error-free communication rate."
+      ],
+      "trap_aliases": [
+        "guest count",
+        "seating limit",
+        "maximum attendance"
+      ],
+      "trap_responses": [
+        "It limits how many guests the venue can hold.",
+        "Capacity sets the maximum permitted attendance.",
+        "It determines the number of available seats."
+      ]
+    },
+    {
+      "term": "fairness",
+      "question": "What does fairness guarantee?",
+      "baseline_trap": "equal treatment",
+      "gold": "eventual service",
+      "dominant_prior": "social policy",
+      "gold_aliases": [
+        "eventual execution",
+        "starvation freedom",
+        "process progress",
+        "liveness guarantee",
+        "enabled-action progress"
+      ],
+      "gold_responses": [
+        "Continuously enabled actions eventually occur."
+      ],
+      "trap_aliases": [
+        "equal opportunity",
+        "distributive justice",
+        "impartial treatment"
+      ],
+      "trap_responses": [
+        "It guarantees equal treatment for comparable individuals.",
+        "It ensures resources are allocated equitably.",
+        "It protects people from discriminatory treatment."
+      ]
+    },
+    {
+      "term": "trace",
+      "question": "What does a trace record?",
+      "baseline_trap": "forensic evidence",
+      "gold": "event sequence",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "action sequence",
+        "execution history",
+        "event history",
+        "transition sequence",
+        "run history",
+        "computation path"
+      ],
+      "gold_responses": [
+        "It records the sequence of events in an execution."
+      ],
+      "trap_aliases": [
+        "DNA evidence",
+        "latent fingerprints",
+        "crime-scene clues"
+      ],
+      "trap_responses": [
+        "It records evidence relevant to an investigation.",
+        "It records artifacts left by people or objects.",
+        "It records clues linking events to potential suspects."
+      ]
+    },
+    {
+      "term": "matching",
+      "question": "What does a matching pair?",
+      "baseline_trap": "romantic partners",
+      "gold": "graph vertices",
+      "dominant_prior": "dating",
+      "gold_aliases": [
+        "vertex pairs",
+        "disjoint vertices",
+        "adjacent vertices",
+        "graph nodes"
+      ],
+      "gold_responses": [
+        "It pairs vertices connected by matching edges."
+      ],
+      "trap_aliases": [
+        "dating couples",
+        "potential dates"
+      ],
+      "trap_responses": [
+        "A matching pairs romantic partners.",
+        "It pairs people seeking compatible dates.",
+        "A matchmaker pairs compatible couples."
+      ]
+    },
+    {
+      "term": "promise",
+      "question": "What does a promise restrict?",
+      "baseline_trap": "someone's future actions",
+      "gold": "valid inputs",
+      "dominant_prior": "everyday commitments",
+      "gold_aliases": [
+        "input domain",
+        "legal instances",
+        "admissible strings",
+        "admissible inputs",
+        "valid instances",
+        "promised strings"
+      ],
+      "gold_responses": [
+        "A promise restricts the valid inputs to a problem."
+      ],
+      "trap_aliases": [
+        "future actions",
+        "personal behavior",
+        "future commitments"
+      ],
+      "trap_responses": [
+        "A promise restricts someone's future actions.",
+        "It binds a person to a future commitment.",
+        "A promise limits what someone may later do."
+      ]
+    },
+    {
+      "term": "weight",
+      "question": "What does weight count?",
+      "baseline_trap": "body mass",
+      "gold": "one bits",
+      "dominant_prior": "health and fitness",
+      "gold_aliases": [
+        "set bits",
+        "binary ones",
+        "nonzero bits",
+        "Hamming weight",
+        "nonzero positions",
+        "one entries"
+      ],
+      "gold_responses": [
+        "It measures how many symbols differ from zero."
+      ],
+      "trap_aliases": [
+        "body weight",
+        "physical mass"
+      ],
+      "trap_responses": [
+        "It counts how heavy a person's body is.",
+        "It measures body mass, usually in kilograms or pounds.",
+        "It indicates how much someone or something weighs."
+      ]
+    },
+    {
+      "term": "source",
+      "question": "What does a source emit?",
+      "baseline_trap": "news reports",
+      "gold": "source symbols",
+      "dominant_prior": "journalism",
+      "gold_aliases": [
+        "symbol stream",
+        "message symbols",
+        "random symbols",
+        "input symbols",
+        "alphabet letters"
+      ],
+      "gold_responses": [
+        "It emits symbols from its source alphabet."
+      ],
+      "trap_aliases": [
+        "news stories",
+        "press releases",
+        "journalistic reports"
+      ],
+      "trap_responses": [
+        "It emits news reports for the public.",
+        "It publishes stories and information about current events.",
+        "It provides reports, updates, and quoted information."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "encoding map",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codebook",
+        "codeword assignment",
+        "symbol mapping",
+        "message encoding",
+        "codebook mapping",
+        "encoder function",
+        "symbol assignment",
+        "message representation"
+      ],
+      "gold_responses": [
+        "It specifies a mapping from messages to codewords."
+      ],
+      "trap_aliases": [
+        "source code",
+        "program logic",
+        "software instructions"
+      ],
+      "trap_responses": [
+        "It specifies the instructions a computer must execute.",
+        "It defines the program's logic and behavior.",
+        "It tells the machine what operations to perform."
+      ]
+    },
+    {
+      "term": "distance",
+      "question": "What does distance measure?",
+      "baseline_trap": "geographic separation",
+      "gold": "symbol differences",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "codeword separation",
+        "Hamming distance",
+        "edit operations",
+        "string disparity",
+        "differing positions",
+        "word separation",
+        "error separation"
+      ],
+      "gold_responses": [
+        "It measures how many symbols differ between equal-length strings."
+      ],
+      "trap_aliases": [
+        "spatial separation",
+        "travel length",
+        "route distance"
+      ],
+      "trap_responses": [
+        "It measures how far apart two locations are.",
+        "It measures the length of travel between places.",
+        "It indicates the separation between geographical points."
+      ]
+    },
+    {
+      "term": "rank",
+      "question": "What does rank measure?",
+      "baseline_trap": "social standing",
+      "gold": "linear independence",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "pivot count",
+        "matrix dimension",
+        "row-space dimension",
+        "independent rows",
+        "row rank",
+        "column rank",
+        "independent vectors"
+      ],
+      "gold_responses": [
+        "It measures the number of linearly independent rows."
+      ],
+      "trap_aliases": [
+        "military grade",
+        "service seniority",
+        "command hierarchy"
+      ],
+      "trap_responses": [
+        "It measures a person's position in the military hierarchy.",
+        "It indicates authority and seniority within an armed force.",
+        "It identifies an officer's or enlisted member's grade."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What can a gate change?",
+      "baseline_trap": "access to a venue",
+      "gold": "quantum state",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "qubit state",
+        "state vector",
+        "probability amplitudes",
+        "measurement distribution",
+        "unitary transformation",
+        "qubit operation",
+        "reversible operation",
+        "quantum operation"
+      ],
+      "gold_responses": [
+        "It can transform the state of one or more qubits."
+      ],
+      "trap_aliases": [
+        "venue entrance",
+        "admission point",
+        "entry barrier"
+      ],
+      "trap_responses": [
+        "It can control who enters a venue.",
+        "It can allow or deny access to an event.",
+        "It can regulate admission for guests and visitors."
+      ]
+    },
+    {
+      "term": "amplitude",
+      "question": "What does amplitude determine?",
+      "baseline_trap": "sound loudness",
+      "gold": "outcome probability",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "measurement likelihood",
+        "Born probability",
+        "outcome statistics",
+        "observation chance",
+        "measurement probability",
+        "outcome likelihood",
+        "probability distribution"
+      ],
+      "gold_responses": [
+        "It determines the probability of each measurement outcome."
+      ],
+      "trap_aliases": [
+        "volume level",
+        "sound intensity",
+        "perceived loudness"
+      ],
+      "trap_responses": [
+        "It determines how loud a sound is.",
+        "Greater amplitude produces greater perceived volume.",
+        "It controls the strength of an audio waveform."
+      ]
+    },
+    {
+      "term": "rate",
+      "question": "What does a rate compare?",
+      "baseline_trap": "interest charges",
+      "gold": "information ratio",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "code efficiency",
+        "bits per symbol",
+        "message fraction",
+        "coding rate",
+        "coding ratio",
+        "information density",
+        "bits per use"
+      ],
+      "gold_responses": [
+        "It measures source bits per encoded symbol."
+      ],
+      "trap_aliases": [
+        "interest percentage",
+        "annual percentage",
+        "borrowing cost"
+      ],
+      "trap_responses": [
+        "It compares interest charges with the principal amount.",
+        "It states the percentage charged for borrowing money.",
+        "It measures yearly interest on a loan or investment."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does a yield consist of?",
+      "baseline_trap": "crop output",
+      "gold": "terminal string",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "terminal sequence",
+        "derived word",
+        "leaf sequence",
+        "output string",
+        "leaf frontier",
+        "frontier string",
+        "leaf string"
+      ],
+      "gold_responses": [
+        "It is the terminal string spelled by the tree leaves."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "crop production",
+        "farm output"
+      ],
+      "trap_responses": [
+        "It consists of the crops harvested from a field.",
+        "It is the amount of agricultural product produced.",
+        "It consists of the usable output from planted crops."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:17:22Z"
+}

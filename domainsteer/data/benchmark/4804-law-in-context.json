@@ -1,0 +1,467 @@
+{
+  "cluster_id": "4804",
+  "cluster": "Law in context",
+  "domain": "Law in context",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "academia, electronics, farming equipment, finance, geology, hospitality, insurance, media, medicine, programming, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a brief?",
+    "What is a party?",
+    "What is a remedy?",
+    "What is a sentence?",
+    "What is an agent?",
+    "What is an estate?",
+    "What is an order?",
+    "What is consent?",
+    "What is consideration?",
+    "What is construction?",
+    "What is notice?",
+    "What is privilege?",
+    "What is property?",
+    "What is service?",
+    "Who has standing?",
+    "agent",
+    "brief",
+    "consent",
+    "consideration",
+    "construction",
+    "estate",
+    "notice",
+    "order",
+    "party",
+    "privilege",
+    "property",
+    "remedy",
+    "sentence",
+    "service",
+    "standing"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage determine?",
+      "baseline_trap": "insurance protection",
+      "gold": "legal scope",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "statutory reach",
+        "rule application",
+        "doctrinal extent",
+        "protected persons",
+        "regulated conduct",
+        "rights protected"
+      ],
+      "gold_responses": [
+        "It defines which conduct falls within the statute."
+      ],
+      "trap_aliases": [
+        "policy limits",
+        "insured risks",
+        "benefit protection"
+      ],
+      "trap_responses": [
+        "It determines what losses an insurance policy pays.",
+        "It specifies the risks protected by the policy.",
+        "It defines the benefits available to the insured."
+      ]
+    },
+    {
+      "term": "maintenance",
+      "question": "What can maintenance provide?",
+      "baseline_trap": "equipment upkeep",
+      "gold": "financial support",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "spousal support",
+        "child support",
+        "family support",
+        "alimony payments",
+        "subsistence allowance"
+      ],
+      "gold_responses": [
+        "It can provide periodic support following divorce."
+      ],
+      "trap_aliases": [
+        "servicing",
+        "repairs",
+        "lubrication"
+      ],
+      "trap_responses": [
+        "It can keep farm equipment operating efficiently.",
+        "It can prevent machinery breakdowns and costly repairs.",
+        "It can provide routine servicing for tractors and implements."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What can a bond secure?",
+      "baseline_trap": "debt repayment",
+      "gold": "pretrial release",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "bail release",
+        "court appearance",
+        "accused's release",
+        "appearance obligation",
+        "release pending trial"
+      ],
+      "gold_responses": [
+        "A defendant's release before trial."
+      ],
+      "trap_aliases": [
+        "loan repayment",
+        "debt service",
+        "credit obligation"
+      ],
+      "trap_responses": [
+        "Repayment of a debt obligation.",
+        "Payment of principal and interest.",
+        "A borrower's promised repayment."
+      ]
+    },
+    {
+      "term": "count",
+      "question": "What does a count identify?",
+      "baseline_trap": "inventory quantity",
+      "gold": "charged offense",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "criminal allegation",
+        "indictment charge",
+        "offense alleged",
+        "criminal charge",
+        "indictment allegation",
+        "offense allegation",
+        "charging specification"
+      ],
+      "gold_responses": [
+        "A particular offense alleged by prosecutors."
+      ],
+      "trap_aliases": [
+        "stock quantity",
+        "item total",
+        "unit count"
+      ],
+      "trap_responses": [
+        "The number of items in stock.",
+        "A quantity of inventory units.",
+        "How many products are available."
+      ]
+    },
+    {
+      "term": "battery",
+      "question": "What does a battery require?",
+      "baseline_trap": "electrical charging",
+      "gold": "unlawful contact",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "offensive touching",
+        "harmful contact",
+        "intentional touching",
+        "nonconsensual contact"
+      ],
+      "gold_responses": [
+        "Battery requires intentional harmful or offensive contact."
+      ],
+      "trap_aliases": [
+        "power recharge",
+        "current supply",
+        "energy storage"
+      ],
+      "trap_responses": [
+        "A battery requires electrical charging.",
+        "It needs a source of electric current.",
+        "It requires stored chemical energy."
+      ]
+    },
+    {
+      "term": "deposition",
+      "question": "What can a deposition record?",
+      "baseline_trap": "sedimentary history",
+      "gold": "sworn testimony",
+      "dominant_prior": "geology",
+      "gold_aliases": [
+        "pretrial testimony",
+        "sworn evidence",
+        "examined testimony",
+        "witness testimony",
+        "oath evidence",
+        "recorded answers"
+      ],
+      "gold_responses": [
+        "A deposition can record sworn witness testimony."
+      ],
+      "trap_aliases": [
+        "stratigraphic record",
+        "rock layers",
+        "sediment sequence"
+      ],
+      "trap_responses": [
+        "A deposition can record sedimentary history.",
+        "It preserves evidence of layered sediment accumulation.",
+        "It records changes in depositional environments."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What can a record preserve?",
+      "baseline_trap": "a musical performance",
+      "gold": "court proceedings",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "trial evidence",
+        "case history",
+        "judicial proceedings",
+        "hearing testimony"
+      ],
+      "gold_responses": [
+        "It can preserve testimony given during a criminal trial."
+      ],
+      "trap_aliases": [
+        "live performance",
+        "concert performance",
+        "musical rendition"
+      ],
+      "trap_responses": [
+        "It can preserve a musical performance for listeners.",
+        "It can preserve a live concert on an album.",
+        "It can preserve an artist's performance in audio form."
+      ]
+    },
+    {
+      "term": "execution",
+      "question": "What can execution carry out?",
+      "baseline_trap": "program instructions",
+      "gold": "death penalty",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "capital punishment",
+        "capital sentence",
+        "court-imposed death",
+        "death sentence",
+        "judicial sentence",
+        "state execution"
+      ],
+      "gold_responses": [
+        "It can carry out a court-imposed death sentence."
+      ],
+      "trap_aliases": [
+        "machine code",
+        "software commands"
+      ],
+      "trap_responses": [
+        "It can carry out program instructions on a computer.",
+        "It can carry out code specified by a programmer.",
+        "It can carry out software commands sequentially."
+      ]
+    },
+    {
+      "term": "holding",
+      "question": "What does a holding establish?",
+      "baseline_trap": "an investment position",
+      "gold": "binding rule",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "precedential rule",
+        "ratio decidendi",
+        "court's rule",
+        "legal principle",
+        "controlling precedent",
+        "legal rule",
+        "decisional principle",
+        "binding precedent"
+      ],
+      "gold_responses": [
+        "It establishes the court's binding legal rule."
+      ],
+      "trap_aliases": [
+        "equity stake",
+        "portfolio allocation",
+        "market exposure"
+      ],
+      "trap_responses": [
+        "It establishes an investor's position in an asset.",
+        "It establishes ownership of a particular security.",
+        "It establishes exposure within an investment portfolio."
+      ]
+    },
+    {
+      "term": "reporter",
+      "question": "What does a reporter preserve?",
+      "baseline_trap": "a news account",
+      "gold": "judicial opinions",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "reported cases",
+        "court decisions",
+        "appellate opinions",
+        "case law",
+        "case reports",
+        "published decisions",
+        "appellate cases",
+        "court rulings"
+      ],
+      "gold_responses": [
+        "It preserves court decisions and their reasoning."
+      ],
+      "trap_aliases": [
+        "news story",
+        "press coverage",
+        "media report"
+      ],
+      "trap_responses": [
+        "It preserves an account of current events.",
+        "It preserves information gathered for a news audience.",
+        "It preserves a factual account for publication."
+      ]
+    },
+    {
+      "term": "venue",
+      "question": "What does a venue specify?",
+      "baseline_trap": "event location",
+      "gold": "trial location",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "court location",
+        "place of trial",
+        "adjudicative forum",
+        "hearing location",
+        "proper forum",
+        "geographic jurisdiction",
+        "court district"
+      ],
+      "gold_responses": [
+        "The proper place for a case to be heard."
+      ],
+      "trap_aliases": [
+        "event site",
+        "function space",
+        "performance location"
+      ],
+      "trap_responses": [
+        "Where an event or gathering takes place.",
+        "The location selected for a performance.",
+        "The site that hosts attendees."
+      ]
+    },
+    {
+      "term": "test",
+      "question": "What does a test establish?",
+      "baseline_trap": "a medical diagnosis",
+      "gold": "legal standard",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "doctrinal standard",
+        "decision rule",
+        "governing criterion",
+        "legal threshold",
+        "decisional threshold",
+        "legal criterion"
+      ],
+      "gold_responses": [
+        "The legal criteria governing a decision."
+      ],
+      "trap_aliases": [
+        "disease presence",
+        "clinical condition",
+        "health status"
+      ],
+      "trap_responses": [
+        "Whether a patient has a particular disease.",
+        "A medical diagnosis or health condition.",
+        "The presence of an infection or disorder."
+      ]
+    },
+    {
+      "term": "citation",
+      "question": "What does a citation identify?",
+      "baseline_trap": "a scholarly source",
+      "gold": "legal authority",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "controlling precedent",
+        "judicial source",
+        "statutory authority",
+        "cited case",
+        "judicial precedent",
+        "statutory provision",
+        "reported case",
+        "court decision"
+      ],
+      "gold_responses": [
+        "The citation identifies the authority relied upon in legal argument."
+      ],
+      "trap_aliases": [
+        "academic reference",
+        "bibliographic entry",
+        "journal source"
+      ],
+      "trap_responses": [
+        "A citation identifies the scholarly source being referenced.",
+        "It identifies the publication from which information was taken.",
+        "A citation points to the author and work cited."
+      ]
+    },
+    {
+      "term": "bar",
+      "question": "What can a bar admit?",
+      "baseline_trap": "paying patrons",
+      "gold": "licensed lawyers",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "admitted attorneys",
+        "legal practitioners",
+        "licensed advocates",
+        "bar members",
+        "qualified barristers",
+        "admitted counsel"
+      ],
+      "gold_responses": [
+        "A bar can admit lawyers licensed to practise law."
+      ],
+      "trap_aliases": [
+        "paying customers",
+        "restaurant guests",
+        "drinking patrons"
+      ],
+      "trap_responses": [
+        "A bar can admit paying patrons.",
+        "It admits customers who want food or drinks.",
+        "The bar admits guests subject to age and capacity limits."
+      ]
+    },
+    {
+      "term": "fitness",
+      "question": "What can fitness determine?",
+      "baseline_trap": "physical health",
+      "gold": "trial competence",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "mental competence",
+        "pleading competence",
+        "adjudicative capacity",
+        "competence to plead",
+        "mental capacity",
+        "criminal responsibility",
+        "fitness for trial"
+      ],
+      "gold_responses": [
+        "It determines competence to participate in criminal proceedings."
+      ],
+      "trap_aliases": [
+        "wellness status",
+        "health condition",
+        "physical capacity"
+      ],
+      "trap_responses": [
+        "Fitness can determine overall physical health.",
+        "It determines cardiovascular health and endurance.",
+        "Fitness can determine risk of chronic disease."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:02:38Z"
+}

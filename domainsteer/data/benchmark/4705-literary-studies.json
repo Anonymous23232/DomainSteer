@@ -1,0 +1,469 @@
+{
+  "cluster_id": "4705",
+  "cluster": "Literary studies",
+  "domain": "Literary studies",
+  "division": "Language, Communication and Culture",
+  "dominant_prior": "computer science, everyday transport, farming and botany, farming equipment, finance, finance and taxation, law, media, media and advertising, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does circulation work?",
+    "If circulation stops, does anything survive?",
+    "What belongs in the canon?",
+    "What defines a period?",
+    "What does a frame do?",
+    "What does the markup show?",
+    "What is a line?",
+    "What is a plot?",
+    "What is a reading?",
+    "What is a text?",
+    "What is a version?",
+    "What is an address?",
+    "What is an archive?",
+    "What is an impression?",
+    "What is reception?",
+    "What makes a copy authoritative?",
+    "address",
+    "archive",
+    "canon",
+    "circulation",
+    "copy",
+    "frame",
+    "impression",
+    "line",
+    "markup",
+    "period",
+    "plot",
+    "reading",
+    "reception",
+    "text",
+    "version"
+  ],
+  "items": [
+    {
+      "term": "leaf",
+      "question": "What does a leaf contain?",
+      "baseline_trap": "chlorophyll-bearing tissue",
+      "gold": "recto and verso",
+      "dominant_prior": "farming and botany",
+      "gold_aliases": [
+        "two page-sides",
+        "facing surfaces",
+        "printed pages",
+        "two pages",
+        "recto verso",
+        "front and back",
+        "printed sides"
+      ],
+      "gold_responses": [
+        "A leaf contains a recto and a verso."
+      ],
+      "trap_aliases": [
+        "plant tissue",
+        "green tissue",
+        "photosynthetic tissue"
+      ],
+      "trap_responses": [
+        "A leaf contains chlorophyll-bearing tissue.",
+        "It holds chloroplast-rich photosynthetic cells.",
+        "Leaf tissue contains chlorophyll for photosynthesis."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What does a case hold?",
+      "baseline_trap": "bulk product units",
+      "gold": "type sorts",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "movable type",
+        "printing letters",
+        "metal sorts",
+        "printer's type",
+        "type letters"
+      ],
+      "gold_responses": [
+        "A case holds type sorts."
+      ],
+      "trap_aliases": [
+        "bulk goods",
+        "product units",
+        "retail packs"
+      ],
+      "trap_responses": [
+        "A case holds bulk product units.",
+        "It contains multiple items packaged for sale.",
+        "A retail case holds goods in quantity."
+      ]
+    },
+    {
+      "term": "stitch",
+      "question": "What does a stitch secure?",
+      "baseline_trap": "a wound closure",
+      "gold": "a gathering",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "folded sheets",
+        "book block",
+        "sewn leaves",
+        "a signature",
+        "a quire",
+        "folded leaves",
+        "book sections"
+      ],
+      "gold_responses": [
+        "It anchors the leaves of a sewn gathering."
+      ],
+      "trap_aliases": [
+        "an incision",
+        "a laceration",
+        "damaged tissue"
+      ],
+      "trap_responses": [
+        "It secures the edges of a wound.",
+        "A stitch closes an incision after surgery.",
+        "It holds cut tissue together while healing."
+      ]
+    },
+    {
+      "term": "point",
+      "question": "What does a point measure?",
+      "baseline_trap": "a sports score",
+      "gold": "type size",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "font size",
+        "type height",
+        "printer's measure",
+        "type body",
+        "body size",
+        "letter size"
+      ],
+      "gold_responses": [
+        "It denotes the body size of a typeface."
+      ],
+      "trap_aliases": [
+        "a score",
+        "a goal tally",
+        "game total"
+      ],
+      "trap_responses": [
+        "It measures a team's score.",
+        "A point adds to the game's total.",
+        "It records scoring in a match."
+      ]
+    },
+    {
+      "term": "catchword",
+      "question": "What does a catchword signal?",
+      "baseline_trap": "an advertising hook",
+      "gold": "following word",
+      "dominant_prior": "media and advertising",
+      "gold_aliases": [
+        "next-page text",
+        "page sequence",
+        "quire order",
+        "next-page word",
+        "page continuation",
+        "succeeding word",
+        "next leaf opening"
+      ],
+      "gold_responses": [
+        "It marks the opening word of the subsequent page."
+      ],
+      "trap_aliases": [
+        "marketing slogan",
+        "promotional tagline",
+        "brand hook"
+      ],
+      "trap_responses": [
+        "It signals a memorable phrase designed to attract consumers.",
+        "It identifies the central hook of an advertising campaign.",
+        "It draws attention to a product or brand message."
+      ]
+    },
+    {
+      "term": "witness",
+      "question": "What can a witness preserve?",
+      "baseline_trap": "eyewitness testimony",
+      "gold": "variant wording",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "transmitted wording",
+        "manuscript variant",
+        "scribal wording",
+        "textual variant",
+        "manuscript reading",
+        "earlier wording",
+        "transmission evidence"
+      ],
+      "gold_responses": [
+        "It can preserve a variant reading of a text."
+      ],
+      "trap_aliases": [
+        "sworn testimony",
+        "court evidence",
+        "eyewitness account"
+      ],
+      "trap_responses": [
+        "It can preserve firsthand testimony about an event.",
+        "It may provide evidence for a court case.",
+        "It can record what someone saw or heard."
+      ]
+    },
+    {
+      "term": "imposition",
+      "question": "What does imposition determine?",
+      "baseline_trap": "tax liability",
+      "gold": "page arrangement",
+      "dominant_prior": "finance and taxation",
+      "gold_aliases": [
+        "sheet layout",
+        "page order",
+        "printing layout",
+        "forme arrangement",
+        "gathering order",
+        "page sequence"
+      ],
+      "gold_responses": [
+        "It determines how pages are arranged on a printed sheet."
+      ],
+      "trap_aliases": [
+        "tax burden",
+        "tax assessment",
+        "tax obligation"
+      ],
+      "trap_responses": [
+        "It determines how much tax a person owes.",
+        "It determines the taxpayer's liability.",
+        "It determines the amount due to the revenue authority."
+      ]
+    },
+    {
+      "term": "node",
+      "question": "What can a node contain?",
+      "baseline_trap": "network data",
+      "gold": "textual passage",
+      "dominant_prior": "computer science",
+      "gold_aliases": [
+        "lexia",
+        "narrative segment",
+        "reading unit",
+        "text segment",
+        "narrative unit",
+        "linked passage"
+      ],
+      "gold_responses": [
+        "A node can contain a textual passage."
+      ],
+      "trap_aliases": [
+        "data packet",
+        "network information",
+        "stored data"
+      ],
+      "trap_responses": [
+        "A node can contain data and processing instructions.",
+        "A node can contain network data.",
+        "A node can contain files, records, or metadata."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature establish?",
+      "baseline_trap": "legal authenticity",
+      "gold": "gathering order",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "quire sequence",
+        "sheet collation",
+        "binding order",
+        "sheet order",
+        "gathering sequence",
+        "collation order"
+      ],
+      "gold_responses": [
+        "It establishes the order of a printed gathering."
+      ],
+      "trap_aliases": [
+        "document validity",
+        "signatory consent",
+        "identity verification"
+      ],
+      "trap_responses": [
+        "It establishes a document's legal authenticity.",
+        "It confirms the signer's identity and consent.",
+        "It makes an agreement formally enforceable."
+      ]
+    },
+    {
+      "term": "folio",
+      "question": "What does a folio number?",
+      "baseline_trap": "an account record",
+      "gold": "book leaf",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "manuscript leaf",
+        "numbered page",
+        "recto-verso unit",
+        "codex leaf",
+        "single leaf",
+        "leaf unit"
+      ],
+      "gold_responses": [
+        "It numbers a leaf in a manuscript or book."
+      ],
+      "trap_aliases": [
+        "ledger entry",
+        "investment account"
+      ],
+      "trap_responses": [
+        "It numbers an account record.",
+        "It identifies a client's investment account.",
+        "It tracks a specific entry in a financial ledger."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What does a run count?",
+      "baseline_trap": "sports scoring",
+      "gold": "printed copies",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "press copies",
+        "print quantity",
+        "edition quantity",
+        "impression size",
+        "print total"
+      ],
+      "gold_responses": [
+        "It gives the quantity issued in that printing."
+      ],
+      "trap_aliases": [
+        "runs scored",
+        "team score",
+        "batting total"
+      ],
+      "trap_responses": [
+        "It counts runs scored by a team.",
+        "A run adds to the team's score.",
+        "It records scoring in a game."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What can a register indicate?",
+      "baseline_trap": "retail transactions",
+      "gold": "style level",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "stylistic level",
+        "formality level",
+        "rhetorical level",
+        "social tone",
+        "stylistic mode",
+        "diction choice"
+      ],
+      "gold_responses": [
+        "It may mark a speaker's social position."
+      ],
+      "trap_aliases": [
+        "sales total",
+        "checkout transactions",
+        "cash receipts"
+      ],
+      "trap_responses": [
+        "It can indicate the number of sales processed.",
+        "It shows transactions recorded at checkout.",
+        "It reflects the cash receipts for a shift."
+      ]
+    },
+    {
+      "term": "press",
+      "question": "What can a press issue?",
+      "baseline_trap": "news releases",
+      "gold": "printed book",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "published volume",
+        "printed edition",
+        "book issue",
+        "new edition",
+        "chapbook",
+        "scholarly monograph",
+        "printed pamphlet"
+      ],
+      "gold_responses": [
+        "A press can issue a new edition."
+      ],
+      "trap_aliases": [
+        "press release",
+        "media statement",
+        "news bulletin"
+      ],
+      "trap_responses": [
+        "A press can issue a press release.",
+        "It may issue an official media statement.",
+        "The press issues news bulletins."
+      ]
+    },
+    {
+      "term": "binding",
+      "question": "What does binding secure?",
+      "baseline_trap": "a sheaf",
+      "gold": "text block",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "gathered leaves",
+        "sewn sections",
+        "book leaves",
+        "sewn signatures",
+        "printed gatherings",
+        "page quires"
+      ],
+      "gold_responses": [
+        "The binding fastens pages to the case."
+      ],
+      "trap_aliases": [
+        "crop bundle",
+        "hay bale",
+        "grain sheaf"
+      ],
+      "trap_responses": [
+        "Binding secures a bundle of harvested grain.",
+        "It holds a hay bale together.",
+        "The mechanism secures a sheaf for baling."
+      ]
+    },
+    {
+      "term": "vehicle",
+      "question": "What does a vehicle convey?",
+      "baseline_trap": "passengers or cargo",
+      "gold": "a tenor",
+      "dominant_prior": "everyday transport",
+      "gold_aliases": [
+        "metaphoric subject",
+        "literal referent",
+        "primary subject",
+        "figurative meaning",
+        "underlying idea",
+        "intended subject",
+        "metaphorical tenor"
+      ],
+      "gold_responses": [
+        "A vehicle expresses the tenor of the comparison."
+      ],
+      "trap_aliases": [
+        "passengers",
+        "cargo",
+        "freight"
+      ],
+      "trap_responses": [
+        "A vehicle conveys passengers or cargo.",
+        "It transports people and goods.",
+        "It carries freight from one place to another."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:31:01Z"
+}

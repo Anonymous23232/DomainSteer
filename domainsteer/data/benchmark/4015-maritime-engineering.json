@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4015",
+  "cluster": "Maritime engineering",
+  "domain": "Maritime engineering",
+  "division": "Engineering",
+  "dominant_prior": "automotive, business, computing, hospitality, law, medicine, military, polling, programming, publishing, sports, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a crane do?",
+    "What does a propeller do?",
+    "What does the bridge control?",
+    "What happens at a launch?",
+    "What is a bearing?",
+    "What is a deck?",
+    "What is a hull?",
+    "What is a line?",
+    "What is a list?",
+    "What is a wake?",
+    "What is displacement?",
+    "What is heave?",
+    "What is pitch?",
+    "What is slamming?",
+    "What is the current?",
+    "bearing",
+    "bridge",
+    "crane",
+    "current",
+    "deck",
+    "displacement",
+    "heave",
+    "hull",
+    "launch",
+    "line",
+    "list",
+    "pitch",
+    "propeller",
+    "slamming",
+    "wake"
+  ],
+  "items": [
+    {
+      "term": "berth",
+      "question": "What does a berth provide?",
+      "baseline_trap": "a sleeping space",
+      "gold": "mooring space",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "docking space",
+        "quay space",
+        "vessel space",
+        "mooring position",
+        "alongside location"
+      ],
+      "gold_responses": [
+        "It provides secured waterfront space for a ship."
+      ],
+      "trap_aliases": [
+        "lodging",
+        "room",
+        "bed"
+      ],
+      "trap_responses": [
+        "A berth provides a place for someone to sleep.",
+        "It provides overnight accommodation for a guest.",
+        "It provides a bed or sleeping compartment."
+      ]
+    },
+    {
+      "term": "scope",
+      "question": "What does scope specify?",
+      "baseline_trap": "project boundaries",
+      "gold": "rode ratio",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "anchor scope",
+        "cable ratio",
+        "rode length",
+        "anchor ratio",
+        "cable-depth ratio",
+        "anchoring ratio"
+      ],
+      "gold_responses": [
+        "It specifies the deployed rode length for the water depth."
+      ],
+      "trap_aliases": [
+        "deliverables",
+        "objectives",
+        "requirements"
+      ],
+      "trap_responses": [
+        "Scope specifies the work included in a project.",
+        "It specifies project boundaries and expected deliverables.",
+        "It specifies objectives, requirements, and exclusions."
+      ]
+    },
+    {
+      "term": "soundings",
+      "question": "What do soundings establish?",
+      "baseline_trap": "public opinion",
+      "gold": "water depth",
+      "dominant_prior": "polling",
+      "gold_aliases": [
+        "depth data",
+        "seabed depth",
+        "charted depth",
+        "navigable depth",
+        "bathymetric depth"
+      ],
+      "gold_responses": [
+        "They determine depths for nautical charting."
+      ],
+      "trap_aliases": [
+        "voter sentiment",
+        "public attitudes",
+        "approval rating"
+      ],
+      "trap_responses": [
+        "They establish public opinion on an issue.",
+        "They measure how voters feel about candidates.",
+        "They indicate prevailing attitudes among respondents."
+      ]
+    },
+    {
+      "term": "camber",
+      "question": "What does camber describe?",
+      "baseline_trap": "wheel tilt",
+      "gold": "deck curvature",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "deck crown",
+        "transverse crown",
+        "transverse curvature",
+        "crown height",
+        "athwartship curvature"
+      ],
+      "gold_responses": [
+        "It describes the transverse curvature of a deck."
+      ],
+      "trap_aliases": [
+        "camber angle",
+        "wheel inclination",
+        "tire lean"
+      ],
+      "trap_responses": [
+        "It describes a wheel's tilt relative to vertical.",
+        "It is the inward or outward angle of a tire.",
+        "It determines how the wheel contacts the road."
+      ]
+    },
+    {
+      "term": "terminal",
+      "question": "What does a terminal handle?",
+      "baseline_trap": "command input",
+      "gold": "cargo",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "container cargo",
+        "bulk cargo",
+        "vehicle cargo",
+        "containers",
+        "ship traffic",
+        "passengers"
+      ],
+      "gold_responses": [
+        "It manages passenger embarkation or specialized cargo through the waterfront."
+      ],
+      "trap_aliases": [
+        "keyboard input",
+        "shell commands",
+        "console input"
+      ],
+      "trap_responses": [
+        "A terminal handles command input from a user.",
+        "It accepts typed commands and displays program output.",
+        "A terminal handles interaction with an operating system shell."
+      ]
+    },
+    {
+      "term": "tendon",
+      "question": "What does a tendon restrain?",
+      "baseline_trap": "joint movement",
+      "gold": "platform heave",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "vertical motion",
+        "TLP movement",
+        "platform excursion",
+        "vertical excursion",
+        "platform motion",
+        "heave motion",
+        "TLP displacement"
+      ],
+      "gold_responses": [
+        "A tendon restrains vertical motion of a tension-leg platform."
+      ],
+      "trap_aliases": [
+        "joint motion",
+        "bone movement",
+        "limb movement"
+      ],
+      "trap_responses": [
+        "A tendon restrains excessive movement at a joint.",
+        "It helps stabilize joint motion while transmitting muscle force.",
+        "Tendons limit unwanted movement between bones during motion."
+      ]
+    },
+    {
+      "term": "turret",
+      "question": "What does a turret permit?",
+      "baseline_trap": "gun aiming",
+      "gold": "vessel weathervaning",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "heading rotation",
+        "passive weathervaning",
+        "mooring rotation",
+        "free weathervaning",
+        "vessel yawing",
+        "heading alignment"
+      ],
+      "gold_responses": [
+        "It allows the vessel to turn with wind and current."
+      ],
+      "trap_aliases": [
+        "gun traverse",
+        "weapon elevation",
+        "target tracking"
+      ],
+      "trap_responses": [
+        "It permits a gun to aim at targets.",
+        "It allows weapons to rotate and elevate.",
+        "It enables the crew to track and engage targets."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "Who does accommodation house?",
+      "baseline_trap": "guests",
+      "gold": "ship's crew",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "vessel personnel",
+        "offshore crew",
+        "embarked personnel",
+        "ship personnel",
+        "marine crew",
+        "officers and ratings",
+        "onboard seafarers"
+      ],
+      "gold_responses": [
+        "It provides berthing and amenities for onboard crew."
+      ],
+      "trap_aliases": [
+        "hotel guests",
+        "travelers",
+        "paying patrons"
+      ],
+      "trap_responses": [
+        "It houses guests staying at the property.",
+        "It provides rooms for travelers and visitors.",
+        "It accommodates paying patrons overnight."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does a draft specify?",
+      "baseline_trap": "a preliminary document",
+      "gold": "immersion depth",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "draught depth",
+        "loaded draft",
+        "keel depth",
+        "vessel draught",
+        "keel immersion",
+        "waterline depth"
+      ],
+      "gold_responses": [
+        "It specifies the vessel's depth below the waterline."
+      ],
+      "trap_aliases": [
+        "rough draft",
+        "working draft",
+        "first draft"
+      ],
+      "trap_responses": [
+        "It specifies an early version of a written document.",
+        "It identifies a preliminary text for later revision.",
+        "It describes an unfinished document before final editing."
+      ]
+    },
+    {
+      "term": "heading",
+      "question": "What does a heading specify?",
+      "baseline_trap": "a section title",
+      "gold": "vessel direction",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "compass direction",
+        "ship orientation",
+        "course angle",
+        "navigational heading",
+        "bow direction",
+        "compass heading",
+        "vessel orientation",
+        "ship's bearing"
+      ],
+      "gold_responses": [
+        "It specifies the direction in which the vessel's bow points."
+      ],
+      "trap_aliases": [
+        "chapter heading",
+        "article heading"
+      ],
+      "trap_responses": [
+        "It specifies the title of a section.",
+        "It identifies the label introducing a document passage.",
+        "It gives the title placed above a section of text."
+      ]
+    },
+    {
+      "term": "tender",
+      "question": "What is a tender used for?",
+      "baseline_trap": "payment",
+      "gold": "vessel support",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "crew transfer",
+        "cargo supply",
+        "offshore support",
+        "auxiliary service",
+        "service craft",
+        "supply boat"
+      ],
+      "gold_responses": [
+        "It transfers crew between shore, platform, and ship."
+      ],
+      "trap_aliases": [
+        "consideration",
+        "remittance",
+        "settlement"
+      ],
+      "trap_responses": [
+        "It is used to make a legally valid payment.",
+        "It offers money to satisfy a debt or obligation.",
+        "It provides payment for goods, services, or settlement."
+      ]
+    },
+    {
+      "term": "charter",
+      "question": "What does a charter authorize?",
+      "baseline_trap": "corporate formation",
+      "gold": "vessel hire",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "ship lease",
+        "vessel employment",
+        "cargo carriage",
+        "voyage service",
+        "time charter",
+        "voyage charter",
+        "bareboat charter",
+        "hire agreement"
+      ],
+      "gold_responses": [
+        "It grants use of a vessel for an agreed period."
+      ],
+      "trap_aliases": [
+        "articles incorporation",
+        "corporate constitution",
+        "certificate incorporation"
+      ],
+      "trap_responses": [
+        "It authorizes formation of a corporation or legal entity.",
+        "It grants a company its legal powers and existence.",
+        "It establishes the organization's governing authority and purpose."
+      ]
+    },
+    {
+      "term": "fairway",
+      "question": "What does a fairway provide?",
+      "baseline_trap": "a route to the green",
+      "gold": "navigable passage",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "vessel channel",
+        "safe passage",
+        "dredged route",
+        "shipping lane",
+        "shipping channel",
+        "dredged channel",
+        "vessel transit lane",
+        "safe water route"
+      ],
+      "gold_responses": [
+        "It provides a navigable passage for vessel traffic."
+      ],
+      "trap_aliases": [
+        "golfing route",
+        "greenward path",
+        "approach corridor"
+      ],
+      "trap_responses": [
+        "It provides a route from the tee to the green.",
+        "It provides the preferred path toward the green.",
+        "It provides an open landing area for golf shots."
+      ]
+    },
+    {
+      "term": "tree",
+      "question": "What does a tree direct?",
+      "baseline_trap": "decision paths",
+      "gold": "well flow",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "production flow",
+        "subsea valves",
+        "well output",
+        "production fluids",
+        "hydrocarbon flow",
+        "wellstream flow",
+        "oil and gas"
+      ],
+      "gold_responses": [
+        "It directs well flow through production control valves."
+      ],
+      "trap_aliases": [
+        "control flow",
+        "execution branches",
+        "program paths"
+      ],
+      "trap_responses": [
+        "It directs decision paths through a program.",
+        "It directs execution based on conditional branches.",
+        "It directs traversal through hierarchical decision nodes."
+      ]
+    },
+    {
+      "term": "umbilical",
+      "question": "What does an umbilical connect?",
+      "baseline_trap": "fetus to placenta",
+      "gold": "topside to subsea",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "surface equipment",
+        "subsea equipment",
+        "control pod",
+        "ROV tooling",
+        "vessel to ROV",
+        "platform to well",
+        "topside to manifold",
+        "surface to seabed"
+      ],
+      "gold_responses": [
+        "It connects the host vessel to subsea equipment."
+      ],
+      "trap_aliases": [
+        "mother to fetus",
+        "placenta to fetus"
+      ],
+      "trap_responses": [
+        "It connects a fetus to the placenta.",
+        "It links the developing baby with its mother's placenta.",
+        "It carries blood between the fetus and placenta."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:22:50Z"
+}

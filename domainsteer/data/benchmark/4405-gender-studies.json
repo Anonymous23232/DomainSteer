@@ -1,0 +1,469 @@
+{
+  "cluster_id": "4405",
+  "cluster": "Gender studies",
+  "domain": "Gender studies",
+  "division": "Human Society",
+  "dominant_prior": "education, estate law, everyday English, finance, hospitality, law, mathematics, media, medicine, records management, road transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a code?",
+    "What is a transition?",
+    "What is bias?",
+    "What is care?",
+    "What is consent?",
+    "What is empowerment?",
+    "What is identity?",
+    "What is labor?",
+    "What is objectification?",
+    "What is orientation?",
+    "What is passing?",
+    "What is performance?",
+    "What is privilege?",
+    "What is visibility?",
+    "What is voice?",
+    "bias",
+    "care",
+    "code",
+    "consent",
+    "empowerment",
+    "identity",
+    "labor",
+    "objectification",
+    "orientation",
+    "passing",
+    "performance",
+    "privilege",
+    "transition",
+    "visibility",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "matrix",
+      "question": "What can a matrix make intelligible?",
+      "baseline_trap": "a mathematical relation",
+      "gold": "gendered desire",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "sexed bodies",
+        "heterosexual order",
+        "normative gender",
+        "heterosexual coherence",
+        "normative desire",
+        "intelligible identity",
+        "gendered subjectivity"
+      ],
+      "gold_responses": [
+        "Coherent alignments of sex, gender, and desire."
+      ],
+      "trap_aliases": [
+        "linear transformation",
+        "relation array",
+        "coefficient table"
+      ],
+      "trap_responses": [
+        "A system of linear equations.",
+        "Relationships among variables in a dataset.",
+        "A linear transformation between vector spaces."
+      ]
+    },
+    {
+      "term": "contract",
+      "question": "What can a contract authorize?",
+      "baseline_trap": "legal obligations",
+      "gold": "male access",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "sexual entitlement",
+        "patriarchal right",
+        "conjugal authority",
+        "conjugal access",
+        "masculine privilege"
+      ],
+      "gold_responses": [
+        "Men's presumed sexual access to women."
+      ],
+      "trap_aliases": [
+        "legal rights",
+        "contractual duties",
+        "property transfer"
+      ],
+      "trap_responses": [
+        "Enforceable rights and obligations between parties.",
+        "The exchange of goods, services, or property.",
+        "Performance duties specified by the agreement."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What does a script organize?",
+      "baseline_trap": "screen dialogue",
+      "gold": "sexual conduct",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "erotic interaction",
+        "intimate roles",
+        "gendered courtship",
+        "sexual interaction",
+        "erotic behavior",
+        "intimate conduct",
+        "sexual expectations"
+      ],
+      "gold_responses": [
+        "It organizes gendered norms of desire and intimacy."
+      ],
+      "trap_aliases": [
+        "screenplay dialogue",
+        "film action",
+        "scene direction"
+      ],
+      "trap_responses": [
+        "It organizes dialogue and action in a film.",
+        "It organizes the events of a screen production.",
+        "It organizes what characters say and do onscreen."
+      ]
+    },
+    {
+      "term": "standpoint",
+      "question": "What can a standpoint reveal?",
+      "baseline_trap": "a physical view",
+      "gold": "situated knowledge",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "embodied knowledge",
+        "partial perspective",
+        "marginalized knowledge",
+        "positional insight",
+        "situated understanding",
+        "marginalized perspective"
+      ],
+      "gold_responses": [
+        "It can reveal power relations obscured by dominant accounts."
+      ],
+      "trap_aliases": [
+        "vantage point",
+        "viewpoint",
+        "physical perspective"
+      ],
+      "trap_responses": [
+        "It can reveal what is visible from a location.",
+        "It can reveal the view from where someone stands.",
+        "It can reveal an observer's angle on a scene."
+      ]
+    },
+    {
+      "term": "reproduction",
+      "question": "What does reproduction sustain?",
+      "baseline_trap": "a biological population",
+      "gold": "gender order",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "social hierarchy",
+        "domestic hierarchy",
+        "patriarchal continuity",
+        "gender hierarchy",
+        "patriarchal relations",
+        "heteronormative order",
+        "sexual division"
+      ],
+      "gold_responses": [
+        "It sustains gender hierarchy through everyday social practices."
+      ],
+      "trap_aliases": [
+        "population continuity",
+        "species survival",
+        "population growth"
+      ],
+      "trap_responses": [
+        "It sustains the biological continuity of a population.",
+        "It ensures species survival through new generations.",
+        "It maintains population size by producing offspring."
+      ]
+    },
+    {
+      "term": "disclosure",
+      "question": "What can disclosure make legible?",
+      "baseline_trap": "financial information",
+      "gold": "trans status",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "gender history",
+        "queer status",
+        "sexual history",
+        "trans identity",
+        "gender identity",
+        "transition history",
+        "gender variance"
+      ],
+      "gold_responses": [
+        "It can render gender identity visible to institutions."
+      ],
+      "trap_aliases": [
+        "financial condition",
+        "accounting data",
+        "corporate risk"
+      ],
+      "trap_responses": [
+        "It can make financial information visible to investors.",
+        "It reveals relevant facts about a company's finances.",
+        "It makes business risks and obligations transparent."
+      ]
+    },
+    {
+      "term": "house",
+      "question": "What can a house provide?",
+      "baseline_trap": "temporary lodging",
+      "gold": "chosen kinship",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "queer family",
+        "ballroom lineage",
+        "collective belonging",
+        "chosen family",
+        "queer refuge",
+        "kinship network",
+        "domestic sanctuary"
+      ],
+      "gold_responses": [
+        "It may sustain alternative family ties."
+      ],
+      "trap_aliases": [
+        "guest accommodation",
+        "short-term shelter"
+      ],
+      "trap_responses": [
+        "A house can provide temporary lodging.",
+        "It can offer guests a place to stay.",
+        "It may supply short-term accommodation."
+      ]
+    },
+    {
+      "term": "market",
+      "question": "What can a market rank?",
+      "baseline_trap": "financial assets",
+      "gold": "sexual desirability",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "erotic capital",
+        "marriageability",
+        "partner value",
+        "desirability hierarchy",
+        "beauty status",
+        "sexual prestige"
+      ],
+      "gold_responses": [
+        "It can produce hierarchies of sexual value."
+      ],
+      "trap_aliases": [
+        "investment securities",
+        "market valuation"
+      ],
+      "trap_responses": [
+        "A market can rank financial assets.",
+        "It can compare investments by expected return.",
+        "It may value securities according to demand."
+      ]
+    },
+    {
+      "term": "masquerade",
+      "question": "What can a masquerade establish?",
+      "baseline_trap": "a costume disguise",
+      "gold": "femininity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "womanliness",
+        "gendered appearance",
+        "performed femininity",
+        "gender performance",
+        "feminine identity",
+        "sexual difference",
+        "gender legibility"
+      ],
+      "gold_responses": [
+        "It can establish femininity as a performed social position."
+      ],
+      "trap_aliases": [
+        "concealed identity",
+        "festive anonymity"
+      ],
+      "trap_responses": [
+        "It can establish a costume disguise.",
+        "It can establish a concealed identity.",
+        "It can establish anonymity at a themed event."
+      ]
+    },
+    {
+      "term": "traffic",
+      "question": "What can traffic organize?",
+      "baseline_trap": "vehicle movement",
+      "gold": "women's exchange",
+      "dominant_prior": "road transport",
+      "gold_aliases": [
+        "female circulation",
+        "marital exchange",
+        "sexual access",
+        "women's circulation",
+        "kinship exchange",
+        "patriarchal alliance",
+        "sexual exchange"
+      ],
+      "gold_responses": [
+        "It can organize the exchange of women between kinship groups."
+      ],
+      "trap_aliases": [
+        "vehicle flow",
+        "road movement",
+        "transit routes"
+      ],
+      "trap_responses": [
+        "It can organize vehicle movement on roads.",
+        "It can organize traffic flow through intersections.",
+        "It can organize vehicles along transit routes."
+      ]
+    },
+    {
+      "term": "discipline",
+      "question": "What can discipline produce?",
+      "baseline_trap": "compliance",
+      "gold": "gendered bodies",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "sexed subjects",
+        "docile bodies",
+        "normative femininity",
+        "gender conformity",
+        "embodied norms"
+      ],
+      "gold_responses": [
+        "It produces compliant gendered subjects and bodily norms."
+      ],
+      "trap_aliases": [
+        "obedience",
+        "self-control",
+        "order"
+      ],
+      "trap_responses": [
+        "It can produce compliance with rules and expectations.",
+        "It can produce orderly, responsible learners.",
+        "It develops self-control and respectful behavior."
+      ]
+    },
+    {
+      "term": "archive",
+      "question": "What can an archive preserve?",
+      "baseline_trap": "historical records",
+      "gold": "queer memory",
+      "dominant_prior": "records management",
+      "gold_aliases": [
+        "lesbian history",
+        "trans history",
+        "feminist memory",
+        "trans histories",
+        "lesbian memory",
+        "dissident traces",
+        "queer lineage"
+      ],
+      "gold_responses": [
+        "It can preserve queer memory across generations."
+      ],
+      "trap_aliases": [
+        "documents",
+        "evidence",
+        "institutional records"
+      ],
+      "trap_responses": [
+        "It can preserve historical records for future reference.",
+        "It preserves documents, files, and organizational evidence.",
+        "It can retain records for legal and administrative use."
+      ]
+    },
+    {
+      "term": "inheritance",
+      "question": "What can inheritance secure?",
+      "baseline_trap": "property transfer",
+      "gold": "patrilineal power",
+      "dominant_prior": "estate law",
+      "gold_aliases": [
+        "male descent",
+        "patriarchal succession",
+        "male succession",
+        "patriarchal continuity",
+        "male lineage",
+        "kinship privilege",
+        "gendered succession"
+      ],
+      "gold_responses": [
+        "It can secure patriarchal continuity across generations."
+      ],
+      "trap_aliases": [
+        "asset succession",
+        "beneficiary rights",
+        "estate title"
+      ],
+      "trap_responses": [
+        "It can secure the transfer of assets to heirs.",
+        "It can secure beneficiaries' legal rights to an estate.",
+        "It can secure ownership after a person's death."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What can credit establish?",
+      "baseline_trap": "financial trust",
+      "gold": "epistemic authority",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "testimonial credibility",
+        "epistemic standing",
+        "knower status",
+        "intellectual legitimacy",
+        "gendered expertise",
+        "recognition authority"
+      ],
+      "gold_responses": [
+        "It can establish whose knowledge is treated as authoritative."
+      ],
+      "trap_aliases": [
+        "borrowing capacity",
+        "lender confidence",
+        "creditworthiness"
+      ],
+      "trap_responses": [
+        "It can establish a borrower's ability to repay.",
+        "It can establish trust between lenders and borrowers.",
+        "It can establish eligibility for loans or financing."
+      ]
+    },
+    {
+      "term": "binding",
+      "question": "What can binding change?",
+      "baseline_trap": "legal obligation",
+      "gold": "chest contour",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "chest compression",
+        "breast flattening",
+        "gender presentation",
+        "chest appearance",
+        "torso silhouette",
+        "breast profile"
+      ],
+      "gold_responses": [
+        "Binding can change the appearance of chest contour."
+      ],
+      "trap_aliases": [
+        "legal duty",
+        "contractual liability",
+        "enforceable obligation"
+      ],
+      "trap_responses": [
+        "Binding can change the parties' legal obligations.",
+        "It can create enforceable contractual duties.",
+        "A binding agreement can alter legal rights and responsibilities."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:54:09Z"
+}

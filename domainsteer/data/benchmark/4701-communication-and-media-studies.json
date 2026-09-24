@@ -1,0 +1,481 @@
+{
+  "cluster_id": "4701",
+  "cluster": "Communication and media studies",
+  "domain": "Communication and media studies",
+  "division": "Language, Communication and Culture",
+  "dominant_prior": "farming, farming equipment, finance, law, medicine, physics, policing, retail, security law, sports, weather",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "If cultivation stops, does growth stop?",
+    "What is a broadcast?",
+    "What is a filter bubble?",
+    "What is a format?",
+    "What is an agenda?",
+    "What is an audience?",
+    "What is an echo chamber?",
+    "What is an impression?",
+    "What is coverage?",
+    "What is cultivation?",
+    "What is encoding?",
+    "What is engagement?",
+    "What is framing?",
+    "What is gatekeeping?",
+    "What is reception?",
+    "What is voice?",
+    "agenda",
+    "audience",
+    "broadcast",
+    "coverage",
+    "cultivation",
+    "echo chamber",
+    "encoding",
+    "engagement",
+    "filter bubble",
+    "format",
+    "framing",
+    "gatekeeping",
+    "impression",
+    "reception",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "climate",
+      "question": "What can a climate describe?",
+      "baseline_trap": "weather conditions",
+      "gold": "relational tone",
+      "dominant_prior": "weather",
+      "gold_aliases": [
+        "communication atmosphere",
+        "interaction climate",
+        "workplace atmosphere",
+        "relational environment",
+        "communication climate",
+        "organizational atmosphere",
+        "interactional tone",
+        "workplace morale"
+      ],
+      "gold_responses": [
+        "It can describe the relational tone within a group."
+      ],
+      "trap_aliases": [
+        "meteorological conditions",
+        "atmospheric weather",
+        "seasonal patterns"
+      ],
+      "trap_responses": [
+        "It can describe a region's long-term weather conditions.",
+        "It can describe typical temperature, rainfall, and wind patterns.",
+        "It can describe the average weather over many years."
+      ]
+    },
+    {
+      "term": "circulation",
+      "question": "What does circulation measure?",
+      "baseline_trap": "blood flow",
+      "gold": "distributed copies",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "circulation figure",
+        "copy count",
+        "paid distribution",
+        "print distribution",
+        "issue distribution",
+        "publication reach",
+        "distributed issues"
+      ],
+      "gold_responses": [
+        "It measures how many copies of a publication are distributed."
+      ],
+      "trap_aliases": [
+        "vascular flow",
+        "cardiac output"
+      ],
+      "trap_responses": [
+        "It measures the movement of blood through the body.",
+        "It measures how effectively blood flows through vessels.",
+        "It can assess blood flow driven by the heart."
+      ]
+    },
+    {
+      "term": "share",
+      "question": "What does a share represent?",
+      "baseline_trap": "an ownership stake",
+      "gold": "audience proportion",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "viewing share",
+        "listener share",
+        "viewer fraction",
+        "market proportion",
+        "viewership share",
+        "ratings share",
+        "audience fraction",
+        "impression share"
+      ],
+      "gold_responses": [
+        "The proportion of the audience reached by a channel."
+      ],
+      "trap_aliases": [
+        "equity stake",
+        "ownership interest",
+        "stockholding"
+      ],
+      "trap_responses": [
+        "A portion of ownership in a company.",
+        "An equity interest held by an investor.",
+        "A unit representing corporate ownership rights."
+      ]
+    },
+    {
+      "term": "feed",
+      "question": "What can a feed deliver?",
+      "baseline_trap": "animal nutrition",
+      "gold": "platform updates",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "social posts",
+        "ranked content",
+        "news stream",
+        "curated posts",
+        "content stream",
+        "social timeline",
+        "update stream",
+        "news feed"
+      ],
+      "gold_responses": [
+        "A stream of platform updates and newly posted content."
+      ],
+      "trap_aliases": [
+        "animal ration",
+        "livestock feed",
+        "fodder"
+      ],
+      "trap_responses": [
+        "Nutritional material provided to farm animals.",
+        "Food formulated for livestock consumption.",
+        "A ration used to nourish animals."
+      ]
+    },
+    {
+      "term": "beat",
+      "question": "What does a beat specify?",
+      "baseline_trap": "a patrol area",
+      "gold": "reporting area",
+      "dominant_prior": "policing",
+      "gold_aliases": [
+        "news specialty",
+        "subject beat",
+        "assigned topic",
+        "reporting round",
+        "coverage area",
+        "news round",
+        "reporting remit",
+        "subject assignment"
+      ],
+      "gold_responses": [
+        "A reporter's assigned coverage area."
+      ],
+      "trap_aliases": [
+        "patrol sector",
+        "assigned precinct",
+        "officer territory"
+      ],
+      "trap_responses": [
+        "An officer's designated patrol area.",
+        "The geographic zone assigned to police.",
+        "A police officer's regular patrol route."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What can clearance permit?",
+      "baseline_trap": "entry access",
+      "gold": "content use",
+      "dominant_prior": "security law",
+      "gold_aliases": [
+        "licensed use",
+        "rights approval",
+        "reuse permission",
+        "copyright permission",
+        "usage rights",
+        "publication permission",
+        "licensing authorization"
+      ],
+      "gold_responses": [
+        "Using copyrighted content in a media production."
+      ],
+      "trap_aliases": [
+        "authorized entry",
+        "site access",
+        "security admission"
+      ],
+      "trap_responses": [
+        "Entry into a restricted area.",
+        "Access to secure facilities or information.",
+        "Permission to pass a security checkpoint."
+      ]
+    },
+    {
+      "term": "rating",
+      "question": "What can a rating measure?",
+      "baseline_trap": "creditworthiness",
+      "gold": "audience size",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "viewing level",
+        "listener numbers",
+        "program reach",
+        "viewership total",
+        "audience share",
+        "program popularity",
+        "viewer reach"
+      ],
+      "gold_responses": [
+        "It can measure a program's audience share."
+      ],
+      "trap_aliases": [
+        "credit risk",
+        "loan default",
+        "financial reliability"
+      ],
+      "trap_responses": [
+        "It can measure a borrower's likelihood of default.",
+        "It can indicate a company's creditworthiness.",
+        "It can assess the risk of repaying debt."
+      ]
+    },
+    {
+      "term": "diffusion",
+      "question": "What can diffusion describe?",
+      "baseline_trap": "molecular dispersal",
+      "gold": "innovation adoption",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "idea spread",
+        "adoption pattern",
+        "innovation spread",
+        "uptake process",
+        "idea adoption",
+        "media spread",
+        "technology uptake",
+        "message circulation"
+      ],
+      "gold_responses": [
+        "It can describe how an innovation spreads through a community."
+      ],
+      "trap_aliases": [
+        "particle spread",
+        "molecular motion",
+        "heat transfer"
+      ],
+      "trap_responses": [
+        "It can describe particles spreading through a medium.",
+        "It can explain molecules moving from high to low concentration.",
+        "It can describe the transfer of heat through matter."
+      ]
+    },
+    {
+      "term": "probe",
+      "question": "What can a probe elicit?",
+      "baseline_trap": "diagnostic response",
+      "gold": "respondent elaboration",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "fuller response",
+        "interview detail",
+        "participant clarification",
+        "participant detail",
+        "follow-up disclosure",
+        "narrative expansion",
+        "audience feedback"
+      ],
+      "gold_responses": [
+        "It often elicits contextual explanations from respondents."
+      ],
+      "trap_aliases": [
+        "symptom report",
+        "reflex response",
+        "physiological reaction"
+      ],
+      "trap_responses": [
+        "A probe can elicit a diagnostic response.",
+        "It may trigger a measurable physiological reaction.",
+        "A medical probe can reveal pain or tenderness."
+      ]
+    },
+    {
+      "term": "seeding",
+      "question": "What can seeding initiate?",
+      "baseline_trap": "crop growth",
+      "gold": "content diffusion",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "online sharing",
+        "message spread",
+        "platform visibility",
+        "viral circulation",
+        "audience uptake",
+        "network diffusion"
+      ],
+      "gold_responses": [
+        "It may spark organic sharing among target audiences."
+      ],
+      "trap_aliases": [
+        "germination",
+        "plant emergence",
+        "crop establishment"
+      ],
+      "trap_responses": [
+        "Seeding can initiate crop growth.",
+        "It starts germination in suitable soil conditions.",
+        "Seeds can establish a new crop stand."
+      ]
+    },
+    {
+      "term": "spin",
+      "question": "What can spin shape?",
+      "baseline_trap": "a ball's trajectory",
+      "gold": "public interpretation",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "public perception",
+        "issue meaning",
+        "news interpretation",
+        "media framing",
+        "audience perception",
+        "public opinion",
+        "news narratives"
+      ],
+      "gold_responses": [
+        "Strategic spin can shape reputations and issue salience."
+      ],
+      "trap_aliases": [
+        "ball flight",
+        "pitch trajectory",
+        "ball movement"
+      ],
+      "trap_responses": [
+        "Spin can shape a ball's trajectory through the air.",
+        "It affects how sharply the ball curves or drops.",
+        "Spin can shape the ball's bounce and movement."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What can a pitch secure?",
+      "baseline_trap": "an out",
+      "gold": "editorial interest",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "journalist attention",
+        "story consideration",
+        "media placement",
+        "media coverage",
+        "commissioning decision",
+        "interview opportunity",
+        "story placement"
+      ],
+      "gold_responses": [
+        "An effective pitch can secure a meeting with editors."
+      ],
+      "trap_aliases": [
+        "a strikeout",
+        "a winning play"
+      ],
+      "trap_responses": [
+        "A well-placed pitch can secure an out.",
+        "It can secure a strikeout against the batter.",
+        "The pitch can secure a crucial defensive play."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What can placement promote?",
+      "baseline_trap": "retail sales",
+      "gold": "brand visibility",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "brand recall",
+        "product awareness",
+        "sponsor visibility",
+        "brand awareness",
+        "product recognition",
+        "advertiser exposure"
+      ],
+      "gold_responses": [
+        "It can promote brand awareness among target audiences."
+      ],
+      "trap_aliases": [
+        "store traffic",
+        "purchase volume",
+        "customer conversion"
+      ],
+      "trap_responses": [
+        "It can promote retail sales of featured merchandise.",
+        "It can increase customer purchases in the store.",
+        "It can drive shopper traffic to a retail location."
+      ]
+    },
+    {
+      "term": "brief",
+      "question": "What does a brief specify?",
+      "baseline_trap": "legal arguments",
+      "gold": "campaign objectives",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "communication goals",
+        "creative direction",
+        "target strategy",
+        "target audience",
+        "key messages",
+        "media strategy",
+        "creative requirements"
+      ],
+      "gold_responses": [
+        "It specifies the campaign's objectives and intended outcomes."
+      ],
+      "trap_aliases": [
+        "legal claims",
+        "case authority",
+        "requested relief"
+      ],
+      "trap_responses": [
+        "It specifies the legal arguments supporting a party's position.",
+        "It outlines relevant precedents and statutory authority.",
+        "It states the relief the court should grant."
+      ]
+    },
+    {
+      "term": "harvesting",
+      "question": "What can harvesting collect?",
+      "baseline_trap": "crops",
+      "gold": "user data",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "behavioral data",
+        "personal data",
+        "platform data",
+        "audience data",
+        "browsing data",
+        "user metadata"
+      ],
+      "gold_responses": [
+        "It can collect user data from digital interactions."
+      ],
+      "trap_aliases": [
+        "grain",
+        "wheat",
+        "produce"
+      ],
+      "trap_responses": [
+        "Harvesting collects crops from fields.",
+        "A combine can collect wheat and other grains.",
+        "Farm equipment gathers mature produce for storage."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:26:26Z"
+}

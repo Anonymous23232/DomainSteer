@@ -1,0 +1,476 @@
+{
+  "cluster_id": "4610",
+  "cluster": "Library and information studies",
+  "domain": "Library and information studies",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "everyday English, everyday law, farming, finance, human migration, law, media, medicine, pedestrian infrastructure, physics, security, software development",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does indexing work?",
+    "If preservation fails, does it spoil?",
+    "What is a catalog?",
+    "What is a deposit?",
+    "What is a filter?",
+    "What is a reserve?",
+    "What is a stack?",
+    "What is acquisition?",
+    "What is an embargo?",
+    "What is an issue?",
+    "What is appraisal?",
+    "What is circulation?",
+    "What is classification?",
+    "What is preservation?",
+    "What is retention?",
+    "What is weeding?",
+    "acquisition",
+    "appraisal",
+    "catalog",
+    "circulation",
+    "classification",
+    "deposit",
+    "embargo",
+    "filter",
+    "indexing",
+    "issue",
+    "preservation",
+    "reserve",
+    "retention",
+    "stack",
+    "weeding"
+  ],
+  "items": [
+    {
+      "term": "harvesting",
+      "question": "What does harvesting collect?",
+      "baseline_trap": "crops",
+      "gold": "metadata records",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "repository metadata",
+        "resource descriptions",
+        "catalog metadata",
+        "descriptive records",
+        "catalogue records"
+      ],
+      "gold_responses": [
+        "It collects metadata records from distributed repositories."
+      ],
+      "trap_aliases": [
+        "produce",
+        "grain",
+        "vegetation"
+      ],
+      "trap_responses": [
+        "It collects crops from fields.",
+        "It gathers ripe produce for market.",
+        "It collects grain and other agricultural products."
+      ]
+    },
+    {
+      "term": "crosswalk",
+      "question": "What does a crosswalk connect?",
+      "baseline_trap": "opposite sidewalks",
+      "gold": "metadata schemas",
+      "dominant_prior": "pedestrian infrastructure",
+      "gold_aliases": [
+        "element sets",
+        "metadata fields",
+        "format standards",
+        "schema mappings",
+        "element mappings",
+        "metadata standards",
+        "cataloguing formats",
+        "metadata vocabularies"
+      ],
+      "gold_responses": [
+        "It maps metadata elements between different vocabularies."
+      ],
+      "trap_aliases": [
+        "street sides",
+        "opposite curbs",
+        "roadway edges"
+      ],
+      "trap_responses": [
+        "It connects opposite sides of a street.",
+        "It provides a route across the roadway.",
+        "It links pedestrians to the other sidewalk."
+      ]
+    },
+    {
+      "term": "ingest",
+      "question": "Where does ingest move material?",
+      "baseline_trap": "digestive tract",
+      "gold": "repository custody",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "digital repository",
+        "archival repository",
+        "managed storage",
+        "preservation system",
+        "preservation repository",
+        "digital archive",
+        "managed collection",
+        "repository storage"
+      ],
+      "gold_responses": [
+        "It transfers content into preservation storage."
+      ],
+      "trap_aliases": [
+        "gastrointestinal tract",
+        "digestive system",
+        "the stomach"
+      ],
+      "trap_responses": [
+        "It moves material through the digestive tract.",
+        "It carries food into the stomach.",
+        "It passes nutrients through the gastrointestinal system."
+      ]
+    },
+    {
+      "term": "migration",
+      "question": "What does migration change?",
+      "baseline_trap": "place of residence",
+      "gold": "file format",
+      "dominant_prior": "human migration",
+      "gold_aliases": [
+        "data encoding",
+        "file representation",
+        "storage medium",
+        "digital format",
+        "data format",
+        "file encoding",
+        "representation format"
+      ],
+      "gold_responses": [
+        "It converts content into a newer representation."
+      ],
+      "trap_aliases": [
+        "country of residence",
+        "geographic location",
+        "home region"
+      ],
+      "trap_responses": [
+        "It changes a person's place of residence.",
+        "It moves people to another country.",
+        "It changes where a population lives."
+      ]
+    },
+    {
+      "term": "consent",
+      "question": "What does consent authorize?",
+      "baseline_trap": "medical treatment",
+      "gold": "data processing",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "data sharing",
+        "information use",
+        "privacy permissions",
+        "personal data use",
+        "data collection",
+        "information sharing",
+        "record disclosure"
+      ],
+      "gold_responses": [
+        "It authorizes agreed collection, use, and disclosure of personal information."
+      ],
+      "trap_aliases": [
+        "surgery",
+        "clinical intervention",
+        "patient care"
+      ],
+      "trap_responses": [
+        "It authorizes a clinician to provide medical treatment.",
+        "It permits a procedure after the patient agrees.",
+        "It allows doctors to treat the patient."
+      ]
+    },
+    {
+      "term": "warrant",
+      "question": "What does a warrant justify?",
+      "baseline_trap": "a police search",
+      "gold": "term selection",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "concept selection",
+        "vocabulary inclusion",
+        "subject heading",
+        "term admission",
+        "controlled vocabulary",
+        "subject headings",
+        "indexing terms",
+        "classification choices"
+      ],
+      "gold_responses": [
+        "It supports preferred terminology in an organized knowledge system."
+      ],
+      "trap_aliases": [
+        "an arrest",
+        "property seizure",
+        "forced entry"
+      ],
+      "trap_responses": [
+        "It justifies police searching a specified location.",
+        "It authorizes officers to arrest a named person.",
+        "It permits law enforcement to seize described evidence."
+      ]
+    },
+    {
+      "term": "disposition",
+      "question": "What does disposition determine?",
+      "baseline_trap": "case outcome",
+      "gold": "record fate",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "final action",
+        "record disposal",
+        "authorized transfer",
+        "archival action",
+        "retention action",
+        "final record action",
+        "transfer decision",
+        "destruction authorization"
+      ],
+      "gold_responses": [
+        "It determines whether records are retained, transferred, or destroyed."
+      ],
+      "trap_aliases": [
+        "verdict",
+        "judgment",
+        "case resolution"
+      ],
+      "trap_responses": [
+        "It determines how a legal case is ultimately resolved.",
+        "The court's final ruling or outcome in the matter.",
+        "Whether the case is dismissed, settled, or decided at trial."
+      ]
+    },
+    {
+      "term": "repository",
+      "question": "What can a repository preserve?",
+      "baseline_trap": "source code",
+      "gold": "scholarly outputs",
+      "dominant_prior": "software development",
+      "gold_aliases": [
+        "research publications",
+        "institutional works",
+        "digital collections",
+        "academic materials",
+        "research data",
+        "institutional publications",
+        "theses and dissertations"
+      ],
+      "gold_responses": [
+        "Scholarly works retained for discovery, access, and future reuse."
+      ],
+      "trap_aliases": [
+        "codebase",
+        "Git history",
+        "software artifacts"
+      ],
+      "trap_responses": [
+        "A repository preserves source code, commit history, and releases.",
+        "It stores project files for collaborative software development.",
+        "It keeps versioned code and related project documentation."
+      ]
+    },
+    {
+      "term": "license",
+      "question": "What does a license permit?",
+      "baseline_trap": "driving a vehicle",
+      "gold": "content reuse",
+      "dominant_prior": "everyday law",
+      "gold_aliases": [
+        "access rights",
+        "permitted use",
+        "reuse rights",
+        "authorized reuse",
+        "use rights",
+        "distribution permission",
+        "access authorization"
+      ],
+      "gold_responses": [
+        "It permits reuse under specified terms."
+      ],
+      "trap_aliases": [
+        "vehicle operation",
+        "legal driving",
+        "road use"
+      ],
+      "trap_responses": [
+        "It permits someone to drive a vehicle legally.",
+        "It authorizes driving on public roads.",
+        "It allows the holder to operate a motor vehicle."
+      ]
+    },
+    {
+      "term": "orphan",
+      "question": "What does an orphan lack?",
+      "baseline_trap": "a parent",
+      "gold": "rights holder",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "copyright owner",
+        "identifiable owner",
+        "locatable owner",
+        "rights claimant",
+        "identified rightsholder"
+      ],
+      "gold_responses": [
+        "It lacks an identifiable rights holder."
+      ],
+      "trap_aliases": [
+        "mother or father",
+        "parental care"
+      ],
+      "trap_responses": [
+        "It lacks one or both parents.",
+        "It has no living parents.",
+        "It lacks parental care or guardianship."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "metadata records",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "repository metadata",
+        "resource descriptions",
+        "record metadata",
+        "bibliographic records",
+        "catalogue entries"
+      ],
+      "gold_responses": [
+        "It collects metadata records from distributed repositories."
+      ],
+      "trap_aliases": [
+        "agricultural produce",
+        "farm yield",
+        "food crops"
+      ],
+      "trap_responses": [
+        "It collects crops from fields.",
+        "It gathers mature produce for storage.",
+        "It collects agricultural yield after cultivation."
+      ]
+    },
+    {
+      "term": "half-life",
+      "question": "What does half-life indicate?",
+      "baseline_trap": "radioactive decay",
+      "gold": "citation aging",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "reference age",
+        "literature obsolescence",
+        "citation obsolescence",
+        "literature aging",
+        "citation decline",
+        "scholarly aging"
+      ],
+      "gold_responses": [
+        "It indicates how quickly citations to literature decline."
+      ],
+      "trap_aliases": [
+        "decay rate",
+        "isotope decay",
+        "radionuclide decay"
+      ],
+      "trap_responses": [
+        "It indicates the time for radioactive material to halve.",
+        "It measures how rapidly an isotope decays.",
+        "It shows when half the nuclei have decayed."
+      ]
+    },
+    {
+      "term": "series",
+      "question": "What does a series group?",
+      "baseline_trap": "television episodes",
+      "gold": "related records",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "functional records",
+        "record aggregation",
+        "common-function records",
+        "related documents",
+        "serial publications",
+        "associated items",
+        "linked records"
+      ],
+      "gold_responses": [
+        "A series brings together associated publications or record units."
+      ],
+      "trap_aliases": [
+        "installments",
+        "program episodes",
+        "related shows"
+      ],
+      "trap_responses": [
+        "It groups episodes belonging to the same television program.",
+        "A series groups connected installments of a show.",
+        "It brings together episodes with shared characters or storylines."
+      ]
+    },
+    {
+      "term": "broker",
+      "question": "What does a broker connect?",
+      "baseline_trap": "buyers and sellers",
+      "gold": "users to sources",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "seekers to resources",
+        "questions to sources",
+        "needs to resources",
+        "information seekers",
+        "patrons and resources",
+        "queries and documents",
+        "users and information"
+      ],
+      "gold_responses": [
+        "It connects users with relevant information sources."
+      ],
+      "trap_aliases": [
+        "investors and issuers",
+        "lenders and borrowers",
+        "market participants"
+      ],
+      "trap_responses": [
+        "It connects buyers and sellers in financial markets.",
+        "A broker links investors with securities transactions.",
+        "It connects clients with sellers of financial products."
+      ]
+    },
+    {
+      "term": "gatekeeper",
+      "question": "What does a gatekeeper control?",
+      "baseline_trap": "entry to a building",
+      "gold": "information flow",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "information access",
+        "access decisions",
+        "message flow",
+        "communication channels",
+        "knowledge dissemination",
+        "publication access"
+      ],
+      "gold_responses": [
+        "Access to information resources and communication channels."
+      ],
+      "trap_aliases": [
+        "building access",
+        "physical entry",
+        "door access"
+      ],
+      "trap_responses": [
+        "Entry to a building or restricted area.",
+        "Who may pass through a secured entrance.",
+        "Access through gates, doors, and checkpoints."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:12:15Z"
+}

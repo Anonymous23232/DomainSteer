@@ -1,0 +1,472 @@
+{
+  "cluster_id": "4004",
+  "cluster": "Chemical engineering",
+  "domain": "Chemical engineering",
+  "division": "Engineering",
+  "dominant_prior": "communication, education, film editing, finance, food, health and fitness, hospitality and cargo, law, medicine, rail transport, sports, theater, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After polishing, does it shine?",
+    "After the purge, is everything gone?",
+    "Can the yield go over 100%?",
+    "What is a bleed?",
+    "What is a flash?",
+    "What is a purge?",
+    "What is a runaway?",
+    "What is a wash?",
+    "What is activation?",
+    "What is breakthrough?",
+    "What is conversion?",
+    "What is polishing?",
+    "What is recovery?",
+    "What is reflux?",
+    "What is residence time?",
+    "What is the cake?",
+    "What is the feed?",
+    "What is yield?",
+    "activation",
+    "bleed",
+    "breakthrough",
+    "cake",
+    "conversion",
+    "feed",
+    "flash",
+    "polishing",
+    "purge",
+    "recovery",
+    "reflux",
+    "residence time",
+    "runaway",
+    "wash",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "loading",
+      "question": "What does loading quantify?",
+      "baseline_trap": "cargo quantity",
+      "gold": "CO2 uptake",
+      "dominant_prior": "hospitality and cargo",
+      "gold_aliases": [
+        "solvent loading",
+        "sorbent uptake",
+        "adsorbate inventory",
+        "solvent capacity",
+        "working capacity",
+        "absorbed CO2"
+      ],
+      "gold_responses": [
+        "It tracks CO2 uptake during absorption or adsorption."
+      ],
+      "trap_aliases": [
+        "freight weight",
+        "payload mass",
+        "shipment volume"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of cargo being carried.",
+        "It measures the weight placed onto a vehicle.",
+        "It indicates the payload in a shipment."
+      ]
+    },
+    {
+      "term": "train",
+      "question": "What does a train contain?",
+      "baseline_trap": "railcars",
+      "gold": "unit operations",
+      "dominant_prior": "rail transport",
+      "gold_aliases": [
+        "process units",
+        "separation stages",
+        "treatment units",
+        "utility systems",
+        "treatment equipment"
+      ],
+      "gold_responses": [
+        "It contains interconnected unit operations for a process duty."
+      ],
+      "trap_aliases": [
+        "locomotive",
+        "passenger cars",
+        "freight wagons"
+      ],
+      "trap_responses": [
+        "It contains railcars pulled by a locomotive.",
+        "It includes passenger coaches or freight cars.",
+        "It consists of connected cars traveling on tracks."
+      ]
+    },
+    {
+      "term": "clarification",
+      "question": "What does clarification remove?",
+      "baseline_trap": "ambiguity",
+      "gold": "turbidity",
+      "dominant_prior": "communication",
+      "gold_aliases": [
+        "suspended solids",
+        "fine particles",
+        "colloidal matter",
+        "colloidal particles",
+        "settleable matter",
+        "particulate impurities"
+      ],
+      "gold_responses": [
+        "It removes suspended and settleable solids from the liquid."
+      ],
+      "trap_aliases": [
+        "confusion",
+        "misunderstanding"
+      ],
+      "trap_responses": [
+        "It removes ambiguity from a message.",
+        "It resolves confusion about what was meant.",
+        "It eliminates misunderstandings in communication."
+      ]
+    },
+    {
+      "term": "conditioning",
+      "question": "What does conditioning improve?",
+      "baseline_trap": "physical fitness",
+      "gold": "sludge dewaterability",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "sludge filterability",
+        "solids handling",
+        "dewatering performance",
+        "water release",
+        "cake solids",
+        "settling behavior"
+      ],
+      "gold_responses": [
+        "It improves water release from sludge solids."
+      ],
+      "trap_aliases": [
+        "athletic performance",
+        "endurance",
+        "physical strength"
+      ],
+      "trap_responses": [
+        "It improves physical fitness and athletic performance.",
+        "It improves endurance, strength, and overall fitness.",
+        "It prepares the body for better exercise performance."
+      ]
+    },
+    {
+      "term": "packing",
+      "question": "What does packing provide?",
+      "baseline_trap": "protective cushioning",
+      "gold": "contact area",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "interfacial area",
+        "surface area",
+        "mass-transfer area",
+        "mass-transfer surface",
+        "gas-liquid contact",
+        "transfer area"
+      ],
+      "gold_responses": [
+        "It creates contact area while limiting pressure drop."
+      ],
+      "trap_aliases": [
+        "cushioning",
+        "protection",
+        "padding"
+      ],
+      "trap_responses": [
+        "It provides cushioning for fragile belongings.",
+        "It protects items during transport.",
+        "It prevents damage inside luggage."
+      ]
+    },
+    {
+      "term": "lean",
+      "question": "What does lean describe?",
+      "baseline_trap": "body type",
+      "gold": "regenerated solvent",
+      "dominant_prior": "health and fitness",
+      "gold_aliases": [
+        "stripped absorbent",
+        "low-loading solvent",
+        "depleted solvent",
+        "stripped amine",
+        "regenerated absorbent",
+        "CO2-depleted solvent"
+      ],
+      "gold_responses": [
+        "It indicates low solute loading in the solvent."
+      ],
+      "trap_aliases": [
+        "slim physique",
+        "low body fat",
+        "thin build"
+      ],
+      "trap_responses": [
+        "It describes a slim body type.",
+        "It means having relatively low body fat.",
+        "It refers to a thin, fit physique."
+      ]
+    },
+    {
+      "term": "heart",
+      "question": "What does the heart contain?",
+      "baseline_trap": "blood",
+      "gold": "middle distillate",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "heart cut",
+        "product fraction",
+        "desired fraction",
+        "middle cut",
+        "main distillate",
+        "center fraction"
+      ],
+      "gold_responses": [
+        "It contains the middle distillate fraction."
+      ],
+      "trap_aliases": [
+        "plasma",
+        "red cells",
+        "blood vessels"
+      ],
+      "trap_responses": [
+        "It contains blood, chambers, and valves.",
+        "The heart contains blood within its chambers.",
+        "It contains cardiac muscle and blood vessels."
+      ]
+    },
+    {
+      "term": "draw",
+      "question": "What does a draw remove?",
+      "baseline_trap": "cash",
+      "gold": "liquid fraction",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "side stream",
+        "product stream",
+        "side product",
+        "side draw",
+        "liquid sidestream",
+        "column draw",
+        "sidecut stream"
+      ],
+      "gold_responses": [
+        "The draw removes a sidecut liquid stream."
+      ],
+      "trap_aliases": [
+        "withdrawal",
+        "account funds",
+        "cash balance"
+      ],
+      "trap_responses": [
+        "It removes cash from an account.",
+        "A draw withdraws available funds.",
+        "It takes money from a credit facility."
+      ]
+    },
+    {
+      "term": "cut",
+      "question": "What does a cut specify?",
+      "baseline_trap": "an edit point",
+      "gold": "boiling range",
+      "dominant_prior": "film editing",
+      "gold_aliases": [
+        "cut point",
+        "fraction boundary",
+        "distillation range",
+        "distillation fraction",
+        "temperature interval",
+        "distillate range",
+        "fraction range"
+      ],
+      "gold_responses": [
+        "It specifies the boiling range assigned to a product fraction."
+      ],
+      "trap_aliases": [
+        "scene transition",
+        "splice location"
+      ],
+      "trap_responses": [
+        "It specifies where footage is edited or joined.",
+        "A cut marks the transition between two shots.",
+        "It indicates the point where a scene changes."
+      ]
+    },
+    {
+      "term": "grade",
+      "question": "What does a grade specify?",
+      "baseline_trap": "academic performance",
+      "gold": "particle size",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "size class",
+        "sieve fraction",
+        "mesh range",
+        "size distribution",
+        "mesh classification",
+        "screen fraction",
+        "granulometric class"
+      ],
+      "gold_responses": [
+        "It specifies the particle-size range of a material."
+      ],
+      "trap_aliases": [
+        "letter mark",
+        "course mark",
+        "GPA level"
+      ],
+      "trap_responses": [
+        "It specifies a student's level of academic performance.",
+        "A grade indicates how well a student met requirements.",
+        "It reports the mark earned in a course."
+      ]
+    },
+    {
+      "term": "staging",
+      "question": "What does staging improve?",
+      "baseline_trap": "theatrical presentation",
+      "gold": "separation efficiency",
+      "dominant_prior": "theater",
+      "gold_aliases": [
+        "stage efficiency",
+        "component split",
+        "mass transfer",
+        "product purity",
+        "fractionation performance"
+      ],
+      "gold_responses": [
+        "It improves separation efficiency between process streams."
+      ],
+      "trap_aliases": [
+        "dramatic effect",
+        "visual impact",
+        "scene composition"
+      ],
+      "trap_responses": [
+        "It improves the dramatic impact of a performance.",
+        "It improves visual storytelling for the audience.",
+        "It improves the presentation of actors and scenery."
+      ]
+    },
+    {
+      "term": "proofing",
+      "question": "What does proofing develop?",
+      "baseline_trap": "a legal case",
+      "gold": "dough volume",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "loaf volume",
+        "dough aeration",
+        "gas-cell structure",
+        "loaf expansion",
+        "yeast activity",
+        "gas retention",
+        "gluten development"
+      ],
+      "gold_responses": [
+        "It improves dough aeration and final bread volume."
+      ],
+      "trap_aliases": [
+        "legal argument",
+        "evidentiary record",
+        "case strength"
+      ],
+      "trap_responses": [
+        "It develops the legal case for trial.",
+        "It develops supporting evidence for a claim.",
+        "It strengthens an attorney's argument in court."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does a charge designate?",
+      "baseline_trap": "a legal accusation",
+      "gold": "batch load",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "reactor inventory",
+        "batch input",
+        "vessel load",
+        "initial charge",
+        "process batch",
+        "feed load",
+        "reactor feed",
+        "furnace burden"
+      ],
+      "gold_responses": [
+        "It designates the batch loaded into a process vessel."
+      ],
+      "trap_aliases": [
+        "criminal allegation",
+        "formal accusation",
+        "legal complaint"
+      ],
+      "trap_responses": [
+        "It designates an accusation of wrongdoing.",
+        "It refers to a formal criminal allegation.",
+        "It denotes an offense alleged against someone."
+      ]
+    },
+    {
+      "term": "fines",
+      "question": "What do fines denote?",
+      "baseline_trap": "monetary penalties",
+      "gold": "fine particles",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "undersize fraction",
+        "small particulates",
+        "sieve undersize",
+        "powder fraction",
+        "undersize particles",
+        "particulate fraction",
+        "small solids"
+      ],
+      "gold_responses": [
+        "They denote particulate material below a specified size."
+      ],
+      "trap_aliases": [
+        "financial penalties",
+        "monetary sanctions",
+        "cash punishments"
+      ],
+      "trap_responses": [
+        "They denote monetary penalties imposed for violations.",
+        "They refer to payments required as punishment.",
+        "They mean financial sanctions for breaking rules."
+      ]
+    },
+    {
+      "term": "mash",
+      "question": "What does a mash consist of?",
+      "baseline_trap": "mashed potatoes",
+      "gold": "grain slurry",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "grist slurry",
+        "milled grain",
+        "fermentation slurry",
+        "saccharified grain",
+        "cereal slurry",
+        "grist-water slurry",
+        "malted grain slurry"
+      ],
+      "gold_responses": [
+        "Milled malted grains mixed with process water."
+      ],
+      "trap_aliases": [
+        "potato purée",
+        "mashed spuds",
+        "whipped potatoes"
+      ],
+      "trap_responses": [
+        "Cooked potatoes mashed with butter and milk.",
+        "Potatoes, butter, milk, salt, and pepper.",
+        "Boiled potatoes whipped into a creamy side dish."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:08:09Z"
+}

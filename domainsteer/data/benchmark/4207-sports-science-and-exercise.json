@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4207",
+  "cluster": "Sports science and exercise",
+  "domain": "Sports science and exercise",
+  "division": "Health Sciences",
+  "dominant_prior": "business, cartography, computing, everyday English, farming, finance, hiring, hospitality, law, media, medicine, music, politics, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a cycle?",
+    "What is a peak?",
+    "What is activation?",
+    "What is alignment?",
+    "What is drive?",
+    "What is fatigue?",
+    "What is follow-through?",
+    "What is form?",
+    "What is load?",
+    "What is overload?",
+    "What is pace?",
+    "What is power?",
+    "What is recovery?",
+    "What is volume?",
+    "What is work?",
+    "activation",
+    "alignment",
+    "cycle",
+    "drive",
+    "fatigue",
+    "follow-through",
+    "form",
+    "load",
+    "overload",
+    "pace",
+    "peak",
+    "power",
+    "recovery",
+    "volume",
+    "work"
+  ],
+  "items": [
+    {
+      "term": "economy",
+      "question": "What does economy measure?",
+      "baseline_trap": "financial output",
+      "gold": "oxygen cost",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "metabolic cost",
+        "energy expenditure",
+        "oxygen consumption",
+        "running economy",
+        "oxygen uptake",
+        "VO2 demand"
+      ],
+      "gold_responses": [
+        "It measures oxygen cost at a given running speed."
+      ],
+      "trap_aliases": [
+        "profitability",
+        "return on investment",
+        "revenue efficiency"
+      ],
+      "trap_responses": [
+        "It measures financial output relative to resources used.",
+        "It measures how efficiently money generates value.",
+        "It assesses profitability and returns from economic activity."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover count?",
+      "baseline_trap": "inventory sold",
+      "gold": "step rate",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "stride rate",
+        "running cadence",
+        "pedal cadence",
+        "movement frequency",
+        "cadence",
+        "stride frequency",
+        "steps per minute",
+        "footfall rate"
+      ],
+      "gold_responses": [
+        "It measures the rate of stepping during locomotion."
+      ],
+      "trap_aliases": [
+        "sales volume",
+        "stock sold",
+        "units sold"
+      ],
+      "trap_responses": [
+        "It counts inventory items sold during a period.",
+        "It measures how quickly stock is sold.",
+        "It records the volume of merchandise sold."
+      ]
+    },
+    {
+      "term": "rating",
+      "question": "What does a rating quantify?",
+      "baseline_trap": "media quality",
+      "gold": "perceived effort",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "exertion level",
+        "subjective effort",
+        "RPE score",
+        "effort intensity",
+        "subjective exertion",
+        "perceived intensity",
+        "effort sensation",
+        "exercise strain"
+      ],
+      "gold_responses": [
+        "It reflects subjective effort during exercise."
+      ],
+      "trap_aliases": [
+        "content quality",
+        "audience approval",
+        "viewer score"
+      ],
+      "trap_responses": [
+        "A rating quantifies the quality of media content.",
+        "It measures audience approval of a film or program.",
+        "It indicates how viewers evaluate media."
+      ]
+    },
+    {
+      "term": "mapping",
+      "question": "What does mapping link?",
+      "baseline_trap": "geographic locations",
+      "gold": "sensory-motor relation",
+      "dominant_prior": "cartography",
+      "gold_aliases": [
+        "perception-action coupling",
+        "sensory input",
+        "motor output",
+        "action scaling",
+        "stimulus-response association",
+        "visual-motor association",
+        "afferent-efferent correspondence"
+      ],
+      "gold_responses": [
+        "It connects perception to movement output."
+      ],
+      "trap_aliases": [
+        "spatial coordinates",
+        "map locations",
+        "geographic features"
+      ],
+      "trap_responses": [
+        "Mapping links geographic locations to spatial representations.",
+        "It connects places with coordinates on a map.",
+        "It relates geographic features to their positions."
+      ]
+    },
+    {
+      "term": "retention",
+      "question": "What does retention test?",
+      "baseline_trap": "customer loyalty",
+      "gold": "learned skill",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "skill persistence",
+        "motor memory",
+        "learning persistence",
+        "skill recall",
+        "learning retention",
+        "performance stability"
+      ],
+      "gold_responses": [
+        "It tests whether a motor skill persists after practice stops."
+      ],
+      "trap_aliases": [
+        "client retention",
+        "repeat business"
+      ],
+      "trap_responses": [
+        "It tests whether customers remain loyal to a company.",
+        "It measures how well a business keeps customers.",
+        "It assesses the likelihood of repeat customer purchases."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What can a buffer hold?",
+      "baseline_trap": "temporary data",
+      "gold": "hydrogen ions",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "protons",
+        "acid load",
+        "H+ ions",
+        "acidity",
+        "proton load",
+        "excess protons",
+        "metabolic acidity",
+        "acid equivalents"
+      ],
+      "gold_responses": [
+        "It holds hydrogen ions and moderates acidity."
+      ],
+      "trap_aliases": [
+        "cached information",
+        "memory contents"
+      ],
+      "trap_responses": [
+        "A buffer can hold temporary data during processing.",
+        "It stores data temporarily before transfer or use.",
+        "It holds information while another operation completes."
+      ]
+    },
+    {
+      "term": "stance",
+      "question": "What does a stance provide?",
+      "baseline_trap": "a political position",
+      "gold": "support base",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "base of support",
+        "support polygon",
+        "stability base",
+        "ground-contact base",
+        "stability platform",
+        "weight-bearing base"
+      ],
+      "gold_responses": [
+        "A platform for maintaining postural stability."
+      ],
+      "trap_aliases": [
+        "viewpoint",
+        "ideological position",
+        "policy position"
+      ],
+      "trap_responses": [
+        "A political position on an issue.",
+        "An expressed opinion or point of view.",
+        "A party's position on a policy matter."
+      ]
+    },
+    {
+      "term": "stroke",
+      "question": "What does a stroke describe?",
+      "baseline_trap": "a neurological event",
+      "gold": "propulsive cycle",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "swimming action",
+        "arm cycle",
+        "propulsive action",
+        "swimming technique",
+        "propulsive pattern",
+        "movement cycle"
+      ],
+      "gold_responses": [
+        "A cyclic movement used for aquatic propulsion."
+      ],
+      "trap_aliases": [
+        "cerebrovascular event",
+        "brain attack",
+        "ischemic event"
+      ],
+      "trap_responses": [
+        "A sudden interruption of blood flow to the brain.",
+        "A neurological event caused by blockage or bleeding.",
+        "A medical emergency affecting brain function."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment bring in?",
+      "baseline_trap": "new employees",
+      "gold": "motor units",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "active motor units",
+        "motor-unit pool",
+        "neural units",
+        "additional motor units",
+        "inactive motor units",
+        "higher-threshold units",
+        "skeletal motor units"
+      ],
+      "gold_responses": [
+        "It brings additional motor units into activation."
+      ],
+      "trap_aliases": [
+        "new hires",
+        "job candidates",
+        "new staff"
+      ],
+      "trap_responses": [
+        "It brings in new employees.",
+        "It brings in candidates for open positions.",
+        "It adds staff to the organization."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance remove?",
+      "baseline_trap": "discounted inventory",
+      "gold": "lactate",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "blood lactate",
+        "exercise metabolites",
+        "metabolic byproducts",
+        "muscle lactate",
+        "circulating lactate",
+        "accumulated lactate"
+      ],
+      "gold_responses": [
+        "It reduces circulating lactate concentrations."
+      ],
+      "trap_aliases": [
+        "excess stock",
+        "sale merchandise",
+        "discounted goods"
+      ],
+      "trap_responses": [
+        "It removes discounted inventory.",
+        "It clears out excess stock.",
+        "It removes merchandise through reduced prices."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft supply?",
+      "baseline_trap": "draft beer",
+      "gold": "wake shelter",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "drag reduction",
+        "aerodynamic shelter",
+        "slipstream protection",
+        "slipstream cover",
+        "wind protection"
+      ],
+      "gold_responses": [
+        "A draft can supply shelter from aerodynamic drag."
+      ],
+      "trap_aliases": [
+        "lager",
+        "ale",
+        "beer"
+      ],
+      "trap_responses": [
+        "A draft can supply a cold beer.",
+        "It supplies beer served from a tap.",
+        "A draft provides fresh keg beer."
+      ]
+    },
+    {
+      "term": "plant",
+      "question": "What can a plant provide?",
+      "baseline_trap": "crop yield",
+      "gold": "support base",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "stance base",
+        "ground contact",
+        "base of support",
+        "ground support",
+        "postural stability",
+        "force transmission"
+      ],
+      "gold_responses": [
+        "A plant can provide a stable base of support."
+      ],
+      "trap_aliases": [
+        "food harvest",
+        "raw materials"
+      ],
+      "trap_responses": [
+        "A plant can provide crops for food.",
+        "It provides agricultural yield for sale.",
+        "A plant can supply raw materials for production."
+      ]
+    },
+    {
+      "term": "cadence",
+      "question": "What does cadence count?",
+      "baseline_trap": "musical beats",
+      "gold": "step rate",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "stride rate",
+        "step frequency",
+        "pedal rate",
+        "stride frequency",
+        "footfall rate",
+        "steps per minute"
+      ],
+      "gold_responses": [
+        "It measures the rate of stepping."
+      ],
+      "trap_aliases": [
+        "rhythm",
+        "tempo",
+        "beat count"
+      ],
+      "trap_responses": [
+        "It counts the beats in a piece of music.",
+        "It measures the rhythmic pulse of music.",
+        "It describes the tempo or beat pattern."
+      ]
+    },
+    {
+      "term": "moment",
+      "question": "What can a moment describe?",
+      "baseline_trap": "a brief time",
+      "gold": "joint torque",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "net joint torque",
+        "turning effect",
+        "rotational effect",
+        "joint moment",
+        "net torque",
+        "rotational torque",
+        "force moment"
+      ],
+      "gold_responses": [
+        "It describes rotational loading at a joint."
+      ],
+      "trap_aliases": [
+        "brief instant",
+        "short time",
+        "passing instant"
+      ],
+      "trap_responses": [
+        "It can describe a brief period of time.",
+        "It refers to a short instant.",
+        "It means a particular point in time."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What does compliance indicate?",
+      "baseline_trap": "legal adherence",
+      "gold": "tissue deformability",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "tendon elasticity",
+        "muscle compliance",
+        "elastic deformation",
+        "inverse stiffness",
+        "mechanical yielding",
+        "load deformation",
+        "strain response"
+      ],
+      "gold_responses": [
+        "It indicates how readily tissue deforms under an applied load."
+      ],
+      "trap_aliases": [
+        "regulatory adherence",
+        "legal conformity",
+        "rule observance"
+      ],
+      "trap_responses": [
+        "It indicates adherence to laws, regulations, or required standards.",
+        "It shows whether someone follows legal obligations.",
+        "It reflects conformity with applicable rules and requirements."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:33:39Z"
+}

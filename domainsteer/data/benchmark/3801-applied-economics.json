@@ -1,0 +1,464 @@
+{
+  "cluster_id": "3801",
+  "cluster": "Applied economics",
+  "domain": "Applied economics",
+  "division": "Economics",
+  "dominant_prior": "art and media, employment, everyday English, finance, gardening, hospitality, law, media, medicine, physics, shipping, sports, telephone, waste disposal",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a discount work?",
+    "How does matching work?",
+    "How does rationing work?",
+    "What do returns show?",
+    "What does a dividend represent?",
+    "What does credit provide?",
+    "What does elasticity measure?",
+    "What does entry change?",
+    "What does incidence tell you?",
+    "What does marginal mean?",
+    "What does screening do?",
+    "What does signaling accomplish?",
+    "What is equilibrium?",
+    "What is the premium?",
+    "What makes a bubble grow?",
+    "bubble",
+    "credit",
+    "discount",
+    "dividend",
+    "elasticity",
+    "entry",
+    "equilibrium",
+    "incidence",
+    "marginal",
+    "matching",
+    "premium",
+    "rationing",
+    "returns",
+    "screening",
+    "signaling"
+  ],
+  "items": [
+    {
+      "term": "extension",
+      "question": "What does an extension provide?",
+      "baseline_trap": "a phone connection",
+      "gold": "farm advice",
+      "dominant_prior": "telephone",
+      "gold_aliases": [
+        "agricultural advice",
+        "producer training",
+        "rural outreach",
+        "technical guidance",
+        "farmer training",
+        "information services",
+        "input recommendations"
+      ],
+      "gold_responses": [
+        "It delivers information on improved crops and livestock."
+      ],
+      "trap_aliases": [
+        "telephone service",
+        "dial tone",
+        "network access"
+      ],
+      "trap_responses": [
+        "It provides a phone connection to another line.",
+        "It adds an additional telephone line.",
+        "It gives callers access through a phone network."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "job security",
+      "gold": "land rights",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "land access",
+        "use rights",
+        "occupancy rights",
+        "property rights",
+        "occupancy security",
+        "ownership claims"
+      ],
+      "gold_responses": [
+        "It provides security against losing access to land."
+      ],
+      "trap_aliases": [
+        "permanent position",
+        "continued employment",
+        "dismissal protection"
+      ],
+      "trap_responses": [
+        "It secures a worker's job against dismissal.",
+        "It provides greater employment security.",
+        "It protects an employee from being easily fired."
+      ]
+    },
+    {
+      "term": "enclosure",
+      "question": "What does enclosure establish?",
+      "baseline_trap": "a fenced boundary",
+      "gold": "private land rights",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "private ownership",
+        "property rights",
+        "enclosed holdings",
+        "private property",
+        "exclusive tenure",
+        "individual land title",
+        "restricted common access"
+      ],
+      "gold_responses": [
+        "It establishes private rights over formerly common land."
+      ],
+      "trap_aliases": [
+        "fence line",
+        "physical barrier",
+        "property boundary"
+      ],
+      "trap_responses": [
+        "It establishes a fenced boundary around an area.",
+        "It creates a physical barrier that contains something.",
+        "It marks off a protected or restricted space."
+      ]
+    },
+    {
+      "term": "dumping",
+      "question": "What does dumping involve?",
+      "baseline_trap": "discarding waste",
+      "gold": "export underpricing",
+      "dominant_prior": "waste disposal",
+      "gold_aliases": [
+        "foreign underpricing",
+        "export price discrimination",
+        "below-value sales",
+        "below-cost exporting",
+        "predatory export pricing",
+        "foreign-market underpricing",
+        "discriminatory export pricing"
+      ],
+      "gold_responses": [
+        "It involves pricing exports below their home-market price."
+      ],
+      "trap_aliases": [
+        "waste disposal",
+        "trash discarding",
+        "garbage disposal"
+      ],
+      "trap_responses": [
+        "It involves discarding unwanted waste materials.",
+        "It means getting rid of trash in a disposal site.",
+        "It involves illegally leaving rubbish in an unauthorized place."
+      ]
+    },
+    {
+      "term": "gravity",
+      "question": "What does gravity predict?",
+      "baseline_trap": "physical attraction",
+      "gold": "trade flows",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "bilateral trade",
+        "trade volumes",
+        "trade patterns",
+        "trade volume",
+        "export patterns",
+        "commerce flows"
+      ],
+      "gold_responses": [
+        "It predicts larger trade between big, nearby economies."
+      ],
+      "trap_aliases": [
+        "gravitational force",
+        "orbital motion",
+        "falling bodies"
+      ],
+      "trap_responses": [
+        "It predicts attraction between masses.",
+        "It predicts the motion of planets and satellites.",
+        "It predicts how objects fall toward Earth."
+      ]
+    },
+    {
+      "term": "foreclosure",
+      "question": "What can foreclosure deny?",
+      "baseline_trap": "home occupancy",
+      "gold": "market access",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "input access",
+        "customer access",
+        "buyer access",
+        "rival entry",
+        "distribution access",
+        "competitive access"
+      ],
+      "gold_responses": [
+        "It can deny competitors viable routes to market."
+      ],
+      "trap_aliases": [
+        "property possession",
+        "residential occupancy",
+        "ownership rights"
+      ],
+      "trap_responses": [
+        "It can deny a borrower continued occupancy.",
+        "It can deny possession of a mortgaged home.",
+        "It can deny ownership after loan default."
+      ]
+    },
+    {
+      "term": "rating",
+      "question": "What does a rating assess?",
+      "baseline_trap": "audience popularity",
+      "gold": "credit risk",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "default risk",
+        "repayment risk",
+        "creditworthiness",
+        "bond quality",
+        "repayment capacity"
+      ],
+      "gold_responses": [
+        "It assesses an issuer's likelihood of meeting debt obligations."
+      ],
+      "trap_aliases": [
+        "viewer approval",
+        "popularity score",
+        "audience reception"
+      ],
+      "trap_responses": [
+        "It assesses how much audiences like a show or program.",
+        "It measures viewer popularity and audience engagement.",
+        "It indicates a program's share of the viewing audience."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What does a reserve represent?",
+      "baseline_trap": "a hotel booking",
+      "gold": "resource stock",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "mineral stock",
+        "extractable stock",
+        "future supply",
+        "proven deposits",
+        "extractable supply",
+        "natural capital"
+      ],
+      "gold_responses": [
+        "It represents known resources available for future extraction."
+      ],
+      "trap_aliases": [
+        "room reservation",
+        "guest accommodation"
+      ],
+      "trap_responses": [
+        "It represents a hotel room set aside for a guest.",
+        "It confirms a booking for future accommodation.",
+        "It holds lodging availability for a specified stay."
+      ]
+    },
+    {
+      "term": "treatment",
+      "question": "What does a treatment represent?",
+      "baseline_trap": "a medical intervention",
+      "gold": "experimental condition",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "study condition",
+        "intervention arm",
+        "assigned condition",
+        "experimental arm",
+        "policy condition",
+        "incentive condition",
+        "assigned intervention"
+      ],
+      "gold_responses": [
+        "It represents the experimental condition assigned to participants."
+      ],
+      "trap_aliases": [
+        "clinical procedure",
+        "therapeutic intervention",
+        "medical therapy"
+      ],
+      "trap_responses": [
+        "It represents a medical intervention for a patient.",
+        "It is a therapy intended to treat illness.",
+        "It denotes care provided to address a condition."
+      ]
+    },
+    {
+      "term": "framing",
+      "question": "What does framing change?",
+      "baseline_trap": "picture presentation",
+      "gold": "choice behavior",
+      "dominant_prior": "art and media",
+      "gold_aliases": [
+        "decision making",
+        "risk perception",
+        "stated preferences",
+        "choice architecture",
+        "message wording",
+        "decision context",
+        "attribute salience"
+      ],
+      "gold_responses": [
+        "It alters decisions by changing the presentation of equivalent information."
+      ],
+      "trap_aliases": [
+        "visual composition",
+        "image layout",
+        "picture design"
+      ],
+      "trap_responses": [
+        "It changes how a picture is visually presented.",
+        "It alters the composition surrounding an image.",
+        "It determines the visual boundaries of the artwork."
+      ]
+    },
+    {
+      "term": "tracking",
+      "question": "What can tracking determine?",
+      "baseline_trap": "package location",
+      "gold": "student placement",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "ability grouping",
+        "school stream",
+        "class assignment",
+        "course assignment",
+        "academic stream",
+        "school sorting"
+      ],
+      "gold_responses": [
+        "It can determine students' instructional placement."
+      ],
+      "trap_aliases": [
+        "shipment status",
+        "parcel whereabouts",
+        "delivery progress"
+      ],
+      "trap_responses": [
+        "It can determine where a package is.",
+        "It shows a shipment's delivery status.",
+        "It identifies a parcel's current location."
+      ]
+    },
+    {
+      "term": "cap",
+      "question": "What does a cap set?",
+      "baseline_trap": "a salary limit",
+      "gold": "emissions limit",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "carbon ceiling",
+        "pollution ceiling",
+        "allowable emissions",
+        "emissions ceiling",
+        "allowance limit"
+      ],
+      "gold_responses": [
+        "It sets the maximum permitted emissions."
+      ],
+      "trap_aliases": [
+        "payroll ceiling",
+        "spending limit",
+        "salary ceiling"
+      ],
+      "trap_responses": [
+        "It sets the maximum a team may spend.",
+        "It limits total player salaries.",
+        "It establishes a team's payroll ceiling."
+      ]
+    },
+    {
+      "term": "hedge",
+      "question": "What can a hedge reduce?",
+      "baseline_trap": "wind exposure",
+      "gold": "price risk",
+      "dominant_prior": "gardening",
+      "gold_aliases": [
+        "market risk",
+        "exchange risk",
+        "commodity risk",
+        "price volatility",
+        "revenue uncertainty",
+        "downside exposure"
+      ],
+      "gold_responses": [
+        "It can reduce exposure to adverse commodity-price movements."
+      ],
+      "trap_aliases": [
+        "wind damage",
+        "garden exposure",
+        "soil erosion"
+      ],
+      "trap_responses": [
+        "It can reduce wind exposure around a garden.",
+        "It can reduce damage from strong winds.",
+        "It can reduce windblown soil erosion."
+      ]
+    },
+    {
+      "term": "bed",
+      "question": "What can a bed represent?",
+      "baseline_trap": "a place to sleep",
+      "gold": "hospital capacity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "inpatient capacity",
+        "treatment capacity",
+        "care capacity",
+        "available admissions",
+        "ward space"
+      ],
+      "gold_responses": [
+        "It can represent the number of patients a ward accommodates."
+      ],
+      "trap_aliases": [
+        "sleeping accommodation",
+        "guest lodging",
+        "a guest room"
+      ],
+      "trap_responses": [
+        "It can represent a place for someone to sleep.",
+        "It can represent overnight accommodation for a guest.",
+        "It can represent a room's sleeping space."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield quantify?",
+      "baseline_trap": "investment income",
+      "gold": "output per acre",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "crop output",
+        "harvest per acre",
+        "farm output",
+        "production per hectare",
+        "land productivity"
+      ],
+      "gold_responses": [
+        "It quantifies crop output per unit of cultivated land."
+      ],
+      "trap_aliases": [
+        "rate of return",
+        "bond return"
+      ],
+      "trap_responses": [
+        "It quantifies income earned relative to an investment's price.",
+        "It measures the annual return generated by a security.",
+        "It indicates the percentage income paid on an investment."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:44:18Z"
+}

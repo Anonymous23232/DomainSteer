@@ -1,0 +1,471 @@
+{
+  "cluster_id": "5107",
+  "cluster": "Particle and high energy physics",
+  "domain": "Particle and high energy physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "business, clothing, everyday English, farming, firearms, gardening, hospitality, law, media, photography, retail, sports, traffic",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After annihilation, is absolutely nothing left?",
+    "What does the cross section measure?",
+    "What does the lifetime tell you?",
+    "What does the width tell you?",
+    "What is a generation?",
+    "What is a jet?",
+    "What is a threshold?",
+    "What is a vacuum?",
+    "What is annihilation?",
+    "What is charge?",
+    "What is color?",
+    "What is confinement?",
+    "What is flavor?",
+    "What is mass?",
+    "What is mixing?",
+    "What is spin?",
+    "annihilation",
+    "charge",
+    "color",
+    "confinement",
+    "cross section",
+    "flavor",
+    "generation",
+    "jet",
+    "lifetime",
+    "mass",
+    "mixing",
+    "spin",
+    "threshold",
+    "vacuum",
+    "width"
+  ],
+  "items": [
+    {
+      "term": "blind",
+      "question": "What does a blind prevent?",
+      "baseline_trap": "light entering a room",
+      "gold": "analysis bias",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "experimenter bias",
+        "observer bias",
+        "tuning bias",
+        "result bias",
+        "selection bias"
+      ],
+      "gold_responses": [
+        "It prevents subjective adjustments driven by expected signals."
+      ],
+      "trap_aliases": [
+        "sunlight",
+        "outside light",
+        "glare"
+      ],
+      "trap_responses": [
+        "It prevents light from entering a room.",
+        "It blocks sunlight through the window.",
+        "It keeps glare out of an interior space."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag establish?",
+      "baseline_trap": "a product's identity",
+      "gold": "flavor identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "jet flavor",
+        "lepton flavor",
+        "b-quark identity",
+        "quark flavor",
+        "flavour quantum number",
+        "parent flavor",
+        "production flavor"
+      ],
+      "gold_responses": [
+        "It can establish the flavor of a particle."
+      ],
+      "trap_aliases": [
+        "item identity",
+        "product identification",
+        "merchandise identity"
+      ],
+      "trap_responses": [
+        "It can establish a product's identity.",
+        "It identifies the item for sale.",
+        "It links merchandise to its product information."
+      ]
+    },
+    {
+      "term": "track",
+      "question": "What can a track reveal?",
+      "baseline_trap": "a song or route",
+      "gold": "charge sign",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "particle trajectory",
+        "momentum direction",
+        "vertex position",
+        "momentum",
+        "production vertex",
+        "decay length",
+        "particle identity"
+      ],
+      "gold_responses": [
+        "Track signatures help identify the particle species."
+      ],
+      "trap_aliases": [
+        "song title",
+        "album position",
+        "artist style"
+      ],
+      "trap_responses": [
+        "It can reveal an artist's musical style.",
+        "A track may reveal its place on an album.",
+        "It can reveal the song's genre or mood."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What can a window define?",
+      "baseline_trap": "a view or opening",
+      "gold": "mass interval",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "signal region",
+        "invariant-mass range",
+        "kinematic interval",
+        "energy range",
+        "selection cut",
+        "fiducial region"
+      ],
+      "gold_responses": [
+        "It sets the energy range retained for analysis."
+      ],
+      "trap_aliases": [
+        "scenic view",
+        "wall opening",
+        "natural light"
+      ],
+      "trap_responses": [
+        "It can define a view of the outside.",
+        "A window defines an opening in a wall.",
+        "It can define how much natural light enters."
+      ]
+    },
+    {
+      "term": "landscape",
+      "question": "What can a landscape contain?",
+      "baseline_trap": "gardens and terrain",
+      "gold": "vacuum states",
+      "dominant_prior": "gardening",
+      "gold_aliases": [
+        "string vacua",
+        "flux vacua",
+        "metastable vacua",
+        "flux configurations",
+        "moduli values",
+        "effective theories"
+      ],
+      "gold_responses": [
+        "It can contain many metastable vacuum states."
+      ],
+      "trap_aliases": [
+        "flowers",
+        "trees",
+        "garden paths"
+      ],
+      "trap_responses": [
+        "A landscape can contain gardens, hills, and terrain.",
+        "It may contain flowers, trees, and walking paths.",
+        "Landscapes include lawns, rocks, and planted beds."
+      ]
+    },
+    {
+      "term": "texture",
+      "question": "What can a texture encode?",
+      "baseline_trap": "a fabric's surface feel",
+      "gold": "flavor structure",
+      "dominant_prior": "clothing",
+      "gold_aliases": [
+        "Yukawa pattern",
+        "mass hierarchy",
+        "mixing pattern",
+        "Yukawa hierarchies",
+        "mixing angles",
+        "CP phases",
+        "mass hierarchies"
+      ],
+      "gold_responses": [
+        "It can encode the flavor structure of Yukawa couplings."
+      ],
+      "trap_aliases": [
+        "weave pattern",
+        "fiber grain",
+        "knit structure"
+      ],
+      "trap_responses": [
+        "A texture can encode a fabric's surface feel.",
+        "It may show the weave pattern and fiber grain.",
+        "It can reveal whether cloth feels smooth or rough."
+      ]
+    },
+    {
+      "term": "hierarchy",
+      "question": "What can a hierarchy order?",
+      "baseline_trap": "employees by rank",
+      "gold": "neutrino masses",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "mass eigenstates",
+        "neutrino states",
+        "fermion masses",
+        "quark masses",
+        "lepton masses"
+      ],
+      "gold_responses": [
+        "It can rank the neutrino masses."
+      ],
+      "trap_aliases": [
+        "management levels",
+        "staff positions",
+        "organizational roles"
+      ],
+      "trap_responses": [
+        "A hierarchy can order employees by rank.",
+        "It ranks staff according to seniority.",
+        "It organizes roles from junior to executive."
+      ]
+    },
+    {
+      "term": "veto",
+      "question": "What can a veto reject?",
+      "baseline_trap": "a proposed law",
+      "gold": "background event",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "cosmic-ray event",
+        "pileup event",
+        "noise event",
+        "candidate event",
+        "muon background"
+      ],
+      "gold_responses": [
+        "A veto can reject a background event."
+      ],
+      "trap_aliases": [
+        "a bill",
+        "legislation",
+        "a policy proposal"
+      ],
+      "trap_responses": [
+        "A veto can reject a proposed law.",
+        "It blocks a bill from becoming law.",
+        "It can prevent legislation from taking effect."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield count?",
+      "baseline_trap": "crop output",
+      "gold": "event count",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "signal events",
+        "produced particles",
+        "expected events",
+        "decay products",
+        "signal yield",
+        "event total",
+        "selected candidates",
+        "particle multiplicity"
+      ],
+      "gold_responses": [
+        "It counts observed signal candidates."
+      ],
+      "trap_aliases": [
+        "harvest amount",
+        "crop production",
+        "agricultural output"
+      ],
+      "trap_responses": [
+        "It counts the amount harvested from a crop.",
+        "It measures total crop production.",
+        "It is the quantity of produce obtained."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What does a run delimit?",
+      "baseline_trap": "a scoring streak",
+      "gold": "data-taking period",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "acquisition interval",
+        "detector operation",
+        "recorded dataset",
+        "analysis period",
+        "recording session",
+        "data period"
+      ],
+      "gold_responses": [
+        "It delimits a period of stable data collection."
+      ],
+      "trap_aliases": [
+        "point streak",
+        "scoring sequence",
+        "winning streak"
+      ],
+      "trap_responses": [
+        "It marks a consecutive sequence of scoring.",
+        "It describes a stretch of points scored in succession.",
+        "It denotes a scoring streak by one team."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What does a channel specify?",
+      "baseline_trap": "television programming",
+      "gold": "decay mode",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "final state",
+        "reaction mode",
+        "scattering process",
+        "production mode",
+        "interaction process",
+        "decay topology"
+      ],
+      "gold_responses": [
+        "It specifies the particles in a selected final state."
+      ],
+      "trap_aliases": [
+        "program lineup",
+        "broadcast schedule",
+        "show selection"
+      ],
+      "trap_responses": [
+        "It specifies the programs available for viewing.",
+        "It identifies a station's broadcast programming.",
+        "It determines the scheduled television content."
+      ]
+    },
+    {
+      "term": "pileup",
+      "question": "What can pileup obscure?",
+      "baseline_trap": "traffic flow",
+      "gold": "hard scatter",
+      "dominant_prior": "traffic",
+      "gold_aliases": [
+        "signal event",
+        "primary collision",
+        "event vertex",
+        "rare decay",
+        "primary interaction",
+        "hard process",
+        "high-pT scattering"
+      ],
+      "gold_responses": [
+        "It can mask a rare high-momentum signal."
+      ],
+      "trap_aliases": [
+        "traffic conditions",
+        "vehicle movement",
+        "road congestion"
+      ],
+      "trap_responses": [
+        "It can obscure the normal flow of traffic.",
+        "It can block visibility of moving vehicles.",
+        "It can hide lane patterns during congestion."
+      ]
+    },
+    {
+      "term": "recoil",
+      "question": "What does recoil measure?",
+      "baseline_trap": "firearm kickback",
+      "gold": "momentum transfer",
+      "dominant_prior": "firearms",
+      "gold_aliases": [
+        "target momentum",
+        "scattering kinematics",
+        "missing momentum",
+        "nuclear recoil",
+        "four-momentum transfer",
+        "recoil energy",
+        "momentum exchange"
+      ],
+      "gold_responses": [
+        "It measures momentum transferred in an interaction."
+      ],
+      "trap_aliases": [
+        "kickback force",
+        "felt kick",
+        "muzzle jump"
+      ],
+      "trap_responses": [
+        "It measures the gun's backward kick when fired.",
+        "It indicates force transmitted back to the shooter.",
+        "It reflects the weapon's rearward motion after discharge."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure measure?",
+      "baseline_trap": "photographic light",
+      "gold": "area-time",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "integrated acceptance",
+        "detector livetime",
+        "effective area",
+        "target-time product",
+        "effective area-time",
+        "livetime acceptance",
+        "detector aperture"
+      ],
+      "gold_responses": [
+        "It quantifies accumulated detector acceptance during observations."
+      ],
+      "trap_aliases": [
+        "light dose",
+        "shutter duration",
+        "sensor illumination"
+      ],
+      "trap_responses": [
+        "It measures the amount of light reaching the sensor.",
+        "It determines how long the camera gathers light.",
+        "It controls image brightness through light collection."
+      ]
+    },
+    {
+      "term": "acceptance",
+      "question": "What does acceptance define?",
+      "baseline_trap": "contractual assent",
+      "gold": "fiducial phase space",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "angular coverage",
+        "geometric coverage",
+        "kinematic reach",
+        "fiducial region",
+        "kinematic coverage",
+        "selection efficiency"
+      ],
+      "gold_responses": [
+        "It delineates the measurable event population within fiducial cuts."
+      ],
+      "trap_aliases": [
+        "assent",
+        "agreement",
+        "consent"
+      ],
+      "trap_responses": [
+        "A party's unqualified agreement to an offer.",
+        "It defines consent to the terms of a contract.",
+        "Acceptance forms a binding agreement between the parties."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:55:57Z"
+}

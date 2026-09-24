@@ -1,0 +1,465 @@
+{
+  "cluster_id": "4802",
+  "cluster": "Environmental and resources law",
+  "domain": "Environmental and resources law",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "banking, everyday finance, farming, finance, hospitality, insurance, logistics, media, payroll, real estate, retail, sales, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After closure, is everything over?",
+    "After the discharge, is everything cleared?",
+    "How does a permit work?",
+    "How does an offset work?",
+    "How is a discharge allowed?",
+    "What counts as a take?",
+    "What counts as production?",
+    "What does a baseline show?",
+    "What does a bond secure?",
+    "What does an assessment do?",
+    "What does closure require?",
+    "What does monitoring track?",
+    "What does restoration require?",
+    "What makes something a nuisance?",
+    "What makes something a source?",
+    "What makes something waste?",
+    "Who sets the standard?",
+    "assessment",
+    "baseline",
+    "bond",
+    "closure",
+    "discharge",
+    "monitoring",
+    "nuisance",
+    "offset",
+    "permit",
+    "production",
+    "restoration",
+    "source",
+    "standard",
+    "take",
+    "waste"
+  ],
+  "items": [
+    {
+      "term": "bank",
+      "question": "What does a bank generate?",
+      "baseline_trap": "interest income",
+      "gold": "mitigation credits",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "conservation credits",
+        "wetland credits",
+        "habitat credits",
+        "stream credits"
+      ],
+      "gold_responses": [
+        "It generates mitigation credits for authorized resource impacts."
+      ],
+      "trap_aliases": [
+        "loan revenue",
+        "deposit interest"
+      ],
+      "trap_responses": [
+        "It generates interest income from loans.",
+        "A bank earns revenue through interest charges.",
+        "It generates income from lending deposited funds."
+      ]
+    },
+    {
+      "term": "allowance",
+      "question": "What does an allowance authorize?",
+      "baseline_trap": "personal spending",
+      "gold": "emission quantity",
+      "dominant_prior": "payroll",
+      "gold_aliases": [
+        "carbon emissions",
+        "CO2e release",
+        "greenhouse gases",
+        "one metric ton",
+        "regulated emissions"
+      ],
+      "gold_responses": [
+        "It authorizes emission of a specified quantity."
+      ],
+      "trap_aliases": [
+        "employee expenses",
+        "discretionary purchases"
+      ],
+      "trap_responses": [
+        "It authorizes personal spending within a set amount.",
+        "An allowance permits approved employee expenses.",
+        "It authorizes purchases up to the allotted budget."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load measure?",
+      "baseline_trap": "cargo weight",
+      "gold": "pollutant mass",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "contaminant mass",
+        "nutrient mass",
+        "sediment mass",
+        "contaminant burden",
+        "mass discharge",
+        "pollutant flux",
+        "waste loading"
+      ],
+      "gold_responses": [
+        "It identifies the mass of a regulated pollutant in discharge."
+      ],
+      "trap_aliases": [
+        "freight weight",
+        "shipment mass",
+        "payload"
+      ],
+      "trap_responses": [
+        "It measures the weight of cargo being transported.",
+        "It indicates how much freight a vehicle carries.",
+        "It measures the cargo weight placed on a truck."
+      ]
+    },
+    {
+      "term": "deposit",
+      "question": "What does a deposit contain?",
+      "baseline_trap": "banked funds",
+      "gold": "mineral resource",
+      "dominant_prior": "banking",
+      "gold_aliases": [
+        "ore body",
+        "mineralization",
+        "recoverable ore",
+        "ore reserves",
+        "mineralized material",
+        "extractable minerals",
+        "ore-bearing rock"
+      ],
+      "gold_responses": [
+        "It contains a concentration of minerals suitable for mining."
+      ],
+      "trap_aliases": [
+        "account balance",
+        "banked money",
+        "customer funds"
+      ],
+      "trap_responses": [
+        "It contains money placed into a bank account.",
+        "It contains funds credited to the depositor's account.",
+        "It contains cash or other funds held by a bank."
+      ]
+    },
+    {
+      "term": "royalty",
+      "question": "What does a royalty pay for?",
+      "baseline_trap": "creative work",
+      "gold": "resource extraction",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "mineral extraction",
+        "oil production",
+        "gas production",
+        "resource removal"
+      ],
+      "gold_responses": [
+        "It compensates the resource owner for production."
+      ],
+      "trap_aliases": [
+        "copyrighted works",
+        "music use",
+        "book sales"
+      ],
+      "trap_responses": [
+        "It pays creators for use of their work.",
+        "It compensates an author or artist for sales.",
+        "It pays for permission to use copyrighted material."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What does a field produce?",
+      "baseline_trap": "crops",
+      "gold": "hydrocarbons",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "crude oil",
+        "natural gas",
+        "petroleum",
+        "oil and gas"
+      ],
+      "gold_responses": [
+        "It yields hydrocarbons from underground reservoirs."
+      ],
+      "trap_aliases": [
+        "grain crops",
+        "vegetables",
+        "farm produce"
+      ],
+      "trap_responses": [
+        "It produces crops for food or sale.",
+        "It grows grains, vegetables, or other plants.",
+        "It yields agricultural produce after cultivation."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim secure?",
+      "baseline_trap": "insurance compensation",
+      "gold": "mining rights",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "prospecting rights",
+        "exploration rights",
+        "extraction rights",
+        "mineral rights",
+        "mining tenure",
+        "mineral title"
+      ],
+      "gold_responses": [
+        "It secures the right to develop a mineral resource."
+      ],
+      "trap_aliases": [
+        "insurance payout",
+        "policy benefits",
+        "indemnity payment"
+      ],
+      "trap_responses": [
+        "It secures compensation for a covered loss.",
+        "It secures an insurance payout under the policy.",
+        "It secures payment for damages or medical expenses."
+      ]
+    },
+    {
+      "term": "inventory",
+      "question": "What does an inventory quantify?",
+      "baseline_trap": "retail stock",
+      "gold": "greenhouse gases",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "carbon emissions",
+        "pollutant releases",
+        "annual emissions",
+        "GHG emissions",
+        "emissions sources",
+        "carbon dioxide"
+      ],
+      "gold_responses": [
+        "It quantifies greenhouse-gas emissions from specified sources."
+      ],
+      "trap_aliases": [
+        "store inventory",
+        "goods on hand"
+      ],
+      "trap_responses": [
+        "It quantifies goods available for sale.",
+        "It quantifies stock held in a store.",
+        "It quantifies products on hand for customers."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What does a reserve quantify?",
+      "baseline_trap": "a financial contingency fund",
+      "gold": "recoverable minerals",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "ore tonnage",
+        "proved reserves",
+        "mineral resources",
+        "recoverable ore",
+        "extractable ore",
+        "proved deposits",
+        "recoverable resources"
+      ],
+      "gold_responses": [
+        "It quantifies economically recoverable mineral deposits."
+      ],
+      "trap_aliases": [
+        "cash reserve",
+        "contingency fund",
+        "rainy-day fund"
+      ],
+      "trap_responses": [
+        "It quantifies money set aside for unexpected expenses.",
+        "It measures funds available to cover future contingencies.",
+        "It estimates the financial cushion held against losses."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does a stock estimate?",
+      "baseline_trap": "share value",
+      "gold": "fish abundance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "fish population",
+        "spawning biomass",
+        "harvestable biomass",
+        "population size",
+        "fish biomass"
+      ],
+      "gold_responses": [
+        "It quantifies population size for fisheries management."
+      ],
+      "trap_aliases": [
+        "share price",
+        "market value",
+        "equity value"
+      ],
+      "trap_responses": [
+        "It estimates the value of company shares.",
+        "It measures a firm's market capitalization.",
+        "It indicates the price investors assign to equity."
+      ]
+    },
+    {
+      "term": "quota",
+      "question": "What does a quota allocate?",
+      "baseline_trap": "a sales target",
+      "gold": "harvest share",
+      "dominant_prior": "sales",
+      "gold_aliases": [
+        "catch entitlement",
+        "fishing allocation",
+        "extraction share",
+        "catch allocation",
+        "take allocation",
+        "fishing privilege",
+        "harvest entitlement"
+      ],
+      "gold_responses": [
+        "It distributes permitted catch among authorized harvesters."
+      ],
+      "trap_aliases": [
+        "revenue goal",
+        "unit target",
+        "sales volume"
+      ],
+      "trap_responses": [
+        "It assigns a target number of units to sell.",
+        "A quota allocates expected sales volume to a representative.",
+        "It sets the sales amount a team must achieve."
+      ]
+    },
+    {
+      "term": "season",
+      "question": "What does a season restrict?",
+      "baseline_trap": "sports scheduling",
+      "gold": "wildlife harvest",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "hunting dates",
+        "game pursuit",
+        "species harvest",
+        "taking period",
+        "wildlife take",
+        "hunting harvest",
+        "lawful take",
+        "harvest timing"
+      ],
+      "gold_responses": [
+        "It confines wildlife harvest to an authorized time window."
+      ],
+      "trap_aliases": [
+        "game schedule",
+        "league calendar",
+        "play dates"
+      ],
+      "trap_responses": [
+        "It restricts when games are scheduled to be played.",
+        "A season limits competition to a defined calendar period.",
+        "It determines the dates for league games and events."
+      ]
+    },
+    {
+      "term": "corridor",
+      "question": "What does a corridor connect?",
+      "baseline_trap": "hotel rooms",
+      "gold": "habitat patches",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "wildlife habitat",
+        "migration routes",
+        "protected areas",
+        "ecological areas",
+        "fragmented habitats",
+        "wildlife populations"
+      ],
+      "gold_responses": [
+        "It connects isolated populations through suitable habitat."
+      ],
+      "trap_aliases": [
+        "guest rooms",
+        "hotel wings",
+        "building areas"
+      ],
+      "trap_responses": [
+        "It connects guest rooms along a floor.",
+        "It links hotel rooms to shared facilities.",
+        "It connects different wings of a hotel."
+      ]
+    },
+    {
+      "term": "cap",
+      "question": "What does a cap limit?",
+      "baseline_trap": "consumer spending",
+      "gold": "total emissions",
+      "dominant_prior": "everyday finance",
+      "gold_aliases": [
+        "GHG emissions",
+        "aggregate pollution",
+        "allowable releases",
+        "emissions volume",
+        "aggregate emissions",
+        "greenhouse gases",
+        "pollution releases",
+        "allowance supply"
+      ],
+      "gold_responses": [
+        "It limits total emissions from regulated sources."
+      ],
+      "trap_aliases": [
+        "household spending",
+        "credit spending",
+        "monthly expenses"
+      ],
+      "trap_responses": [
+        "It limits how much consumers can spend.",
+        "It sets a maximum spending amount.",
+        "It restricts purchases within a budget."
+      ]
+    },
+    {
+      "term": "listing",
+      "question": "What can a listing confer?",
+      "baseline_trap": "market exposure",
+      "gold": "protected status",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "endangered status",
+        "threatened status",
+        "statutory protection",
+        "species protection",
+        "statutory safeguards",
+        "conservation status",
+        "ESA coverage"
+      ],
+      "gold_responses": [
+        "Listing may activate protective restrictions for threatened wildlife."
+      ],
+      "trap_aliases": [
+        "buyer visibility",
+        "sale exposure",
+        "market visibility"
+      ],
+      "trap_responses": [
+        "It can give a property exposure to potential buyers.",
+        "A listing can increase market visibility for the home.",
+        "It may attract buyer interest and offers."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:00:04Z"
+}

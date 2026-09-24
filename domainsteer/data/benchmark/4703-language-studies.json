@@ -1,0 +1,475 @@
+{
+  "cluster_id": "4703",
+  "cluster": "Language studies",
+  "domain": "Language studies",
+  "division": "Language, Communication and Culture",
+  "dominant_prior": "audio media, building, everyday kinship, everyday social usage, fiction, finance, law, mathematics, medicine, music, politics, retail, utilities",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a channel?",
+    "What is a code?",
+    "What is a form?",
+    "What is a marker?",
+    "What is a person?",
+    "What is a script?",
+    "What is a standard?",
+    "What is a translation?",
+    "What is an article?",
+    "What is an attachment?",
+    "What is an ellipsis?",
+    "What is borrowing?",
+    "What is case?",
+    "What is mood?",
+    "What is tone?",
+    "article",
+    "attachment",
+    "borrowing",
+    "case",
+    "channel",
+    "code",
+    "ellipsis",
+    "form",
+    "marker",
+    "mood",
+    "person",
+    "script",
+    "standard",
+    "tone",
+    "translation"
+  ],
+  "items": [
+    {
+      "term": "register",
+      "question": "What can a register signal?",
+      "baseline_trap": "a completed retail sale",
+      "gold": "social setting",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "formality level",
+        "speech style",
+        "social relation",
+        "speaker status",
+        "social relationship",
+        "communicative context"
+      ],
+      "gold_responses": [
+        "It can signal the social setting of an interaction."
+      ],
+      "trap_aliases": [
+        "checkout transaction",
+        "purchase completion",
+        "sales transaction"
+      ],
+      "trap_responses": [
+        "It can signal that a retail transaction was completed.",
+        "It may record a completed customer purchase.",
+        "It can indicate that an item was sold."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What can pitch distinguish?",
+      "baseline_trap": "musical notes",
+      "gold": "lexical contrast",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "word meanings",
+        "lexical items",
+        "tone categories",
+        "lexical tone",
+        "tonal category",
+        "word meaning",
+        "phonemic contrast"
+      ],
+      "gold_responses": [
+        "It can mark contrasts between tonal word forms."
+      ],
+      "trap_aliases": [
+        "musical tones",
+        "note identity",
+        "melodic interval"
+      ],
+      "trap_responses": [
+        "It can distinguish one musical note from another.",
+        "It identifies the highness or lowness of a note.",
+        "It separates notes within a melody."
+      ]
+    },
+    {
+      "term": "clause",
+      "question": "What can a clause express?",
+      "baseline_trap": "a contractual provision",
+      "gold": "a proposition",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "predication",
+        "event relation",
+        "state of affairs",
+        "a statement",
+        "a question",
+        "a command",
+        "a condition"
+      ],
+      "gold_responses": [
+        "It can express an event, state, or situation."
+      ],
+      "trap_aliases": [
+        "a stipulation",
+        "a contract term",
+        "a legal condition"
+      ],
+      "trap_responses": [
+        "It can express a binding contractual obligation.",
+        "It may specify rights, duties, or exceptions.",
+        "It can establish a condition within an agreement."
+      ]
+    },
+    {
+      "term": "construction",
+      "question": "What can a construction determine?",
+      "baseline_trap": "a building layout",
+      "gold": "word order",
+      "dominant_prior": "building",
+      "gold_aliases": [
+        "constituent order",
+        "sentence pattern",
+        "phrase structure",
+        "syntactic arrangement",
+        "argument placement"
+      ],
+      "gold_responses": [
+        "It can govern constituent placement in an utterance."
+      ],
+      "trap_aliases": [
+        "floor plan",
+        "room arrangement",
+        "site layout"
+      ],
+      "trap_responses": [
+        "It can determine the layout of a building.",
+        "It may establish room placement and circulation.",
+        "It can shape the arrangement of structural elements."
+      ]
+    },
+    {
+      "term": "witness",
+      "question": "What can a witness attest?",
+      "baseline_trap": "a legal fact",
+      "gold": "textual reading",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "variant wording",
+        "manuscript text",
+        "earlier wording",
+        "manuscript reading",
+        "textual variant",
+        "scribal wording",
+        "source form"
+      ],
+      "gold_responses": [
+        "It can attest to the wording transmitted by a copy."
+      ],
+      "trap_aliases": [
+        "observed fact",
+        "material event",
+        "sworn testimony"
+      ],
+      "trap_responses": [
+        "A witness can attest to an observed fact.",
+        "They may attest to what happened at the scene.",
+        "A witness can confirm a material event under oath."
+      ]
+    },
+    {
+      "term": "reading",
+      "question": "What can a reading show?",
+      "baseline_trap": "energy consumption",
+      "gold": "variant wording",
+      "dominant_prior": "utilities",
+      "gold_aliases": [
+        "textual variant",
+        "manuscript wording",
+        "alternate text",
+        "alternate wording",
+        "manuscript form",
+        "variant phrase"
+      ],
+      "gold_responses": [
+        "A reading can show variant wording in a manuscript."
+      ],
+      "trap_aliases": [
+        "electricity usage",
+        "power consumption",
+        "energy demand"
+      ],
+      "trap_responses": [
+        "A reading can show how much energy was consumed.",
+        "It may indicate electricity use over a billing period.",
+        "A meter reading shows current power consumption."
+      ]
+    },
+    {
+      "term": "family",
+      "question": "What can a family include?",
+      "baseline_trap": "household relatives",
+      "gold": "related languages",
+      "dominant_prior": "everyday kinship",
+      "gold_aliases": [
+        "daughter languages",
+        "cognate languages",
+        "language lineage",
+        "language group",
+        "genetic grouping",
+        "related varieties"
+      ],
+      "gold_responses": [
+        "Such a family may include closely or distantly related languages."
+      ],
+      "trap_aliases": [
+        "kin group",
+        "close relatives",
+        "household members"
+      ],
+      "trap_responses": [
+        "A family can include parents, children, and other relatives.",
+        "It may include people living in the same household.",
+        "Families can include biological, adopted, and extended relatives."
+      ]
+    },
+    {
+      "term": "tense",
+      "question": "What can tense indicate?",
+      "baseline_trap": "muscle strain",
+      "gold": "event time",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "temporal reference",
+        "time relation",
+        "situation time",
+        "past time",
+        "present time",
+        "future reference"
+      ],
+      "gold_responses": [
+        "It may distinguish present events from future ones."
+      ],
+      "trap_aliases": [
+        "muscle tightness",
+        "physical stress"
+      ],
+      "trap_responses": [
+        "Tense muscles can indicate strain or overuse.",
+        "Muscle tension may indicate stress or injury.",
+        "Tenseness can indicate tight or strained muscles."
+      ]
+    },
+    {
+      "term": "gender",
+      "question": "What does gender classify?",
+      "baseline_trap": "human sex category",
+      "gold": "noun classes",
+      "dominant_prior": "everyday social usage",
+      "gold_aliases": [
+        "grammatical class",
+        "noun category",
+        "agreement class",
+        "concord class",
+        "grammatical classes",
+        "noun categories",
+        "agreement classes",
+        "gender classes"
+      ],
+      "gold_responses": [
+        "It classifies nouns into grammatical classes."
+      ],
+      "trap_aliases": [
+        "biological sex",
+        "male or female",
+        "social identity"
+      ],
+      "trap_responses": [
+        "It classifies people by sex or gender identity.",
+        "It distinguishes male, female, and other identities.",
+        "It categorizes human sex and social identity."
+      ]
+    },
+    {
+      "term": "number",
+      "question": "What does number specify?",
+      "baseline_trap": "mathematical quantity",
+      "gold": "singular-plural status",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "count distinction",
+        "singular reference",
+        "plural reference",
+        "quantity category",
+        "grammatical number",
+        "singular plural",
+        "plurality marking"
+      ],
+      "gold_responses": [
+        "It specifies whether a form is singular or plural."
+      ],
+      "trap_aliases": [
+        "quantity",
+        "numerical value",
+        "amount"
+      ],
+      "trap_responses": [
+        "It specifies a numerical quantity or value.",
+        "It indicates how many items there are.",
+        "It represents an amount or mathematical quantity."
+      ]
+    },
+    {
+      "term": "voice",
+      "question": "What can voice identify?",
+      "baseline_trap": "speaker identity",
+      "gold": "participant roles",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "role mapping",
+        "agent-patient relation",
+        "syntactic alignment",
+        "active-passive contrast",
+        "semantic roles",
+        "argument roles",
+        "grammatical relations",
+        "agency relations"
+      ],
+      "gold_responses": [
+        "It identifies which participant is foregrounded."
+      ],
+      "trap_aliases": [
+        "vocal identity",
+        "talker identity",
+        "voiceprint"
+      ],
+      "trap_responses": [
+        "Voice can identify a speaker's identity.",
+        "It can reveal who is speaking.",
+        "A voice may identify the individual talker."
+      ]
+    },
+    {
+      "term": "agreement",
+      "question": "What does agreement link?",
+      "baseline_trap": "contracting parties",
+      "gold": "feature concord",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "subject-verb concord",
+        "noun-adjective concord",
+        "grammatical matching",
+        "feature matching",
+        "grammatical concord",
+        "morphosyntactic features",
+        "inflectional features",
+        "feature values"
+      ],
+      "gold_responses": [
+        "It links concordant forms within a phrase."
+      ],
+      "trap_aliases": [
+        "legal parties",
+        "signatories",
+        "contractual parties"
+      ],
+      "trap_responses": [
+        "An agreement links the parties to a contract.",
+        "It binds signatories to shared terms.",
+        "It establishes obligations between legal parties."
+      ]
+    },
+    {
+      "term": "inflection",
+      "question": "What does inflection mark?",
+      "baseline_trap": "market trend reversal",
+      "gold": "grammatical feature",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "word ending",
+        "verb category",
+        "noun category",
+        "morphological feature",
+        "case",
+        "number",
+        "tense",
+        "agreement"
+      ],
+      "gold_responses": [
+        "It marks grammatical categories such as case, number, and tense."
+      ],
+      "trap_aliases": [
+        "trend reversal",
+        "market turnaround",
+        "price reversal"
+      ],
+      "trap_responses": [
+        "It marks a reversal in the market's prevailing trend.",
+        "It signals that prices may change direction.",
+        "It indicates a turning point in market momentum."
+      ]
+    },
+    {
+      "term": "radical",
+      "question": "What can a radical organize?",
+      "baseline_trap": "political movement",
+      "gold": "dictionary entries",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "Chinese characters",
+        "character groups",
+        "lookup classes",
+        "indexing component",
+        "character lookup",
+        "dictionary indexing",
+        "lexical entries"
+      ],
+      "gold_responses": [
+        "It provides an indexing system for character dictionaries."
+      ],
+      "trap_aliases": [
+        "activist group",
+        "reform campaign"
+      ],
+      "trap_responses": [
+        "It can organize a political movement seeking major change.",
+        "It can mobilize supporters around a revolutionary cause.",
+        "It may organize activists into a reform campaign."
+      ]
+    },
+    {
+      "term": "character",
+      "question": "What can a character represent?",
+      "baseline_trap": "a fictional person",
+      "gold": "a morpheme",
+      "dominant_prior": "fiction",
+      "gold_aliases": [
+        "written morpheme",
+        "spoken syllable",
+        "meaning unit",
+        "a phoneme",
+        "a syllable",
+        "a word",
+        "a sound"
+      ],
+      "gold_responses": [
+        "Some characters represent whole words or morphemes."
+      ],
+      "trap_aliases": [
+        "a protagonist",
+        "an antagonist"
+      ],
+      "trap_responses": [
+        "A character can represent a fictional person.",
+        "It may represent a protagonist in a story.",
+        "A character can symbolize a social type."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:29:31Z"
+}

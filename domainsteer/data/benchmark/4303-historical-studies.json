@@ -1,0 +1,479 @@
+{
+  "cluster_id": "4303",
+  "cluster": "Historical studies",
+  "domain": "Historical studies",
+  "division": "History, Heritage and Archaeology",
+  "dominant_prior": "academia, business, finance, hospitality, law, manufacturing, media, navigation, programming, retail, sports, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What belongs in the canon?",
+    "What is a colony?",
+    "What is a party?",
+    "What is a period?",
+    "What is a republic?",
+    "What is a restoration?",
+    "What is a revolution?",
+    "What is a settlement?",
+    "What is an agent?",
+    "What is an archive?",
+    "What is conversion?",
+    "What is corruption?",
+    "What is evidence?",
+    "What is memory?",
+    "What is transmission?",
+    "agent",
+    "archive",
+    "canon",
+    "colony",
+    "conversion",
+    "corruption",
+    "evidence",
+    "memory",
+    "party",
+    "period",
+    "republic",
+    "restoration",
+    "revolution",
+    "settlement",
+    "transmission"
+  ],
+  "items": [
+    {
+      "term": "code",
+      "question": "What does a code prescribe?",
+      "baseline_trap": "program instructions",
+      "gold": "legal obligations",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "binding law",
+        "juridical rules",
+        "state law",
+        "legal duties",
+        "statutory rules",
+        "juridical obligations",
+        "prescribed conduct"
+      ],
+      "gold_responses": [
+        "It establishes duties, penalties, and lawful procedures."
+      ],
+      "trap_aliases": [
+        "program commands",
+        "algorithm steps",
+        "source instructions"
+      ],
+      "trap_responses": [
+        "It prescribes instructions a computer should execute.",
+        "It tells a program how to perform specific tasks.",
+        "It defines commands and logic for software execution."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "job security",
+      "gold": "landholding",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "land rights",
+        "customary holding",
+        "hereditary possession",
+        "land tenure",
+        "hereditary holding",
+        "estate possession",
+        "property rights"
+      ],
+      "gold_responses": [
+        "It secures possession and use of a particular piece of land."
+      ],
+      "trap_aliases": [
+        "employment protection",
+        "permanent appointment",
+        "faculty status"
+      ],
+      "trap_responses": [
+        "It secures protection from dismissal without cause.",
+        "It provides long-term job security for faculty.",
+        "It guarantees a continuing academic appointment after review."
+      ]
+    },
+    {
+      "term": "race",
+      "question": "What can race determine?",
+      "baseline_trap": "the winner",
+      "gold": "legal status",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "civic status",
+        "racial hierarchy",
+        "legal standing",
+        "citizenship rights",
+        "social rank",
+        "civic standing",
+        "access to office"
+      ],
+      "gold_responses": [
+        "Race may determine access to political participation."
+      ],
+      "trap_aliases": [
+        "first place",
+        "finishing order",
+        "race result"
+      ],
+      "trap_responses": [
+        "It determines who wins the competition.",
+        "The race determines the first-place finisher.",
+        "It decides the order in which runners finish."
+      ]
+    },
+    {
+      "term": "tribute",
+      "question": "What does tribute acknowledge?",
+      "baseline_trap": "an honored performer",
+      "gold": "political subordination",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "imperial dependence",
+        "vassal obligation",
+        "subject status",
+        "imperial supremacy",
+        "vassalage",
+        "suzerainty",
+        "overlordship"
+      ],
+      "gold_responses": [
+        "Tribute acknowledges political subordination to a superior power."
+      ],
+      "trap_aliases": [
+        "a performer",
+        "an entertainer",
+        "a celebrity"
+      ],
+      "trap_responses": [
+        "It acknowledges an honored performer.",
+        "It recognizes the achievements of an entertainer.",
+        "A tribute honors a celebrated artist or celebrity."
+      ]
+    },
+    {
+      "term": "client",
+      "question": "What does a client owe?",
+      "baseline_trap": "payment",
+      "gold": "political loyalty",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "patronal allegiance",
+        "personal dependence",
+        "client obligation",
+        "allegiance",
+        "personal loyalty",
+        "political support",
+        "faithful service"
+      ],
+      "gold_responses": [
+        "A client owes political loyalty to a patron."
+      ],
+      "trap_aliases": [
+        "fee payment",
+        "compensation",
+        "invoice payment"
+      ],
+      "trap_responses": [
+        "A client owes payment for goods or services.",
+        "They must pay the agreed fee.",
+        "The client owes any outstanding balance."
+      ]
+    },
+    {
+      "term": "station",
+      "question": "What can a station indicate?",
+      "baseline_trap": "a rail stop",
+      "gold": "social rank",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "social standing",
+        "estate rank",
+        "status position",
+        "social status",
+        "class position",
+        "rank"
+      ],
+      "gold_responses": [
+        "A station can indicate a person's social rank."
+      ],
+      "trap_aliases": [
+        "train station",
+        "transit stop"
+      ],
+      "trap_responses": [
+        "A station can indicate a rail stop.",
+        "It marks a place where trains stop.",
+        "It identifies a transit stop on a route."
+      ]
+    },
+    {
+      "term": "line",
+      "question": "What does a line trace?",
+      "baseline_trap": "a route",
+      "gold": "lineage",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "genealogical descent",
+        "dynastic descent",
+        "kinship line",
+        "dynastic succession",
+        "family ancestry",
+        "descent group"
+      ],
+      "gold_responses": [
+        "It identifies descent within a ruling family."
+      ],
+      "trap_aliases": [
+        "course",
+        "path",
+        "trajectory"
+      ],
+      "trap_responses": [
+        "A line traces a route between places.",
+        "It marks a course for travel or navigation.",
+        "A line shows the path a vessel follows."
+      ]
+    },
+    {
+      "term": "court",
+      "question": "What does a court signify?",
+      "baseline_trap": "a legal tribunal",
+      "gold": "royal household",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "monarch's household",
+        "dynastic household",
+        "ruler's retinue",
+        "royal court",
+        "palace household",
+        "courtly establishment",
+        "monarchical household"
+      ],
+      "gold_responses": [
+        "A court signifies the ruler's household and retinue."
+      ],
+      "trap_aliases": [
+        "judicial tribunal",
+        "law court",
+        "courtroom"
+      ],
+      "trap_responses": [
+        "A court signifies a legal tribunal.",
+        "It refers to a body that hears legal cases.",
+        "A court is the judicial forum for resolving disputes."
+      ]
+    },
+    {
+      "term": "title",
+      "question": "What can a title confer?",
+      "baseline_trap": "legal ownership",
+      "gold": "social rank",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "noble rank",
+        "dynastic style",
+        "honorific status",
+        "aristocratic dignity",
+        "noble status",
+        "hereditary rank",
+        "social precedence",
+        "aristocratic standing"
+      ],
+      "gold_responses": [
+        "A title may confer honor and social standing."
+      ],
+      "trap_aliases": [
+        "property rights",
+        "ownership interest",
+        "legal title"
+      ],
+      "trap_responses": [
+        "A title can confer legal ownership of property.",
+        "It establishes the holder's ownership rights.",
+        "A title provides evidence of lawful possession."
+      ]
+    },
+    {
+      "term": "grant",
+      "question": "What can a grant convey?",
+      "baseline_trap": "research funding",
+      "gold": "land rights",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "landholding",
+        "feudal tenure",
+        "estate rights",
+        "territorial possession",
+        "land tenure",
+        "usufruct rights"
+      ],
+      "gold_responses": [
+        "A grant can convey rights to hold land."
+      ],
+      "trap_aliases": [
+        "project funding",
+        "financial award",
+        "research support"
+      ],
+      "trap_responses": [
+        "A grant can convey funding for a research project.",
+        "It provides money to support approved work.",
+        "A grant supplies financial assistance to recipients."
+      ]
+    },
+    {
+      "term": "succession",
+      "question": "What does succession determine?",
+      "baseline_trap": "business leadership",
+      "gold": "dynastic heir",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "royal heir",
+        "hereditary ruler",
+        "lineal inheritance",
+        "next sovereign",
+        "rightful claimant",
+        "royal inheritance",
+        "line of inheritance",
+        "next monarch"
+      ],
+      "gold_responses": [
+        "It determines the next rightful ruler."
+      ],
+      "trap_aliases": [
+        "CEO appointment",
+        "management control",
+        "executive replacement"
+      ],
+      "trap_responses": [
+        "It determines who leads the company next.",
+        "It decides the next chief executive.",
+        "It governs the transfer of business leadership."
+      ]
+    },
+    {
+      "term": "league",
+      "question": "What can a league unite?",
+      "baseline_trap": "sports teams",
+      "gold": "allied states",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "city-states",
+        "political allies",
+        "confederated polities",
+        "member kingdoms",
+        "member polities",
+        "military allies",
+        "confederate states"
+      ],
+      "gold_responses": [
+        "It can unite allied states against a common enemy."
+      ],
+      "trap_aliases": [
+        "sports clubs",
+        "competing teams",
+        "professional franchises"
+      ],
+      "trap_responses": [
+        "It can unite teams in organized competition.",
+        "It can unite clubs within one sport.",
+        "It can bring franchises under a common organization."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What does a host comprise?",
+      "baseline_trap": "party guests",
+      "gold": "troops",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "armed force",
+        "field army",
+        "war band",
+        "military retinue",
+        "army",
+        "armed forces",
+        "soldiery",
+        "warriors"
+      ],
+      "gold_responses": [
+        "It comprises troops assembled for military service."
+      ],
+      "trap_aliases": [
+        "attendees",
+        "invitees",
+        "visitors"
+      ],
+      "trap_responses": [
+        "It comprises guests attending a party.",
+        "A host includes invited visitors and attendees.",
+        "It consists of people gathered for social entertainment."
+      ]
+    },
+    {
+      "term": "seal",
+      "question": "What does a seal authenticate?",
+      "baseline_trap": "package integrity",
+      "gold": "royal decree",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "official charter",
+        "sovereign act",
+        "legal instrument",
+        "ruler's authority",
+        "royal charter",
+        "official edict",
+        "sovereign writ",
+        "state proclamation"
+      ],
+      "gold_responses": [
+        "It authenticates a royal decree issued under authority."
+      ],
+      "trap_aliases": [
+        "tamper evidence",
+        "product packaging",
+        "safety closure"
+      ],
+      "trap_responses": [
+        "It authenticates that a package has not been opened.",
+        "The seal verifies package integrity before purchase.",
+        "It confirms that product packaging remains tamper-free."
+      ]
+    },
+    {
+      "term": "factory",
+      "question": "What can a factory serve as?",
+      "baseline_trap": "a manufacturing site",
+      "gold": "trading post",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "merchant outpost",
+        "commercial depot",
+        "trading enclave",
+        "mercantile station",
+        "company outpost",
+        "exchange post"
+      ],
+      "gold_responses": [
+        "A factory could serve as a commercial depot for overseas trade."
+      ],
+      "trap_aliases": [
+        "manufacturing plant",
+        "industrial facility",
+        "production site"
+      ],
+      "trap_responses": [
+        "A factory serves as a site for manufacturing goods.",
+        "It can produce products through industrial processes.",
+        "A factory serves as a workplace for mass production."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:24:51Z"
+}

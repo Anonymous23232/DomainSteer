@@ -1,0 +1,472 @@
+{
+  "cluster_id": "4206",
+  "cluster": "Public health",
+  "domain": "Public health",
+  "division": "Health Sciences",
+  "dominant_prior": "computing, education, everyday planning, finance, law, mathematics, medicine, politics, project management, real estate, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After spillover, does it keep spreading?",
+    "What is a case?",
+    "What is a surge?",
+    "What is access?",
+    "What is burden?",
+    "What is capacity?",
+    "What is coverage?",
+    "What is exposure?",
+    "What is immunity?",
+    "What is promotion?",
+    "What is resilience?",
+    "What is risk?",
+    "What is screening?",
+    "What is spillover?",
+    "What is stress?",
+    "What is surveillance?",
+    "access",
+    "burden",
+    "capacity",
+    "case",
+    "coverage",
+    "exposure",
+    "immunity",
+    "promotion",
+    "resilience",
+    "risk",
+    "screening",
+    "spillover",
+    "stress",
+    "surge",
+    "surveillance"
+  ],
+  "items": [
+    {
+      "term": "index",
+      "question": "What can an index rank?",
+      "baseline_trap": "a financial market",
+      "gold": "social deprivation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "area deprivation",
+        "neighborhood disadvantage",
+        "material deprivation",
+        "area disadvantage",
+        "deprivation level",
+        "community need",
+        "socioeconomic hardship"
+      ],
+      "gold_responses": [
+        "It can rank communities according to socioeconomic disadvantage."
+      ],
+      "trap_aliases": [
+        "stock performance",
+        "market value",
+        "sector returns"
+      ],
+      "trap_responses": [
+        "It can rank the performance of a financial market.",
+        "It can rank stocks by market capitalization.",
+        "It can rank investment funds against a benchmark."
+      ]
+    },
+    {
+      "term": "gradient",
+      "question": "What can a gradient reveal?",
+      "baseline_trap": "the slope of a surface",
+      "gold": "health inequality",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "social gradient",
+        "outcome inequality",
+        "socioeconomic inequality",
+        "equity gap",
+        "socioeconomic disparity",
+        "unequal health"
+      ],
+      "gold_responses": [
+        "It can reveal how health outcomes vary by social position."
+      ],
+      "trap_aliases": [
+        "rate of change",
+        "directional derivative",
+        "surface steepness"
+      ],
+      "trap_responses": [
+        "It can reveal the slope of a surface.",
+        "It can reveal the direction of steepest increase.",
+        "It can reveal how rapidly a function changes."
+      ]
+    },
+    {
+      "term": "milestone",
+      "question": "What does a milestone mark?",
+      "baseline_trap": "a project phase",
+      "gold": "child development",
+      "dominant_prior": "project management",
+      "gold_aliases": [
+        "developmental progress",
+        "developmental attainment",
+        "child milestone",
+        "developmental achievement",
+        "age-based skill",
+        "growth indicator"
+      ],
+      "gold_responses": [
+        "It marks acquisition of developmental abilities."
+      ],
+      "trap_aliases": [
+        "project stage",
+        "phase completion",
+        "deliverable point"
+      ],
+      "trap_responses": [
+        "It marks completion of a major project phase.",
+        "It indicates a significant point in the project timeline.",
+        "It identifies when a key deliverable is due."
+      ]
+    },
+    {
+      "term": "schedule",
+      "question": "What does a schedule specify?",
+      "baseline_trap": "a calendar of appointments",
+      "gold": "dose timing",
+      "dominant_prior": "everyday planning",
+      "gold_aliases": [
+        "vaccine timetable",
+        "dose interval",
+        "immunization schedule",
+        "immunization timing",
+        "vaccination timetable",
+        "booster timing"
+      ],
+      "gold_responses": [
+        "It specifies when each vaccine dose should be given."
+      ],
+      "trap_aliases": [
+        "appointment calendar",
+        "daily planner",
+        "meeting timetable"
+      ],
+      "trap_responses": [
+        "It specifies planned appointments and their times.",
+        "It lists activities arranged for particular dates.",
+        "It shows when meetings or events are planned."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What does a label disclose?",
+      "baseline_trap": "a product brand",
+      "gold": "nutrition information",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "nutrition facts",
+        "nutrient content",
+        "dietary information",
+        "ingredient list",
+        "allergen warning",
+        "calorie content",
+        "serving size"
+      ],
+      "gold_responses": [
+        "It discloses nutritional content and serving information."
+      ],
+      "trap_aliases": [
+        "brand identity",
+        "manufacturer name",
+        "product line"
+      ],
+      "trap_responses": [
+        "It discloses the product's brand identity.",
+        "It tells shoppers who made the product.",
+        "It distinguishes one product line from another."
+      ]
+    },
+    {
+      "term": "campaign",
+      "question": "What does a campaign seek to change?",
+      "baseline_trap": "voter preferences",
+      "gold": "health behavior",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "preventive behavior",
+        "behavior change",
+        "community action",
+        "preventive habits",
+        "risk behaviors",
+        "community norms",
+        "health practices"
+      ],
+      "gold_responses": [
+        "It seeks to improve health-related behavior."
+      ],
+      "trap_aliases": [
+        "electoral support",
+        "public opinion",
+        "voting intentions"
+      ],
+      "trap_responses": [
+        "It seeks to change voter preferences.",
+        "It aims to build support for a candidate.",
+        "It tries to influence public opinion before an election."
+      ]
+    },
+    {
+      "term": "intake",
+      "question": "What does intake measure?",
+      "baseline_trap": "a patient's admission details",
+      "gold": "dietary consumption",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "food consumption",
+        "nutrient consumption",
+        "dietary intake",
+        "nutrient intake",
+        "dietary exposure",
+        "eating patterns"
+      ],
+      "gold_responses": [
+        "It measures an individual's dietary consumption."
+      ],
+      "trap_aliases": [
+        "admission record",
+        "patient registration",
+        "presenting details"
+      ],
+      "trap_responses": [
+        "It records a patient's admission details and presenting concerns.",
+        "It collects information when a patient is admitted.",
+        "It documents medical history, symptoms, and registration information."
+      ]
+    },
+    {
+      "term": "restraint",
+      "question": "What does a restraint secure?",
+      "baseline_trap": "a detained person",
+      "gold": "child passenger",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "occupant safety",
+        "child safety",
+        "crash protection",
+        "child occupant",
+        "vehicle passenger",
+        "car seat",
+        "safety harness"
+      ],
+      "gold_responses": [
+        "It secures children to reduce injury during sudden stops."
+      ],
+      "trap_aliases": [
+        "detainee",
+        "prisoner",
+        "arrestee"
+      ],
+      "trap_responses": [
+        "It secures a detained person from leaving custody.",
+        "It restrains a prisoner or arrestee.",
+        "It prevents a detainee from escaping or causing harm."
+      ]
+    },
+    {
+      "term": "indicator",
+      "question": "What can an indicator signal?",
+      "baseline_trap": "an economic trend",
+      "gold": "community health",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "population wellbeing",
+        "health status",
+        "community wellbeing",
+        "health disparity",
+        "vaccination coverage",
+        "injury risk"
+      ],
+      "gold_responses": [
+        "It can signal worsening community health needs."
+      ],
+      "trap_aliases": [
+        "market direction",
+        "recession risk",
+        "price momentum"
+      ],
+      "trap_responses": [
+        "It can signal an upcoming economic trend.",
+        "It may indicate market strength or weakness.",
+        "It can point to changes in investor sentiment."
+      ]
+    },
+    {
+      "term": "equity",
+      "question": "What can equity improve?",
+      "baseline_trap": "shareholder value",
+      "gold": "health fairness",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "health equity",
+        "fair opportunity",
+        "health justice",
+        "care access",
+        "health inclusion",
+        "fair outcomes",
+        "resource fairness"
+      ],
+      "gold_responses": [
+        "It can strengthen participation by underserved populations."
+      ],
+      "trap_aliases": [
+        "firm valuation",
+        "investor returns",
+        "ownership value"
+      ],
+      "trap_responses": [
+        "It can improve shareholder value over time.",
+        "It may increase the value of company ownership.",
+        "It can strengthen returns for stock investors."
+      ]
+    },
+    {
+      "term": "network",
+      "question": "What can a network provide?",
+      "baseline_trap": "internet connectivity",
+      "gold": "social support",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "community ties",
+        "peer support",
+        "social connection",
+        "community connection",
+        "resource access",
+        "mutual aid"
+      ],
+      "gold_responses": [
+        "It can provide social support during stressful circumstances."
+      ],
+      "trap_aliases": [
+        "online access",
+        "data transfer",
+        "wireless connection"
+      ],
+      "trap_responses": [
+        "A network can provide internet connectivity between devices.",
+        "It enables computers to exchange data and resources.",
+        "It provides access to shared servers and online services."
+      ]
+    },
+    {
+      "term": "literacy",
+      "question": "What does literacy enable?",
+      "baseline_trap": "reading comprehension",
+      "gold": "informed choices",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "health decisions",
+        "informed action",
+        "self-advocacy",
+        "health understanding",
+        "service navigation",
+        "preventive action"
+      ],
+      "gold_responses": [
+        "It helps people understand available support and services."
+      ],
+      "trap_aliases": [
+        "reading ability",
+        "writing skills",
+        "text comprehension"
+      ],
+      "trap_responses": [
+        "It enables people to read and understand written text.",
+        "It allows learners to interpret books and other materials.",
+        "It supports writing, reading, and communicating through language."
+      ]
+    },
+    {
+      "term": "housing",
+      "question": "What can housing shape?",
+      "baseline_trap": "property value",
+      "gold": "health opportunity",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "healthy living",
+        "housing stability",
+        "safe shelter",
+        "health equity",
+        "exposure risk",
+        "neighborhood opportunity"
+      ],
+      "gold_responses": [
+        "Housing can shape health opportunity across the life course."
+      ],
+      "trap_aliases": [
+        "home price",
+        "market demand",
+        "rental yield"
+      ],
+      "trap_responses": [
+        "Housing can shape property values in surrounding neighborhoods.",
+        "It can influence buyer demand and sale prices.",
+        "Housing quality can affect rental income and resale potential."
+      ]
+    },
+    {
+      "term": "basket",
+      "question": "What can a basket measure?",
+      "baseline_trap": "shopping demand",
+      "gold": "food affordability",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "diet cost",
+        "healthy food cost",
+        "household nutrition",
+        "food security",
+        "nutritious access",
+        "household food budget"
+      ],
+      "gold_responses": [
+        "A basket can measure the affordability of a healthy diet."
+      ],
+      "trap_aliases": [
+        "consumer demand",
+        "sales volume",
+        "market share"
+      ],
+      "trap_responses": [
+        "A basket can measure shopping demand for related products.",
+        "It can measure average spending per customer visit.",
+        "A basket can indicate product sales volume and purchasing patterns."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "retail transactions",
+      "gold": "vaccination status",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "immunization record",
+        "vaccine history",
+        "dose record",
+        "immunization history",
+        "vaccine doses",
+        "vaccination records",
+        "coverage status"
+      ],
+      "gold_responses": [
+        "It records children's immunization histories and vaccine doses."
+      ],
+      "trap_aliases": [
+        "sales records",
+        "purchase transactions",
+        "cash register totals"
+      ],
+      "trap_responses": [
+        "It records retail sales and customer purchases.",
+        "It records transactions processed at the point of sale.",
+        "It records cash payments, receipts, and daily sales totals."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:32:15Z"
+}

@@ -1,0 +1,468 @@
+{
+  "cluster_id": "3405",
+  "cluster": "Organic chemistry",
+  "domain": "Organic chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "computing, construction, cooking, environment, everyday English, everyday timekeeping, farming, farming equipment, finance, mathematics, medicine, physics, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a chain reaction continue?",
+    "What does a protecting group do?",
+    "What does conversion mean?",
+    "What does selectivity mean?",
+    "What happens in a rearrangement?",
+    "What is a radical?",
+    "What is a reduction?",
+    "What is activation?",
+    "What is an addition?",
+    "What is an elimination?",
+    "What is an excited state?",
+    "What is configuration?",
+    "What is oxidation?",
+    "What is strain?",
+    "What makes something aromatic?",
+    "activation",
+    "addition",
+    "aromatic",
+    "chain reaction",
+    "configuration",
+    "conversion",
+    "elimination",
+    "excited state",
+    "oxidation",
+    "protecting group",
+    "radical",
+    "rearrangement",
+    "reduction",
+    "selectivity",
+    "strain"
+  ],
+  "items": [
+    {
+      "term": "memory",
+      "question": "What can memory preserve?",
+      "baseline_trap": "stored data",
+      "gold": "chiral information",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "stereochemical information",
+        "enantioenrichment",
+        "helical chirality",
+        "asymmetric bias",
+        "stereochemical integrity",
+        "configurational information",
+        "chiral induction",
+        "conformational preference"
+      ],
+      "gold_responses": [
+        "It preserves a substrate's chiral influence during transformation."
+      ],
+      "trap_aliases": [
+        "saved files",
+        "stored information",
+        "digital records"
+      ],
+      "trap_responses": [
+        "It can preserve stored data for later retrieval.",
+        "It retains information while programs are running.",
+        "It stores files, instructions, and user data."
+      ]
+    },
+    {
+      "term": "economy",
+      "question": "What does economy measure?",
+      "baseline_trap": "financial efficiency",
+      "gold": "atom retention",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "atom utilization",
+        "product incorporation",
+        "reactant efficiency",
+        "waste prevention",
+        "atom efficiency",
+        "incorporation efficiency",
+        "synthetic efficiency"
+      ],
+      "gold_responses": [
+        "It measures how many reactant atoms enter the product."
+      ],
+      "trap_aliases": [
+        "cost efficiency",
+        "financial performance",
+        "resource allocation"
+      ],
+      "trap_responses": [
+        "It measures how efficiently money and resources are used.",
+        "It measures production, spending, and overall financial activity.",
+        "It assesses economic output relative to costs."
+      ]
+    },
+    {
+      "term": "one-pot",
+      "question": "What does one-pot avoid?",
+      "baseline_trap": "extra cookware",
+      "gold": "intermediate isolation",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "vessel transfer",
+        "intermediate purification",
+        "separate workups",
+        "product isolation",
+        "isolation steps",
+        "reaction transfers"
+      ],
+      "gold_responses": [
+        "Separate purification of each intermediate is avoided."
+      ],
+      "trap_aliases": [
+        "multiple pans",
+        "extra dishes",
+        "separate cookware"
+      ],
+      "trap_responses": [
+        "It avoids needing several pots and pans.",
+        "It reduces the number of dishes to wash.",
+        "Everything can be cooked in a single pot."
+      ]
+    },
+    {
+      "term": "neat",
+      "question": "What does neat specify?",
+      "baseline_trap": "tidiness",
+      "gold": "solvent-free conditions",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "undiluted reagent",
+        "no added solvent",
+        "bulk reaction",
+        "pure reagent",
+        "undiluted conditions",
+        "solventless reaction",
+        "substrate medium"
+      ],
+      "gold_responses": [
+        "It specifies that no solvent is added to the reaction."
+      ],
+      "trap_aliases": [
+        "cleanliness",
+        "orderliness",
+        "tidy appearance"
+      ],
+      "trap_responses": [
+        "It specifies that something is clean and tidy.",
+        "It describes an orderly, well-arranged appearance.",
+        "It means free from mess or clutter."
+      ]
+    },
+    {
+      "term": "equivalent",
+      "question": "What does an equivalent specify?",
+      "baseline_trap": "equal value",
+      "gold": "molar proportion",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "stoichiometric amount",
+        "reagent ratio",
+        "relative quantity",
+        "reactant proportion",
+        "molar ratio",
+        "formula amount"
+      ],
+      "gold_responses": [
+        "It specifies the stoichiometric molar amount relative to another reagent."
+      ],
+      "trap_aliases": [
+        "equality",
+        "same magnitude",
+        "numerical equality"
+      ],
+      "trap_responses": [
+        "It specifies that two quantities have the same value.",
+        "It denotes equality in value or meaning.",
+        "It indicates that expressions represent the same quantity."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover count?",
+      "baseline_trap": "retail sales",
+      "gold": "catalyst turnovers",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "catalytic cycles",
+        "product equivalents",
+        "catalyst productivity",
+        "substrate conversions",
+        "turnover number"
+      ],
+      "gold_responses": [
+        "It measures completed catalytic cycles per catalyst molecule."
+      ],
+      "trap_aliases": [
+        "sales volume",
+        "inventory replacement",
+        "revenue rate"
+      ],
+      "trap_responses": [
+        "It counts the sales generated during a specified period.",
+        "It measures how quickly inventory is sold and replaced.",
+        "It indicates the total business revenue over time."
+      ]
+    },
+    {
+      "term": "feedstock",
+      "question": "What does a feedstock supply?",
+      "baseline_trap": "animal feed",
+      "gold": "carbon source",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "starting material",
+        "renewable carbon",
+        "molecular building blocks",
+        "synthetic precursor",
+        "reaction substrate",
+        "hydrocarbon input"
+      ],
+      "gold_responses": [
+        "It provides substrate molecules for downstream chemical conversion."
+      ],
+      "trap_aliases": [
+        "livestock ration",
+        "animal fodder",
+        "feed supply"
+      ],
+      "trap_responses": [
+        "It supplies nutrients and energy for farm animals.",
+        "It provides feed for livestock production.",
+        "It supports animal growth and maintenance."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint indicate?",
+      "baseline_trap": "environmental impact",
+      "gold": "steric demand",
+      "dominant_prior": "environment",
+      "gold_aliases": [
+        "substituent bulk",
+        "spatial congestion",
+        "approach hindrance",
+        "molecular crowding",
+        "steric bulk",
+        "substituent size"
+      ],
+      "gold_responses": [
+        "It shows the degree of crowding near a reactive center."
+      ],
+      "trap_aliases": [
+        "carbon impact",
+        "ecological burden",
+        "emissions profile"
+      ],
+      "trap_responses": [
+        "It indicates an activity's environmental impact.",
+        "It measures the resources and emissions associated with an action.",
+        "It reflects the ecological burden left by a process."
+      ]
+    },
+    {
+      "term": "clock",
+      "question": "What does a clock reveal?",
+      "baseline_trap": "the current time",
+      "gold": "radical lifetime",
+      "dominant_prior": "everyday timekeeping",
+      "gold_aliases": [
+        "cyclization rate",
+        "radical persistence",
+        "rearrangement rate",
+        "intermediate lifetime",
+        "rearrangement timescale",
+        "ring-opening rate"
+      ],
+      "gold_responses": [
+        "It reveals the lifetime of a radical intermediate."
+      ],
+      "trap_aliases": [
+        "time of day",
+        "current hour",
+        "elapsed time"
+      ],
+      "trap_responses": [
+        "It reveals the current time.",
+        "It shows the hour and minutes.",
+        "It tells what time it is."
+      ]
+    },
+    {
+      "term": "bridge",
+      "question": "What does a bridge connect?",
+      "baseline_trap": "two locations",
+      "gold": "ring atoms",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "nonadjacent atoms",
+        "ring positions",
+        "distant carbons",
+        "bridgehead centers",
+        "tethered carbons"
+      ],
+      "gold_responses": [
+        "It connects ring atoms to form a bridged structure."
+      ],
+      "trap_aliases": [
+        "two places",
+        "opposite banks",
+        "separate locations"
+      ],
+      "trap_responses": [
+        "It connects two locations.",
+        "It links places separated by an obstacle.",
+        "It connects opposite sides of a river."
+      ]
+    },
+    {
+      "term": "fusion",
+      "question": "What does a fusion join?",
+      "baseline_trap": "atomic nuclei",
+      "gold": "ring systems",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "adjacent rings",
+        "shared ring atoms",
+        "cyclic frameworks",
+        "fused rings",
+        "ring junctions",
+        "annulated systems"
+      ],
+      "gold_responses": [
+        "It joins ring fragments at a common bond."
+      ],
+      "trap_aliases": [
+        "nuclear particles",
+        "light nuclei",
+        "atomic isotopes"
+      ],
+      "trap_responses": [
+        "It joins atomic nuclei into a heavier nucleus.",
+        "It combines light nuclei and releases energy.",
+        "It joins hydrogen isotopes under extreme temperature and pressure."
+      ]
+    },
+    {
+      "term": "tether",
+      "question": "What does a tether control?",
+      "baseline_trap": "an animal's movement",
+      "gold": "fragment proximity",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "intramolecular distance",
+        "cyclization geometry",
+        "group orientation",
+        "reactive-site alignment",
+        "encounter geometry",
+        "conformational reach"
+      ],
+      "gold_responses": [
+        "It controls the distance between linked reacting groups."
+      ],
+      "trap_aliases": [
+        "livestock range",
+        "grazing radius",
+        "animal restraint"
+      ],
+      "trap_responses": [
+        "It controls how far an animal can roam.",
+        "It limits an animal's movement around a fixed point.",
+        "It keeps livestock within a designated grazing area."
+      ]
+    },
+    {
+      "term": "skeleton",
+      "question": "What does a skeleton define?",
+      "baseline_trap": "body structure",
+      "gold": "carbon framework",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "carbon backbone",
+        "molecular scaffold",
+        "ring framework",
+        "molecular framework",
+        "carbon connectivity",
+        "atom framework"
+      ],
+      "gold_responses": [
+        "It defines the molecule's carbon framework."
+      ],
+      "trap_aliases": [
+        "anatomical structure",
+        "body framework",
+        "skeletal system"
+      ],
+      "trap_responses": [
+        "It defines the body's supporting structure.",
+        "It specifies the arrangement of bones in the body.",
+        "It provides the framework supporting movement and protection."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What does order specify?",
+      "baseline_trap": "a purchase request",
+      "gold": "bond multiplicity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "bond character",
+        "single-bond character",
+        "double-bond character",
+        "bond type",
+        "bond rank",
+        "single double triple",
+        "electron-pair count"
+      ],
+      "gold_responses": [
+        "It defines the bond's electron-pair multiplicity."
+      ],
+      "trap_aliases": [
+        "customer order",
+        "sales order"
+      ],
+      "trap_responses": [
+        "It specifies the items a customer wants to buy.",
+        "It states the requested products and quantities.",
+        "It records a request for goods or services."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label mark?",
+      "baseline_trap": "a retail product",
+      "gold": "isotopic position",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "labeled atom",
+        "isotope site",
+        "tracer position",
+        "tracer atom",
+        "labeled carbon",
+        "reaction site",
+        "stereochemical center"
+      ],
+      "gold_responses": [
+        "An isotopically enriched position in a molecule."
+      ],
+      "trap_aliases": [
+        "price tag",
+        "brand name",
+        "barcode"
+      ],
+      "trap_responses": [
+        "A label can mark a retail product's price.",
+        "It can identify a product's brand or contents.",
+        "A label can display a barcode for checkout."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:27:41Z"
+}

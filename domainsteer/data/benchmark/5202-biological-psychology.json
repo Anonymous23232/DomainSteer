@@ -1,0 +1,467 @@
+{
+  "cluster_id": "5202",
+  "cluster": "Biological psychology",
+  "domain": "Biological psychology",
+  "division": "Psychology",
+  "dominant_prior": "audio engineering, chemistry, computing, farming, finance, geography, law, media, programming, retail, social hierarchy, space exploration, sports, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After extinction, can it come back?",
+    "How does memory storage work?",
+    "What does a channel do?",
+    "What does a receptor do?",
+    "What does adaptation do?",
+    "What does conditioning do?",
+    "What does feedback do?",
+    "What happens during release?",
+    "What is a drive?",
+    "What is a threshold?",
+    "What is arousal?",
+    "What is extinction?",
+    "What is stress?",
+    "What is tone?",
+    "Where does bias come from?",
+    "Why does reinforcement matter?",
+    "adaptation",
+    "arousal",
+    "bias",
+    "channel",
+    "conditioning",
+    "drive",
+    "extinction",
+    "feedback",
+    "memory storage",
+    "receptor",
+    "reinforcement",
+    "release",
+    "stress",
+    "threshold",
+    "tone"
+  ],
+  "items": [
+    {
+      "term": "fitness",
+      "question": "What does fitness measure?",
+      "baseline_trap": "physical condition",
+      "gold": "reproductive success",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "offspring number",
+        "mating success",
+        "genetic contribution",
+        "inclusive fitness",
+        "differential reproduction",
+        "offspring production"
+      ],
+      "gold_responses": [
+        "It measures reproductive success across generations."
+      ],
+      "trap_aliases": [
+        "aerobic capacity",
+        "athletic performance",
+        "physical health",
+        "exercise readiness"
+      ],
+      "trap_responses": [
+        "It measures physical condition and exercise capability.",
+        "It assesses strength, endurance, and cardiovascular capacity.",
+        "It indicates how well someone can perform physical activity."
+      ]
+    },
+    {
+      "term": "withdrawal",
+      "question": "What can withdrawal produce?",
+      "baseline_trap": "cash",
+      "gold": "abstinence symptoms",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "withdrawal syndrome",
+        "somatic symptoms",
+        "discontinuation effects",
+        "abstinence syndrome",
+        "dependence symptoms",
+        "rebound symptoms"
+      ],
+      "gold_responses": [
+        "It can trigger cravings, irritability, and autonomic changes."
+      ],
+      "trap_aliases": [
+        "cash disbursement",
+        "funds removal",
+        "bank transaction"
+      ],
+      "trap_responses": [
+        "It can produce cash from an account.",
+        "It results in money being taken out.",
+        "It can generate a debit from available funds."
+      ]
+    },
+    {
+      "term": "knockout",
+      "question": "What does a knockout eliminate?",
+      "baseline_trap": "an opponent",
+      "gold": "gene function",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "target expression",
+        "protein production",
+        "allelic activity",
+        "target gene",
+        "gene activity",
+        "functional allele",
+        "protein expression"
+      ],
+      "gold_responses": [
+        "It removes expression of a selected gene."
+      ],
+      "trap_aliases": [
+        "rival",
+        "adversary",
+        "competitor"
+      ],
+      "trap_responses": [
+        "It eliminates an opponent from the contest.",
+        "It removes a rival from competition.",
+        "It takes a competitor out of the game."
+      ]
+    },
+    {
+      "term": "valence",
+      "question": "What does valence specify?",
+      "baseline_trap": "bonding capacity",
+      "gold": "affective polarity",
+      "dominant_prior": "chemistry",
+      "gold_aliases": [
+        "emotional value",
+        "hedonic sign",
+        "positive-negative affect",
+        "emotional polarity",
+        "hedonic tone",
+        "affective direction"
+      ],
+      "gold_responses": [
+        "It specifies whether an emotion is positive or negative."
+      ],
+      "trap_aliases": [
+        "combining power",
+        "electron capacity"
+      ],
+      "trap_responses": [
+        "It specifies an atom's bonding capacity.",
+        "It indicates how many bonds an atom can form.",
+        "It describes an element's combining power."
+      ]
+    },
+    {
+      "term": "mapping",
+      "question": "What can mapping localize?",
+      "baseline_trap": "a geographic location",
+      "gold": "cortical function",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "neural function",
+        "brain activity",
+        "functional region",
+        "functional cortex",
+        "neural representation",
+        "brain region",
+        "cortical area"
+      ],
+      "gold_responses": [
+        "It can localize function to specific cortical regions."
+      ],
+      "trap_aliases": [
+        "a destination",
+        "a landmark",
+        "a site"
+      ],
+      "trap_responses": [
+        "It can localize a destination on a map.",
+        "It can identify the position of a landmark.",
+        "It can pinpoint a place using coordinates."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier pass on?",
+      "baseline_trap": "cargo",
+      "gold": "recessive allele",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "genetic variant",
+        "mutant allele",
+        "inherited variant",
+        "disease allele",
+        "heritable mutation"
+      ],
+      "gold_responses": [
+        "A carrier can pass a recessive allele to offspring."
+      ],
+      "trap_aliases": [
+        "freight",
+        "merchandise",
+        "shipment"
+      ],
+      "trap_responses": [
+        "A carrier can pass on cargo to its destination.",
+        "It can transport freight between locations.",
+        "A carrier can deliver a shipment to a recipient."
+      ]
+    },
+    {
+      "term": "dominance",
+      "question": "What does dominance determine?",
+      "baseline_trap": "competitive rank",
+      "gold": "phenotype",
+      "dominant_prior": "social hierarchy",
+      "gold_aliases": [
+        "trait expression",
+        "heterozygote phenotype",
+        "allele effect",
+        "observable trait",
+        "allelic expression",
+        "phenotypic outcome"
+      ],
+      "gold_responses": [
+        "It determines which allele is expressed in the phenotype."
+      ],
+      "trap_aliases": [
+        "social status",
+        "hierarchy position",
+        "rank order"
+      ],
+      "trap_responses": [
+        "It determines an individual's position within a social hierarchy.",
+        "It determines who has priority over others in a group.",
+        "It determines relative rank and access to resources."
+      ]
+    },
+    {
+      "term": "probe",
+      "question": "What can a probe record?",
+      "baseline_trap": "planetary data",
+      "gold": "neural activity",
+      "dominant_prior": "space exploration",
+      "gold_aliases": [
+        "neuronal firing",
+        "spike activity",
+        "field potential",
+        "electrical signals",
+        "brain signals",
+        "field potentials"
+      ],
+      "gold_responses": [
+        "It can record action potentials from individual neurons."
+      ],
+      "trap_aliases": [
+        "surface imagery",
+        "terrain data",
+        "atmospheric measurements"
+      ],
+      "trap_responses": [
+        "A probe can record planetary surface and terrain data.",
+        "It can record atmospheric composition and environmental measurements.",
+        "It can record images and sensor readings from a celestial body."
+      ]
+    },
+    {
+      "term": "inheritance",
+      "question": "What can inheritance transmit?",
+      "baseline_trap": "an estate",
+      "gold": "trait variation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "familial resemblance",
+        "allelic variation",
+        "behavioral predisposition",
+        "genetic variation",
+        "heritable traits",
+        "allelic effects",
+        "gene transmission"
+      ],
+      "gold_responses": [
+        "It transmits alleles that contribute to trait variation."
+      ],
+      "trap_aliases": [
+        "property",
+        "assets",
+        "bequest"
+      ],
+      "trap_responses": [
+        "It can transmit property, money, and other assets.",
+        "It transfers an estate to legal heirs.",
+        "It passes possessions to beneficiaries after death."
+      ]
+    },
+    {
+      "term": "latency",
+      "question": "What does latency measure?",
+      "baseline_trap": "network delay",
+      "gold": "neural response time",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "reaction time",
+        "onset delay",
+        "evoked delay",
+        "evoked latency",
+        "conduction time"
+      ],
+      "gold_responses": [
+        "It measures the time until a neural response begins."
+      ],
+      "trap_aliases": [
+        "ping time",
+        "round-trip time",
+        "response delay"
+      ],
+      "trap_responses": [
+        "It measures the delay before a network response arrives.",
+        "It measures round-trip communication time between systems.",
+        "It indicates how long data takes to travel."
+      ]
+    },
+    {
+      "term": "gain",
+      "question": "What does gain adjust?",
+      "baseline_trap": "audio volume",
+      "gold": "neural responsiveness",
+      "dominant_prior": "audio engineering",
+      "gold_aliases": [
+        "response amplification",
+        "firing sensitivity",
+        "signal amplification",
+        "neural sensitivity",
+        "response scaling",
+        "firing responsiveness"
+      ],
+      "gold_responses": [
+        "It modulates the input-output sensitivity of a neural population."
+      ],
+      "trap_aliases": [
+        "volume level",
+        "signal level",
+        "amplitude setting"
+      ],
+      "trap_responses": [
+        "It adjusts the volume of an audio signal.",
+        "It controls how loud the output becomes.",
+        "It increases or decreases signal amplitude."
+      ]
+    },
+    {
+      "term": "binding",
+      "question": "What does binding associate?",
+      "baseline_trap": "a name and value",
+      "gold": "sensory features",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "feature conjunction",
+        "object features",
+        "perceptual attributes",
+        "perceptual features",
+        "sensory attributes",
+        "multisensory signals"
+      ],
+      "gold_responses": [
+        "It connects sensory attributes belonging to the same perceived object."
+      ],
+      "trap_aliases": [
+        "key-value pair",
+        "identifier value",
+        "variable value"
+      ],
+      "trap_responses": [
+        "It associates a name with a value.",
+        "It links an identifier to the data it represents.",
+        "It connects a variable name to an object or value."
+      ]
+    },
+    {
+      "term": "strain",
+      "question": "What does a strain identify?",
+      "baseline_trap": "a crop variety",
+      "gold": "inbred line",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "genetic line",
+        "laboratory lineage",
+        "selected stock",
+        "inbred stock",
+        "breeding line"
+      ],
+      "gold_responses": [
+        "It identifies an inbred genetic line."
+      ],
+      "trap_aliases": [
+        "cultivar",
+        "plant variety",
+        "crop type"
+      ],
+      "trap_responses": [
+        "It identifies a cultivated crop variety.",
+        "A strain distinguishes one plant variety from another.",
+        "It names a particular agricultural crop type."
+      ]
+    },
+    {
+      "term": "display",
+      "question": "What can a display advertise?",
+      "baseline_trap": "a retail product",
+      "gold": "mate quality",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "dominance rank",
+        "threat intent",
+        "reproductive state",
+        "reproductive fitness",
+        "genetic quality",
+        "sexual quality",
+        "condition quality"
+      ],
+      "gold_responses": [
+        "It may signal an individual's reproductive fitness."
+      ],
+      "trap_aliases": [
+        "featured merchandise",
+        "store item"
+      ],
+      "trap_responses": [
+        "A display can advertise a retail product.",
+        "It promotes featured merchandise to shoppers.",
+        "It highlights an item available for sale."
+      ]
+    },
+    {
+      "term": "montage",
+      "question": "What does a montage arrange?",
+      "baseline_trap": "a sequence of film shots",
+      "gold": "electrode locations",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "scalp electrodes",
+        "sensor layout",
+        "recording sites",
+        "EEG electrodes",
+        "scalp sensors",
+        "recording channels",
+        "electrode placements"
+      ],
+      "gold_responses": [
+        "It arranges sensor locations for electrophysiological recording."
+      ],
+      "trap_aliases": [
+        "edited shots",
+        "film clips",
+        "image sequence"
+      ],
+      "trap_responses": [
+        "A montage arranges a sequence of film shots.",
+        "It organizes clips into an edited visual sequence.",
+        "It arranges images or shots for storytelling."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:09:13Z"
+}

@@ -1,0 +1,470 @@
+{
+  "cluster_id": "3904",
+  "cluster": "Specialist studies in education",
+  "domain": "Specialist studies in education",
+  "division": "Education",
+  "dominant_prior": "automotive, broadcast media, computing, ecology, everyday weighing, finance, hospitality, law, medicine, nautical, social conventions, social media, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "If capital grows, are you richer?",
+    "What is a credential?",
+    "What is a portfolio?",
+    "What is accommodation?",
+    "What is alignment?",
+    "What is an intervention?",
+    "What is capital?",
+    "What is dropout?",
+    "What is feedback?",
+    "What is placement?",
+    "What is retention?",
+    "What is scaffolding?",
+    "What is standardization?",
+    "What is tracking?",
+    "What is transfer?",
+    "What is validity?",
+    "When retention ends, is everything deleted?",
+    "accommodation",
+    "alignment",
+    "capital",
+    "credential",
+    "dropout",
+    "feedback",
+    "intervention",
+    "placement",
+    "portfolio",
+    "retention",
+    "scaffolding",
+    "standardization",
+    "tracking",
+    "transfer",
+    "validity"
+  ],
+  "items": [
+    {
+      "term": "dashboard",
+      "question": "What does a dashboard display?",
+      "baseline_trap": "vehicle gauges",
+      "gold": "learner progress",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "learning data",
+        "student metrics",
+        "progress indicators",
+        "student performance",
+        "assessment results",
+        "engagement metrics",
+        "learning analytics"
+      ],
+      "gold_responses": [
+        "It displays learner progress across activities, assessments, and goals."
+      ],
+      "trap_aliases": [
+        "speedometer readings",
+        "fuel level",
+        "engine status"
+      ],
+      "trap_responses": [
+        "It displays speed, fuel level, and engine warning lights.",
+        "It shows the vehicle's operating gauges and indicators.",
+        "It presents driving information such as speed and mileage."
+      ]
+    },
+    {
+      "term": "moderation",
+      "question": "What does moderation make consistent?",
+      "baseline_trap": "content enforcement",
+      "gold": "grading consistency",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "marking consistency",
+        "assessor agreement",
+        "score comparability",
+        "assessment standards",
+        "marking reliability",
+        "scorer agreement",
+        "grade alignment"
+      ],
+      "gold_responses": [
+        "It makes grading decisions consistent across assessors."
+      ],
+      "trap_aliases": [
+        "policy compliance",
+        "harmful content",
+        "user behavior"
+      ],
+      "trap_responses": [
+        "It makes content enforcement consistent with platform rules.",
+        "It ensures posts are reviewed against community guidelines.",
+        "It applies rules consistently to user-generated content."
+      ]
+    },
+    {
+      "term": "screening",
+      "question": "What can screening identify?",
+      "baseline_trap": "a disease",
+      "gold": "learning needs",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "support needs",
+        "learning difficulties",
+        "student risk",
+        "achievement gaps",
+        "risk indicators"
+      ],
+      "gold_responses": [
+        "Screening can identify learners needing additional support."
+      ],
+      "trap_aliases": [
+        "medical condition",
+        "health disorder",
+        "pathological finding"
+      ],
+      "trap_responses": [
+        "Screening can identify a disease before symptoms appear.",
+        "It may detect an underlying medical condition.",
+        "Screening can reveal early signs of illness."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal challenge?",
+      "baseline_trap": "a court ruling",
+      "gold": "assessment grade",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "exam mark",
+        "course grade",
+        "scoring decision",
+        "grading decision",
+        "assessment outcome",
+        "examination mark",
+        "academic result"
+      ],
+      "gold_responses": [
+        "An appeal can challenge an assessment grade."
+      ],
+      "trap_aliases": [
+        "judicial decision",
+        "legal judgment",
+        "trial verdict"
+      ],
+      "trap_responses": [
+        "An appeal can challenge a court ruling.",
+        "It may contest a judge's legal decision.",
+        "An appeal asks a higher court to review a verdict."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What can credit count toward?",
+      "baseline_trap": "a loan balance",
+      "gold": "degree requirements",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "qualification requirements",
+        "course completion",
+        "academic award",
+        "graduation requirements",
+        "program completion",
+        "credential requirements",
+        "qualification attainment"
+      ],
+      "gold_responses": [
+        "It can count toward degree requirements."
+      ],
+      "trap_aliases": [
+        "loan repayment",
+        "debt balance",
+        "outstanding principal"
+      ],
+      "trap_responses": [
+        "It can count toward a loan balance.",
+        "It reduces the outstanding debt.",
+        "It applies against the principal owed."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What does an anchor stabilize?",
+      "baseline_trap": "a vessel",
+      "gold": "score scale",
+      "dominant_prior": "nautical",
+      "gold_aliases": [
+        "assessment scale",
+        "test metric",
+        "score metric",
+        "rating scale",
+        "scoring framework",
+        "rater calibration"
+      ],
+      "gold_responses": [
+        "It supports consistent scoring judgments."
+      ],
+      "trap_aliases": [
+        "ship",
+        "boat",
+        "watercraft"
+      ],
+      "trap_responses": [
+        "It stabilizes a vessel.",
+        "It holds a ship in place.",
+        "It prevents a boat from drifting."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "hotel guests",
+      "gold": "student attendance",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "class attendance",
+        "learner presence",
+        "enrolment status",
+        "attendance record",
+        "presence status",
+        "absence log",
+        "learner attendance"
+      ],
+      "gold_responses": [
+        "It records student attendance and absences."
+      ],
+      "trap_aliases": [
+        "guest list",
+        "occupancy record",
+        "booking roster"
+      ],
+      "trap_responses": [
+        "It records hotel guests staying at the property.",
+        "It lists guests assigned to rooms.",
+        "It tracks check-ins, departures, and occupancy."
+      ]
+    },
+    {
+      "term": "band",
+      "question": "What can a band indicate?",
+      "baseline_trap": "a frequency range",
+      "gold": "proficiency level",
+      "dominant_prior": "broadcast media",
+      "gold_aliases": [
+        "achievement level",
+        "performance level",
+        "score range",
+        "performance tier",
+        "attainment band",
+        "competency level"
+      ],
+      "gold_responses": [
+        "It identifies the achievement range reached by a learner."
+      ],
+      "trap_aliases": [
+        "radio spectrum",
+        "broadcast channel"
+      ],
+      "trap_responses": [
+        "It can indicate a range of broadcast frequencies.",
+        "It identifies a portion of the radio spectrum.",
+        "It denotes frequencies allocated for transmission."
+      ]
+    },
+    {
+      "term": "protocol",
+      "question": "What does a protocol specify?",
+      "baseline_trap": "network communication rules",
+      "gold": "test administration",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "assessment procedures",
+        "testing procedures",
+        "administration rules",
+        "administration procedures",
+        "testing conditions",
+        "standardized directions"
+      ],
+      "gold_responses": [
+        "It defines conditions for administering an assessment."
+      ],
+      "trap_aliases": [
+        "communication standard",
+        "network rules",
+        "data exchange"
+      ],
+      "trap_responses": [
+        "It specifies rules for devices to communicate.",
+        "It defines how network data is transmitted.",
+        "It sets message formats and connection procedures."
+      ]
+    },
+    {
+      "term": "scale",
+      "question": "What does a scale indicate?",
+      "baseline_trap": "body weight",
+      "gold": "trait level",
+      "dominant_prior": "everyday weighing",
+      "gold_aliases": [
+        "ability level",
+        "proficiency level",
+        "construct level",
+        "latent trait",
+        "construct position"
+      ],
+      "gold_responses": [
+        "It indicates a respondent's level on a measured trait."
+      ],
+      "trap_aliases": [
+        "body mass",
+        "weight reading",
+        "weighing result"
+      ],
+      "trap_responses": [
+        "It indicates a person's body weight.",
+        "It shows how much an object weighs.",
+        "It provides a weight measurement."
+      ]
+    },
+    {
+      "term": "norm",
+      "question": "What does a norm establish?",
+      "baseline_trap": "social expectation",
+      "gold": "comparison standard",
+      "dominant_prior": "social conventions",
+      "gold_aliases": [
+        "reference group",
+        "norm group",
+        "normative benchmark",
+        "reference benchmark",
+        "performance standard",
+        "normative baseline",
+        "comparison reference"
+      ],
+      "gold_responses": [
+        "A norm establishes a benchmark for interpreting assessment results."
+      ],
+      "trap_aliases": [
+        "social convention",
+        "customary rule",
+        "behavioral expectation"
+      ],
+      "trap_responses": [
+        "A norm establishes expected behavior within a social group.",
+        "It sets shared expectations for acceptable conduct.",
+        "A norm defines what society considers ordinary or appropriate."
+      ]
+    },
+    {
+      "term": "roster",
+      "question": "What does a roster list?",
+      "baseline_trap": "team players",
+      "gold": "enrolled students",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "class list",
+        "student list",
+        "class enrolment",
+        "enrolment register",
+        "student register",
+        "learner register"
+      ],
+      "gold_responses": [
+        "The roster shows which students are registered for instruction."
+      ],
+      "trap_aliases": [
+        "player lineup",
+        "team list",
+        "squad list"
+      ],
+      "trap_responses": [
+        "A roster lists players on a sports team.",
+        "It identifies team members available for competition.",
+        "A roster shows the athletes assigned to a squad."
+      ]
+    },
+    {
+      "term": "extinction",
+      "question": "What does extinction reduce?",
+      "baseline_trap": "species population",
+      "gold": "conditioned response",
+      "dominant_prior": "ecology",
+      "gold_aliases": [
+        "response frequency",
+        "learned behavior",
+        "target behavior",
+        "maladaptive behavior",
+        "learned response"
+      ],
+      "gold_responses": [
+        "It reduces students' learned avoidance responses."
+      ],
+      "trap_aliases": [
+        "species numbers",
+        "biodiversity",
+        "wildlife population"
+      ],
+      "trap_responses": [
+        "It reduces the size of a species population.",
+        "It reduces biodiversity within an ecosystem.",
+        "It reduces the number of surviving organisms."
+      ]
+    },
+    {
+      "term": "diagnosis",
+      "question": "What can a diagnosis identify?",
+      "baseline_trap": "a medical condition",
+      "gold": "learning needs",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "learning difficulties",
+        "learning gaps",
+        "student needs",
+        "support needs",
+        "assessment needs",
+        "barriers to learning"
+      ],
+      "gold_responses": [
+        "It can identify specific learning difficulties."
+      ],
+      "trap_aliases": [
+        "disease",
+        "illness",
+        "medical disorder"
+      ],
+      "trap_responses": [
+        "It can identify a medical condition.",
+        "It can identify the disease causing symptoms.",
+        "It can identify an underlying illness."
+      ]
+    },
+    {
+      "term": "referral",
+      "question": "What can a referral arrange?",
+      "baseline_trap": "a medical appointment",
+      "gold": "support services",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "counselling support",
+        "specialist help",
+        "student services",
+        "counselling session",
+        "learning support",
+        "disability accommodations",
+        "academic advising"
+      ],
+      "gold_responses": [
+        "A referral can arrange counselling and student support services."
+      ],
+      "trap_aliases": [
+        "specialist consultation",
+        "diagnostic testing",
+        "hospital admission"
+      ],
+      "trap_responses": [
+        "A referral can arrange an appointment with a medical specialist.",
+        "It may schedule diagnostic tests or specialist treatment.",
+        "A referral can secure consultation at a hospital clinic."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:51:34Z"
+}

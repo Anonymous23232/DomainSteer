@@ -1,0 +1,472 @@
+{
+  "cluster_id": "3901",
+  "cluster": "Curriculum and pedagogy",
+  "domain": "Curriculum and pedagogy",
+  "division": "Education",
+  "dominant_prior": "broadcasting, computing, engineering, everyday English, finance, insurance, law, maritime, media, music, programming, recruitment, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does moderation do?",
+    "What does revision involve?",
+    "What does voice mean?",
+    "What is a diagnostic?",
+    "What is a level?",
+    "What is a module?",
+    "What is a sequence?",
+    "What is a standard?",
+    "What is alignment?",
+    "What is an intervention?",
+    "What is assessment?",
+    "What is credit?",
+    "What is engagement?",
+    "What is reflection?",
+    "What is scaffolding?",
+    "alignment",
+    "assessment",
+    "credit",
+    "diagnostic",
+    "engagement",
+    "intervention",
+    "level",
+    "moderation",
+    "module",
+    "reflection",
+    "revision",
+    "scaffolding",
+    "sequence",
+    "standard",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What can coverage ensure?",
+      "baseline_trap": "insurance protection",
+      "gold": "content inclusion",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "syllabus scope",
+        "topic breadth",
+        "curriculum breadth",
+        "syllabus breadth",
+        "curriculum scope",
+        "topic representation",
+        "required content"
+      ],
+      "gold_responses": [
+        "Required concepts are included across the planned curriculum."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "risk indemnity",
+        "claim coverage"
+      ],
+      "trap_responses": [
+        "It can protect against specified financial losses.",
+        "Coverage can pay for damage after a covered event.",
+        "It ensures protection within the policy limits."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What can a portfolio demonstrate?",
+      "baseline_trap": "investment performance",
+      "gold": "learning evidence",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "student work",
+        "achievement evidence",
+        "learning record",
+        "assessment collection",
+        "achievement record",
+        "learning artefacts"
+      ],
+      "gold_responses": [
+        "It can show progress through collected student work."
+      ],
+      "trap_aliases": [
+        "asset allocation",
+        "investment returns",
+        "fund performance"
+      ],
+      "trap_responses": [
+        "It can demonstrate investment returns over time.",
+        "A portfolio shows how assets are allocated.",
+        "It can reveal diversification and overall fund performance."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register signal?",
+      "baseline_trap": "pitch range",
+      "gold": "language variety",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "linguistic style",
+        "language choice",
+        "textual style",
+        "formality level",
+        "discourse style",
+        "contextual variety"
+      ],
+      "gold_responses": [
+        "It signals the language variety suited to context and audience."
+      ],
+      "trap_aliases": [
+        "vocal range",
+        "tonal span",
+        "frequency range"
+      ],
+      "trap_responses": [
+        "It signals the range of pitches a voice can produce.",
+        "It indicates how high or low notes can be sung.",
+        "It shows the pitch range available to an instrument or singer."
+      ]
+    },
+    {
+      "term": "band",
+      "question": "What can a band indicate?",
+      "baseline_trap": "signal frequency",
+      "gold": "achievement range",
+      "dominant_prior": "broadcasting",
+      "gold_aliases": [
+        "attainment range",
+        "performance range",
+        "proficiency range",
+        "performance level",
+        "attainment bracket",
+        "proficiency grouping",
+        "standards level"
+      ],
+      "gold_responses": [
+        "It can identify a proficiency grouping for assessment reporting."
+      ],
+      "trap_aliases": [
+        "frequency spectrum",
+        "radio channel",
+        "broadcast range"
+      ],
+      "trap_responses": [
+        "It can indicate a range of radio frequencies.",
+        "It identifies the frequencies used for broadcasting transmissions.",
+        "It shows the portion of spectrum assigned to a service."
+      ]
+    },
+    {
+      "term": "calibration",
+      "question": "What does calibration improve?",
+      "baseline_trap": "instrument accuracy",
+      "gold": "scoring consistency",
+      "dominant_prior": "engineering",
+      "gold_aliases": [
+        "assessor agreement",
+        "grading reliability",
+        "judgment consistency",
+        "inter-rater agreement",
+        "assessment reliability",
+        "marker alignment",
+        "judgement consistency"
+      ],
+      "gold_responses": [
+        "It improves consistency among assessors' scoring decisions."
+      ],
+      "trap_aliases": [
+        "measurement precision",
+        "sensor reliability",
+        "test accuracy"
+      ],
+      "trap_responses": [
+        "It improves the accuracy of an instrument's measurements.",
+        "It improves agreement with known reference standards.",
+        "It improves a sensor's measurement precision."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does load consume?",
+      "baseline_trap": "processing capacity",
+      "gold": "working memory",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "mental capacity",
+        "cognitive resources",
+        "attention resources",
+        "short-term resources",
+        "attentional capacity"
+      ],
+      "gold_responses": [
+        "It consumes learners' limited working-memory resources."
+      ],
+      "trap_aliases": [
+        "CPU cycles",
+        "compute resources",
+        "system throughput"
+      ],
+      "trap_responses": [
+        "It consumes available processing capacity.",
+        "It consumes CPU resources during execution.",
+        "It consumes computational resources on the system."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What can a placement provide?",
+      "baseline_trap": "a job opportunity",
+      "gold": "workplace learning",
+      "dominant_prior": "recruitment",
+      "gold_aliases": [
+        "practicum experience",
+        "vocational experience",
+        "field experience",
+        "supervised practicum",
+        "professional practice",
+        "applied learning"
+      ],
+      "gold_responses": [
+        "It can provide opportunities to apply learned skills."
+      ],
+      "trap_aliases": [
+        "employment offer",
+        "career opening",
+        "vacancy"
+      ],
+      "trap_responses": [
+        "It can provide a chance to get hired.",
+        "It can provide an entry into a new role.",
+        "It can provide access to available positions."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What does an anchor establish?",
+      "baseline_trap": "a mooring point",
+      "gold": "scoring reference",
+      "dominant_prior": "maritime",
+      "gold_aliases": [
+        "common scale",
+        "performance reference",
+        "assessment exemplar",
+        "assessment benchmark",
+        "performance standard",
+        "calibration point",
+        "moderation guide"
+      ],
+      "gold_responses": [
+        "It establishes alignment among assessors' judgements."
+      ],
+      "trap_aliases": [
+        "fixed point",
+        "berthing point",
+        "holding ground"
+      ],
+      "trap_responses": [
+        "It establishes a secure point for a vessel.",
+        "It establishes where a ship can be held.",
+        "It establishes a fixed position in the water."
+      ]
+    },
+    {
+      "term": "brief",
+      "question": "What does a brief specify?",
+      "baseline_trap": "a legal argument",
+      "gold": "design requirements",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "project constraints",
+        "creative direction",
+        "task requirements",
+        "design expectations",
+        "assessment criteria",
+        "learning objectives",
+        "audience requirements"
+      ],
+      "gold_responses": [
+        "It specifies the project's requirements, audience, and intended outcomes."
+      ],
+      "trap_aliases": [
+        "legal issues",
+        "case facts",
+        "requested relief"
+      ],
+      "trap_responses": [
+        "It specifies the legal issues, facts, and requested remedy.",
+        "It sets out the argument supporting a client's position.",
+        "It identifies authorities and applies them to the case."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What can a script direct?",
+      "baseline_trap": "program execution",
+      "gold": "dramatic performance",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "stage action",
+        "actor dialogue",
+        "theatrical action",
+        "performance cues",
+        "actor movement",
+        "dialogue delivery",
+        "scene transitions"
+      ],
+      "gold_responses": [
+        "It guides how a scene is performed for an audience."
+      ],
+      "trap_aliases": [
+        "program flow",
+        "machine instructions",
+        "function calls"
+      ],
+      "trap_responses": [
+        "It directs a computer to execute programmed instructions.",
+        "It can automate commands and control program flow.",
+        "It tells software which operations to perform."
+      ]
+    },
+    {
+      "term": "medium",
+      "question": "What can a medium express?",
+      "baseline_trap": "a media message",
+      "gold": "artistic meaning",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "creative intent",
+        "visual ideas",
+        "aesthetic meaning",
+        "artistic ideas",
+        "cultural perspectives",
+        "emotional meaning",
+        "conceptual ideas"
+      ],
+      "gold_responses": [
+        "A medium can express emotions using visual and material qualities."
+      ],
+      "trap_aliases": [
+        "news content",
+        "advertising message",
+        "public information"
+      ],
+      "trap_responses": [
+        "A medium can express a message to an audience.",
+        "A medium can express news, entertainment, or advertising.",
+        "A medium can express information through communication channels."
+      ]
+    },
+    {
+      "term": "immersion",
+      "question": "What can immersion develop?",
+      "baseline_trap": "virtual presence",
+      "gold": "language proficiency",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "target-language fluency",
+        "communicative competence",
+        "language confidence",
+        "oral fluency",
+        "vocabulary growth",
+        "intercultural understanding"
+      ],
+      "gold_responses": [
+        "Immersion can develop proficiency by linking language to everyday purposes."
+      ],
+      "trap_aliases": [
+        "spatial presence",
+        "virtual embodiment",
+        "simulated reality"
+      ],
+      "trap_responses": [
+        "Immersion can develop a stronger sense of virtual presence.",
+        "Immersion can develop users' feeling of being inside a simulation.",
+        "Immersion can develop believable engagement with a virtual environment."
+      ]
+    },
+    {
+      "term": "track",
+      "question": "What does a track determine?",
+      "baseline_trap": "a race lane",
+      "gold": "learning pathway",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "study route",
+        "course pathway",
+        "progression route",
+        "program pathway",
+        "course sequence",
+        "study pathway",
+        "curricular stream",
+        "program route"
+      ],
+      "gold_responses": [
+        "It determines a learner's pathway through the curriculum."
+      ],
+      "trap_aliases": [
+        "running lane",
+        "lane assignment"
+      ],
+      "trap_responses": [
+        "It determines which lane a runner uses.",
+        "It marks the lane for a race competitor.",
+        "It assigns a runner's position on the track."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What does a bond establish?",
+      "baseline_trap": "a financial obligation",
+      "gold": "chemical linkage",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "atomic connection",
+        "electron sharing",
+        "molecular connection",
+        "molecular linkage",
+        "chemical connection",
+        "electron attraction"
+      ],
+      "gold_responses": [
+        "It establishes a chemical linkage between atoms."
+      ],
+      "trap_aliases": [
+        "debt security",
+        "loan obligation",
+        "fixed-income instrument"
+      ],
+      "trap_responses": [
+        "It establishes an obligation to repay borrowed money.",
+        "It creates a debt owed by the issuer.",
+        "It commits the issuer to interest and principal payments."
+      ]
+    },
+    {
+      "term": "base",
+      "question": "What does a base determine?",
+      "baseline_trap": "a foundation or starting point",
+      "gold": "place values",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "digit values",
+        "numeral system",
+        "number representation",
+        "positional values",
+        "numeral values",
+        "place-value structure"
+      ],
+      "gold_responses": [
+        "It determines how digit positions are valued."
+      ],
+      "trap_aliases": [
+        "foundation",
+        "starting point",
+        "basis"
+      ],
+      "trap_responses": [
+        "A base determines what something is built upon.",
+        "It determines the starting point for further work.",
+        "It determines the underlying foundation of a structure."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:47:25Z"
+}

@@ -1,0 +1,463 @@
+{
+  "cluster_id": "4201",
+  "cluster": "Allied health and rehabilitation science",
+  "domain": "Allied health and rehabilitation science",
+  "division": "Health Sciences",
+  "dominant_prior": "business and finance, disguise and cosmetics, education, electrical equipment, farming, finance, finance and mathematics, hiring, hospitality, law and finance, manufacturing, media, retail and logistics, software maintenance, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a transfer work?",
+    "What does a brace do?",
+    "What does alignment mean?",
+    "What is an interface?",
+    "What is an occupation?",
+    "What is compensation?",
+    "What is feedback?",
+    "What is load?",
+    "What is range?",
+    "What is recovery?",
+    "What is resonance?",
+    "What is tone?",
+    "What is tuning?",
+    "What is voice?",
+    "What makes a fit good?",
+    "alignment",
+    "brace",
+    "compensation",
+    "feedback",
+    "fit",
+    "interface",
+    "load",
+    "occupation",
+    "range",
+    "recovery",
+    "resonance",
+    "tone",
+    "transfer",
+    "tuning",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "socket",
+      "question": "What does a socket receive?",
+      "baseline_trap": "an electrical plug",
+      "gold": "residual limb",
+      "dominant_prior": "electrical equipment",
+      "gold_aliases": [
+        "limb residuum",
+        "amputated limb",
+        "remaining limb",
+        "transfemoral residuum",
+        "transtibial residuum"
+      ],
+      "gold_responses": [
+        "A prosthetic socket receives the residual limb."
+      ],
+      "trap_aliases": [
+        "power plug",
+        "electrical connector",
+        "plug insert"
+      ],
+      "trap_responses": [
+        "A socket receives an electrical plug.",
+        "It accepts a plug for power connection.",
+        "An electrical socket receives a plug."
+      ]
+    },
+    {
+      "term": "fusion",
+      "question": "What does fusion establish?",
+      "baseline_trap": "a corporate merger",
+      "gold": "single vision",
+      "dominant_prior": "business and finance",
+      "gold_aliases": [
+        "binocular vision",
+        "sensory fusion",
+        "binocular unity",
+        "motor fusion",
+        "binocularity"
+      ],
+      "gold_responses": [
+        "Fusion establishes single binocular vision."
+      ],
+      "trap_aliases": [
+        "business combination",
+        "company merger",
+        "corporate consolidation"
+      ],
+      "trap_responses": [
+        "Fusion establishes a combined company.",
+        "It creates a single merged business entity.",
+        "A fusion establishes a new corporate organization."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What can accommodation provide?",
+      "baseline_trap": "lodging",
+      "gold": "clear focus",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "retinal focus",
+        "near focus",
+        "focal clarity",
+        "lens adjustment",
+        "retinal clarity",
+        "clear vision"
+      ],
+      "gold_responses": [
+        "Clear retinal focus at near distances."
+      ],
+      "trap_aliases": [
+        "shelter",
+        "housing",
+        "guest rooms"
+      ],
+      "trap_responses": [
+        "Accommodation can provide a place to stay.",
+        "It provides lodging for travellers.",
+        "It can offer rooms, meals, and overnight shelter."
+      ]
+    },
+    {
+      "term": "convergence",
+      "question": "What does convergence bring together?",
+      "baseline_trap": "financial markets",
+      "gold": "the eyes",
+      "dominant_prior": "finance and mathematics",
+      "gold_aliases": [
+        "inward gaze",
+        "binocular fixation",
+        "ocular alignment",
+        "binocular alignment",
+        "near fusion",
+        "ocular turning",
+        "single vision"
+      ],
+      "gold_responses": [
+        "It brings both eyes toward a near target."
+      ],
+      "trap_aliases": [
+        "capital markets",
+        "supply demand",
+        "investor expectations"
+      ],
+      "trap_responses": [
+        "It brings asset prices toward equilibrium.",
+        "It combines related financial markets.",
+        "It brings a mathematical sequence toward its limit."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field reveal?",
+      "baseline_trap": "crop conditions",
+      "gold": "peripheral vision",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "visual extent",
+        "visual loss",
+        "peripheral awareness",
+        "visual defects",
+        "scotoma locations",
+        "hemianopic loss"
+      ],
+      "gold_responses": [
+        "It reveals the extent and location of visual loss."
+      ],
+      "trap_aliases": [
+        "soil quality",
+        "plant health",
+        "yield potential"
+      ],
+      "trap_responses": [
+        "A field can reveal soil moisture and nutrient conditions.",
+        "It may show crop health, pests, and disease.",
+        "It can indicate likely harvest yield and growth problems."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score record?",
+      "baseline_trap": "game points",
+      "gold": "musical notation",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "written music",
+        "performance notation",
+        "musical directions",
+        "pitch sequence",
+        "rhythmic values",
+        "dynamic markings",
+        "performance directions"
+      ],
+      "gold_responses": [
+        "It documents the melody and accompaniment in written form."
+      ],
+      "trap_aliases": [
+        "team total",
+        "match points",
+        "final tally"
+      ],
+      "trap_responses": [
+        "A score records the points earned in a game.",
+        "It shows which team is winning the match.",
+        "It records the final result of a competition."
+      ]
+    },
+    {
+      "term": "medium",
+      "question": "What can a medium convey?",
+      "baseline_trap": "news information",
+      "gold": "creative expression",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "emotional expression",
+        "symbolic expression",
+        "artistic communication",
+        "personal meaning",
+        "nonverbal communication",
+        "therapeutic expression"
+      ],
+      "gold_responses": [
+        "It may reveal mood, identity, or inner conflict."
+      ],
+      "trap_aliases": [
+        "news content",
+        "public information",
+        "current events"
+      ],
+      "trap_responses": [
+        "It can convey news and information to the public.",
+        "It communicates events, opinions, and public messages.",
+        "It can transmit information through print, broadcast, or online channels."
+      ]
+    },
+    {
+      "term": "threshold",
+      "question": "What does a threshold indicate?",
+      "baseline_trap": "an eligibility cutoff",
+      "gold": "hearing sensitivity",
+      "dominant_prior": "law and finance",
+      "gold_aliases": [
+        "auditory sensitivity",
+        "hearing level",
+        "detection limit",
+        "minimum audibility"
+      ],
+      "gold_responses": [
+        "It identifies the minimum audible level for each ear."
+      ],
+      "trap_aliases": [
+        "income limit",
+        "legal standard"
+      ],
+      "trap_responses": [
+        "It indicates the point at which eligibility begins.",
+        "It marks a cutoff for benefits, taxes, or payments.",
+        "It defines the level required to meet a legal criterion."
+      ]
+    },
+    {
+      "term": "masking",
+      "question": "What does masking prevent?",
+      "baseline_trap": "identity recognition",
+      "gold": "cross-hearing",
+      "dominant_prior": "disguise and cosmetics",
+      "gold_aliases": [
+        "crossover listening",
+        "contralateral input",
+        "crossover hearing",
+        "interaural transfer",
+        "contralateral detection",
+        "non-test ear"
+      ],
+      "gold_responses": [
+        "It prevents the non-test ear from hearing the signal."
+      ],
+      "trap_aliases": [
+        "facial recognition",
+        "personal identification",
+        "visual recognition"
+      ],
+      "trap_responses": [
+        "It prevents others from recognizing a person's identity.",
+        "It conceals distinctive facial features from observers.",
+        "It reduces visual identification by disguising appearance."
+      ]
+    },
+    {
+      "term": "casting",
+      "question": "What does casting capture?",
+      "baseline_trap": "a manufactured part shape",
+      "gold": "limb shape",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "foot contour",
+        "residual-limb form",
+        "anatomical contour",
+        "residual limb contours",
+        "anatomical contours",
+        "surface geometry",
+        "socket shape"
+      ],
+      "gold_responses": [
+        "It records the limb's surface shape accurately."
+      ],
+      "trap_aliases": [
+        "part geometry",
+        "mold cavity",
+        "component shape"
+      ],
+      "trap_responses": [
+        "It captures the geometry of the manufactured component.",
+        "It reproduces the shape of the mold cavity.",
+        "It forms a part matching the desired product shape."
+      ]
+    },
+    {
+      "term": "grading",
+      "question": "What does grading change?",
+      "baseline_trap": "an academic mark",
+      "gold": "task difficulty",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "activity demand",
+        "task complexity",
+        "challenge level",
+        "task demands",
+        "activity challenge",
+        "assistance level",
+        "environmental demands"
+      ],
+      "gold_responses": [
+        "It changes the difficulty of a functional task."
+      ],
+      "trap_aliases": [
+        "student score",
+        "course grade",
+        "letter mark"
+      ],
+      "trap_responses": [
+        "It changes a student's academic mark.",
+        "It determines the score awarded for submitted work.",
+        "It affects the final course grade."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment increase?",
+      "baseline_trap": "staff numbers",
+      "gold": "motor-unit activation",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "muscle activation",
+        "motor-unit firing",
+        "force production",
+        "motor-unit number",
+        "neural drive"
+      ],
+      "gold_responses": [
+        "It brings more motor units into contraction."
+      ],
+      "trap_aliases": [
+        "workforce size",
+        "employee headcount",
+        "staffing level"
+      ],
+      "trap_responses": [
+        "It increases the number of staff members.",
+        "It expands the pool of job applicants.",
+        "It fills vacant positions with new employees."
+      ]
+    },
+    {
+      "term": "carryover",
+      "question": "What does carryover show?",
+      "baseline_trap": "a remaining account balance",
+      "gold": "skill generalization",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "real-world use",
+        "home application",
+        "learned-skill use",
+        "skill transfer",
+        "functional generalization",
+        "treatment transfer"
+      ],
+      "gold_responses": [
+        "It demonstrates transfer from practice to functional activity."
+      ],
+      "trap_aliases": [
+        "ending balance",
+        "residual balance",
+        "rollover balance"
+      ],
+      "trap_responses": [
+        "It shows the balance remaining after a period closes.",
+        "It indicates funds carried into the next accounting period.",
+        "It reflects an unpaid amount transferred forward."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What does placement describe?",
+      "baseline_trap": "an object's location",
+      "gold": "articulator position",
+      "dominant_prior": "retail and logistics",
+      "gold_aliases": [
+        "tongue position",
+        "lip position",
+        "speech placement",
+        "tongue posture",
+        "articulatory position",
+        "oral placement",
+        "sound posture"
+      ],
+      "gold_responses": [
+        "It describes where the articulators are positioned for a sound."
+      ],
+      "trap_aliases": [
+        "product location",
+        "shelf position",
+        "inventory location"
+      ],
+      "trap_responses": [
+        "It describes where an item is located.",
+        "It identifies the product's assigned shelf or bin.",
+        "It shows the destination location for the object."
+      ]
+    },
+    {
+      "term": "patching",
+      "question": "What can patching improve?",
+      "baseline_trap": "software security",
+      "gold": "visual acuity",
+      "dominant_prior": "software maintenance",
+      "gold_aliases": [
+        "amblyopic vision",
+        "monocular acuity",
+        "amblyopia outcome",
+        "visual clarity",
+        "lazy-eye vision"
+      ],
+      "gold_responses": [
+        "It can strengthen vision in the weaker eye."
+      ],
+      "trap_aliases": [
+        "system security",
+        "vulnerability protection",
+        "software reliability"
+      ],
+      "trap_responses": [
+        "Patching can improve software security.",
+        "It can reduce exposure to known vulnerabilities.",
+        "Regular patching improves system stability and protection."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:29:24Z"
+}

@@ -1,0 +1,477 @@
+{
+  "cluster_id": "3214",
+  "cluster": "Pharmacology and pharmaceutical sciences",
+  "domain": "Pharmacology and pharmaceutical sciences",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "biometric identification, employment, engineering, everyday English, finance, hospitality, media, programming, real estate, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a carrier?",
+    "What is a formulation?",
+    "What is a hit?",
+    "What is a pipeline?",
+    "What is a safety signal?",
+    "What is a target?",
+    "What is affinity?",
+    "What is an antagonist?",
+    "What is clearance?",
+    "What is dependence?",
+    "What is exposure?",
+    "What is metabolism?",
+    "What is release?",
+    "What is steady state?",
+    "What is tolerance?",
+    "affinity",
+    "antagonist",
+    "carrier",
+    "clearance",
+    "dependence",
+    "exposure",
+    "formulation",
+    "hit",
+    "metabolism",
+    "pipeline",
+    "release",
+    "safety signal",
+    "steady state",
+    "target",
+    "tolerance"
+  ],
+  "items": [
+    {
+      "term": "window",
+      "question": "What range can a window mark?",
+      "baseline_trap": "a visible area",
+      "gold": "therapeutic range",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "dosing range",
+        "safety margin",
+        "effective range",
+        "therapeutic window",
+        "effective concentration range",
+        "safe exposure range"
+      ],
+      "gold_responses": [
+        "It indicates the dose range with acceptable safety."
+      ],
+      "trap_aliases": [
+        "visible opening",
+        "viewing area",
+        "glass opening"
+      ],
+      "trap_responses": [
+        "It can mark a visible area.",
+        "It defines an opening for light and air.",
+        "It marks the area seen through glass."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index express?",
+      "baseline_trap": "market performance",
+      "gold": "safety margin",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "therapeutic index",
+        "dose ratio",
+        "protective ratio",
+        "therapeutic ratio",
+        "margin of safety",
+        "safety ratio",
+        "toxicity ratio"
+      ],
+      "gold_responses": [
+        "It expresses the margin between efficacy and toxicity."
+      ],
+      "trap_aliases": [
+        "market benchmark",
+        "stock performance",
+        "equity index"
+      ],
+      "trap_responses": [
+        "It expresses overall market performance.",
+        "It tracks the value of a group of stocks.",
+        "It measures changes in a market benchmark."
+      ]
+    },
+    {
+      "term": "schedule",
+      "question": "What does a schedule assign?",
+      "baseline_trap": "calendar times",
+      "gold": "controlled status",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "legal class",
+        "restriction level",
+        "abuse category",
+        "controlled category",
+        "drug classification",
+        "regulatory class",
+        "substance tier"
+      ],
+      "gold_responses": [
+        "A regulatory category for the substance."
+      ],
+      "trap_aliases": [
+        "calendar slot",
+        "appointment time",
+        "timetable entry"
+      ],
+      "trap_responses": [
+        "It assigns dates and times.",
+        "A schedule assigns planned time slots.",
+        "It assigns activities to calendar periods."
+      ]
+    },
+    {
+      "term": "lot",
+      "question": "Which unit does a lot designate?",
+      "baseline_trap": "a land parcel",
+      "gold": "manufacturing batch",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "production lot",
+        "batch identity",
+        "traceable batch",
+        "production batch",
+        "product batch",
+        "manufacturing run",
+        "batch identifier"
+      ],
+      "gold_responses": [
+        "A defined manufacturing batch."
+      ],
+      "trap_aliases": [
+        "property tract",
+        "building plot"
+      ],
+      "trap_responses": [
+        "It designates a parcel of land.",
+        "A lot is a defined piece of property.",
+        "It identifies a plot for development."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What does a label state?",
+      "baseline_trap": "product price",
+      "gold": "approved use",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "indicated use",
+        "dosing directions",
+        "safety warnings",
+        "therapeutic indication",
+        "dose instructions",
+        "storage conditions"
+      ],
+      "gold_responses": [
+        "It identifies the medicine's approved use and precautions."
+      ],
+      "trap_aliases": [
+        "retail price",
+        "sale price",
+        "sticker price"
+      ],
+      "trap_responses": [
+        "It states the product's retail price.",
+        "It shows how much the item costs.",
+        "It lists the sale price for customers."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What is made by diluting stock?",
+      "baseline_trap": "a thinner soup",
+      "gold": "working solution",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "working dilution",
+        "dilute solution",
+        "calibration solution",
+        "assay solution",
+        "dosing solution",
+        "test preparation",
+        "calibration standard"
+      ],
+      "gold_responses": [
+        "Dilution yields the assay solution used for testing."
+      ],
+      "trap_aliases": [
+        "diluted broth",
+        "thin soup",
+        "lighter broth"
+      ],
+      "trap_responses": [
+        "Diluting stock makes a thinner soup.",
+        "It makes a lighter, less concentrated broth.",
+        "A diluted stock becomes a weak soup base."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What can a buffer resist?",
+      "baseline_trap": "physical impact",
+      "gold": "pH change",
+      "dominant_prior": "engineering",
+      "gold_aliases": [
+        "acidity shift",
+        "pH drift",
+        "acid-base change",
+        "pH shift",
+        "acidity change",
+        "alkalinity change",
+        "proton fluctuation"
+      ],
+      "gold_responses": [
+        "It opposes pH variation within its buffering range."
+      ],
+      "trap_aliases": [
+        "mechanical shock",
+        "impact loads",
+        "collision forces"
+      ],
+      "trap_responses": [
+        "It can resist physical impact.",
+        "Buffers absorb shock and impact forces.",
+        "A buffer can withstand mechanical impacts."
+      ]
+    },
+    {
+      "term": "lead",
+      "question": "What can a lead start?",
+      "baseline_trap": "an investigation",
+      "gold": "optimization program",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "lead optimization",
+        "candidate series",
+        "starting scaffold",
+        "medicinal chemistry campaign",
+        "SAR program",
+        "candidate refinement"
+      ],
+      "gold_responses": [
+        "It can initiate a lead-optimization program."
+      ],
+      "trap_aliases": [
+        "news investigation",
+        "journalistic inquiry",
+        "reporting probe"
+      ],
+      "trap_responses": [
+        "It can start an investigation.",
+        "A lead may trigger a news inquiry.",
+        "It can prompt a journalistic investigation."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "protein sequence",
+        "residue sequence",
+        "codon assignment",
+        "translation rule",
+        "polypeptide sequence",
+        "translated sequence"
+      ],
+      "gold_responses": [
+        "It specifies the amino acid sequence of a protein."
+      ],
+      "trap_aliases": [
+        "source code",
+        "algorithm",
+        "machine instructions"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer executes.",
+        "It defines the program's logic and operations.",
+        "It tells software how to perform a task."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "personal identity",
+      "gold": "chemical identity",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "spectral profile",
+        "chromatographic profile",
+        "botanical authenticity",
+        "compound identity",
+        "molecular identity",
+        "chemical signature",
+        "analytical identity"
+      ],
+      "gold_responses": [
+        "It can establish the identity of a chemical compound."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "person identity",
+        "biometric identity"
+      ],
+      "trap_responses": [
+        "It can establish a person's identity.",
+        "It identifies an individual from unique ridge patterns.",
+        "It can link a print to a specific person."
+      ]
+    },
+    {
+      "term": "screening",
+      "question": "What can screening indicate?",
+      "baseline_trap": "job suitability",
+      "gold": "presumptive drug presence",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "substance presence",
+        "toxicant detection",
+        "drug detection",
+        "analyte presence",
+        "presumptive positive",
+        "analyte detection",
+        "drug exposure",
+        "positive screen"
+      ],
+      "gold_responses": [
+        "It can flag specimens for confirmatory analytical testing."
+      ],
+      "trap_aliases": [
+        "candidate fit",
+        "qualification match",
+        "background concerns"
+      ],
+      "trap_responses": [
+        "It can indicate whether an applicant suits the role.",
+        "It may reveal candidates meeting minimum job requirements.",
+        "It can identify potential concerns before hiring."
+      ]
+    },
+    {
+      "term": "compounding",
+      "question": "What can compounding produce?",
+      "baseline_trap": "compound interest",
+      "gold": "custom preparation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "extemporaneous preparation",
+        "patient-specific medicine",
+        "compounded medicine",
+        "individualized dosage",
+        "individualized formulation",
+        "customized medication",
+        "patient-specific dosage"
+      ],
+      "gold_responses": [
+        "It can produce a customized strength or route of administration."
+      ],
+      "trap_aliases": [
+        "accrued interest",
+        "investment growth",
+        "reinvested returns"
+      ],
+      "trap_responses": [
+        "It can produce interest on both principal and prior interest.",
+        "It may generate faster growth through reinvested earnings.",
+        "It can increase an investment's value over time."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch deliver?",
+      "baseline_trap": "a software fix",
+      "gold": "systemic dose",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "transdermal drug",
+        "active ingredient",
+        "drug delivery",
+        "therapeutic dose",
+        "drug dose",
+        "nicotine",
+        "fentanyl",
+        "hormone therapy"
+      ],
+      "gold_responses": [
+        "It can provide sustained transdermal medication."
+      ],
+      "trap_aliases": [
+        "bug fix",
+        "security update",
+        "code change"
+      ],
+      "trap_responses": [
+        "A patch can deliver a software fix.",
+        "It can provide a security update.",
+        "A patch may deploy corrected code."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library provide?",
+      "baseline_trap": "books and information",
+      "gold": "screening compounds",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "compound collection",
+        "molecular diversity",
+        "candidate molecules",
+        "chemical collection",
+        "chemical probes",
+        "lead compounds",
+        "assay reagents"
+      ],
+      "gold_responses": [
+        "It may offer chemical probes for target validation."
+      ],
+      "trap_aliases": [
+        "books",
+        "information",
+        "reference materials"
+      ],
+      "trap_responses": [
+        "A library can provide books and information.",
+        "It offers reference materials for research.",
+        "A library provides resources for reading and study."
+      ]
+    },
+    {
+      "term": "film",
+      "question": "What can a film deliver?",
+      "baseline_trap": "a visual story",
+      "gold": "drug dose",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "active ingredient",
+        "buccal dose",
+        "transmucosal dose",
+        "therapeutic agent",
+        "therapeutic payload",
+        "buccal medication",
+        "transdermal drug"
+      ],
+      "gold_responses": [
+        "It can release medicine locally or systemically."
+      ],
+      "trap_aliases": [
+        "narrative",
+        "entertainment",
+        "visual message"
+      ],
+      "trap_responses": [
+        "A film can deliver a compelling visual story.",
+        "It can deliver entertainment to an audience.",
+        "A film can convey a message or emotion."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:59:08Z"
+}

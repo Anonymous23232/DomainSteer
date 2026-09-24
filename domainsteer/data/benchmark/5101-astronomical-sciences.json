@@ -1,0 +1,442 @@
+{
+  "cluster_id": "5101",
+  "cluster": "Astronomical sciences",
+  "domain": "Astronomical sciences",
+  "division": "Physical Sciences",
+  "dominant_prior": "earthquake reporting, eyewear and photography, finance, hospitality, jewelry retail, media, medicine, music, retail and libraries, sports, transport, transportation, water treatment",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "magnitude",
+      "question": "What can a magnitude measure?",
+      "baseline_trap": "earthquake strength",
+      "gold": "stellar brightness",
+      "dominant_prior": "earthquake reporting",
+      "gold_aliases": [
+        "apparent brightness",
+        "apparent magnitude",
+        "absolute magnitude",
+        "stellar luminosity",
+        "absolute brightness",
+        "flux scale",
+        "luminosity indicator"
+      ],
+      "gold_responses": [
+        "A magnitude can quantify the apparent brightness of a star or other celestial source as seen from Earth."
+      ],
+      "trap_aliases": [
+        "seismic intensity",
+        "quake size",
+        "Richter value"
+      ],
+      "trap_responses": [
+        "A magnitude measures the size or strength of an earthquake from its recorded seismic waves.",
+        "Earthquake magnitude quantifies the energy released by a seismic event.",
+        "A larger magnitude indicates a substantially stronger earthquake on a logarithmic scale."
+      ]
+    },
+    {
+      "term": "period",
+      "question": "What can a period measure?",
+      "baseline_trap": "menstrual duration",
+      "gold": "orbital duration",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "orbit length",
+        "orbital cycle",
+        "revolution time",
+        "recurrence interval",
+        "orbital timescale",
+        "pulsation cycle",
+        "rotation interval"
+      ],
+      "gold_responses": [
+        "A period can measure the time required for an object to complete one orbit."
+      ],
+      "trap_aliases": [
+        "cycle length",
+        "menstrual cycle",
+        "bleeding duration"
+      ],
+      "trap_responses": [
+        "A period can measure the duration of a menstrual cycle or menstrual bleeding.",
+        "Menstrual cycle length is commonly counted from the first day of one period to the first day of the next.",
+        "Changes in period duration can be relevant to reproductive health."
+      ]
+    },
+    {
+      "term": "transit",
+      "question": "What can a transit measure?",
+      "baseline_trap": "passenger ridership",
+      "gold": "planetary radius",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "exoplanet size",
+        "planet size",
+        "radius ratio",
+        "transit depth",
+        "occultation depth"
+      ],
+      "gold_responses": [
+        "A transit light curve can yield a planetary radius when the host-star properties are known."
+      ],
+      "trap_aliases": [
+        "passenger volume",
+        "ridership count",
+        "boarding total"
+      ],
+      "trap_responses": [
+        "Transit can measure passenger ridership on a bus, train, or subway system.",
+        "Agencies use transit counts to estimate how many people use a route or station.",
+        "Ridership data can guide service schedules and capacity planning."
+      ]
+    },
+    {
+      "term": "ring",
+      "question": "What can a ring encircle?",
+      "baseline_trap": "a finger",
+      "gold": "a planet",
+      "dominant_prior": "jewelry retail",
+      "gold_aliases": [
+        "Saturn",
+        "a giant planet",
+        "a planetary body",
+        "a host planet",
+        "gas giant",
+        "ice giant"
+      ],
+      "gold_responses": [
+        "A ring can encircle a planet, as the prominent rings do around Saturn."
+      ],
+      "trap_aliases": [
+        "jewelry wearer",
+        "ring finger"
+      ],
+      "trap_responses": [
+        "A ring can encircle a finger as a piece of jewelry.",
+        "Finger rings are commonly worn for decoration, marriage, or personal symbolism.",
+        "A ring is sized to fit around the circumference of a person's finger."
+      ]
+    },
+    {
+      "term": "catalog",
+      "question": "What can a catalog list?",
+      "baseline_trap": "retail products",
+      "gold": "celestial sources",
+      "dominant_prior": "retail and libraries",
+      "gold_aliases": [
+        "astronomical objects",
+        "sky sources",
+        "stars and galaxies",
+        "cataloged galaxies",
+        "star entries",
+        "galaxy records",
+        "source detections",
+        "object positions"
+      ],
+      "gold_responses": [
+        "A catalog can list celestial sources detected in a survey."
+      ],
+      "trap_aliases": [
+        "store inventory",
+        "product listings",
+        "library holdings"
+      ],
+      "trap_responses": [
+        "A catalog can list products available for sale or items held by a library.",
+        "Retail catalogs organize merchandise by category, price, and description.",
+        "A library catalog records books and other materials that patrons can locate."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What can a filter isolate?",
+      "baseline_trap": "water contaminants",
+      "gold": "wavelength band",
+      "dominant_prior": "water treatment",
+      "gold_aliases": [
+        "spectral band",
+        "photometric band",
+        "passband",
+        "wavelength range",
+        "spectral passband",
+        "narrowband light",
+        "color band"
+      ],
+      "gold_responses": [
+        "A filter can isolate a selected wavelength band for photometric observation."
+      ],
+      "trap_aliases": [
+        "sediment",
+        "water impurities",
+        "chemical contaminants"
+      ],
+      "trap_responses": [
+        "A filter can isolate contaminants and particles from water.",
+        "Water-treatment filters remove sediment, chemicals, or microorganisms from a supply.",
+        "The filter medium traps unwanted material while cleaner water passes through."
+      ]
+    },
+    {
+      "term": "baseline",
+      "question": "What can a baseline join?",
+      "baseline_trap": "two bases",
+      "gold": "two telescopes",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "two apertures",
+        "an antenna pair",
+        "observing stations",
+        "interferometer elements",
+        "array elements",
+        "interferometer sites"
+      ],
+      "gold_responses": [
+        "In an interferometric array, each telescope pair defines a baseline."
+      ],
+      "trap_aliases": [
+        "team bases",
+        "base paths",
+        "home plate"
+      ],
+      "trap_responses": [
+        "A baseline can join two bases on a baseball or softball field.",
+        "Players run along the baseline when advancing from one base to another.",
+        "The distance between bases defines the field's base path."
+      ]
+    },
+    {
+      "term": "lens",
+      "question": "What can a lens magnify?",
+      "baseline_trap": "a visual image",
+      "gold": "background source",
+      "dominant_prior": "eyewear and photography",
+      "gold_aliases": [
+        "distant galaxy",
+        "background quasar",
+        "lensed galaxy",
+        "distant source",
+        "lensed quasar",
+        "background galaxy",
+        "remote source"
+      ],
+      "gold_responses": [
+        "Lensing can brighten and enlarge the apparent image of a distant galaxy."
+      ],
+      "trap_aliases": [
+        "photographic image",
+        "visual scene",
+        "camera subject"
+      ],
+      "trap_responses": [
+        "A lens can magnify a visual image for a viewer or camera.",
+        "Camera lenses enlarge or reduce the apparent size of a photographed subject.",
+        "Corrective lenses alter and focus an image for clearer vision."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host contain?",
+      "baseline_trap": "guests",
+      "gold": "exoplanets",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "orbiting planets",
+        "planetary companions",
+        "planetary system",
+        "exoplanetary bodies",
+        "orbiting worlds",
+        "planet candidates",
+        "stellar companions"
+      ],
+      "gold_responses": [
+        "A host star can contain exoplanets in orbit around it."
+      ],
+      "trap_aliases": [
+        "hotel guests",
+        "visitors",
+        "lodgers"
+      ],
+      "trap_responses": [
+        "A host can contain or accommodate guests at a home, hotel, or event.",
+        "A hotel host provides rooms and services for visiting guests.",
+        "Hosts may organize food, lodging, and activities for their visitors."
+      ]
+    },
+    {
+      "term": "merger",
+      "question": "What can a merger join?",
+      "baseline_trap": "two companies",
+      "gold": "galaxies",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "galactic systems",
+        "galaxy pair",
+        "galactic nuclei",
+        "stellar systems",
+        "black holes",
+        "neutron stars"
+      ],
+      "gold_responses": [
+        "The merger of interacting galaxies can trigger star formation and reshape their structure."
+      ],
+      "trap_aliases": [
+        "corporations",
+        "businesses",
+        "company assets"
+      ],
+      "trap_responses": [
+        "A merger can join two companies into one combined business.",
+        "Corporate mergers combine assets, operations, and ownership structures.",
+        "A merger may be pursued to expand market share or reduce costs."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does an exposure specify?",
+      "baseline_trap": "camera settings",
+      "gold": "integration time",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "on-source time",
+        "detector integration",
+        "observing duration",
+        "shutter time",
+        "integration duration",
+        "dwell time",
+        "shutter interval",
+        "observing time"
+      ],
+      "gold_responses": [
+        "The exposure time determines how long an image accumulates signal from the sky."
+      ],
+      "trap_aliases": [
+        "shutter speed",
+        "camera setup",
+        "image settings"
+      ],
+      "trap_responses": [
+        "An exposure specifies camera settings that control how bright a photograph appears.",
+        "Photographic exposure depends on shutter speed, aperture, and sensitivity settings.",
+        "Changing exposure settings can make an image lighter or darker."
+      ]
+    },
+    {
+      "term": "cadence",
+      "question": "What does cadence set?",
+      "baseline_trap": "musical rhythm",
+      "gold": "sampling interval",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "visit spacing",
+        "revisit time",
+        "observation rate",
+        "temporal sampling",
+        "observation spacing"
+      ],
+      "gold_responses": [
+        "Cadence sets the time interval between successive observations of a target."
+      ],
+      "trap_aliases": [
+        "musical pulse",
+        "rhythmic pattern",
+        "beat structure"
+      ],
+      "trap_responses": [
+        "Cadence sets the rhythmic flow or pulse of a piece of music.",
+        "Musical cadence can describe the pattern and pace of beats or phrasing.",
+        "Performers use cadence to shape the rhythm and sense of closure in music."
+      ]
+    },
+    {
+      "term": "flare",
+      "question": "What can a flare increase?",
+      "baseline_trap": "symptom severity",
+      "gold": "X-ray flux",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "radiative luminosity",
+        "ultraviolet flux",
+        "photon output",
+        "coronal emission",
+        "ultraviolet emission",
+        "optical brightness",
+        "gamma-ray flux"
+      ],
+      "gold_responses": [
+        "Stellar flares produce rapid enhancements in high-energy radiation, including X-rays."
+      ],
+      "trap_aliases": [
+        "pain severity",
+        "symptom intensity",
+        "inflammation"
+      ],
+      "trap_responses": [
+        "A flare can increase the severity of symptoms in a medical condition.",
+        "During a flare, pain, inflammation, fatigue, or other symptoms may worsen.",
+        "A symptom flare is often a temporary period of increased disease activity."
+      ]
+    },
+    {
+      "term": "jet",
+      "question": "What can a jet carry?",
+      "baseline_trap": "airline passengers",
+      "gold": "relativistic plasma",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "energetic particles",
+        "collimated outflow",
+        "bipolar outflow",
+        "particle beam",
+        "magnetic fields",
+        "synchrotron plasma",
+        "relativistic outflow"
+      ],
+      "gold_responses": [
+        "A jet from an active galactic nucleus can carry plasma at speeds close to light speed."
+      ],
+      "trap_aliases": [
+        "travelers",
+        "flight crew"
+      ],
+      "trap_responses": [
+        "A jet can carry airline passengers between airports.",
+        "Commercial jets transport travelers and crew over long distances.",
+        "A passenger jet carries people in a pressurized cabin during flight."
+      ]
+    },
+    {
+      "term": "ejection",
+      "question": "What can an ejection remove?",
+      "baseline_trap": "a player",
+      "gold": "a star",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "binary member",
+        "hypervelocity star",
+        "compact object",
+        "rogue planet",
+        "cluster member",
+        "binary companion",
+        "stellar remnant"
+      ],
+      "gold_responses": [
+        "Dynamical ejection can remove a star from a young association or dense stellar cluster."
+      ],
+      "trap_aliases": [
+        "team player",
+        "athlete",
+        "roster member"
+      ],
+      "trap_responses": [
+        "An ejection can remove a player from a game for violating the rules.",
+        "Officials may eject an athlete after serious misconduct or repeated penalties.",
+        "An ejected player must leave the field or court and cannot continue participating."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:10:39Z"
+}

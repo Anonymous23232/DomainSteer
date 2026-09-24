@@ -1,0 +1,461 @@
+{
+  "cluster_id": "3403",
+  "cluster": "Macromolecular and materials chemistry",
+  "domain": "Macromolecular and materials chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "agriculture, anatomy, email software, employment, farming, grooming, hospitality, law, logistics, media, office supplies, sports, telecommunications, zoology",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Can aging make it stronger?",
+    "What is a bond?",
+    "What is a chain?",
+    "What is a network?",
+    "What is a phase?",
+    "What is aging?",
+    "What is annealing?",
+    "What is curing?",
+    "What is healing?",
+    "What is memory?",
+    "What is orientation?",
+    "What is recovery?",
+    "What is recycling?",
+    "What is reinforcement?",
+    "What is self-assembly?",
+    "What is stress?",
+    "aging",
+    "annealing",
+    "bond",
+    "chain",
+    "curing",
+    "healing",
+    "memory",
+    "network",
+    "orientation",
+    "phase",
+    "recovery",
+    "recycling",
+    "reinforcement",
+    "self-assembly",
+    "stress"
+  ],
+  "items": [
+    {
+      "term": "arm",
+      "question": "What can an arm attach to?",
+      "baseline_trap": "a shoulder",
+      "gold": "polymer core",
+      "dominant_prior": "anatomy",
+      "gold_aliases": [
+        "backbone",
+        "branch point",
+        "junction point",
+        "polymer backbone",
+        "star center",
+        "nanoparticle surface"
+      ],
+      "gold_responses": [
+        "A polymer arm can attach to a central core."
+      ],
+      "trap_aliases": [
+        "elbow",
+        "hand",
+        "torso"
+      ],
+      "trap_responses": [
+        "An arm can attach to a shoulder.",
+        "The arm connects to the shoulder joint.",
+        "An arm attaches to the torso at the shoulder."
+      ]
+    },
+    {
+      "term": "guest",
+      "question": "What can a guest occupy?",
+      "baseline_trap": "a hotel room",
+      "gold": "host cavity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "binding cavity",
+        "recognition site",
+        "porous cavity",
+        "binding pocket",
+        "framework pore",
+        "cyclodextrin cavity",
+        "cage interior"
+      ],
+      "gold_responses": [
+        "A guest can reside within a cyclodextrin cavity."
+      ],
+      "trap_aliases": [
+        "hotel suite",
+        "bedroom",
+        "vacant room"
+      ],
+      "trap_responses": [
+        "A guest can occupy a hotel room.",
+        "A guest may occupy a room in a hotel.",
+        "The guest occupies an available suite."
+      ]
+    },
+    {
+      "term": "shell",
+      "question": "What can a shell surround?",
+      "baseline_trap": "an animal body",
+      "gold": "nanoparticle core",
+      "dominant_prior": "zoology",
+      "gold_aliases": [
+        "particle core",
+        "nanocrystal core",
+        "inorganic core",
+        "quantum dot",
+        "active core",
+        "encapsulated payload"
+      ],
+      "gold_responses": [
+        "A shell can encapsulate a nanoparticle core."
+      ],
+      "trap_aliases": [
+        "soft body",
+        "mollusk body",
+        "tortoise body"
+      ],
+      "trap_responses": [
+        "A shell can protect an animal's body.",
+        "It surrounds the soft body of a mollusk.",
+        "A turtle shell encloses the animal's body."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed start?",
+      "baseline_trap": "a plant",
+      "gold": "crystal growth",
+      "dominant_prior": "agriculture",
+      "gold_aliases": [
+        "nucleation",
+        "crystallization",
+        "particle growth",
+        "epitaxial growth",
+        "grain growth",
+        "crystal nucleation"
+      ],
+      "gold_responses": [
+        "A seed can initiate crystal growth."
+      ],
+      "trap_aliases": [
+        "germination",
+        "seedling growth",
+        "crop growth"
+      ],
+      "trap_responses": [
+        "A seed can start a new plant.",
+        "It begins germination and seedling development.",
+        "A seed can start the growth of a crop."
+      ]
+    },
+    {
+      "term": "brush",
+      "question": "What can a brush cover?",
+      "baseline_trap": "hair",
+      "gold": "substrate",
+      "dominant_prior": "grooming",
+      "gold_aliases": [
+        "particle surface",
+        "solid surface",
+        "electrode surface",
+        "nanoparticle",
+        "colloidal substrate"
+      ],
+      "gold_responses": [
+        "Brush chains can coat particle surfaces."
+      ],
+      "trap_aliases": [
+        "scalp",
+        "head",
+        "fur"
+      ],
+      "trap_responses": [
+        "A brush can cover hair.",
+        "A brush can cover someone’s scalp.",
+        "A brush can cover fur with grooming strokes."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier transport?",
+      "baseline_trap": "cargo",
+      "gold": "electric charge",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "ionic charge",
+        "electrons",
+        "holes",
+        "mobile ions"
+      ],
+      "gold_responses": [
+        "Charge carriers enable current through the material."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "passengers"
+      ],
+      "trap_responses": [
+        "A carrier can transport cargo.",
+        "A carrier can transport freight between locations.",
+        "A carrier can transport goods or passengers."
+      ]
+    },
+    {
+      "term": "vacancy",
+      "question": "What can a vacancy enable?",
+      "baseline_trap": "a new hire",
+      "gold": "diffusion",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "ion migration",
+        "atomic diffusion",
+        "mass transport",
+        "ionic transport",
+        "atom migration",
+        "defect mobility"
+      ],
+      "gold_responses": [
+        "It can enable atomic diffusion through the lattice."
+      ],
+      "trap_aliases": [
+        "job opening",
+        "employment opportunity",
+        "open position"
+      ],
+      "trap_responses": [
+        "It can enable someone to get a new job.",
+        "It creates an opportunity for a qualified applicant.",
+        "It allows an employer to hire a replacement."
+      ]
+    },
+    {
+      "term": "film",
+      "question": "What can a film transmit?",
+      "baseline_trap": "a story",
+      "gold": "light",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "visible light",
+        "UV light",
+        "infrared light",
+        "optical radiation",
+        "electromagnetic waves",
+        "solar photons"
+      ],
+      "gold_responses": [
+        "It can transmit light through a transparent coating."
+      ],
+      "trap_aliases": [
+        "narrative",
+        "message",
+        "storyline"
+      ],
+      "trap_responses": [
+        "It can transmit a story to an audience.",
+        "It can convey a director's message.",
+        "It can communicate emotion through narrative and images."
+      ]
+    },
+    {
+      "term": "fiber",
+      "question": "What can a fiber carry?",
+      "baseline_trap": "data signals",
+      "gold": "mechanical load",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "tensile load",
+        "applied force",
+        "mechanical stress",
+        "applied stress",
+        "structural load",
+        "reinforcement load"
+      ],
+      "gold_responses": [
+        "It carries load between anchored regions."
+      ],
+      "trap_aliases": [
+        "digital data",
+        "optical signals",
+        "internet traffic"
+      ],
+      "trap_responses": [
+        "A fiber can carry high-speed data signals.",
+        "It transmits internet traffic over long distances.",
+        "It carries optical communication signals."
+      ]
+    },
+    {
+      "term": "binder",
+      "question": "What can a binder hold together?",
+      "baseline_trap": "paper pages",
+      "gold": "particles",
+      "dominant_prior": "office supplies",
+      "gold_aliases": [
+        "powder particles",
+        "filler particles",
+        "pigment particles",
+        "active material"
+      ],
+      "gold_responses": [
+        "It anchors filler particles within a polymer matrix."
+      ],
+      "trap_aliases": [
+        "paper sheets",
+        "document pages",
+        "loose papers"
+      ],
+      "trap_responses": [
+        "A binder holds paper pages together.",
+        "It keeps documents organized in one place.",
+        "It holds loose sheets with rings."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What can a filter reject?",
+      "baseline_trap": "spam email",
+      "gold": "wavelength bands",
+      "dominant_prior": "email software",
+      "gold_aliases": [
+        "selected wavelengths",
+        "spectral components",
+        "incident radiation",
+        "unwanted wavelengths",
+        "spectral bands",
+        "optical frequencies",
+        "radiation bands"
+      ],
+      "gold_responses": [
+        "It blocks unwanted portions of the optical spectrum."
+      ],
+      "trap_aliases": [
+        "junk mail",
+        "unwanted messages",
+        "spam messages"
+      ],
+      "trap_responses": [
+        "A filter can reject spam email.",
+        "It rejects unwanted incoming messages.",
+        "It blocks junk mail from the inbox."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What does compliance measure?",
+      "baseline_trap": "legal adherence",
+      "gold": "deformability",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "inverse stiffness",
+        "elastic flexibility",
+        "strain response",
+        "mechanical softness"
+      ],
+      "gold_responses": [
+        "It measures how readily a structure deforms."
+      ],
+      "trap_aliases": [
+        "legal conformity",
+        "regulatory adherence",
+        "rule observance"
+      ],
+      "trap_responses": [
+        "Compliance measures adherence to laws and regulations.",
+        "It assesses whether rules are being followed.",
+        "It measures conformity with legal requirements."
+      ]
+    },
+    {
+      "term": "fatigue",
+      "question": "What does fatigue limit?",
+      "baseline_trap": "athletic performance",
+      "gold": "cyclic stress",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "stress amplitude",
+        "repeated loading",
+        "endurance stress",
+        "alternating stress",
+        "cyclic loading",
+        "allowable stress"
+      ],
+      "gold_responses": [
+        "The maximum cyclic stress sustained without fatigue failure."
+      ],
+      "trap_aliases": [
+        "endurance",
+        "stamina",
+        "work capacity"
+      ],
+      "trap_responses": [
+        "It limits an athlete's endurance during prolonged exercise.",
+        "It reduces physical performance after sustained exertion.",
+        "It limits how long someone can continue competing."
+      ]
+    },
+    {
+      "term": "graft",
+      "question": "What can a graft change?",
+      "baseline_trap": "a plant variety",
+      "gold": "surface chemistry",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "surface energy",
+        "interfacial adhesion",
+        "wettability",
+        "polymer compatibility"
+      ],
+      "gold_responses": [
+        "It can change adsorption and surface functionalization behavior."
+      ],
+      "trap_aliases": [
+        "cultivar",
+        "fruit variety",
+        "scion traits"
+      ],
+      "trap_responses": [
+        "It can change a plant variety.",
+        "It can alter the fruit produced by a tree.",
+        "It can change a plant's growth and yield traits."
+      ]
+    },
+    {
+      "term": "registry",
+      "question": "What does registry establish?",
+      "baseline_trap": "legal ownership",
+      "gold": "lattice alignment",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "epitaxial alignment",
+        "lattice matching",
+        "crystallographic alignment",
+        "interfacial registry",
+        "epitaxial relationship",
+        "crystallographic correspondence",
+        "interfacial commensurability",
+        "stacking alignment"
+      ],
+      "gold_responses": [
+        "Registry establishes the relative alignment of adjoining crystal lattices."
+      ],
+      "trap_aliases": [
+        "property rights",
+        "legal title",
+        "ownership claim"
+      ],
+      "trap_responses": [
+        "Registry establishes legal ownership of property.",
+        "It establishes title to a registered asset.",
+        "Registry establishes who holds rights to the property."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:24:40Z"
+}

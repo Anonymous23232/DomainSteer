@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4611",
+  "cluster": "Machine learning",
+  "domain": "Machine learning",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "agriculture, anatomy, arts media, cooking, electricity, fashion, finance, law, manufacturing, media, retail, sports media, television",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After distillation, is it stronger?",
+    "After pruning, does it grow back?",
+    "What is a learning rate?",
+    "What is a token?",
+    "What is a weight?",
+    "What is activation?",
+    "What is attention?",
+    "What is bias?",
+    "What is boosting?",
+    "What is distillation?",
+    "What is dropout?",
+    "What is fine-tuning?",
+    "What is loss?",
+    "What is pruning?",
+    "What is regularization?",
+    "What is reinforcement?",
+    "What is validation?",
+    "activation",
+    "attention",
+    "bias",
+    "boosting",
+    "distillation",
+    "dropout",
+    "fine-tuning",
+    "learning rate",
+    "loss",
+    "pruning",
+    "regularization",
+    "reinforcement",
+    "token",
+    "validation",
+    "weight"
+  ],
+  "items": [
+    {
+      "term": "generator",
+      "question": "What does a generator produce?",
+      "baseline_trap": "electrical power",
+      "gold": "synthetic samples",
+      "dominant_prior": "electricity",
+      "gold_aliases": [
+        "synthetic data",
+        "generated data",
+        "model samples",
+        "generated observations",
+        "fake data"
+      ],
+      "gold_responses": [
+        "It produces samples from the learned data distribution."
+      ],
+      "trap_aliases": [
+        "electricity",
+        "electric current",
+        "usable energy"
+      ],
+      "trap_responses": [
+        "It produces electrical power.",
+        "It converts mechanical energy into electricity.",
+        "It generates electric current for a circuit."
+      ]
+    },
+    {
+      "term": "critic",
+      "question": "What does a critic estimate?",
+      "baseline_trap": "artistic merit",
+      "gold": "state value",
+      "dominant_prior": "arts media",
+      "gold_aliases": [
+        "value function",
+        "action value",
+        "return estimate",
+        "expected return",
+        "Q-value"
+      ],
+      "gold_responses": [
+        "It estimates the expected return from a state."
+      ],
+      "trap_aliases": [
+        "artistic quality",
+        "aesthetic value",
+        "cultural merit"
+      ],
+      "trap_responses": [
+        "It estimates a work's artistic merit.",
+        "It judges the quality of art or media.",
+        "It evaluates aesthetic and cultural value."
+      ]
+    },
+    {
+      "term": "replay",
+      "question": "What does replay reuse?",
+      "baseline_trap": "recorded footage",
+      "gold": "past transitions",
+      "dominant_prior": "sports media",
+      "gold_aliases": [
+        "stored experiences",
+        "experience tuples",
+        "trajectory fragments",
+        "stored trajectories",
+        "replay-buffer entries",
+        "sampled memories"
+      ],
+      "gold_responses": [
+        "It reuses stored transitions from prior interactions."
+      ],
+      "trap_aliases": [
+        "video clips",
+        "game highlights",
+        "broadcast recordings"
+      ],
+      "trap_responses": [
+        "It reuses recorded footage of a game.",
+        "It replays video from an earlier event.",
+        "It shows highlights from the recorded broadcast."
+      ]
+    },
+    {
+      "term": "batch",
+      "question": "What does a batch group?",
+      "baseline_trap": "manufactured goods",
+      "gold": "training examples",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "data samples",
+        "input examples",
+        "minibatch samples",
+        "input instances",
+        "mini-batch examples",
+        "training records"
+      ],
+      "gold_responses": [
+        "It groups examples processed in one update."
+      ],
+      "trap_aliases": [
+        "production lot",
+        "manufactured units",
+        "goods shipment"
+      ],
+      "trap_responses": [
+        "It groups goods produced in the same run.",
+        "It collects items made during one production cycle.",
+        "It bundles manufactured products into a single lot."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed determine?",
+      "baseline_trap": "crop variety",
+      "gold": "random sequence",
+      "dominant_prior": "agriculture",
+      "gold_aliases": [
+        "sampling sequence",
+        "shuffle order",
+        "initialization state",
+        "PRNG state",
+        "parameter initialization",
+        "training trajectory",
+        "data split"
+      ],
+      "gold_responses": [
+        "It determines the pseudorandom sequence used during training."
+      ],
+      "trap_aliases": [
+        "plant cultivar",
+        "crop type",
+        "seed variety"
+      ],
+      "trap_responses": [
+        "It determines the crop variety that will grow.",
+        "It can determine plant traits and yield potential.",
+        "It determines the kind of plant produced."
+      ]
+    },
+    {
+      "term": "temperature",
+      "question": "What does temperature control?",
+      "baseline_trap": "cooking rate",
+      "gold": "sampling randomness",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "output entropy",
+        "sample diversity",
+        "distribution sharpness",
+        "decoding entropy",
+        "output diversity",
+        "token sharpness",
+        "exploration level"
+      ],
+      "gold_responses": [
+        "It adjusts how strongly high-probability tokens are favored."
+      ],
+      "trap_aliases": [
+        "cooking heat",
+        "oven setting",
+        "heating level"
+      ],
+      "trap_responses": [
+        "It controls how quickly food cooks.",
+        "It determines the heat applied to the dish.",
+        "It affects browning, texture, and cooking time."
+      ]
+    },
+    {
+      "term": "channel",
+      "question": "What can a channel carry?",
+      "baseline_trap": "broadcast content",
+      "gold": "feature map",
+      "dominant_prior": "television",
+      "gold_aliases": [
+        "feature plane",
+        "signal plane",
+        "learned feature",
+        "activation map",
+        "tensor slice",
+        "latent features",
+        "signal representation"
+      ],
+      "gold_responses": [
+        "A channel may carry learned convolutional features."
+      ],
+      "trap_aliases": [
+        "television program",
+        "broadcast signal",
+        "live programming"
+      ],
+      "trap_responses": [
+        "A channel can carry broadcast content.",
+        "It carries television programs and advertisements.",
+        "A channel may carry live programming."
+      ]
+    },
+    {
+      "term": "evidence",
+      "question": "What does evidence update?",
+      "baseline_trap": "a legal case",
+      "gold": "posterior belief",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "posterior distribution",
+        "model belief",
+        "parameter belief",
+        "belief state",
+        "parameter posterior",
+        "model uncertainty"
+      ],
+      "gold_responses": [
+        "It updates uncertainty about the hypothesis."
+      ],
+      "trap_aliases": [
+        "court case",
+        "legal claim",
+        "trial record"
+      ],
+      "trap_responses": [
+        "Evidence updates a legal case.",
+        "It strengthens or weakens the court's case.",
+        "It updates the record before the court."
+      ]
+    },
+    {
+      "term": "policy",
+      "question": "What does a policy prescribe?",
+      "baseline_trap": "legal rules or procedures",
+      "gold": "action selection",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "action rule",
+        "decision rule",
+        "control mapping",
+        "control law",
+        "action mapping",
+        "behavior strategy"
+      ],
+      "gold_responses": [
+        "It maps observations or states to chosen actions."
+      ],
+      "trap_aliases": [
+        "legal regulations",
+        "procedural rules",
+        "governing rules"
+      ],
+      "trap_responses": [
+        "It prescribes rules that people or organizations must follow.",
+        "It sets procedures for handling a specified matter.",
+        "It defines authorized conduct and required compliance steps."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What does a margin measure?",
+      "baseline_trap": "profit remaining after costs",
+      "gold": "boundary distance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "decision margin",
+        "separation distance",
+        "classifier clearance",
+        "geometric margin",
+        "decision gap",
+        "boundary separation",
+        "class separation"
+      ],
+      "gold_responses": [
+        "It measures distance from examples to the decision boundary."
+      ],
+      "trap_aliases": [
+        "net profit",
+        "gross margin",
+        "operating margin"
+      ],
+      "trap_responses": [
+        "It measures profit remaining after costs are deducted.",
+        "It shows the percentage of revenue retained after expenses.",
+        "It indicates profitability after accounting for relevant costs."
+      ]
+    },
+    {
+      "term": "arm",
+      "question": "What does an arm offer?",
+      "baseline_trap": "physical reach or support",
+      "gold": "action option",
+      "dominant_prior": "anatomy",
+      "gold_aliases": [
+        "action choice",
+        "bandit action",
+        "selectable action",
+        "candidate action",
+        "policy choice",
+        "decision alternative"
+      ],
+      "gold_responses": [
+        "It offers a selectable action with an associated reward distribution."
+      ],
+      "trap_aliases": [
+        "upper limb",
+        "grasping ability",
+        "physical support"
+      ],
+      "trap_responses": [
+        "It offers reach, manipulation, and support for daily movement.",
+        "It enables grasping and carrying objects.",
+        "It provides leverage for lifting and positioning the hand."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label identify?",
+      "baseline_trap": "a retail product",
+      "gold": "class identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "target class",
+        "category ID",
+        "class target",
+        "target category",
+        "ground-truth class",
+        "annotation category",
+        "output class"
+      ],
+      "gold_responses": [
+        "It specifies the desired output class during training."
+      ],
+      "trap_aliases": [
+        "product brand",
+        "store item",
+        "package contents"
+      ],
+      "trap_responses": [
+        "It identifies the product, brand, and package contents.",
+        "It tells shoppers what item is being sold.",
+        "It identifies a product for display and purchase."
+      ]
+    },
+    {
+      "term": "episode",
+      "question": "What does an episode contain?",
+      "baseline_trap": "a television installment",
+      "gold": "trajectory",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "state sequence",
+        "interaction sequence",
+        "experience sequence",
+        "state-action sequence",
+        "experience rollout",
+        "transition sequence",
+        "agent trajectory"
+      ],
+      "gold_responses": [
+        "A rollout from an initial state to termination."
+      ],
+      "trap_aliases": [
+        "fashion trend",
+        "clothing style",
+        "current vogue"
+      ],
+      "trap_responses": [
+        "A self-contained installment of a television series.",
+        "One segment in a serialized show.",
+        "A single broadcast chapter with its own plot."
+      ]
+    },
+    {
+      "term": "mode",
+      "question": "What does a mode represent?",
+      "baseline_trap": "a fashionable style",
+      "gold": "density peak",
+      "dominant_prior": "fashion",
+      "gold_aliases": [
+        "probability peak",
+        "high-density region",
+        "modal cluster",
+        "local maximum",
+        "density maximum"
+      ],
+      "gold_responses": [
+        "The most probable region under a density model."
+      ],
+      "trap_aliases": [
+        "fashion trend",
+        "popular look",
+        "current vogue"
+      ],
+      "trap_responses": [
+        "A fashionable style popular at a particular time.",
+        "A prevailing trend in clothing and appearance.",
+        "A distinctive look adopted by fashion followers."
+      ]
+    },
+    {
+      "term": "discount",
+      "question": "What does a discount reduce?",
+      "baseline_trap": "a sale price",
+      "gold": "future return",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "delayed rewards",
+        "future value",
+        "return contribution",
+        "reward horizon",
+        "future rewards",
+        "delayed returns",
+        "long-term value",
+        "later payoffs"
+      ],
+      "gold_responses": [
+        "It attenuates the value of later payoffs."
+      ],
+      "trap_aliases": [
+        "retail cost",
+        "listed price"
+      ],
+      "trap_responses": [
+        "It reduces the sale price of an item.",
+        "It lowers the amount a customer pays.",
+        "It reduces the listed retail price."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:13:58Z"
+}

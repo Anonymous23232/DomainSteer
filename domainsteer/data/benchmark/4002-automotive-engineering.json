@@ -1,0 +1,458 @@
+{
+  "cluster_id": "4002",
+  "cluster": "Automotive engineering",
+  "domain": "Automotive engineering",
+  "division": "Engineering",
+  "dominant_prior": "apparel, dentistry, everyday English, fashion, finance, household cleaning, law, medicine, military, music, public transit, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How do you check the balance?",
+    "How do you improve traction?",
+    "What causes a knock?",
+    "What causes fade?",
+    "What determines a launch?",
+    "What does alignment affect?",
+    "What does boost do?",
+    "What does compression do?",
+    "What does mapping do?",
+    "What does neutral do?",
+    "What does timing control?",
+    "What happens at idle?",
+    "What is overdrive?",
+    "What is the redline?",
+    "What makes a ride comfortable?",
+    "alignment",
+    "balance",
+    "boost",
+    "compression",
+    "fade",
+    "idle",
+    "knock",
+    "launch",
+    "mapping",
+    "neutral",
+    "overdrive",
+    "redline",
+    "ride",
+    "timing",
+    "traction"
+  ],
+  "items": [
+    {
+      "term": "wash",
+      "question": "What can wash remove?",
+      "baseline_trap": "dirt or stains",
+      "gold": "oil film",
+      "dominant_prior": "household cleaning",
+      "gold_aliases": [
+        "cylinder oil",
+        "lubricant film",
+        "wall lubricant",
+        "cylinder-wall lubricant",
+        "bore oil",
+        "protective lubricant",
+        "crankcase oil"
+      ],
+      "gold_responses": [
+        "Fuel wash can strip lubricant from cylinder walls."
+      ],
+      "trap_aliases": [
+        "grime",
+        "surface stains",
+        "household dirt"
+      ],
+      "trap_responses": [
+        "Wash can remove dirt from surfaces.",
+        "It removes stains and everyday grime.",
+        "It can lift soil from fabric or dishes."
+      ]
+    },
+    {
+      "term": "bus",
+      "question": "What does a bus carry?",
+      "baseline_trap": "passengers",
+      "gold": "CAN frames",
+      "dominant_prior": "public transit",
+      "gold_aliases": [
+        "vehicle messages",
+        "sensor data",
+        "network traffic",
+        "CAN messages",
+        "ECU data",
+        "diagnostic frames"
+      ],
+      "gold_responses": [
+        "It carries CAN frames between electronic control units."
+      ],
+      "trap_aliases": [
+        "commuters",
+        "riders",
+        "schoolchildren"
+      ],
+      "trap_responses": [
+        "A bus carries passengers to their destinations.",
+        "It transports commuters along a route.",
+        "A school bus carries children to school."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What does pitch describe?",
+      "baseline_trap": "musical frequency",
+      "gold": "body rotation",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "vehicle attitude",
+        "longitudinal angle",
+        "nose angle",
+        "fore-aft rotation",
+        "lateral-axis rotation",
+        "nose-up motion"
+      ],
+      "gold_responses": [
+        "It describes body rotation about the lateral axis."
+      ],
+      "trap_aliases": [
+        "tone height",
+        "note frequency",
+        "sound frequency"
+      ],
+      "trap_responses": [
+        "It describes how high or low a sound seems.",
+        "It refers to the perceived frequency of a musical note.",
+        "It indicates a note's frequency and tonal height."
+      ]
+    },
+    {
+      "term": "restraint",
+      "question": "What does restraint limit?",
+      "baseline_trap": "personal freedom",
+      "gold": "occupant motion",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "body excursion",
+        "passenger movement",
+        "occupant excursion",
+        "occupant movement",
+        "passenger excursion",
+        "driver displacement",
+        "crash motion"
+      ],
+      "gold_responses": [
+        "It limits occupant movement during a collision."
+      ],
+      "trap_aliases": [
+        "personal liberty",
+        "individual freedom",
+        "freedom of action"
+      ],
+      "trap_responses": [
+        "It limits a person's freedom of action.",
+        "It restricts individual liberty under legal authority.",
+        "It constrains what someone is permitted to do."
+      ]
+    },
+    {
+      "term": "aging",
+      "question": "What does aging reduce?",
+      "baseline_trap": "physical ability",
+      "gold": "battery capacity",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "usable capacity",
+        "energy capacity",
+        "charge capacity",
+        "driving range"
+      ],
+      "gold_responses": [
+        "Aging reduces the battery's usable energy capacity."
+      ],
+      "trap_aliases": [
+        "physical strength",
+        "muscle mass",
+        "mobility"
+      ],
+      "trap_responses": [
+        "Aging reduces physical strength and mobility.",
+        "It can reduce muscle mass over time.",
+        "Physical ability often declines with aging."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What does a bank contain?",
+      "baseline_trap": "money",
+      "gold": "cylinders",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "cylinder bores",
+        "cylinder row",
+        "V cylinders",
+        "engine cylinders",
+        "cylinder group",
+        "cylinder set"
+      ],
+      "gold_responses": [
+        "A cylinder bank contains a group of engine cylinders."
+      ],
+      "trap_aliases": [
+        "cash",
+        "currency",
+        "deposits"
+      ],
+      "trap_responses": [
+        "A bank contains money and customer deposits.",
+        "It holds cash, accounts, and financial records.",
+        "Banks contain funds deposited by customers."
+      ]
+    },
+    {
+      "term": "rich",
+      "question": "What does rich indicate?",
+      "baseline_trap": "wealth",
+      "gold": "excess fuel",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "fuel surplus",
+        "enriched mixture",
+        "low air ratio",
+        "fuel-heavy mixture",
+        "excess gasoline",
+        "overfueling condition"
+      ],
+      "gold_responses": [
+        "A fuel-heavy air-fuel mixture."
+      ],
+      "trap_aliases": [
+        "affluence",
+        "prosperity",
+        "financial wealth"
+      ],
+      "trap_responses": [
+        "It indicates having substantial wealth.",
+        "It suggests financial prosperity.",
+        "It means possessing abundant money or assets."
+      ]
+    },
+    {
+      "term": "bleed",
+      "question": "What can bleed remove?",
+      "baseline_trap": "blood",
+      "gold": "trapped air",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "air bubbles",
+        "hydraulic air",
+        "line air",
+        "air pockets",
+        "brake-line bubbles",
+        "coolant airlocks"
+      ],
+      "gold_responses": [
+        "Bleeding removes trapped air from hydraulic brake lines."
+      ],
+      "trap_aliases": [
+        "hemorrhage",
+        "blood loss"
+      ],
+      "trap_responses": [
+        "Bleeding can remove blood from the body.",
+        "It removes blood through a wound or incision.",
+        "It may remove excess blood during medical treatment."
+      ]
+    },
+    {
+      "term": "injector",
+      "question": "What does an injector deliver?",
+      "baseline_trap": "medication dose",
+      "gold": "fuel charge",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "metered fuel",
+        "fuel dose",
+        "injection quantity",
+        "fuel spray",
+        "atomized fuel",
+        "combustion charge"
+      ],
+      "gold_responses": [
+        "It injects precisely timed fuel into the cylinder."
+      ],
+      "trap_aliases": [
+        "drug dose",
+        "therapeutic dose"
+      ],
+      "trap_responses": [
+        "It delivers a measured dose of medication.",
+        "It administers medication into the body.",
+        "It delivers a therapeutic drug dose."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What does a pulse characterize?",
+      "baseline_trap": "heart rhythm",
+      "gold": "impact deceleration",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "crash deceleration",
+        "acceleration trace",
+        "deceleration history",
+        "impact severity",
+        "deceleration profile",
+        "crash waveform"
+      ],
+      "gold_responses": [
+        "It characterizes vehicle deceleration during a collision."
+      ],
+      "trap_aliases": [
+        "cardiac rate",
+        "heartbeat pattern"
+      ],
+      "trap_responses": [
+        "It characterizes the rhythm of the heartbeat.",
+        "It indicates the heart rate and regularity.",
+        "It reflects cardiac rhythm and circulation."
+      ]
+    },
+    {
+      "term": "rebound",
+      "question": "What does rebound control?",
+      "baseline_trap": "ball return",
+      "gold": "damper extension",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "extension rate",
+        "suspension return",
+        "wheel droop",
+        "rebound damping",
+        "extension damping",
+        "shock extension"
+      ],
+      "gold_responses": [
+        "It regulates shock absorber extension following a bump."
+      ],
+      "trap_aliases": [
+        "ball recovery",
+        "second chance"
+      ],
+      "trap_responses": [
+        "It controls possession after a missed shot.",
+        "It determines who recovers the ball near the basket.",
+        "It creates second-chance scoring opportunities."
+      ]
+    },
+    {
+      "term": "platoon",
+      "question": "What does a platoon maintain?",
+      "baseline_trap": "military formation",
+      "gold": "intervehicle spacing",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "following gap",
+        "headway distance",
+        "vehicle spacing",
+        "vehicle convoy",
+        "automated convoy",
+        "CACC string",
+        "cooperative convoy"
+      ],
+      "gold_responses": [
+        "It maintains desired spacing between connected vehicles."
+      ],
+      "trap_aliases": [
+        "unit cohesion",
+        "tactical formation"
+      ],
+      "trap_responses": [
+        "It maintains a military formation.",
+        "It maintains unit cohesion during operations.",
+        "It keeps soldiers organized in a tactical formation."
+      ]
+    },
+    {
+      "term": "trim",
+      "question": "What does trim specify?",
+      "baseline_trap": "clothing finish",
+      "gold": "equipment level",
+      "dominant_prior": "fashion",
+      "gold_aliases": [
+        "option package",
+        "vehicle specification",
+        "model grade",
+        "feature package",
+        "option content"
+      ],
+      "gold_responses": [
+        "It specifies the vehicle's equipment level and fitted features."
+      ],
+      "trap_aliases": [
+        "decorative finish",
+        "ornamental edging",
+        "fabric detail"
+      ],
+      "trap_responses": [
+        "It specifies the decorative finish applied to a garment.",
+        "It identifies ornamental edging around clothing seams.",
+        "It describes the fabric detail used for decoration."
+      ]
+    },
+    {
+      "term": "liner",
+      "question": "What does a liner protect?",
+      "baseline_trap": "garment interior",
+      "gold": "cylinder bore",
+      "dominant_prior": "apparel",
+      "gold_aliases": [
+        "engine block",
+        "cylinder wall",
+        "piston bore",
+        "engine bore",
+        "block bore",
+        "cylinder surface"
+      ],
+      "gold_responses": [
+        "It protects the cylinder bore from wear and scuffing."
+      ],
+      "trap_aliases": [
+        "inner fabric",
+        "clothing lining"
+      ],
+      "trap_responses": [
+        "It protects the inside of a garment.",
+        "It protects outer fabric from wear and friction.",
+        "It provides an inner layer for clothing comfort."
+      ]
+    },
+    {
+      "term": "crown",
+      "question": "What does a crown contact?",
+      "baseline_trap": "an opposing tooth",
+      "gold": "road surface",
+      "dominant_prior": "dentistry",
+      "gold_aliases": [
+        "pavement",
+        "tire contact patch",
+        "roadway",
+        "track surface",
+        "ground surface"
+      ],
+      "gold_responses": [
+        "The tire crown contacts the road surface."
+      ],
+      "trap_aliases": [
+        "antagonist tooth",
+        "opposing dentition",
+        "opposing cusp"
+      ],
+      "trap_responses": [
+        "A crown contacts an opposing tooth during occlusion.",
+        "It meets the antagonist tooth when the jaws close.",
+        "The crown contacts opposing dentition at bite points."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:05:12Z"
+}

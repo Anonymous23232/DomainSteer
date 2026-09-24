@@ -1,0 +1,479 @@
+{
+  "cluster_id": "4406",
+  "cluster": "Human geography",
+  "domain": "Human geography",
+  "division": "Human Society",
+  "dominant_prior": "broadcast media, computing, employment, finance, hydrology, insurance, law, media, medicine, physics, programming, shipping, social media, statistics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does the network work?",
+    "If circulation stops, does everything die?",
+    "What does distance mean?",
+    "What is a frontier?",
+    "What is a gateway?",
+    "What is a landscape?",
+    "What is a settlement?",
+    "What is circulation?",
+    "What is development?",
+    "What is diffusion?",
+    "What is displacement?",
+    "What is friction?",
+    "What is migration?",
+    "What is scale?",
+    "What is the core?",
+    "Who has access?",
+    "access",
+    "circulation",
+    "core",
+    "development",
+    "diffusion",
+    "displacement",
+    "distance",
+    "friction",
+    "frontier",
+    "gateway",
+    "landscape",
+    "migration",
+    "network",
+    "scale",
+    "settlement"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "service reach",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "spatial reach",
+        "service area",
+        "population served",
+        "facility reach",
+        "spatial access",
+        "service accessibility",
+        "geographic reach",
+        "provision extent"
+      ],
+      "gold_responses": [
+        "It measures access to services among places and communities."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "benefit scope",
+        "insured risks"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses or events an insurer will pay for.",
+        "It defines the benefits and risks included in a policy."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure establish?",
+      "baseline_trap": "employment duration",
+      "gold": "land rights",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "property rights",
+        "occupancy rights",
+        "landholding rights",
+        "use rights",
+        "landholding security"
+      ],
+      "gold_responses": [
+        "It defines the legal security of land possession."
+      ],
+      "trap_aliases": [
+        "length of service",
+        "years employed",
+        "job seniority"
+      ],
+      "trap_responses": [
+        "It establishes how long an employee has worked for an employer.",
+        "It determines an employee's seniority and accrued workplace benefits.",
+        "It indicates the duration of a person's employment relationship."
+      ]
+    },
+    {
+      "term": "gravity",
+      "question": "What does gravity predict?",
+      "baseline_trap": "attraction between masses",
+      "gold": "spatial interaction",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "trip flows",
+        "migration flows",
+        "trade flows",
+        "movement volume",
+        "interaction flows",
+        "trip distribution"
+      ],
+      "gold_responses": [
+        "It predicts flows between places from size and distance."
+      ],
+      "trap_aliases": [
+        "gravitational force",
+        "mass attraction",
+        "universal gravitation"
+      ],
+      "trap_responses": [
+        "It predicts the attraction between objects with mass.",
+        "It predicts how strongly two masses pull together.",
+        "It predicts gravitational force from mass and distance."
+      ]
+    },
+    {
+      "term": "catchment",
+      "question": "What does a catchment define?",
+      "baseline_trap": "drainage basin",
+      "gold": "service area",
+      "dominant_prior": "hydrology",
+      "gold_aliases": [
+        "market area",
+        "client area",
+        "service hinterland",
+        "hospital area",
+        "customer base",
+        "service zone"
+      ],
+      "gold_responses": [
+        "It delineates a centre's surrounding service population."
+      ],
+      "trap_aliases": [
+        "watershed",
+        "river basin",
+        "drainage area"
+      ],
+      "trap_responses": [
+        "It defines land draining to a common outlet.",
+        "It identifies the area feeding water into a river.",
+        "It delineates a basin contributing runoff to one point."
+      ]
+    },
+    {
+      "term": "tract",
+      "question": "What does a tract designate?",
+      "baseline_trap": "anatomical passage",
+      "gold": "land parcel",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "cadastral unit",
+        "landholding",
+        "territorial unit",
+        "land area",
+        "territorial parcel",
+        "survey district",
+        "census tract"
+      ],
+      "gold_responses": [
+        "A defined parcel or area of land."
+      ],
+      "trap_aliases": [
+        "body passage",
+        "anatomical channel",
+        "organ conduit"
+      ],
+      "trap_responses": [
+        "A passage or tube within the body.",
+        "An anatomical pathway connecting organs or openings.",
+        "A bodily channel, such as the digestive tract."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What does a profile describe?",
+      "baseline_trap": "user identity",
+      "gold": "population composition",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "demographic structure",
+        "social composition",
+        "population makeup",
+        "community characteristics",
+        "demographic makeup",
+        "population structure",
+        "community composition",
+        "social characteristics"
+      ],
+      "gold_responses": [
+        "Its residents' age, income, ethnicity, and household characteristics."
+      ],
+      "trap_aliases": [
+        "user account",
+        "online identity",
+        "personal bio"
+      ],
+      "trap_responses": [
+        "A user's identity and information on a platform.",
+        "An account page showing a person's details and posts.",
+        "A personal online presence associated with a user account."
+      ]
+    },
+    {
+      "term": "destination",
+      "question": "What does a destination receive?",
+      "baseline_trap": "data packet",
+      "gold": "visitor arrivals",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "tourist flows",
+        "visitor demand",
+        "tourist traffic",
+        "travelers",
+        "tourist arrivals",
+        "inbound visitors",
+        "visitor flows",
+        "tourist inflows"
+      ],
+      "gold_responses": [
+        "It receives inbound visitors and tourist arrivals."
+      ],
+      "trap_aliases": [
+        "network packet",
+        "datagram",
+        "message packet"
+      ],
+      "trap_responses": [
+        "A destination receives a data packet.",
+        "It receives packets addressed to its network location.",
+        "The destination host accepts incoming network traffic."
+      ]
+    },
+    {
+      "term": "ward",
+      "question": "What does a ward represent?",
+      "baseline_trap": "hospital unit",
+      "gold": "electoral district",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "voting district",
+        "electoral division",
+        "local constituency",
+        "administrative area",
+        "representative district"
+      ],
+      "gold_responses": [
+        "It represents an electoral district within a local authority."
+      ],
+      "trap_aliases": [
+        "patient unit",
+        "inpatient section"
+      ],
+      "trap_responses": [
+        "It represents a hospital unit for patient care.",
+        "A ward is a section housing hospital patients.",
+        "It is an inpatient area managed by medical staff."
+      ]
+    },
+    {
+      "term": "threshold",
+      "question": "What does a threshold establish?",
+      "baseline_trap": "a cutoff value",
+      "gold": "minimum population",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "market minimum",
+        "demand minimum",
+        "supporting population",
+        "service minimum",
+        "threshold population",
+        "market threshold",
+        "minimum market",
+        "service population"
+      ],
+      "gold_responses": [
+        "It defines the minimum customer catchment for a service."
+      ],
+      "trap_aliases": [
+        "decision boundary",
+        "cutoff point",
+        "critical value"
+      ],
+      "trap_responses": [
+        "It establishes a cutoff value for making a decision.",
+        "It defines the boundary between two statistical categories.",
+        "It sets the critical value for rejecting a hypothesis."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "postal area",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "delivery zone",
+        "address district",
+        "postcode area",
+        "mailing area",
+        "postal district",
+        "postcode sector",
+        "mail area"
+      ],
+      "gold_responses": [
+        "It specifies the postal area used for mail delivery."
+      ],
+      "trap_aliases": [
+        "source instructions",
+        "program logic",
+        "machine commands"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer executes.",
+        "It defines the logic of a software program.",
+        "It tells a machine what operations to perform."
+      ]
+    },
+    {
+      "term": "plot",
+      "question": "What can a plot define?",
+      "baseline_trap": "a story arc",
+      "gold": "land parcel",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "property lot",
+        "cadastral parcel",
+        "building lot",
+        "landholding unit",
+        "surveyed tract",
+        "property boundary"
+      ],
+      "gold_responses": [
+        "A plot can define a parcel's extent."
+      ],
+      "trap_aliases": [
+        "narrative arc",
+        "storyline",
+        "dramatic structure"
+      ],
+      "trap_responses": [
+        "A plot can define a story's central arc.",
+        "It can define the sequence of narrative events.",
+        "A plot may define a film's dramatic structure."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What can an anchor attract?",
+      "baseline_trap": "viewers",
+      "gold": "shopper traffic",
+      "dominant_prior": "broadcast media",
+      "gold_aliases": [
+        "customer footfall",
+        "retail visits",
+        "consumer flows",
+        "shopping demand",
+        "retail footfall",
+        "customer visits",
+        "consumer flow",
+        "mall patronage"
+      ],
+      "gold_responses": [
+        "It can draw customers to a shopping center."
+      ],
+      "trap_aliases": [
+        "television audience",
+        "broadcast viewers",
+        "program ratings"
+      ],
+      "trap_responses": [
+        "An anchor can attract television viewers.",
+        "It can draw an audience to a broadcast.",
+        "A popular anchor may boost program ratings."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim assert?",
+      "baseline_trap": "a covered loss",
+      "gold": "territorial sovereignty",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "territorial rights",
+        "border entitlement",
+        "land control",
+        "spatial jurisdiction",
+        "territorial entitlement",
+        "jurisdictional authority",
+        "boundary rights",
+        "spatial control"
+      ],
+      "gold_responses": [
+        "It asserts sovereignty over a defined territory."
+      ],
+      "trap_aliases": [
+        "insurance loss",
+        "compensation demand",
+        "policy benefit"
+      ],
+      "trap_responses": [
+        "It asserts a right to payment for a covered loss.",
+        "It asserts that an insurer owes compensation.",
+        "It asserts entitlement to benefits under an insurance policy."
+      ]
+    },
+    {
+      "term": "parcel",
+      "question": "What does a parcel identify?",
+      "baseline_trap": "a shipped package",
+      "gold": "landholding",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "cadastral unit",
+        "property unit",
+        "land lot",
+        "mapped property",
+        "property tract",
+        "mapped holding"
+      ],
+      "gold_responses": [
+        "It identifies land assigned a unique cadastral reference."
+      ],
+      "trap_aliases": [
+        "shipping package",
+        "mailed package",
+        "delivery item"
+      ],
+      "trap_responses": [
+        "It identifies a package being sent to a recipient.",
+        "It identifies an item for shipping and delivery.",
+        "It identifies a wrapped package in the mail system."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "investment return",
+      "gold": "crop output",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "harvest output",
+        "farm production",
+        "agricultural output",
+        "crop production",
+        "agricultural productivity",
+        "harvest quantity",
+        "output per hectare",
+        "land productivity"
+      ],
+      "gold_responses": [
+        "It measures crop output from a given area of land."
+      ],
+      "trap_aliases": [
+        "rate of return",
+        "investment income",
+        "bond return"
+      ],
+      "trap_responses": [
+        "It measures the return earned on an investment.",
+        "It shows income received relative to an asset's price.",
+        "It indicates the annual return generated by a bond."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:55:37Z"
+}

@@ -1,0 +1,461 @@
+{
+  "cluster_id": "4101",
+  "cluster": "Climate change impacts and adaptation",
+  "domain": "Climate change impacts and adaptation",
+  "division": "Environmental Sciences",
+  "dominant_prior": "biometric identification, computing, exercise, finance, hiring, history, hospitality, law, media, plumbing, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What are loss and damage?",
+    "What is a carbon budget?",
+    "What is a cascade?",
+    "What is a hazard?",
+    "What is a return period?",
+    "What is a threshold?",
+    "What is capacity?",
+    "What is exposure?",
+    "What is migration?",
+    "What is recovery?",
+    "What is resilience?",
+    "What is retreat?",
+    "What is sensitivity?",
+    "What is stress?",
+    "What is vulnerability?",
+    "capacity",
+    "carbon budget",
+    "cascade",
+    "exposure",
+    "hazard",
+    "loss and damage",
+    "migration",
+    "recovery",
+    "resilience",
+    "retreat",
+    "return period",
+    "sensitivity",
+    "stress",
+    "threshold",
+    "vulnerability"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What does a fingerprint establish?",
+      "baseline_trap": "personal identity",
+      "gold": "causal attribution",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "forcing signature",
+        "anthropogenic signal",
+        "attribution evidence",
+        "anthropogenic causation",
+        "warming attribution",
+        "forcing influence",
+        "climate signal"
+      ],
+      "gold_responses": [
+        "It establishes the cause of an observed climate change."
+      ],
+      "trap_aliases": [
+        "identity verification",
+        "individual identity",
+        "biometric match"
+      ],
+      "trap_responses": [
+        "It establishes a person's identity.",
+        "It verifies who an individual is.",
+        "It identifies a person through unique ridge patterns."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover measure?",
+      "baseline_trap": "retail sales",
+      "gold": "carbon cycling",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "pool renewal",
+        "carbon residence",
+        "turnover rate",
+        "carbon flux",
+        "biomass renewal",
+        "residence time"
+      ],
+      "gold_responses": [
+        "It measures the renewal rate of carbon in vegetation."
+      ],
+      "trap_aliases": [
+        "sales volume",
+        "inventory rotation",
+        "revenue rate"
+      ],
+      "trap_responses": [
+        "It measures how much merchandise a business sells.",
+        "It measures the rate inventory is sold and replaced.",
+        "It indicates the volume of sales during a period."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield quantify?",
+      "baseline_trap": "investment return",
+      "gold": "crop production",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "harvest output",
+        "crop output",
+        "agricultural production",
+        "food production"
+      ],
+      "gold_responses": [
+        "It measures harvestable output from a growing season."
+      ],
+      "trap_aliases": [
+        "return on investment",
+        "profitability",
+        "investment gain"
+      ],
+      "trap_responses": [
+        "It quantifies the return earned on an investment.",
+        "It measures income generated relative to an investment.",
+        "It indicates the rate of return on capital."
+      ]
+    },
+    {
+      "term": "fitness",
+      "question": "What does fitness predict?",
+      "baseline_trap": "physical condition",
+      "gold": "reproductive success",
+      "dominant_prior": "exercise",
+      "gold_aliases": [
+        "relative fitness",
+        "lifetime reproduction",
+        "evolutionary success",
+        "Darwinian fitness",
+        "gene propagation",
+        "offspring production"
+      ],
+      "gold_responses": [
+        "It predicts reproductive success in a given environment."
+      ],
+      "trap_aliases": [
+        "exercise capacity",
+        "athletic performance"
+      ],
+      "trap_responses": [
+        "It predicts a person's physical condition and exercise capacity.",
+        "It indicates overall health, strength, and endurance.",
+        "It measures readiness for physical activity."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment increase?",
+      "baseline_trap": "staff headcount",
+      "gold": "population entrants",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "new adults",
+        "juvenile entrants",
+        "population size",
+        "population replenishment",
+        "juvenile abundance",
+        "new individuals",
+        "cohort size"
+      ],
+      "gold_responses": [
+        "It increases the number of new population entrants."
+      ],
+      "trap_aliases": [
+        "employee numbers",
+        "workforce size",
+        "staffing levels"
+      ],
+      "trap_responses": [
+        "It increases the number of employees.",
+        "It raises workforce headcount.",
+        "It expands the staff roster."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy indicate?",
+      "baseline_trap": "room use",
+      "gold": "site presence",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "species occurrence",
+        "habitat use",
+        "occurrence probability",
+        "habitat presence",
+        "site use",
+        "range presence"
+      ],
+      "gold_responses": [
+        "It indicates whether a species is present at a site."
+      ],
+      "trap_aliases": [
+        "room utilization",
+        "guest occupancy",
+        "bed occupancy"
+      ],
+      "trap_responses": [
+        "It indicates how many rooms are in use.",
+        "It shows the proportion of occupied guest rooms.",
+        "It measures hotel room utilization."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What does a range delimit?",
+      "baseline_trap": "shooting distance",
+      "gold": "geographic distribution",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "species extent",
+        "occupied area",
+        "distribution limits",
+        "species occurrence",
+        "habitat extent",
+        "climatic suitability",
+        "distribution boundaries"
+      ],
+      "gold_responses": [
+        "It delimits where a species can persist."
+      ],
+      "trap_aliases": [
+        "effective distance",
+        "firing distance",
+        "maximum distance"
+      ],
+      "trap_responses": [
+        "It delimits the distance a projectile can travel.",
+        "It marks the effective shooting distance.",
+        "It defines how far a weapon can accurately fire."
+      ]
+    },
+    {
+      "term": "commitment",
+      "question": "What does commitment lock in?",
+      "baseline_trap": "contractual duty",
+      "gold": "future warming",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "unavoidable warming",
+        "locked-in warming",
+        "committed change",
+        "committed warming",
+        "long-term heating",
+        "irreversible warming"
+      ],
+      "gold_responses": [
+        "It locks in future warming from past emissions."
+      ],
+      "trap_aliases": [
+        "legal obligation",
+        "binding duty",
+        "contractual obligation"
+      ],
+      "trap_responses": [
+        "It locks in a party's contractual duty.",
+        "It creates a legally enforceable obligation.",
+        "It binds the parties to perform promised terms."
+      ]
+    },
+    {
+      "term": "signal",
+      "question": "What does a signal distinguish?",
+      "baseline_trap": "a broadcast message",
+      "gold": "forced response",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "anthropogenic trend",
+        "warming trend",
+        "forced change",
+        "anthropogenic forcing",
+        "external forcing",
+        "climate response"
+      ],
+      "gold_responses": [
+        "It distinguishes the forced response from internal climate variability."
+      ],
+      "trap_aliases": [
+        "radio transmission",
+        "media message"
+      ],
+      "trap_responses": [
+        "It distinguishes a broadcast message from background noise.",
+        "It separates the intended transmission from interference.",
+        "It identifies a message carried through a broadcast channel."
+      ]
+    },
+    {
+      "term": "connectivity",
+      "question": "What does connectivity link?",
+      "baseline_trap": "networked devices",
+      "gold": "habitat patches",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "landscape patches",
+        "fragmented habitat",
+        "population habitats",
+        "ecological corridors",
+        "fragmented habitats",
+        "wildlife habitats"
+      ],
+      "gold_responses": [
+        "It links habitat patches across a changing landscape."
+      ],
+      "trap_aliases": [
+        "computer systems",
+        "connected nodes"
+      ],
+      "trap_responses": [
+        "It links networked devices so they can exchange data.",
+        "It connects computers, servers, and other digital devices.",
+        "It enables communication between nodes on a network."
+      ]
+    },
+    {
+      "term": "colonization",
+      "question": "What does colonization establish?",
+      "baseline_trap": "territorial control",
+      "gold": "site occupancy",
+      "dominant_prior": "history",
+      "gold_aliases": [
+        "new population",
+        "local population",
+        "breeding population",
+        "habitat occupancy",
+        "range establishment",
+        "site establishment",
+        "new-site presence"
+      ],
+      "gold_responses": [
+        "It establishes occupancy of newly suitable habitat."
+      ],
+      "trap_aliases": [
+        "imperial rule",
+        "colonial possession",
+        "political dominion"
+      ],
+      "trap_responses": [
+        "It establishes territorial control over another people.",
+        "It establishes colonial authority in a foreign territory.",
+        "It establishes possession and rule of new lands."
+      ]
+    },
+    {
+      "term": "burden",
+      "question": "What does burden quantify?",
+      "baseline_trap": "a financial cost",
+      "gold": "health loss",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "disease impact",
+        "illness burden",
+        "excess illness",
+        "disease burden",
+        "disability loss",
+        "mortality impact"
+      ],
+      "gold_responses": [
+        "It quantifies population health loss from climate-related hazards."
+      ],
+      "trap_aliases": [
+        "monetary expense",
+        "economic liability"
+      ],
+      "trap_responses": [
+        "It quantifies a financial cost or obligation.",
+        "It measures the monetary expense carried by an entity.",
+        "It represents the economic liability imposed on someone."
+      ]
+    },
+    {
+      "term": "drawdown",
+      "question": "What does drawdown remove?",
+      "baseline_trap": "account funds",
+      "gold": "atmospheric carbon",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "carbon dioxide",
+        "air CO2",
+        "atmospheric CO2",
+        "excess carbon",
+        "greenhouse gases"
+      ],
+      "gold_responses": [
+        "It reduces accumulated atmospheric carbon."
+      ],
+      "trap_aliases": [
+        "bank balance",
+        "available cash"
+      ],
+      "trap_responses": [
+        "It removes money from an account.",
+        "It reduces available account funds.",
+        "It takes cash from a bank balance."
+      ]
+    },
+    {
+      "term": "refuge",
+      "question": "What can a refuge preserve?",
+      "baseline_trap": "guest safety",
+      "gold": "local persistence",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "species persistence",
+        "local survival",
+        "cool microclimate",
+        "genetic diversity",
+        "relict populations",
+        "range continuity"
+      ],
+      "gold_responses": [
+        "It can retain climate-sensitive populations locally."
+      ],
+      "trap_aliases": [
+        "guest security",
+        "visitor welfare",
+        "patron safety"
+      ],
+      "trap_responses": [
+        "It can preserve guest safety.",
+        "It can maintain visitor security.",
+        "It can protect patrons from harm."
+      ]
+    },
+    {
+      "term": "sink",
+      "question": "What can a sink remove?",
+      "baseline_trap": "wastewater",
+      "gold": "carbon dioxide",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "atmospheric CO2",
+        "airborne carbon",
+        "atmospheric carbon",
+        "sequestered carbon",
+        "excess carbon",
+        "greenhouse carbon"
+      ],
+      "gold_responses": [
+        "It can absorb excess atmospheric carbon."
+      ],
+      "trap_aliases": [
+        "dirty water",
+        "used water",
+        "drain water"
+      ],
+      "trap_responses": [
+        "It can remove wastewater through the drain.",
+        "It can carry away used water.",
+        "It can drain dirty water from washing."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:40:38Z"
+}

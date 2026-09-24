@@ -1,0 +1,470 @@
+{
+  "cluster_id": "3107",
+  "cluster": "Microbiology",
+  "domain": "Microbiology",
+  "division": "Biological Sciences",
+  "dominant_prior": "biometrics, computing, farming, finance, hospitality, insurance, law, law and elections, programming, retail, sports, telecommunications, transport, water management",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a bloom?",
+    "What is a colony?",
+    "What is a generation?",
+    "What is a mutation?",
+    "What is a phase?",
+    "What is a plaque?",
+    "What is a quorum?",
+    "What is a spore?",
+    "What is a strain?",
+    "What is an envelope?",
+    "What is an infection?",
+    "What is growth?",
+    "What is transformation?",
+    "What is translation?",
+    "What is uptake?",
+    "bloom",
+    "colony",
+    "envelope",
+    "generation",
+    "growth",
+    "infection",
+    "mutation",
+    "phase",
+    "plaque",
+    "quorum",
+    "spore",
+    "strain",
+    "transformation",
+    "translation",
+    "uptake"
+  ],
+  "items": [
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "party guests",
+      "gold": "pathogen replication",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "viral replication",
+        "microbial persistence",
+        "parasite replication",
+        "microbial colonization",
+        "viral propagation",
+        "parasite persistence",
+        "infectious growth"
+      ],
+      "gold_responses": [
+        "A host can support pathogen replication."
+      ],
+      "trap_aliases": [
+        "attendees",
+        "visitors",
+        "invitees"
+      ],
+      "trap_responses": [
+        "A host can support party guests.",
+        "They can accommodate visitors at an event.",
+        "A host provides food and shelter for attendees."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "isolate identity",
+      "dominant_prior": "biometrics",
+      "gold_aliases": [
+        "taxon identity",
+        "microbial identity",
+        "lineage identity",
+        "strain identity",
+        "isolate typing",
+        "clonal lineage",
+        "genotypic profile"
+      ],
+      "gold_responses": [
+        "It separates strains within the same species."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "personal identification",
+        "human identity"
+      ],
+      "trap_responses": [
+        "A fingerprint can distinguish a person's identity.",
+        "It identifies an individual from unique ridge patterns.",
+        "Fingerprints can verify who someone is."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank hold?",
+      "baseline_trap": "financial deposits",
+      "gold": "reference isolates",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "microbial cultures",
+        "archived isolates",
+        "type material",
+        "culture collection",
+        "strain repository",
+        "microbial stocks",
+        "archived cultures"
+      ],
+      "gold_responses": [
+        "It may preserve authenticated bacterial strains."
+      ],
+      "trap_aliases": [
+        "savings",
+        "cash reserves",
+        "customer funds"
+      ],
+      "trap_responses": [
+        "A bank can hold financial deposits.",
+        "It holds customers' money in accounts.",
+        "A bank may keep cash reserves."
+      ]
+    },
+    {
+      "term": "mat",
+      "question": "What can a mat support?",
+      "baseline_trap": "a person exercising",
+      "gold": "surface community",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "microbial layers",
+        "benthic consortium",
+        "layered biofilm",
+        "biofilm community",
+        "microbial consortium",
+        "surface biofilm",
+        "benthic assemblage"
+      ],
+      "gold_responses": [
+        "It supports layered populations of microorganisms."
+      ],
+      "trap_aliases": [
+        "an athlete",
+        "a gymnast",
+        "an exerciser"
+      ],
+      "trap_responses": [
+        "A mat can support a person exercising.",
+        "It supports a gymnast during floor routines.",
+        "A yoga mat supports someone doing stretches."
+      ]
+    },
+    {
+      "term": "count",
+      "question": "What can a count estimate?",
+      "baseline_trap": "election votes",
+      "gold": "viable cells",
+      "dominant_prior": "law and elections",
+      "gold_aliases": [
+        "cell abundance",
+        "living microbes",
+        "population size",
+        "colony-forming units",
+        "bacterial load",
+        "viable population",
+        "cell density"
+      ],
+      "gold_responses": [
+        "A count estimates the viable microbial population."
+      ],
+      "trap_aliases": [
+        "ballot totals",
+        "voter turnout",
+        "votes cast"
+      ],
+      "trap_responses": [
+        "A count can estimate the number of votes cast.",
+        "It estimates turnout in an election.",
+        "It can estimate ballot totals for candidates."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What can yield quantify?",
+      "baseline_trap": "crop output",
+      "gold": "microbial biomass",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cell biomass",
+        "viable biomass",
+        "population output",
+        "cell mass",
+        "dry biomass",
+        "culture productivity",
+        "biomass production"
+      ],
+      "gold_responses": [
+        "It expresses culture output as microbial mass."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "agricultural output"
+      ],
+      "trap_responses": [
+        "Yield quantifies the amount of crop harvested.",
+        "It measures agricultural output per unit area.",
+        "Yield can quantify harvest production."
+      ]
+    },
+    {
+      "term": "latency",
+      "question": "What can latency postpone?",
+      "baseline_trap": "network response",
+      "gold": "viral reactivation",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "productive infection",
+        "disease onset",
+        "viral release",
+        "lytic replication",
+        "clinical recurrence",
+        "herpes outbreak"
+      ],
+      "gold_responses": [
+        "Latency can postpone viral reactivation."
+      ],
+      "trap_aliases": [
+        "packet delivery",
+        "data transfer",
+        "signal return"
+      ],
+      "trap_responses": [
+        "Latency can postpone a network response.",
+        "It may delay delivery of data packets.",
+        "High latency can defer a system reply."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier transmit?",
+      "baseline_trap": "telephone signals",
+      "gold": "infectious agent",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "pathogen",
+        "viral particles",
+        "microbial cells",
+        "infectious microorganism",
+        "disease agent"
+      ],
+      "gold_responses": [
+        "A carrier can transmit an infectious agent."
+      ],
+      "trap_aliases": [
+        "voice calls",
+        "radio signals",
+        "data packets"
+      ],
+      "trap_responses": [
+        "A carrier can transmit telephone signals.",
+        "It can carry voice communications over a network.",
+        "A carrier may convey radio or data signals."
+      ]
+    },
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail product SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon identity",
+        "isolate identity",
+        "organism ID",
+        "taxonomic identity",
+        "strain identity",
+        "microbial species",
+        "fungal taxa"
+      ],
+      "gold_responses": [
+        "It distinguishes organisms through characteristic reference-sequence matches."
+      ],
+      "trap_aliases": [
+        "product identifier",
+        "item number",
+        "inventory SKU"
+      ],
+      "trap_responses": [
+        "It distinguishes one retail product from another.",
+        "It identifies the specific item for checkout and inventory.",
+        "It links a product to its stock-keeping unit."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codon assignment",
+        "protein sequence",
+        "residue sequence",
+        "polypeptide sequence",
+        "amino acid identity"
+      ],
+      "gold_responses": [
+        "It determines which amino acid each codon represents."
+      ],
+      "trap_aliases": [
+        "source commands",
+        "software logic"
+      ],
+      "trap_responses": [
+        "It specifies instructions that a computer should execute.",
+        "It defines the commands and logic of a program.",
+        "It tells software how to perform a task."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does load quantify?",
+      "baseline_trap": "cargo weight",
+      "gold": "microbial burden",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "pathogen burden",
+        "bioburden",
+        "cell density",
+        "viral titer",
+        "inoculum density"
+      ],
+      "gold_responses": [
+        "It quantifies the total microbial burden in a sample."
+      ],
+      "trap_aliases": [
+        "freight weight",
+        "payload mass",
+        "shipment weight"
+      ],
+      "trap_responses": [
+        "It quantifies the weight carried by a vehicle.",
+        "It measures the amount of cargo being transported.",
+        "It indicates how much freight a shipment contains."
+      ]
+    },
+    {
+      "term": "richness",
+      "question": "What does richness count?",
+      "baseline_trap": "wealth",
+      "gold": "taxon count",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "species count",
+        "distinct taxa",
+        "OTU count",
+        "species richness",
+        "ASV count",
+        "taxonomic diversity"
+      ],
+      "gold_responses": [
+        "It counts distinct operational taxonomic units in a sample."
+      ],
+      "trap_aliases": [
+        "net worth",
+        "asset value",
+        "wealth level"
+      ],
+      "trap_responses": [
+        "It measures the amount of wealth a person possesses.",
+        "It quantifies financial assets and accumulated property.",
+        "It indicates a person's economic wealth or prosperity."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance indicate?",
+      "baseline_trap": "legal authorization",
+      "gold": "pathogen elimination",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "microbe removal",
+        "viral elimination",
+        "agent removal",
+        "microbial elimination",
+        "pathogen removal",
+        "infection resolution",
+        "organism eradication"
+      ],
+      "gold_responses": [
+        "It indicates successful removal of a pathogen from a site."
+      ],
+      "trap_aliases": [
+        "legal approval",
+        "official permit",
+        "regulatory authorization"
+      ],
+      "trap_responses": [
+        "It indicates official permission to proceed.",
+        "It shows that legal authorization has been granted.",
+        "It means approval by the relevant authority."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage include?",
+      "baseline_trap": "insured benefits",
+      "gold": "susceptible pathogens",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "target microbes",
+        "susceptible organisms",
+        "antimicrobial spectrum",
+        "target organisms",
+        "susceptible species",
+        "bacterial spectrum"
+      ],
+      "gold_responses": [
+        "It includes the pathogens susceptible to the antimicrobial agent."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "insured services",
+        "covered expenses"
+      ],
+      "trap_responses": [
+        "It includes benefits paid under the insurance policy.",
+        "It identifies services protected by the plan.",
+        "It describes expenses the insurer will cover."
+      ]
+    },
+    {
+      "term": "reservoir",
+      "question": "What can a reservoir maintain?",
+      "baseline_trap": "a water supply",
+      "gold": "pathogen persistence",
+      "dominant_prior": "water management",
+      "gold_aliases": [
+        "agent survival",
+        "endemic maintenance",
+        "transmission source",
+        "pathogen survival",
+        "infectious agents",
+        "microbial persistence",
+        "disease transmission"
+      ],
+      "gold_responses": [
+        "It can maintain pathogen persistence between susceptible hosts."
+      ],
+      "trap_aliases": [
+        "water storage",
+        "irrigation supply",
+        "drinking water"
+      ],
+      "trap_responses": [
+        "It can maintain a reliable water supply.",
+        "A reservoir stores water for municipal use.",
+        "It maintains water availability during dry periods."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:18:25Z"
+}

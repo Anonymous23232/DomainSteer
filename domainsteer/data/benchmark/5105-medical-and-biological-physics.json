@@ -1,0 +1,484 @@
+{
+  "cluster_id": "5105",
+  "cluster": "Medical and biological physics",
+  "domain": "Medical and biological physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "computing, finance, hospitality, insurance, law, mathematics, medicine, music, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does the current work?",
+    "What is a channel?",
+    "What is a scan?",
+    "What is alignment?",
+    "What is binding?",
+    "What is bleaching?",
+    "What is contrast?",
+    "What is decay?",
+    "What is diffusion?",
+    "What is exposure?",
+    "What is noise?",
+    "What is relaxation?",
+    "What is resolution?",
+    "What is the background?",
+    "What is uptake?",
+    "alignment",
+    "background",
+    "binding",
+    "bleaching",
+    "channel",
+    "contrast",
+    "current",
+    "decay",
+    "diffusion",
+    "exposure",
+    "noise",
+    "relaxation",
+    "resolution",
+    "scan",
+    "uptake"
+  ],
+  "items": [
+    {
+      "term": "prescription",
+      "question": "What does a prescription specify?",
+      "baseline_trap": "a medication regimen",
+      "gold": "target dose",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "prescribed dose",
+        "treatment dose",
+        "dose objective",
+        "planned dose",
+        "absorbed dose"
+      ],
+      "gold_responses": [
+        "Total radiation dose intended for the planned treatment target."
+      ],
+      "trap_aliases": [
+        "medication order",
+        "drug dosage",
+        "dosage instructions"
+      ],
+      "trap_responses": [
+        "The medication, dose, and instructions a patient should follow.",
+        "A clinician's order for a specific drug regimen.",
+        "Which medicines to take and how to take them."
+      ]
+    },
+    {
+      "term": "fraction",
+      "question": "What does a fraction specify?",
+      "baseline_trap": "part of a whole",
+      "gold": "session dose",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "treatment dose",
+        "radiation dose",
+        "dose increment",
+        "daily dose",
+        "per-fraction dose",
+        "dose per session",
+        "fractional dose",
+        "daily fraction dose"
+      ],
+      "gold_responses": [
+        "One session's planned radiation dose to the target."
+      ],
+      "trap_aliases": [
+        "ratio",
+        "proportion",
+        "part-whole ratio"
+      ],
+      "trap_responses": [
+        "The numerator and denominator defining a part of a whole.",
+        "A ratio representing how many equal parts are selected.",
+        "The quotient of one number divided by another."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What does compliance measure?",
+      "baseline_trap": "rule adherence",
+      "gold": "pressure-volume slope",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "lung distensibility",
+        "vascular distensibility",
+        "volume response",
+        "mechanical compliance",
+        "distensibility",
+        "volume-pressure ratio",
+        "dV/dP",
+        "organ expandability"
+      ],
+      "gold_responses": [
+        "It expresses the change in volume for a pressure increment."
+      ],
+      "trap_aliases": [
+        "legal obedience",
+        "regulatory conformity",
+        "rule observance"
+      ],
+      "trap_responses": [
+        "It measures adherence to laws, rules, or regulations.",
+        "It assesses whether required legal standards are followed.",
+        "It indicates conformity with applicable legal requirements."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "legal ownership",
+      "gold": "spatial correspondence",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "coordinate mapping",
+        "anatomical match",
+        "image correspondence",
+        "spatial transform",
+        "image alignment",
+        "anatomic alignment",
+        "transform estimation"
+      ],
+      "gold_responses": [
+        "It establishes spatial correspondence between two images."
+      ],
+      "trap_aliases": [
+        "property title",
+        "ownership record"
+      ],
+      "trap_responses": [
+        "It establishes legal ownership of property or assets.",
+        "It creates an official record of a legal interest.",
+        "It documents title in a public legal registry."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What does range determine?",
+      "baseline_trap": "weapon reach",
+      "gold": "penetration depth",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "stopping depth",
+        "beam depth",
+        "distal edge",
+        "tissue reach",
+        "tissue penetration",
+        "beam penetration",
+        "stopping distance",
+        "path length"
+      ],
+      "gold_responses": [
+        "It determines how deeply radiation penetrates tissue."
+      ],
+      "trap_aliases": [
+        "shooting distance",
+        "effective distance"
+      ],
+      "trap_responses": [
+        "It determines how far a player can shoot effectively.",
+        "It sets the distance at which a shot can reach.",
+        "It indicates the maximum effective shooting distance."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What does a window accept?",
+      "baseline_trap": "user input",
+      "gold": "photon energies",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "energy events",
+        "photopeak counts",
+        "selected photons",
+        "accepted events",
+        "energy band",
+        "spectral band",
+        "energy gate",
+        "acceptance band"
+      ],
+      "gold_responses": [
+        "It accepts photons within a selected energy interval."
+      ],
+      "trap_aliases": [
+        "keyboard input",
+        "mouse events",
+        "user commands"
+      ],
+      "trap_responses": [
+        "It accepts input from the user.",
+        "It receives keyboard and mouse events.",
+        "It accepts commands entered through the interface."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label reveal?",
+      "baseline_trap": "product information",
+      "gold": "molecular location",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "target location",
+        "cellular location",
+        "protein location",
+        "fluorophore position",
+        "molecular localization",
+        "subcellular position",
+        "protein distribution",
+        "cellular compartment"
+      ],
+      "gold_responses": [
+        "The label can show cellular compartment localization."
+      ],
+      "trap_aliases": [
+        "price",
+        "brand",
+        "ingredients"
+      ],
+      "trap_responses": [
+        "It reveals product price and manufacturer.",
+        "A label provides the item's ingredients.",
+        "It can identify the brand and product size."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What can a pulse estimate?",
+      "baseline_trap": "heart rate",
+      "gold": "oxygen saturation",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "blood oxygenation",
+        "arterial oxygenation",
+        "hemoglobin saturation",
+        "SpO2",
+        "arterial saturation",
+        "oxyhemoglobin fraction"
+      ],
+      "gold_responses": [
+        "Pulse oximetry estimates arterial oxygen saturation."
+      ],
+      "trap_aliases": [
+        "pulse rate",
+        "cardiac frequency",
+        "beats per minute"
+      ],
+      "trap_responses": [
+        "It estimates heart rate in beats per minute.",
+        "A pulse can indicate cardiac rhythm.",
+        "It measures how fast the heart is beating."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "sales transactions",
+      "gold": "photon counts",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "detector events",
+        "gamma quanta",
+        "radiation events",
+        "coincidence counts",
+        "detector counts",
+        "event counts",
+        "scintillation counts",
+        "image counts"
+      ],
+      "gold_responses": [
+        "It records detected photon counts."
+      ],
+      "trap_aliases": [
+        "purchase log",
+        "cash register",
+        "transaction record"
+      ],
+      "trap_responses": [
+        "It records sales transactions.",
+        "It records purchases and payments.",
+        "It keeps a record of items sold."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What does pitch specify?",
+      "baseline_trap": "musical frequency",
+      "gold": "table advance",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "helical spacing",
+        "feed ratio",
+        "detector-width ratio",
+        "table travel",
+        "table feed",
+        "couch travel",
+        "longitudinal advance",
+        "scan advance"
+      ],
+      "gold_responses": [
+        "It relates table travel to the total beam width."
+      ],
+      "trap_aliases": [
+        "note frequency",
+        "sound frequency",
+        "musical interval"
+      ],
+      "trap_responses": [
+        "It specifies the frequency of a musical note.",
+        "It indicates how high or low a note sounds.",
+        "It describes a sound's perceived frequency."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover measure?",
+      "baseline_trap": "sales volume",
+      "gold": "molecular renewal",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "protein turnover",
+        "replacement rate",
+        "degradation rate",
+        "renewal rate",
+        "protein replacement",
+        "cell renewal",
+        "metabolic replacement",
+        "tissue remodeling"
+      ],
+      "gold_responses": [
+        "It measures the rate of molecular replacement."
+      ],
+      "trap_aliases": [
+        "revenue rotation",
+        "trading volume",
+        "sales velocity"
+      ],
+      "trap_responses": [
+        "It measures how quickly a business generates sales.",
+        "It indicates the volume of shares traded.",
+        "It measures how often inventory is sold and replaced."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy measure?",
+      "baseline_trap": "filled rooms",
+      "gold": "site fraction",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "receptor fraction",
+        "filling fraction",
+        "population fraction",
+        "site filling",
+        "receptor binding",
+        "fractional saturation",
+        "bound-site fraction",
+        "ligand binding"
+      ],
+      "gold_responses": [
+        "It measures the fraction of binding sites that are occupied."
+      ],
+      "trap_aliases": [
+        "room utilization",
+        "guest capacity",
+        "bed availability"
+      ],
+      "trap_responses": [
+        "It measures the proportion of rooms currently filled.",
+        "It indicates how many guests occupy available rooms.",
+        "It measures the percentage of beds or rooms in use."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature distinguish?",
+      "baseline_trap": "the signer",
+      "gold": "tissue composition",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "spectral profile",
+        "chromophore content",
+        "tissue type",
+        "molecular composition",
+        "lesion class",
+        "material properties",
+        "physiological state"
+      ],
+      "gold_responses": [
+        "It can distinguish tissue composition in an imaging measurement."
+      ],
+      "trap_aliases": [
+        "identity",
+        "signatory",
+        "author"
+      ],
+      "trap_responses": [
+        "It distinguishes the person who signed the document.",
+        "It identifies the document's signer.",
+        "It can establish the signatory's identity."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does load determine?",
+      "baseline_trap": "training workload",
+      "gold": "tissue strain",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "mechanical strain",
+        "stress distribution",
+        "deformation field",
+        "force transmission",
+        "tissue deformation",
+        "biomechanical response",
+        "injury risk"
+      ],
+      "gold_responses": [
+        "It determines stress distribution within a joint or organ."
+      ],
+      "trap_aliases": [
+        "fatigue",
+        "fitness gains",
+        "athletic performance"
+      ],
+      "trap_responses": [
+        "It determines an athlete's training workload.",
+        "It affects fatigue and recovery needs.",
+        "It influences fitness adaptations and performance."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "policy protection",
+      "gold": "treated volume",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "target fraction",
+        "dose-volume fraction",
+        "prescription volume",
+        "dose coverage",
+        "target coverage",
+        "PTV coverage",
+        "isodose coverage"
+      ],
+      "gold_responses": [
+        "The fraction of target volume receiving the prescribed dose."
+      ],
+      "trap_aliases": [
+        "insurance protection",
+        "benefit scope",
+        "policy limits"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses, services, or risks are insured.",
+        "It shows the extent of benefits included under a policy."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:53:12Z"
+}

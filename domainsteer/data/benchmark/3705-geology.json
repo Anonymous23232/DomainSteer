@@ -1,0 +1,467 @@
+{
+  "cluster_id": "3705",
+  "cluster": "Geology",
+  "domain": "Geology",
+  "division": "Earth Sciences",
+  "dominant_prior": "construction, everyday English, everyday hunting, farming, farming equipment, finance, hospitality, law, manufacturing, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a basin?",
+    "What is a bed?",
+    "What is a contact?",
+    "What is a fault?",
+    "What is a formation?",
+    "What is a plate?",
+    "What is a reserve?",
+    "What is a rift?",
+    "What is a seam?",
+    "What is an age?",
+    "What is compaction?",
+    "What is crust?",
+    "What is grading?",
+    "What is uplift?",
+    "What is weathering?",
+    "age",
+    "basin",
+    "bed",
+    "compaction",
+    "contact",
+    "crust",
+    "fault",
+    "formation",
+    "grading",
+    "plate",
+    "reserve",
+    "rift",
+    "seam",
+    "uplift",
+    "weathering"
+  ],
+  "items": [
+    {
+      "term": "host",
+      "question": "What can a host contain?",
+      "baseline_trap": "party guests",
+      "gold": "ore minerals",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "mineralization",
+        "ore body",
+        "mineral veins",
+        "sulfide minerals",
+        "gold veins",
+        "mineral deposits",
+        "hydrothermal ore"
+      ],
+      "gold_responses": [
+        "The host can contain economically valuable mineral deposits."
+      ],
+      "trap_aliases": [
+        "dinner guests",
+        "party attendees",
+        "overnight visitors"
+      ],
+      "trap_responses": [
+        "A host can contain party guests.",
+        "It can contain invited visitors.",
+        "A host may accommodate overnight guests."
+      ]
+    },
+    {
+      "term": "till",
+      "question": "What can till contain?",
+      "baseline_trap": "cash",
+      "gold": "mixed clasts",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "glacial debris",
+        "unsorted sediment",
+        "rock fragments",
+        "clay matrix",
+        "sand grains",
+        "glacial erratics"
+      ],
+      "gold_responses": [
+        "Till can contain mixed clasts of many sizes."
+      ],
+      "trap_aliases": [
+        "banknotes",
+        "coins",
+        "receipts"
+      ],
+      "trap_responses": [
+        "A till can contain cash.",
+        "It may contain banknotes and coins.",
+        "The till can hold sales receipts."
+      ]
+    },
+    {
+      "term": "strike",
+      "question": "What does a strike specify?",
+      "baseline_trap": "a missed pitch",
+      "gold": "compass bearing",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "horizontal azimuth",
+        "structural trend",
+        "map direction",
+        "azimuth",
+        "bed orientation",
+        "horizontal bearing",
+        "plane trend"
+      ],
+      "gold_responses": [
+        "It specifies the compass direction of a horizontal line on a plane."
+      ],
+      "trap_aliases": [
+        "a called pitch",
+        "an unhit pitch"
+      ],
+      "trap_responses": [
+        "It specifies a pitch the batter misses or does not swing at.",
+        "It shows that the batter has received a strike.",
+        "It records an unsuccessful attempt to hit a pitch."
+      ]
+    },
+    {
+      "term": "column",
+      "question": "What does a column show?",
+      "baseline_trap": "a newspaper opinion",
+      "gold": "stratigraphic succession",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "rock sequence",
+        "vertical succession",
+        "geologic record",
+        "stratigraphic sequence",
+        "vertical section",
+        "rock-layer order",
+        "lithologic succession"
+      ],
+      "gold_responses": [
+        "It shows the vertical succession of rock units."
+      ],
+      "trap_aliases": [
+        "editorial",
+        "opinion piece",
+        "columnist's view"
+      ],
+      "trap_responses": [
+        "It shows a writer's opinion on current events.",
+        "It presents commentary by a regular newspaper writer.",
+        "It gives readers an editorial perspective on an issue."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim secure?",
+      "baseline_trap": "legal compensation",
+      "gold": "mineral rights",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "mining rights",
+        "exploration rights",
+        "mineral tenure",
+        "prospecting rights",
+        "mineral title"
+      ],
+      "gold_responses": [
+        "It secures priority access to mineral resources."
+      ],
+      "trap_aliases": [
+        "damages",
+        "restitution",
+        "monetary award"
+      ],
+      "trap_responses": [
+        "It can secure compensation for an injury or loss.",
+        "It may secure damages from the responsible party.",
+        "It can secure a monetary remedy in court."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "investment return",
+      "gold": "metal recovery",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "ore recovery",
+        "extraction yield",
+        "recovered fraction",
+        "recovery rate",
+        "extraction efficiency",
+        "concentrate recovery"
+      ],
+      "gold_responses": [
+        "It measures recoverable metal obtained from processed ore."
+      ],
+      "trap_aliases": [
+        "return on investment",
+        "rate of return",
+        "investment gain"
+      ],
+      "trap_responses": [
+        "It measures the return generated by an investment.",
+        "It indicates income relative to an investment's price.",
+        "It measures the percentage profit on invested capital."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What can a pulse mark?",
+      "baseline_trap": "a heartbeat",
+      "gold": "eruption episode",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "eruptive phase",
+        "magma injection",
+        "intrusive episode",
+        "volcanic episode",
+        "magmatic event",
+        "eruption interval"
+      ],
+      "gold_responses": [
+        "It can indicate a distinct eruptive phase."
+      ],
+      "trap_aliases": [
+        "cardiac beat",
+        "heart rhythm",
+        "pulse rate"
+      ],
+      "trap_responses": [
+        "It can mark a heartbeat.",
+        "It may indicate heart rhythm.",
+        "It can mark a cardiac contraction."
+      ]
+    },
+    {
+      "term": "plow",
+      "question": "What can a plow carve?",
+      "baseline_trap": "a soil furrow",
+      "gold": "seafloor groove",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "iceberg furrow",
+        "ploughmark",
+        "scoured trench",
+        "seabed furrow",
+        "scour groove"
+      ],
+      "gold_responses": [
+        "It can carve a seafloor groove."
+      ],
+      "trap_aliases": [
+        "planting row",
+        "plowed trench"
+      ],
+      "trap_responses": [
+        "It can carve a soil furrow.",
+        "It makes rows for planting.",
+        "It cuts a trench through soil."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What can a trap hold?",
+      "baseline_trap": "an animal",
+      "gold": "hydrocarbons",
+      "dominant_prior": "everyday hunting",
+      "gold_aliases": [
+        "crude oil",
+        "natural gas",
+        "petroleum",
+        "oil accumulation",
+        "reservoir fluids",
+        "migrated oil"
+      ],
+      "gold_responses": [
+        "A trapped hydrocarbon accumulation."
+      ],
+      "trap_aliases": [
+        "prey",
+        "game animal",
+        "captured animal"
+      ],
+      "trap_responses": [
+        "An animal caught by the device.",
+        "Prey captured for hunting.",
+        "A small animal or game bird."
+      ]
+    },
+    {
+      "term": "cement",
+      "question": "What does cement bind?",
+      "baseline_trap": "bricks",
+      "gold": "sediment grains",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "sand grains",
+        "clasts",
+        "framework grains",
+        "detrital grains",
+        "clastic grains",
+        "detrital particles"
+      ],
+      "gold_responses": [
+        "Sediment grains within a sedimentary rock."
+      ],
+      "trap_aliases": [
+        "masonry units",
+        "building blocks",
+        "stones"
+      ],
+      "trap_responses": [
+        "Bricks in a wall.",
+        "Blocks and stones together.",
+        "Construction materials in place."
+      ]
+    },
+    {
+      "term": "mold",
+      "question": "What can a mold preserve?",
+      "baseline_trap": "a manufactured shape",
+      "gold": "organism form",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "body outline",
+        "shell outline",
+        "fossil shape",
+        "organic imprint",
+        "external morphology",
+        "surface relief",
+        "skeletal outline",
+        "shell ornament"
+      ],
+      "gold_responses": [
+        "It can preserve the shape of a fossil organism."
+      ],
+      "trap_aliases": [
+        "product form",
+        "part geometry",
+        "casting profile"
+      ],
+      "trap_responses": [
+        "A mold can preserve a manufactured shape.",
+        "It retains the intended form of a part.",
+        "It reproduces the shape of the finished product."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What can an index establish?",
+      "baseline_trap": "market performance",
+      "gold": "relative age",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "relative dating",
+        "biozone correlation",
+        "time equivalence",
+        "stratigraphic correlation",
+        "stratigraphic age",
+        "chronostratigraphic position",
+        "age equivalence"
+      ],
+      "gold_responses": [
+        "It can indicate a stratum's position in geologic time."
+      ],
+      "trap_aliases": [
+        "benchmark return",
+        "market trend",
+        "portfolio value"
+      ],
+      "trap_responses": [
+        "It can establish overall market performance.",
+        "An index measures the return of a market segment.",
+        "It establishes whether stocks are rising or falling."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field produce?",
+      "baseline_trap": "crops",
+      "gold": "hydrocarbons",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "crude oil",
+        "natural gas",
+        "petroleum",
+        "oil and gas",
+        "reservoir fluids"
+      ],
+      "gold_responses": [
+        "A producing field can yield crude oil."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "grain",
+        "vegetables"
+      ],
+      "trap_responses": [
+        "A field can produce crops for harvest.",
+        "It may grow wheat, corn, or vegetables.",
+        "Farm fields produce food and other agricultural products."
+      ]
+    },
+    {
+      "term": "track",
+      "question": "What can a track record?",
+      "baseline_trap": "an athlete's performance",
+      "gold": "animal movement",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "organism activity",
+        "locomotion direction",
+        "footprint trail",
+        "travel direction",
+        "locomotion",
+        "gait",
+        "animal behavior"
+      ],
+      "gold_responses": [
+        "A trackway may show speed, stride, and movement."
+      ],
+      "trap_aliases": [
+        "career statistics",
+        "game results",
+        "athletic achievements"
+      ],
+      "trap_responses": [
+        "A track record records an athlete's past performance.",
+        "It can show wins, losses, and statistics.",
+        "An athlete's track record reflects career achievements."
+      ]
+    },
+    {
+      "term": "habit",
+      "question": "What does a habit describe?",
+      "baseline_trap": "a regular behavior",
+      "gold": "crystal shape",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "crystal form",
+        "mineral morphology",
+        "growth form",
+        "crystal morphology",
+        "external form",
+        "aggregate form"
+      ],
+      "gold_responses": [
+        "It describes a mineral's characteristic crystal shape and growth form."
+      ],
+      "trap_aliases": [
+        "daily routine",
+        "customary behavior",
+        "behavioral pattern"
+      ],
+      "trap_responses": [
+        "It describes a regular pattern of behavior.",
+        "It refers to something done repeatedly or automatically.",
+        "It is a customary routine developed through repetition."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:33:45Z"
+}

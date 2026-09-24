@@ -1,0 +1,460 @@
+{
+  "cluster_id": "3708",
+  "cluster": "Oceanography",
+  "domain": "Oceanography",
+  "division": "Earth Sciences",
+  "dominant_prior": "aviation, biometrics, driving, entertainment, everyday English, finance, hospitality, law, mechanical engineering, medicine, politics, roadside assistance, shipping, sports, visual media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a bloom?",
+    "What is a buffer?",
+    "What is a channel?",
+    "What is a front?",
+    "What is a nursery?",
+    "What is a patch?",
+    "What is a plume?",
+    "What is a sink?",
+    "What is a source?",
+    "What is a wave?",
+    "What is circulation?",
+    "What is mixing?",
+    "What is recruitment?",
+    "What is resolution?",
+    "What is turbulence?",
+    "bloom",
+    "buffer",
+    "channel",
+    "circulation",
+    "front",
+    "mixing",
+    "nursery",
+    "patch",
+    "plume",
+    "recruitment",
+    "resolution",
+    "sink",
+    "source",
+    "turbulence",
+    "wave"
+  ],
+  "items": [
+    {
+      "term": "cast",
+      "question": "What can a cast reveal?",
+      "baseline_trap": "an acting lineup",
+      "gold": "vertical profile",
+      "dominant_prior": "entertainment",
+      "gold_aliases": [
+        "depth profile",
+        "hydrographic profile",
+        "water-column profile",
+        "temperature profile",
+        "salinity profile",
+        "water-column structure"
+      ],
+      "gold_responses": [
+        "The measurements show vertical gradients in seawater properties."
+      ],
+      "trap_aliases": [
+        "ensemble",
+        "actor roster",
+        "dramatis personae"
+      ],
+      "trap_responses": [
+        "A cast reveals the actors in a production.",
+        "It shows who performs each role.",
+        "The cast identifies the production's acting lineup."
+      ]
+    },
+    {
+      "term": "bottle",
+      "question": "What can a bottle preserve?",
+      "baseline_trap": "a beverage",
+      "gold": "water sample",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "seawater sample",
+        "discrete sample",
+        "water parcel",
+        "dissolved gases",
+        "nutrient sample",
+        "plankton sample"
+      ],
+      "gold_responses": [
+        "It holds seawater for later chemical analysis."
+      ],
+      "trap_aliases": [
+        "wine",
+        "champagne",
+        "liquor"
+      ],
+      "trap_responses": [
+        "A bottle can preserve a beverage's flavor.",
+        "It keeps wine sealed for later serving.",
+        "A bottle protects champagne until it is opened."
+      ]
+    },
+    {
+      "term": "tow",
+      "question": "What can a tow estimate?",
+      "baseline_trap": "towing capacity",
+      "gold": "plankton abundance",
+      "dominant_prior": "roadside assistance",
+      "gold_aliases": [
+        "zooplankton biomass",
+        "plankton density",
+        "organism abundance",
+        "organism biomass",
+        "larval abundance",
+        "community composition"
+      ],
+      "gold_responses": [
+        "A tow can estimate plankton abundance."
+      ],
+      "trap_aliases": [
+        "tow rating",
+        "haul capacity",
+        "towing limit"
+      ],
+      "trap_responses": [
+        "A tow can estimate a vehicle's towing capacity.",
+        "It can indicate the maximum trailer weight.",
+        "A tow rating estimates safe hauling capability."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can a stock support?",
+      "baseline_trap": "dividend income",
+      "gold": "fishery yield",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "sustainable harvest",
+        "fish catch",
+        "harvest quota",
+        "annual catch",
+        "fishery production",
+        "allowable catch"
+      ],
+      "gold_responses": [
+        "A stock can support a sustainable fishery yield."
+      ],
+      "trap_aliases": [
+        "capital gains",
+        "portfolio growth",
+        "shareholder returns"
+      ],
+      "trap_responses": [
+        "A stock can support dividend income.",
+        "It can provide capital gains.",
+        "The investment can support portfolio growth."
+      ]
+    },
+    {
+      "term": "pump",
+      "question": "What can a pump export?",
+      "baseline_trap": "a fluid",
+      "gold": "organic carbon",
+      "dominant_prior": "mechanical engineering",
+      "gold_aliases": [
+        "particulate carbon",
+        "sinking carbon",
+        "carbon flux",
+        "organic matter",
+        "biogenic carbon"
+      ],
+      "gold_responses": [
+        "The biological pump exports organic carbon to depth."
+      ],
+      "trap_aliases": [
+        "liquid",
+        "working fluid",
+        "hydraulic fluid"
+      ],
+      "trap_responses": [
+        "A pump can export a fluid.",
+        "It exports liquid through a discharge line.",
+        "A pump delivers a working fluid under pressure."
+      ]
+    },
+    {
+      "term": "color",
+      "question": "What can color estimate?",
+      "baseline_trap": "a visual hue",
+      "gold": "chlorophyll concentration",
+      "dominant_prior": "visual media",
+      "gold_aliases": [
+        "phytoplankton biomass",
+        "algal pigment",
+        "chlorophyll-a",
+        "pigment concentration",
+        "algal abundance"
+      ],
+      "gold_responses": [
+        "Ocean color can estimate chlorophyll concentration."
+      ],
+      "trap_aliases": [
+        "hue",
+        "chromaticity",
+        "color value"
+      ],
+      "trap_responses": [
+        "Color can estimate a visual hue.",
+        "It can indicate hue and saturation.",
+        "Color values estimate perceived chromaticity."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature establish?",
+      "baseline_trap": "personal identity",
+      "gold": "water-mass origin",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "source region",
+        "water-mass history",
+        "chemical provenance",
+        "water-mass provenance",
+        "source-water origin",
+        "formation region",
+        "mixing history"
+      ],
+      "gold_responses": [
+        "The geographic origin of a distinct water mass."
+      ],
+      "trap_aliases": [
+        "signer identity",
+        "legal identity",
+        "document authenticity"
+      ],
+      "trap_responses": [
+        "The identity of the person who signed.",
+        "Who authorized or executed the document.",
+        "A signer's identity and apparent assent."
+      ]
+    },
+    {
+      "term": "penetration",
+      "question": "What does penetration set?",
+      "baseline_trap": "wound depth",
+      "gold": "euphotic depth",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "photic depth",
+        "lighted depth",
+        "compensation depth",
+        "photic-zone depth",
+        "lighted-layer depth",
+        "irradiance limit"
+      ],
+      "gold_responses": [
+        "The depth receiving enough light for net production."
+      ],
+      "trap_aliases": [
+        "wound extent",
+        "tissue depth",
+        "injury depth"
+      ],
+      "trap_responses": [
+        "The depth and extent of a wound.",
+        "How far an object entered the body.",
+        "The severity of tissue injury."
+      ]
+    },
+    {
+      "term": "set",
+      "question": "What does a set specify?",
+      "baseline_trap": "the games in a tennis set",
+      "gold": "current direction",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "flow direction",
+        "current bearing",
+        "water-flow bearing",
+        "water heading",
+        "surface-current course"
+      ],
+      "gold_responses": [
+        "It specifies the direction of current flow."
+      ],
+      "trap_aliases": [
+        "game count",
+        "number of games",
+        "set score"
+      ],
+      "trap_responses": [
+        "It specifies how many games are in the set.",
+        "It gives the score in a tennis set.",
+        "It indicates the games needed to win the set."
+      ]
+    },
+    {
+      "term": "drift",
+      "question": "What does drift specify?",
+      "baseline_trap": "a vehicle's sideways motion",
+      "gold": "current speed",
+      "dominant_prior": "driving",
+      "gold_aliases": [
+        "flow speed",
+        "current rate",
+        "advection speed",
+        "water velocity",
+        "drift rate"
+      ],
+      "gold_responses": [
+        "It indicates how fast the current is flowing."
+      ],
+      "trap_aliases": [
+        "lateral slip",
+        "skid angle",
+        "sideways slide"
+      ],
+      "trap_responses": [
+        "It specifies a vehicle's sideways motion.",
+        "It describes the car sliding laterally.",
+        "It indicates loss of traction during a turn."
+      ]
+    },
+    {
+      "term": "landings",
+      "question": "What do landings quantify?",
+      "baseline_trap": "aircraft arrivals",
+      "gold": "fishery catch",
+      "dominant_prior": "aviation",
+      "gold_aliases": [
+        "landed biomass",
+        "harvested fish",
+        "catch biomass",
+        "commercial catch",
+        "landed catch",
+        "harvest biomass",
+        "fish brought ashore"
+      ],
+      "gold_responses": [
+        "The mass of commercially landed seafood."
+      ],
+      "trap_aliases": [
+        "flight arrivals",
+        "aircraft movements",
+        "landing operations"
+      ],
+      "trap_responses": [
+        "The number of aircraft arriving at an airport.",
+        "Arrivals completing a landing at a runway.",
+        "Aircraft movements ending with touchdown."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load quantify?",
+      "baseline_trap": "cargo weight",
+      "gold": "nutrient input",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "nutrient flux",
+        "nutrient supply",
+        "nutrient delivery",
+        "nutrient loading",
+        "external nutrient input",
+        "dissolved nutrient supply"
+      ],
+      "gold_responses": [
+        "The amount of nutrients entering coastal waters."
+      ],
+      "trap_aliases": [
+        "freight mass",
+        "payload weight"
+      ],
+      "trap_responses": [
+        "The weight of cargo being carried.",
+        "The amount of freight aboard a vessel.",
+        "The payload mass assigned for transport."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What can a trap measure?",
+      "baseline_trap": "the number of animals captured",
+      "gold": "particulate flux",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "particle flux",
+        "sinking flux",
+        "sediment flux",
+        "sinking particle flux",
+        "carbon export",
+        "vertical particle flux"
+      ],
+      "gold_responses": [
+        "It measures the downward flux of marine particles."
+      ],
+      "trap_aliases": [
+        "animal count",
+        "captured animals",
+        "catch total"
+      ],
+      "trap_responses": [
+        "It can measure the number of animals captured.",
+        "A trap records how many animals it catches.",
+        "It measures the size of the animal catch."
+      ]
+    },
+    {
+      "term": "constituent",
+      "question": "What does a constituent represent?",
+      "baseline_trap": "a voter in a district",
+      "gold": "tidal harmonic",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "tidal component",
+        "tidal frequency",
+        "harmonic component",
+        "astronomical harmonic"
+      ],
+      "gold_responses": [
+        "A constituent represents a periodic tidal signal."
+      ],
+      "trap_aliases": [
+        "district voter",
+        "electorate member",
+        "local resident"
+      ],
+      "trap_responses": [
+        "A constituent represents a voter in a district.",
+        "It refers to a member of an elected official's electorate.",
+        "A constituent is a resident represented by a politician."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "biometric identity",
+      "gold": "water-mass origin",
+      "dominant_prior": "biometrics",
+      "gold_aliases": [
+        "source water",
+        "formation region",
+        "water-mass provenance",
+        "source region",
+        "formation history",
+        "tracer origin"
+      ],
+      "gold_responses": [
+        "It can establish a water mass's source region."
+      ],
+      "trap_aliases": [
+        "personal identity",
+        "individual identity",
+        "identity verification"
+      ],
+      "trap_responses": [
+        "It can establish an individual's identity.",
+        "It identifies a person uniquely.",
+        "It can verify who someone is."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:37:20Z"
+}

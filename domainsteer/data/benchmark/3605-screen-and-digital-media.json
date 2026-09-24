@@ -1,0 +1,482 @@
+{
+  "cluster_id": "3605",
+  "cluster": "Screen and digital media",
+  "domain": "Screen and digital media",
+  "division": "Creative Arts and Writing",
+  "dominant_prior": "access control, baking, construction, cosmetics, dentistry, everyday objects, farming, finance, fishing, hospitality, insurance, oil industry, security, sewing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After the release, is it free?",
+    "How do you set the exposure?",
+    "How do you set the focus?",
+    "How does projection work?",
+    "How does tracking work?",
+    "What does a fade do?",
+    "What does fidelity measure?",
+    "What does render mean?",
+    "What happens during a shoot?",
+    "What is a cut?",
+    "What is a frame?",
+    "What is a grade?",
+    "What is a negative?",
+    "What is a plate?",
+    "What is a skin?",
+    "When is the release?",
+    "cut",
+    "exposure",
+    "fade",
+    "fidelity",
+    "focus",
+    "frame",
+    "grade",
+    "negative",
+    "plate",
+    "projection",
+    "release",
+    "render",
+    "shoot",
+    "skin",
+    "tracking"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What can coverage provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "shot options",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "camera angles",
+        "alternate shots",
+        "editorial choices",
+        "scene views",
+        "alternate angles",
+        "continuity shots",
+        "cutaway material",
+        "camera options"
+      ],
+      "gold_responses": [
+        "It gives editors choices between camera angles."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "liability cover",
+        "financial protection"
+      ],
+      "trap_responses": [
+        "It can provide financial protection after a loss.",
+        "It provides payment for covered claims.",
+        "It can protect against specified risks."
+      ]
+    },
+    {
+      "term": "stitch",
+      "question": "What can a stitch join?",
+      "baseline_trap": "wound edges",
+      "gold": "image tiles",
+      "dominant_prior": "sewing",
+      "gold_aliases": [
+        "panorama images",
+        "video segments",
+        "frame edges",
+        "visual fragments",
+        "panorama frames",
+        "overlapping images",
+        "texture patches",
+        "photogrammetry photos"
+      ],
+      "gold_responses": [
+        "It can join overlapping images into a panorama."
+      ],
+      "trap_aliases": [
+        "fabric edges",
+        "cloth pieces",
+        "wound margins"
+      ],
+      "trap_responses": [
+        "It can join two pieces of fabric.",
+        "It joins the edges of a wound.",
+        "It can fasten torn cloth together."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What can a gate determine?",
+      "baseline_trap": "access permission",
+      "gold": "image aperture",
+      "dominant_prior": "access control",
+      "gold_aliases": [
+        "film aperture",
+        "frame aperture",
+        "camera opening",
+        "exposed area",
+        "frame size",
+        "image area",
+        "aperture size",
+        "frame boundaries"
+      ],
+      "gold_responses": [
+        "It determines the projected image boundaries."
+      ],
+      "trap_aliases": [
+        "entry authorization",
+        "security clearance",
+        "permission level"
+      ],
+      "trap_responses": [
+        "It can determine whether someone may enter.",
+        "It decides who receives access permission.",
+        "It controls entry to a restricted area."
+      ]
+    },
+    {
+      "term": "handle",
+      "question": "What can a handle provide?",
+      "baseline_trap": "a grip",
+      "gold": "extra frames",
+      "dominant_prior": "everyday objects",
+      "gold_aliases": [
+        "extra footage",
+        "trim allowance",
+        "head frames",
+        "tail frames",
+        "edit padding",
+        "media handles",
+        "transition frames",
+        "trimming latitude"
+      ],
+      "gold_responses": [
+        "It can provide extra frames for editing."
+      ],
+      "trap_aliases": [
+        "a hold",
+        "leverage",
+        "a grasp"
+      ],
+      "trap_responses": [
+        "It can provide a secure grip.",
+        "It gives your hand something to hold.",
+        "It provides leverage for pulling or turning."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host manage?",
+      "baseline_trap": "party guests",
+      "gold": "game session",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "multiplayer match",
+        "player connections",
+        "shared session",
+        "lobby state",
+        "multiplayer lobby",
+        "online match",
+        "game server",
+        "player session"
+      ],
+      "gold_responses": [
+        "A host can manage a multiplayer game session."
+      ],
+      "trap_aliases": [
+        "event attendees",
+        "visitors"
+      ],
+      "trap_responses": [
+        "A host can manage party guests.",
+        "They can look after visitors during an event.",
+        "A host manages attendees and their comfort."
+      ]
+    },
+    {
+      "term": "option",
+      "question": "What can an option secure?",
+      "baseline_trap": "purchase rights",
+      "gold": "adaptation rights",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "screen rights",
+        "film rights",
+        "adaptation license",
+        "production rights",
+        "television rights",
+        "remake rights"
+      ],
+      "gold_responses": [
+        "An option secures exclusive rights to pursue an adaptation."
+      ],
+      "trap_aliases": [
+        "stock purchase",
+        "share rights",
+        "buying rights"
+      ],
+      "trap_responses": [
+        "An option can secure the right to buy shares.",
+        "It gives the holder purchase rights at a set price.",
+        "A call option secures a future stock purchase."
+      ]
+    },
+    {
+      "term": "cookie",
+      "question": "What can a cookie shape?",
+      "baseline_trap": "baked dough",
+      "gold": "light pattern",
+      "dominant_prior": "baking",
+      "gold_aliases": [
+        "projected light",
+        "shadow pattern",
+        "beam shape",
+        "textured light",
+        "beam texture",
+        "projected pattern",
+        "light breakup"
+      ],
+      "gold_responses": [
+        "It shapes a projected light pattern."
+      ],
+      "trap_aliases": [
+        "sweet biscuit",
+        "pastry dough",
+        "baked treat"
+      ],
+      "trap_responses": [
+        "A cookie is shaped baked dough.",
+        "It can be formed from sweet pastry dough.",
+        "A cookie is a small baked biscuit."
+      ]
+    },
+    {
+      "term": "fill",
+      "question": "What can a fill reduce?",
+      "baseline_trap": "a cavity",
+      "gold": "shadows",
+      "dominant_prior": "dentistry",
+      "gold_aliases": [
+        "image contrast",
+        "dark areas",
+        "facial shadow",
+        "scene contrast",
+        "lighting contrast",
+        "shadow density",
+        "harsh shadows"
+      ],
+      "gold_responses": [
+        "It reduces harsh shadows on the subject."
+      ],
+      "trap_aliases": [
+        "tooth decay",
+        "dental void",
+        "tooth hole"
+      ],
+      "trap_responses": [
+        "A filling can reduce a cavity.",
+        "It can reduce the size of a dental cavity.",
+        "Dental fill material repairs a tooth cavity."
+      ]
+    },
+    {
+      "term": "reel",
+      "question": "What does a reel hold?",
+      "baseline_trap": "fishing line",
+      "gold": "motion-picture film",
+      "dominant_prior": "fishing",
+      "gold_aliases": [
+        "camera film",
+        "exposed film",
+        "movie film",
+        "film stock",
+        "movie footage",
+        "camera negative",
+        "edited takes"
+      ],
+      "gold_responses": [
+        "The reel stores edited picture takes."
+      ],
+      "trap_aliases": [
+        "monofilament line",
+        "braided line"
+      ],
+      "trap_responses": [
+        "A reel holds fishing line.",
+        "It stores line for casting.",
+        "Fishing line is wound onto it."
+      ]
+    },
+    {
+      "term": "pipeline",
+      "question": "What does a pipeline carry?",
+      "baseline_trap": "oil or gas",
+      "gold": "production assets",
+      "dominant_prior": "oil industry",
+      "gold_aliases": [
+        "scene data",
+        "media files",
+        "render assets",
+        "3D models",
+        "texture files",
+        "render data",
+        "animation caches"
+      ],
+      "gold_responses": [
+        "It passes shots through the production workflow."
+      ],
+      "trap_aliases": [
+        "crude oil",
+        "natural gas",
+        "petroleum products"
+      ],
+      "trap_responses": [
+        "A pipeline carries oil or gas.",
+        "It transports crude oil to refineries.",
+        "Natural gas moves through pipelines."
+      ]
+    },
+    {
+      "term": "feed",
+      "question": "What does a feed supply?",
+      "baseline_trap": "animal nutrition",
+      "gold": "live video",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "camera signal",
+        "live stream",
+        "video signal",
+        "content stream",
+        "media updates",
+        "video posts",
+        "program stream"
+      ],
+      "gold_responses": [
+        "A continuous stream of updated video content."
+      ],
+      "trap_aliases": [
+        "livestock feed",
+        "animal fodder",
+        "nutritional feed"
+      ],
+      "trap_responses": [
+        "Nutrients and calories for animals.",
+        "Food needed to maintain livestock health.",
+        "A balanced ration for farm animals."
+      ]
+    },
+    {
+      "term": "lock",
+      "question": "What does a lock prevent?",
+      "baseline_trap": "unauthorized entry",
+      "gold": "edit changes",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "picture changes",
+        "timeline revisions",
+        "postproduction revisions",
+        "further revisions",
+        "timeline edits",
+        "clip alterations",
+        "accidental changes"
+      ],
+      "gold_responses": [
+        "Changes after the cut has been approved."
+      ],
+      "trap_aliases": [
+        "intrusion",
+        "forced entry",
+        "unauthorized access"
+      ],
+      "trap_responses": [
+        "Unauthorized entry into a secured area.",
+        "Access by people without permission.",
+        "Forced opening of a protected door."
+      ]
+    },
+    {
+      "term": "matte",
+      "question": "What does a matte hide?",
+      "baseline_trap": "facial blemishes",
+      "gold": "background areas",
+      "dominant_prior": "cosmetics",
+      "gold_aliases": [
+        "image regions",
+        "unwanted pixels",
+        "composite seams",
+        "unwanted image areas",
+        "parts of frame",
+        "scene elements",
+        "camera view"
+      ],
+      "gold_responses": [
+        "It masks parts of a frame from view."
+      ],
+      "trap_aliases": [
+        "skin imperfections",
+        "dark circles",
+        "facial flaws"
+      ],
+      "trap_responses": [
+        "Matte concealer hides skin imperfections.",
+        "It covers blemishes and uneven complexion.",
+        "A matte finish can hide facial shine and flaws."
+      ]
+    },
+    {
+      "term": "composite",
+      "question": "What does a composite combine?",
+      "baseline_trap": "construction materials",
+      "gold": "image layers",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "visual elements",
+        "source images",
+        "digital elements",
+        "multiple passes",
+        "shot components",
+        "rendered imagery"
+      ],
+      "gold_responses": [
+        "It combines rendered elements into a final frame."
+      ],
+      "trap_aliases": [
+        "different materials",
+        "component materials",
+        "reinforcing fibers"
+      ],
+      "trap_responses": [
+        "A composite combines two or more different materials.",
+        "It joins materials to create improved structural properties.",
+        "Composite materials combine reinforcement with a binding matrix."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can stock affect?",
+      "baseline_trap": "portfolio value",
+      "gold": "film grain",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "image texture",
+        "color response",
+        "contrast range",
+        "color rendition",
+        "exposure latitude",
+        "image contrast",
+        "visual texture"
+      ],
+      "gold_responses": [
+        "Stock can alter the image's visual texture."
+      ],
+      "trap_aliases": [
+        "share price",
+        "market capitalization",
+        "dividend yield"
+      ],
+      "trap_responses": [
+        "Stock can affect a company's market value.",
+        "It can influence portfolio performance.",
+        "Stock prices affect investor returns."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:20:39Z"
+}

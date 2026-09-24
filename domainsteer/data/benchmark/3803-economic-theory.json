@@ -1,0 +1,469 @@
+{
+  "cluster_id": "3803",
+  "cluster": "Economic theory",
+  "domain": "Economic theory",
+  "division": "Economics",
+  "dominant_prior": "automotive, banking, dating, hospitality, insurance, law, media, medicine, plumbing, politics, programming, retail, science",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "At equilibrium, does nothing change anymore?",
+    "How does the mechanism work?",
+    "If utility rises, is everyone happier?",
+    "What is a game?",
+    "What is a market?",
+    "What is a monopoly?",
+    "What is a public good?",
+    "What is a signal?",
+    "What is a surplus?",
+    "What is an auction?",
+    "What is an equilibrium?",
+    "What is efficiency?",
+    "What is entry?",
+    "What is rationality?",
+    "What is rent?",
+    "What is utility?",
+    "What is welfare?",
+    "auction",
+    "efficiency",
+    "entry",
+    "equilibrium",
+    "game",
+    "market",
+    "mechanism",
+    "monopoly",
+    "public good",
+    "rationality",
+    "rent",
+    "signal",
+    "surplus",
+    "utility",
+    "welfare"
+  ],
+  "items": [
+    {
+      "term": "imputation",
+      "question": "What does an imputation assign?",
+      "baseline_trap": "legal blame",
+      "gold": "player payoffs",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "coalition value",
+        "total worth",
+        "grand-coalition payoff",
+        "payoff allocation",
+        "utility vector",
+        "individual utilities",
+        "feasible allocation"
+      ],
+      "gold_responses": [
+        "It assigns payoffs to the players."
+      ],
+      "trap_aliases": [
+        "culpability",
+        "legal responsibility",
+        "criminal liability"
+      ],
+      "trap_responses": [
+        "It assigns blame for an act.",
+        "It attributes legal responsibility to someone.",
+        "It identifies who is liable for wrongdoing."
+      ]
+    },
+    {
+      "term": "menu",
+      "question": "What does a menu offer?",
+      "baseline_trap": "meals and drinks",
+      "gold": "contracts",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "incentive contracts",
+        "mechanism options",
+        "allocation-payment pairs",
+        "contract options",
+        "price-quality bundles",
+        "incentive schemes",
+        "allocation choices"
+      ],
+      "gold_responses": [
+        "It offers a set of possible contracts."
+      ],
+      "trap_aliases": [
+        "meal choices",
+        "food items",
+        "drink options"
+      ],
+      "trap_responses": [
+        "It offers meals and drinks.",
+        "It lists dishes available to order.",
+        "It presents food and beverage choices."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim deliver?",
+      "baseline_trap": "insurance compensation",
+      "gold": "state payoff",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "contingent payoff",
+        "state consumption",
+        "date-state payoff",
+        "state-contingent consumption",
+        "state-specific income",
+        "Arrow security"
+      ],
+      "gold_responses": [
+        "It provides an entitlement to a payoff across possible states."
+      ],
+      "trap_aliases": [
+        "indemnity payment",
+        "policy benefit",
+        "loss reimbursement"
+      ],
+      "trap_responses": [
+        "A claim delivers compensation for a covered loss.",
+        "It pays an insurance benefit after damage occurs.",
+        "The claimant receives reimbursement under the policy."
+      ]
+    },
+    {
+      "term": "atom",
+      "question": "What can an atom represent?",
+      "baseline_trap": "a chemical element",
+      "gold": "an agent",
+      "dominant_prior": "science",
+      "gold_aliases": [
+        "large trader",
+        "positive-mass agent",
+        "individual consumer",
+        "economic agent",
+        "infinitesimal trader",
+        "individual household",
+        "negligible agent"
+      ],
+      "gold_responses": [
+        "An atom can represent an individual agent in the economy."
+      ],
+      "trap_aliases": [
+        "matter particle",
+        "elemental substance"
+      ],
+      "trap_responses": [
+        "An atom can represent a chemical element.",
+        "It represents the smallest unit of an element.",
+        "An atom may represent a particle of matter."
+      ]
+    },
+    {
+      "term": "accelerator",
+      "question": "What does an accelerator respond to?",
+      "baseline_trap": "pedal pressure",
+      "gold": "output growth",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "output changes",
+        "income growth",
+        "demand growth",
+        "output change",
+        "demand expansion",
+        "production growth"
+      ],
+      "gold_responses": [
+        "It responds to the rate of output growth."
+      ],
+      "trap_aliases": [
+        "pedal input",
+        "throttle position",
+        "driver pressure"
+      ],
+      "trap_responses": [
+        "It responds to pedal pressure.",
+        "It responds to the driver's foot.",
+        "It responds to throttle input."
+      ]
+    },
+    {
+      "term": "leakage",
+      "question": "What does leakage drain from?",
+      "baseline_trap": "a water pipe",
+      "gold": "circular flow",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "aggregate spending",
+        "income stream",
+        "expenditure flow",
+        "spending flow",
+        "national income",
+        "macroeconomic circulation"
+      ],
+      "gold_responses": [
+        "It withdraws spending from the income stream."
+      ],
+      "trap_aliases": [
+        "plumbing system",
+        "drain line"
+      ],
+      "trap_responses": [
+        "It drains from a water pipe.",
+        "It drains from a plumbing system.",
+        "It drains from a leaking pipe."
+      ]
+    },
+    {
+      "term": "discount",
+      "question": "What can a discount reduce?",
+      "baseline_trap": "sale price",
+      "gold": "future payoffs",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "future utility",
+        "later consumption",
+        "continuation payoff",
+        "continuation value",
+        "present value",
+        "delayed rewards"
+      ],
+      "gold_responses": [
+        "It reduces the present value of future payoffs."
+      ],
+      "trap_aliases": [
+        "retail price",
+        "listed price"
+      ],
+      "trap_responses": [
+        "It can reduce the price a customer pays.",
+        "It lowers an item's advertised selling price.",
+        "It reduces the checkout cost of a product."
+      ]
+    },
+    {
+      "term": "medium",
+      "question": "What does a medium enable?",
+      "baseline_trap": "communication",
+      "gold": "indirect exchange",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "monetary trade",
+        "multilateral exchange",
+        "exchange coordination",
+        "monetary exchange",
+        "multilateral trade",
+        "trade through money",
+        "exchange facilitation"
+      ],
+      "gold_responses": [
+        "It enables indirect exchange among traders."
+      ],
+      "trap_aliases": [
+        "information sharing",
+        "message delivery"
+      ],
+      "trap_responses": [
+        "It enables communication between people.",
+        "It allows information to be transmitted to an audience.",
+        "It provides a channel for messages and content."
+      ]
+    },
+    {
+      "term": "clearing",
+      "question": "What does clearing equate?",
+      "baseline_trap": "bank payment obligations",
+      "gold": "supply and demand",
+      "dominant_prior": "banking",
+      "gold_aliases": [
+        "planned quantities",
+        "desired trades",
+        "excess demand",
+        "market supply",
+        "market demand",
+        "buyer plans",
+        "seller plans"
+      ],
+      "gold_responses": [
+        "It aligns buyers' intended purchases with sellers' intended sales."
+      ],
+      "trap_aliases": [
+        "interbank claims",
+        "payment obligations",
+        "debit credits"
+      ],
+      "trap_responses": [
+        "It equates offsetting payment obligations among banks.",
+        "It nets mutual claims between payment-system participants.",
+        "It matches debits and credits for settlement."
+      ]
+    },
+    {
+      "term": "pooling",
+      "question": "What does pooling conceal?",
+      "baseline_trap": "individual risk differences",
+      "gold": "private types",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "agent types",
+        "type differences",
+        "hidden information",
+        "hidden types",
+        "private information",
+        "type heterogeneity"
+      ],
+      "gold_responses": [
+        "It conceals privately known agent types."
+      ],
+      "trap_aliases": [
+        "risk variation",
+        "underwriting differences",
+        "loss exposure"
+      ],
+      "trap_responses": [
+        "It conceals individual differences in insurance risk.",
+        "It masks variation in policyholders' expected losses.",
+        "It hides each insured person's specific risk exposure."
+      ]
+    },
+    {
+      "term": "screening",
+      "question": "What does screening sort?",
+      "baseline_trap": "medical patients",
+      "gold": "private types",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "agent types",
+        "hidden characteristics",
+        "informed agents",
+        "hidden types",
+        "quality types",
+        "private information"
+      ],
+      "gold_responses": [
+        "Agents with different hidden characteristics."
+      ],
+      "trap_aliases": [
+        "patient risk",
+        "disease severity",
+        "clinical cases"
+      ],
+      "trap_responses": [
+        "Patients by disease risk and clinical urgency.",
+        "People needing different levels of medical care.",
+        "Patients according to symptoms and diagnostic results."
+      ]
+    },
+    {
+      "term": "coalition",
+      "question": "What can a coalition block?",
+      "baseline_trap": "legislation",
+      "gold": "an allocation",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "a payoff vector",
+        "an imputation",
+        "proposed outcomes",
+        "proposed allocation",
+        "feasible outcome"
+      ],
+      "gold_responses": [
+        "An allocation that the coalition can improve upon."
+      ],
+      "trap_aliases": [
+        "a bill",
+        "a proposal",
+        "government action"
+      ],
+      "trap_responses": [
+        "Legislation moving through the legislature.",
+        "A bill supported by political opponents.",
+        "Government action proposed by the ruling party."
+      ]
+    },
+    {
+      "term": "matching",
+      "question": "What does matching assign?",
+      "baseline_trap": "romantic partners",
+      "gold": "agent assignments",
+      "dominant_prior": "dating",
+      "gold_aliases": [
+        "workers to firms",
+        "students to schools",
+        "agents to partners",
+        "agent allocations",
+        "stable assignments",
+        "market matches",
+        "participant pairings"
+      ],
+      "gold_responses": [
+        "It determines who is matched with whom."
+      ],
+      "trap_aliases": [
+        "dating pairs",
+        "romantic matches",
+        "potential partners"
+      ],
+      "trap_responses": [
+        "It assigns people to compatible romantic partners.",
+        "It pairs users with potential dates.",
+        "It matches singles based on relationship preferences."
+      ]
+    },
+    {
+      "term": "implementation",
+      "question": "What does implementation achieve?",
+      "baseline_trap": "a working software system",
+      "gold": "social choice rule",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "allocation rule",
+        "outcome correspondence",
+        "choice correspondence",
+        "equilibrium outcomes",
+        "rule realization",
+        "desired outcomes",
+        "incentive-compatible allocation"
+      ],
+      "gold_responses": [
+        "It achieves a social choice rule through equilibrium behavior."
+      ],
+      "trap_aliases": [
+        "working application",
+        "deployed system",
+        "functional software"
+      ],
+      "trap_responses": [
+        "It achieves a working software system.",
+        "It turns a design into functioning code.",
+        "It delivers a deployed and operational application."
+      ]
+    },
+    {
+      "term": "bundle",
+      "question": "What does a bundle list?",
+      "baseline_trap": "products sold together",
+      "gold": "commodity quantities",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "consumption vector",
+        "goods vector",
+        "consumption bundle",
+        "commodity vector",
+        "goods quantities",
+        "choice vector"
+      ],
+      "gold_responses": [
+        "A bundle lists quantities of each commodity."
+      ],
+      "trap_aliases": [
+        "product package",
+        "gift set",
+        "multipack"
+      ],
+      "trap_responses": [
+        "A bundle lists products sold together.",
+        "It shows the items included in a package.",
+        "It identifies goods grouped for a single purchase."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:45:38Z"
+}

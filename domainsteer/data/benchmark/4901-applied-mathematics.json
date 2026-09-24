@@ -1,0 +1,464 @@
+{
+  "cluster_id": "4901",
+  "cluster": "Applied mathematics",
+  "domain": "Applied mathematics",
+  "division": "Mathematical Sciences",
+  "dominant_prior": "clothing, dating, everyday English, everyday time, farming, geography, law, media, medicine, project management, retail, shipping, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does control work?",
+    "What is a bifurcation?",
+    "What is a constraint?",
+    "What is a period?",
+    "What is a singularity?",
+    "What is a threshold?",
+    "What is buckling?",
+    "What is chaos?",
+    "What is drift?",
+    "What is equilibrium?",
+    "What is feedback?",
+    "What is memory?",
+    "What is optimization?",
+    "What is resonance?",
+    "What is stress?",
+    "bifurcation",
+    "buckling",
+    "chaos",
+    "constraint",
+    "control",
+    "drift",
+    "equilibrium",
+    "feedback",
+    "memory",
+    "optimization",
+    "period",
+    "resonance",
+    "singularity",
+    "stress",
+    "threshold"
+  ],
+  "items": [
+    {
+      "term": "load",
+      "question": "What can a load impose?",
+      "baseline_trap": "cargo weight",
+      "gold": "applied force",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "external force",
+        "distributed force",
+        "forcing term",
+        "distributed loading",
+        "boundary traction",
+        "force demand"
+      ],
+      "gold_responses": [
+        "An external force acting on a structure."
+      ],
+      "trap_aliases": [
+        "freight weight",
+        "shipment mass",
+        "payload weight"
+      ],
+      "trap_responses": [
+        "The weight of cargo being transported.",
+        "A shipment's total carried weight.",
+        "The amount of freight a vehicle carries."
+      ]
+    },
+    {
+      "term": "moment",
+      "question": "What does a moment measure?",
+      "baseline_trap": "a brief duration",
+      "gold": "torque",
+      "dominant_prior": "everyday time",
+      "gold_aliases": [
+        "turning moment",
+        "rotational effect",
+        "mechanical moment",
+        "turning effect",
+        "force moment",
+        "rotational tendency",
+        "moment vector"
+      ],
+      "gold_responses": [
+        "The turning effect of a force about a point."
+      ],
+      "trap_aliases": [
+        "short interval",
+        "brief instant",
+        "fleeting time"
+      ],
+      "trap_responses": [
+        "A very short period of time.",
+        "A brief instant in which something happens.",
+        "A particular point during an event."
+      ]
+    },
+    {
+      "term": "strain",
+      "question": "What does a strain indicate?",
+      "baseline_trap": "a pathogen variant",
+      "gold": "relative deformation",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "unit strain",
+        "normal strain",
+        "shear strain",
+        "deformation ratio",
+        "relative elongation",
+        "unit deformation",
+        "displacement gradient"
+      ],
+      "gold_responses": [
+        "It measures deformation relative to the original dimensions."
+      ],
+      "trap_aliases": [
+        "viral variant",
+        "bacterial strain",
+        "microbial subtype"
+      ],
+      "trap_responses": [
+        "It indicates a distinct variant of a pathogen.",
+        "It identifies a particular genetic type of microorganism.",
+        "It denotes a specific version of a virus or bacterium."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield indicate?",
+      "baseline_trap": "crop output",
+      "gold": "plastic onset",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "yield point",
+        "elastic limit",
+        "plastic flow",
+        "yield stress",
+        "flow onset",
+        "irreversible deformation"
+      ],
+      "gold_responses": [
+        "It indicates the onset of permanent material deformation."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "agricultural yield"
+      ],
+      "trap_responses": [
+        "It indicates how much crop is produced per area.",
+        "It measures the amount harvested from a field.",
+        "It shows the productivity of an agricultural crop."
+      ]
+    },
+    {
+      "term": "basin",
+      "question": "What does a basin identify?",
+      "baseline_trap": "a drainage area",
+      "gold": "attraction region",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "attraction domain",
+        "basin of attraction",
+        "convergence region",
+        "stable set"
+      ],
+      "gold_responses": [
+        "It identifies initial states converging to the same attractor."
+      ],
+      "trap_aliases": [
+        "watershed",
+        "catchment area",
+        "drainage basin"
+      ],
+      "trap_responses": [
+        "It identifies the land area draining to a common outlet.",
+        "It marks where rainfall collects and flows downstream.",
+        "It delineates a watershed's contributing drainage area."
+      ]
+    },
+    {
+      "term": "phase",
+      "question": "What does a phase locate?",
+      "baseline_trap": "a project stage",
+      "gold": "cycle position",
+      "dominant_prior": "project management",
+      "gold_aliases": [
+        "phase angle",
+        "angular position",
+        "oscillation state",
+        "angular coordinate",
+        "cycle coordinate"
+      ],
+      "gold_responses": [
+        "It locates the system's position within a repeating cycle."
+      ],
+      "trap_aliases": [
+        "lifecycle stage",
+        "project milestone"
+      ],
+      "trap_responses": [
+        "It locates the current stage of a project.",
+        "It identifies a defined part of the project lifecycle.",
+        "It shows where work stands in the project plan."
+      ]
+    },
+    {
+      "term": "slack",
+      "question": "What does slack quantify?",
+      "baseline_trap": "looseness",
+      "gold": "unused capacity",
+      "dominant_prior": "clothing",
+      "gold_aliases": [
+        "constraint residual",
+        "resource surplus",
+        "capacity surplus",
+        "capacity reserve",
+        "constraint surplus",
+        "unused resource"
+      ],
+      "gold_responses": [
+        "It measures unused capacity in a constrained resource."
+      ],
+      "trap_aliases": [
+        "garment looseness",
+        "fit allowance",
+        "extra fabric"
+      ],
+      "trap_responses": [
+        "It quantifies how loose a garment fits.",
+        "It measures extra room in clothing.",
+        "It indicates the amount of looseness in a fit."
+      ]
+    },
+    {
+      "term": "coupon",
+      "question": "What does a coupon provide?",
+      "baseline_trap": "a purchase discount",
+      "gold": "interest payment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "coupon payment",
+        "periodic interest",
+        "bond cashflow",
+        "bond interest",
+        "fixed interest"
+      ],
+      "gold_responses": [
+        "It provides a periodic interest payment to the bondholder."
+      ],
+      "trap_aliases": [
+        "promo discount",
+        "price reduction",
+        "voucher savings"
+      ],
+      "trap_responses": [
+        "It provides a discount on a purchase.",
+        "It gives shoppers money off an item.",
+        "It offers savings when buying a product."
+      ]
+    },
+    {
+      "term": "plant",
+      "question": "What does a plant represent?",
+      "baseline_trap": "a living organism",
+      "gold": "controlled system",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "physical process",
+        "plant dynamics",
+        "process model",
+        "system dynamics",
+        "controlled process"
+      ],
+      "gold_responses": [
+        "It denotes the system whose behavior is regulated."
+      ],
+      "trap_aliases": [
+        "crop species",
+        "green vegetation"
+      ],
+      "trap_responses": [
+        "It represents a living organism that grows.",
+        "It is an organism such as a tree or flower.",
+        "It refers to vegetation cultivated for food or materials."
+      ]
+    },
+    {
+      "term": "matching",
+      "question": "What does matching establish?",
+      "baseline_trap": "a dating pair",
+      "gold": "overlap relation",
+      "dominant_prior": "dating",
+      "gold_aliases": [
+        "common limit",
+        "overlap condition",
+        "asymptotic consistency",
+        "shared expansion",
+        "asymptotic agreement",
+        "connection relation"
+      ],
+      "gold_responses": [
+        "It connects expansions through their common limiting form."
+      ],
+      "trap_aliases": [
+        "romantic pair",
+        "compatible partners",
+        "dating couple"
+      ],
+      "trap_responses": [
+        "It establishes a pair between compatible dating partners.",
+        "It connects people judged suitable for a relationship.",
+        "It determines which two people should date."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What does a profile describe?",
+      "baseline_trap": "a person's characteristics",
+      "gold": "solution shape",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "spatial distribution",
+        "profile function",
+        "waveform shape",
+        "state distribution",
+        "spatial variation",
+        "field distribution",
+        "solution geometry",
+        "state pattern"
+      ],
+      "gold_responses": [
+        "It describes how a solution varies across space."
+      ],
+      "trap_aliases": [
+        "personal traits",
+        "user biography",
+        "public persona"
+      ],
+      "trap_responses": [
+        "It describes a person's characteristics, background, and interests.",
+        "It summarizes someone's identity and personal details.",
+        "It presents information about a person or public figure."
+      ]
+    },
+    {
+      "term": "creep",
+      "question": "What does creep describe?",
+      "baseline_trap": "stealthy movement",
+      "gold": "time-dependent strain",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "viscous deformation",
+        "delayed strain",
+        "inelastic deformation",
+        "progressive deformation",
+        "delayed deformation",
+        "viscoelastic strain",
+        "strain evolution",
+        "time-dependent deformation"
+      ],
+      "gold_responses": [
+        "It describes deformation that accumulates under sustained loading."
+      ],
+      "trap_aliases": [
+        "sneaking",
+        "furtive movement",
+        "silent approach"
+      ],
+      "trap_responses": [
+        "It describes moving quietly and secretly.",
+        "It means advancing slowly without being noticed.",
+        "It refers to stealthy, cautious movement."
+      ]
+    },
+    {
+      "term": "horizon",
+      "question": "What does a horizon specify?",
+      "baseline_trap": "the visible skyline",
+      "gold": "planning interval",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "time horizon",
+        "decision interval",
+        "planning window",
+        "finite horizon",
+        "prediction horizon",
+        "control horizon"
+      ],
+      "gold_responses": [
+        "It defines the future interval in the control problem."
+      ],
+      "trap_aliases": [
+        "skyline",
+        "distant view",
+        "visible boundary"
+      ],
+      "trap_responses": [
+        "It specifies the line where earth and sky appear to meet.",
+        "It marks the farthest visible edge of the landscape.",
+        "It defines the apparent boundary of the visible world."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What does compliance measure?",
+      "baseline_trap": "legal adherence",
+      "gold": "deformability",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "inverse stiffness",
+        "displacement per force",
+        "elastic flexibility",
+        "mechanical flexibility",
+        "displacement sensitivity"
+      ],
+      "gold_responses": [
+        "It measures deformation produced by an applied force."
+      ],
+      "trap_aliases": [
+        "legal conformity",
+        "regulatory adherence",
+        "rule observance"
+      ],
+      "trap_responses": [
+        "It measures adherence to laws, rules, or regulations.",
+        "It indicates whether required legal standards are being followed.",
+        "It assesses conformity with regulatory requirements."
+      ]
+    },
+    {
+      "term": "diffusion",
+      "question": "What does diffusion redistribute?",
+      "baseline_trap": "rumors",
+      "gold": "concentration",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "mass distribution",
+        "density field",
+        "population density",
+        "spatial profile",
+        "mass density",
+        "particle density",
+        "solute mass"
+      ],
+      "gold_responses": [
+        "It redistributes mass from high to low concentration."
+      ],
+      "trap_aliases": [
+        "information",
+        "news",
+        "misinformation"
+      ],
+      "trap_responses": [
+        "It redistributes information among people and communities.",
+        "It spreads news through social networks.",
+        "It redistributes rumors across an audience."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:18:58Z"
+}

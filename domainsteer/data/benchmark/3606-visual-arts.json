@@ -1,0 +1,474 @@
+{
+  "cluster_id": "3606",
+  "cluster": "Visual arts",
+  "domain": "Visual arts",
+  "division": "Creative Arts and Writing",
+  "dominant_prior": "architecture, cooking, electrical engineering, farming, finance, geography, hospitality, law, law and administration, mathematics, medicine, music, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a filter do?",
+    "What is a cast?",
+    "What is a draft?",
+    "What is a drawing?",
+    "What is a gesture?",
+    "What is a palette?",
+    "What is a portrait?",
+    "What is a print?",
+    "What is a projection?",
+    "What is a readymade?",
+    "What is a study?",
+    "What is an edition?",
+    "What is an installation?",
+    "What is an intervention?",
+    "What is exposure?",
+    "cast",
+    "draft",
+    "drawing",
+    "edition",
+    "exposure",
+    "filter",
+    "gesture",
+    "installation",
+    "intervention",
+    "palette",
+    "portrait",
+    "print",
+    "projection",
+    "readymade",
+    "study"
+  ],
+  "items": [
+    {
+      "term": "proof",
+      "question": "What does a proof show?",
+      "baseline_trap": "legal evidence or guilt",
+      "gold": "print state",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "plate state",
+        "color state",
+        "trial image",
+        "press result",
+        "trial impression",
+        "test print",
+        "printer's proof",
+        "proof impression"
+      ],
+      "gold_responses": [
+        "It shows the current state of the printed image."
+      ],
+      "trap_aliases": [
+        "evidence",
+        "guilt",
+        "admissible evidence"
+      ],
+      "trap_responses": [
+        "It shows that a claim or allegation is true.",
+        "It establishes guilt beyond a reasonable doubt.",
+        "It provides evidence supporting a legal argument."
+      ]
+    },
+    {
+      "term": "matrix",
+      "question": "What does a matrix transfer?",
+      "baseline_trap": "a mathematical transformation",
+      "gold": "printed image",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "inked design",
+        "etched image",
+        "carved image",
+        "plate image",
+        "print image",
+        "engraved design"
+      ],
+      "gold_responses": [
+        "It transfers the inked design to create an impression."
+      ],
+      "trap_aliases": [
+        "linear transformation",
+        "vector mapping",
+        "coordinate transformation"
+      ],
+      "trap_responses": [
+        "It transfers vectors into transformed vectors.",
+        "It represents a linear transformation between vector spaces.",
+        "It maps coordinates from one space to another."
+      ]
+    },
+    {
+      "term": "plate",
+      "question": "What does a plate carry?",
+      "baseline_trap": "a meal",
+      "gold": "incised image",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "etched design",
+        "engraved lines",
+        "inked image",
+        "printed design",
+        "intaglio image",
+        "printing matrix"
+      ],
+      "gold_responses": [
+        "It carries an etched design."
+      ],
+      "trap_aliases": [
+        "food serving",
+        "dinner course",
+        "main dish"
+      ],
+      "trap_responses": [
+        "A meal is carried on a plate.",
+        "It holds food for serving.",
+        "A plate carries the main course."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does stock specify?",
+      "baseline_trap": "equity ownership",
+      "gold": "paper weight",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "sheet texture",
+        "paper color",
+        "fiber content",
+        "sheet size",
+        "paper thickness",
+        "sheet weight",
+        "paper surface"
+      ],
+      "gold_responses": [
+        "It specifies the paper's weight."
+      ],
+      "trap_aliases": [
+        "ownership stake",
+        "equity interest",
+        "shareholding"
+      ],
+      "trap_responses": [
+        "It specifies ownership in a company.",
+        "Stock represents an equity stake.",
+        "It indicates a shareholder's ownership interest."
+      ]
+    },
+    {
+      "term": "speed",
+      "question": "What does speed measure?",
+      "baseline_trap": "vehicle velocity",
+      "gold": "film sensitivity",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "ISO rating",
+        "light sensitivity",
+        "emulsion sensitivity",
+        "camera sensitivity",
+        "film speed"
+      ],
+      "gold_responses": [
+        "It indicates the exposure sensitivity of photographic film."
+      ],
+      "trap_aliases": [
+        "velocity",
+        "rate of travel",
+        "motion speed"
+      ],
+      "trap_responses": [
+        "It measures how fast a vehicle is moving.",
+        "It measures distance travelled per unit of time.",
+        "It indicates a vehicle's rate of motion."
+      ]
+    },
+    {
+      "term": "latitude",
+      "question": "What does latitude allow?",
+      "baseline_trap": "geographic freedom",
+      "gold": "exposure range",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "exposure tolerance",
+        "tonal range",
+        "highlight detail",
+        "shadow detail",
+        "exposure flexibility",
+        "dynamic range"
+      ],
+      "gold_responses": [
+        "It allows useful detail across a range of exposures."
+      ],
+      "trap_aliases": [
+        "north-south coordinate",
+        "geographic position",
+        "location reference"
+      ],
+      "trap_responses": [
+        "It allows a location to be identified north or south.",
+        "It allows geographic positions to be specified on Earth.",
+        "It allows places to be located using coordinates."
+      ]
+    },
+    {
+      "term": "grain",
+      "question": "What does grain determine?",
+      "baseline_trap": "crop quality",
+      "gold": "image texture",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "film texture",
+        "photographic texture",
+        "visible granularity",
+        "surface texture",
+        "image character",
+        "perceived sharpness"
+      ],
+      "gold_responses": [
+        "It influences how finely photographic detail is rendered."
+      ],
+      "trap_aliases": [
+        "harvest quality",
+        "kernel quality",
+        "market grade"
+      ],
+      "trap_responses": [
+        "It determines the crop's quality and value.",
+        "It affects harvest yield and market grade.",
+        "It influences flour quality and food production."
+      ]
+    },
+    {
+      "term": "key",
+      "question": "What does a key establish?",
+      "baseline_trap": "musical tonality",
+      "gold": "tonal range",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "value range",
+        "tonal scheme",
+        "key value",
+        "overall tonality",
+        "value structure",
+        "dominant value",
+        "lightness scale",
+        "value hierarchy"
+      ],
+      "gold_responses": [
+        "It determines the dominant lightness of the image."
+      ],
+      "trap_aliases": [
+        "tonal center",
+        "home pitch",
+        "key signature"
+      ],
+      "trap_responses": [
+        "It establishes the tonal center of a piece.",
+        "It determines the home note and harmonic framework.",
+        "It sets the sharps or flats used in music."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What can a register establish?",
+      "baseline_trap": "an official record",
+      "gold": "color alignment",
+      "dominant_prior": "law and administration",
+      "gold_aliases": [
+        "plate alignment",
+        "print alignment",
+        "image registration",
+        "color registration",
+        "impression alignment",
+        "precise overlay"
+      ],
+      "gold_responses": [
+        "Accurate alignment of successive color impressions."
+      ],
+      "trap_aliases": [
+        "public record",
+        "legal record",
+        "official ledger"
+      ],
+      "trap_responses": [
+        "An official record of documents or events.",
+        "A formal list maintained by a government office.",
+        "A legally recognized record of information."
+      ]
+    },
+    {
+      "term": "glaze",
+      "question": "What can a glaze provide?",
+      "baseline_trap": "food sheen",
+      "gold": "ceramic finish",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "fired surface",
+        "surface gloss",
+        "color layer",
+        "vitreous coating",
+        "glossy surface",
+        "protective coating",
+        "fired finish"
+      ],
+      "gold_responses": [
+        "A durable finish that enriches ceramic color."
+      ],
+      "trap_aliases": [
+        "culinary glaze",
+        "syrupy coating",
+        "shiny topping"
+      ],
+      "trap_responses": [
+        "A glossy coating on cooked food.",
+        "A sweet sheen on roasted meat or pastries.",
+        "A flavorful finish that makes food shine."
+      ]
+    },
+    {
+      "term": "relief",
+      "question": "What can relief provide?",
+      "baseline_trap": "pain comfort",
+      "gold": "surface depth",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "raised form",
+        "carved dimension",
+        "sculptural texture",
+        "sculptural depth",
+        "tactile texture",
+        "projecting forms",
+        "shadow play"
+      ],
+      "gold_responses": [
+        "It can provide depth across an otherwise flat surface."
+      ],
+      "trap_aliases": [
+        "pain relief",
+        "symptom relief",
+        "comfort care"
+      ],
+      "trap_responses": [
+        "It can provide comfort from pain.",
+        "It can provide relief from uncomfortable symptoms.",
+        "It can provide temporary pain reduction."
+      ]
+    },
+    {
+      "term": "passage",
+      "question": "What can a passage connect?",
+      "baseline_trap": "two rooms",
+      "gold": "tonal areas",
+      "dominant_prior": "architecture",
+      "gold_aliases": [
+        "color zones",
+        "value areas",
+        "painted forms",
+        "value transitions",
+        "color shifts",
+        "pictorial zones",
+        "spatial planes"
+      ],
+      "gold_responses": [
+        "It can connect foreground and background spatial planes."
+      ],
+      "trap_aliases": [
+        "adjacent rooms",
+        "interior spaces",
+        "building areas"
+      ],
+      "trap_responses": [
+        "It can connect two rooms in a building.",
+        "It can connect interior spaces through a corridor.",
+        "It can connect different areas of a house."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What does a reserve preserve?",
+      "baseline_trap": "financial capital",
+      "gold": "white paper",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "unpainted area",
+        "masked area",
+        "blank ground",
+        "untouched paper",
+        "paper white",
+        "unpainted ground",
+        "white highlights"
+      ],
+      "gold_responses": [
+        "It saves clean paper for highlights and reflected light."
+      ],
+      "trap_aliases": [
+        "cash reserves",
+        "liquid assets",
+        "emergency funds"
+      ],
+      "trap_responses": [
+        "It preserves capital for future needs.",
+        "It protects funds against unexpected losses.",
+        "It maintains liquidity during financial uncertainty."
+      ]
+    },
+    {
+      "term": "vehicle",
+      "question": "What does a vehicle carry?",
+      "baseline_trap": "passengers or cargo",
+      "gold": "pigment",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "paint pigment",
+        "colorant particles",
+        "suspended colorant",
+        "dry pigment",
+        "color particles",
+        "pigment load",
+        "paint colorant"
+      ],
+      "gold_responses": [
+        "It carries pigment through the paint film."
+      ],
+      "trap_aliases": [
+        "passengers",
+        "freight",
+        "cargo"
+      ],
+      "trap_responses": [
+        "It carries passengers or cargo.",
+        "It transports people and goods between locations.",
+        "It moves freight from one place to another."
+      ]
+    },
+    {
+      "term": "ground",
+      "question": "What does a ground receive?",
+      "baseline_trap": "electrical current",
+      "gold": "paint layers",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "pigment layers",
+        "drawing marks",
+        "image layers",
+        "paint application",
+        "successive glazes",
+        "brushstrokes"
+      ],
+      "gold_responses": [
+        "A ground receives layers of paint."
+      ],
+      "trap_aliases": [
+        "electric current",
+        "fault current",
+        "electrical charge"
+      ],
+      "trap_responses": [
+        "A ground receives fault current.",
+        "It carries excess electrical charge safely away.",
+        "Electrical current flows to ground."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:21:56Z"
+}

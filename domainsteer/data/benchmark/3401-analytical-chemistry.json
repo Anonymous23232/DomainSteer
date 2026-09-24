@@ -1,0 +1,447 @@
+{
+  "cluster_id": "3401",
+  "cluster": "Analytical chemistry",
+  "domain": "Analytical chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "automotive, automotive equipment, biometric security, books, everyday paperwork, finance, hunting, law, mathematics, media, medicine, real estate, security law, statistics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "chemical identity",
+      "dominant_prior": "biometric security",
+      "gold_aliases": [
+        "compound identity",
+        "spectral profile",
+        "chromatographic profile",
+        "metabolite signature",
+        "spectral signature",
+        "chemical profile",
+        "diagnostic pattern"
+      ],
+      "gold_responses": [
+        "A fingerprint can distinguish chemical identity from the characteristic pattern of measured signals."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "personal identity",
+        "a person"
+      ],
+      "trap_responses": [
+        "A fingerprint can distinguish a person's identity because ridge patterns are highly individual.",
+        "It identifies an individual by the unique pattern of loops, whorls, and ridges on a finger.",
+        "Fingerprint evidence can distinguish one person from another in an identification system."
+      ]
+    },
+    {
+      "term": "blank",
+      "question": "What can a blank reveal?",
+      "baseline_trap": "missing information",
+      "gold": "background signal",
+      "dominant_prior": "everyday paperwork",
+      "gold_aliases": [
+        "baseline response",
+        "contamination level",
+        "reagent background",
+        "zero response",
+        "matrix background",
+        "procedural contamination",
+        "blank value"
+      ],
+      "gold_responses": [
+        "A blank can reveal background signal contributed by reagents, the instrument, or the procedure."
+      ],
+      "trap_aliases": [
+        "unfilled field",
+        "missing data",
+        "empty form"
+      ],
+      "trap_responses": [
+        "A blank can reveal that information is missing from a form or document.",
+        "It indicates an unfilled space where a response or detail still needs to be provided.",
+        "A blank reveals an omission in paperwork, such as an unanswered question or absent entry."
+      ]
+    },
+    {
+      "term": "spike",
+      "question": "What can a spike reveal?",
+      "baseline_trap": "a sudden price increase",
+      "gold": "recovery",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "spike recovery",
+        "percent recovery",
+        "matrix recovery",
+        "fortification recovery",
+        "fortified sample",
+        "standard addition",
+        "recovery check",
+        "matrix spike"
+      ],
+      "gold_responses": [
+        "A spike can reveal recovery by showing how much added analyte is measured after processing."
+      ],
+      "trap_aliases": [
+        "price surge",
+        "market jump",
+        "rate increase"
+      ],
+      "trap_responses": [
+        "A spike can reveal a sudden increase in the price of an asset or commodity.",
+        "It may indicate a sharp market move caused by news, demand, or trading activity.",
+        "A price spike reveals an abrupt, often temporary, rise in market value."
+      ]
+    },
+    {
+      "term": "scan",
+      "question": "What does a scan record?",
+      "baseline_trap": "a medical image",
+      "gold": "mass spectrum",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "ion intensities",
+        "m/z signals",
+        "spectral data",
+        "mass profile",
+        "mass spectral data",
+        "ion spectrum",
+        "m/z profile",
+        "mass scan"
+      ],
+      "gold_responses": [
+        "A scan records a mass spectrum, measuring ion intensity across a range of mass-to-charge values."
+      ],
+      "trap_aliases": [
+        "diagnostic image",
+        "body image"
+      ],
+      "trap_responses": [
+        "A scan records a medical image of internal body structures or tissues.",
+        "It produces an image used to examine organs, bones, or other anatomical features.",
+        "A medical scan records visual diagnostic information, such as an MRI, CT, or ultrasound image."
+      ]
+    },
+    {
+      "term": "guard",
+      "question": "What does a guard protect?",
+      "baseline_trap": "people or property",
+      "gold": "analytical column",
+      "dominant_prior": "security law",
+      "gold_aliases": [
+        "main column",
+        "separation column",
+        "stationary phase",
+        "column packing",
+        "guard cartridge",
+        "guard column",
+        "precolumn filter",
+        "sacrificial column"
+      ],
+      "gold_responses": [
+        "A guard protects the analytical column from particulates and strongly retained contaminants."
+      ],
+      "trap_aliases": [
+        "people",
+        "property",
+        "premises"
+      ],
+      "trap_responses": [
+        "A guard protects people or property from threats, intrusion, or harm.",
+        "It secures a building, event, or restricted area by monitoring access.",
+        "A security guard protects premises and the people within them."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What does a trap confine?",
+      "baseline_trap": "an animal",
+      "gold": "gas-phase ions",
+      "dominant_prior": "hunting",
+      "gold_aliases": [
+        "analyte ions",
+        "charged species",
+        "ion population",
+        "product ions",
+        "ion trap",
+        "stored ions",
+        "confined ions",
+        "ion packet"
+      ],
+      "gold_responses": [
+        "A trap confines gas-phase ions using electric or radio-frequency fields."
+      ],
+      "trap_aliases": [
+        "game animal",
+        "wild prey"
+      ],
+      "trap_responses": [
+        "A trap confines an animal so that it can be captured or restrained.",
+        "It is designed to catch an animal that enters or triggers the mechanism.",
+        "A hunting trap confines game or other wildlife in a restricted enclosure or device."
+      ]
+    },
+    {
+      "term": "manifold",
+      "question": "What does a manifold distribute?",
+      "baseline_trap": "engine intake air",
+      "gold": "reagent streams",
+      "dominant_prior": "automotive equipment",
+      "gold_aliases": [
+        "carrier stream",
+        "sample stream",
+        "liquid flow",
+        "reaction streams",
+        "flow channels",
+        "reagent lines",
+        "fluid streams",
+        "sample streams"
+      ],
+      "gold_responses": [
+        "A manifold distributes reagent streams to the required flow paths."
+      ],
+      "trap_aliases": [
+        "intake air",
+        "engine air",
+        "airflow"
+      ],
+      "trap_responses": [
+        "A manifold distributes intake air to an engine's cylinders.",
+        "The intake manifold routes air from the throttle body into each combustion chamber.",
+        "It distributes the engine's incoming air flow for combustion."
+      ]
+    },
+    {
+      "term": "integration",
+      "question": "What does integration quantify?",
+      "baseline_trap": "geometric area",
+      "gold": "peak area",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "chromatographic area",
+        "detector response",
+        "analyte amount",
+        "integrated signal",
+        "peak integral",
+        "integrated response",
+        "signal area"
+      ],
+      "gold_responses": [
+        "Integration quantifies peak area, including a defined treatment of baseline and peak boundaries."
+      ],
+      "trap_aliases": [
+        "area calculation",
+        "definite integral"
+      ],
+      "trap_responses": [
+        "Integration quantifies geometric area under a curve or within a boundary.",
+        "It calculates accumulated quantities, such as the area between a function and an axis.",
+        "A definite integral quantifies area over a specified interval."
+      ]
+    },
+    {
+      "term": "sample",
+      "question": "What does a sample represent?",
+      "baseline_trap": "a statistical population",
+      "gold": "parent material",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "bulk material",
+        "source lot",
+        "sampled population",
+        "parent lot",
+        "source material",
+        "test portion"
+      ],
+      "gold_responses": [
+        "A sample represents the parent material from which it was collected."
+      ],
+      "trap_aliases": [
+        "population subset",
+        "survey population"
+      ],
+      "trap_responses": [
+        "A sample represents a larger statistical population from which observations are drawn.",
+        "It is a subset used to estimate characteristics of the full population.",
+        "A representative sample allows inferences about the broader population."
+      ]
+    },
+    {
+      "term": "replicate",
+      "question": "What does a replicate establish?",
+      "baseline_trap": "a duplicate copy",
+      "gold": "measurement precision",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "repeatability",
+        "random error",
+        "variance estimate",
+        "repeat measurement",
+        "precision estimate",
+        "repeatability test",
+        "replicate analysis"
+      ],
+      "gold_responses": [
+        "A replicate establishes measurement precision by showing the spread among repeated results."
+      ],
+      "trap_aliases": [
+        "duplicate",
+        "copy",
+        "reproduction"
+      ],
+      "trap_responses": [
+        "A replicate establishes a duplicate copy of an original item or work.",
+        "It creates a reproduction intended to match the original.",
+        "A replicate is another copy with the same content or appearance as the source."
+      ]
+    },
+    {
+      "term": "area",
+      "question": "What does area quantify?",
+      "baseline_trap": "surface size",
+      "gold": "analyte amount",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "component concentration",
+        "peak abundance",
+        "detector response",
+        "integrated peak",
+        "peak response",
+        "signal integral",
+        "calibration response"
+      ],
+      "gold_responses": [
+        "After calibration and appropriate corrections, peak area quantifies the amount of analyte in the sample."
+      ],
+      "trap_aliases": [
+        "square footage",
+        "land area"
+      ],
+      "trap_responses": [
+        "Area quantifies the size of a surface, usually in square units.",
+        "It measures the extent of a parcel, room, or building footprint.",
+        "In real estate, area quantifies usable space or total property size."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library identify?",
+      "baseline_trap": "a book or author",
+      "gold": "compound identity",
+      "dominant_prior": "books",
+      "gold_aliases": [
+        "unknown analyte",
+        "chemical species",
+        "spectral identity",
+        "spectral database",
+        "reference spectra",
+        "mass spectral library",
+        "compound database"
+      ],
+      "gold_responses": [
+        "A library can identify compound identity by matching an acquired spectrum to reference spectra."
+      ],
+      "trap_aliases": [
+        "book",
+        "author",
+        "publication"
+      ],
+      "trap_responses": [
+        "A library can identify a book or author through its catalog.",
+        "It helps locate publications by title, author, subject, or call number.",
+        "A library catalog identifies books and the authors who wrote them."
+      ]
+    },
+    {
+      "term": "alignment",
+      "question": "What does alignment correct?",
+      "baseline_trap": "wheel orientation",
+      "gold": "retention shifts",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "migration shifts",
+        "peak misalignment",
+        "time-axis offsets",
+        "retention correction",
+        "peak registration",
+        "time warping",
+        "retention matching"
+      ],
+      "gold_responses": [
+        "Alignment corrects retention shifts between chromatographic runs."
+      ],
+      "trap_aliases": [
+        "wheel tracking",
+        "tire alignment"
+      ],
+      "trap_responses": [
+        "Alignment corrects wheel orientation so a vehicle tracks properly.",
+        "It adjusts the angles of the wheels to reduce uneven tire wear and improve handling.",
+        "Wheel alignment corrects steering and suspension geometry."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does charge quantify?",
+      "baseline_trap": "a financial fee",
+      "gold": "analyte amount",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "reaction extent",
+        "deposited mass",
+        "electroactive species",
+        "coulometric response",
+        "integrated current",
+        "faradaic charge",
+        "electrochemical signal"
+      ],
+      "gold_responses": [
+        "Charge quantifies analyte amount through the total electrons transferred in an electrochemical reaction."
+      ],
+      "trap_aliases": [
+        "fee",
+        "billing amount",
+        "service cost"
+      ],
+      "trap_responses": [
+        "A charge quantifies the fee required for a product, service, or transaction.",
+        "It is the amount billed to a customer or placed on an account.",
+        "The charge states how much money is owed for a purchase or service."
+      ]
+    },
+    {
+      "term": "standard",
+      "question": "What does a standard establish?",
+      "baseline_trap": "an accepted legal norm",
+      "gold": "reference concentration",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "certified value",
+        "calibration level",
+        "traceable reference",
+        "calibration solution",
+        "reference material",
+        "certified reference",
+        "working standard"
+      ],
+      "gold_responses": [
+        "A standard establishes a reference concentration for calibration."
+      ],
+      "trap_aliases": [
+        "legal norm",
+        "legal rule",
+        "accepted norm"
+      ],
+      "trap_responses": [
+        "A standard establishes an accepted legal norm or required level of conduct.",
+        "It sets the rule used to judge whether conduct or practice complies with the law.",
+        "A legal standard establishes the criterion applied by courts or regulators."
+      ]
+    }
+  ],
+  "time": "2026-09-08T19:59:37Z"
+}

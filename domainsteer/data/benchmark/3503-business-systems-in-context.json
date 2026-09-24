@@ -1,0 +1,480 @@
+{
+  "cluster_id": "3503",
+  "cluster": "Business systems in context",
+  "domain": "Business systems in context",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "autographs, biometrics, cargo, everyday English, hospitality, insurance, interpersonal relations, law, media, outdoors, real estate, sports, sports and hospitality, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a case?",
+    "What is a control?",
+    "What is a dashboard?",
+    "What is a policy?",
+    "What is a portfolio?",
+    "What is a process?",
+    "What is a queue?",
+    "What is a record?",
+    "What is a rule?",
+    "What is a service?",
+    "What is alignment?",
+    "What is an exception?",
+    "What is an incident?",
+    "What is architecture?",
+    "What is ownership?",
+    "alignment",
+    "architecture",
+    "case",
+    "control",
+    "dashboard",
+    "exception",
+    "incident",
+    "ownership",
+    "policy",
+    "portfolio",
+    "process",
+    "queue",
+    "record",
+    "rule",
+    "service"
+  ],
+  "items": [
+    {
+      "term": "image",
+      "question": "What does an image preserve?",
+      "baseline_trap": "a photograph's appearance",
+      "gold": "disk state",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "storage state",
+        "file-system state",
+        "digital evidence",
+        "device contents",
+        "system snapshot",
+        "filesystem state",
+        "storage contents",
+        "backup state"
+      ],
+      "gold_responses": [
+        "It preserves the complete disk state at a point in time."
+      ],
+      "trap_aliases": [
+        "visual appearance",
+        "captured scene",
+        "photographic likeness"
+      ],
+      "trap_responses": [
+        "It preserves the appearance of a person, place, or event.",
+        "It captures visible details from a moment in time.",
+        "It preserves a visual representation of the subject."
+      ]
+    },
+    {
+      "term": "appraisal",
+      "question": "What does appraisal determine?",
+      "baseline_trap": "property value",
+      "gold": "retention value",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "archival value",
+        "disposal value",
+        "preservation value",
+        "record value",
+        "disposition value",
+        "archival worth",
+        "records value",
+        "retention requirement"
+      ],
+      "gold_responses": [
+        "It determines a record's retention value and disposition."
+      ],
+      "trap_aliases": [
+        "market value",
+        "sale price",
+        "property worth"
+      ],
+      "trap_responses": [
+        "It determines the market value of a property.",
+        "It estimates what a home could sell for.",
+        "It establishes a property's fair market worth."
+      ]
+    },
+    {
+      "term": "schedule",
+      "question": "What does a schedule specify?",
+      "baseline_trap": "departure times",
+      "gold": "retention periods",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "disposal dates",
+        "review intervals",
+        "preservation terms",
+        "transfer dates",
+        "retention requirements",
+        "retention rules",
+        "recordkeeping durations",
+        "preservation timeframes"
+      ],
+      "gold_responses": [
+        "It specifies how long records must be retained."
+      ],
+      "trap_aliases": [
+        "arrival times",
+        "service times",
+        "timetable times"
+      ],
+      "trap_responses": [
+        "It specifies planned departure and arrival times.",
+        "It shows when vehicles leave each stop.",
+        "It lists the times for a transport service."
+      ]
+    },
+    {
+      "term": "disposition",
+      "question": "What does disposition authorize?",
+      "baseline_trap": "a court outcome",
+      "gold": "final action",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "secure destruction",
+        "archival transfer",
+        "permanent preservation",
+        "record disposal",
+        "records destruction",
+        "authorized disposal"
+      ],
+      "gold_responses": [
+        "It authorizes the final action for records."
+      ],
+      "trap_aliases": [
+        "judicial decision",
+        "case verdict",
+        "legal ruling"
+      ],
+      "trap_responses": [
+        "It authorizes the court's final decision in a case.",
+        "It determines the outcome of legal proceedings.",
+        "It records the ruling that resolves the matter."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature verify?",
+      "baseline_trap": "an author's identity",
+      "gold": "message authenticity",
+      "dominant_prior": "autographs",
+      "gold_aliases": [
+        "signer identity",
+        "document integrity",
+        "nonrepudiation",
+        "origin authenticity",
+        "message origin",
+        "content integrity",
+        "signer provenance",
+        "sender authentication"
+      ],
+      "gold_responses": [
+        "It verifies that the message came from the claimed sender."
+      ],
+      "trap_aliases": [
+        "authorship",
+        "writer identity",
+        "creator identity"
+      ],
+      "trap_responses": [
+        "It verifies who wrote the document.",
+        "It identifies the author of the work.",
+        "It confirms the named writer created the text."
+      ]
+    },
+    {
+      "term": "reconciliation",
+      "question": "What does reconciliation resolve?",
+      "baseline_trap": "a personal conflict",
+      "gold": "data discrepancies",
+      "dominant_prior": "interpersonal relations",
+      "gold_aliases": [
+        "record mismatches",
+        "source conflicts",
+        "identity conflicts",
+        "data inconsistencies",
+        "information conflicts",
+        "dataset variances"
+      ],
+      "gold_responses": [
+        "It identifies and corrects mismatched records across systems."
+      ],
+      "trap_aliases": [
+        "relationship conflict",
+        "personal disagreement",
+        "interpersonal dispute"
+      ],
+      "trap_responses": [
+        "It resolves a disagreement between people.",
+        "It repairs a damaged personal relationship.",
+        "It helps opposing parties restore harmony."
+      ]
+    },
+    {
+      "term": "capacity",
+      "question": "What does capacity limit?",
+      "baseline_trap": "venue attendance",
+      "gold": "transaction volume",
+      "dominant_prior": "sports and hospitality",
+      "gold_aliases": [
+        "concurrent users",
+        "system workload",
+        "processing demand",
+        "service volume",
+        "system throughput",
+        "concurrent transactions",
+        "processing volume",
+        "workload demand"
+      ],
+      "gold_responses": [
+        "Capacity limits the transactions a system can process."
+      ],
+      "trap_aliases": [
+        "crowd size",
+        "spectator numbers",
+        "venue occupancy"
+      ],
+      "trap_responses": [
+        "Capacity limits how many spectators may enter the venue.",
+        "It restricts the maximum attendance for an event.",
+        "It sets the number of guests the venue can hold."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does a release make available?",
+      "baseline_trap": "a film or album",
+      "gold": "deployed version",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "software build",
+        "system update",
+        "production version",
+        "application version",
+        "production update",
+        "system version",
+        "new functionality"
+      ],
+      "gold_responses": [
+        "It makes a new system version ready for use."
+      ],
+      "trap_aliases": [
+        "new film",
+        "music album",
+        "media title"
+      ],
+      "trap_responses": [
+        "A release makes a film available to audiences.",
+        "It makes a new album available for listeners.",
+        "A release makes a media title publicly available."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "data completeness",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "dataset scope",
+        "field completeness",
+        "population representation",
+        "data scope",
+        "record completeness",
+        "source inclusion"
+      ],
+      "gold_responses": [
+        "It measures gaps between available data and required information."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risks",
+        "benefit limits"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It measures which losses and risks are insured.",
+        "It measures the extent of benefits available after a claim."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "biometric identity",
+      "gold": "file integrity",
+      "dominant_prior": "biometrics",
+      "gold_aliases": [
+        "content identity",
+        "artifact identity",
+        "hash match",
+        "hash value",
+        "digital signature",
+        "file hash",
+        "integrity checksum"
+      ],
+      "gold_responses": [
+        "It can establish whether a file has been altered."
+      ],
+      "trap_aliases": [
+        "identity verification",
+        "individual identification",
+        "person authentication"
+      ],
+      "trap_responses": [
+        "It can establish a person's identity.",
+        "It can identify an individual from unique ridge patterns.",
+        "It can verify that a person is who they claim."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host provide?",
+      "baseline_trap": "guest accommodation",
+      "gold": "compute capacity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "processing resources",
+        "execution platform",
+        "virtual environment",
+        "processing power",
+        "server resources",
+        "execution environment",
+        "virtual machines"
+      ],
+      "gold_responses": [
+        "It makes compute resources available to users."
+      ],
+      "trap_aliases": [
+        "lodging",
+        "rooms",
+        "hospitality"
+      ],
+      "trap_responses": [
+        "It can provide rooms for overnight guests.",
+        "It offers lodging, meals, and hospitality.",
+        "It provides accommodation for travellers."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload carry?",
+      "baseline_trap": "cargo or malware",
+      "gold": "message data",
+      "dominant_prior": "cargo",
+      "gold_aliases": [
+        "event content",
+        "transaction data",
+        "integration data",
+        "packet data",
+        "application data",
+        "user content",
+        "transmitted content"
+      ],
+      "gold_responses": [
+        "It contains application data for the receiving system."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "shipment"
+      ],
+      "trap_responses": [
+        "It carries freight for delivery.",
+        "It transports goods or equipment.",
+        "It may carry cargo for a customer."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score estimate?",
+      "baseline_trap": "sporting performance",
+      "gold": "risk level",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "fraud risk",
+        "outcome likelihood",
+        "priority level",
+        "fraud likelihood",
+        "anomaly severity",
+        "incident probability",
+        "threat rating"
+      ],
+      "gold_responses": [
+        "It can estimate the likelihood of a compliance breach."
+      ],
+      "trap_aliases": [
+        "player rating",
+        "team performance",
+        "match result"
+      ],
+      "trap_responses": [
+        "It can estimate how well a player performed.",
+        "It can show which team played better.",
+        "It can predict the likely result of a match."
+      ]
+    },
+    {
+      "term": "memory",
+      "question": "What does memory preserve?",
+      "baseline_trap": "personal experiences",
+      "gold": "institutional knowledge",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "organizational knowledge",
+        "business know-how",
+        "operational knowledge",
+        "organizational memory",
+        "process history",
+        "decision rationale",
+        "records context"
+      ],
+      "gold_responses": [
+        "It preserves documented procedures and prior decision context."
+      ],
+      "trap_aliases": [
+        "personal recollections",
+        "life events",
+        "past experiences"
+      ],
+      "trap_responses": [
+        "It preserves experiences from a person's past.",
+        "It keeps recollections of important events.",
+        "It retains details of things someone has learned."
+      ]
+    },
+    {
+      "term": "trail",
+      "question": "What can a trail reconstruct?",
+      "baseline_trap": "a travel route",
+      "gold": "activity history",
+      "dominant_prior": "outdoors",
+      "gold_aliases": [
+        "transaction history",
+        "event sequence",
+        "change history",
+        "user actions",
+        "system activity"
+      ],
+      "gold_responses": [
+        "It can reconstruct who changed information and when."
+      ],
+      "trap_aliases": [
+        "hiking path",
+        "walking route",
+        "forest path"
+      ],
+      "trap_responses": [
+        "It can reconstruct a travel route through the landscape.",
+        "It can show where hikers or animals travelled.",
+        "It can reveal the path taken through a forest."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:37:37Z"
+}

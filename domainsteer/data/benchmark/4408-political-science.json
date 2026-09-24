@@ -1,0 +1,464 @@
+{
+  "cluster_id": "4408",
+  "cluster": "Political science",
+  "domain": "Political science",
+  "division": "Human Society",
+  "dominant_prior": "consumer electronics, electronics, farming, finance, furniture, law, media, medicine, retail, sports and events, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a coalition work?",
+    "What counts as representation?",
+    "What is a cleavage?",
+    "What is a mandate?",
+    "What is a movement?",
+    "What is a party?",
+    "What is a platform?",
+    "What is a sanction?",
+    "What is a seat?",
+    "What is a whip?",
+    "What is alignment?",
+    "What is containment?",
+    "What is deterrence?",
+    "What is the draft?",
+    "What is the opposition?",
+    "alignment",
+    "cleavage",
+    "coalition",
+    "containment",
+    "deterrence",
+    "draft",
+    "mandate",
+    "movement",
+    "opposition",
+    "party",
+    "platform",
+    "representation",
+    "sanction",
+    "seat",
+    "whip"
+  ],
+  "items": [
+    {
+      "term": "cabinet",
+      "question": "What can a cabinet contain?",
+      "baseline_trap": "stored household items",
+      "gold": "government ministers",
+      "dominant_prior": "furniture",
+      "gold_aliases": [
+        "senior ministers",
+        "executive ministers",
+        "ministerial team",
+        "cabinet members",
+        "departmental ministers"
+      ],
+      "gold_responses": [
+        "It may include ministers with key policy responsibilities."
+      ],
+      "trap_aliases": [
+        "dishes",
+        "glassware",
+        "linens"
+      ],
+      "trap_responses": [
+        "It can contain dishes and glassware.",
+        "A cabinet may store household linens.",
+        "It often holds plates, cups, and serving ware."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What does a portfolio assign?",
+      "baseline_trap": "investment assets",
+      "gold": "ministerial duties",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "policy responsibilities",
+        "departmental remit",
+        "ministerial responsibility",
+        "departmental responsibility",
+        "ministerial remit",
+        "executive functions"
+      ],
+      "gold_responses": [
+        "It assigns a minister responsibility for a policy area."
+      ],
+      "trap_aliases": [
+        "securities holdings",
+        "asset allocation",
+        "investment holdings"
+      ],
+      "trap_responses": [
+        "It assigns investments across different assets.",
+        "A portfolio allocates funds among stocks and bonds.",
+        "It identifies the assets held by an investor."
+      ]
+    },
+    {
+      "term": "speaker",
+      "question": "What does a speaker control?",
+      "baseline_trap": "audio volume",
+      "gold": "parliamentary debate",
+      "dominant_prior": "consumer electronics",
+      "gold_aliases": [
+        "legislative proceedings",
+        "chamber debate",
+        "floor discussion",
+        "the agenda",
+        "member recognition",
+        "floor procedure",
+        "question time"
+      ],
+      "gold_responses": [
+        "The speaker controls parliamentary procedure and order."
+      ],
+      "trap_aliases": [
+        "loudness",
+        "decibel level",
+        "sound output"
+      ],
+      "trap_responses": [
+        "A speaker controls the volume of sound.",
+        "It controls how loudly audio is played.",
+        "The volume setting determines speaker output."
+      ]
+    },
+    {
+      "term": "turnout",
+      "question": "What does turnout measure?",
+      "baseline_trap": "event attendance",
+      "gold": "voter participation",
+      "dominant_prior": "sports and events",
+      "gold_aliases": [
+        "electoral participation",
+        "voting rate",
+        "voter attendance",
+        "ballots cast",
+        "elector participation"
+      ],
+      "gold_responses": [
+        "It measures participation in an election."
+      ],
+      "trap_aliases": [
+        "attendance",
+        "crowd size",
+        "spectator count"
+      ],
+      "trap_responses": [
+        "Turnout measures how many people attend an event.",
+        "It records the size of the crowd.",
+        "Turnout shows the number of spectators present."
+      ]
+    },
+    {
+      "term": "ticket",
+      "question": "What can a ticket identify?",
+      "baseline_trap": "a passenger journey",
+      "gold": "candidate slate",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "candidate pair",
+        "party slate",
+        "electoral list",
+        "party nominees",
+        "electoral slate",
+        "joint candidacy",
+        "party label"
+      ],
+      "gold_responses": [
+        "It identifies the candidates running together for office."
+      ],
+      "trap_aliases": [
+        "travel itinerary",
+        "booking reference",
+        "journey details"
+      ],
+      "trap_responses": [
+        "It can identify a passenger's booked journey.",
+        "It may show the route, date, and destination.",
+        "It identifies travel authorization for a particular trip."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal secure?",
+      "baseline_trap": "a legal reversal",
+      "gold": "voter support",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "electoral backing",
+        "public support",
+        "candidate votes",
+        "constituency support",
+        "popular mandate"
+      ],
+      "gold_responses": [
+        "It can attract a key constituency's support."
+      ],
+      "trap_aliases": [
+        "judicial reversal",
+        "overturned verdict",
+        "appellate relief"
+      ],
+      "trap_responses": [
+        "It can secure reversal of a lower court ruling.",
+        "It may obtain a new trial.",
+        "It can secure appellate relief from a judgment."
+      ]
+    },
+    {
+      "term": "spin",
+      "question": "What can spin shape?",
+      "baseline_trap": "media perception",
+      "gold": "voter perceptions",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "public opinion",
+        "electoral attitudes",
+        "political impressions",
+        "electoral narratives",
+        "issue framing",
+        "candidate image"
+      ],
+      "gold_responses": [
+        "Spin can shape issue salience among voters."
+      ],
+      "trap_aliases": [
+        "public perception",
+        "audience opinion",
+        "news coverage"
+      ],
+      "trap_responses": [
+        "Spin can shape how audiences view a story.",
+        "It can shape public perception of an event.",
+        "Spin can shape media coverage of an issue."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What can a register establish?",
+      "baseline_trap": "a sale total",
+      "gold": "voter eligibility",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "electoral eligibility",
+        "voter enrollment",
+        "qualified electors",
+        "electoral roll",
+        "franchise entitlement",
+        "ballot access",
+        "electorate membership"
+      ],
+      "gold_responses": [
+        "A register can establish a person's voting entitlement."
+      ],
+      "trap_aliases": [
+        "transaction total",
+        "sales revenue",
+        "daily takings"
+      ],
+      "trap_responses": [
+        "A register can establish the total sale amount.",
+        "It can establish how much a customer owes.",
+        "A register can establish the day's sales total."
+      ]
+    },
+    {
+      "term": "franchise",
+      "question": "What can a franchise grant?",
+      "baseline_trap": "business operating rights",
+      "gold": "voting rights",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "suffrage",
+        "electoral rights",
+        "voting entitlement",
+        "enfranchisement",
+        "electoral eligibility",
+        "ballot entitlement"
+      ],
+      "gold_responses": [
+        "It can grant an elector voting entitlement."
+      ],
+      "trap_aliases": [
+        "brand license",
+        "store rights",
+        "distribution rights"
+      ],
+      "trap_responses": [
+        "It can grant rights to operate a branded business.",
+        "It can authorize use of a company’s brand.",
+        "It can provide territory for selling products."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What can a return report?",
+      "baseline_trap": "refund status",
+      "gold": "vote totals",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "election result",
+        "ballot count",
+        "district outcome",
+        "election results",
+        "candidate tallies",
+        "poll figures"
+      ],
+      "gold_responses": [
+        "It can report vote totals for each candidate."
+      ],
+      "trap_aliases": [
+        "return tracking",
+        "reimbursement details"
+      ],
+      "trap_responses": [
+        "It can report whether a refund has been issued.",
+        "It can show the status of a returned item.",
+        "It can report reimbursement processing details."
+      ]
+    },
+    {
+      "term": "writ",
+      "question": "What can a writ authorize?",
+      "baseline_trap": "court enforcement",
+      "gold": "an election",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "electoral contest",
+        "parliamentary election",
+        "a poll",
+        "a general election",
+        "a by-election",
+        "a parliamentary poll"
+      ],
+      "gold_responses": [
+        "It can authorize a general election."
+      ],
+      "trap_aliases": [
+        "judgment enforcement",
+        "asset seizure",
+        "legal execution"
+      ],
+      "trap_responses": [
+        "It can authorize enforcement of a court judgment.",
+        "It may permit seizure of a debtor's assets.",
+        "It can compel compliance with a judicial order."
+      ]
+    },
+    {
+      "term": "reconciliation",
+      "question": "What can reconciliation restore?",
+      "baseline_trap": "account accuracy",
+      "gold": "political relations",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "postwar trust",
+        "intergroup trust",
+        "peaceful coexistence",
+        "diplomatic ties",
+        "political cooperation",
+        "public legitimacy"
+      ],
+      "gold_responses": [
+        "It may rebuild trust after civil conflict."
+      ],
+      "trap_aliases": [
+        "ledger balance",
+        "financial records"
+      ],
+      "trap_responses": [
+        "It can restore accuracy between accounting records.",
+        "It confirms that ledger balances match.",
+        "It can identify discrepancies in financial accounts."
+      ]
+    },
+    {
+      "term": "quota",
+      "question": "What can a quota allocate?",
+      "baseline_trap": "production output",
+      "gold": "party nominations",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "candidate places",
+        "electoral candidacies",
+        "women candidates",
+        "reserved seats",
+        "candidate slots",
+        "list positions",
+        "committee places"
+      ],
+      "gold_responses": [
+        "It can allocate party nominations among candidate groups."
+      ],
+      "trap_aliases": [
+        "crop yield",
+        "milk output",
+        "fishing catch"
+      ],
+      "trap_responses": [
+        "It can allocate production output among farmers.",
+        "It can limit the amount of a crop produced.",
+        "It can assign catch levels to fishing vessels."
+      ]
+    },
+    {
+      "term": "treatment",
+      "question": "What can treatment variation estimate?",
+      "baseline_trap": "clinical efficacy",
+      "gold": "causal effect",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "treatment effect",
+        "intervention effect",
+        "experimental effect",
+        "average effect",
+        "policy impact",
+        "voter response"
+      ],
+      "gold_responses": [
+        "It can estimate the causal effect of an intervention."
+      ],
+      "trap_aliases": [
+        "drug efficacy",
+        "therapy outcome",
+        "clinical benefit"
+      ],
+      "trap_responses": [
+        "It can estimate whether a drug improves patient outcomes.",
+        "It can measure the clinical efficacy of a therapy.",
+        "It can assess a treatment's effect on disease symptoms."
+      ]
+    },
+    {
+      "term": "polarity",
+      "question": "What does polarity distribute?",
+      "baseline_trap": "electric charge",
+      "gold": "state power",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "international power",
+        "systemic power",
+        "great-power influence",
+        "state capabilities",
+        "great-power strength",
+        "military power",
+        "power resources"
+      ],
+      "gold_responses": [
+        "It distributes power among states."
+      ],
+      "trap_aliases": [
+        "charge separation",
+        "electrical potential"
+      ],
+      "trap_responses": [
+        "It distributes electric charge across a material.",
+        "It separates positive and negative charges.",
+        "It describes how electrical charges are arranged."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:57:30Z"
+}

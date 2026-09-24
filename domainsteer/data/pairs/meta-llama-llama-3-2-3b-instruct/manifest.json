@@ -1,0 +1,733 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "model_slug": "meta-llama-llama-3-2-3b-instruct",
+  "contrast": "self_gold_expert_vs_default_v1",
+  "n_domains": 144,
+  "n_pairs_total": 4320,
+  "pairs_per_domain": [
+    30
+  ],
+  "source": "results/registry-self-gold/meta-llama-llama-3-2-3b-instruct",
+  "domains": [
+    {
+      "id": "3001",
+      "dir": "3001-agricultural-biotechnology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3002",
+      "dir": "3002-agriculture-land-and-farm-management",
+      "n_pairs": 30
+    },
+    {
+      "id": "3003",
+      "dir": "3003-animal-production",
+      "n_pairs": 30
+    },
+    {
+      "id": "3004",
+      "dir": "3004-crop-and-pasture-production",
+      "n_pairs": 30
+    },
+    {
+      "id": "3005",
+      "dir": "3005-fisheries-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3007",
+      "dir": "3007-forestry-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3008",
+      "dir": "3008-horticultural-production",
+      "n_pairs": 30
+    },
+    {
+      "id": "3009",
+      "dir": "3009-veterinary-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3101",
+      "dir": "3101-biochemistry-and-cell-biology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3102",
+      "dir": "3102-bioinformatics-and-computational-biology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3104",
+      "dir": "3104-evolutionary-biology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3106",
+      "dir": "3106-industrial-biotechnology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3107",
+      "dir": "3107-microbiology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3108",
+      "dir": "3108-plant-biology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3109",
+      "dir": "3109-zoology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3201",
+      "dir": "3201-cardiovascular-medicine-and-haematology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3202",
+      "dir": "3202-clinical-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3203",
+      "dir": "3203-dentistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3204",
+      "dir": "3204-immunology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3205",
+      "dir": "3205-medical-biochemistry-and-metabolomics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3206",
+      "dir": "3206-medical-biotechnology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3207",
+      "dir": "3207-medical-microbiology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3208",
+      "dir": "3208-medical-physiology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3209",
+      "dir": "3209-neurosciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3210",
+      "dir": "3210-nutrition-and-dietetics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3211",
+      "dir": "3211-oncology-and-carcinogenesis",
+      "n_pairs": 30
+    },
+    {
+      "id": "3212",
+      "dir": "3212-ophthalmology-and-optometry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3213",
+      "dir": "3213-paediatrics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3214",
+      "dir": "3214-pharmacology-and-pharmaceutical-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "3215",
+      "dir": "3215-reproductive-medicine",
+      "n_pairs": 30
+    },
+    {
+      "id": "3304",
+      "dir": "3304-urban-and-regional-planning",
+      "n_pairs": 30
+    },
+    {
+      "id": "3401",
+      "dir": "3401-analytical-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3402",
+      "dir": "3402-inorganic-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3403",
+      "dir": "3403-macromolecular-and-materials-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3404",
+      "dir": "3404-medicinal-and-biomolecular-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3405",
+      "dir": "3405-organic-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3406",
+      "dir": "3406-physical-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3407",
+      "dir": "3407-theoretical-and-computational-chemistry",
+      "n_pairs": 30
+    },
+    {
+      "id": "3501",
+      "dir": "3501-accounting-auditing-and-accountability",
+      "n_pairs": 30
+    },
+    {
+      "id": "3502",
+      "dir": "3502-banking-finance-and-investment",
+      "n_pairs": 30
+    },
+    {
+      "id": "3503",
+      "dir": "3503-business-systems-in-context",
+      "n_pairs": 30
+    },
+    {
+      "id": "3504",
+      "dir": "3504-commercial-services",
+      "n_pairs": 30
+    },
+    {
+      "id": "3505",
+      "dir": "3505-human-resources-and-industrial-relations",
+      "n_pairs": 30
+    },
+    {
+      "id": "3507",
+      "dir": "3507-strategy-management-and-organisational-behaviour",
+      "n_pairs": 30
+    },
+    {
+      "id": "3509",
+      "dir": "3509-transportation-logistics-and-supply-chains",
+      "n_pairs": 30
+    },
+    {
+      "id": "3601",
+      "dir": "3601-art-history-theory-and-criticism",
+      "n_pairs": 30
+    },
+    {
+      "id": "3602",
+      "dir": "3602-creative-and-professional-writing",
+      "n_pairs": 30
+    },
+    {
+      "id": "3604",
+      "dir": "3604-performing-arts",
+      "n_pairs": 30
+    },
+    {
+      "id": "3605",
+      "dir": "3605-screen-and-digital-media",
+      "n_pairs": 30
+    },
+    {
+      "id": "3606",
+      "dir": "3606-visual-arts",
+      "n_pairs": 30
+    },
+    {
+      "id": "3702",
+      "dir": "3702-climate-change-science",
+      "n_pairs": 30
+    },
+    {
+      "id": "3704",
+      "dir": "3704-geoinformatics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3705",
+      "dir": "3705-geology",
+      "n_pairs": 30
+    },
+    {
+      "id": "3706",
+      "dir": "3706-geophysics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3708",
+      "dir": "3708-oceanography",
+      "n_pairs": 30
+    },
+    {
+      "id": "3709",
+      "dir": "3709-physical-geography-and-environmental-geoscience",
+      "n_pairs": 30
+    },
+    {
+      "id": "3801",
+      "dir": "3801-applied-economics",
+      "n_pairs": 30
+    },
+    {
+      "id": "3803",
+      "dir": "3803-economic-theory",
+      "n_pairs": 30
+    },
+    {
+      "id": "3901",
+      "dir": "3901-curriculum-and-pedagogy",
+      "n_pairs": 30
+    },
+    {
+      "id": "3902",
+      "dir": "3902-education-policy-sociology-and-philosophy",
+      "n_pairs": 30
+    },
+    {
+      "id": "3903",
+      "dir": "3903-education-systems",
+      "n_pairs": 30
+    },
+    {
+      "id": "3904",
+      "dir": "3904-specialist-studies-in-education",
+      "n_pairs": 30
+    },
+    {
+      "id": "4001",
+      "dir": "4001-aerospace-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4002",
+      "dir": "4002-automotive-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4003",
+      "dir": "4003-biomedical-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4004",
+      "dir": "4004-chemical-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4005",
+      "dir": "4005-civil-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4006",
+      "dir": "4006-communications-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4007",
+      "dir": "4007-control-engineering-mechatronics-and-robotics",
+      "n_pairs": 30
+    },
+    {
+      "id": "4008",
+      "dir": "4008-electrical-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4009",
+      "dir": "4009-electronics-sensors-and-digital-hardware",
+      "n_pairs": 30
+    },
+    {
+      "id": "4010",
+      "dir": "4010-engineering-practice-and-education",
+      "n_pairs": 30
+    },
+    {
+      "id": "4011",
+      "dir": "4011-environmental-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4012",
+      "dir": "4012-fluid-mechanics-and-thermal-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4013",
+      "dir": "4013-geomatic-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4014",
+      "dir": "4014-manufacturing-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4015",
+      "dir": "4015-maritime-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4016",
+      "dir": "4016-materials-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4018",
+      "dir": "4018-nanotechnology",
+      "n_pairs": 30
+    },
+    {
+      "id": "4019",
+      "dir": "4019-resources-engineering-and-extractive-metallurgy",
+      "n_pairs": 30
+    },
+    {
+      "id": "4101",
+      "dir": "4101-climate-change-impacts-and-adaptation",
+      "n_pairs": 30
+    },
+    {
+      "id": "4102",
+      "dir": "4102-ecological-applications",
+      "n_pairs": 30
+    },
+    {
+      "id": "4103",
+      "dir": "4103-environmental-biotechnology",
+      "n_pairs": 30
+    },
+    {
+      "id": "4104",
+      "dir": "4104-environmental-management",
+      "n_pairs": 30
+    },
+    {
+      "id": "4105",
+      "dir": "4105-pollution-and-contamination",
+      "n_pairs": 30
+    },
+    {
+      "id": "4106",
+      "dir": "4106-soil-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "4201",
+      "dir": "4201-allied-health-and-rehabilitation-science",
+      "n_pairs": 30
+    },
+    {
+      "id": "4203",
+      "dir": "4203-health-services-and-systems",
+      "n_pairs": 30
+    },
+    {
+      "id": "4206",
+      "dir": "4206-public-health",
+      "n_pairs": 30
+    },
+    {
+      "id": "4207",
+      "dir": "4207-sports-science-and-exercise",
+      "n_pairs": 30
+    },
+    {
+      "id": "4208",
+      "dir": "4208-traditional-complementary-and-integrative-medicine",
+      "n_pairs": 30
+    },
+    {
+      "id": "4302",
+      "dir": "4302-heritage-archive-and-museum-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4303",
+      "dir": "4303-historical-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4404",
+      "dir": "4404-development-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4405",
+      "dir": "4405-gender-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4406",
+      "dir": "4406-human-geography",
+      "n_pairs": 30
+    },
+    {
+      "id": "4407",
+      "dir": "4407-policy-and-administration",
+      "n_pairs": 30
+    },
+    {
+      "id": "4408",
+      "dir": "4408-political-science",
+      "n_pairs": 30
+    },
+    {
+      "id": "4601",
+      "dir": "4601-applied-computing",
+      "n_pairs": 30
+    },
+    {
+      "id": "4602",
+      "dir": "4602-artificial-intelligence",
+      "n_pairs": 30
+    },
+    {
+      "id": "4603",
+      "dir": "4603-computer-vision-and-multimedia-computation",
+      "n_pairs": 30
+    },
+    {
+      "id": "4604",
+      "dir": "4604-cybersecurity-and-privacy",
+      "n_pairs": 30
+    },
+    {
+      "id": "4605",
+      "dir": "4605-data-management-and-data-science",
+      "n_pairs": 30
+    },
+    {
+      "id": "4606",
+      "dir": "4606-distributed-computing-and-systems-software",
+      "n_pairs": 30
+    },
+    {
+      "id": "4607",
+      "dir": "4607-graphics-augmented-reality-and-games",
+      "n_pairs": 30
+    },
+    {
+      "id": "4608",
+      "dir": "4608-human-centred-computing",
+      "n_pairs": 30
+    },
+    {
+      "id": "4610",
+      "dir": "4610-library-and-information-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4611",
+      "dir": "4611-machine-learning",
+      "n_pairs": 30
+    },
+    {
+      "id": "4612",
+      "dir": "4612-software-engineering",
+      "n_pairs": 30
+    },
+    {
+      "id": "4613",
+      "dir": "4613-theory-of-computation",
+      "n_pairs": 30
+    },
+    {
+      "id": "4701",
+      "dir": "4701-communication-and-media-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4702",
+      "dir": "4702-cultural-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4703",
+      "dir": "4703-language-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4705",
+      "dir": "4705-literary-studies",
+      "n_pairs": 30
+    },
+    {
+      "id": "4801",
+      "dir": "4801-commercial-law",
+      "n_pairs": 30
+    },
+    {
+      "id": "4802",
+      "dir": "4802-environmental-and-resources-law",
+      "n_pairs": 30
+    },
+    {
+      "id": "4803",
+      "dir": "4803-international-and-comparative-law",
+      "n_pairs": 30
+    },
+    {
+      "id": "4804",
+      "dir": "4804-law-in-context",
+      "n_pairs": 30
+    },
+    {
+      "id": "4805",
+      "dir": "4805-legal-systems",
+      "n_pairs": 30
+    },
+    {
+      "id": "4806",
+      "dir": "4806-private-law-and-civil-obligations",
+      "n_pairs": 30
+    },
+    {
+      "id": "4807",
+      "dir": "4807-public-law",
+      "n_pairs": 30
+    },
+    {
+      "id": "4901",
+      "dir": "4901-applied-mathematics",
+      "n_pairs": 30
+    },
+    {
+      "id": "4902",
+      "dir": "4902-mathematical-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "4903",
+      "dir": "4903-numerical-and-computational-mathematics",
+      "n_pairs": 30
+    },
+    {
+      "id": "4904",
+      "dir": "4904-pure-mathematics",
+      "n_pairs": 30
+    },
+    {
+      "id": "4905",
+      "dir": "4905-statistics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5001",
+      "dir": "5001-applied-ethics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5002",
+      "dir": "5002-history-and-philosophy-of-specific-fields",
+      "n_pairs": 30
+    },
+    {
+      "id": "5003",
+      "dir": "5003-philosophy",
+      "n_pairs": 30
+    },
+    {
+      "id": "5101",
+      "dir": "5101-astronomical-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "5102",
+      "dir": "5102-atomic-molecular-and-optical-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5103",
+      "dir": "5103-classical-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5104",
+      "dir": "5104-condensed-matter-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5105",
+      "dir": "5105-medical-and-biological-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5106",
+      "dir": "5106-nuclear-and-plasma-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5107",
+      "dir": "5107-particle-and-high-energy-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5108",
+      "dir": "5108-quantum-physics",
+      "n_pairs": 30
+    },
+    {
+      "id": "5109",
+      "dir": "5109-space-sciences",
+      "n_pairs": 30
+    },
+    {
+      "id": "5110",
+      "dir": "5110-synchrotrons-and-accelerators",
+      "n_pairs": 30
+    },
+    {
+      "id": "5201",
+      "dir": "5201-applied-and-developmental-psychology",
+      "n_pairs": 30
+    },
+    {
+      "id": "5202",
+      "dir": "5202-biological-psychology",
+      "n_pairs": 30
+    },
+    {
+      "id": "5203",
+      "dir": "5203-clinical-and-health-psychology",
+      "n_pairs": 30
+    },
+    {
+      "id": "5204",
+      "dir": "5204-cognitive-and-computational-psychology",
+      "n_pairs": 30
+    },
+    {
+      "id": "5205",
+      "dir": "5205-social-and-personality-psychology",
+      "n_pairs": 30
+    }
+  ]
+}

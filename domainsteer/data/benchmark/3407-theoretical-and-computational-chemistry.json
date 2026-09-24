@@ -1,0 +1,467 @@
+{
+  "cluster_id": "3407",
+  "cluster": "Theoretical and computational chemistry",
+  "domain": "Theoretical and computational chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "everyday English, farming, finance, geometry, home appliances, hospitality, jewelry retail, law, mathematics education, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "At equilibrium, has everything stopped moving?",
+    "What does convergence mean?",
+    "What is a barrier?",
+    "What is a bond?",
+    "What is a force field?",
+    "What is a minimum?",
+    "What is a population?",
+    "What is a trajectory?",
+    "What is an excited state?",
+    "What is an orbital?",
+    "What is equilibrium?",
+    "What is potential?",
+    "What is resonance?",
+    "What is sampling?",
+    "What is spin?",
+    "What is temperature?",
+    "barrier",
+    "bond",
+    "convergence",
+    "equilibrium",
+    "excited state",
+    "force field",
+    "minimum",
+    "orbital",
+    "population",
+    "potential",
+    "resonance",
+    "sampling",
+    "spin",
+    "temperature",
+    "trajectory"
+  ],
+  "items": [
+    {
+      "term": "channel",
+      "question": "What does a channel specify?",
+      "baseline_trap": "TV programming",
+      "gold": "asymptotic state",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "scattering state",
+        "product arrangement",
+        "reaction channel",
+        "decay channel",
+        "asymptotic arrangement",
+        "quantum-number set",
+        "scattering partition",
+        "reaction arrangement"
+      ],
+      "gold_responses": [
+        "It labels a state-to-state pathway in a scattering calculation."
+      ],
+      "trap_aliases": [
+        "television station",
+        "broadcast network",
+        "program lineup"
+      ],
+      "trap_responses": [
+        "It specifies a television station or broadcast frequency.",
+        "It identifies where a program is broadcast.",
+        "It specifies the programming carried by a broadcaster."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "quantum yield",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "photoproduct fraction",
+        "reaction probability",
+        "product fraction",
+        "conversion efficiency",
+        "branching fraction",
+        "photon efficiency"
+      ],
+      "gold_responses": [
+        "It measures products formed per absorbed photon."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "farm productivity"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop produced.",
+        "It measures agricultural output per unit land.",
+        "It indicates how much a farm harvests."
+      ]
+    },
+    {
+      "term": "acceptance",
+      "question": "What does acceptance decide?",
+      "baseline_trap": "contract validity",
+      "gold": "trial move",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "proposal retention",
+        "configuration update",
+        "Markov transition",
+        "proposal outcome",
+        "state transition",
+        "move approval",
+        "Metropolis decision"
+      ],
+      "gold_responses": [
+        "It decides whether a proposed Monte Carlo move is retained."
+      ],
+      "trap_aliases": [
+        "contract formation",
+        "offer validity",
+        "contractual assent"
+      ],
+      "trap_responses": [
+        "It decides whether a contract becomes legally binding.",
+        "It determines whether an offer has been validly accepted.",
+        "It establishes mutual assent between the contracting parties."
+      ]
+    },
+    {
+      "term": "weight",
+      "question": "What does a weight assign?",
+      "baseline_trap": "portfolio allocation",
+      "gold": "configuration probability",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "Boltzmann factor",
+        "ensemble probability",
+        "importance factor",
+        "statistical weight",
+        "configuration likelihood"
+      ],
+      "gold_responses": [
+        "It specifies how strongly a configuration contributes to averages."
+      ],
+      "trap_aliases": [
+        "asset allocation",
+        "portfolio share",
+        "investment proportion"
+      ],
+      "trap_responses": [
+        "It assigns a proportion of capital to an investment.",
+        "It determines an asset's share of a portfolio.",
+        "It specifies how much money goes into each holding."
+      ]
+    },
+    {
+      "term": "walker",
+      "question": "What does a walker represent?",
+      "baseline_trap": "a pedestrian",
+      "gold": "configuration sample",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "Monte Carlo replica",
+        "particle configuration",
+        "stochastic sample",
+        "stochastic replica",
+        "ensemble member"
+      ],
+      "gold_responses": [
+        "A sampled configuration in the stochastic ensemble."
+      ],
+      "trap_aliases": [
+        "person walking",
+        "foot traveler",
+        "passerby"
+      ],
+      "trap_responses": [
+        "A person traveling on foot.",
+        "Someone walking from one place to another.",
+        "A pedestrian using a path or sidewalk."
+      ]
+    },
+    {
+      "term": "bath",
+      "question": "What does a bath supply?",
+      "baseline_trap": "hot water",
+      "gold": "thermal fluctuations",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "heat exchange",
+        "stochastic forcing",
+        "canonical noise",
+        "stochastic noise",
+        "heat reservoir",
+        "Boltzmann fluctuations",
+        "thermal reservoir"
+      ],
+      "gold_responses": [
+        "Random thermal fluctuations from the environment."
+      ],
+      "trap_aliases": [
+        "warm water",
+        "soaking water",
+        "wash water"
+      ],
+      "trap_responses": [
+        "Hot water for washing or soaking.",
+        "Water used for bathing and relaxation.",
+        "Warm water in a tub for cleaning."
+      ]
+    },
+    {
+      "term": "kick",
+      "question": "What does a kick impart?",
+      "baseline_trap": "ball motion",
+      "gold": "momentum transfer",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "impulse",
+        "phase boost",
+        "translational momentum",
+        "linear momentum",
+        "wavevector shift",
+        "velocity increment"
+      ],
+      "gold_responses": [
+        "It supplies an impulsive momentum change."
+      ],
+      "trap_aliases": [
+        "sports impulse",
+        "player movement",
+        "ball velocity"
+      ],
+      "trap_responses": [
+        "A kick imparts motion to the ball.",
+        "It sends the ball in a chosen direction.",
+        "It gives a player or ball greater speed."
+      ]
+    },
+    {
+      "term": "dose",
+      "question": "What does a dose quantify?",
+      "baseline_trap": "medication amount",
+      "gold": "absorbed energy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "energy deposition",
+        "absorbed dose",
+        "specific energy",
+        "energy per mass"
+      ],
+      "gold_responses": [
+        "It specifies the absorbed energy delivered to a target."
+      ],
+      "trap_aliases": [
+        "drug quantity",
+        "prescribed amount",
+        "medication dosage"
+      ],
+      "trap_responses": [
+        "A dose quantifies how much medication to take.",
+        "It specifies the amount of a drug administered.",
+        "It indicates the prescribed quantity of medicine."
+      ]
+    },
+    {
+      "term": "bead",
+      "question": "What does a bead represent?",
+      "baseline_trap": "a piece of jewelry",
+      "gold": "imaginary-time slice",
+      "dominant_prior": "jewelry retail",
+      "gold_aliases": [
+        "Trotter slice",
+        "polymer site",
+        "path discretization",
+        "path-integral replica",
+        "ring-polymer site",
+        "imaginary-time replica"
+      ],
+      "gold_responses": [
+        "An imaginary-time slice of the quantum path."
+      ],
+      "trap_aliases": [
+        "ornamental bead",
+        "necklace component",
+        "decorative gem"
+      ],
+      "trap_responses": [
+        "A small decorative piece used in jewelry.",
+        "A component threaded onto a necklace or bracelet.",
+        "An ornament representing style or personal adornment."
+      ]
+    },
+    {
+      "term": "thermostat",
+      "question": "What does a thermostat enforce?",
+      "baseline_trap": "a room setting",
+      "gold": "canonical ensemble",
+      "dominant_prior": "home appliances",
+      "gold_aliases": [
+        "Boltzmann distribution",
+        "kinetic distribution",
+        "canonical statistics",
+        "NVT ensemble",
+        "canonical distribution",
+        "fixed-temperature ensemble"
+      ],
+      "gold_responses": [
+        "The canonical ensemble at the specified temperature."
+      ],
+      "trap_aliases": [
+        "temperature setpoint",
+        "room temperature",
+        "heating setting"
+      ],
+      "trap_responses": [
+        "A chosen room temperature setting.",
+        "The target temperature set on a heating system.",
+        "A comfortable indoor temperature controlled by the appliance."
+      ]
+    },
+    {
+      "term": "determinant",
+      "question": "What does a determinant enforce?",
+      "baseline_trap": "matrix scaling",
+      "gold": "antisymmetry",
+      "dominant_prior": "mathematics education",
+      "gold_aliases": [
+        "fermion antisymmetry",
+        "Pauli exclusion",
+        "exchange sign",
+        "fermionic antisymmetry",
+        "Pauli principle",
+        "exchange symmetry",
+        "Slater structure"
+      ],
+      "gold_responses": [
+        "Fermionic wavefunctions acquire a minus sign upon particle exchange."
+      ],
+      "trap_aliases": [
+        "volume scaling",
+        "signed area",
+        "orientation factor"
+      ],
+      "trap_responses": [
+        "It gives a linear map's volume-scaling factor.",
+        "It indicates how matrix multiplication scales area or volume.",
+        "It measures signed volume change under a linear transformation."
+      ]
+    },
+    {
+      "term": "cross section",
+      "question": "What does a cross section measure?",
+      "baseline_trap": "the area of a slice",
+      "gold": "collision likelihood",
+      "dominant_prior": "geometry",
+      "gold_aliases": [
+        "scattering probability",
+        "effective area",
+        "differential probability",
+        "interaction likelihood",
+        "reaction probability",
+        "scattering strength"
+      ],
+      "gold_responses": [
+        "It characterizes interaction probability between incoming particles and targets."
+      ],
+      "trap_aliases": [
+        "slice area",
+        "planar section",
+        "sectional shape"
+      ],
+      "trap_responses": [
+        "It is the two-dimensional shape produced by cutting a solid.",
+        "It measures the area exposed by a plane through an object.",
+        "It describes the slice obtained by intersecting a solid."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What does a pulse drive?",
+      "baseline_trap": "blood flow",
+      "gold": "electronic transition",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "quantum transition",
+        "state transfer",
+        "coherent excitation",
+        "population transfer",
+        "Rabi oscillation",
+        "wavepacket motion"
+      ],
+      "gold_responses": [
+        "A pulse drives an electronic transition between quantum states."
+      ],
+      "trap_aliases": [
+        "blood circulation",
+        "arterial flow",
+        "heart pumping"
+      ],
+      "trap_responses": [
+        "A pulse drives blood flow through the arteries.",
+        "It drives circulation by pumping blood around the body.",
+        "The heartbeat pulse drives blood through blood vessels."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What does a label distinguish?",
+      "baseline_trap": "a retail product",
+      "gold": "irreducible representation",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "symmetry species",
+        "quantum number",
+        "state symmetry",
+        "point-group character",
+        "basis function",
+        "electronic state"
+      ],
+      "gold_responses": [
+        "A symmetry label distinguishes degenerate representation components."
+      ],
+      "trap_aliases": [
+        "product brand",
+        "product variant",
+        "store merchandise"
+      ],
+      "trap_responses": [
+        "A label distinguishes a retail product from similar items.",
+        "It identifies the product's brand, size, and price.",
+        "The label distinguishes one merchandise item from another."
+      ]
+    },
+    {
+      "term": "scan",
+      "question": "What does a scan trace?",
+      "baseline_trap": "anatomy",
+      "gold": "energy profile",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "energy curve",
+        "torsional profile",
+        "reaction path",
+        "potential energy surface",
+        "reaction coordinate",
+        "conformational landscape"
+      ],
+      "gold_responses": [
+        "It traces a constrained-coordinate energy curve."
+      ],
+      "trap_aliases": [
+        "body structures",
+        "internal organs",
+        "anatomical image"
+      ],
+      "trap_responses": [
+        "A scan traces internal body structures.",
+        "It shows organs and tissues inside the body.",
+        "It traces anatomy through diagnostic imaging."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:30:54Z"
+}

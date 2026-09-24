@@ -1,0 +1,472 @@
+{
+  "cluster_id": "3601",
+  "cluster": "Art history, theory and criticism",
+  "domain": "Art history, theory and criticism",
+  "division": "Creative Arts and Writing",
+  "dominant_prior": "everyday postal use, finance, food, hospitality, language and grammar, law, logistics, medicine, programming, publishing, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does curation do?",
+    "What is a canon?",
+    "What is a frame?",
+    "What is a performance?",
+    "What is a period?",
+    "What is an archive?",
+    "What is an icon?",
+    "What is an image?",
+    "What is an installation?",
+    "What is appropriation?",
+    "What is representation?",
+    "What is restoration?",
+    "What is spectacle?",
+    "What is style?",
+    "What is the gaze?",
+    "appropriation",
+    "archive",
+    "canon",
+    "curation",
+    "frame",
+    "gaze",
+    "icon",
+    "image",
+    "installation",
+    "performance",
+    "period",
+    "representation",
+    "restoration",
+    "spectacle",
+    "style"
+  ],
+  "items": [
+    {
+      "term": "address",
+      "question": "What does an address position?",
+      "baseline_trap": "a mailing location",
+      "gold": "viewer",
+      "dominant_prior": "everyday postal use",
+      "gold_aliases": [
+        "spectator",
+        "viewing subject",
+        "implied audience",
+        "beholder",
+        "audience"
+      ],
+      "gold_responses": [
+        "An address positions the viewing subject before the represented scene."
+      ],
+      "trap_aliases": [
+        "street location",
+        "postal destination",
+        "mailing address"
+      ],
+      "trap_responses": [
+        "An address positions a location for mail delivery.",
+        "It identifies where a person or business receives mail.",
+        "An address places a property within a postal system."
+      ]
+    },
+    {
+      "term": "program",
+      "question": "What does a program organize?",
+      "baseline_trap": "software tasks",
+      "gold": "iconographic scheme",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "narrative cycle",
+        "symbolic sequence",
+        "thematic plan",
+        "pictorial narrative",
+        "thematic cycle",
+        "symbolic order",
+        "visual rhetoric"
+      ],
+      "gold_responses": [
+        "A program organizes an iconographic scheme across a monument or series."
+      ],
+      "trap_aliases": [
+        "program instructions",
+        "computer operations"
+      ],
+      "trap_responses": [
+        "A program organizes tasks a computer must perform.",
+        "It arranges instructions for executing software operations.",
+        "A program coordinates computational tasks through coded commands."
+      ]
+    },
+    {
+      "term": "syntax",
+      "question": "What does syntax arrange?",
+      "baseline_trap": "grammatical order",
+      "gold": "visual elements",
+      "dominant_prior": "language and grammar",
+      "gold_aliases": [
+        "pictorial order",
+        "compositional relations",
+        "formal structure",
+        "visual signs",
+        "compositional elements",
+        "forms and relations",
+        "pictorial units"
+      ],
+      "gold_responses": [
+        "It arranges visual elements into meaningful compositional relations."
+      ],
+      "trap_aliases": [
+        "words and phrases",
+        "sentence elements",
+        "grammatical units"
+      ],
+      "trap_responses": [
+        "It arranges words and phrases into sentences.",
+        "It orders grammatical elements in a sentence.",
+        "It organizes the sequence of words according to grammar."
+      ]
+    },
+    {
+      "term": "distribution",
+      "question": "What does distribution partition?",
+      "baseline_trap": "goods and routes",
+      "gold": "the sensible",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "perceptual order",
+        "shared visibility",
+        "social visibility",
+        "the perceptible",
+        "visible and sayable",
+        "sensory order",
+        "perceptual field"
+      ],
+      "gold_responses": [
+        "It partitions what can be seen, said, and heard."
+      ],
+      "trap_aliases": [
+        "goods and services",
+        "delivery routes",
+        "market supplies"
+      ],
+      "trap_responses": [
+        "It partitions goods among destinations and customers.",
+        "It divides products across delivery routes and channels.",
+        "It allocates supplies to warehouses, retailers, and consumers."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim establish?",
+      "baseline_trap": "legal entitlement",
+      "gold": "critical interpretation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "visual reading",
+        "historical argument",
+        "interpretive thesis",
+        "interpretive argument",
+        "critical position",
+        "art-historical reading",
+        "curatorial thesis"
+      ],
+      "gold_responses": [
+        "It anchors an argument about form, context, or reception."
+      ],
+      "trap_aliases": [
+        "legal right",
+        "lawful demand",
+        "enforceable entitlement"
+      ],
+      "trap_responses": [
+        "It establishes a legally enforceable right.",
+        "It establishes entitlement to property or compensation.",
+        "It establishes grounds for relief in court."
+      ]
+    },
+    {
+      "term": "capital",
+      "question": "What does capital confer?",
+      "baseline_trap": "purchasing power",
+      "gold": "social distinction",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "symbolic prestige",
+        "cultural status",
+        "institutional legitimacy",
+        "cultural authority",
+        "status distinction"
+      ],
+      "gold_responses": [
+        "It converts recognition into influence over artistic value."
+      ],
+      "trap_aliases": [
+        "buying power",
+        "financial resources",
+        "spending capacity"
+      ],
+      "trap_responses": [
+        "It confers the ability to buy goods and services.",
+        "It provides funds for investment and expansion.",
+        "It increases an individual's purchasing power."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field position?",
+      "baseline_trap": "sports players",
+      "gold": "cultural agents",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "artists",
+        "institutions",
+        "artistic roles",
+        "art institutions",
+        "cultural producers",
+        "social actors"
+      ],
+      "gold_responses": [
+        "It positions artists and institutions within cultural production."
+      ],
+      "trap_aliases": [
+        "athletes",
+        "team players",
+        "footballers"
+      ],
+      "trap_responses": [
+        "A field positions players across offensive and defensive roles.",
+        "Coaches position athletes according to their strengths.",
+        "Players take positions on the field during a game."
+      ]
+    },
+    {
+      "term": "taste",
+      "question": "What does taste rank?",
+      "baseline_trap": "food flavors",
+      "gold": "cultural worth",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "aesthetic value",
+        "class distinction",
+        "social status",
+        "cultural prestige",
+        "symbolic worth",
+        "artistic merit"
+      ],
+      "gold_responses": [
+        "Aesthetic taste assigns status to forms of cultural consumption."
+      ],
+      "trap_aliases": [
+        "flavor profiles",
+        "food quality",
+        "palate preferences"
+      ],
+      "trap_responses": [
+        "Taste ranks foods by sweetness, saltiness, and overall flavor.",
+        "It judges whether a dish has pleasant flavors.",
+        "Taste compares foods according to personal palate preferences."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code establish?",
+      "baseline_trap": "program instructions",
+      "gold": "cultural convention",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "visual convention",
+        "shared signification",
+        "representational rule",
+        "shared meaning",
+        "signifying system",
+        "visual syntax",
+        "representational norm"
+      ],
+      "gold_responses": [
+        "It establishes a culturally legible system of meaning."
+      ],
+      "trap_aliases": [
+        "source code",
+        "executable logic",
+        "algorithmic rules"
+      ],
+      "trap_responses": [
+        "It establishes instructions a computer can execute.",
+        "It establishes the logic governing program behavior.",
+        "It establishes rules for processing data and commands."
+      ]
+    },
+    {
+      "term": "treatment",
+      "question": "What does treatment determine?",
+      "baseline_trap": "a care regimen",
+      "gold": "formal character",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "stylistic handling",
+        "material articulation",
+        "representational approach",
+        "stylistic effect",
+        "visual handling",
+        "aesthetic quality",
+        "compositional tone"
+      ],
+      "gold_responses": [
+        "It determines how subject matter is visually articulated."
+      ],
+      "trap_aliases": [
+        "therapeutic plan",
+        "course of care",
+        "medical regimen"
+      ],
+      "trap_responses": [
+        "It determines the patient's course of care.",
+        "It determines which therapy or medication is prescribed.",
+        "It determines how a condition will be managed."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft establish?",
+      "baseline_trap": "contract terms",
+      "gold": "compositional study",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "preparatory drawing",
+        "preliminary design",
+        "working sketch",
+        "preparatory design",
+        "spatial scheme",
+        "figural arrangement",
+        "visual program"
+      ],
+      "gold_responses": [
+        "It can establish the work's underlying formal organization."
+      ],
+      "trap_aliases": [
+        "agreement provisions",
+        "contract clauses",
+        "legal terms"
+      ],
+      "trap_responses": [
+        "It can establish the terms of an agreement.",
+        "It can establish each party's rights and obligations.",
+        "It can establish conditions before the contract is finalized."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index point to?",
+      "baseline_trap": "a page location",
+      "gold": "causal trace",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "indexical relation",
+        "physical connection",
+        "evidential sign",
+        "physical imprint",
+        "referential connection",
+        "existential bond",
+        "trace relation"
+      ],
+      "gold_responses": [
+        "It points to a causal trace of its referent."
+      ],
+      "trap_aliases": [
+        "page number",
+        "entry heading",
+        "cross reference"
+      ],
+      "trap_responses": [
+        "It points to the page where a topic appears.",
+        "It points to a listed subject or entry.",
+        "It points readers to relevant page locations."
+      ]
+    },
+    {
+      "term": "value",
+      "question": "What does value distinguish?",
+      "baseline_trap": "monetary worth",
+      "gold": "tonal lightness",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "light-dark range",
+        "tonal scale",
+        "luminance difference",
+        "tonal contrast",
+        "relative lightness",
+        "luminance hierarchy"
+      ],
+      "gold_responses": [
+        "It differentiates brightness within a color or composition."
+      ],
+      "trap_aliases": [
+        "price",
+        "cost",
+        "market worth"
+      ],
+      "trap_responses": [
+        "It distinguishes an item's monetary worth.",
+        "It indicates how much a product costs.",
+        "It separates inexpensive goods from expensive ones."
+      ]
+    },
+    {
+      "term": "display",
+      "question": "What does a display organize?",
+      "baseline_trap": "retail merchandise",
+      "gold": "viewer attention",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "object hierarchy",
+        "spectator movement",
+        "visual encounter",
+        "visual hierarchy",
+        "gaze direction",
+        "viewing sequence",
+        "spectator focus"
+      ],
+      "gold_responses": [
+        "It arranges emphasis to guide spectators' looking."
+      ],
+      "trap_aliases": [
+        "product assortment",
+        "shelf stock",
+        "store merchandise"
+      ],
+      "trap_responses": [
+        "It organizes merchandise for customers to browse.",
+        "It arranges products on shelves or fixtures.",
+        "It groups retail goods for effective presentation."
+      ]
+    },
+    {
+      "term": "reception",
+      "question": "What does reception shape?",
+      "baseline_trap": "guest experience",
+      "gold": "historical meaning",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "audience response",
+        "critical afterlife",
+        "interpretive status",
+        "interpretation",
+        "cultural significance",
+        "artistic reputation",
+        "canonical status"
+      ],
+      "gold_responses": [
+        "It shapes interpretation across changing audiences and eras."
+      ],
+      "trap_aliases": [
+        "guest satisfaction",
+        "first impressions",
+        "visitor experience"
+      ],
+      "trap_responses": [
+        "Reception shapes a guest's overall experience.",
+        "It shapes first impressions of the hotel.",
+        "Reception shapes customer satisfaction and loyalty."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:16:21Z"
+}

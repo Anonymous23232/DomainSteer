@@ -1,0 +1,482 @@
+{
+  "cluster_id": "4608",
+  "cluster": "Human-centred computing",
+  "domain": "Human-centred computing",
+  "division": "Information and Computing Sciences",
+  "dominant_prior": "clothing, electrical engineering, farming, finance, hospitality, law, measurement, mechanical repair, media, medicine, music, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does transparency mean?",
+    "What is a notification?",
+    "What is a persona?",
+    "What is a recommendation?",
+    "What is accessibility?",
+    "What is an interface?",
+    "What is automation?",
+    "What is bias?",
+    "What is consent?",
+    "What is feedback?",
+    "What is friction?",
+    "What is moderation?",
+    "What is presence?",
+    "What is privacy?",
+    "What is trust?",
+    "accessibility",
+    "automation",
+    "bias",
+    "consent",
+    "feedback",
+    "friction",
+    "interface",
+    "moderation",
+    "notification",
+    "persona",
+    "presence",
+    "privacy",
+    "recommendation",
+    "transparency",
+    "trust"
+  ],
+  "items": [
+    {
+      "term": "breakdown",
+      "question": "What can a breakdown expose?",
+      "baseline_trap": "a mechanical fault",
+      "gold": "tacit practices",
+      "dominant_prior": "mechanical repair",
+      "gold_aliases": [
+        "implicit routines",
+        "hidden dependencies",
+        "situated work",
+        "user workarounds",
+        "workarounds",
+        "situated practices",
+        "coordination failures",
+        "invisible work"
+      ],
+      "gold_responses": [
+        "It can reveal tacit practices and everyday workarounds."
+      ],
+      "trap_aliases": [
+        "equipment failure",
+        "component defect",
+        "machine malfunction"
+      ],
+      "trap_responses": [
+        "It exposes a mechanical fault needing repair.",
+        "It reveals which component has failed.",
+        "It identifies a malfunction in the machinery."
+      ]
+    },
+    {
+      "term": "grounding",
+      "question": "What does grounding establish?",
+      "baseline_trap": "electrical safety",
+      "gold": "mutual understanding",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "common ground",
+        "shared context",
+        "mutual knowledge",
+        "conversation alignment",
+        "joint understanding",
+        "conversational alignment"
+      ],
+      "gold_responses": [
+        "It aligns people around what has been communicated."
+      ],
+      "trap_aliases": [
+        "earth connection",
+        "protective earthing",
+        "safety ground"
+      ],
+      "trap_responses": [
+        "It establishes a safe connection to earth.",
+        "It provides a path for fault current.",
+        "It protects users from electrical shock."
+      ]
+    },
+    {
+      "term": "appropriation",
+      "question": "What can appropriation change?",
+      "baseline_trap": "legal ownership",
+      "gold": "user adaptation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "technology adaptation",
+        "situated reuse",
+        "user repurposing",
+        "everyday customization",
+        "situated use",
+        "creative repurposing",
+        "user modification"
+      ],
+      "gold_responses": [
+        "It can change a tool's purpose in practice."
+      ],
+      "trap_aliases": [
+        "property rights",
+        "title transfer",
+        "ownership claim"
+      ],
+      "trap_responses": [
+        "It can change who legally owns property.",
+        "It can change ownership rights over an asset.",
+        "It can change the legal title to property."
+      ]
+    },
+    {
+      "term": "seam",
+      "question": "What can a seam make visible?",
+      "baseline_trap": "a garment join",
+      "gold": "infrastructure boundary",
+      "dominant_prior": "clothing",
+      "gold_aliases": [
+        "system boundary",
+        "service boundary",
+        "hidden infrastructure",
+        "technical dependency",
+        "infrastructural seam",
+        "hidden dependency",
+        "service handoff"
+      ],
+      "gold_responses": [
+        "It can make handoffs between systems visible."
+      ],
+      "trap_aliases": [
+        "stitched edge",
+        "fabric junction"
+      ],
+      "trap_responses": [
+        "It can make the join between fabric pieces visible.",
+        "It can make stitching in a garment visible.",
+        "It can make where two cloth panels meet visible."
+      ]
+    },
+    {
+      "term": "handoff",
+      "question": "What does a handoff transfer?",
+      "baseline_trap": "a relay baton",
+      "gold": "control transfer",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "initiative transfer",
+        "task authority",
+        "decision control",
+        "human control",
+        "interaction control",
+        "decision authority",
+        "operational responsibility"
+      ],
+      "gold_responses": [
+        "It transfers task ownership during a coordinated interaction."
+      ],
+      "trap_aliases": [
+        "relay stick",
+        "baton exchange",
+        "running baton"
+      ],
+      "trap_responses": [
+        "A baton passes from one relay runner to the next.",
+        "It transfers the relay baton between teammates.",
+        "The handoff gives the baton to another runner."
+      ]
+    },
+    {
+      "term": "probe",
+      "question": "What can a probe elicit?",
+      "baseline_trap": "a reflex response",
+      "gold": "participant reflections",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "user reflections",
+        "participant stories",
+        "design inspiration",
+        "lived experience",
+        "lived experiences",
+        "user insights",
+        "personal narratives",
+        "contextual feedback"
+      ],
+      "gold_responses": [
+        "Probes elicit personal accounts of experiences in context."
+      ],
+      "trap_aliases": [
+        "involuntary reaction",
+        "neurological response",
+        "sensory reflex"
+      ],
+      "trap_responses": [
+        "A neurological probe can elicit an involuntary reflex.",
+        "It may trigger a reflex response during examination.",
+        "The probe can evoke a sensory or motor reflex."
+      ]
+    },
+    {
+      "term": "orchestration",
+      "question": "What does orchestration coordinate?",
+      "baseline_trap": "musical instruments",
+      "gold": "learning activities",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "learner groups",
+        "classroom resources",
+        "instructional timing",
+        "collaborative tasks",
+        "collaborative learning",
+        "student participation",
+        "classroom activities",
+        "group workflows"
+      ],
+      "gold_responses": [
+        "It coordinates learners' roles, resources, and activities during collaboration."
+      ],
+      "trap_aliases": [
+        "ensemble members",
+        "musical parts",
+        "instrumental sections"
+      ],
+      "trap_responses": [
+        "It coordinates instruments within an ensemble performance.",
+        "Orchestration arranges musical parts for different instruments.",
+        "It balances the sounds of players in an orchestra."
+      ]
+    },
+    {
+      "term": "calibration",
+      "question": "What can calibration align?",
+      "baseline_trap": "instrument readings",
+      "gold": "appropriate reliance",
+      "dominant_prior": "measurement",
+      "gold_aliases": [
+        "warranted reliance",
+        "reliance matching",
+        "confidence alignment",
+        "appropriate dependence",
+        "user trust",
+        "automation reliance",
+        "confidence judgments",
+        "user expectations"
+      ],
+      "gold_responses": [
+        "It aligns user trust with an automated system's actual capability."
+      ],
+      "trap_aliases": [
+        "reference standards",
+        "measurement scales",
+        "sensor outputs"
+      ],
+      "trap_responses": [
+        "It aligns instrument readings with known reference standards.",
+        "Calibration adjusts measurements to match accurate reference values.",
+        "It ensures a device reports values within acceptable tolerance."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What can an accommodation provide?",
+      "baseline_trap": "hotel lodging",
+      "gold": "access support",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "disability support",
+        "usable alternative",
+        "participation access",
+        "assistive adjustment",
+        "assistive access",
+        "accessible interaction",
+        "participation support",
+        "barrier reduction"
+      ],
+      "gold_responses": [
+        "It can provide adaptations matching a user's access needs."
+      ],
+      "trap_aliases": [
+        "guest room",
+        "overnight stay",
+        "temporary lodging"
+      ],
+      "trap_responses": [
+        "An accommodation can provide a place to stay overnight.",
+        "It can provide a room, bed, and basic amenities.",
+        "It can provide lodging for travelers during a visit."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal challenge?",
+      "baseline_trap": "court ruling",
+      "gold": "automated decision",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "system outcome",
+        "platform decision",
+        "algorithmic outcome",
+        "machine judgment",
+        "system decision",
+        "eligibility determination",
+        "moderation action"
+      ],
+      "gold_responses": [
+        "It can challenge a system's eligibility determination."
+      ],
+      "trap_aliases": [
+        "court judgment",
+        "legal verdict",
+        "conviction"
+      ],
+      "trap_responses": [
+        "An appeal can challenge a court's ruling.",
+        "It can challenge a conviction or sentence.",
+        "It can challenge a judge's legal decision."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What can a portfolio document?",
+      "baseline_trap": "investment holdings",
+      "gold": "learning progress",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "learner work",
+        "skill development",
+        "course learning",
+        "student evidence",
+        "design rationale",
+        "project contributions",
+        "reflective practice"
+      ],
+      "gold_responses": [
+        "A learner's growth across computing activities."
+      ],
+      "trap_aliases": [
+        "asset allocation",
+        "securities holdings",
+        "investment positions"
+      ],
+      "trap_responses": [
+        "An investor's stocks, bonds, and other assets.",
+        "The mix of securities held by an investor.",
+        "Investment performance and exposure across asset classes."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score summarize?",
+      "baseline_trap": "game performance",
+      "gold": "emotional state",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "affect rating",
+        "mood estimate",
+        "emotional valence",
+        "felt arousal",
+        "mood level",
+        "valence estimate",
+        "arousal rating"
+      ],
+      "gold_responses": [
+        "A person's reported emotional state during interaction."
+      ],
+      "trap_aliases": [
+        "points total",
+        "match result",
+        "player rating"
+      ],
+      "trap_responses": [
+        "A team's performance in a game or match.",
+        "The number of points earned during competition.",
+        "How well a player performed in a contest."
+      ]
+    },
+    {
+      "term": "feed",
+      "question": "What can a feed deliver?",
+      "baseline_trap": "animal nutrition",
+      "gold": "content updates",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "social updates",
+        "ranked posts",
+        "activity stream",
+        "shared content",
+        "social posts",
+        "news updates",
+        "recommended content"
+      ],
+      "gold_responses": [
+        "A feed can deliver personalized content updates."
+      ],
+      "trap_aliases": [
+        "livestock ration",
+        "animal feed",
+        "fodder"
+      ],
+      "trap_responses": [
+        "A feed can deliver nutrients for animal growth.",
+        "It can deliver energy and protein to livestock.",
+        "Feed can deliver a balanced diet for farm animals."
+      ]
+    },
+    {
+      "term": "wizard",
+      "question": "What can a wizard simulate?",
+      "baseline_trap": "magical powers",
+      "gold": "automated system",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "hidden operator",
+        "manual backend",
+        "simulated automation",
+        "system behavior",
+        "user interface",
+        "automated service",
+        "interactive agent"
+      ],
+      "gold_responses": [
+        "A wizard can simulate an automated system for participants."
+      ],
+      "trap_aliases": [
+        "spellcasting",
+        "supernatural abilities",
+        "magic effects"
+      ],
+      "trap_responses": [
+        "A wizard can simulate magical powers with visual effects.",
+        "It can simulate spells, enchantments, and supernatural feats.",
+        "A wizard can simulate teleportation or elemental magic."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label identify?",
+      "baseline_trap": "a retail product",
+      "gold": "control purpose",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "field meaning",
+        "input requirement",
+        "interface function",
+        "input purpose",
+        "form field",
+        "action meaning"
+      ],
+      "gold_responses": [
+        "A label can identify a control's purpose."
+      ],
+      "trap_aliases": [
+        "product brand",
+        "item category",
+        "price information"
+      ],
+      "trap_responses": [
+        "A label can identify a retail product.",
+        "It identifies a product's brand and category.",
+        "A label tells shoppers what item they are buying."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:10:57Z"
+}

@@ -1,0 +1,466 @@
+{
+  "cluster_id": "3215",
+  "cluster": "Reproductive medicine",
+  "domain": "Reproductive medicine",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "engineering, everyday English, farming, law, logistics, mathematics, programming, research, social relationships, sports, transport, visual arts",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After delivery, is the job finished?",
+    "After the wash, is everything clean?",
+    "What does a bank hold?",
+    "What does a count tell you?",
+    "What does a freeze do?",
+    "What does a wash do?",
+    "What does reserve tell you?",
+    "What does screening look for?",
+    "What does the trigger do?",
+    "What is a grade?",
+    "What is a rupture?",
+    "What is a transfer?",
+    "What is delivery?",
+    "What is implantation?",
+    "What is presentation?",
+    "What is retrieval?",
+    "What is term?",
+    "bank",
+    "count",
+    "delivery",
+    "freeze",
+    "grade",
+    "implantation",
+    "presentation",
+    "reserve",
+    "retrieval",
+    "rupture",
+    "screening",
+    "term",
+    "transfer",
+    "trigger",
+    "wash"
+  ],
+  "items": [
+    {
+      "term": "denominator",
+      "question": "What does a denominator identify?",
+      "baseline_trap": "the bottom number",
+      "gold": "presenting landmark",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "reference point",
+        "fetal landmark",
+        "presenting point",
+        "reference landmark",
+        "presenting-part landmark",
+        "fetal reference point",
+        "bony presenting point"
+      ],
+      "gold_responses": [
+        "It specifies the fetal landmark relative to the maternal pelvis."
+      ],
+      "trap_aliases": [
+        "divisor",
+        "lower term"
+      ],
+      "trap_responses": [
+        "It identifies the bottom number in a fraction.",
+        "It is the number by which the numerator is divided.",
+        "It shows how many equal parts make up the whole."
+      ]
+    },
+    {
+      "term": "attitude",
+      "question": "What does attitude describe?",
+      "baseline_trap": "a person's mindset",
+      "gold": "fetal flexion",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "fetal posture",
+        "head flexion",
+        "limb flexion",
+        "part relationship",
+        "degree of flexion"
+      ],
+      "gold_responses": [
+        "It describes whether the fetus is flexed or extended."
+      ],
+      "trap_aliases": [
+        "mindset",
+        "outlook",
+        "stance"
+      ],
+      "trap_responses": [
+        "It describes a person's mindset or way of thinking.",
+        "It refers to someone's feelings or opinion about something.",
+        "It is a person's general outlook or disposition."
+      ]
+    },
+    {
+      "term": "lie",
+      "question": "What does a lie describe?",
+      "baseline_trap": "a false statement",
+      "gold": "fetal orientation",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "longitudinal lie",
+        "transverse lie",
+        "oblique lie",
+        "fetal position"
+      ],
+      "gold_responses": [
+        "It indicates whether the fetus is longitudinal, transverse, or oblique."
+      ],
+      "trap_aliases": [
+        "untruth",
+        "falsehood",
+        "deception"
+      ],
+      "trap_responses": [
+        "It describes a deliberately false statement.",
+        "It is an untrue claim intended to mislead.",
+        "It describes deception or dishonesty."
+      ]
+    },
+    {
+      "term": "patch",
+      "question": "What can a patch deliver?",
+      "baseline_trap": "a software update",
+      "gold": "contraceptive hormones",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "transdermal hormones",
+        "estrogen",
+        "progestin",
+        "ethinyl estradiol",
+        "norelgestromin",
+        "hormonal contraception",
+        "systemic hormones"
+      ],
+      "gold_responses": [
+        "It can deliver estrogen and progestin for contraception."
+      ],
+      "trap_aliases": [
+        "code fix",
+        "security update"
+      ],
+      "trap_responses": [
+        "It can deliver a software update.",
+        "It can deliver a bug fix.",
+        "It can deliver security corrections to an application."
+      ]
+    },
+    {
+      "term": "cohort",
+      "question": "What can a cohort predict?",
+      "baseline_trap": "study outcomes",
+      "gold": "ovarian response",
+      "dominant_prior": "research",
+      "gold_aliases": [
+        "oocyte yield",
+        "follicle yield",
+        "stimulation outcome",
+        "follicular recruitment",
+        "egg retrieval"
+      ],
+      "gold_responses": [
+        "It may forecast the number of oocytes retrieved."
+      ],
+      "trap_aliases": [
+        "research findings",
+        "clinical outcomes",
+        "population trends"
+      ],
+      "trap_responses": [
+        "It can predict study outcomes in a longitudinal analysis.",
+        "Cohort data can forecast disease incidence over time.",
+        "It may estimate treatment effects and population trends."
+      ]
+    },
+    {
+      "term": "outlet",
+      "question": "What can an outlet constrain?",
+      "baseline_trap": "fluid flow",
+      "gold": "fetal passage",
+      "dominant_prior": "engineering",
+      "gold_aliases": [
+        "head descent",
+        "pelvic passage",
+        "vaginal passage",
+        "fetal descent",
+        "head passage",
+        "vaginal delivery",
+        "birth canal transit"
+      ],
+      "gold_responses": [
+        "It may restrict vaginal delivery of the fetus."
+      ],
+      "trap_aliases": [
+        "flow rate",
+        "fluid discharge",
+        "pressure drop"
+      ],
+      "trap_responses": [
+        "It can constrain fluid flow through a system.",
+        "A narrow outlet can reduce discharge rate.",
+        "It may restrict flow and increase pressure loss."
+      ]
+    },
+    {
+      "term": "mosaic",
+      "question": "What can a mosaic contain?",
+      "baseline_trap": "decorative tiles",
+      "gold": "mixed cell lines",
+      "dominant_prior": "visual arts",
+      "gold_aliases": [
+        "mosaic cells",
+        "mixed karyotypes",
+        "chromosomal variants",
+        "euploid cells",
+        "aneuploid cells",
+        "distinct karyotypes",
+        "normal abnormal cells"
+      ],
+      "gold_responses": [
+        "It contains cells with different chromosomal complements."
+      ],
+      "trap_aliases": [
+        "tesserae",
+        "colored glass",
+        "stone pieces"
+      ],
+      "trap_responses": [
+        "It can contain colored tiles arranged into an image.",
+        "It may contain glass, stone, or ceramic tesserae.",
+        "It often contains small decorative pieces forming a pattern."
+      ]
+    },
+    {
+      "term": "engagement",
+      "question": "What does engagement establish?",
+      "baseline_trap": "mutual commitment",
+      "gold": "pelvic entry",
+      "dominant_prior": "social relationships",
+      "gold_aliases": [
+        "head engagement",
+        "inlet passage",
+        "fetal fixation",
+        "inlet occupation",
+        "biparietal passage",
+        "head inlet relation",
+        "pelvic inlet descent"
+      ],
+      "gold_responses": [
+        "It establishes that the presenting diameter has entered the pelvic inlet."
+      ],
+      "trap_aliases": [
+        "marriage intention",
+        "formal relationship"
+      ],
+      "trap_responses": [
+        "It establishes a mutual commitment to marry.",
+        "It confirms the couple's intention to marry.",
+        "It establishes a formal romantic commitment between partners."
+      ]
+    },
+    {
+      "term": "dating",
+      "question": "What does dating establish?",
+      "baseline_trap": "a calendar date",
+      "gold": "gestational age",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "pregnancy age",
+        "fetal age",
+        "menstrual age",
+        "pregnancy duration",
+        "gestational timing",
+        "estimated due date",
+        "obstetric age"
+      ],
+      "gold_responses": [
+        "It estimates when conception and delivery likely occurred."
+      ],
+      "trap_aliases": [
+        "calendar day",
+        "specific date",
+        "scheduled date"
+      ],
+      "trap_responses": [
+        "It establishes a particular day on the calendar.",
+        "It identifies when an event occurred.",
+        "It determines the date something was scheduled."
+      ]
+    },
+    {
+      "term": "parity",
+      "question": "What does parity indicate?",
+      "baseline_trap": "whether a number is even or odd",
+      "gold": "birth history",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "prior births",
+        "obstetric history",
+        "birth count",
+        "viable births",
+        "pregnancy outcomes"
+      ],
+      "gold_responses": [
+        "It distinguishes previous births from total pregnancies conceived."
+      ],
+      "trap_aliases": [
+        "evenness",
+        "oddness",
+        "even-odd status"
+      ],
+      "trap_responses": [
+        "It indicates whether a number is even or odd.",
+        "It describes a number's evenness or oddness.",
+        "It determines if an integer is divisible by two."
+      ]
+    },
+    {
+      "term": "station",
+      "question": "What does station specify?",
+      "baseline_trap": "a location or stopping point",
+      "gold": "fetal descent",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "head level",
+        "pelvic level",
+        "descent level",
+        "presenting-part level",
+        "pelvic descent",
+        "ischial-spine relation",
+        "head engagement level"
+      ],
+      "gold_responses": [
+        "It specifies the presenting part's level relative to ischial spines."
+      ],
+      "trap_aliases": [
+        "stop location",
+        "transit point",
+        "transport terminal"
+      ],
+      "trap_responses": [
+        "It specifies a location where vehicles stop or depart.",
+        "It identifies a designated point along a transport route.",
+        "It indicates a stopping place for passengers or freight."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier pass on?",
+      "baseline_trap": "cargo or freight",
+      "gold": "inherited variant",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "genetic variant",
+        "altered allele",
+        "heritable mutation",
+        "pathogenic variant",
+        "recessive allele",
+        "genetic mutation",
+        "heritable condition"
+      ],
+      "gold_responses": [
+        "A carrier can pass an inherited genetic variant to offspring."
+      ],
+      "trap_aliases": [
+        "cargo",
+        "freight",
+        "shipment"
+      ],
+      "trap_responses": [
+        "A carrier can pass on cargo or freight.",
+        "A carrier transports goods from one place to another.",
+        "A carrier can deliver a shipment to its destination."
+      ]
+    },
+    {
+      "term": "insemination",
+      "question": "What does insemination place?",
+      "baseline_trap": "seeds in soil",
+      "gold": "sperm cells",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "donor sperm",
+        "male gametes",
+        "semen sample",
+        "washed sperm",
+        "motile sperm",
+        "sperm suspension"
+      ],
+      "gold_responses": [
+        "It places prepared sperm into the reproductive tract."
+      ],
+      "trap_aliases": [
+        "crop seeds",
+        "planting seed",
+        "seed grain"
+      ],
+      "trap_responses": [
+        "It places seeds in prepared soil.",
+        "It deposits seed for crop cultivation.",
+        "Seeds are placed in the ground for germination."
+      ]
+    },
+    {
+      "term": "arrest",
+      "question": "What does arrest halt?",
+      "baseline_trap": "a suspect's movement",
+      "gold": "embryo development",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "embryonic growth",
+        "cell division",
+        "blastocyst development",
+        "fetal development",
+        "cleavage progression"
+      ],
+      "gold_responses": [
+        "It stops embryonic development."
+      ],
+      "trap_aliases": [
+        "suspect's freedom",
+        "freedom of movement",
+        "fugitive's flight"
+      ],
+      "trap_responses": [
+        "It halts a suspect's freedom of movement.",
+        "It stops a person from leaving custody.",
+        "It prevents a fugitive from escaping law enforcement."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score predict?",
+      "baseline_trap": "a game's outcome",
+      "gold": "induction success",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "cervical favorability",
+        "cervical readiness",
+        "labour induction",
+        "induction outcome",
+        "vaginal delivery",
+        "labor progression"
+      ],
+      "gold_responses": [
+        "Likelihood of successful labor induction."
+      ],
+      "trap_aliases": [
+        "match result",
+        "team performance",
+        "playoff chances"
+      ],
+      "trap_responses": [
+        "It can predict a game's outcome.",
+        "It can indicate which team will win.",
+        "It may forecast playoff qualification."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:00:41Z"
+}

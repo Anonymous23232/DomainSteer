@@ -1,0 +1,469 @@
+{
+  "cluster_id": "3208",
+  "cluster": "Medical physiology",
+  "domain": "Medical physiology",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "access control, building services, cargo transport, computing, everyday psychology, finance, firearms, hiring, law and media, machinery, music, retail, shipping, sports, water treatment",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a leak?",
+    "What is capacity?",
+    "What is charge?",
+    "What is compliance?",
+    "What is contraction?",
+    "What is fatigue?",
+    "What is feedback?",
+    "What is firing?",
+    "What is gain?",
+    "What is output?",
+    "What is recovery?",
+    "What is reserve?",
+    "What is resistance?",
+    "What is transit?",
+    "What is work?",
+    "capacity",
+    "charge",
+    "compliance",
+    "contraction",
+    "fatigue",
+    "feedback",
+    "firing",
+    "gain",
+    "leak",
+    "output",
+    "recovery",
+    "reserve",
+    "resistance",
+    "transit",
+    "work"
+  ],
+  "items": [
+    {
+      "term": "gate",
+      "question": "What does a gate admit?",
+      "baseline_trap": "authorized visitors",
+      "gold": "ions",
+      "dominant_prior": "access control",
+      "gold_aliases": [
+        "ion species",
+        "permeant ions",
+        "charge carriers",
+        "ionic current",
+        "sodium ions",
+        "potassium ions",
+        "calcium ions",
+        "chloride ions"
+      ],
+      "gold_responses": [
+        "A gated channel admits specific ions across the membrane."
+      ],
+      "trap_aliases": [
+        "authorized personnel",
+        "credentialed users",
+        "permitted entrants"
+      ],
+      "trap_responses": [
+        "A gate admits authorized visitors with proper credentials.",
+        "It allows approved people to enter a restricted area.",
+        "Only permitted entrants can pass through the gate."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What does a buffer limit?",
+      "baseline_trap": "data backlog",
+      "gold": "pH change",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "pH fluctuation",
+        "acidity shift",
+        "proton swing",
+        "hydrogen-ion change",
+        "pH variation",
+        "proton fluctuations",
+        "acidity shifts",
+        "hydrogen ion changes"
+      ],
+      "gold_responses": [
+        "A buffer stabilizes pH after acid or base addition."
+      ],
+      "trap_aliases": [
+        "queue buildup",
+        "data overflow",
+        "traffic bursts"
+      ],
+      "trap_responses": [
+        "A buffer limits data backlog by holding incoming information.",
+        "It prevents overflow during temporary spikes in data traffic.",
+        "Buffers reduce queue buildup when processing is slower."
+      ]
+    },
+    {
+      "term": "ventilation",
+      "question": "What does ventilation refresh?",
+      "baseline_trap": "indoor air",
+      "gold": "alveolar gas",
+      "dominant_prior": "building services",
+      "gold_aliases": [
+        "alveolar air",
+        "lung gas",
+        "respiratory gas",
+        "alveolar mixture",
+        "pulmonary gas",
+        "alveolar atmosphere"
+      ],
+      "gold_responses": [
+        "It refreshes alveolar gas."
+      ],
+      "trap_aliases": [
+        "room air",
+        "indoor atmosphere",
+        "building air"
+      ],
+      "trap_responses": [
+        "It refreshes indoor air.",
+        "Ventilation renews the air inside a building.",
+        "It replaces stale room air with fresh air."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment increase?",
+      "baseline_trap": "workforce size",
+      "gold": "muscle force",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "contractile force",
+        "active motor units",
+        "fiber force",
+        "isotonic force",
+        "muscle tension",
+        "motor unit output",
+        "force production"
+      ],
+      "gold_responses": [
+        "It increases muscle force."
+      ],
+      "trap_aliases": [
+        "headcount",
+        "staffing levels",
+        "workforce capacity"
+      ],
+      "trap_responses": [
+        "It increases workforce size.",
+        "Recruitment expands the number of employees.",
+        "It raises organizational staffing levels."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does load slow?",
+      "baseline_trap": "freight delivery",
+      "gold": "shortening velocity",
+      "dominant_prior": "cargo transport",
+      "gold_aliases": [
+        "shortening rate",
+        "fiber velocity",
+        "isotonic speed",
+        "muscle velocity",
+        "contraction velocity",
+        "isotonic velocity",
+        "muscle shortening"
+      ],
+      "gold_responses": [
+        "Load slows the velocity of muscle shortening."
+      ],
+      "trap_aliases": [
+        "shipment delay",
+        "transit time",
+        "delivery speed"
+      ],
+      "trap_responses": [
+        "Load slows freight delivery by increasing shipment handling.",
+        "Heavy loads can delay cargo transport.",
+        "More cargo reduces delivery speed."
+      ]
+    },
+    {
+      "term": "stress",
+      "question": "What does stress quantify?",
+      "baseline_trap": "psychological burden",
+      "gold": "force per area",
+      "dominant_prior": "everyday psychology",
+      "gold_aliases": [
+        "mechanical stress",
+        "wall stress",
+        "tissue stress",
+        "traction stress",
+        "mechanical tension",
+        "force density",
+        "Cauchy stress",
+        "traction intensity"
+      ],
+      "gold_responses": [
+        "Mechanical stress equals applied force over area."
+      ],
+      "trap_aliases": [
+        "mental strain",
+        "emotional burden",
+        "perceived pressure"
+      ],
+      "trap_responses": [
+        "Stress quantifies psychological burden and perceived pressure.",
+        "It measures the mental strain someone experiences.",
+        "Stress reflects emotional burden from demanding circumstances."
+      ]
+    },
+    {
+      "term": "secretion",
+      "question": "What does secretion deliver?",
+      "baseline_trap": "confidential information",
+      "gold": "luminal fluid",
+      "dominant_prior": "law and media",
+      "gold_aliases": [
+        "digestive fluid",
+        "mucosal fluid",
+        "electrolyte fluid",
+        "intestinal juice",
+        "ductal fluid",
+        "electrolyte-rich fluid",
+        "glandular product"
+      ],
+      "gold_responses": [
+        "A secretion carries enzymes or ions to a lumen."
+      ],
+      "trap_aliases": [
+        "leaked documents",
+        "state secrets",
+        "private data"
+      ],
+      "trap_responses": [
+        "It delivers confidential information to journalists or the public.",
+        "A leak provides protected information to unauthorized parties.",
+        "It exposes private details that were meant to remain secret."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What does a filter retain?",
+      "baseline_trap": "water contaminants",
+      "gold": "plasma proteins",
+      "dominant_prior": "water treatment",
+      "gold_aliases": [
+        "albumin",
+        "large proteins",
+        "protein solutes",
+        "macromolecules",
+        "colloid proteins",
+        "plasma macromolecules"
+      ],
+      "gold_responses": [
+        "It retains plasma proteins within the capillary blood."
+      ],
+      "trap_aliases": [
+        "sediment",
+        "particulates",
+        "chemical pollutants"
+      ],
+      "trap_responses": [
+        "A water filter retains sediment and particulate contaminants.",
+        "It traps dirt, debris, and pollutants from the water.",
+        "The filter captures impurities before the water passes through."
+      ]
+    },
+    {
+      "term": "exchange",
+      "question": "What does exchange transfer?",
+      "baseline_trap": "financial assets",
+      "gold": "respiratory gases",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "alveolar gases",
+        "O2 and CO2",
+        "oxygen",
+        "carbon dioxide"
+      ],
+      "gold_responses": [
+        "Gas exchange moves O2 inward and CO2 outward."
+      ],
+      "trap_aliases": [
+        "securities",
+        "currencies",
+        "capital"
+      ],
+      "trap_responses": [
+        "It transfers financial assets between parties.",
+        "An exchange transfers stocks, bonds, and other securities.",
+        "It facilitates the transfer of currencies and investments."
+      ]
+    },
+    {
+      "term": "tone",
+      "question": "What does tone indicate?",
+      "baseline_trap": "sound quality",
+      "gold": "resting tension",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "baseline tension",
+        "muscle tension",
+        "smooth-muscle tension",
+        "basal tension",
+        "tonic contraction",
+        "resting muscle tension"
+      ],
+      "gold_responses": [
+        "It indicates the resting tension within a muscle."
+      ],
+      "trap_aliases": [
+        "timbre",
+        "tonal color",
+        "sound character"
+      ],
+      "trap_responses": [
+        "It indicates the quality or character of a sound.",
+        "It reveals a sound's timbre and tonal color.",
+        "It conveys the musical mood or emotional quality."
+      ]
+    },
+    {
+      "term": "recoil",
+      "question": "What does recoil drive?",
+      "baseline_trap": "rearward motion",
+      "gold": "expiration",
+      "dominant_prior": "firearms",
+      "gold_aliases": [
+        "expiratory flow",
+        "passive exhalation",
+        "lung deflation",
+        "elastic recoil",
+        "expiratory airflow"
+      ],
+      "gold_responses": [
+        "It drives air outward during passive breathing."
+      ],
+      "trap_aliases": [
+        "kickback",
+        "backward thrust",
+        "action cycling"
+      ],
+      "trap_responses": [
+        "Recoil drives the firearm backward after firing.",
+        "It can drive the bolt through its cycle.",
+        "The backward force drives muzzle movement."
+      ]
+    },
+    {
+      "term": "strain",
+      "question": "What does strain quantify?",
+      "baseline_trap": "injury severity",
+      "gold": "relative deformation",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "fractional elongation",
+        "tissue deformation",
+        "length change",
+        "deformation ratio",
+        "normalized length change"
+      ],
+      "gold_responses": [
+        "The measure indicates how much tissue has stretched."
+      ],
+      "trap_aliases": [
+        "injury grade",
+        "tear severity",
+        "muscle damage"
+      ],
+      "trap_responses": [
+        "Strain quantifies the severity of a muscle injury.",
+        "It indicates how serious the tissue tear is.",
+        "The term describes the extent of athletic injury."
+      ]
+    },
+    {
+      "term": "pump",
+      "question": "What does a pump maintain?",
+      "baseline_trap": "liquid pressure",
+      "gold": "ion gradient",
+      "dominant_prior": "machinery",
+      "gold_aliases": [
+        "ionic gradient",
+        "membrane gradient",
+        "electrochemical gradient",
+        "transmembrane gradient",
+        "ionic disequilibrium",
+        "membrane potential"
+      ],
+      "gold_responses": [
+        "It maintains ionic gradients using cellular energy."
+      ],
+      "trap_aliases": [
+        "fluid pressure",
+        "hydraulic pressure",
+        "system pressure"
+      ],
+      "trap_responses": [
+        "A pump maintains liquid pressure in a system.",
+        "It keeps fluids moving at the required pressure.",
+        "It maintains pressure for circulation through pipes."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier transport?",
+      "baseline_trap": "freight cargo",
+      "gold": "specific solute",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "glucose",
+        "amino acids",
+        "ions",
+        "specific substrate",
+        "cognate solute",
+        "transported molecule",
+        "selected ion"
+      ],
+      "gold_responses": [
+        "It transports a particular molecule by selective binding."
+      ],
+      "trap_aliases": [
+        "shipping goods",
+        "commercial cargo"
+      ],
+      "trap_responses": [
+        "A carrier transports freight cargo between locations.",
+        "It moves goods from a sender to a recipient.",
+        "A carrier transports cargo during shipment."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover measure?",
+      "baseline_trap": "sales volume",
+      "gold": "pool renewal",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "replacement rate",
+        "renewal rate",
+        "constituent flux",
+        "pool replacement",
+        "fractional renewal"
+      ],
+      "gold_responses": [
+        "It measures how rapidly a physiological pool is renewed."
+      ],
+      "trap_aliases": [
+        "sales rate",
+        "inventory movement",
+        "stock rotation"
+      ],
+      "trap_responses": [
+        "It measures the volume of sales during a period.",
+        "It indicates how quickly inventory is sold and replaced.",
+        "It tracks the rate at which products move through stock."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:50:08Z"
+}

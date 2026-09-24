@@ -1,0 +1,467 @@
+{
+  "cluster_id": "3104",
+  "cluster": "Evolutionary biology",
+  "domain": "Evolutionary biology",
+  "division": "Biological Sciences",
+  "dominant_prior": "automotive equipment, employment, farming, finance, home appliances, law, media, medicine, retail, sports, telecommunications, transport, workplace",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Does radiation always make things sick?",
+    "What is a bottleneck?",
+    "What is a host?",
+    "What is a hybrid?",
+    "What is a mimic?",
+    "What is a mutation?",
+    "What is a niche?",
+    "What is a trait?",
+    "What is an invasion?",
+    "What is cooperation?",
+    "What is drift?",
+    "What is fitness?",
+    "What is isolation?",
+    "What is radiation?",
+    "What is selection?",
+    "What is the founder effect?",
+    "bottleneck",
+    "cooperation",
+    "drift",
+    "fitness",
+    "founder effect",
+    "host",
+    "hybrid",
+    "invasion",
+    "isolation",
+    "mimic",
+    "mutation",
+    "niche",
+    "radiation",
+    "selection",
+    "trait"
+  ],
+  "items": [
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "reproductive output",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "fecundity",
+        "offspring number",
+        "lifetime reproduction",
+        "offspring production",
+        "reproductive success",
+        "fitness output"
+      ],
+      "gold_responses": [
+        "It measures the number of viable offspring generated."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "crop production",
+        "agricultural output"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop harvested.",
+        "It indicates production per unit area.",
+        "It quantifies agricultural output from a field."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load count?",
+      "baseline_trap": "cargo quantity",
+      "gold": "parasite burden",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "infection intensity",
+        "parasite number",
+        "worm burden",
+        "parasite abundance",
+        "ectoparasite burden"
+      ],
+      "gold_responses": [
+        "It counts parasites carried by a host."
+      ],
+      "trap_aliases": [
+        "cargo amount",
+        "freight quantity",
+        "shipment weight"
+      ],
+      "trap_responses": [
+        "It counts the amount of cargo transported.",
+        "It measures freight carried by a vehicle.",
+        "It indicates the quantity in a shipment."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment add?",
+      "baseline_trap": "new employees",
+      "gold": "new breeders",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "adult entrants",
+        "breeding recruits",
+        "juvenile recruits",
+        "breeding adults",
+        "reproductive individuals",
+        "new reproducers"
+      ],
+      "gold_responses": [
+        "It adds individuals to the breeding population."
+      ],
+      "trap_aliases": [
+        "new hires",
+        "additional staff",
+        "new workers"
+      ],
+      "trap_responses": [
+        "It adds new employees to the organization.",
+        "It brings additional staff into the workforce.",
+        "It fills positions with newly hired workers."
+      ]
+    },
+    {
+      "term": "voucher",
+      "question": "What can a voucher document?",
+      "baseline_trap": "a purchase",
+      "gold": "species occurrence",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "specimen identity",
+        "locality record",
+        "taxon occurrence",
+        "taxon presence",
+        "verified locality",
+        "distribution record"
+      ],
+      "gold_responses": [
+        "It can document a species occurrence at a locality."
+      ],
+      "trap_aliases": [
+        "proof of purchase",
+        "sales receipt",
+        "payment record"
+      ],
+      "trap_responses": [
+        "It can document that a purchase was made.",
+        "It provides proof of a retail transaction.",
+        "It records payment for goods or services."
+      ]
+    },
+    {
+      "term": "authority",
+      "question": "What does authority specify?",
+      "baseline_trap": "legal power",
+      "gold": "taxon authorship",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "name authorship",
+        "naming author",
+        "taxonomic author",
+        "nomenclatural authorship",
+        "original describer"
+      ],
+      "gold_responses": [
+        "It gives the authorship citation for that taxonomic name."
+      ],
+      "trap_aliases": [
+        "legal jurisdiction",
+        "official power",
+        "governing power"
+      ],
+      "trap_responses": [
+        "It specifies the legal power someone is entitled to exercise.",
+        "It defines who has the right to make binding decisions.",
+        "It identifies the institution with lawful control over a matter."
+      ]
+    },
+    {
+      "term": "priority",
+      "question": "What does priority determine?",
+      "baseline_trap": "which task comes first",
+      "gold": "correct name",
+      "dominant_prior": "workplace",
+      "gold_aliases": [
+        "accepted name",
+        "senior name",
+        "valid nomenclature",
+        "nomenclatural precedence",
+        "oldest available name",
+        "senior synonym"
+      ],
+      "gold_responses": [
+        "It determines the correct name under nomenclatural rules."
+      ],
+      "trap_aliases": [
+        "task order",
+        "work sequence",
+        "deadline ranking"
+      ],
+      "trap_responses": [
+        "It determines which task should be completed first.",
+        "It establishes the order in which work should be done.",
+        "It identifies the most urgent item on a workload."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What can a record preserve?",
+      "baseline_trap": "official information",
+      "gold": "fossil history",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "lineage history",
+        "extinct diversity",
+        "past occurrences",
+        "past biodiversity",
+        "extinct lineages",
+        "ancestral forms",
+        "stratigraphic occurrences"
+      ],
+      "gold_responses": [
+        "It can preserve evidence of extinct lineages through time."
+      ],
+      "trap_aliases": [
+        "stored data",
+        "official documents",
+        "archived information"
+      ],
+      "trap_responses": [
+        "It can preserve official information for later reference.",
+        "A record preserves stored facts, events, or statements.",
+        "It can keep documented information in an archive."
+      ]
+    },
+    {
+      "term": "resolution",
+      "question": "What does resolution distinguish?",
+      "baseline_trap": "image detail",
+      "gold": "branching order",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "clade relationships",
+        "lineage splits",
+        "phylogenetic structure",
+        "node order",
+        "phylogenetic topology"
+      ],
+      "gold_responses": [
+        "It distinguishes the branching order among evolutionary lineages."
+      ],
+      "trap_aliases": [
+        "pixel clarity",
+        "visual sharpness"
+      ],
+      "trap_responses": [
+        "It distinguishes fine detail within an image.",
+        "Higher resolution separates smaller visual features.",
+        "It determines how sharp and detailed a picture appears."
+      ]
+    },
+    {
+      "term": "diagnosis",
+      "question": "What does a diagnosis distinguish?",
+      "baseline_trap": "a disease or medical condition",
+      "gold": "taxon identity",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "species identity",
+        "taxonomic placement",
+        "diagnostic taxon",
+        "species boundary",
+        "taxon boundaries",
+        "diagnostic characters",
+        "closely related taxa"
+      ],
+      "gold_responses": [
+        "It distinguishes one taxon from similar taxa."
+      ],
+      "trap_aliases": [
+        "illness",
+        "medical condition",
+        "clinical disorder"
+      ],
+      "trap_responses": [
+        "It distinguishes a disease or medical condition.",
+        "It identifies the cause of a patient's symptoms.",
+        "It determines which disorder a patient has."
+      ]
+    },
+    {
+      "term": "clutch",
+      "question": "What does a clutch contain?",
+      "baseline_trap": "components that engage a vehicle transmission",
+      "gold": "eggs",
+      "dominant_prior": "automotive equipment",
+      "gold_aliases": [
+        "offspring cohort",
+        "brood size",
+        "egg number",
+        "reproductive output",
+        "egg batch",
+        "brood eggs",
+        "oviposited eggs",
+        "reproductive batch"
+      ],
+      "gold_responses": [
+        "It contains the eggs laid in one reproductive event."
+      ],
+      "trap_aliases": [
+        "friction disc",
+        "pressure plate",
+        "release bearing"
+      ],
+      "trap_responses": [
+        "It contains components that engage and disengage engine power.",
+        "It contains a friction disc, pressure plate, and release bearing.",
+        "It connects the engine to the transmission temporarily."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What does a range specify?",
+      "baseline_trap": "a cooking appliance's settings or capacity",
+      "gold": "geographic distribution",
+      "dominant_prior": "home appliances",
+      "gold_aliases": [
+        "occupied area",
+        "species distribution",
+        "geographic extent",
+        "range limits",
+        "distributional limits"
+      ],
+      "gold_responses": [
+        "A species' spatial distribution across its occurrence sites."
+      ],
+      "trap_aliases": [
+        "heat settings",
+        "oven capacity",
+        "burner controls"
+      ],
+      "trap_responses": [
+        "Its available cooking temperatures and heating options.",
+        "The appliance's oven capacity and burner settings.",
+        "How much heat and cooking space it provides."
+      ]
+    },
+    {
+      "term": "rooting",
+      "question": "What does rooting establish?",
+      "baseline_trap": "support for a sports team",
+      "gold": "ancestral direction",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "character polarity",
+        "root position",
+        "ancestor direction",
+        "branch direction",
+        "tree orientation",
+        "outgroup placement"
+      ],
+      "gold_responses": [
+        "The direction from ancestors toward descendant lineages."
+      ],
+      "trap_aliases": [
+        "team allegiance",
+        "fan support",
+        "club loyalty"
+      ],
+      "trap_responses": [
+        "Support or encouragement for a sports team.",
+        "Which team the fans are backing.",
+        "The crowd's loyalty to their club."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does stock represent?",
+      "baseline_trap": "ownership shares in a company",
+      "gold": "breeding population",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "population unit",
+        "local population",
+        "reproductive population",
+        "managed population",
+        "breeding unit",
+        "evolutionary lineage",
+        "population segment"
+      ],
+      "gold_responses": [
+        "It represents an interbreeding population within a species."
+      ],
+      "trap_aliases": [
+        "equity",
+        "securities",
+        "company shares"
+      ],
+      "trap_responses": [
+        "It represents ownership shares in a company.",
+        "It denotes an investor's equity stake.",
+        "It represents a tradable corporate security."
+      ]
+    },
+    {
+      "term": "character",
+      "question": "What can a character distinguish?",
+      "baseline_trap": "a written symbol",
+      "gold": "taxon identity",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "species identity",
+        "clade membership",
+        "diagnostic state",
+        "diagnostic trait",
+        "heritable feature",
+        "character state",
+        "morphological trait"
+      ],
+      "gold_responses": [
+        "It can distinguish one taxon from another."
+      ],
+      "trap_aliases": [
+        "letter",
+        "glyph"
+      ],
+      "trap_responses": [
+        "It can distinguish a letter, digit, or punctuation mark.",
+        "It represents a written symbol in text.",
+        "It identifies one symbol within a character set."
+      ]
+    },
+    {
+      "term": "signal",
+      "question": "What does signal reveal?",
+      "baseline_trap": "a transmitted message",
+      "gold": "shared ancestry",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "phylogenetic structure",
+        "lineage relatedness",
+        "historical dependence",
+        "common descent",
+        "phylogenetic relatedness",
+        "evolutionary history",
+        "homologous relationships"
+      ],
+      "gold_responses": [
+        "It reveals shared ancestry among the taxa."
+      ],
+      "trap_aliases": [
+        "information",
+        "data transmission",
+        "communication"
+      ],
+      "trap_responses": [
+        "It reveals a transmitted message.",
+        "It conveys information from a sender.",
+        "It indicates data being transmitted through a channel."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:15:49Z"
+}

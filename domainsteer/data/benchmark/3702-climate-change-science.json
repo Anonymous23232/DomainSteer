@@ -1,0 +1,446 @@
+{
+  "cluster_id": "3702",
+  "cluster": "Climate change science",
+  "domain": "Climate change science",
+  "division": "Earth Sciences",
+  "dominant_prior": "audio engineering, biometric identification, driving, everyday English, finance, hospitality, insurance, law, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "stock",
+      "question": "What does stock quantify?",
+      "baseline_trap": "units on hand",
+      "gold": "stored carbon",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "carbon pool",
+        "carbon storage",
+        "ecosystem carbon",
+        "carbon reservoir",
+        "carbon inventory",
+        "accumulated carbon"
+      ],
+      "gold_responses": [
+        "It quantifies the amount of carbon stored in a reservoir at a given time."
+      ],
+      "trap_aliases": [
+        "inventory count",
+        "stock level",
+        "merchandise inventory"
+      ],
+      "trap_responses": [
+        "It quantifies the units of a product currently on hand for sale.",
+        "It measures available inventory in a store or warehouse.",
+        "It indicates how many items remain in supply."
+      ]
+    },
+    {
+      "term": "commitment",
+      "question": "What does commitment lock in?",
+      "baseline_trap": "a legal obligation",
+      "gold": "future warming",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "committed warming",
+        "unavoidable warming",
+        "locked-in change",
+        "temperature rise",
+        "inevitable warming",
+        "delayed warming",
+        "residual warming"
+      ],
+      "gold_responses": [
+        "It represents warming already implied by past emissions and system inertia."
+      ],
+      "trap_aliases": [
+        "legal duty",
+        "binding obligation",
+        "contractual duty"
+      ],
+      "trap_responses": [
+        "It locks in a legally enforceable obligation.",
+        "It creates a duty that a party is required to perform.",
+        "It binds someone to the terms of an agreement."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What does a fingerprint identify?",
+      "baseline_trap": "a person's identity",
+      "gold": "forcing source",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "anthropogenic forcing",
+        "warming signature",
+        "forced response",
+        "causal pattern",
+        "emission source",
+        "causal forcing",
+        "warming driver"
+      ],
+      "gold_responses": [
+        "It identifies the forcing source responsible for an observed climate pattern."
+      ],
+      "trap_aliases": [
+        "personal identity",
+        "individual identity",
+        "biometric identity"
+      ],
+      "trap_responses": [
+        "It identifies a person through the unique pattern on a finger.",
+        "It can verify an individual's identity using biometric features.",
+        "It distinguishes one person from another in an identification system."
+      ]
+    },
+    {
+      "term": "proxy",
+      "question": "What can a proxy stand in for?",
+      "baseline_trap": "a legal principal",
+      "gold": "past climate",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "temperature history",
+        "paleoclimate",
+        "past conditions",
+        "climate signal",
+        "paleoclimate conditions",
+        "ancient temperature",
+        "historical climate",
+        "climatic history"
+      ],
+      "gold_responses": [
+        "It serves as indirect evidence of climate conditions before modern monitoring began."
+      ],
+      "trap_aliases": [
+        "legal representative",
+        "authorized agent"
+      ],
+      "trap_responses": [
+        "It can stand in for a legal principal in carrying out authorized acts.",
+        "It acts as a representative for another person or entity.",
+        "It may exercise authority on behalf of the principal."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What can a run generate?",
+      "baseline_trap": "a score",
+      "gold": "climate projection",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "model output",
+        "ensemble projection",
+        "simulated trajectory",
+        "future climate",
+        "simulation output",
+        "scenario projection",
+        "model forecast",
+        "ensemble trajectory"
+      ],
+      "gold_responses": [
+        "It can generate a climate projection for a specified forcing scenario."
+      ],
+      "trap_aliases": [
+        "game score",
+        "scoring play",
+        "baseball run"
+      ],
+      "trap_responses": [
+        "It can generate a score for a team.",
+        "It adds a point to a team's total in a game.",
+        "It can result when a player completes a scoring play."
+      ]
+    },
+    {
+      "term": "gain",
+      "question": "What does gain amplify?",
+      "baseline_trap": "an audio signal",
+      "gold": "warming response",
+      "dominant_prior": "audio engineering",
+      "gold_aliases": [
+        "feedback strength",
+        "temperature amplification",
+        "climate sensitivity",
+        "radiative feedback",
+        "feedback response",
+        "temperature response"
+      ],
+      "gold_responses": [
+        "It magnifies an initial warming through processes such as water-vapor feedback."
+      ],
+      "trap_aliases": [
+        "sound level",
+        "signal amplitude"
+      ],
+      "trap_responses": [
+        "It amplifies an audio signal.",
+        "It increases the level or amplitude of sound passing through equipment.",
+        "It raises the output strength of an incoming signal."
+      ]
+    },
+    {
+      "term": "drift",
+      "question": "What can drift introduce?",
+      "baseline_trap": "a steering deviation",
+      "gold": "spurious trend",
+      "dominant_prior": "driving",
+      "gold_aliases": [
+        "model error",
+        "artificial trend",
+        "baseline shift",
+        "unforced change",
+        "instrumental bias",
+        "false signal",
+        "calibration error"
+      ],
+      "gold_responses": [
+        "It can introduce a spurious trend into a climate time series."
+      ],
+      "trap_aliases": [
+        "steering error",
+        "lane deviation",
+        "course deviation"
+      ],
+      "trap_responses": [
+        "It can introduce a deviation from the intended steering path.",
+        "It may cause a vehicle to move gradually out of its lane.",
+        "It can pull a driver away from the desired course."
+      ]
+    },
+    {
+      "term": "normal",
+      "question": "What does a normal summarize?",
+      "baseline_trap": "usual conditions",
+      "gold": "30-year mean",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "climatological mean",
+        "reference average",
+        "baseline climate",
+        "30-year average",
+        "climatological average",
+        "long-term mean",
+        "reference period"
+      ],
+      "gold_responses": [
+        "It summarizes the average climate over a standard 30-year reference period."
+      ],
+      "trap_aliases": [
+        "ordinary state",
+        "typical situation"
+      ],
+      "trap_responses": [
+        "It summarizes what is usual or expected under ordinary conditions.",
+        "It describes the typical state of affairs.",
+        "It indicates that something falls within common expectations."
+      ]
+    },
+    {
+      "term": "balance",
+      "question": "What does a balance quantify?",
+      "baseline_trap": "account surplus or deficit",
+      "gold": "energy budget",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "radiative balance",
+        "surface energy",
+        "TOA balance",
+        "heat budget",
+        "net radiation",
+        "energy flux",
+        "radiative imbalance"
+      ],
+      "gold_responses": [
+        "It quantifies the difference between absorbed solar radiation and emitted thermal radiation."
+      ],
+      "trap_aliases": [
+        "account balance",
+        "net assets",
+        "financial surplus"
+      ],
+      "trap_responses": [
+        "It quantifies the surplus or deficit in an account.",
+        "It shows the amount remaining after credits and debits are combined.",
+        "It indicates whether finances are in surplus or debt."
+      ]
+    },
+    {
+      "term": "mask",
+      "question": "What can a mask offset?",
+      "baseline_trap": "pathogen exposure",
+      "gold": "greenhouse warming",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "radiative warming",
+        "positive forcing",
+        "GHG warming",
+        "warming effect",
+        "aerosol cooling",
+        "negative forcing",
+        "sulfate cooling",
+        "radiative cooling"
+      ],
+      "gold_responses": [
+        "It can offset greenhouse warming by reflecting sunlight or altering cloud properties."
+      ],
+      "trap_aliases": [
+        "infection protection",
+        "pathogen barrier",
+        "respiratory protection"
+      ],
+      "trap_responses": [
+        "It can offset exposure to pathogens by filtering respiratory particles.",
+        "It reduces the chance of transmitting or inhaling infectious droplets.",
+        "It provides a physical barrier against some airborne contaminants."
+      ]
+    },
+    {
+      "term": "resolution",
+      "question": "What does resolution specify?",
+      "baseline_trap": "image detail",
+      "gold": "grid spacing",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "model mesh",
+        "grid size",
+        "spatial scale",
+        "model scale",
+        "grid interval",
+        "vertical levels"
+      ],
+      "gold_responses": [
+        "It defines the spatial scale at which model variables are calculated."
+      ],
+      "trap_aliases": [
+        "image clarity",
+        "pixel detail",
+        "picture sharpness"
+      ],
+      "trap_responses": [
+        "It specifies the amount of detail visible in an image.",
+        "It describes how sharply pixels or visual features can be distinguished.",
+        "It determines the clarity of a picture or video."
+      ]
+    },
+    {
+      "term": "spread",
+      "question": "What does spread express?",
+      "baseline_trap": "betting margin",
+      "gold": "projection uncertainty",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "ensemble uncertainty",
+        "forecast uncertainty",
+        "model uncertainty",
+        "warming range",
+        "ensemble range",
+        "scenario range",
+        "uncertainty range",
+        "projection range"
+      ],
+      "gold_responses": [
+        "It expresses uncertainty across climate projections or ensemble members."
+      ],
+      "trap_aliases": [
+        "point spread",
+        "betting line",
+        "handicap margin"
+      ],
+      "trap_responses": [
+        "It expresses the predicted margin between competing teams for betting purposes.",
+        "It sets a handicap intended to balance wagering on both sides.",
+        "It indicates how many points one team is favored by."
+      ]
+    },
+    {
+      "term": "member",
+      "question": "What can a member represent?",
+      "baseline_trap": "club participant",
+      "gold": "model realization",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "ensemble realization",
+        "simulation instance",
+        "model instance",
+        "ensemble outcome",
+        "model variant",
+        "simulation member",
+        "perturbed run"
+      ],
+      "gold_responses": [
+        "It can represent one realization within a climate-model ensemble."
+      ],
+      "trap_aliases": [
+        "club guest",
+        "organization participant",
+        "member patron"
+      ],
+      "trap_responses": [
+        "It can represent a participant in a club or organization.",
+        "It is a person who belongs to a hospitality association or venue.",
+        "It identifies someone entitled to membership benefits."
+      ]
+    },
+    {
+      "term": "cover",
+      "question": "What does cover measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "cloud fraction",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "cloudiness fraction",
+        "sky coverage",
+        "cloud amount",
+        "fractional cloudiness",
+        "areal fraction",
+        "cloudiness"
+      ],
+      "gold_responses": [
+        "It measures the fraction of the sky or area covered by clouds."
+      ],
+      "trap_aliases": [
+        "insurance policy",
+        "risk protection",
+        "coverage amount"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses or risks an insurer will pay for.",
+        "It defines the scope of financial protection under an insurance contract."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What can a record establish?",
+      "baseline_trap": "legal evidence",
+      "gold": "temperature trend",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "warming trend",
+        "climate history",
+        "historical temperatures",
+        "instrumental history",
+        "long-term warming",
+        "temperature change",
+        "climate signal"
+      ],
+      "gold_responses": [
+        "It can establish a temperature trend from observations collected over time."
+      ],
+      "trap_aliases": [
+        "court evidence",
+        "legal proof",
+        "official documentation"
+      ],
+      "trap_responses": [
+        "It can establish evidence relevant to a legal claim or proceeding.",
+        "It provides documented proof of an event, transaction, or statement.",
+        "It can be used to support facts in court."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:02:42Z"
+}

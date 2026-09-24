@@ -1,0 +1,438 @@
+{
+  "cluster_id": "4102",
+  "cluster": "Ecological applications",
+  "domain": "Ecological applications",
+  "division": "Environmental Sciences",
+  "dominant_prior": "finance, hiring, hospitality, media, medicine, shipping, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "dose",
+      "question": "What does a dose specify?",
+      "baseline_trap": "a therapeutic amount",
+      "gold": "bioavailable dose",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "absorbed dose",
+        "internal dose",
+        "effective dose",
+        "exposure level",
+        "internal concentration",
+        "exposure amount",
+        "absorbed quantity",
+        "effective exposure"
+      ],
+      "gold_responses": [
+        "It defines the exposure quantity reaching an organism or its relevant tissues."
+      ],
+      "trap_aliases": [
+        "medication amount",
+        "prescribed quantity",
+        "drug dosage"
+      ],
+      "trap_responses": [
+        "It specifies the amount of a medicine to be taken at one time or over a stated period.",
+        "It gives the prescribed quantity of a drug for a patient.",
+        "It indicates how much treatment should be administered."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "party guests",
+      "gold": "parasite population",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "host species",
+        "reservoir host",
+        "symbiont community",
+        "pathogen population",
+        "parasite community",
+        "symbiont population",
+        "dependent organisms"
+      ],
+      "gold_responses": [
+        "It provides habitat and resources for an associated parasite or pathogen population."
+      ],
+      "trap_aliases": [
+        "visitors",
+        "attendees"
+      ],
+      "trap_responses": [
+        "It can support party guests by providing a place to gather and refreshments.",
+        "A host accommodates visitors during an event or stay.",
+        "It supports attendees by welcoming and looking after them."
+      ]
+    },
+    {
+      "term": "capacity",
+      "question": "What does capacity set?",
+      "baseline_trap": "venue occupancy",
+      "gold": "population limit",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "carrying capacity",
+        "abundance ceiling",
+        "density limit",
+        "population ceiling",
+        "carrying limit",
+        "maximum abundance"
+      ],
+      "gold_responses": [
+        "It sets the maximum population size that available resources can sustain."
+      ],
+      "trap_aliases": [
+        "venue limit",
+        "maximum occupancy",
+        "seating limit"
+      ],
+      "trap_responses": [
+        "It sets the maximum number of people a venue may hold.",
+        "It specifies how many occupants can safely use a space.",
+        "It defines the permitted attendance limit for a building or event."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "news reporting extent",
+      "gold": "vegetation extent",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "vegetation cover",
+        "canopy cover",
+        "ground cover",
+        "habitat extent",
+        "plant cover",
+        "vegetative area"
+      ],
+      "gold_responses": [
+        "It measures the proportion of an area occupied by vegetation."
+      ],
+      "trap_aliases": [
+        "media reach",
+        "news extent",
+        "reporting scope"
+      ],
+      "trap_responses": [
+        "It measures how extensively a story or event is reported by news outlets.",
+        "It describes the breadth of media attention given to a topic.",
+        "It indicates the geographic or audience reach of reporting."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What does a return specify?",
+      "baseline_trap": "investment gain",
+      "gold": "fire interval",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "burn interval",
+        "recurrence period",
+        "fire frequency",
+        "return interval",
+        "fire recurrence",
+        "recurrence interval"
+      ],
+      "gold_responses": [
+        "It specifies the interval between successive fires at a location."
+      ],
+      "trap_aliases": [
+        "investment yield",
+        "financial gain",
+        "rate of return"
+      ],
+      "trap_responses": [
+        "It specifies the gain or loss earned on an investment.",
+        "It measures the financial profit generated relative to the amount invested.",
+        "It indicates the percentage yield received from an asset."
+      ]
+    },
+    {
+      "term": "stand",
+      "question": "What does a stand contain?",
+      "baseline_trap": "spectators",
+      "gold": "tree population",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "forest cohort",
+        "woody plants",
+        "vegetation assemblage",
+        "tree community",
+        "tree assemblage",
+        "woodland population",
+        "tree cohort"
+      ],
+      "gold_responses": [
+        "It contains a local population or assemblage of trees with similar site conditions."
+      ],
+      "trap_aliases": [
+        "fans",
+        "audience"
+      ],
+      "trap_responses": [
+        "It contains spectators watching a sporting event.",
+        "It holds fans seated or standing around a field.",
+        "It accommodates the audience at a game."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank store?",
+      "baseline_trap": "money",
+      "gold": "dormant seeds",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "seed reserve",
+        "propagule reserve",
+        "seed stock",
+        "diaspore reserve",
+        "soil seed reserve",
+        "dormant propagules"
+      ],
+      "gold_responses": [
+        "It preserves dormant seeds from past plant communities."
+      ],
+      "trap_aliases": [
+        "cash",
+        "deposits",
+        "savings"
+      ],
+      "trap_responses": [
+        "It can store money in customer accounts.",
+        "It holds deposits and manages funds for clients.",
+        "It keeps savings available for withdrawal or investment."
+      ]
+    },
+    {
+      "term": "interception",
+      "question": "What can an interception prevent?",
+      "baseline_trap": "a scoring play",
+      "gold": "invasive establishment",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "species entry",
+        "propagule arrival",
+        "pest establishment",
+        "range expansion",
+        "pathway prevention",
+        "border exclusion",
+        "early exclusion",
+        "introduction prevention"
+      ],
+      "gold_responses": [
+        "It can prevent an introduced organism from establishing after arrival."
+      ],
+      "trap_aliases": [
+        "pass breakup",
+        "turnover",
+        "stolen pass"
+      ],
+      "trap_responses": [
+        "It can prevent a scoring play by stopping or taking an opponent's pass.",
+        "It ends an offensive possession when a defender catches the ball.",
+        "It prevents a likely score by disrupting a pass."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment add?",
+      "baseline_trap": "new employees",
+      "gold": "new individuals",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "population entrants",
+        "juvenile addition",
+        "new recruits",
+        "population replenishment",
+        "offspring addition"
+      ],
+      "gold_responses": [
+        "It adds new individuals to a population through survival into a counted life stage."
+      ],
+      "trap_aliases": [
+        "new hires",
+        "staffing",
+        "employee intake"
+      ],
+      "trap_responses": [
+        "It adds new employees to an organization.",
+        "It brings candidates into vacant roles.",
+        "It increases staff through hiring."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy estimate?",
+      "baseline_trap": "room use",
+      "gold": "site occurrence",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "presence probability",
+        "occupied sites",
+        "species occurrence",
+        "site use",
+        "occurrence probability",
+        "site presence",
+        "habitat occurrence"
+      ],
+      "gold_responses": [
+        "It estimates the probability that a species occurs at a sampled site."
+      ],
+      "trap_aliases": [
+        "bed occupancy",
+        "guest occupancy"
+      ],
+      "trap_responses": [
+        "It estimates how fully rooms or beds are being used.",
+        "It measures the proportion of available accommodation occupied by guests.",
+        "It indicates how many rooms in a property are currently in use."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What can a load transfer?",
+      "baseline_trap": "cargo",
+      "gold": "pollen grains",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "plant pollen",
+        "pollen load",
+        "floral pollen",
+        "pollen transfer",
+        "stigmatic pollen",
+        "pollinator pollen"
+      ],
+      "gold_responses": [
+        "It can transfer pollen grains from one flower to another during visitation."
+      ],
+      "trap_aliases": [
+        "freight",
+        "shipment"
+      ],
+      "trap_responses": [
+        "It can transfer cargo from one place to another.",
+        "It refers to a shipment carried by a vehicle or vessel.",
+        "It moves goods through a transport network."
+      ]
+    },
+    {
+      "term": "resistance",
+      "question": "What can resistance prevent?",
+      "baseline_trap": "infection",
+      "gold": "invasion establishment",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "invader establishment",
+        "non-native spread",
+        "biotic invasion",
+        "biotic resistance",
+        "community resistance",
+        "invasion barrier",
+        "establishment barrier"
+      ],
+      "gold_responses": [
+        "It can prevent an introduced species from establishing in a resident community."
+      ],
+      "trap_aliases": [
+        "immunity",
+        "antimicrobial resistance",
+        "drug resistance"
+      ],
+      "trap_responses": [
+        "It can prevent an infection from being effectively treated by a drug.",
+        "It allows a pathogen to survive treatment that would otherwise inhibit it.",
+        "It reduces the effectiveness of medication against an infectious agent."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What does a credit represent?",
+      "baseline_trap": "borrowing entitlement",
+      "gold": "biodiversity gain",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "habitat uplift",
+        "restoration gain",
+        "conservation outcome",
+        "habitat credit",
+        "conservation unit",
+        "offset unit",
+        "restoration credit"
+      ],
+      "gold_responses": [
+        "It represents a quantified biodiversity gain generated by protection or restoration."
+      ],
+      "trap_aliases": [
+        "loan entitlement",
+        "borrowing limit",
+        "credit line"
+      ],
+      "trap_responses": [
+        "It represents an entitlement to borrow money or obtain goods before payment.",
+        "It indicates the amount of financing available to a borrower.",
+        "It is a lender's authorization for future borrowing."
+      ]
+    },
+    {
+      "term": "broadcast",
+      "question": "What does a broadcast distribute?",
+      "baseline_trap": "a media program",
+      "gold": "native seed",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "plant propagules",
+        "restoration seed",
+        "seed mixture",
+        "seed spreading",
+        "seed sowing",
+        "aerial seeding",
+        "native sowing"
+      ],
+      "gold_responses": [
+        "It distributes native seed across a restoration area to establish vegetation."
+      ],
+      "trap_aliases": [
+        "television program",
+        "radio show",
+        "media transmission"
+      ],
+      "trap_responses": [
+        "It distributes a television or radio program to an audience.",
+        "It transmits media content over a communication channel.",
+        "It sends a program to viewers or listeners."
+      ]
+    },
+    {
+      "term": "visitation",
+      "question": "What does visitation count?",
+      "baseline_trap": "guests",
+      "gold": "flower visits",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "pollinator visits",
+        "floral visits",
+        "visit rate",
+        "flower visitation",
+        "foraging visits"
+      ],
+      "gold_responses": [
+        "It counts visits by pollinators to flowers."
+      ],
+      "trap_aliases": [
+        "guest arrivals",
+        "visitor count",
+        "attendance"
+      ],
+      "trap_responses": [
+        "It counts guests or visitors arriving at a place.",
+        "It measures the number of people who come to a venue or property.",
+        "It records attendance by visitors over a specified period."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:06:31Z"
+}

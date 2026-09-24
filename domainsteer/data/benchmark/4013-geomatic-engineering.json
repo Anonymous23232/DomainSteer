@@ -1,0 +1,472 @@
+{
+  "cluster_id": "4013",
+  "cluster": "Geomatic engineering",
+  "domain": "Geomatic engineering",
+  "division": "Engineering",
+  "dominant_prior": "academia, art, audio media, education, farming equipment, film and media, finance, hospitality, law, media, retail, social media, sports, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "If coverage ends, are you unprotected?",
+    "What is a bearing?",
+    "What is a benchmark?",
+    "What is a boundary?",
+    "What is a fix?",
+    "What is a footprint?",
+    "What is a parcel?",
+    "What is a projection?",
+    "What is a station?",
+    "What is a survey?",
+    "What is a traverse?",
+    "What is accuracy?",
+    "What is alignment?",
+    "What is control?",
+    "What is coverage?",
+    "What is the scale?",
+    "accuracy",
+    "alignment",
+    "bearing",
+    "benchmark",
+    "boundary",
+    "control",
+    "coverage",
+    "fix",
+    "footprint",
+    "parcel",
+    "projection",
+    "scale",
+    "station",
+    "survey",
+    "traverse"
+  ],
+  "items": [
+    {
+      "term": "strip",
+      "question": "What can a strip contain?",
+      "baseline_trap": "comic panels",
+      "gold": "aerial photographs",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "overlapping photos",
+        "flight-line imagery",
+        "stereo photographs",
+        "overlapping photographs",
+        "stereo imagery",
+        "aerial image sequence"
+      ],
+      "gold_responses": [
+        "A sequence of overlapping aerial photographs along a flight line."
+      ],
+      "trap_aliases": [
+        "cartoon frames",
+        "sequential art"
+      ],
+      "trap_responses": [
+        "A strip can contain a sequence of comic panels.",
+        "It contains drawings and dialogue arranged in panels.",
+        "A comic strip may contain several cartoon frames."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What does a return represent?",
+      "baseline_trap": "a refunded purchase",
+      "gold": "reflected pulse",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "returned energy",
+        "echo signal",
+        "range response",
+        "laser echo",
+        "backscattered energy",
+        "returned signal",
+        "range measurement"
+      ],
+      "gold_responses": [
+        "A reflected laser pulse returning from a mapped surface."
+      ],
+      "trap_aliases": [
+        "refund transaction",
+        "returned merchandise",
+        "purchase reversal"
+      ],
+      "trap_responses": [
+        "A return represents a refunded purchase.",
+        "It is merchandise sent back for a refund.",
+        "A return records reversal of a retail sale."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature distinguish?",
+      "baseline_trap": "the signer",
+      "gold": "surface material",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "spectral response",
+        "land-cover class",
+        "material type",
+        "land cover",
+        "soil type",
+        "vegetation class",
+        "surface feature"
+      ],
+      "gold_responses": [
+        "It can distinguish surface materials by their spectral response."
+      ],
+      "trap_aliases": [
+        "identity",
+        "consent",
+        "authenticity"
+      ],
+      "trap_responses": [
+        "A signature can distinguish the signer from other people.",
+        "It can show who authorized or signed a document.",
+        "A signature can distinguish an authentic document from a forgery."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What can a profile show?",
+      "baseline_trap": "a user's biography",
+      "gold": "elevation section",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "terrain section",
+        "ground section",
+        "elevation profile",
+        "terrain cross-section",
+        "longitudinal section",
+        "topographic transect",
+        "height variation"
+      ],
+      "gold_responses": [
+        "It shows elevation changes along a surveyed line."
+      ],
+      "trap_aliases": [
+        "user biography",
+        "personal interests",
+        "account details"
+      ],
+      "trap_responses": [
+        "A profile can show a user's biography and interests.",
+        "It may display personal details, photos, and activity.",
+        "A profile shows information about an account holder."
+      ]
+    },
+    {
+      "term": "swath",
+      "question": "What area can a swath cover?",
+      "baseline_trap": "a cut crop strip",
+      "gold": "ground strip",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "imaging width",
+        "scan strip",
+        "observed corridor",
+        "survey corridor",
+        "sensor footprint",
+        "mapped strip",
+        "coverage band"
+      ],
+      "gold_responses": [
+        "A swath can cover a continuous strip of ground."
+      ],
+      "trap_aliases": [
+        "harvested strip",
+        "cut row",
+        "mown band"
+      ],
+      "trap_responses": [
+        "A swath can cover a strip of cut crops.",
+        "It covers the area a machine harvests in one pass.",
+        "A swath may cover several rows of vegetation."
+      ]
+    },
+    {
+      "term": "stake",
+      "question": "What can a stake establish?",
+      "baseline_trap": "an ownership claim",
+      "gold": "set-out point",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "survey point",
+        "ground position",
+        "point location",
+        "control point",
+        "layout point",
+        "survey mark",
+        "grade reference"
+      ],
+      "gold_responses": [
+        "A stake can establish a set-out point on the ground."
+      ],
+      "trap_aliases": [
+        "title claim",
+        "possessory interest",
+        "legal claim"
+      ],
+      "trap_responses": [
+        "A stake can establish a claim to land.",
+        "It may establish an ownership interest in property.",
+        "A stake can support a legal claim of possession."
+      ]
+    },
+    {
+      "term": "pass",
+      "question": "What can a pass provide?",
+      "baseline_trap": "admission access",
+      "gold": "visibility window",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "observation window",
+        "overflight window",
+        "tracking opportunity",
+        "satellite imagery",
+        "swath coverage",
+        "surface observations",
+        "positioning data"
+      ],
+      "gold_responses": [
+        "A pass can provide coverage for remote sensing acquisition."
+      ],
+      "trap_aliases": [
+        "entry permission",
+        "guest access",
+        "event admission"
+      ],
+      "trap_responses": [
+        "It can provide admission to an event.",
+        "A pass provides access to a venue.",
+        "It may allow a guest to enter."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does a draft indicate?",
+      "baseline_trap": "a preliminary manuscript",
+      "gold": "keel depth",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "keel immersion",
+        "vessel immersion",
+        "waterline depth",
+        "vessel draught",
+        "hull immersion",
+        "keel submergence"
+      ],
+      "gold_responses": [
+        "It indicates the vessel's submerged depth."
+      ],
+      "trap_aliases": [
+        "rough manuscript",
+        "first version",
+        "working copy"
+      ],
+      "trap_responses": [
+        "It indicates a preliminary version of writing.",
+        "A draft shows an unfinished manuscript.",
+        "It suggests the text is not final."
+      ]
+    },
+    {
+      "term": "sounding",
+      "question": "What does a sounding measure?",
+      "baseline_trap": "audible sound level",
+      "gold": "water depth",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "seabed depth",
+        "charted depth",
+        "depth below datum",
+        "bathymetric depth",
+        "depth to seabed",
+        "water-column depth"
+      ],
+      "gold_responses": [
+        "It determines bottom depth for charting purposes."
+      ],
+      "trap_aliases": [
+        "sound pressure",
+        "decibel level",
+        "loudness"
+      ],
+      "trap_responses": [
+        "It measures the intensity of an audible sound.",
+        "It indicates sound level, usually in decibels.",
+        "It measures how loud a sound is."
+      ]
+    },
+    {
+      "term": "lead",
+      "question": "What does a lead show?",
+      "baseline_trap": "score advantage",
+      "gold": "water depth",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "seabed depth",
+        "charted depth",
+        "depth below datum",
+        "sounding depth",
+        "depth to bottom",
+        "channel depth",
+        "depth observation"
+      ],
+      "gold_responses": [
+        "It shows the water depth at the observation point."
+      ],
+      "trap_aliases": [
+        "point margin",
+        "winning edge"
+      ],
+      "trap_responses": [
+        "It shows which team is ahead in score.",
+        "It indicates the margin between competitors.",
+        "It shows the current scoring advantage."
+      ]
+    },
+    {
+      "term": "course",
+      "question": "What does a course specify?",
+      "baseline_trap": "subjects of study",
+      "gold": "travel direction",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "navigation heading",
+        "steering direction",
+        "line of travel",
+        "bearing",
+        "azimuth",
+        "heading",
+        "line direction"
+      ],
+      "gold_responses": [
+        "It specifies the direction of travel."
+      ],
+      "trap_aliases": [
+        "curriculum",
+        "syllabus",
+        "program of study"
+      ],
+      "trap_responses": [
+        "It specifies subjects to be studied.",
+        "It outlines the material taught.",
+        "It defines a sequence of classes."
+      ]
+    },
+    {
+      "term": "reference",
+      "question": "What does a reference establish?",
+      "baseline_trap": "supporting evidence",
+      "gold": "coordinate framework",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "spatial reference",
+        "reference frame",
+        "map datum",
+        "coordinate system",
+        "geodetic datum",
+        "map projection"
+      ],
+      "gold_responses": [
+        "It provides the basis for coordinate alignment."
+      ],
+      "trap_aliases": [
+        "citation",
+        "source",
+        "attribution"
+      ],
+      "trap_responses": [
+        "It establishes supporting evidence.",
+        "It identifies the source of a claim.",
+        "It credits the work being cited."
+      ]
+    },
+    {
+      "term": "mosaic",
+      "question": "What does a mosaic combine?",
+      "baseline_trap": "colored tiles",
+      "gold": "aerial images",
+      "dominant_prior": "art",
+      "gold_aliases": [
+        "orthorectified images",
+        "overlapping photos",
+        "image strips",
+        "orthophotos",
+        "image tiles",
+        "overlapping photographs",
+        "georeferenced images"
+      ],
+      "gold_responses": [
+        "It combines georeferenced image tiles into one seamless image."
+      ],
+      "trap_aliases": [
+        "ceramic tiles",
+        "colored pieces",
+        "glass tesserae"
+      ],
+      "trap_responses": [
+        "It combines colored tiles into a decorative pattern.",
+        "It joins small pieces of glass, stone, or tile.",
+        "It combines fragments to create an artistic image."
+      ]
+    },
+    {
+      "term": "scene",
+      "question": "What can a scene depict?",
+      "baseline_trap": "dramatic action",
+      "gold": "ground area",
+      "dominant_prior": "film and media",
+      "gold_aliases": [
+        "Earth surface",
+        "imaged terrain",
+        "land area",
+        "land surface",
+        "map extent",
+        "image footprint"
+      ],
+      "gold_responses": [
+        "It can depict geographic features across an observed area."
+      ],
+      "trap_aliases": [
+        "movie setting",
+        "filmed sequence"
+      ],
+      "trap_responses": [
+        "It can depict dramatic action between characters.",
+        "It can depict an event in a film or play.",
+        "It can depict a setting where part of the story occurs."
+      ]
+    },
+    {
+      "term": "chart",
+      "question": "What does a chart depict?",
+      "baseline_trap": "price movements",
+      "gold": "navigable waters",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "water depths",
+        "navigation hazards",
+        "shoreline features",
+        "hydrographic features",
+        "coastal waters",
+        "depth soundings"
+      ],
+      "gold_responses": [
+        "It depicts navigable waters, depths, hazards, and aids to navigation."
+      ],
+      "trap_aliases": [
+        "market trends",
+        "stock prices",
+        "trading volume"
+      ],
+      "trap_responses": [
+        "It depicts changes in prices over time.",
+        "It shows financial data and market trends.",
+        "It represents stock performance, volume, and price movements."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:19:46Z"
+}

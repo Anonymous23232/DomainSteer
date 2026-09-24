@@ -1,0 +1,477 @@
+{
+  "cluster_id": "4902",
+  "cluster": "Mathematical physics",
+  "domain": "Mathematical physics",
+  "division": "Mathematical Sciences",
+  "dominant_prior": "culinary, demographics, employment, everyday social life, farming, finance, food, hiring, law, media, publishing, traffic",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a dimension?",
+    "What is a frame?",
+    "What is a gap?",
+    "What is a phase?",
+    "What is a state?",
+    "What is a vacuum?",
+    "What is charge?",
+    "What is color?",
+    "What is correlation?",
+    "What is entanglement?",
+    "What is mass?",
+    "What is noise?",
+    "What is order?",
+    "What is potential?",
+    "What is symmetry?",
+    "charge",
+    "color",
+    "correlation",
+    "dimension",
+    "entanglement",
+    "frame",
+    "gap",
+    "mass",
+    "noise",
+    "order",
+    "phase",
+    "potential",
+    "state",
+    "symmetry",
+    "vacuum"
+  ],
+  "items": [
+    {
+      "term": "exchange",
+      "question": "What can an exchange reveal?",
+      "baseline_trap": "a currency exchange rate",
+      "gold": "particle statistics",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "exchange phase",
+        "braid phase",
+        "statistics class",
+        "permutation sign",
+        "exchange symmetry",
+        "Bose statistics",
+        "Fermi statistics"
+      ],
+      "gold_responses": [
+        "It exposes symmetry under particle permutation."
+      ],
+      "trap_aliases": [
+        "foreign exchange",
+        "conversion rate",
+        "currency value"
+      ],
+      "trap_responses": [
+        "It can reveal the current currency conversion rate.",
+        "It shows how much one currency is worth.",
+        "It may indicate changes in foreign currency values."
+      ]
+    },
+    {
+      "term": "connection",
+      "question": "What does a connection define?",
+      "baseline_trap": "a social relationship",
+      "gold": "parallel transport",
+      "dominant_prior": "everyday social life",
+      "gold_aliases": [
+        "covariant derivative",
+        "gauge potential",
+        "transport rule",
+        "bundle connection",
+        "horizontal lift",
+        "gauge field",
+        "holonomy structure"
+      ],
+      "gold_responses": [
+        "It defines parallel transport along curves."
+      ],
+      "trap_aliases": [
+        "social bond",
+        "personal relationship",
+        "professional network"
+      ],
+      "trap_responses": [
+        "It defines a relationship between two people.",
+        "It can define a social or professional link.",
+        "It establishes how people are connected."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What can an index count?",
+      "baseline_trap": "page references",
+      "gold": "zero modes",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "chiral zero modes",
+        "Dirac zero modes",
+        "spectral asymmetry",
+        "topological charge",
+        "kernel-cokernel difference",
+        "spectral flow"
+      ],
+      "gold_responses": [
+        "It counts the net number of chiral zero modes."
+      ],
+      "trap_aliases": [
+        "chapter locations",
+        "topic entries",
+        "citation pointers"
+      ],
+      "trap_responses": [
+        "It can count page references for a topic.",
+        "It counts where subjects appear in a book.",
+        "It lists references to terms and names."
+      ]
+    },
+    {
+      "term": "screening",
+      "question": "What does screening reduce?",
+      "baseline_trap": "hiring risk",
+      "gold": "long-range forces",
+      "dominant_prior": "hiring",
+      "gold_aliases": [
+        "Coulomb forces",
+        "electric fields",
+        "charge interactions",
+        "field correlations",
+        "Coulomb interactions",
+        "potential range",
+        "charge correlations"
+      ],
+      "gold_responses": [
+        "It damps charge correlations over large distances."
+      ],
+      "trap_aliases": [
+        "turnover risk",
+        "bad hires",
+        "recruitment uncertainty"
+      ],
+      "trap_responses": [
+        "It reduces the risk of hiring unsuitable candidates.",
+        "It lowers the chance of costly hiring mistakes.",
+        "It reduces uncertainty about applicant suitability."
+      ]
+    },
+    {
+      "term": "flow",
+      "question": "What does a flow describe?",
+      "baseline_trap": "traffic movement",
+      "gold": "coupling evolution",
+      "dominant_prior": "traffic",
+      "gold_aliases": [
+        "running couplings",
+        "scale dependence",
+        "renormalization trajectory",
+        "beta-function motion",
+        "RG evolution",
+        "beta-function running"
+      ],
+      "gold_responses": [
+        "It specifies the scale-dependent motion of couplings."
+      ],
+      "trap_aliases": [
+        "vehicle movement",
+        "traffic circulation",
+        "road congestion"
+      ],
+      "trap_responses": [
+        "It describes the movement of vehicles along roads.",
+        "It shows how traffic moves through an intersection.",
+        "It describes the rate and direction of roadway traffic."
+      ]
+    },
+    {
+      "term": "character",
+      "question": "What can a character label?",
+      "baseline_trap": "a fictional role",
+      "gold": "irreducible representation",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "representation class",
+        "symmetry type",
+        "charge sector",
+        "irrep label",
+        "symmetry representation",
+        "irreducible sector",
+        "group irrep"
+      ],
+      "gold_responses": [
+        "It can label an irreducible representation of a symmetry group."
+      ],
+      "trap_aliases": [
+        "story persona",
+        "screen character"
+      ],
+      "trap_responses": [
+        "It can label a fictional person in a story.",
+        "It identifies a role played in a film.",
+        "It names a person or creature in a narrative."
+      ]
+    },
+    {
+      "term": "lattice",
+      "question": "What can a lattice support?",
+      "baseline_trap": "climbing vines",
+      "gold": "spin variables",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "lattice fields",
+        "site variables",
+        "particle occupations",
+        "local degrees",
+        "Ising spins",
+        "gauge fields",
+        "fermionic modes",
+        "bosonic excitations"
+      ],
+      "gold_responses": [
+        "Lattice sites can host interacting fermionic modes."
+      ],
+      "trap_aliases": [
+        "crop plants",
+        "fruit trees",
+        "vegetable vines"
+      ],
+      "trap_responses": [
+        "A lattice can support climbing vines.",
+        "It provides structure for growing bean plants.",
+        "Garden lattices support flowering plants as they climb."
+      ]
+    },
+    {
+      "term": "confinement",
+      "question": "What does confinement prevent?",
+      "baseline_trap": "escape from custody",
+      "gold": "free quarks",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "isolated quarks",
+        "colored states",
+        "color charges",
+        "asymptotic quarks",
+        "quark liberation"
+      ],
+      "gold_responses": [
+        "Confinement forbids observable isolated colored excitations."
+      ],
+      "trap_aliases": [
+        "prisoner escape",
+        "unauthorized release",
+        "custodial flight"
+      ],
+      "trap_responses": [
+        "Confinement prevents escape from custody.",
+        "It prevents a detainee from leaving detention.",
+        "It stops prisoners from fleeing a secure facility."
+      ]
+    },
+    {
+      "term": "flavor",
+      "question": "What does flavor distinguish?",
+      "baseline_trap": "a food's taste",
+      "gold": "particle species",
+      "dominant_prior": "culinary",
+      "gold_aliases": [
+        "quark type",
+        "lepton type",
+        "fermion species",
+        "flavor quantum number",
+        "quark-lepton type",
+        "internal species label"
+      ],
+      "gold_responses": [
+        "It labels different quark or lepton types."
+      ],
+      "trap_aliases": [
+        "food taste",
+        "culinary taste",
+        "taste profile"
+      ],
+      "trap_responses": [
+        "Flavor distinguishes a food's characteristic taste.",
+        "It differentiates sweet, salty, sour, bitter, and savory tastes.",
+        "It describes the sensory taste of food or drink."
+      ]
+    },
+    {
+      "term": "generation",
+      "question": "What does a generation group together?",
+      "baseline_trap": "people of a similar age",
+      "gold": "fermion family",
+      "dominant_prior": "demographics",
+      "gold_aliases": [
+        "matter family",
+        "lepton family",
+        "quark family",
+        "flavor family",
+        "particle family",
+        "fermion multiplet",
+        "quark-lepton family",
+        "Standard Model family"
+      ],
+      "gold_responses": [
+        "It groups electron-type or muon-type quarks and leptons."
+      ],
+      "trap_aliases": [
+        "age cohort",
+        "birth cohort",
+        "peer group"
+      ],
+      "trap_responses": [
+        "A generation groups people born around the same time.",
+        "It denotes an age cohort sharing a historical period.",
+        "It collects individuals of similar age and social experience."
+      ]
+    },
+    {
+      "term": "occupation",
+      "question": "What does occupation count?",
+      "baseline_trap": "employed workers",
+      "gold": "mode quanta",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "particle number",
+        "Fock occupancy",
+        "boson count",
+        "fermion count",
+        "state population",
+        "fermion number",
+        "mode occupancy",
+        "particle count"
+      ],
+      "gold_responses": [
+        "It gives the particle number of a quantum state."
+      ],
+      "trap_aliases": [
+        "employment headcount",
+        "workforce size",
+        "job holders"
+      ],
+      "trap_responses": [
+        "It counts workers who are employed.",
+        "It measures the number of people holding jobs.",
+        "It records how many individuals have an occupation."
+      ]
+    },
+    {
+      "term": "filling",
+      "question": "What does a filling specify?",
+      "baseline_trap": "a pastry's contents",
+      "gold": "band occupancy",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "filling fraction",
+        "electron density",
+        "Landau-level occupancy",
+        "Fermi-sea fraction",
+        "particles per cell",
+        "level occupancy"
+      ],
+      "gold_responses": [
+        "It specifies the fraction of available band states occupied."
+      ],
+      "trap_aliases": [
+        "pastry contents",
+        "sweet center",
+        "filling ingredients"
+      ],
+      "trap_responses": [
+        "It specifies what is inside a pastry.",
+        "It describes the ingredients placed between the crusts.",
+        "It tells which sweet or savory contents are used."
+      ]
+    },
+    {
+      "term": "twist",
+      "question": "What does a twist change?",
+      "baseline_trap": "a story's direction",
+      "gold": "boundary conditions",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "twist phase",
+        "monodromy data",
+        "winding sector",
+        "flux sector",
+        "monodromy",
+        "phase sector",
+        "spin structure",
+        "quasiperiodicity"
+      ],
+      "gold_responses": [
+        "It alters the monodromy of transported states."
+      ],
+      "trap_aliases": [
+        "plot direction",
+        "narrative turn",
+        "story outcome"
+      ],
+      "trap_responses": [
+        "It changes the direction of the story.",
+        "It alters what the audience expects next.",
+        "It redirects the plot toward an unexpected outcome."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature distinguish?",
+      "baseline_trap": "the approving signer",
+      "gold": "causal character",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "metric signs",
+        "time directions",
+        "Lorentzian type",
+        "spacelike directions",
+        "metric type",
+        "interval class",
+        "timelike separation",
+        "spacelike separation"
+      ],
+      "gold_responses": [
+        "It classifies the metric's causal structure."
+      ],
+      "trap_aliases": [
+        "signatory identity",
+        "signer approval",
+        "legal authorization"
+      ],
+      "trap_responses": [
+        "It identifies the person who approved the document.",
+        "It distinguishes the authorized signer from others.",
+        "It confirms who gave legal consent."
+      ]
+    },
+    {
+      "term": "rate",
+      "question": "What does a rate measure?",
+      "baseline_trap": "interest charged or earned",
+      "gold": "transition frequency",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "decay probability",
+        "jump intensity",
+        "scattering frequency",
+        "relaxation speed",
+        "decay constant",
+        "relaxation rate"
+      ],
+      "gold_responses": [
+        "It measures transitions per unit time."
+      ],
+      "trap_aliases": [
+        "interest rate",
+        "annual percentage rate",
+        "borrowing cost"
+      ],
+      "trap_responses": [
+        "It measures interest charged or earned over time.",
+        "It states the cost of borrowing money.",
+        "It gives the return paid on savings."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:20:22Z"
+}

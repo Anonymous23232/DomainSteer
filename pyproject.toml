@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=77.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domainsteer"
+version = "1.0.1"
+description = "DomainSteer: Contrastive Activation Addition for scientific domains"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.35.0",
+    "accelerate>=0.25.0",
+    "numpy>=1.24.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+# Pair/gold-item generation and the LLM judge via API models
+generation = [
+    "anthropic>=0.40.0",
+    "openai>=1.10.0",
+]
+# Gold-set scoring: cosine to reference answers via a local encoder
+eval = [
+    "sentence-transformers>=3.0.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["domainsteer", "domainsteer.*"]
+exclude = ["extras", "extras.*", "tests", "tests.*"]
+
+[tool.setuptools.package-data]
+domainsteer = [
+    "data/*.json",
+    "data/*.md",
+    "data/benchmark/*.json",
+    "data/questions/*.json",
+    "data/pairs/*/*.jsonl",
+    "data/pairs/*/manifest.json",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,468 @@
+{
+  "cluster_id": "4003",
+  "cluster": "Biomedical engineering",
+  "domain": "Biomedical engineering",
+  "division": "Engineering",
+  "dominant_prior": "automotive, computing, insurance, law, logistics, manufacturing, media, operating systems, programming, retail, space exploration, sports, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does delivery work?",
+    "What does strain measure?",
+    "What is a construct?",
+    "What is a culture?",
+    "What is a passage?",
+    "What is a scaffold?",
+    "What is a signal?",
+    "What is a simulation?",
+    "What is an interface?",
+    "What is contrast?",
+    "What is fatigue?",
+    "What is feedback?",
+    "What is fit?",
+    "What is printing?",
+    "What is stimulation?",
+    "construct",
+    "contrast",
+    "culture",
+    "delivery",
+    "fatigue",
+    "feedback",
+    "fit",
+    "interface",
+    "passage",
+    "printing",
+    "scaffold",
+    "signal",
+    "simulation",
+    "stimulation",
+    "strain"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage indicate?",
+      "baseline_trap": "insurance protection",
+      "gold": "surface occupancy",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "surface fraction",
+        "area occupancy",
+        "cell confluence",
+        "coating completeness",
+        "scaffold occupancy",
+        "tissue ingrowth"
+      ],
+      "gold_responses": [
+        "It measures tissue occupation within a scaffold region."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "benefit scope",
+        "insured risk"
+      ],
+      "trap_responses": [
+        "It indicates what losses the policy will pay for.",
+        "It defines the protection provided under an insurance policy.",
+        "It shows which risks and expenses are insured."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "legal status",
+      "gold": "spatial correspondence",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "image alignment",
+        "spatial alignment",
+        "pose transform",
+        "coordinate mapping",
+        "anatomical alignment",
+        "transform estimation"
+      ],
+      "gold_responses": [
+        "It aligns anatomical locations across scans or imaging time points."
+      ],
+      "trap_aliases": [
+        "official record",
+        "statutory enrollment"
+      ],
+      "trap_responses": [
+        "It establishes formal legal recognition or official status.",
+        "It records a person or entity in an official registry.",
+        "It confirms compliance with required legal filing procedures."
+      ]
+    },
+    {
+      "term": "socket",
+      "question": "What does a socket support?",
+      "baseline_trap": "a network connection",
+      "gold": "residual limb",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "limb residuum",
+        "amputee limb",
+        "limb stump",
+        "residual tissues",
+        "limb segment"
+      ],
+      "gold_responses": [
+        "It supports the residual limb during prosthetic use."
+      ],
+      "trap_aliases": [
+        "network endpoint",
+        "communication channel",
+        "TCP connection"
+      ],
+      "trap_responses": [
+        "It supports communication between networked applications.",
+        "It supports a connection for sending and receiving data.",
+        "It supports data exchange across a network connection."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does release control?",
+      "baseline_trap": "media availability",
+      "gold": "drug dose",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "dose rate",
+        "drug flux",
+        "therapeutic exposure",
+        "drug delivery",
+        "dosing rate",
+        "release kinetics"
+      ],
+      "gold_responses": [
+        "It governs how much drug reaches surrounding tissue."
+      ],
+      "trap_aliases": [
+        "content access",
+        "streaming availability",
+        "publication date"
+      ],
+      "trap_responses": [
+        "It controls when media becomes available to audiences.",
+        "It determines public access to new content.",
+        "It controls the availability of a film or album."
+      ]
+    },
+    {
+      "term": "mold",
+      "question": "What does a mold define?",
+      "baseline_trap": "product shape",
+      "gold": "tissue geometry",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "implant shape",
+        "graft geometry",
+        "tissue form",
+        "scaffold geometry",
+        "construct architecture",
+        "hydrogel shape",
+        "tissue channels"
+      ],
+      "gold_responses": [
+        "It defines the spatial boundaries for tissue formation."
+      ],
+      "trap_aliases": [
+        "product form",
+        "part geometry",
+        "component shape"
+      ],
+      "trap_responses": [
+        "A mold defines the shape of a manufactured product.",
+        "It determines a part's final geometry.",
+        "It forms the desired shape of a component."
+      ]
+    },
+    {
+      "term": "tracking",
+      "question": "What does tracking measure?",
+      "baseline_trap": "package location",
+      "gold": "limb motion",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "limb kinematics",
+        "joint trajectory",
+        "gait motion",
+        "joint kinematics",
+        "gait trajectory",
+        "limb trajectory",
+        "prosthesis motion"
+      ],
+      "gold_responses": [
+        "It captures patient movement for functional assessment."
+      ],
+      "trap_aliases": [
+        "shipment location",
+        "package position",
+        "delivery status"
+      ],
+      "trap_responses": [
+        "Tracking measures a package's current location.",
+        "It shows where a shipment is in transit.",
+        "It monitors delivery status and route progress."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What does compliance describe?",
+      "baseline_trap": "rule adherence",
+      "gold": "vascular distensibility",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "vessel elasticity",
+        "arterial elasticity",
+        "volume compliance",
+        "vessel capacitance",
+        "tissue distensibility",
+        "pulmonary compliance"
+      ],
+      "gold_responses": [
+        "It characterizes how readily a vessel expands."
+      ],
+      "trap_aliases": [
+        "legal conformity",
+        "regulatory obedience",
+        "statutory adherence"
+      ],
+      "trap_responses": [
+        "It describes following laws, regulations, or official requirements.",
+        "It measures whether conduct conforms to applicable rules.",
+        "It indicates adherence to mandated legal standards."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score quantify?",
+      "baseline_trap": "game performance",
+      "gold": "functional ability",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "motor performance",
+        "gait function",
+        "daily living",
+        "mobility status",
+        "disability severity",
+        "motor function",
+        "activities capability"
+      ],
+      "gold_responses": [
+        "It can quantify a patient's functional ability."
+      ],
+      "trap_aliases": [
+        "points total",
+        "match result",
+        "player rating"
+      ],
+      "trap_responses": [
+        "It can quantify points earned in a game.",
+        "It can measure a team's performance in a match.",
+        "It can represent a player's rating or result."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label identify?",
+      "baseline_trap": "a retail product",
+      "gold": "cell identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "cell phenotype",
+        "molecular target",
+        "cell lineage",
+        "tissue compartment",
+        "tissue identity",
+        "specimen origin",
+        "biomarker profile"
+      ],
+      "gold_responses": [
+        "It can identify a bioprinted construct's cell population."
+      ],
+      "trap_aliases": [
+        "SKU",
+        "brand",
+        "product variant"
+      ],
+      "trap_responses": [
+        "It can identify a product for sale.",
+        "It can identify the brand and product model.",
+        "It can identify an item's price and barcode."
+      ]
+    },
+    {
+      "term": "latency",
+      "question": "What does latency measure?",
+      "baseline_trap": "network delay",
+      "gold": "neural response delay",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "conduction delay",
+        "sensorimotor delay",
+        "evoked-response delay",
+        "reaction timing",
+        "neural conduction delay",
+        "evoked response time",
+        "BCI feedback lag"
+      ],
+      "gold_responses": [
+        "It measures time between stimulus and neural response."
+      ],
+      "trap_aliases": [
+        "packet delay",
+        "round-trip time",
+        "API response time"
+      ],
+      "trap_responses": [
+        "It measures the delay before a network response.",
+        "It measures time for data to travel across a network.",
+        "It measures how long a server takes to respond."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What can a port provide?",
+      "baseline_trap": "a network connection",
+      "gold": "vascular access",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "venous access",
+        "catheter access",
+        "infusion route",
+        "implant access",
+        "infusion access",
+        "dialysis access"
+      ],
+      "gold_responses": [
+        "It can provide vascular access for repeated drug infusions."
+      ],
+      "trap_aliases": [
+        "internet access",
+        "communication endpoint",
+        "network interface"
+      ],
+      "trap_responses": [
+        "It can provide a network connection to other devices.",
+        "It can provide access to a local network.",
+        "It can provide a communication endpoint for data exchange."
+      ]
+    },
+    {
+      "term": "fiber",
+      "question": "What can a fiber guide?",
+      "baseline_trap": "light transmission",
+      "gold": "axon growth",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "neurite extension",
+        "nerve regeneration",
+        "cell alignment",
+        "neuronal outgrowth",
+        "axonal alignment",
+        "cell migration"
+      ],
+      "gold_responses": [
+        "It can guide axonal extension between damaged tissue ends."
+      ],
+      "trap_aliases": [
+        "optical signal",
+        "data pulses"
+      ],
+      "trap_responses": [
+        "It can guide light signals through a communications link.",
+        "It can guide transmitted data over long distances.",
+        "It can guide optical pulses between network endpoints."
+      ]
+    },
+    {
+      "term": "alignment",
+      "question": "What can alignment reduce?",
+      "baseline_trap": "tire wear",
+      "gold": "joint loading",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "knee moment",
+        "tissue stress",
+        "gait asymmetry",
+        "socket pressure",
+        "implant wear",
+        "contact stress",
+        "ligament strain"
+      ],
+      "gold_responses": [
+        "It can lessen asymmetric loading across the knee."
+      ],
+      "trap_aliases": [
+        "uneven tread wear",
+        "steering pull",
+        "rolling resistance"
+      ],
+      "trap_responses": [
+        "Proper alignment can reduce uneven tire wear.",
+        "It can reduce steering pull on the road.",
+        "Wheel alignment may reduce rolling resistance."
+      ]
+    },
+    {
+      "term": "probe",
+      "question": "What can a probe map?",
+      "baseline_trap": "a planetary surface",
+      "gold": "tissue stiffness",
+      "dominant_prior": "space exploration",
+      "gold_aliases": [
+        "elastic modulus",
+        "tissue elasticity",
+        "mechanical heterogeneity",
+        "lesion location",
+        "elasticity distribution",
+        "viscoelastic properties",
+        "lesion stiffness"
+      ],
+      "gold_responses": [
+        "A probe can map tissue stiffness across a lesion."
+      ],
+      "trap_aliases": [
+        "surface topography",
+        "mineral composition",
+        "subsurface structure"
+      ],
+      "trap_responses": [
+        "A probe can map a planetary surface.",
+        "It can map surface topography and geological features.",
+        "The probe may map subsurface structure on a planet."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What does a window specify?",
+      "baseline_trap": "a software viewport",
+      "gold": "intensity range",
+      "dominant_prior": "operating systems",
+      "gold_aliases": [
+        "display range",
+        "grayscale range",
+        "voxel range",
+        "contrast range",
+        "Hounsfield range"
+      ],
+      "gold_responses": [
+        "It specifies the intensity range mapped to displayed grayscale."
+      ],
+      "trap_aliases": [
+        "application viewport",
+        "screen region",
+        "viewing pane"
+      ],
+      "trap_responses": [
+        "It specifies the visible area of an application.",
+        "It defines a rectangular region for displaying program output.",
+        "It determines where an application's interface is drawn on screen."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:06:45Z"
+}

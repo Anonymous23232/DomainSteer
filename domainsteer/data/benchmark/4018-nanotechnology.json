@@ -1,0 +1,462 @@
+{
+  "cluster_id": "4018",
+  "cluster": "Nanotechnology",
+  "domain": "Nanotechnology",
+  "division": "Engineering",
+  "dominant_prior": "biometrics, charity, civil engineering, farming, hospitality, hunting, insurance, law, logistics, medicine, music, postal retail, sewing, wireless networking",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does the growth begin?",
+    "How does the memory store information?",
+    "What does purity mean?",
+    "What does resolution tell you?",
+    "What does the etch do?",
+    "What does the gate control?",
+    "What does the mask do?",
+    "What does the switch do?",
+    "What does the yield measure?",
+    "What happens during development?",
+    "What is a channel?",
+    "What is a dot?",
+    "What is lift-off?",
+    "What is self-assembly?",
+    "What is the ink for?",
+    "channel",
+    "development",
+    "dot",
+    "etch",
+    "gate",
+    "growth",
+    "ink",
+    "lift-off",
+    "mask",
+    "memory",
+    "purity",
+    "resolution",
+    "self-assembly",
+    "switch",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "the extent of insurance protection",
+      "gold": "surface occupancy",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "adsorbate density",
+        "molecular occupancy",
+        "fractional coverage",
+        "areal coverage",
+        "fractional occupancy",
+        "adsorbate fraction",
+        "filling fraction"
+      ],
+      "gold_responses": [
+        "It measures the fraction of surface area occupied."
+      ],
+      "trap_aliases": [
+        "policy limits",
+        "insured risks",
+        "benefit scope"
+      ],
+      "trap_responses": [
+        "It measures how much protection an insurance policy provides.",
+        "It specifies the risks and losses included in a policy.",
+        "It indicates the extent of insured financial protection."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What does pitch specify?",
+      "baseline_trap": "a musical frequency",
+      "gold": "feature spacing",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "center spacing",
+        "periodic spacing",
+        "line spacing",
+        "pattern period",
+        "grating period"
+      ],
+      "gold_responses": [
+        "It defines the periodic spacing of a patterned structure."
+      ],
+      "trap_aliases": [
+        "note frequency",
+        "tonal frequency",
+        "fundamental frequency"
+      ],
+      "trap_responses": [
+        "It specifies how high or low a sound seems.",
+        "It is determined primarily by the frequency of vibration.",
+        "It describes the perceived frequency of a musical note."
+      ]
+    },
+    {
+      "term": "stamp",
+      "question": "What does a stamp transfer?",
+      "baseline_trap": "an inked image",
+      "gold": "relief pattern",
+      "dominant_prior": "postal retail",
+      "gold_aliases": [
+        "nanoscale pattern",
+        "surface relief",
+        "imprint features",
+        "nanoscale features",
+        "resist pattern",
+        "surface topography",
+        "polymer relief"
+      ],
+      "gold_responses": [
+        "It transfers a nanostructure pattern to the substrate."
+      ],
+      "trap_aliases": [
+        "postage value",
+        "franking mark",
+        "mailing payment"
+      ],
+      "trap_responses": [
+        "It transfers an inked image onto paper.",
+        "It indicates that postage has been paid.",
+        "It conveys payment for mail delivery."
+      ]
+    },
+    {
+      "term": "well",
+      "question": "What can a well confine?",
+      "baseline_trap": "water",
+      "gold": "charge carriers",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "electrons",
+        "holes",
+        "excitons",
+        "two-dimensional carriers"
+      ],
+      "gold_responses": [
+        "It confines excitons through nanoscale potential engineering."
+      ],
+      "trap_aliases": [
+        "groundwater",
+        "irrigation water",
+        "water supply"
+      ],
+      "trap_responses": [
+        "It can confine water underground.",
+        "It holds groundwater for agricultural use.",
+        "It stores water for irrigation and livestock."
+      ]
+    },
+    {
+      "term": "dose",
+      "question": "What does a dose quantify?",
+      "baseline_trap": "an amount of medication",
+      "gold": "energy density",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "charge density",
+        "electron fluence",
+        "photon fluence",
+        "exposure fluence",
+        "areal energy",
+        "energy per area",
+        "exposure density"
+      ],
+      "gold_responses": [
+        "It quantifies exposure energy delivered per unit area."
+      ],
+      "trap_aliases": [
+        "medication amount",
+        "drug quantity",
+        "prescribed amount"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of medication administered.",
+        "It specifies how much of a drug to take.",
+        "It measures a prescribed quantity of medicine."
+      ]
+    },
+    {
+      "term": "registration",
+      "question": "What does registration establish?",
+      "baseline_trap": "a guest's enrollment",
+      "gold": "layer alignment",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "overlay alignment",
+        "pattern registration",
+        "layer overlay",
+        "overlay accuracy",
+        "interlayer alignment",
+        "pattern alignment",
+        "positional correspondence"
+      ],
+      "gold_responses": [
+        "It establishes alignment between successive patterned layers."
+      ],
+      "trap_aliases": [
+        "guest enrollment",
+        "hotel check-in",
+        "booking record"
+      ],
+      "trap_responses": [
+        "It establishes a guest's enrollment at the hotel.",
+        "It records a guest's check-in and booking details.",
+        "It confirms that a guest has registered for accommodation."
+      ]
+    },
+    {
+      "term": "bridge",
+      "question": "What does a bridge connect?",
+      "baseline_trap": "two sides of a river or road",
+      "gold": "electrodes",
+      "dominant_prior": "civil engineering",
+      "gold_aliases": [
+        "device terminals",
+        "metal contacts",
+        "molecular leads",
+        "source and drain",
+        "nanogap electrodes",
+        "conductive terminals"
+      ],
+      "gold_responses": [
+        "It connects contacts in a nanoscale device."
+      ],
+      "trap_aliases": [
+        "opposite banks",
+        "river shores",
+        "roadway ends"
+      ],
+      "trap_responses": [
+        "It connects two sides of a river.",
+        "It spans a valley or waterway.",
+        "It connects separated road sections."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What can a trap hold?",
+      "baseline_trap": "an animal",
+      "gold": "charge carrier",
+      "dominant_prior": "hunting",
+      "gold_aliases": [
+        "trapped electron",
+        "trapped hole",
+        "localized charge",
+        "electron",
+        "hole",
+        "exciton"
+      ],
+      "gold_responses": [
+        "It can hold a localized electron."
+      ],
+      "trap_aliases": [
+        "prey animal",
+        "game animal",
+        "wild animal"
+      ],
+      "trap_responses": [
+        "It can hold an animal.",
+        "It catches prey for a hunter.",
+        "It restrains a wild animal."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier transport?",
+      "baseline_trap": "cargo",
+      "gold": "electric charge",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "electrons",
+        "holes",
+        "charge current",
+        "mobile charge",
+        "electrical current"
+      ],
+      "gold_responses": [
+        "It carries charge across a molecular junction."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "shipment"
+      ],
+      "trap_responses": [
+        "A carrier transports cargo from one location to another.",
+        "It moves goods through a supply chain.",
+        "A carrier delivers freight to its destination."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does release free?",
+      "baseline_trap": "a prisoner",
+      "gold": "suspended structures",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "freestanding beams",
+        "movable elements",
+        "released devices",
+        "freestanding membranes",
+        "nanobeams",
+        "microbridges"
+      ],
+      "gold_responses": [
+        "The step frees a membrane above the substrate."
+      ],
+      "trap_aliases": [
+        "detainee",
+        "inmate",
+        "convict"
+      ],
+      "trap_responses": [
+        "A release frees a prisoner from custody.",
+        "It frees an inmate after legal authorization.",
+        "Release can free a detainee from confinement."
+      ]
+    },
+    {
+      "term": "hotspot",
+      "question": "What does a hotspot enhance?",
+      "baseline_trap": "wireless access",
+      "gold": "local field",
+      "dominant_prior": "wireless networking",
+      "gold_aliases": [
+        "near field",
+        "optical intensity",
+        "electromagnetic field",
+        "near-field intensity",
+        "electromagnetic enhancement",
+        "plasmonic field",
+        "Raman signal"
+      ],
+      "gold_responses": [
+        "It increases local plasmonic excitation strength."
+      ],
+      "trap_aliases": [
+        "Wi-Fi coverage",
+        "internet connectivity",
+        "network access"
+      ],
+      "trap_responses": [
+        "It enhances wireless internet access.",
+        "It improves Wi-Fi connectivity for nearby devices.",
+        "It provides network access in a local area."
+      ]
+    },
+    {
+      "term": "scan",
+      "question": "What does a scan map?",
+      "baseline_trap": "internal anatomy",
+      "gold": "surface topography",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "height profile",
+        "surface features",
+        "local properties",
+        "surface morphology",
+        "nanoscale roughness",
+        "local property distribution"
+      ],
+      "gold_responses": [
+        "It measures spatial variations in surface properties."
+      ],
+      "trap_aliases": [
+        "body structures",
+        "tissue anatomy",
+        "internal organs"
+      ],
+      "trap_responses": [
+        "It maps internal anatomy.",
+        "It images organs and body structures.",
+        "It reveals tissue structures inside the body."
+      ]
+    },
+    {
+      "term": "stitching",
+      "question": "What can stitching offset?",
+      "baseline_trap": "fabric panels",
+      "gold": "write fields",
+      "dominant_prior": "sewing",
+      "gold_aliases": [
+        "exposure fields",
+        "pattern fields",
+        "lithography fields",
+        "patterning fields",
+        "write-field boundaries"
+      ],
+      "gold_responses": [
+        "It can compensate displacement between lithographic write fields."
+      ],
+      "trap_aliases": [
+        "fabric sections",
+        "cloth pieces",
+        "garment panels"
+      ],
+      "trap_responses": [
+        "Stitching can offset fabric panels during garment assembly.",
+        "It can join and align separate pieces of cloth.",
+        "Stitching can secure overlapping sections of a fabric seam."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "personal identity",
+      "gold": "material identity",
+      "dominant_prior": "biometrics",
+      "gold_aliases": [
+        "chemical identity",
+        "phase identity",
+        "spectral signature",
+        "composition signature",
+        "material signature"
+      ],
+      "gold_responses": [
+        "A fingerprint can establish the composition of an unknown nanostructure."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "person identity",
+        "subject identity"
+      ],
+      "trap_responses": [
+        "A fingerprint can establish a person's identity.",
+        "It can identify an individual in a criminal investigation.",
+        "A fingerprint can establish who handled an object."
+      ]
+    },
+    {
+      "term": "donor",
+      "question": "What does a donor provide?",
+      "baseline_trap": "charitable funds",
+      "gold": "an electron",
+      "dominant_prior": "charity",
+      "gold_aliases": [
+        "free electron",
+        "charge carrier",
+        "electron density",
+        "conduction electron"
+      ],
+      "gold_responses": [
+        "It donates electron density to an acceptor material."
+      ],
+      "trap_aliases": [
+        "financial aid",
+        "charitable donation",
+        "grant money"
+      ],
+      "trap_responses": [
+        "A donor provides money to support a charitable cause.",
+        "They provide funds for people or organizations in need.",
+        "A donor gives financial contributions to a nonprofit."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:26:11Z"
+}

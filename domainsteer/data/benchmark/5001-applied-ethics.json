@@ -1,0 +1,470 @@
+{
+  "cluster_id": "5001",
+  "cluster": "Applied ethics",
+  "domain": "Applied ethics",
+  "division": "Philosophy and Religious Studies",
+  "dominant_prior": "audio media, biometric identification, computing, farming equipment, finance, gambling, insurance, law, politics, programming, publishing, sports, statistics, supply chains",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does triage work?",
+    "What counts as harm?",
+    "What does disclosure require?",
+    "What does privacy protect?",
+    "What does transparency require?",
+    "What is a conflict of interest?",
+    "What is a duty?",
+    "What is a vulnerability?",
+    "What is a waiver?",
+    "What is autonomy?",
+    "What is capacity?",
+    "What is consent?",
+    "What is integrity?",
+    "What is justice?",
+    "What is risk?",
+    "autonomy",
+    "capacity",
+    "conflict of interest",
+    "consent",
+    "disclosure",
+    "duty",
+    "harm",
+    "integrity",
+    "justice",
+    "privacy",
+    "risk",
+    "transparency",
+    "triage",
+    "vulnerability",
+    "waiver"
+  ],
+  "items": [
+    {
+      "term": "bias",
+      "question": "What can bias produce?",
+      "baseline_trap": "statistical distortion",
+      "gold": "discriminatory treatment",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "disparate treatment",
+        "prejudicial decisions",
+        "unfair exclusion",
+        "inequitable outcomes",
+        "rights violations"
+      ],
+      "gold_responses": [
+        "Bias may produce discriminatory decisions and harmful disparities."
+      ],
+      "trap_aliases": [
+        "systematic error",
+        "skewed estimates",
+        "misleading results"
+      ],
+      "trap_responses": [
+        "Bias can produce systematic error in estimates.",
+        "It can produce distorted results that favor one direction.",
+        "Bias may produce misleading conclusions from a sample."
+      ]
+    },
+    {
+      "term": "standing",
+      "question": "What does standing determine?",
+      "baseline_trap": "league position",
+      "gold": "moral considerability",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "moral status",
+        "ethical standing",
+        "due consideration",
+        "moral patienthood",
+        "ethical regard",
+        "claim to protection",
+        "duties owed"
+      ],
+      "gold_responses": [
+        "Standing determines whose interests deserve moral consideration."
+      ],
+      "trap_aliases": [
+        "rank",
+        "table position",
+        "playoff seeding"
+      ],
+      "trap_responses": [
+        "Standing determines a team's position in the league table.",
+        "It determines ranking relative to other teams.",
+        "Standing can determine playoff qualification or seeding."
+      ]
+    },
+    {
+      "term": "fidelity",
+      "question": "What does fidelity preserve?",
+      "baseline_trap": "audio accuracy",
+      "gold": "promise keeping",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "faithful commitment",
+        "kept promises",
+        "relational trust",
+        "promise fulfillment",
+        "professional loyalty",
+        "trusted commitments",
+        "confidentiality duties"
+      ],
+      "gold_responses": [
+        "It preserves trust in promises and professional commitments."
+      ],
+      "trap_aliases": [
+        "signal integrity",
+        "sound quality",
+        "recording accuracy"
+      ],
+      "trap_responses": [
+        "It preserves accurate reproduction of the original sound.",
+        "It preserves sound quality during recording and playback.",
+        "It preserves the signal's closeness to its source."
+      ]
+    },
+    {
+      "term": "sanction",
+      "question": "What can a sanction enforce?",
+      "baseline_trap": "legal compliance",
+      "gold": "professional norms",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "ethical standards",
+        "conduct expectations",
+        "professional duties",
+        "practice standards",
+        "accountability rules"
+      ],
+      "gold_responses": [
+        "It can enforce standards of professional conduct."
+      ],
+      "trap_aliases": [
+        "statutory obedience",
+        "regulatory requirements",
+        "court orders"
+      ],
+      "trap_responses": [
+        "It can enforce compliance with legal requirements.",
+        "It can enforce obedience to statutes and regulations.",
+        "It can enforce court-ordered duties through penalties."
+      ]
+    },
+    {
+      "term": "proxy",
+      "question": "What may a proxy decide?",
+      "baseline_trap": "a shareholder vote",
+      "gold": "treatment choices",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "care decisions",
+        "clinical options",
+        "patient choices",
+        "medical consent",
+        "patient preferences"
+      ],
+      "gold_responses": [
+        "They may decide about life-sustaining treatment within their authority."
+      ],
+      "trap_aliases": [
+        "ballot",
+        "delegate vote",
+        "party vote"
+      ],
+      "trap_responses": [
+        "A proxy may cast a shareholder's vote.",
+        "It may vote on behalf of an absent member.",
+        "A proxy can support or oppose a proposed resolution."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal challenge?",
+      "baseline_trap": "a court ruling",
+      "gold": "automated outcome",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "algorithmic decision",
+        "machine judgment",
+        "automated denial",
+        "AI determination",
+        "machine outcome"
+      ],
+      "gold_responses": [
+        "An appeal may challenge insufficient explanation of an AI outcome."
+      ],
+      "trap_aliases": [
+        "judgment",
+        "verdict",
+        "lower-court decision"
+      ],
+      "trap_responses": [
+        "An appeal can challenge a court ruling.",
+        "It may contest a judge's final decision.",
+        "An appeal asks a higher court to review a judgment."
+      ]
+    },
+    {
+      "term": "traceability",
+      "question": "What does traceability establish?",
+      "baseline_trap": "product provenance",
+      "gold": "responsibility attribution",
+      "dominant_prior": "supply chains",
+      "gold_aliases": [
+        "accountable authorship",
+        "answerable agency",
+        "audit responsibility",
+        "accountability",
+        "answerability",
+        "auditability",
+        "responsibility linkage"
+      ],
+      "gold_responses": [
+        "It links actions to responsible people or institutions."
+      ],
+      "trap_aliases": [
+        "origin tracking",
+        "source history",
+        "chain of custody"
+      ],
+      "trap_responses": [
+        "It establishes a product's origin and movement history.",
+        "It shows where materials came from in the supply chain.",
+        "It connects goods to their sources and handlers."
+      ]
+    },
+    {
+      "term": "stewardship",
+      "question": "What does stewardship preserve?",
+      "baseline_trap": "managed assets",
+      "gold": "shared resources",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "environmental responsibility",
+        "ecological well-being",
+        "future interests",
+        "collective welfare",
+        "common goods",
+        "resource justice",
+        "intergenerational equity"
+      ],
+      "gold_responses": [
+        "It safeguards equitable access to common resources."
+      ],
+      "trap_aliases": [
+        "equipment upkeep",
+        "machinery condition",
+        "asset maintenance"
+      ],
+      "trap_responses": [
+        "It preserves farm equipment and managed assets.",
+        "It keeps machinery useful, reliable, and well maintained.",
+        "It protects the value of agricultural implements."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim establish?",
+      "baseline_trap": "insurance coverage",
+      "gold": "moral entitlement",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "justified demand",
+        "ethical entitlement",
+        "legitimate interest",
+        "justified right",
+        "ethical standing",
+        "grounds for redress"
+      ],
+      "gold_responses": [
+        "It can establish a justified right to protection."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "indemnity coverage"
+      ],
+      "trap_responses": [
+        "It can establish coverage under an insurance policy.",
+        "It can establish eligibility for policy benefits.",
+        "It can establish an insurer's obligation to pay."
+      ]
+    },
+    {
+      "term": "equity",
+      "question": "What can equity provide?",
+      "baseline_trap": "company ownership",
+      "gold": "fair access",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "equal opportunity",
+        "fair treatment",
+        "equitable shares",
+        "just distribution",
+        "inclusive participation",
+        "barrier-free access"
+      ],
+      "gold_responses": [
+        "It can provide fair access to needed services."
+      ],
+      "trap_aliases": [
+        "ownership stake",
+        "share capital",
+        "shareholder interest"
+      ],
+      "trap_responses": [
+        "It can provide ownership in a company.",
+        "It can provide shareholders with a stake in the business.",
+        "It can provide capital through issuing company shares."
+      ]
+    },
+    {
+      "term": "review",
+      "question": "What can review permit?",
+      "baseline_trap": "publication",
+      "gold": "human research",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "study conduct",
+        "participant enrollment",
+        "data collection",
+        "human-subject research",
+        "clinical investigation",
+        "participant study",
+        "research protocol"
+      ],
+      "gold_responses": [
+        "It can authorize a human-subjects research protocol."
+      ],
+      "trap_aliases": [
+        "journal publication",
+        "printing",
+        "public release"
+      ],
+      "trap_responses": [
+        "It can permit publication in a journal.",
+        "It may allow an article to be printed.",
+        "It can authorize public release of a manuscript."
+      ]
+    },
+    {
+      "term": "stake",
+      "question": "What can a stake represent?",
+      "baseline_trap": "a wager",
+      "gold": "affected interests",
+      "dominant_prior": "gambling",
+      "gold_aliases": [
+        "legitimate concern",
+        "stakeholder voice",
+        "moral interest",
+        "stakeholder concerns",
+        "material interests",
+        "welfare claims",
+        "personal interests"
+      ],
+      "gold_responses": [
+        "It may denote an affected party's legitimate interest."
+      ],
+      "trap_aliases": [
+        "bet",
+        "gamble",
+        "ante"
+      ],
+      "trap_responses": [
+        "It can represent money wagered on an outcome.",
+        "It may be the amount placed in a bet.",
+        "It can denote a gambler's financial risk."
+      ]
+    },
+    {
+      "term": "access",
+      "question": "What can access enable?",
+      "baseline_trap": "system entry",
+      "gold": "fair opportunity",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "meaningful participation",
+        "service availability",
+        "equal inclusion",
+        "equitable participation",
+        "resource availability",
+        "inclusive opportunity",
+        "barrier-free care"
+      ],
+      "gold_responses": [
+        "It can enable fair participation in essential services."
+      ],
+      "trap_aliases": [
+        "login permission",
+        "resource entry",
+        "authorized connection"
+      ],
+      "trap_responses": [
+        "It can enable entry to a computer system.",
+        "It can enable users to retrieve protected resources.",
+        "It can enable authorized interaction with a network."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "professional obligations",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "conduct standards",
+        "ethical rules",
+        "practice norms",
+        "ethical standards",
+        "conduct rules",
+        "practice duties",
+        "professional norms"
+      ],
+      "gold_responses": [
+        "It specifies standards for responsible professional conduct."
+      ],
+      "trap_aliases": [
+        "source instructions",
+        "algorithm steps",
+        "machine commands"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer should execute.",
+        "It specifies program logic and data operations.",
+        "It specifies commands for software behavior."
+      ]
+    },
+    {
+      "term": "recognition",
+      "question": "What can recognition establish?",
+      "baseline_trap": "verified identity",
+      "gold": "moral status",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "equal respect",
+        "personhood acknowledgment",
+        "social inclusion",
+        "moral standing",
+        "equal dignity",
+        "rights-holder status",
+        "ethical personhood"
+      ],
+      "gold_responses": [
+        "Recognition may establish obligations of respect and non-discrimination."
+      ],
+      "trap_aliases": [
+        "identity confirmation",
+        "authenticated identity",
+        "identity verification"
+      ],
+      "trap_responses": [
+        "Recognition can establish a verified identity.",
+        "It can establish that the person matches biometric records.",
+        "Recognition confirms identity through facial or fingerprint data."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:32:36Z"
+}

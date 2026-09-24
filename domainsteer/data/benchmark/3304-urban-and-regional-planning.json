@@ -1,0 +1,469 @@
+{
+  "cluster_id": "3304",
+  "cluster": "Urban and regional planning",
+  "domain": "Urban and regional planning",
+  "division": "Built Environment and Design",
+  "dominant_prior": "charity, computing, employment, farming, finance, law, media, medicine, politics, retail, statistics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a block?",
+    "What is a catchment?",
+    "What is a corridor?",
+    "What is a footprint?",
+    "What is a grid?",
+    "What is a line?",
+    "What is a link?",
+    "What is a right-of-way?",
+    "What is a setback?",
+    "What is an anchor?",
+    "What is capacity?",
+    "What is density?",
+    "What is infill?",
+    "What is scale?",
+    "What is vacancy?",
+    "anchor",
+    "block",
+    "capacity",
+    "catchment",
+    "corridor",
+    "density",
+    "footprint",
+    "grid",
+    "infill",
+    "line",
+    "link",
+    "right-of-way",
+    "scale",
+    "setback",
+    "vacancy"
+  ],
+  "items": [
+    {
+      "term": "tenure",
+      "question": "What does tenure establish?",
+      "baseline_trap": "employment duration",
+      "gold": "occupancy rights",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "housing tenure",
+        "possession rights",
+        "occupancy status",
+        "tenancy rights",
+        "occupancy security",
+        "residential entitlement"
+      ],
+      "gold_responses": [
+        "It establishes a resident's legal right to occupy a dwelling."
+      ],
+      "trap_aliases": [
+        "seniority",
+        "length of service",
+        "years employed"
+      ],
+      "trap_responses": [
+        "It establishes how long someone has worked for an employer.",
+        "It determines an employee's length of service.",
+        "It can establish seniority and job-related benefits."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What can a release make available?",
+      "baseline_trap": "new media content",
+      "gold": "developable land",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "land supply",
+        "serviced land",
+        "urban land",
+        "development land",
+        "housing sites"
+      ],
+      "gold_responses": [
+        "It can make land available for housing development."
+      ],
+      "trap_aliases": [
+        "new film",
+        "new album",
+        "new content"
+      ],
+      "trap_responses": [
+        "It can make a new film available to audiences.",
+        "It can make an album or song publicly available.",
+        "It can make new media content available for consumption."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What can yield estimate?",
+      "baseline_trap": "crop harvest",
+      "gold": "dwelling units",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "housing yield",
+        "unit count",
+        "development yield",
+        "development capacity",
+        "housing capacity",
+        "site capacity",
+        "buildout potential"
+      ],
+      "gold_responses": [
+        "Residential capacity under applicable zoning."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "agricultural output"
+      ],
+      "trap_responses": [
+        "The amount of crop harvested per acre.",
+        "Expected production from a field.",
+        "The quantity of an agricultural harvest."
+      ]
+    },
+    {
+      "term": "absorption",
+      "question": "What does absorption measure?",
+      "baseline_trap": "drug uptake",
+      "gold": "market uptake",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "unit take-up",
+        "sales uptake",
+        "lease-up rate",
+        "sales velocity",
+        "leasing pace",
+        "take-up rate",
+        "sell-through rate"
+      ],
+      "gold_responses": [
+        "Market uptake of completed housing units."
+      ],
+      "trap_aliases": [
+        "drug bioavailability",
+        "systemic exposure",
+        "medication uptake"
+      ],
+      "trap_responses": [
+        "The extent a drug enters circulation.",
+        "How quickly medication is taken up.",
+        "The amount of a substance absorbed by the body."
+      ]
+    },
+    {
+      "term": "frontage",
+      "question": "What does frontage measure?",
+      "baseline_trap": "storefront width",
+      "gold": "street-facing width",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "parcel frontage",
+        "frontage length",
+        "lot width",
+        "street extent",
+        "road frontage",
+        "public edge"
+      ],
+      "gold_responses": [
+        "It measures street-facing property boundary length."
+      ],
+      "trap_aliases": [
+        "shopfront span",
+        "display width",
+        "retail facade"
+      ],
+      "trap_responses": [
+        "It measures the width of a shop's street-facing display.",
+        "It indicates how much storefront space faces customers.",
+        "It measures the visible width of a retail premises."
+      ]
+    },
+    {
+      "term": "terminal",
+      "question": "What does a terminal enable?",
+      "baseline_trap": "command entry",
+      "gold": "passenger transfers",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "mode transfers",
+        "route interchange",
+        "passenger access",
+        "passenger interchange",
+        "modal transfer",
+        "route connection",
+        "intermodal hub"
+      ],
+      "gold_responses": [
+        "It enables passengers to transfer between services."
+      ],
+      "trap_aliases": [
+        "command input",
+        "shell access",
+        "console interface"
+      ],
+      "trap_responses": [
+        "It enables users to enter commands into a computer.",
+        "It provides command-line access to an operating system.",
+        "It allows interaction with a system through typed commands."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal challenge?",
+      "baseline_trap": "court judgment",
+      "gold": "permit decision",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "planning decision",
+        "development decision",
+        "consent refusal",
+        "development consent",
+        "planning refusal",
+        "permit conditions",
+        "consent determination"
+      ],
+      "gold_responses": [
+        "An appeal can challenge a development permit decision."
+      ],
+      "trap_aliases": [
+        "trial verdict",
+        "lower-court ruling",
+        "judicial order"
+      ],
+      "trap_responses": [
+        "An appeal can challenge a court judgment.",
+        "It may challenge errors in a trial verdict.",
+        "An appeal seeks review of a lower-court ruling."
+      ]
+    },
+    {
+      "term": "contribution",
+      "question": "What can a contribution fund?",
+      "baseline_trap": "charitable cause",
+      "gold": "local infrastructure",
+      "dominant_prior": "charity",
+      "gold_aliases": [
+        "public works",
+        "transport upgrades",
+        "community facilities",
+        "utility extensions"
+      ],
+      "gold_responses": [
+        "A contribution can fund local infrastructure upgrades."
+      ],
+      "trap_aliases": [
+        "charitable mission",
+        "relief efforts",
+        "nonprofit programs"
+      ],
+      "trap_responses": [
+        "A contribution can fund a charitable cause.",
+        "It may support disaster relief efforts.",
+        "The contribution can finance nonprofit programs."
+      ]
+    },
+    {
+      "term": "mode",
+      "question": "What does mode specify?",
+      "baseline_trap": "most frequent value",
+      "gold": "travel type",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "transport mode",
+        "travel means",
+        "journey type",
+        "transport type",
+        "journey method",
+        "modal choice"
+      ],
+      "gold_responses": [
+        "It specifies the means of travel used."
+      ],
+      "trap_aliases": [
+        "modal value",
+        "most common value",
+        "statistical mode"
+      ],
+      "trap_responses": [
+        "It specifies the most frequently occurring value.",
+        "It identifies the value with the highest frequency.",
+        "It gives the observation appearing most often in a dataset."
+      ]
+    },
+    {
+      "term": "alignment",
+      "question": "What does alignment establish?",
+      "baseline_trap": "political agreement",
+      "gold": "route location",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "roadway path",
+        "transit path",
+        "street route",
+        "route corridor",
+        "corridor position",
+        "road layout",
+        "route path"
+      ],
+      "gold_responses": [
+        "It establishes the route's location through the corridor."
+      ],
+      "trap_aliases": [
+        "political consensus",
+        "shared position",
+        "party agreement"
+      ],
+      "trap_responses": [
+        "It establishes agreement among political actors.",
+        "It creates a shared position on policy goals.",
+        "It indicates that groups support the same political agenda."
+      ]
+    },
+    {
+      "term": "transfer",
+      "question": "What can a transfer move?",
+      "baseline_trap": "financial funds",
+      "gold": "development rights",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "building rights",
+        "density rights",
+        "air rights",
+        "development potential",
+        "allowable density",
+        "floor area"
+      ],
+      "gold_responses": [
+        "It can move development rights between designated parcels."
+      ],
+      "trap_aliases": [
+        "capital",
+        "cash",
+        "money"
+      ],
+      "trap_responses": [
+        "A transfer can move funds between bank accounts.",
+        "It moves money from one party to another.",
+        "A transfer sends capital to a designated recipient."
+      ]
+    },
+    {
+      "term": "rehabilitation",
+      "question": "What does rehabilitation restore?",
+      "baseline_trap": "patient function",
+      "gold": "housing condition",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "building condition",
+        "neighborhood quality",
+        "existing homes",
+        "housing quality",
+        "dwelling habitability",
+        "residential condition",
+        "property usability"
+      ],
+      "gold_responses": [
+        "It can return deteriorated homes to occupancy standards."
+      ],
+      "trap_aliases": [
+        "physical function",
+        "patient mobility",
+        "daily functioning"
+      ],
+      "trap_responses": [
+        "It restores a patient's physical function.",
+        "Rehabilitation improves mobility and independence after injury.",
+        "It helps patients regain everyday functional abilities."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance remove?",
+      "baseline_trap": "retail inventory",
+      "gold": "existing structures",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "site buildings",
+        "occupied dwellings",
+        "obsolete premises",
+        "obsolete buildings",
+        "derelict structures",
+        "site obstructions",
+        "vacant dwellings"
+      ],
+      "gold_responses": [
+        "It removes obsolete buildings from a redevelopment site."
+      ],
+      "trap_aliases": [
+        "store merchandise",
+        "unsold stock",
+        "shelf inventory"
+      ],
+      "trap_responses": [
+        "It removes unsold merchandise from store shelves.",
+        "It removes inventory through clearance sales.",
+        "It removes excess retail stock at discounted prices."
+      ]
+    },
+    {
+      "term": "plot",
+      "question": "What can a plot define?",
+      "baseline_trap": "story arc",
+      "gold": "land parcel",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "development lot",
+        "cadastral parcel",
+        "site boundaries",
+        "property boundary",
+        "zoning lot"
+      ],
+      "gold_responses": [
+        "It can define a development lot within a subdivision."
+      ],
+      "trap_aliases": [
+        "narrative arc",
+        "storyline",
+        "character conflict"
+      ],
+      "trap_responses": [
+        "It can define the central storyline of a film.",
+        "It can define how events unfold in a story.",
+        "It can define the narrative arc for characters."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What does a bank hold?",
+      "baseline_trap": "financial deposits",
+      "gold": "developable land",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "strategic land",
+        "future sites",
+        "land reserve",
+        "land reserves",
+        "development sites",
+        "strategic parcels",
+        "serviced land"
+      ],
+      "gold_responses": [
+        "It holds a reserve of developable and serviced sites."
+      ],
+      "trap_aliases": [
+        "customer deposits",
+        "cash reserves",
+        "account balances"
+      ],
+      "trap_responses": [
+        "A bank holds customer deposits and account balances.",
+        "It holds money deposited by customers.",
+        "Banks hold cash reserves and financial assets."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:01:59Z"
+}

@@ -1,0 +1,474 @@
+{
+  "cluster_id": "3505",
+  "cluster": "Human resources and industrial relations",
+  "domain": "Human resources and industrial relations",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "farming, finance, freight transport, insurance, law, media, music and media, programming, retail, sports, sports and entertainment, transportation logistics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a contract set?",
+    "What does a grade indicate?",
+    "What does an appraisal measure?",
+    "What does bargaining involve?",
+    "What does discipline address?",
+    "What does engagement measure?",
+    "What does leave authorize?",
+    "What does notice require?",
+    "What does probation involve?",
+    "What does recognition reward?",
+    "What does redundancy mean?",
+    "What does seniority determine?",
+    "What does termination end?",
+    "What does turnover measure?",
+    "What is retention?",
+    "appraisal",
+    "bargaining",
+    "contract",
+    "discipline",
+    "engagement",
+    "grade",
+    "leave",
+    "notice",
+    "probation",
+    "recognition",
+    "redundancy",
+    "retention",
+    "seniority",
+    "termination",
+    "turnover"
+  ],
+  "items": [
+    {
+      "term": "award",
+      "question": "What does an award establish?",
+      "baseline_trap": "a prize recipient",
+      "gold": "minimum conditions",
+      "dominant_prior": "sports and entertainment",
+      "gold_aliases": [
+        "employment conditions",
+        "pay conditions",
+        "workplace standards",
+        "pay rates",
+        "industrial standards",
+        "employee entitlements"
+      ],
+      "gold_responses": [
+        "It establishes minimum pay rates and employment conditions."
+      ],
+      "trap_aliases": [
+        "winner",
+        "champion",
+        "honoree"
+      ],
+      "trap_responses": [
+        "It establishes who receives recognition for achievement.",
+        "It identifies the winning athlete or performer.",
+        "It names the recipient of a prize."
+      ]
+    },
+    {
+      "term": "roster",
+      "question": "What does a roster assign?",
+      "baseline_trap": "team positions",
+      "gold": "work shifts",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "staff schedules",
+        "duty times",
+        "work hours",
+        "shift coverage",
+        "employee schedules",
+        "staff assignments"
+      ],
+      "gold_responses": [
+        "It assigns employees to particular work shifts."
+      ],
+      "trap_aliases": [
+        "player positions",
+        "team lineup",
+        "starting roles"
+      ],
+      "trap_responses": [
+        "It assigns players to positions on a team.",
+        "It determines the lineup for a game.",
+        "It places athletes in their team roles."
+      ]
+    },
+    {
+      "term": "band",
+      "question": "What does a band delimit?",
+      "baseline_trap": "a frequency range",
+      "gold": "salary range",
+      "dominant_prior": "music and media",
+      "gold_aliases": [
+        "pay range",
+        "compensation range",
+        "wage range",
+        "pay grade",
+        "wage bracket",
+        "grade range"
+      ],
+      "gold_responses": [
+        "It sets the salary boundaries within a job grade."
+      ],
+      "trap_aliases": [
+        "frequency spectrum",
+        "tonal range",
+        "radio spectrum"
+      ],
+      "trap_responses": [
+        "It delimits a range of frequencies.",
+        "It defines the frequencies available for transmission.",
+        "It marks the upper and lower frequency limits."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "staffing levels",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "shift staffing",
+        "staff availability",
+        "personnel cover",
+        "workforce capacity",
+        "shift complement",
+        "headcount requirement",
+        "personnel allocation"
+      ],
+      "gold_responses": [
+        "It provides enough employees to operate each shift."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk indemnity"
+      ],
+      "trap_responses": [
+        "It provides protection against specified financial losses.",
+        "It pays covered claims under the policy terms.",
+        "It offers benefits for insured events and expenses."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What does an appeal challenge?",
+      "baseline_trap": "a court judgment",
+      "gold": "employment decision",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "management decision",
+        "workplace outcome",
+        "selection decision",
+        "disciplinary outcome",
+        "dismissal decision",
+        "grievance ruling",
+        "promotion decision"
+      ],
+      "gold_responses": [
+        "It challenges an employment decision."
+      ],
+      "trap_aliases": [
+        "court ruling",
+        "judicial decision",
+        "trial verdict"
+      ],
+      "trap_responses": [
+        "It challenges a court judgment.",
+        "It seeks review of a judicial decision.",
+        "It contests the verdict or ruling."
+      ]
+    },
+    {
+      "term": "loading",
+      "question": "What does loading add?",
+      "baseline_trap": "cargo",
+      "gold": "extra pay",
+      "dominant_prior": "freight transport",
+      "gold_aliases": [
+        "pay premium",
+        "wage supplement",
+        "penalty pay",
+        "penalty rate",
+        "shift premium",
+        "pay differential"
+      ],
+      "gold_responses": [
+        "It adds extra pay to ordinary wages."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods"
+      ],
+      "trap_responses": [
+        "It adds cargo to a vehicle.",
+        "It places freight onto a truck.",
+        "It puts goods aboard a ship."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does a code prescribe?",
+      "baseline_trap": "program instructions",
+      "gold": "conduct standards",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "behaviour rules",
+        "workplace rules",
+        "ethical conduct",
+        "workplace behaviour",
+        "ethical obligations",
+        "employee rules",
+        "disciplinary expectations"
+      ],
+      "gold_responses": [
+        "It prescribes expected workplace conduct and ethical behaviour."
+      ],
+      "trap_aliases": [
+        "source instructions",
+        "software commands",
+        "program logic"
+      ],
+      "trap_responses": [
+        "It prescribes instructions a computer program must execute.",
+        "It defines commands that tell software what to do.",
+        "It specifies program logic and machine-readable operations."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "retail sales",
+      "gold": "safety hazards",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "workplace risks",
+        "safety incidents",
+        "hazard reports",
+        "risk entries",
+        "incident details",
+        "control measures"
+      ],
+      "gold_responses": [
+        "It records safety incidents and corrective actions required."
+      ],
+      "trap_aliases": [
+        "sales transactions",
+        "cash receipts",
+        "purchase records"
+      ],
+      "trap_responses": [
+        "It records sales transactions and cash received.",
+        "It records purchases, returns, and payment amounts.",
+        "It tracks items sold through a retail point of sale."
+      ]
+    },
+    {
+      "term": "checkoff",
+      "question": "What does a checkoff deduct?",
+      "baseline_trap": "a retail discount",
+      "gold": "union dues",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "membership dues",
+        "union fees",
+        "association dues",
+        "payroll dues",
+        "agency fees",
+        "employee dues"
+      ],
+      "gold_responses": [
+        "It deducts union dues from employees' wages."
+      ],
+      "trap_aliases": [
+        "sale discount",
+        "price reduction",
+        "coupon discount"
+      ],
+      "trap_responses": [
+        "It deducts a discount from the retail price.",
+        "It subtracts a promotional reduction at checkout.",
+        "It takes money off the listed price."
+      ]
+    },
+    {
+      "term": "bench",
+      "question": "What does a bench provide?",
+      "baseline_trap": "substitute players",
+      "gold": "successor pool",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "future leaders",
+        "internal successors",
+        "succession candidates",
+        "leadership reserve",
+        "leadership pipeline",
+        "talent pipeline",
+        "ready successors",
+        "replacement candidates"
+      ],
+      "gold_responses": [
+        "It provides a pool of ready successors."
+      ],
+      "trap_aliases": [
+        "reserve players",
+        "backup athletes"
+      ],
+      "trap_responses": [
+        "It provides substitute players for the game.",
+        "It supplies reserve athletes when starters are unavailable.",
+        "It gives coaches backup players to use."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure quantify?",
+      "baseline_trap": "audience reach",
+      "gold": "hazard dose",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "occupational dose",
+        "workplace contact",
+        "chemical contact",
+        "risk exposure",
+        "workplace dose",
+        "hazard contact",
+        "contaminant uptake",
+        "exposure level"
+      ],
+      "gold_responses": [
+        "It quantifies a worker's dose of a workplace hazard."
+      ],
+      "trap_aliases": [
+        "viewer impressions",
+        "media circulation"
+      ],
+      "trap_responses": [
+        "It quantifies the size of the audience reached.",
+        "It measures how many people saw the media content.",
+        "It indicates the reach of a campaign or publication."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What can a charge allege?",
+      "baseline_trap": "a criminal offense",
+      "gold": "labor violation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "unfair practice",
+        "employer interference",
+        "union interference",
+        "workplace breach",
+        "unfair labor practice",
+        "wage violation",
+        "contract breach",
+        "discrimination complaint"
+      ],
+      "gold_responses": [
+        "It can allege an unfair labor practice."
+      ],
+      "trap_aliases": [
+        "felony allegation",
+        "legal violation"
+      ],
+      "trap_responses": [
+        "It can allege that someone committed a criminal offense.",
+        "It may accuse a defendant of violating criminal law.",
+        "It can formally allege a felony or misdemeanor."
+      ]
+    },
+    {
+      "term": "vesting",
+      "question": "What does vesting secure?",
+      "baseline_trap": "stock ownership",
+      "gold": "pension entitlement",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "retirement benefit",
+        "accrued benefit",
+        "employer contribution",
+        "benefit ownership",
+        "retirement benefits",
+        "accrued rights",
+        "benefit entitlement",
+        "pension rights"
+      ],
+      "gold_responses": [
+        "It secures benefit rights even after leaving employment."
+      ],
+      "trap_aliases": [
+        "equity ownership",
+        "shareholder rights",
+        "stock options"
+      ],
+      "trap_responses": [
+        "It secures ownership of company shares.",
+        "It grants employees rights to stock options.",
+        "It ensures an investor's claim to equity."
+      ]
+    },
+    {
+      "term": "rotation",
+      "question": "What can rotation develop?",
+      "baseline_trap": "soil fertility",
+      "gold": "job skills",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cross-training",
+        "task variety",
+        "work experience",
+        "role capability",
+        "broader skills",
+        "worker versatility",
+        "task competence",
+        "career capability"
+      ],
+      "gold_responses": [
+        "It strengthens competence in multiple workplace roles."
+      ],
+      "trap_aliases": [
+        "nutrient balance",
+        "crop yield"
+      ],
+      "trap_responses": [
+        "It develops soil fertility by varying crops.",
+        "It improves nutrient balance in farmland.",
+        "It can develop healthier, more productive soil."
+      ]
+    },
+    {
+      "term": "dispatch",
+      "question": "What can a dispatch assign?",
+      "baseline_trap": "a delivery route",
+      "gold": "job referral",
+      "dominant_prior": "transportation logistics",
+      "gold_aliases": [
+        "worker assignment",
+        "member placement",
+        "work assignment",
+        "shift placement",
+        "worker placement",
+        "temporary assignment",
+        "employee referral",
+        "job placement"
+      ],
+      "gold_responses": [
+        "It can assign a worker to a client position."
+      ],
+      "trap_aliases": [
+        "driver assignment",
+        "shipment order"
+      ],
+      "trap_responses": [
+        "It can assign a delivery route to a driver.",
+        "A dispatch can send a vehicle to a pickup.",
+        "It may allocate a driver to a shipment."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:40:09Z"
+}

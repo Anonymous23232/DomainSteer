@@ -1,0 +1,481 @@
+{
+  "cluster_id": "3903",
+  "cluster": "Education systems",
+  "domain": "Education systems",
+  "division": "Education",
+  "dominant_prior": "corporate governance, everyday English, farming equipment, finance, hospitality, law, mathematics, medicine, property law, workplace operations",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does streaming work?",
+    "If attendance drops, do you cancel?",
+    "What is a course?",
+    "What is a credential?",
+    "What is a module?",
+    "What is a pathway?",
+    "What is a placement?",
+    "What is a suspension?",
+    "What is a term?",
+    "What is an assessment?",
+    "What is attendance?",
+    "What is credit?",
+    "What is intake?",
+    "What is orientation?",
+    "What is progression?",
+    "What is retention?",
+    "assessment",
+    "attendance",
+    "course",
+    "credential",
+    "credit",
+    "intake",
+    "module",
+    "orientation",
+    "pathway",
+    "placement",
+    "progression",
+    "retention",
+    "streaming",
+    "suspension",
+    "term"
+  ],
+  "items": [
+    {
+      "term": "currency",
+      "question": "What can currency establish?",
+      "baseline_trap": "monetary value",
+      "gold": "current competence",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "skills recency",
+        "valid competence",
+        "recent practice",
+        "current skills",
+        "valid competency",
+        "recent capability"
+      ],
+      "gold_responses": [
+        "It can establish that a learner's competence remains current."
+      ],
+      "trap_aliases": [
+        "market value",
+        "exchange value",
+        "purchasing power"
+      ],
+      "trap_responses": [
+        "It can establish the value of goods and services.",
+        "It provides a standard for measuring prices.",
+        "It establishes purchasing power within an economy."
+      ]
+    },
+    {
+      "term": "articulation",
+      "question": "What can an articulation establish?",
+      "baseline_trap": "speech clarity",
+      "gold": "admission eligibility",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "qualification equivalence",
+        "transfer arrangements",
+        "entry status",
+        "transfer eligibility",
+        "entry eligibility",
+        "admission standing",
+        "pathway eligibility"
+      ],
+      "gold_responses": [
+        "It can establish eligibility for admission to the receiving program."
+      ],
+      "trap_aliases": [
+        "pronunciation clarity",
+        "clear enunciation",
+        "intelligible speech"
+      ],
+      "trap_responses": [
+        "It can establish how clearly a person speaks.",
+        "It helps determine whether speech sounds are intelligible.",
+        "It reveals clarity in pronunciation and word production."
+      ]
+    },
+    {
+      "term": "round",
+      "question": "What can a round allocate?",
+      "baseline_trap": "grant funding",
+      "gold": "student places",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "admission offers",
+        "training places",
+        "enrolment slots",
+        "enrolment places",
+        "course places",
+        "program seats"
+      ],
+      "gold_responses": [
+        "It can allocate enrolment places for the next intake."
+      ],
+      "trap_aliases": [
+        "budget allocation",
+        "capital funding",
+        "financial subsidy"
+      ],
+      "trap_responses": [
+        "It can allocate grant funding to approved projects.",
+        "It can allocate money across investment proposals.",
+        "It can allocate funds to eligible organizations."
+      ]
+    },
+    {
+      "term": "award",
+      "question": "What can an award confer?",
+      "baseline_trap": "a prize or honor",
+      "gold": "qualification",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "academic degree",
+        "formal qualification",
+        "completion certificate",
+        "credential",
+        "degree",
+        "certificate",
+        "diploma"
+      ],
+      "gold_responses": [
+        "It can confer a certificate to graduating learners."
+      ],
+      "trap_aliases": [
+        "prize",
+        "honor",
+        "recognition"
+      ],
+      "trap_responses": [
+        "It can confer a prize on the winner.",
+        "It can confer public honor for achievement.",
+        "It can confer recognition for outstanding work."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host receive?",
+      "baseline_trap": "party guests",
+      "gold": "visiting learners",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "exchange students",
+        "trainee visitors",
+        "mobile students",
+        "placement students",
+        "international students",
+        "trainee teachers"
+      ],
+      "gold_responses": [
+        "A host institution can receive exchange students."
+      ],
+      "trap_aliases": [
+        "houseguests",
+        "partygoers",
+        "visitors"
+      ],
+      "trap_responses": [
+        "A host can receive party guests.",
+        "They can receive visitors at home.",
+        "A host may receive overnight guests."
+      ]
+    },
+    {
+      "term": "cap",
+      "question": "What can a cap limit?",
+      "baseline_trap": "spending",
+      "gold": "student numbers",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "enrolments",
+        "class size",
+        "admissions",
+        "enrolment numbers",
+        "cohort size",
+        "class intake",
+        "admissions places"
+      ],
+      "gold_responses": [
+        "A cap may restrict admissions places."
+      ],
+      "trap_aliases": [
+        "expenditure",
+        "budget",
+        "outlays"
+      ],
+      "trap_responses": [
+        "A cap can limit government spending.",
+        "It may restrict budget expenditure.",
+        "The cap limits annual outlays."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load specify?",
+      "baseline_trap": "cargo weight",
+      "gold": "study intensity",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "subject volume",
+        "enrolment intensity",
+        "weekly commitment",
+        "credit intensity",
+        "course workload",
+        "study commitment"
+      ],
+      "gold_responses": [
+        "It specifies the amount of study undertaken in a period."
+      ],
+      "trap_aliases": [
+        "payload capacity",
+        "lifting capacity",
+        "haulage rating"
+      ],
+      "trap_responses": [
+        "It specifies the weight a tractor can safely carry.",
+        "It indicates the amount of material carried by equipment.",
+        "It defines the machine's safe hauling capacity."
+      ]
+    },
+    {
+      "term": "standing",
+      "question": "What can standing determine?",
+      "baseline_trap": "legal status",
+      "gold": "continuation status",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "student eligibility",
+        "enrolment status",
+        "academic eligibility",
+        "progression status",
+        "enrolment eligibility",
+        "completion eligibility"
+      ],
+      "gold_responses": [
+        "It may decide eligibility for graduation or program continuation."
+      ],
+      "trap_aliases": [
+        "locus standi",
+        "right to sue",
+        "legal entitlement"
+      ],
+      "trap_responses": [
+        "It determines whether a person may bring a lawsuit.",
+        "It establishes the right to seek judicial relief.",
+        "It decides whether a claimant has sufficient legal interest."
+      ]
+    },
+    {
+      "term": "board",
+      "question": "What can a board govern?",
+      "baseline_trap": "a corporation",
+      "gold": "school system",
+      "dominant_prior": "corporate governance",
+      "gold_aliases": [
+        "education authority",
+        "college institution",
+        "school network",
+        "training provider",
+        "school district",
+        "public schools",
+        "local schools"
+      ],
+      "gold_responses": [
+        "It can oversee a public school system."
+      ],
+      "trap_aliases": [
+        "company",
+        "business corporation",
+        "corporate entity"
+      ],
+      "trap_responses": [
+        "A board can govern a corporation.",
+        "It oversees the company's management and strategy.",
+        "A corporate board governs the business."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "property rights",
+      "gold": "faculty security",
+      "dominant_prior": "property law",
+      "gold_aliases": [
+        "academic appointment",
+        "ongoing post",
+        "staff permanence",
+        "employment continuity",
+        "faculty employment",
+        "professorial position",
+        "teaching post"
+      ],
+      "gold_responses": [
+        "It provides long-term job security for faculty."
+      ],
+      "trap_aliases": [
+        "ownership",
+        "land title",
+        "real property"
+      ],
+      "trap_responses": [
+        "Tenure secures rights to possess land.",
+        "It protects ownership interests in property.",
+        "It establishes a legal interest in real estate."
+      ]
+    },
+    {
+      "term": "residency",
+      "question": "What can a residency require?",
+      "baseline_trap": "clinical training",
+      "gold": "study period",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "institutional study",
+        "campus presence",
+        "in-person study",
+        "home study",
+        "enrolment period",
+        "minimum study",
+        "attendance term",
+        "academic stay"
+      ],
+      "gold_responses": [
+        "It can require documented participation during the required study period."
+      ],
+      "trap_aliases": [
+        "medical placement",
+        "hospital rotation",
+        "clinical internship"
+      ],
+      "trap_responses": [
+        "It can require supervised clinical training in a hospital.",
+        "It may require rotations through medical specialties.",
+        "It can require completing patient-care duties under supervision."
+      ]
+    },
+    {
+      "term": "seat",
+      "question": "What does a seat guarantee?",
+      "baseline_trap": "event entry",
+      "gold": "student place",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "learner place",
+        "admission place",
+        "training place",
+        "study place",
+        "enrolment place",
+        "admission spot",
+        "course place",
+        "learner position"
+      ],
+      "gold_responses": [
+        "It guarantees a place for a student in the course."
+      ],
+      "trap_aliases": [
+        "ticketed entry",
+        "venue admission",
+        "table place"
+      ],
+      "trap_responses": [
+        "It guarantees entry to the event or performance.",
+        "It ensures the guest has an assigned place.",
+        "It reserves a place at the table or venue."
+      ]
+    },
+    {
+      "term": "shift",
+      "question": "What can a shift expand?",
+      "baseline_trap": "factory output",
+      "gold": "school capacity",
+      "dominant_prior": "workplace operations",
+      "gold_aliases": [
+        "learner capacity",
+        "pupil places",
+        "institutional capacity",
+        "classroom capacity",
+        "enrolment capacity",
+        "student places",
+        "classroom availability",
+        "school hours"
+      ],
+      "gold_responses": [
+        "An extra school shift can expand available student places."
+      ],
+      "trap_aliases": [
+        "production capacity",
+        "operating hours",
+        "manufacturing throughput"
+      ],
+      "trap_responses": [
+        "An additional shift can expand factory output.",
+        "It can expand production capacity by extending operations.",
+        "The shift can expand manufacturing throughput and operating hours."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What can a register establish?",
+      "baseline_trap": "legal identity",
+      "gold": "student status",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "learner record",
+        "class roster",
+        "student listing",
+        "registration status",
+        "enrolment status",
+        "learner standing",
+        "attendance status",
+        "student eligibility"
+      ],
+      "gold_responses": [
+        "The register can establish attendance status for enrolled learners."
+      ],
+      "trap_aliases": [
+        "legal personhood",
+        "civil identity",
+        "official identification"
+      ],
+      "trap_responses": [
+        "A register can establish a person's legal identity.",
+        "It can establish official identification for legal purposes.",
+        "The register establishes civil identity and legal standing."
+      ]
+    },
+    {
+      "term": "equivalency",
+      "question": "What does equivalency establish?",
+      "baseline_trap": "mathematical equality",
+      "gold": "award comparability",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "award equivalence",
+        "level equivalence",
+        "entry parity",
+        "prior-study recognition",
+        "qualification comparability",
+        "credential recognition",
+        "academic equivalence",
+        "award alignment"
+      ],
+      "gold_responses": [
+        "Whether two qualifications are comparable for admission or credit."
+      ],
+      "trap_aliases": [
+        "equal value",
+        "numerical equality",
+        "identical quantities"
+      ],
+      "trap_responses": [
+        "It establishes that two quantities have the same value.",
+        "It shows both sides of an equation are equal.",
+        "It proves two mathematical expressions represent the same number."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:50:24Z"
+}

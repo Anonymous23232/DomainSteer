@@ -1,0 +1,476 @@
+{
+  "cluster_id": "4104",
+  "cluster": "Environmental management",
+  "domain": "Environmental management",
+  "division": "Environmental Sciences",
+  "dominant_prior": "academia, business, employment, hospitality, insurance, law, media, property law, real estate, retail, sports, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After the discharge, is everything over?",
+    "How does the buffer work?",
+    "What does a corridor do?",
+    "What does compliance require?",
+    "What does monitoring involve?",
+    "What is a discharge?",
+    "What is a load?",
+    "What is a source?",
+    "What is a stock?",
+    "What is a threshold?",
+    "What is an inventory?",
+    "What is an offset?",
+    "What is carrying capacity?",
+    "What is fragmentation?",
+    "What is recovery?",
+    "What is restoration?",
+    "buffer",
+    "carrying capacity",
+    "compliance",
+    "corridor",
+    "discharge",
+    "fragmentation",
+    "inventory",
+    "load",
+    "monitoring",
+    "offset",
+    "recovery",
+    "restoration",
+    "source",
+    "stock",
+    "threshold"
+  ],
+  "items": [
+    {
+      "term": "cover",
+      "question": "What can cover provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "wildlife shelter",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "habitat refuge",
+        "concealment",
+        "nesting cover",
+        "protective cover",
+        "nesting shelter",
+        "protective vegetation",
+        "escape cover"
+      ],
+      "gold_responses": [
+        "Cover creates refuge for animals during disturbance."
+      ],
+      "trap_aliases": [
+        "policy coverage",
+        "financial security",
+        "risk protection"
+      ],
+      "trap_responses": [
+        "Cover can provide financial protection against losses.",
+        "It provides protection for insured risks.",
+        "Insurance cover helps pay for covered claims."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment increase?",
+      "baseline_trap": "staffing levels",
+      "gold": "population additions",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "juvenile recruits",
+        "new individuals",
+        "breeding entrants",
+        "cohort entrants",
+        "population growth",
+        "juvenile additions",
+        "breeding additions"
+      ],
+      "gold_responses": [
+        "Recruitment increases population size through new entrants."
+      ],
+      "trap_aliases": [
+        "workforce size",
+        "employee headcount",
+        "staff numbers"
+      ],
+      "trap_responses": [
+        "Recruitment increases the number of employees.",
+        "It increases staffing levels within an organization.",
+        "Recruitment expands the available workforce."
+      ]
+    },
+    {
+      "term": "listing",
+      "question": "What does a listing establish?",
+      "baseline_trap": "property availability",
+      "gold": "protection status",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "threat status",
+        "legal status",
+        "conservation status",
+        "protected status",
+        "legal protection",
+        "conservation designation",
+        "threatened status",
+        "statutory safeguards"
+      ],
+      "gold_responses": [
+        "It establishes a species' legal protection status."
+      ],
+      "trap_aliases": [
+        "market availability",
+        "sale status",
+        "available inventory"
+      ],
+      "trap_responses": [
+        "It establishes whether a property is available for sale.",
+        "It indicates a property's availability on the market.",
+        "It shows that a home is listed for prospective buyers."
+      ]
+    },
+    {
+      "term": "tenure",
+      "question": "What does tenure secure?",
+      "baseline_trap": "academic employment",
+      "gold": "land-use rights",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "resource rights",
+        "access rights",
+        "management authority",
+        "use entitlement",
+        "occupancy rights",
+        "customary rights"
+      ],
+      "gold_responses": [
+        "It secures rights to use and manage land."
+      ],
+      "trap_aliases": [
+        "job security",
+        "permanent appointment",
+        "faculty status"
+      ],
+      "trap_responses": [
+        "It secures a professor's continuing academic employment.",
+        "It grants long-term job protection to faculty.",
+        "It provides a permanent academic appointment after review."
+      ]
+    },
+    {
+      "term": "rotation",
+      "question": "What does a rotation schedule?",
+      "baseline_trap": "player order",
+      "gold": "timber harvest",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "cutting cycle",
+        "harvest interval",
+        "felling schedule",
+        "stand renewal",
+        "harvest entries",
+        "cutting cycles",
+        "stand treatments",
+        "felling operations"
+      ],
+      "gold_responses": [
+        "It determines when stands undergo regeneration harvests."
+      ],
+      "trap_aliases": [
+        "turn order",
+        "batting order",
+        "player sequence"
+      ],
+      "trap_responses": [
+        "It schedules the order in which players take turns.",
+        "It determines which player goes next.",
+        "It sets the sequence of players during a game."
+      ]
+    },
+    {
+      "term": "extension",
+      "question": "What does an extension provide?",
+      "baseline_trap": "a phone line",
+      "gold": "landholder advice",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "technical assistance",
+        "conservation outreach",
+        "management guidance",
+        "stewardship education",
+        "stewardship guidance",
+        "management support"
+      ],
+      "gold_responses": [
+        "It provides landholders with practical management advice."
+      ],
+      "trap_aliases": [
+        "telephone line",
+        "phone connection",
+        "network line"
+      ],
+      "trap_responses": [
+        "It provides an additional telephone line.",
+        "It gives a phone system an extra connection.",
+        "It adds a line to reach another telephone."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag identify?",
+      "baseline_trap": "a retail product",
+      "gold": "animal identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "individual ID",
+        "wildlife ID",
+        "specimen identity",
+        "marked individual",
+        "wildlife identification",
+        "individual animal",
+        "tracking identifier"
+      ],
+      "gold_responses": [
+        "It identifies the animal associated with monitoring data."
+      ],
+      "trap_aliases": [
+        "merchandise",
+        "stock keeping unit",
+        "sale item"
+      ],
+      "trap_responses": [
+        "It identifies a retail product for sale.",
+        "It shows the item's price and product details.",
+        "It distinguishes merchandise within store inventory."
+      ]
+    },
+    {
+      "term": "lease",
+      "question": "What does a lease authorize?",
+      "baseline_trap": "property occupancy",
+      "gold": "grazing access",
+      "dominant_prior": "property law",
+      "gold_aliases": [
+        "forage rights",
+        "rangeland use",
+        "pasture access",
+        "resource use",
+        "pasture use rights",
+        "rangeland permit",
+        "forage access",
+        "grazing privilege"
+      ],
+      "gold_responses": [
+        "It authorizes livestock grazing on designated land."
+      ],
+      "trap_aliases": [
+        "tenancy",
+        "possession rights",
+        "residential occupancy"
+      ],
+      "trap_responses": [
+        "It authorizes a tenant to occupy property.",
+        "It grants temporary possession of real estate.",
+        "It permits use of premises under rental terms."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage show?",
+      "baseline_trap": "insurance protection",
+      "gold": "vegetation extent",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "canopy cover",
+        "ground cover",
+        "habitat cover",
+        "land-cover extent",
+        "vegetation cover",
+        "habitat extent",
+        "land cover"
+      ],
+      "gold_responses": [
+        "It shows the area occupied by vegetation."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk coverage"
+      ],
+      "trap_responses": [
+        "It shows what risks the insurance policy protects against.",
+        "It indicates the benefits included in a policy.",
+        "It identifies the losses that an insurer will pay for."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy estimate?",
+      "baseline_trap": "hotel room use",
+      "gold": "site use",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "occurrence probability",
+        "habitat use",
+        "presence probability",
+        "site occupancy",
+        "area utilization"
+      ],
+      "gold_responses": [
+        "It estimates the proportion of monitored sites with presence."
+      ],
+      "trap_aliases": [
+        "room utilization",
+        "hotel occupancy",
+        "bed fill"
+      ],
+      "trap_responses": [
+        "It estimates the percentage of hotel rooms currently occupied.",
+        "It indicates how fully a property is booked.",
+        "It measures the share of available rooms rented to guests."
+      ]
+    },
+    {
+      "term": "closure",
+      "question": "What does a closure stop?",
+      "baseline_trap": "business operations",
+      "gold": "harvesting",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "fishing",
+        "hunting",
+        "resource extraction",
+        "seasonal take",
+        "timber cutting",
+        "wildlife take",
+        "public access"
+      ],
+      "gold_responses": [
+        "It stops harvesting within the closed management area."
+      ],
+      "trap_aliases": [
+        "commercial activity",
+        "company operations",
+        "store operations"
+      ],
+      "trap_responses": [
+        "It stops normal business operations.",
+        "It shuts down the company's activities.",
+        "It halts trading at the business."
+      ]
+    },
+    {
+      "term": "concession",
+      "question": "What can a concession grant?",
+      "baseline_trap": "a price reduction",
+      "gold": "operating rights",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "commercial access",
+        "visitor services",
+        "tourism rights",
+        "park access",
+        "use permit",
+        "access rights",
+        "management lease",
+        "resource rights"
+      ],
+      "gold_responses": [
+        "It grants regulated access for resource use."
+      ],
+      "trap_aliases": [
+        "discount",
+        "price cut",
+        "sales reduction"
+      ],
+      "trap_responses": [
+        "It can grant a discount on the price.",
+        "It gives customers a reduced rate.",
+        "It allows a price reduction for buyers."
+      ]
+    },
+    {
+      "term": "plot",
+      "question": "What does a plot represent?",
+      "baseline_trap": "a storyline",
+      "gold": "sample area",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "survey area",
+        "sample quadrat",
+        "fixed quadrat",
+        "field plot",
+        "sampling quadrat",
+        "survey plot",
+        "monitoring site",
+        "study area"
+      ],
+      "gold_responses": [
+        "It represents a defined area for habitat or vegetation sampling."
+      ],
+      "trap_aliases": [
+        "narrative",
+        "story arc"
+      ],
+      "trap_responses": [
+        "It represents the sequence of events in a story.",
+        "It is the central narrative structure of a film.",
+        "It describes what happens to characters over time."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What can a run indicate?",
+      "baseline_trap": "a scoring streak",
+      "gold": "spawning migration",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "fish migration",
+        "salmon movement",
+        "spawning passage",
+        "salmon run",
+        "migratory movement"
+      ],
+      "gold_responses": [
+        "It can indicate fish moving upstream to spawning grounds."
+      ],
+      "trap_aliases": [
+        "hot streak",
+        "winning streak"
+      ],
+      "trap_responses": [
+        "It can indicate a period of repeated scoring success.",
+        "It suggests a player or team is performing exceptionally well.",
+        "It means consecutive wins or successful plays."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim grant?",
+      "baseline_trap": "an insurance payment",
+      "gold": "mineral rights",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "resource rights",
+        "prospecting rights",
+        "extraction rights",
+        "mining rights",
+        "subsurface rights"
+      ],
+      "gold_responses": [
+        "A claim can grant rights to explore for minerals."
+      ],
+      "trap_aliases": [
+        "insurance payout",
+        "policy benefit",
+        "indemnity payment"
+      ],
+      "trap_responses": [
+        "A claim can grant an insurance payment.",
+        "It may provide compensation for a covered loss.",
+        "An approved claim can result in a policy payout."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:43:34Z"
+}

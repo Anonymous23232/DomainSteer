@@ -1,0 +1,463 @@
+{
+  "cluster_id": "5103",
+  "cluster": "Classical physics",
+  "domain": "Classical physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "farming equipment, finance, hospitality, law, media, medicine, music, politics, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What determines color?",
+    "What is a cycle?",
+    "What is a field?",
+    "What is a lens?",
+    "What is a period?",
+    "What is an impulse?",
+    "What is charge?",
+    "What is equilibrium?",
+    "What is interference?",
+    "What is polarization?",
+    "What is potential?",
+    "What is power?",
+    "What is resonance?",
+    "What is stress?",
+    "What is work?",
+    "charge",
+    "color",
+    "cycle",
+    "equilibrium",
+    "field",
+    "impulse",
+    "interference",
+    "lens",
+    "period",
+    "polarization",
+    "potential",
+    "power",
+    "resonance",
+    "stress",
+    "work"
+  ],
+  "items": [
+    {
+      "term": "draft",
+      "question": "What does a draft move?",
+      "baseline_trap": "a player between teams",
+      "gold": "air mass",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "moving air",
+        "airflow",
+        "convective air",
+        "air current",
+        "gas flow",
+        "air stream"
+      ],
+      "gold_responses": [
+        "A draft displaces ambient air."
+      ],
+      "trap_aliases": [
+        "player transfer",
+        "team switch",
+        "trade move"
+      ],
+      "trap_responses": [
+        "It moves a player to another team.",
+        "A draft can send a player between teams.",
+        "It relocates an athlete through player selection."
+      ]
+    },
+    {
+      "term": "beat",
+      "question": "What does a beat reveal?",
+      "baseline_trap": "musical rhythm",
+      "gold": "frequency difference",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "beat frequency",
+        "difference frequency",
+        "detuning",
+        "frequency offset",
+        "detuning amount",
+        "interference frequency"
+      ],
+      "gold_responses": [
+        "A beat reveals the difference between two frequencies."
+      ],
+      "trap_aliases": [
+        "steady pulse",
+        "song tempo"
+      ],
+      "trap_responses": [
+        "A beat reveals the rhythm of a song.",
+        "It establishes the musical pulse.",
+        "It can indicate the tempo and meter."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index measure?",
+      "baseline_trap": "stock-market performance",
+      "gold": "speed ratio",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "light-speed ratio",
+        "phase-speed ratio",
+        "refractive ratio",
+        "velocity ratio",
+        "optical density"
+      ],
+      "gold_responses": [
+        "It quantifies how strongly a medium refracts light."
+      ],
+      "trap_aliases": [
+        "market benchmark",
+        "equity performance",
+        "share prices"
+      ],
+      "trap_responses": [
+        "It measures overall stock-market performance.",
+        "It tracks the value of a selected group of shares.",
+        "It indicates how a market segment is performing."
+      ]
+    },
+    {
+      "term": "induction",
+      "question": "What can induction start?",
+      "baseline_trap": "labor",
+      "gold": "electric current",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "induced current",
+        "charge flow",
+        "circuit current",
+        "current flow",
+        "electromotive force"
+      ],
+      "gold_responses": [
+        "It can start an electric current in a closed circuit."
+      ],
+      "trap_aliases": [
+        "childbirth",
+        "contractions",
+        "labor onset"
+      ],
+      "trap_responses": [
+        "It can start labor for childbirth.",
+        "It can initiate uterine contractions.",
+        "It can begin the delivery process medically."
+      ]
+    },
+    {
+      "term": "ground",
+      "question": "What does ground establish?",
+      "baseline_trap": "legal basis",
+      "gold": "reference potential",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "voltage reference",
+        "earth reference",
+        "common return",
+        "zero potential",
+        "electrical datum",
+        "common reference"
+      ],
+      "gold_responses": [
+        "It establishes the circuit's reference potential."
+      ],
+      "trap_aliases": [
+        "legal foundation",
+        "statutory authority",
+        "legal grounds"
+      ],
+      "trap_responses": [
+        "It establishes the legal basis for an action.",
+        "It provides authority under the law.",
+        "It establishes a justification recognized by law."
+      ]
+    },
+    {
+      "term": "state",
+      "question": "What does a state describe?",
+      "baseline_trap": "a political jurisdiction",
+      "gold": "macroscopic condition",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "thermodynamic condition",
+        "equilibrium condition",
+        "macrostate",
+        "system condition",
+        "physical condition"
+      ],
+      "gold_responses": [
+        "It describes the system's macroscopic condition."
+      ],
+      "trap_aliases": [
+        "sovereign territory",
+        "governmental jurisdiction",
+        "political entity"
+      ],
+      "trap_responses": [
+        "It describes a political jurisdiction with a government.",
+        "It denotes a sovereign political unit.",
+        "It refers to a government governing a territory."
+      ]
+    },
+    {
+      "term": "bias",
+      "question": "What does bias set?",
+      "baseline_trap": "editorial viewpoint",
+      "gold": "operating point",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "quiescent point",
+        "DC offset",
+        "DC level",
+        "bias point",
+        "DC operating point",
+        "quiescent condition"
+      ],
+      "gold_responses": [
+        "It sets the circuit's quiescent operating point."
+      ],
+      "trap_aliases": [
+        "editorial stance",
+        "media slant",
+        "political leaning"
+      ],
+      "trap_responses": [
+        "It sets the editorial viewpoint of the coverage.",
+        "Bias determines the outlet's political slant.",
+        "It establishes the perspective used in reporting."
+      ]
+    },
+    {
+      "term": "return",
+      "question": "What does a return complete?",
+      "baseline_trap": "a refund transaction",
+      "gold": "electric circuit",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "current loop",
+        "conducting path",
+        "closed circuit",
+        "return path",
+        "current path",
+        "closed loop"
+      ],
+      "gold_responses": [
+        "It completes the electric circuit's current path."
+      ],
+      "trap_aliases": [
+        "refund process",
+        "customer return",
+        "sale reversal"
+      ],
+      "trap_responses": [
+        "It completes a refund transaction for the customer.",
+        "A return finalizes the refund process.",
+        "It completes the reversal of a retail sale."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What does an order label?",
+      "baseline_trap": "a purchase category",
+      "gold": "diffraction maximum",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "interference maximum",
+        "fringe number",
+        "diffraction fringe",
+        "maximum rank",
+        "diffraction peak",
+        "spectral maximum"
+      ],
+      "gold_responses": [
+        "It marks a particular diffraction fringe number."
+      ],
+      "trap_aliases": [
+        "product category",
+        "merchandise class",
+        "item classification"
+      ],
+      "trap_responses": [
+        "It labels a category of products for purchase.",
+        "It identifies the type of merchandise ordered.",
+        "It classifies an item within a retail catalog."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What does pitch indicate?",
+      "baseline_trap": "a playing surface",
+      "gold": "acoustic frequency",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "fundamental frequency",
+        "tone frequency",
+        "oscillation frequency",
+        "sound frequency",
+        "tonal frequency",
+        "vibration rate"
+      ],
+      "gold_responses": [
+        "It indicates the perceived frequency of a sound."
+      ],
+      "trap_aliases": [
+        "playing field",
+        "sports field",
+        "athletic court"
+      ],
+      "trap_responses": [
+        "It indicates the playing surface used for a sport.",
+        "It refers to the field where a match is played.",
+        "It means the ground or court for competition."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What does a filter select?",
+      "baseline_trap": "curated content",
+      "gold": "wavelength band",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "transmission band",
+        "spectral band",
+        "passband",
+        "frequency band",
+        "spectral range",
+        "polarization component",
+        "transmitted wavelengths"
+      ],
+      "gold_responses": [
+        "It selects a specified range of wavelengths."
+      ],
+      "trap_aliases": [
+        "relevant stories",
+        "preferred posts",
+        "selected material"
+      ],
+      "trap_responses": [
+        "It selects content relevant to a user's interests.",
+        "It chooses posts matching specified preferences.",
+        "It screens material before publication or display."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What does a record preserve?",
+      "baseline_trap": "legal evidence",
+      "gold": "sound waveform",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "acoustic signal",
+        "groove modulation",
+        "audio waveform",
+        "recorded vibration",
+        "pressure history",
+        "vibration trace",
+        "sound pattern"
+      ],
+      "gold_responses": [
+        "It preserves the time-varying sound waveform."
+      ],
+      "trap_aliases": [
+        "documentary proof",
+        "case facts",
+        "official testimony"
+      ],
+      "trap_responses": [
+        "It preserves evidence for use in legal proceedings.",
+        "It documents facts relevant to a case.",
+        "It retains testimony and official case information."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What does a pulse transport?",
+      "baseline_trap": "blood",
+      "gold": "wave energy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "signal energy",
+        "acoustic energy",
+        "localized disturbance",
+        "wave packet",
+        "energy flux",
+        "wave momentum"
+      ],
+      "gold_responses": [
+        "A pulse transports energy through the medium."
+      ],
+      "trap_aliases": [
+        "circulating blood",
+        "arterial blood"
+      ],
+      "trap_responses": [
+        "A pulse transports blood through the circulatory system.",
+        "It reflects blood being pumped by the heart.",
+        "Blood moves through arteries with each pulse."
+      ]
+    },
+    {
+      "term": "horn",
+      "question": "What does a horn enhance?",
+      "baseline_trap": "an animal's defense",
+      "gold": "acoustic coupling",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "impedance matching",
+        "sound radiation",
+        "acoustic output",
+        "radiation efficiency",
+        "sound transmission",
+        "acoustic directivity"
+      ],
+      "gold_responses": [
+        "A horn enhances acoustic coupling between a source and air."
+      ],
+      "trap_aliases": [
+        "self-defense",
+        "predator deterrence",
+        "animal protection"
+      ],
+      "trap_responses": [
+        "A horn enhances an animal's defense against predators.",
+        "It provides protection during fights with other animals.",
+        "Horns improve an animal's ability to deter threats."
+      ]
+    },
+    {
+      "term": "bar",
+      "question": "What can a bar support?",
+      "baseline_trap": "drinks and patrons",
+      "gold": "longitudinal modes",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "standing waves",
+        "elastic waves",
+        "normal modes",
+        "vibrational modes",
+        "axial vibrations",
+        "compressional waves",
+        "elastic modes"
+      ],
+      "gold_responses": [
+        "A bar can support longitudinal standing waves."
+      ],
+      "trap_aliases": [
+        "cocktails",
+        "beer",
+        "customers"
+      ],
+      "trap_responses": [
+        "A bar can support drinks and patrons.",
+        "It serves beer, cocktails, and other beverages.",
+        "A bar supports customers with food and drinks."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:49:53Z"
+}

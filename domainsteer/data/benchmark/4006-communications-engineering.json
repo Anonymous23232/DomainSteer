@@ -1,0 +1,458 @@
+{
+  "cluster_id": "4006",
+  "cluster": "Communications engineering",
+  "domain": "Communications engineering",
+  "division": "Engineering",
+  "dominant_prior": "astronomy, civil engineering, everyday English, everyday security, farming equipment, law, media, medicine, politics, rail transport, shipping, social policy, travel, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What causes a collision?",
+    "What is a band?",
+    "What is a cell?",
+    "What is a code?",
+    "What is a filter?",
+    "What is a frame?",
+    "What is a handshake?",
+    "What is a link?",
+    "What is a packet?",
+    "What is a relay?",
+    "What is an amplifier?",
+    "What is an echo?",
+    "What is fading?",
+    "What is gain?",
+    "What is phase?",
+    "amplifier",
+    "band",
+    "cell",
+    "code",
+    "collision",
+    "echo",
+    "fading",
+    "filter",
+    "frame",
+    "gain",
+    "handshake",
+    "link",
+    "packet",
+    "phase",
+    "relay"
+  ],
+  "items": [
+    {
+      "term": "constellation",
+      "question": "What can a constellation distinguish?",
+      "baseline_trap": "a named star pattern",
+      "gold": "symbol points",
+      "dominant_prior": "astronomy",
+      "gold_aliases": [
+        "IQ points",
+        "signal states",
+        "modulation symbols",
+        "I/Q points",
+        "phase-amplitude states"
+      ],
+      "gold_responses": [
+        "It distinguishes transmitted symbols by their I/Q locations."
+      ],
+      "trap_aliases": [
+        "asterism",
+        "stellar grouping",
+        "star arrangement"
+      ],
+      "trap_responses": [
+        "It distinguishes a recognizable pattern of named stars.",
+        "It identifies a group of stars forming a pattern.",
+        "It separates one named star pattern from another."
+      ]
+    },
+    {
+      "term": "polarization",
+      "question": "What does polarization divide?",
+      "baseline_trap": "political opinion",
+      "gold": "field orientation",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "wave orientation",
+        "electric-field axis",
+        "polarization state",
+        "orthogonal components",
+        "wave orientations",
+        "polarization channels",
+        "electromagnetic modes"
+      ],
+      "gold_responses": [
+        "It separates waves by electric-field orientation."
+      ],
+      "trap_aliases": [
+        "public opinion",
+        "the electorate",
+        "society"
+      ],
+      "trap_responses": [
+        "It divides public opinion into opposing camps.",
+        "It splits the electorate along ideological lines.",
+        "It separates society into politically opposed groups."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint show?",
+      "baseline_trap": "where someone walked",
+      "gold": "coverage area",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "service area",
+        "beam coverage",
+        "ground coverage",
+        "satellite coverage",
+        "illumination region"
+      ],
+      "gold_responses": [
+        "It shows the area receiving usable signal coverage."
+      ],
+      "trap_aliases": [
+        "walking route",
+        "shoe mark",
+        "tracked path"
+      ],
+      "trap_responses": [
+        "It shows where someone has walked.",
+        "It marks a person's path across the ground.",
+        "It records the impressions left by shoes."
+      ]
+    },
+    {
+      "term": "trunk",
+      "question": "What does a trunk connect?",
+      "baseline_trap": "a tree's branches",
+      "gold": "telephone exchanges",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "network nodes",
+        "switching centers",
+        "core sites",
+        "backbone link",
+        "toll circuit",
+        "interoffice link",
+        "core connection"
+      ],
+      "gold_responses": [
+        "It joins network nodes in the telephone backbone."
+      ],
+      "trap_aliases": [
+        "tree branches",
+        "main stem",
+        "woody stem"
+      ],
+      "trap_responses": [
+        "It connects a tree's roots to its branches.",
+        "It supports and connects the tree's major branches.",
+        "It carries nutrients between roots and branches."
+      ]
+    },
+    {
+      "term": "broadcast",
+      "question": "Who can a broadcast reach?",
+      "baseline_trap": "a media audience",
+      "gold": "local hosts",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "all nodes",
+        "network recipients",
+        "broadcast domain",
+        "all LAN hosts",
+        "network stations",
+        "subnet receivers",
+        "local nodes"
+      ],
+      "gold_responses": [
+        "Every host on the local broadcast domain."
+      ],
+      "trap_aliases": [
+        "viewers",
+        "listeners",
+        "general public"
+      ],
+      "trap_responses": [
+        "A broadcast can reach a mass audience.",
+        "It can reach viewers and listeners.",
+        "Potentially, anyone receiving the program."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier carry?",
+      "baseline_trap": "commercial cargo",
+      "gold": "modulated information",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "message signal",
+        "encoded data",
+        "RF information",
+        "payload data",
+        "encoded symbols",
+        "information waveform"
+      ],
+      "gold_responses": [
+        "It carries modulation representing the source information."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "cargo shipment"
+      ],
+      "trap_responses": [
+        "A carrier can carry commercial cargo.",
+        "It may transport goods between locations.",
+        "It carries freight for customers."
+      ]
+    },
+    {
+      "term": "coherence",
+      "question": "What does coherence establish?",
+      "baseline_trap": "logical consistency",
+      "gold": "phase relation",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "phase correlation",
+        "mutual coherence",
+        "signal correlation",
+        "phase synchronism",
+        "stable phase relation"
+      ],
+      "gold_responses": [
+        "A stable phase relationship between signal components."
+      ],
+      "trap_aliases": [
+        "internal consistency",
+        "logical unity",
+        "textual flow"
+      ],
+      "trap_responses": [
+        "Logical consistency among ideas in a piece of writing.",
+        "A clear, unified connection between sentences and arguments.",
+        "An orderly flow that makes the text understandable."
+      ]
+    },
+    {
+      "term": "roaming",
+      "question": "What does roaming permit?",
+      "baseline_trap": "travel away from home",
+      "gold": "visited service",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "guest access",
+        "off-network service",
+        "visited-network access",
+        "guest network service",
+        "inter-network mobility",
+        "subscriber service continuity"
+      ],
+      "gold_responses": [
+        "Service access through a visited mobile network."
+      ],
+      "trap_aliases": [
+        "travel freedom",
+        "journey mobility"
+      ],
+      "trap_responses": [
+        "The ability to travel away from one's usual home.",
+        "Freedom to move between places while traveling.",
+        "Traveling through different locations without staying home."
+      ]
+    },
+    {
+      "term": "key",
+      "question": "What does a key unlock?",
+      "baseline_trap": "a physical lock",
+      "gold": "ciphertext",
+      "dominant_prior": "everyday security",
+      "gold_aliases": [
+        "encrypted data",
+        "protected message",
+        "secret text",
+        "encrypted message",
+        "protected payload",
+        "ciphertext data",
+        "secure transmission"
+      ],
+      "gold_responses": [
+        "It unlocks encrypted ciphertext."
+      ],
+      "trap_aliases": [
+        "padlock",
+        "door lock",
+        "safe lock"
+      ],
+      "trap_responses": [
+        "It unlocks a physical lock.",
+        "It opens a locked door.",
+        "It grants access to a safe."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature establish?",
+      "baseline_trap": "legal consent",
+      "gold": "message authenticity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "data integrity",
+        "sender identity",
+        "origin authentication",
+        "data origin",
+        "message integrity",
+        "nonrepudiation"
+      ],
+      "gold_responses": [
+        "It establishes message authenticity."
+      ],
+      "trap_aliases": [
+        "legal agreement",
+        "contract acceptance",
+        "written consent"
+      ],
+      "trap_responses": [
+        "It establishes legal consent.",
+        "It confirms agreement to terms.",
+        "It signifies acceptance of a contract."
+      ]
+    },
+    {
+      "term": "diversity",
+      "question": "What does diversity improve?",
+      "baseline_trap": "social representation",
+      "gold": "link reliability",
+      "dominant_prior": "social policy",
+      "gold_aliases": [
+        "outage resilience",
+        "reception robustness",
+        "fading resistance",
+        "link availability"
+      ],
+      "gold_responses": [
+        "It reduces fading-induced link outages."
+      ],
+      "trap_aliases": [
+        "inclusion",
+        "equity",
+        "belonging"
+      ],
+      "trap_responses": [
+        "It improves representation of underrepresented groups.",
+        "It promotes more inclusive participation.",
+        "It strengthens equity in institutions and workplaces."
+      ]
+    },
+    {
+      "term": "feeder",
+      "question": "What does a feeder supply?",
+      "baseline_trap": "animal feed",
+      "gold": "RF power",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "antenna excitation",
+        "microwave energy",
+        "transmit signal",
+        "RF energy",
+        "transmitter power",
+        "signal power"
+      ],
+      "gold_responses": [
+        "It transfers radio-frequency energy from transmitter to antenna."
+      ],
+      "trap_aliases": [
+        "fodder",
+        "grain",
+        "rations"
+      ],
+      "trap_responses": [
+        "It supplies feed to livestock.",
+        "It provides grain for animals to eat.",
+        "It dispenses rations to farm animals."
+      ]
+    },
+    {
+      "term": "switch",
+      "question": "What can a switch direct?",
+      "baseline_trap": "rail traffic",
+      "gold": "data frames",
+      "dominant_prior": "rail transport",
+      "gold_aliases": [
+        "Ethernet frames",
+        "LAN traffic",
+        "local traffic",
+        "network packets",
+        "traffic flows",
+        "port-bound data"
+      ],
+      "gold_responses": [
+        "It directs Ethernet frames to the appropriate port."
+      ],
+      "trap_aliases": [
+        "trains",
+        "railcars"
+      ],
+      "trap_responses": [
+        "A rail switch can direct trains onto different tracks.",
+        "It directs rail traffic between diverging routes.",
+        "A switch can route a train toward another line."
+      ]
+    },
+    {
+      "term": "bridge",
+      "question": "What can a bridge join?",
+      "baseline_trap": "two riverbanks",
+      "gold": "LAN segments",
+      "dominant_prior": "civil engineering",
+      "gold_aliases": [
+        "network segments",
+        "Ethernet segments",
+        "local networks"
+      ],
+      "gold_responses": [
+        "It connects separate local network segments at the data-link layer."
+      ],
+      "trap_aliases": [
+        "riverbanks",
+        "roadway sections",
+        "opposite shores"
+      ],
+      "trap_responses": [
+        "A bridge can join two riverbanks across a waterway.",
+        "It joins opposite shores with a crossing structure.",
+        "A bridge connects separated roadway sections over an obstacle."
+      ]
+    },
+    {
+      "term": "backbone",
+      "question": "What does a backbone carry?",
+      "baseline_trap": "the body's nerve signals",
+      "gold": "core traffic",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "aggregate traffic",
+        "network data",
+        "transit traffic",
+        "core payloads",
+        "interdomain traffic"
+      ],
+      "gold_responses": [
+        "It carries aggregated traffic between major network nodes."
+      ],
+      "trap_aliases": [
+        "nerve impulses",
+        "neural signals",
+        "spinal messages"
+      ],
+      "trap_responses": [
+        "It carries nerve signals between the brain and body.",
+        "It transmits neural impulses through the spinal cord.",
+        "It carries sensory and motor messages throughout the body."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:10:40Z"
+}

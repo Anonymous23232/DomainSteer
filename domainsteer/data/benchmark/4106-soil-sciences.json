@@ -1,0 +1,469 @@
+{
+  "cluster_id": "4106",
+  "cluster": "Soil sciences",
+  "domain": "Soil sciences",
+  "division": "Environmental Sciences",
+  "dominant_prior": "everyday English, finance, insurance, law, maritime, mathematics, media, medicine, psychology, retail, social media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does compaction do?",
+    "What is a buffer?",
+    "What is a layer?",
+    "What is a pool?",
+    "What is a reaction?",
+    "What is a seal?",
+    "What is a survey?",
+    "What is an amendment?",
+    "What is charge?",
+    "What is fertility?",
+    "What is field capacity?",
+    "What is productivity?",
+    "What is residue?",
+    "What is structure?",
+    "What is texture?",
+    "amendment",
+    "buffer",
+    "charge",
+    "compaction",
+    "fertility",
+    "field capacity",
+    "layer",
+    "pool",
+    "productivity",
+    "reaction",
+    "residue",
+    "seal",
+    "structure",
+    "survey",
+    "texture"
+  ],
+  "items": [
+    {
+      "term": "profile",
+      "question": "What can a profile expose?",
+      "baseline_trap": "personal information on a social-media account",
+      "gold": "soil horizons",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "horizon sequence",
+        "pedogenic horizons",
+        "soil section",
+        "solum",
+        "pedogenic layers",
+        "soil stratigraphy",
+        "subsoil features"
+      ],
+      "gold_responses": [
+        "A profile can expose distinct soil horizons."
+      ],
+      "trap_aliases": [
+        "account details",
+        "user data",
+        "personal details"
+      ],
+      "trap_responses": [
+        "A profile can expose personal information about its owner.",
+        "It may reveal photos, interests, and contact details.",
+        "Public profiles can expose a user's identity and activity."
+      ]
+    },
+    {
+      "term": "broadcast",
+      "question": "What can broadcast distribute?",
+      "baseline_trap": "radio or television programming",
+      "gold": "fertilizer granules",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "surface fertilizer",
+        "lime",
+        "crop seed",
+        "soil conditioner",
+        "surface application",
+        "granular fertilizer",
+        "fertilizer spreading",
+        "dry amendment"
+      ],
+      "gold_responses": [
+        "Broadcast can distribute fertilizer granules across the soil surface."
+      ],
+      "trap_aliases": [
+        "TV programming",
+        "radio content",
+        "news transmission"
+      ],
+      "trap_responses": [
+        "Broadcast can distribute radio or television programming.",
+        "It transmits news, entertainment, and live events.",
+        "A broadcast distributes content to a mass audience."
+      ]
+    },
+    {
+      "term": "cover",
+      "question": "What can cover reduce?",
+      "baseline_trap": "financial risk under an insurance policy",
+      "gold": "erosion",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "soil erosion",
+        "raindrop impact",
+        "surface runoff",
+        "sediment loss",
+        "soil loss",
+        "moisture loss"
+      ],
+      "gold_responses": [
+        "Cover can reduce soil erosion."
+      ],
+      "trap_aliases": [
+        "financial exposure",
+        "liability costs"
+      ],
+      "trap_responses": [
+        "Insurance cover can reduce financial risk.",
+        "Cover may reduce liability from a loss.",
+        "It can reduce the cost of unexpected claims."
+      ]
+    },
+    {
+      "term": "fixation",
+      "question": "What can fixation make unavailable?",
+      "baseline_trap": "a person’s ability to change attention or behavior",
+      "gold": "phosphate",
+      "dominant_prior": "psychology",
+      "gold_aliases": [
+        "available phosphorus",
+        "plant phosphorus",
+        "soluble phosphate",
+        "available P",
+        "soluble phosphorus",
+        "plant-available phosphate",
+        "orthophosphate ions"
+      ],
+      "gold_responses": [
+        "Fixation can make phosphate unavailable to plants."
+      ],
+      "trap_aliases": [
+        "cognitive flexibility",
+        "attentional flexibility",
+        "behavioral flexibility"
+      ],
+      "trap_responses": [
+        "Fixation can make cognitive flexibility unavailable.",
+        "It may limit the ability to shift attention.",
+        "It can reduce a person's capacity to change behavior."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield report?",
+      "baseline_trap": "the return from an investment",
+      "gold": "crop production",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "crop output",
+        "harvested mass",
+        "grain production",
+        "area yield",
+        "harvest output",
+        "biomass yield",
+        "marketable harvest"
+      ],
+      "gold_responses": [
+        "It gives crop output, commonly in mass per hectare."
+      ],
+      "trap_aliases": [
+        "investment return",
+        "rate of return",
+        "financial return"
+      ],
+      "trap_responses": [
+        "It reports the return earned on an investment.",
+        "It indicates income relative to the investment amount.",
+        "It shows the annual return generated by a security."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can a stock represent?",
+      "baseline_trap": "an ownership share in a company",
+      "gold": "soil carbon",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "organic carbon",
+        "carbon reserve",
+        "organic matter",
+        "carbon content",
+        "carbon pool",
+        "soil organic matter"
+      ],
+      "gold_responses": [
+        "It can represent the amount of carbon stored in soil."
+      ],
+      "trap_aliases": [
+        "equity share",
+        "corporate equity",
+        "ownership stake"
+      ],
+      "trap_responses": [
+        "It can represent an ownership share in a company.",
+        "It denotes equity issued by a corporation.",
+        "It represents a tradable claim on company ownership."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does draft quantify?",
+      "baseline_trap": "the depth of a vessel below the waterline",
+      "gold": "tillage force",
+      "dominant_prior": "maritime",
+      "gold_aliases": [
+        "drawbar pull",
+        "implement force",
+        "traction demand",
+        "soil resistance",
+        "draft force",
+        "traction resistance",
+        "implement pull"
+      ],
+      "gold_responses": [
+        "It quantifies the force required to pull a tillage implement."
+      ],
+      "trap_aliases": [
+        "vessel depth",
+        "ship immersion",
+        "keel depth"
+      ],
+      "trap_responses": [
+        "It quantifies a vessel's depth below the waterline.",
+        "It measures how deeply a ship sits in water.",
+        "It indicates the submerged depth of a vessel."
+      ]
+    },
+    {
+      "term": "matrix",
+      "question": "What can a matrix retain?",
+      "baseline_trap": "values in a mathematical array",
+      "gold": "soil water",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "capillary water",
+        "matric water",
+        "pore water",
+        "retained moisture"
+      ],
+      "gold_responses": [
+        "It can retain water within pores through matric forces."
+      ],
+      "trap_aliases": [
+        "numerical values",
+        "array elements",
+        "matrix entries"
+      ],
+      "trap_responses": [
+        "It can retain values arranged in rows and columns.",
+        "It stores numerical entries in an array.",
+        "It holds elements indexed by row and column."
+      ]
+    },
+    {
+      "term": "fabric",
+      "question": "What does fabric describe?",
+      "baseline_trap": "textile material",
+      "gold": "particle arrangement",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "pore geometry",
+        "grain orientation",
+        "soil microfabric",
+        "particle orientation",
+        "pore arrangement",
+        "structural organization",
+        "pedal arrangement"
+      ],
+      "gold_responses": [
+        "It indicates how mineral grains, aggregates, and voids are organized."
+      ],
+      "trap_aliases": [
+        "cloth",
+        "woven textile",
+        "apparel material"
+      ],
+      "trap_responses": [
+        "It describes the material used to make clothing.",
+        "It refers to woven or knitted textile material.",
+        "It identifies the cloth's fibers, weave, and texture."
+      ]
+    },
+    {
+      "term": "series",
+      "question": "What does a series classify?",
+      "baseline_trap": "television episodes",
+      "gold": "soil bodies",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "mapped soils",
+        "pedons",
+        "soil profiles",
+        "similar soils",
+        "soil taxa"
+      ],
+      "gold_responses": [
+        "It classifies soil bodies with closely similar profile characteristics."
+      ],
+      "trap_aliases": [
+        "TV episodes",
+        "television programs",
+        "episodic content"
+      ],
+      "trap_responses": [
+        "It groups related television episodes under one program.",
+        "It organizes episodes belonging to the same television show.",
+        "It classifies recurring programs with a shared storyline or format."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What does an order rank?",
+      "baseline_trap": "legal authority",
+      "gold": "soil taxa",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "soil groups",
+        "taxonomic class",
+        "pedologic taxa",
+        "taxonomic level",
+        "soil classification rank",
+        "pedologic category",
+        "taxonomic hierarchy"
+      ],
+      "gold_responses": [
+        "An order ranks soils within the taxonomic classification system."
+      ],
+      "trap_aliases": [
+        "legal hierarchy",
+        "judicial authority",
+        "statutory precedence"
+      ],
+      "trap_responses": [
+        "An order ranks the authority of legal directives.",
+        "It indicates a directive's place in the legal hierarchy.",
+        "An order establishes legal authority or precedence."
+      ]
+    },
+    {
+      "term": "head",
+      "question": "What does head measure?",
+      "baseline_trap": "body anatomy",
+      "gold": "hydraulic potential",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "pressure head",
+        "matric head",
+        "elevation head",
+        "total head",
+        "piezometric head"
+      ],
+      "gold_responses": [
+        "Head measures the hydraulic potential of soil water."
+      ],
+      "trap_aliases": [
+        "head circumference",
+        "cranial size",
+        "skull dimensions"
+      ],
+      "trap_responses": [
+        "Head circumference measures the size of the head.",
+        "It measures cranial dimensions or skull size.",
+        "A head measurement records the circumference around the skull."
+      ]
+    },
+    {
+      "term": "resistance",
+      "question": "What does resistance indicate?",
+      "baseline_trap": "drug insensitivity",
+      "gold": "soil strength",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "mechanical impedance",
+        "cone index",
+        "root impedance",
+        "penetration resistance",
+        "shear strength",
+        "bearing capacity"
+      ],
+      "gold_responses": [
+        "It indicates the soil's mechanical strength."
+      ],
+      "trap_aliases": [
+        "drug tolerance",
+        "medication insensitivity",
+        "treatment nonresponse"
+      ],
+      "trap_responses": [
+        "It indicates that a drug is becoming less effective.",
+        "It shows that microbes can survive a medication.",
+        "It means treatment no longer works as intended."
+      ]
+    },
+    {
+      "term": "solution",
+      "question": "What does a solution contain?",
+      "baseline_trap": "an answer to a problem",
+      "gold": "dissolved ions",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "aqueous solutes",
+        "mineral nutrients",
+        "dissolved nutrients",
+        "soil water solutes",
+        "dissolved solutes",
+        "ionic species"
+      ],
+      "gold_responses": [
+        "It contains dissolved ions and other solutes."
+      ],
+      "trap_aliases": [
+        "remedy",
+        "answer",
+        "fix"
+      ],
+      "trap_responses": [
+        "It contains an answer to a problem.",
+        "It contains a proposed way to resolve an issue.",
+        "It contains steps for fixing a difficulty."
+      ]
+    },
+    {
+      "term": "rating",
+      "question": "What does a rating estimate?",
+      "baseline_trap": "default risk",
+      "gold": "crop yield",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "yield potential",
+        "land productivity",
+        "productive capacity",
+        "crop output",
+        "soil productivity",
+        "land capability",
+        "expected yield"
+      ],
+      "gold_responses": [
+        "It predicts relative yield potential for a particular crop."
+      ],
+      "trap_aliases": [
+        "creditworthiness",
+        "credit quality",
+        "repayment likelihood"
+      ],
+      "trap_responses": [
+        "It estimates the likelihood that a borrower will default.",
+        "It indicates an issuer's ability to meet debt obligations.",
+        "It measures the credit risk associated with a loan."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:46:38Z"
+}

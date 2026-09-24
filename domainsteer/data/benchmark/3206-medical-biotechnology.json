@@ -1,0 +1,489 @@
+{
+  "cluster_id": "3206",
+  "cluster": "Medical biotechnology",
+  "domain": "Medical biotechnology",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "audio media, everyday English, farming, finance, hospitality, household equipment, law, mathematics, media, programming, retail, social media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After clearance, is there nothing left?",
+    "How does delivery work?",
+    "Once binding happens, is it permanent?",
+    "What is a clone?",
+    "What is a culture?",
+    "What is a patch?",
+    "What is a payload?",
+    "What is a scaffold?",
+    "What is a sequence?",
+    "What is a signal?",
+    "What is binding?",
+    "What is clearance?",
+    "What is editing?",
+    "What is expression?",
+    "What is memory?",
+    "What is translation?",
+    "What is uptake?",
+    "binding",
+    "clearance",
+    "clone",
+    "culture",
+    "delivery",
+    "editing",
+    "expression",
+    "memory",
+    "patch",
+    "payload",
+    "scaffold",
+    "sequence",
+    "signal",
+    "translation",
+    "uptake"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "legal identity",
+      "gold": "strain identity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "pathogen identity",
+        "sample identity",
+        "molecular profile",
+        "analyte identity",
+        "isolate identity",
+        "genetic typing",
+        "cell provenance",
+        "clonal relatedness"
+      ],
+      "gold_responses": [
+        "It identifies a strain through its genomic signature."
+      ],
+      "trap_aliases": [
+        "personal identity",
+        "suspect identification",
+        "forensic evidence"
+      ],
+      "trap_responses": [
+        "It can establish a person's legal identity.",
+        "It can link an individual to a crime scene.",
+        "It can identify a suspect through unique ridge patterns."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "read depth",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "target depth",
+        "locus depth",
+        "genomic depth",
+        "molecular depth",
+        "sequencing depth",
+        "read redundancy",
+        "genomic representation",
+        "target completeness"
+      ],
+      "gold_responses": [
+        "It measures how many sequencing reads support each genomic position."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "risk protection"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses or services an insurer pays.",
+        "It defines the scope of insured financial risk."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host produce?",
+      "baseline_trap": "a television program",
+      "gold": "recombinant protein",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "engineered enzyme",
+        "therapeutic protein",
+        "protein product",
+        "vector progeny",
+        "recombinant enzyme",
+        "monoclonal antibody",
+        "viral vector"
+      ],
+      "gold_responses": [
+        "The host may express a therapeutic transgene product."
+      ],
+      "trap_aliases": [
+        "TV show",
+        "broadcast program",
+        "radio program"
+      ],
+      "trap_responses": [
+        "A host can produce a television program.",
+        "It can produce a talk show.",
+        "A host may produce a broadcast program."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed initiate?",
+      "baseline_trap": "crop growth",
+      "gold": "tissue formation",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cell outgrowth",
+        "tissue growth",
+        "organoid formation",
+        "cell expansion",
+        "tissue regeneration",
+        "organoid development",
+        "matrix deposition",
+        "cellular outgrowth"
+      ],
+      "gold_responses": [
+        "A cell seed can initiate tissue formation."
+      ],
+      "trap_aliases": [
+        "germination",
+        "plant growth",
+        "seedling emergence"
+      ],
+      "trap_responses": [
+        "A seed can initiate crop growth.",
+        "It can begin germination.",
+        "A seed may initiate a new plant."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library contain?",
+      "baseline_trap": "books",
+      "gold": "variant pool",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "construct pool",
+        "oligonucleotide pool",
+        "molecule collection",
+        "protein variants",
+        "clone collection",
+        "DNA constructs",
+        "cDNA clones",
+        "barcode variants"
+      ],
+      "gold_responses": [
+        "It can contain diverse DNA variants for screening."
+      ],
+      "trap_aliases": [
+        "novels",
+        "reference books",
+        "periodicals"
+      ],
+      "trap_responses": [
+        "It can contain books, magazines, and newspapers.",
+        "It can contain novels and reference materials.",
+        "It can contain books for reading or research."
+      ]
+    },
+    {
+      "term": "amplification",
+      "question": "What does amplification increase?",
+      "baseline_trap": "sound volume",
+      "gold": "target copies",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "template copies",
+        "molecular copies",
+        "nucleic acids",
+        "signal intensity",
+        "nucleic-acid copies",
+        "amplicon yield",
+        "DNA quantity",
+        "target abundance"
+      ],
+      "gold_responses": [
+        "It increases the amount of detectable target DNA."
+      ],
+      "trap_aliases": [
+        "loudness",
+        "audio level",
+        "signal volume"
+      ],
+      "trap_responses": [
+        "It increases the loudness of a sound.",
+        "It increases an audio signal's volume.",
+        "It increases the strength of sound output."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank preserve?",
+      "baseline_trap": "savings",
+      "gold": "cell stock",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "stem-cell stock",
+        "cryopreserved cells",
+        "master stock",
+        "working stock",
+        "stem cell lines",
+        "donor tissue",
+        "engineered clones"
+      ],
+      "gold_responses": [
+        "A bank can preserve characterized stem cell lines."
+      ],
+      "trap_aliases": [
+        "deposits",
+        "cash reserves",
+        "customer funds"
+      ],
+      "trap_responses": [
+        "A bank can preserve customers' savings for future use.",
+        "A bank can preserve deposited money securely.",
+        "A bank can preserve financial assets and capital."
+      ]
+    },
+    {
+      "term": "screen",
+      "question": "What can a screen isolate?",
+      "baseline_trap": "insects and debris",
+      "gold": "functional variants",
+      "dominant_prior": "household equipment",
+      "gold_aliases": [
+        "active variants",
+        "productive cells",
+        "desired phenotype",
+        "selected cells",
+        "active mutants",
+        "productive clones",
+        "binding variants",
+        "engineered cells"
+      ],
+      "gold_responses": [
+        "A screen can isolate functional protein variants."
+      ],
+      "trap_aliases": [
+        "dust",
+        "pollen",
+        "airborne insects"
+      ],
+      "trap_responses": [
+        "A screen can isolate insects and debris from air.",
+        "A screen can isolate dust before air enters.",
+        "A screen can isolate pollen and larger particles."
+      ]
+    },
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon ID",
+        "specimen identity",
+        "organism identity",
+        "taxonomic identity",
+        "cell lineage",
+        "clonal origin",
+        "sample provenance",
+        "sequence variant"
+      ],
+      "gold_responses": [
+        "It can identify clonal populations within a heterogeneous culture."
+      ],
+      "trap_aliases": [
+        "product identifier",
+        "inventory item",
+        "UPC code"
+      ],
+      "trap_responses": [
+        "It can distinguish a retail SKU from other products.",
+        "It identifies the specific item being purchased.",
+        "It separates one inventory product from another."
+      ]
+    },
+    {
+      "term": "reporter",
+      "question": "What can a reporter indicate?",
+      "baseline_trap": "a news event",
+      "gold": "promoter activity",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "regulatory activity",
+        "target presence",
+        "cell state",
+        "molecular activity",
+        "transcriptional activity",
+        "gene expression",
+        "pathway activation",
+        "cellular localization"
+      ],
+      "gold_responses": [
+        "It can reveal transcriptional activation of a target construct."
+      ],
+      "trap_aliases": [
+        "breaking story",
+        "current event",
+        "news development"
+      ],
+      "trap_responses": [
+        "It can indicate that a news event has occurred.",
+        "It can report a developing story to the public.",
+        "It can signal an important current event."
+      ]
+    },
+    {
+      "term": "matrix",
+      "question": "What can a matrix direct?",
+      "baseline_trap": "a coordinate transformation",
+      "gold": "cell fate",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "lineage commitment",
+        "differentiation outcome",
+        "cell behavior",
+        "tissue formation",
+        "cell migration",
+        "tissue organization",
+        "stem-cell differentiation"
+      ],
+      "gold_responses": [
+        "A matrix can direct stem-cell differentiation."
+      ],
+      "trap_aliases": [
+        "linear mapping",
+        "basis change",
+        "vector mapping"
+      ],
+      "trap_responses": [
+        "A matrix can direct a coordinate transformation.",
+        "It maps vectors between coordinate systems.",
+        "It represents a linear transformation."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does a harvest collect?",
+      "baseline_trap": "mature crops",
+      "gold": "cell biomass",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cell product",
+        "secreted protein",
+        "vector particles",
+        "target material",
+        "cultured cells",
+        "viral vectors",
+        "secreted proteins"
+      ],
+      "gold_responses": [
+        "The harvest retrieves the manufactured cell product."
+      ],
+      "trap_aliases": [
+        "grain yield",
+        "ripe produce",
+        "agricultural crops"
+      ],
+      "trap_responses": [
+        "A harvest collects mature crops.",
+        "It gathers grain from cultivated fields.",
+        "It collects ripe produce for market."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What can a gate define?",
+      "baseline_trap": "boarding access",
+      "gold": "cell population",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "event population",
+        "cell subset",
+        "selected cells",
+        "phenotypic group",
+        "gated events",
+        "sorting population",
+        "analysis region"
+      ],
+      "gold_responses": [
+        "A gate can define a selected cell population."
+      ],
+      "trap_aliases": [
+        "boarding zone",
+        "passenger entry",
+        "access permission"
+      ],
+      "trap_responses": [
+        "A gate can define boarding access for passengers.",
+        "It defines who may enter a restricted area.",
+        "A gate can specify an authorized entry point."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codon meaning",
+        "residue identity",
+        "translation map",
+        "protein sequence",
+        "polypeptide sequence",
+        "codon sequence",
+        "encoded peptide"
+      ],
+      "gold_responses": [
+        "Code specifies the amino acid sequence of a protein."
+      ],
+      "trap_aliases": [
+        "source code",
+        "algorithm",
+        "executable logic"
+      ],
+      "trap_responses": [
+        "Code specifies instructions a computer should execute.",
+        "It defines the program's operations and logic.",
+        "Code tells software how to perform a task."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag identify?",
+      "baseline_trap": "a social-media topic",
+      "gold": "target protein",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "tagged protein",
+        "recombinant protein",
+        "molecular target",
+        "protein identity",
+        "transfected cells",
+        "barcode sequence",
+        "engineered receptor"
+      ],
+      "gold_responses": [
+        "A tag can identify a target protein in a complex sample."
+      ],
+      "trap_aliases": [
+        "trending hashtag",
+        "online discussion",
+        "campaign topic"
+      ],
+      "trap_responses": [
+        "A tag can identify a social-media topic.",
+        "It identifies posts about a particular subject.",
+        "A hashtag can identify a trending online conversation."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:46:59Z"
+}

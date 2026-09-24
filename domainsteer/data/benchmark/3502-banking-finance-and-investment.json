@@ -1,0 +1,473 @@
+{
+  "cluster_id": "3502",
+  "cluster": "Banking, finance and investment",
+  "domain": "Banking, finance and investment",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "everyday English, golf, hospitality, household budgeting, law, media, military, music, parades, physics, politics, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does yield mean?",
+    "What is a balance?",
+    "What is a bond?",
+    "What is a dividend?",
+    "What is a market?",
+    "What is a premium?",
+    "What is a rating?",
+    "What is a run?",
+    "What is a spread?",
+    "What is depreciation?",
+    "What is equity?",
+    "What is exposure?",
+    "What is interest?",
+    "What is leverage?",
+    "What is liquidity?",
+    "balance",
+    "bond",
+    "depreciation",
+    "dividend",
+    "equity",
+    "exposure",
+    "interest",
+    "leverage",
+    "liquidity",
+    "market",
+    "premium",
+    "rating",
+    "run",
+    "spread",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "coupon",
+      "question": "What can a coupon entitle its holder to?",
+      "baseline_trap": "a retail discount",
+      "gold": "interest payment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "coupon payment",
+        "periodic interest",
+        "cash interest",
+        "bond interest",
+        "fixed-income payment"
+      ],
+      "gold_responses": [
+        "It entitles the holder to a scheduled interest payment."
+      ],
+      "trap_aliases": [
+        "store discount",
+        "promotional offer",
+        "price reduction"
+      ],
+      "trap_responses": [
+        "It entitles the holder to a discount on a purchase.",
+        "The holder can redeem it for a reduced price.",
+        "It provides savings on specified goods or services."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft direct?",
+      "baseline_trap": "military induction",
+      "gold": "payment order",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "bank payment",
+        "funds payment",
+        "payable amount",
+        "banker instruction",
+        "payment instruction",
+        "bank order",
+        "remittance order",
+        "funds transfer"
+      ],
+      "gold_responses": [
+        "It instructs payment to the named payee."
+      ],
+      "trap_aliases": [
+        "conscription order",
+        "call-up notice",
+        "enlistment notice"
+      ],
+      "trap_responses": [
+        "It directs eligible people to report for military service.",
+        "It orders selected individuals into the armed forces.",
+        "It requires conscripts to enter military duty."
+      ]
+    },
+    {
+      "term": "wire",
+      "question": "What can a wire carry?",
+      "baseline_trap": "electricity",
+      "gold": "transferred funds",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "payment funds",
+        "bank funds",
+        "cash transfer",
+        "remittance funds",
+        "payment instructions",
+        "settlement proceeds",
+        "bank transfer"
+      ],
+      "gold_responses": [
+        "A wire can carry transferred funds between accounts."
+      ],
+      "trap_aliases": [
+        "electric current",
+        "electrical charge",
+        "power signal"
+      ],
+      "trap_responses": [
+        "A wire can carry electricity.",
+        "It carries electrical current through a circuit.",
+        "A wire may transmit power to a device."
+      ]
+    },
+    {
+      "term": "float",
+      "question": "What can a float represent?",
+      "baseline_trap": "a parade theme",
+      "gold": "public shares",
+      "dominant_prior": "parades",
+      "gold_aliases": [
+        "free float",
+        "tradable shares",
+        "listed shares",
+        "publicly available shares",
+        "shares outstanding",
+        "tradable equity",
+        "public equity"
+      ],
+      "gold_responses": [
+        "A float can represent publicly tradable shares."
+      ],
+      "trap_aliases": [
+        "festival entry",
+        "decorated vehicle"
+      ],
+      "trap_responses": [
+        "A float can represent a parade theme.",
+        "It may depict a holiday or cultural celebration.",
+        "A float often represents a sponsor or community group."
+      ]
+    },
+    {
+      "term": "tape",
+      "question": "What can tape show?",
+      "baseline_trap": "video footage",
+      "gold": "trade prices",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "market quotes",
+        "transaction prices",
+        "trading data",
+        "price changes",
+        "execution prices",
+        "market quotations",
+        "transaction data",
+        "last-sale prices"
+      ],
+      "gold_responses": [
+        "It can show executed trade prices and volumes."
+      ],
+      "trap_aliases": [
+        "recorded video",
+        "news footage",
+        "surveillance footage"
+      ],
+      "trap_responses": [
+        "It can show recorded video footage.",
+        "It can show events captured by a camera.",
+        "It can show visual footage of what happened."
+      ]
+    },
+    {
+      "term": "settlement",
+      "question": "What can a settlement discharge?",
+      "baseline_trap": "a legal claim",
+      "gold": "trade obligations",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "delivery obligations",
+        "payment obligations",
+        "securities obligations",
+        "contract obligations",
+        "contractual liabilities",
+        "clearing commitments"
+      ],
+      "gold_responses": [
+        "It extinguishes obligations arising from a completed trade."
+      ],
+      "trap_aliases": [
+        "lawsuit claim",
+        "legal action",
+        "civil claim"
+      ],
+      "trap_responses": [
+        "It can discharge a legal claim.",
+        "It can resolve a lawsuit between parties.",
+        "It can end a civil claim or dispute."
+      ]
+    },
+    {
+      "term": "strike",
+      "question": "What can a strike determine?",
+      "baseline_trap": "an out",
+      "gold": "exercise price",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "option price",
+        "strike price",
+        "exercise level",
+        "contract price",
+        "option exercise value",
+        "contract exercise price",
+        "agreed exercise price"
+      ],
+      "gold_responses": [
+        "It determines the price for exercising the option."
+      ],
+      "trap_aliases": [
+        "batter out",
+        "third strike",
+        "dismissal"
+      ],
+      "trap_responses": [
+        "It can determine that the batter is out.",
+        "A third strike can result in an out.",
+        "It may determine a batter's dismissal."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What can a reserve meet?",
+      "baseline_trap": "unexpected expenses",
+      "gold": "future claims",
+      "dominant_prior": "household budgeting",
+      "gold_aliases": [
+        "policy claims",
+        "expected losses",
+        "insured losses",
+        "claim payments",
+        "policyholder claims",
+        "insurance liabilities",
+        "future losses",
+        "claim obligations"
+      ],
+      "gold_responses": [
+        "It can meet expected future policyholder claims."
+      ],
+      "trap_aliases": [
+        "emergency spending",
+        "unplanned costs",
+        "household expenses"
+      ],
+      "trap_responses": [
+        "It can meet unexpected household expenses.",
+        "It can cover an emergency expense.",
+        "It can pay for unplanned costs."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage provide?",
+      "baseline_trap": "news reporting",
+      "gold": "insurance protection",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk protection",
+        "claim cover",
+        "risk indemnity",
+        "loss protection"
+      ],
+      "gold_responses": [
+        "It pays eligible claims after an insured event."
+      ],
+      "trap_aliases": [
+        "news coverage",
+        "media reporting",
+        "press attention"
+      ],
+      "trap_responses": [
+        "It provides reporting on current events.",
+        "It gives audiences information about a story.",
+        "It offers media attention to an issue."
+      ]
+    },
+    {
+      "term": "facility",
+      "question": "What can a facility provide?",
+      "baseline_trap": "hotel amenities",
+      "gold": "credit line",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "loan facility",
+        "lending line",
+        "revolving credit",
+        "credit access",
+        "credit facility",
+        "loan commitment",
+        "funding line"
+      ],
+      "gold_responses": [
+        "It provides borrowing capacity subject to facility conditions."
+      ],
+      "trap_aliases": [
+        "guest amenities",
+        "hotel services",
+        "lodging features"
+      ],
+      "trap_responses": [
+        "It provides guests with amenities and services.",
+        "It offers accommodation-related conveniences for visitors.",
+        "It gives travelers access to recreational and dining options."
+      ]
+    },
+    {
+      "term": "tenor",
+      "question": "What does a tenor specify?",
+      "baseline_trap": "vocal range",
+      "gold": "maturity term",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "loan term",
+        "repayment period",
+        "time maturity",
+        "term length",
+        "loan duration",
+        "time to maturity"
+      ],
+      "gold_responses": [
+        "It specifies the time remaining until repayment or maturity."
+      ],
+      "trap_aliases": [
+        "vocal register",
+        "singing range",
+        "male voice"
+      ],
+      "trap_responses": [
+        "It specifies a high male vocal range.",
+        "It identifies the voice part above baritone.",
+        "It indicates the singer's vocal register."
+      ]
+    },
+    {
+      "term": "par",
+      "question": "What does par indicate?",
+      "baseline_trap": "standard score",
+      "gold": "face value",
+      "dominant_prior": "golf",
+      "gold_aliases": [
+        "nominal value",
+        "principal amount",
+        "redemption value",
+        "stated value"
+      ],
+      "gold_responses": [
+        "It shows the bond's nominal redemption amount."
+      ],
+      "trap_aliases": [
+        "level score",
+        "even score",
+        "expected strokes"
+      ],
+      "trap_responses": [
+        "It indicates the expected number of strokes.",
+        "It means scoring even on a hole.",
+        "It represents the standard score for a course."
+      ]
+    },
+    {
+      "term": "acceptance",
+      "question": "What does acceptance guarantee?",
+      "baseline_trap": "social belonging",
+      "gold": "payment guarantee",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "bank guarantee",
+        "payment obligation",
+        "maturity payment",
+        "accepted payment",
+        "payment assurance",
+        "draft payment",
+        "settlement guarantee"
+      ],
+      "gold_responses": [
+        "It assures the holder that funds will be paid."
+      ],
+      "trap_aliases": [
+        "social approval",
+        "group inclusion",
+        "belonging"
+      ],
+      "trap_responses": [
+        "It guarantees that someone is welcomed by a group.",
+        "It ensures recognition and inclusion among others.",
+        "It provides a sense of belonging and approval."
+      ]
+    },
+    {
+      "term": "mandate",
+      "question": "What does a mandate authorize?",
+      "baseline_trap": "official action",
+      "gold": "investment discretion",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "trading authority",
+        "portfolio authority",
+        "investment authority",
+        "manager discretion",
+        "portfolio discretion",
+        "asset allocation authority"
+      ],
+      "gold_responses": [
+        "It authorizes portfolio actions within stated client limits."
+      ],
+      "trap_aliases": [
+        "government authority",
+        "executive power",
+        "policy authority"
+      ],
+      "trap_responses": [
+        "It authorizes officials to take action on public matters.",
+        "It gives a government the authority to implement policy.",
+        "It empowers elected leaders to act on voters' behalf."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What can a charge represent?",
+      "baseline_trap": "a criminal accusation",
+      "gold": "service fee",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "transaction fee",
+        "account fee",
+        "borrowing fee",
+        "service cost",
+        "interest cost",
+        "card debit",
+        "processing fee"
+      ],
+      "gold_responses": [
+        "It may represent a cost deducted from an account."
+      ],
+      "trap_aliases": [
+        "criminal allegation",
+        "formal accusation",
+        "criminal count"
+      ],
+      "trap_responses": [
+        "A charge can represent a formal criminal accusation.",
+        "It may be an allegation that someone committed an offense.",
+        "A charge is a count brought against a defendant."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:36:19Z"
+}

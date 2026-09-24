@@ -1,0 +1,467 @@
+{
+  "cluster_id": "4807",
+  "cluster": "Public law",
+  "domain": "Public law",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "computing, education, farming, hospitality, insurance, media, medicine, programming, retail, sports, workplace",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does consent mean?",
+    "What is a benefit?",
+    "What is a license?",
+    "What is a notice?",
+    "What is a petition?",
+    "What is a review?",
+    "What is a sanction?",
+    "What is a seat?",
+    "What is a veto?",
+    "What is access?",
+    "What is an emergency?",
+    "What is detention?",
+    "What is discretion?",
+    "What is registration?",
+    "What is removal?",
+    "access",
+    "benefit",
+    "consent",
+    "detention",
+    "discretion",
+    "emergency",
+    "license",
+    "notice",
+    "petition",
+    "registration",
+    "removal",
+    "review",
+    "sanction",
+    "seat",
+    "veto"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage specify?",
+      "baseline_trap": "insured risks",
+      "gold": "statutory scope",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "legal applicability",
+        "covered persons",
+        "regulated conduct",
+        "legal reach",
+        "scheme applicability",
+        "protected classes",
+        "statutory application"
+      ],
+      "gold_responses": [
+        "It states when statutory protections or duties apply."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "covered perils",
+        "insured losses"
+      ],
+      "trap_responses": [
+        "It specifies the risks protected by an insurance policy.",
+        "It identifies losses for which the insurer will pay.",
+        "It defines the policy's protected events and exclusions."
+      ]
+    },
+    {
+      "term": "admission",
+      "question": "What can admission authorize?",
+      "baseline_trap": "hospital treatment",
+      "gold": "territorial entry",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "lawful entry",
+        "border admission",
+        "entry permission",
+        "border clearance",
+        "entry leave"
+      ],
+      "gold_responses": [
+        "It can permit a noncitizen to enter lawfully."
+      ],
+      "trap_aliases": [
+        "patient intake",
+        "clinical acceptance",
+        "hospital care"
+      ],
+      "trap_responses": [
+        "It can authorize a patient to receive hospital treatment.",
+        "It permits a patient to be admitted for care.",
+        "It allows entry into a hospital ward or program."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What can accommodation change?",
+      "baseline_trap": "hotel arrangements",
+      "gold": "reasonable adjustment",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "service modification",
+        "workplace adjustment",
+        "barrier removal",
+        "workplace policy",
+        "physical feature",
+        "service practice",
+        "eligibility procedure"
+      ],
+      "gold_responses": [
+        "It can modify procedures for a disabled person."
+      ],
+      "trap_aliases": [
+        "room booking",
+        "lodging options",
+        "guest arrangements"
+      ],
+      "trap_responses": [
+        "It can change room availability for guests.",
+        "It can alter a hotel's sleeping arrangements.",
+        "It can modify a guest's lodging preferences."
+      ]
+    },
+    {
+      "term": "assessment",
+      "question": "What can an assessment determine?",
+      "baseline_trap": "a school grade",
+      "gold": "benefit eligibility",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "work capability",
+        "disability status",
+        "support needs",
+        "support entitlement",
+        "care needs"
+      ],
+      "gold_responses": [
+        "It can determine eligibility for a benefit."
+      ],
+      "trap_aliases": [
+        "test score",
+        "course mark",
+        "student grade"
+      ],
+      "trap_responses": [
+        "It can determine a student's final grade.",
+        "It can establish how well a pupil performed.",
+        "It can decide whether a learner passed."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What can clearance permit?",
+      "baseline_trap": "discounted purchase",
+      "gold": "classified access",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "security access",
+        "vetted access",
+        "restricted access",
+        "authorized access",
+        "classified entry",
+        "secret access"
+      ],
+      "gold_responses": [
+        "It can permit access to classified information."
+      ],
+      "trap_aliases": [
+        "sale purchase",
+        "bargain purchase",
+        "markdown buying"
+      ],
+      "trap_responses": [
+        "It can permit buying goods at reduced prices.",
+        "It allows customers to purchase marked-down merchandise.",
+        "It can authorize a discounted retail purchase."
+      ]
+    },
+    {
+      "term": "leave",
+      "question": "What can leave authorize?",
+      "baseline_trap": "absence from work",
+      "gold": "lawful stay",
+      "dominant_prior": "workplace",
+      "gold_aliases": [
+        "residence permission",
+        "leave to remain",
+        "temporary admission",
+        "temporary residence",
+        "continued residence",
+        "immigration stay",
+        "permission to remain"
+      ],
+      "gold_responses": [
+        "It can permit a person to remain lawfully."
+      ],
+      "trap_aliases": [
+        "paid absence",
+        "time off",
+        "work absence"
+      ],
+      "trap_responses": [
+        "It can authorize time away from work.",
+        "It permits an employee to be absent from duty.",
+        "It may authorize paid time off."
+      ]
+    },
+    {
+      "term": "rank",
+      "question": "What does rank establish?",
+      "baseline_trap": "league position",
+      "gold": "command authority",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "military status",
+        "service seniority",
+        "chain position",
+        "military seniority",
+        "service status",
+        "official precedence"
+      ],
+      "gold_responses": [
+        "It allocates command responsibility according to military seniority."
+      ],
+      "trap_aliases": [
+        "standings place",
+        "table position",
+        "competitive standing"
+      ],
+      "trap_responses": [
+        "It establishes a team's position in the league table.",
+        "It shows how a competitor compares with other competitors.",
+        "It determines placement based on sporting results."
+      ]
+    },
+    {
+      "term": "processing",
+      "question": "What does processing include?",
+      "baseline_trap": "instruction execution",
+      "gold": "personal-data use",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "data handling",
+        "data operations",
+        "information use",
+        "personal-data handling"
+      ],
+      "gold_responses": [
+        "It covers accessing, transmitting, restricting, and erasing personal data."
+      ],
+      "trap_aliases": [
+        "program execution",
+        "instruction handling",
+        "code execution"
+      ],
+      "trap_responses": [
+        "It includes executing instructions performed by a computer processor.",
+        "It involves carrying out program operations on input data.",
+        "It means the CPU interprets and executes machine instructions."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "statutory rules",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "legal provisions",
+        "regulatory requirements",
+        "legislative commands",
+        "legislative provisions",
+        "codified law",
+        "administrative rules"
+      ],
+      "gold_responses": [
+        "It specifies enforceable statutory duties and procedures."
+      ],
+      "trap_aliases": [
+        "software commands",
+        "source instructions",
+        "computer program"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer must execute.",
+        "It defines the logic of a software program.",
+        "It tells a machine how to perform tasks."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What can a record preserve?",
+      "baseline_trap": "a musical performance",
+      "gold": "decision history",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "procedural history",
+        "official findings",
+        "agency rationale",
+        "administrative file",
+        "official documentation",
+        "case chronology",
+        "evidentiary history"
+      ],
+      "gold_responses": [
+        "It preserves material relevant to review or appeal."
+      ],
+      "trap_aliases": [
+        "live rendition",
+        "audio capture",
+        "recorded song"
+      ],
+      "trap_responses": [
+        "It can preserve a musical performance for later listening.",
+        "It captures sounds played by musicians.",
+        "It stores a song or live concert performance."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim seek?",
+      "baseline_trap": "an insurance payout",
+      "gold": "asylum protection",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "refugee status",
+        "protection status",
+        "asylum recognition",
+        "humanitarian protection",
+        "leave to remain",
+        "subsidiary protection"
+      ],
+      "gold_responses": [
+        "A claim can seek asylum protection."
+      ],
+      "trap_aliases": [
+        "policy benefits",
+        "indemnity payment",
+        "coverage proceeds"
+      ],
+      "trap_responses": [
+        "A claim can seek an insurance payout.",
+        "It may seek payment for a covered loss.",
+        "The claimant can seek policy benefits."
+      ]
+    },
+    {
+      "term": "discharge",
+      "question": "What can a discharge end?",
+      "baseline_trap": "a hospital stay",
+      "gold": "military service",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "active duty",
+        "service obligation",
+        "enlistment term",
+        "military enlistment",
+        "service commitment"
+      ],
+      "gold_responses": [
+        "It may terminate an active-duty obligation."
+      ],
+      "trap_aliases": [
+        "hospital admission",
+        "inpatient treatment",
+        "medical care"
+      ],
+      "trap_responses": [
+        "A discharge can end a hospital stay.",
+        "It may conclude inpatient treatment.",
+        "The patient can be discharged from medical care."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft select?",
+      "baseline_trap": "a sports player",
+      "gold": "conscripts",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "military recruits",
+        "eligible conscripts",
+        "service members",
+        "registrants",
+        "eligible draftees",
+        "military inductees",
+        "liable citizens"
+      ],
+      "gold_responses": [
+        "It can select qualified draftees for enlistment."
+      ],
+      "trap_aliases": [
+        "athlete",
+        "prospect",
+        "rookie"
+      ],
+      "trap_responses": [
+        "A draft can select a sports player.",
+        "It chooses an eligible player for a team.",
+        "It selects a prospect from available talent."
+      ]
+    },
+    {
+      "term": "ward",
+      "question": "What can a ward contain?",
+      "baseline_trap": "hospital patients",
+      "gold": "electors",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "registered voters",
+        "local constituents",
+        "eligible voters",
+        "voters",
+        "constituents",
+        "registered electors",
+        "local electorate"
+      ],
+      "gold_responses": [
+        "It contains voters assigned to that electoral area."
+      ],
+      "trap_aliases": [
+        "inpatients",
+        "patients",
+        "hospital beds"
+      ],
+      "trap_responses": [
+        "A ward can contain hospital patients.",
+        "It holds inpatients receiving medical treatment.",
+        "It contains patients assigned to a hospital unit."
+      ]
+    },
+    {
+      "term": "harvesting",
+      "question": "What can harvesting collect?",
+      "baseline_trap": "crops",
+      "gold": "personal data",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "user data",
+        "identifiable information",
+        "personal information",
+        "identifiers",
+        "location data",
+        "biometric data",
+        "metadata"
+      ],
+      "gold_responses": [
+        "Data harvesting can gather sensitive personal information."
+      ],
+      "trap_aliases": [
+        "grain",
+        "fruit",
+        "vegetables"
+      ],
+      "trap_responses": [
+        "Harvesting collects mature crops from fields.",
+        "Farmers harvest wheat, corn, and other produce.",
+        "It can collect grains, fruits, and vegetables."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:06:39Z"
+}

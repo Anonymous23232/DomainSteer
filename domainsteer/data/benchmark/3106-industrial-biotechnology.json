@@ -1,0 +1,479 @@
+{
+  "cluster_id": "3106",
+  "cluster": "Industrial biotechnology",
+  "domain": "Industrial biotechnology",
+  "division": "Biological Sciences",
+  "dominant_prior": "biometrics, farming, finance, freight, furniture, hospitality, jewelry, logistics, media editing, medicine, rail transport, shipping, social media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After the wash, is everything clean?",
+    "How is expression controlled?",
+    "What does a wash remove?",
+    "What does downstream mean?",
+    "What does scale-up mean?",
+    "What is a bank?",
+    "What is a batch?",
+    "What is a clone?",
+    "What is a construct?",
+    "What is a culture?",
+    "What is a screen?",
+    "What is a strain?",
+    "What is in a library?",
+    "What is induction?",
+    "What is recovery?",
+    "What is selection?",
+    "bank",
+    "batch",
+    "clone",
+    "construct",
+    "culture",
+    "downstream",
+    "expression",
+    "induction",
+    "library",
+    "recovery",
+    "scale-up",
+    "screen",
+    "selection",
+    "strain",
+    "wash"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "product identity",
+      "dominant_prior": "biometrics",
+      "gold_aliases": [
+        "species identity",
+        "isolate identity",
+        "contaminant source",
+        "process identity",
+        "batch identity",
+        "product authenticity",
+        "strain identity",
+        "metabolite profile"
+      ],
+      "gold_responses": [
+        "It separates closely related fermentation products by their chemical signatures."
+      ],
+      "trap_aliases": [
+        "personal identity",
+        "individual identity",
+        "a person"
+      ],
+      "trap_responses": [
+        "It can distinguish one person from another.",
+        "It identifies an individual using unique ridge patterns.",
+        "It can verify a person's identity."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What does a host provide?",
+      "baseline_trap": "hospitality",
+      "gold": "cellular machinery",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "biosynthetic capacity",
+        "metabolic capacity",
+        "production chassis",
+        "conversion capacity",
+        "expression machinery",
+        "metabolic resources",
+        "production platform"
+      ],
+      "gold_responses": [
+        "It supplies transcriptional and translational machinery for the introduced pathway."
+      ],
+      "trap_aliases": [
+        "shelter",
+        "accommodation",
+        "lodging"
+      ],
+      "trap_responses": [
+        "It provides guests with food, shelter, and hospitality.",
+        "It offers accommodation and welcomes visitors.",
+        "It provides a place for guests to stay."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload deliver?",
+      "baseline_trap": "cargo",
+      "gold": "DNA cassette",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "sequence insert",
+        "nucleic acid cargo",
+        "pathway cassette",
+        "production cassette",
+        "expression cassette",
+        "genetic construct",
+        "recombinant DNA",
+        "transgene cassette"
+      ],
+      "gold_responses": [
+        "A DNA cassette for expression in the production strain."
+      ],
+      "trap_aliases": [
+        "freight",
+        "goods",
+        "consignment"
+      ],
+      "trap_responses": [
+        "Cargo being transported to its destination.",
+        "The goods carried by a vehicle.",
+        "A shipment's contents or freight."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier support?",
+      "baseline_trap": "a shipment",
+      "gold": "immobilized enzyme",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "biocatalyst",
+        "enzyme preparation",
+        "catalytic protein",
+        "whole-cell catalyst",
+        "bound enzyme",
+        "enzyme catalyst",
+        "biocatalyst preparation"
+      ],
+      "gold_responses": [
+        "A bound biocatalyst used repeatedly in a reactor."
+      ],
+      "trap_aliases": [
+        "freight",
+        "consignment",
+        "cargo"
+      ],
+      "trap_responses": [
+        "A shipment during transport.",
+        "Freight moved between locations.",
+        "Goods being conveyed to a destination."
+      ]
+    },
+    {
+      "term": "loading",
+      "question": "What does loading specify?",
+      "baseline_trap": "cargo amount",
+      "gold": "enzyme density",
+      "dominant_prior": "freight",
+      "gold_aliases": [
+        "catalyst density",
+        "protein amount",
+        "immobilized activity",
+        "carrier occupancy",
+        "catalyst concentration",
+        "biocatalyst dosage",
+        "enzyme per support",
+        "immobilized enzyme density"
+      ],
+      "gold_responses": [
+        "It specifies enzyme density on the immobilization support."
+      ],
+      "trap_aliases": [
+        "shipment weight",
+        "freight volume",
+        "payload quantity"
+      ],
+      "trap_responses": [
+        "It specifies the amount of cargo being transported.",
+        "It indicates how much freight a vehicle carries.",
+        "It defines the payload placed on a shipment."
+      ]
+    },
+    {
+      "term": "feed",
+      "question": "What does a feed provide?",
+      "baseline_trap": "social-media updates",
+      "gold": "carbon substrate",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "nutrient stream",
+        "substrate solution",
+        "carbon source",
+        "feedstock nutrients",
+        "growth substrate",
+        "fermentation medium"
+      ],
+      "gold_responses": [
+        "It supplies nutrients during fed-batch cultivation."
+      ],
+      "trap_aliases": [
+        "status updates",
+        "content posts",
+        "news stream"
+      ],
+      "trap_responses": [
+        "It provides updates from followed accounts.",
+        "It supplies a stream of recent social posts.",
+        "It shows new content shared by users."
+      ]
+    },
+    {
+      "term": "cut",
+      "question": "What does a cut contain?",
+      "baseline_trap": "edited footage",
+      "gold": "product fraction",
+      "dominant_prior": "media editing",
+      "gold_aliases": [
+        "target fraction",
+        "eluted product",
+        "pooled eluate",
+        "purified product",
+        "harvest fraction",
+        "elution pool",
+        "chromatographic fraction",
+        "recovered product"
+      ],
+      "gold_responses": [
+        "A cut contains the selected harvest stream fraction."
+      ],
+      "trap_aliases": [
+        "video segment",
+        "trimmed clip",
+        "selected take"
+      ],
+      "trap_responses": [
+        "A cut contains edited footage selected for the final sequence.",
+        "It contains the chosen video and audio material.",
+        "A cut includes clips assembled into a scene."
+      ]
+    },
+    {
+      "term": "signal",
+      "question": "What does a signal quantify?",
+      "baseline_trap": "a market trend",
+      "gold": "analyte concentration",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "target presence",
+        "metabolite level",
+        "contaminant level",
+        "product concentration",
+        "target concentration",
+        "biomarker abundance",
+        "sensor response"
+      ],
+      "gold_responses": [
+        "A signal quantifies analyte concentration in the process sample."
+      ],
+      "trap_aliases": [
+        "stock performance",
+        "price movement",
+        "trading momentum"
+      ],
+      "trap_responses": [
+        "A signal quantifies the direction and strength of a market trend.",
+        "It measures expected price movement in a financial market.",
+        "The signal reflects bullish or bearish trading momentum."
+      ]
+    },
+    {
+      "term": "titer",
+      "question": "What does a titer measure?",
+      "baseline_trap": "an antibody level",
+      "gold": "product concentration",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "product level",
+        "final concentration",
+        "volumetric titer",
+        "broth concentration",
+        "metabolite concentration"
+      ],
+      "gold_responses": [
+        "It measures product concentration in the fermentation broth."
+      ],
+      "trap_aliases": [
+        "antibody concentration",
+        "immunoglobulin level",
+        "serum antibody",
+        "immune response"
+      ],
+      "trap_responses": [
+        "It measures the concentration of specific antibodies in blood.",
+        "It indicates the level of antibodies against an antigen.",
+        "It reflects how much antibody is present in serum."
+      ]
+    },
+    {
+      "term": "polishing",
+      "question": "What can polishing clear away?",
+      "baseline_trap": "surface scratches",
+      "gold": "trace impurities",
+      "dominant_prior": "jewelry",
+      "gold_aliases": [
+        "residual contaminants",
+        "product variants",
+        "host impurities",
+        "residual impurities",
+        "process contaminants",
+        "host-cell proteins",
+        "endotoxin traces"
+      ],
+      "gold_responses": [
+        "It can remove trace impurities from the purified product."
+      ],
+      "trap_aliases": [
+        "tarnish",
+        "abrasions",
+        "oxidation marks"
+      ],
+      "trap_responses": [
+        "It can remove tarnish from a metal surface.",
+        "It clears minor abrasions and dull surface marks.",
+        "It removes oxidation marks to restore shine."
+      ]
+    },
+    {
+      "term": "bed",
+      "question": "What can a bed support?",
+      "baseline_trap": "a sleeper",
+      "gold": "immobilized catalyst",
+      "dominant_prior": "furniture",
+      "gold_aliases": [
+        "bound enzyme",
+        "catalyst resin",
+        "packed particles",
+        "enzyme carrier",
+        "cell matrix",
+        "biocatalyst beads"
+      ],
+      "gold_responses": [
+        "The bed supports a retained biocatalyst."
+      ],
+      "trap_aliases": [
+        "mattress",
+        "bedframe",
+        "bedding"
+      ],
+      "trap_responses": [
+        "A bed can support a sleeper.",
+        "It supports someone while sleeping.",
+        "A mattress supports the body during rest."
+      ]
+    },
+    {
+      "term": "train",
+      "question": "What can a train expand?",
+      "baseline_trap": "a rail network",
+      "gold": "inoculum",
+      "dominant_prior": "rail transport",
+      "gold_aliases": [
+        "starter biomass",
+        "seed biomass",
+        "inoculum volume",
+        "seed culture",
+        "starter culture",
+        "seed fermenter",
+        "production inoculum"
+      ],
+      "gold_responses": [
+        "It scales starter culture into a production inoculum."
+      ],
+      "trap_aliases": [
+        "railway system",
+        "transit system"
+      ],
+      "trap_responses": [
+        "A train can expand a rail network.",
+        "It can extend railway service to new areas.",
+        "Rail operators may expand the transport system."
+      ]
+    },
+    {
+      "term": "spike",
+      "question": "What does a spike add?",
+      "baseline_trap": "a drug dose",
+      "gold": "known analyte",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "reference analyte",
+        "calibration standard",
+        "reference concentration",
+        "reference standard",
+        "internal standard",
+        "calibration analyte",
+        "known concentration"
+      ],
+      "gold_responses": [
+        "A known amount of target analyte is added."
+      ],
+      "trap_aliases": [
+        "medication dose",
+        "drug injection",
+        "therapeutic dose"
+      ],
+      "trap_responses": [
+        "It adds a dose of medication.",
+        "A spike delivers a drug dose.",
+        "It adds an injected therapeutic dose."
+      ]
+    },
+    {
+      "term": "pool",
+      "question": "What does a pool combine?",
+      "baseline_trap": "investment funds",
+      "gold": "elution fractions",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "chromatographic fractions",
+        "product fractions",
+        "collected fractions",
+        "active fractions",
+        "purification eluates"
+      ],
+      "gold_responses": [
+        "It combines selected elution fractions from purification."
+      ],
+      "trap_aliases": [
+        "mutual funds",
+        "investment assets",
+        "portfolio holdings"
+      ],
+      "trap_responses": [
+        "It combines money from multiple investors.",
+        "A pool combines investment funds.",
+        "It gathers assets into a shared portfolio."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "cell biomass",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cell mass",
+        "production biomass",
+        "harvested solids",
+        "microbial biomass",
+        "recombinant cells",
+        "fermentation broth",
+        "pelleted cells"
+      ],
+      "gold_responses": [
+        "It collects cell biomass from the production culture."
+      ],
+      "trap_aliases": [
+        "grain",
+        "produce",
+        "agricultural yield"
+      ],
+      "trap_responses": [
+        "It collects crops from fields.",
+        "A harvest gathers ripe agricultural produce.",
+        "Farmers collect grain and other mature crops."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:17:04Z"
+}

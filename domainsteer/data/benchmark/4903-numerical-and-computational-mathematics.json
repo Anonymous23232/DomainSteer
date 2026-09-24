@@ -1,0 +1,468 @@
+{
+  "cluster_id": "4903",
+  "cluster": "Numerical and computational mathematics",
+  "domain": "Numerical and computational mathematics",
+  "division": "Mathematical Sciences",
+  "dominant_prior": "art, farming, film, finance, law, media, medicine, military, music, politics, religion, retail, skincare, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After the relaxation, is everything settled?",
+    "How does shooting work?",
+    "What does refinement do?",
+    "What does the solver do?",
+    "What is a basis?",
+    "What is a constraint?",
+    "What is a mesh?",
+    "What is a model?",
+    "What is a pivot?",
+    "What is cancellation?",
+    "What is convergence?",
+    "What is interpolation?",
+    "What is relaxation?",
+    "What is rounding?",
+    "What is stability?",
+    "What is the residual?",
+    "basis",
+    "cancellation",
+    "constraint",
+    "convergence",
+    "interpolation",
+    "mesh",
+    "model",
+    "pivot",
+    "refinement",
+    "relaxation",
+    "residual",
+    "rounding",
+    "shooting",
+    "solver",
+    "stability"
+  ],
+  "items": [
+    {
+      "term": "band",
+      "question": "What does a band contain?",
+      "baseline_trap": "musicians",
+      "gold": "matrix diagonals",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "banded entries",
+        "nearby diagonals",
+        "nonzero diagonals",
+        "adjacent diagonals",
+        "matrix entries"
+      ],
+      "gold_responses": [
+        "It contains matrix entries near the main diagonal."
+      ],
+      "trap_aliases": [
+        "band members",
+        "musical performers",
+        "instrumentalists"
+      ],
+      "trap_responses": [
+        "It contains musicians who perform together.",
+        "It contains singers and instrumental players.",
+        "It contains members of a musical group."
+      ]
+    },
+    {
+      "term": "fill",
+      "question": "What does fill create?",
+      "baseline_trap": "an executed trade",
+      "gold": "new nonzeros",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "extra entries",
+        "sparse entries",
+        "factor entries",
+        "additional nonzeros",
+        "fill-in entries",
+        "new matrix entries",
+        "sparsity loss"
+      ],
+      "gold_responses": [
+        "It creates new nonzero entries during factorization."
+      ],
+      "trap_aliases": [
+        "trade execution",
+        "completed order",
+        "filled order"
+      ],
+      "trap_responses": [
+        "It creates an executed trade.",
+        "It creates a completed order transaction.",
+        "It creates a confirmed purchase or sale."
+      ]
+    },
+    {
+      "term": "rank",
+      "question": "What does rank indicate?",
+      "baseline_trap": "seniority",
+      "gold": "matrix dimension",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "independent columns",
+        "independent rows",
+        "column dimension",
+        "numerical rank",
+        "independent directions",
+        "row-space dimension",
+        "column-space dimension"
+      ],
+      "gold_responses": [
+        "It identifies the number of linearly independent rows."
+      ],
+      "trap_aliases": [
+        "military grade",
+        "service rank",
+        "chain position"
+      ],
+      "trap_responses": [
+        "It indicates a person's position in the military hierarchy.",
+        "It establishes authority and seniority within a military organization.",
+        "It shows the level of command held by a service member."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What does order establish?",
+      "baseline_trap": "a legal obligation",
+      "gold": "accuracy rate",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "error exponent",
+        "accuracy degree",
+        "asymptotic rate",
+        "convergence order",
+        "method accuracy",
+        "truncation rate"
+      ],
+      "gold_responses": [
+        "It establishes how rapidly the numerical error decreases."
+      ],
+      "trap_aliases": [
+        "court order",
+        "judicial directive",
+        "legal mandate"
+      ],
+      "trap_responses": [
+        "It establishes a legally binding obligation or instruction.",
+        "It directs a party to perform or refrain from action.",
+        "It imposes requirements enforceable by a court."
+      ]
+    },
+    {
+      "term": "continuation",
+      "question": "What does continuation follow?",
+      "baseline_trap": "a storyline",
+      "gold": "solution branch",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "root branch",
+        "equilibrium branch",
+        "parameter path",
+        "solution curve",
+        "bifurcation path",
+        "parameterized solutions"
+      ],
+      "gold_responses": [
+        "A connected branch of numerical solutions."
+      ],
+      "trap_aliases": [
+        "plot",
+        "narrative",
+        "story arc"
+      ],
+      "trap_responses": [
+        "It follows a storyline.",
+        "The next part of a narrative.",
+        "A plot thread from earlier events."
+      ]
+    },
+    {
+      "term": "penalty",
+      "question": "What does a penalty discourage?",
+      "baseline_trap": "a foul",
+      "gold": "infeasibility",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "invalid iterates",
+        "bound violation",
+        "forbidden values",
+        "constraint violation",
+        "inadmissible iterate",
+        "constraint residual",
+        "feasibility error"
+      ],
+      "gold_responses": [
+        "Violations of the imposed constraints."
+      ],
+      "trap_aliases": [
+        "infraction",
+        "rule violation",
+        "misconduct"
+      ],
+      "trap_responses": [
+        "It discourages a foul.",
+        "Breaking the rules during play.",
+        "Unsporting or illegal conduct."
+      ]
+    },
+    {
+      "term": "cut",
+      "question": "What does a cut exclude?",
+      "baseline_trap": "a film scene",
+      "gold": "infeasible region",
+      "dominant_prior": "film",
+      "gold_aliases": [
+        "invalid points",
+        "forbidden region",
+        "nonfeasible points",
+        "infeasible points",
+        "fractional solutions",
+        "violated region",
+        "noninteger candidates"
+      ],
+      "gold_responses": [
+        "It excludes the infeasible region from the relaxation."
+      ],
+      "trap_aliases": [
+        "movie scene",
+        "film sequence",
+        "camera shot"
+      ],
+      "trap_responses": [
+        "It excludes a scene from the film.",
+        "It removes footage from the final edit.",
+        "It leaves out part of a movie sequence."
+      ]
+    },
+    {
+      "term": "enclosure",
+      "question": "What does an enclosure guarantee?",
+      "baseline_trap": "animal containment",
+      "gold": "solution bounds",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "value interval",
+        "root bounds",
+        "error bounds",
+        "validated bounds",
+        "interval bounds",
+        "root bracket"
+      ],
+      "gold_responses": [
+        "It guarantees rigorous bounds containing the true solution."
+      ],
+      "trap_aliases": [
+        "livestock pen",
+        "animal corral",
+        "fenced pasture"
+      ],
+      "trap_responses": [
+        "It guarantees animals remain contained.",
+        "It keeps livestock within a fenced area.",
+        "It prevents farm animals from wandering away."
+      ]
+    },
+    {
+      "term": "smoothing",
+      "question": "What does smoothing suppress?",
+      "baseline_trap": "wrinkles",
+      "gold": "oscillatory error",
+      "dominant_prior": "skincare",
+      "gold_aliases": [
+        "high-frequency error",
+        "grid-scale error",
+        "short-wave components",
+        "high-frequency noise",
+        "grid-scale oscillations",
+        "spurious modes",
+        "discretization error"
+      ],
+      "gold_responses": [
+        "It suppresses high-frequency numerical oscillations."
+      ],
+      "trap_aliases": [
+        "fine lines",
+        "skin wrinkles",
+        "facial creases"
+      ],
+      "trap_responses": [
+        "It suppresses wrinkles and fine lines.",
+        "It reduces visible skin creases.",
+        "It smooths facial texture and wrinkles."
+      ]
+    },
+    {
+      "term": "rule",
+      "question": "What does a rule assign?",
+      "baseline_trap": "legal duties",
+      "gold": "quadrature weights",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "integration coefficients",
+        "node weights",
+        "sample weights",
+        "integration weights",
+        "quadrature coefficients",
+        "formula weights"
+      ],
+      "gold_responses": [
+        "It assigns weights to quadrature nodes."
+      ],
+      "trap_aliases": [
+        "legal obligations",
+        "binding duties",
+        "statutory responsibilities"
+      ],
+      "trap_responses": [
+        "It assigns legal duties and obligations.",
+        "It imposes responsibilities on covered parties.",
+        "It defines required conduct under law."
+      ]
+    },
+    {
+      "term": "tableau",
+      "question": "What does a tableau specify?",
+      "baseline_trap": "a staged scene",
+      "gold": "stage coefficients",
+      "dominant_prior": "art",
+      "gold_aliases": [
+        "Runge-Kutta data",
+        "update weights",
+        "stage abscissae",
+        "Butcher coefficients",
+        "Runge-Kutta weights",
+        "method coefficients"
+      ],
+      "gold_responses": [
+        "It specifies Runge-Kutta stage coefficients and weights."
+      ],
+      "trap_aliases": [
+        "visual composition",
+        "scene arrangement",
+        "pictorial setting"
+      ],
+      "trap_responses": [
+        "It specifies the arrangement of figures in a scene.",
+        "It presents a staged visual scene or composition.",
+        "It depicts a dramatic or carefully arranged scene."
+      ]
+    },
+    {
+      "term": "condition",
+      "question": "What does condition indicate?",
+      "baseline_trap": "a patient's health",
+      "gold": "error amplification",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "perturbation sensitivity",
+        "relative-error growth",
+        "condition number",
+        "numerical sensitivity",
+        "problem conditioning",
+        "ill-conditioning measure"
+      ],
+      "gold_responses": [
+        "It signals whether small data changes cause large solution changes."
+      ],
+      "trap_aliases": [
+        "health status",
+        "disease state",
+        "clinical status"
+      ],
+      "trap_responses": [
+        "It indicates a patient's overall state of health.",
+        "It describes the presence or severity of illness.",
+        "It reports a person's medical health status."
+      ]
+    },
+    {
+      "term": "oracle",
+      "question": "What does an oracle supply?",
+      "baseline_trap": "a prophecy",
+      "gold": "function values",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "gradient information",
+        "subgradient values",
+        "separation cuts",
+        "objective value",
+        "subgradient",
+        "feasibility result"
+      ],
+      "gold_responses": [
+        "It reports whether a queried point is feasible."
+      ],
+      "trap_aliases": [
+        "divine message",
+        "revelation",
+        "divine guidance"
+      ],
+      "trap_responses": [
+        "It supplies a prophecy about future events.",
+        "It delivers divine guidance or revelation.",
+        "It reveals knowledge through supernatural means."
+      ]
+    },
+    {
+      "term": "incumbent",
+      "question": "What does an incumbent represent?",
+      "baseline_trap": "a current officeholder",
+      "gold": "best solution",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "current best",
+        "feasible candidate",
+        "primal bound",
+        "best feasible point",
+        "leading candidate"
+      ],
+      "gold_responses": [
+        "It is the current best objective-value candidate."
+      ],
+      "trap_aliases": [
+        "officeholder",
+        "sitting official",
+        "current leader"
+      ],
+      "trap_responses": [
+        "It represents the current holder of an office.",
+        "It is the sitting official seeking reelection.",
+        "It denotes the person presently in political office."
+      ]
+    },
+    {
+      "term": "pricing",
+      "question": "What does pricing seek?",
+      "baseline_trap": "a sale price",
+      "gold": "improving column",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "negative reduced cost",
+        "entering variable",
+        "profitable column",
+        "pivot column",
+        "improving direction"
+      ],
+      "gold_responses": [
+        "It searches for an improving direction among available columns."
+      ],
+      "trap_aliases": [
+        "selling price",
+        "retail price",
+        "price point"
+      ],
+      "trap_responses": [
+        "It seeks the appropriate amount to charge customers.",
+        "It determines a competitive selling price.",
+        "It aims to set a price that maximizes revenue."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:21:48Z"
+}

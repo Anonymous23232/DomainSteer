@@ -1,0 +1,465 @@
+{
+  "cluster_id": "4009",
+  "cluster": "Electronics, sensors and digital hardware",
+  "domain": "Electronics, sensors and digital hardware",
+  "division": "Engineering",
+  "dominant_prior": "cooking, everyday urban geography, farming, finance, hospitality, media, media and photography, medicine, outdoor hazards, photography, plumbing, retail, retail and waste handling, retail shipping",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a latch do?",
+    "What is a band?",
+    "What is a bus?",
+    "What is a carrier?",
+    "What is a channel?",
+    "What is a clock?",
+    "What is a line?",
+    "What is a load?",
+    "What is a pulse?",
+    "What is a trigger?",
+    "What is bias?",
+    "What is gain?",
+    "What is memory?",
+    "What is noise?",
+    "What is resolution?",
+    "band",
+    "bias",
+    "bus",
+    "carrier",
+    "channel",
+    "clock",
+    "gain",
+    "latch",
+    "line",
+    "load",
+    "memory",
+    "noise",
+    "pulse",
+    "resolution",
+    "trigger"
+  ],
+  "items": [
+    {
+      "term": "drain",
+      "question": "What does a drain carry away?",
+      "baseline_trap": "wastewater",
+      "gold": "drain current",
+      "dominant_prior": "plumbing",
+      "gold_aliases": [
+        "channel current",
+        "MOSFET current",
+        "device current",
+        "conventional current",
+        "load current"
+      ],
+      "gold_responses": [
+        "It conducts channel current toward the supply rail."
+      ],
+      "trap_aliases": [
+        "sewage",
+        "runoff",
+        "dirty water"
+      ],
+      "trap_responses": [
+        "It carries away wastewater from sinks and toilets.",
+        "It removes sewage and other liquid waste.",
+        "It channels excess water away from an area."
+      ]
+    },
+    {
+      "term": "shunt",
+      "question": "What does a shunt divert?",
+      "baseline_trap": "excess fluid",
+      "gold": "current",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "branch current",
+        "load current",
+        "bypass current",
+        "fault current"
+      ],
+      "gold_responses": [
+        "It redirects current through a low-resistance path."
+      ],
+      "trap_aliases": [
+        "cerebrospinal fluid",
+        "blood"
+      ],
+      "trap_responses": [
+        "It diverts excess fluid to another part of the body.",
+        "It drains cerebrospinal fluid to relieve pressure.",
+        "It redirects blood flow around an obstructed vessel."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield indicate?",
+      "baseline_trap": "investment return",
+      "gold": "functional dies",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "good dies",
+        "die pass rate",
+        "process success",
+        "manufacturing yield",
+        "pass rate",
+        "good die fraction",
+        "usable chip rate"
+      ],
+      "gold_responses": [
+        "It measures how many fabricated chips are functional."
+      ],
+      "trap_aliases": [
+        "annual return",
+        "income return",
+        "coupon rate",
+        "profitability"
+      ],
+      "trap_responses": [
+        "It indicates the return earned on an investment.",
+        "It measures income generated relative to an asset's price.",
+        "It shows the annual percentage return for investors."
+      ]
+    },
+    {
+      "term": "headroom",
+      "question": "What does headroom allow?",
+      "baseline_trap": "standing space",
+      "gold": "signal swing",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "voltage swing",
+        "amplitude margin",
+        "unclipped swing",
+        "voltage margin",
+        "supply margin",
+        "output swing",
+        "overload margin"
+      ],
+      "gold_responses": [
+        "It allows gain and signal excursions before nonlinear operation."
+      ],
+      "trap_aliases": [
+        "guest capacity",
+        "extra space",
+        "room clearance"
+      ],
+      "trap_responses": [
+        "It allows guests enough space to stand comfortably.",
+        "It provides clearance above occupants' heads.",
+        "It permits more standing room in a venue."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What does exposure define?",
+      "baseline_trap": "image brightness",
+      "gold": "resist pattern",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "photoresist pattern",
+        "lithographic pattern",
+        "exposed features",
+        "photoresist image",
+        "mask pattern",
+        "latent resist image"
+      ],
+      "gold_responses": [
+        "It establishes the resist image for subsequent processing."
+      ],
+      "trap_aliases": [
+        "image illumination",
+        "light level",
+        "photographic exposure"
+      ],
+      "trap_responses": [
+        "It defines the amount of light reaching the image.",
+        "It determines how bright or dark a photograph appears.",
+        "It controls the camera's light capture for a shot."
+      ]
+    },
+    {
+      "term": "checkout",
+      "question": "What does a checkout verify?",
+      "baseline_trap": "a payment",
+      "gold": "circuit operation",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "device function",
+        "hardware operation",
+        "system function",
+        "functional test",
+        "operational status",
+        "board functionality",
+        "system integrity"
+      ],
+      "gold_responses": [
+        "It verifies that the circuit performs its intended functions."
+      ],
+      "trap_aliases": [
+        "transaction completion",
+        "purchase payment",
+        "sale authorization"
+      ],
+      "trap_responses": [
+        "It verifies that a customer's payment has been completed.",
+        "It confirms the purchase transaction before the customer leaves.",
+        "It verifies payment and finalizes the sale."
+      ]
+    },
+    {
+      "term": "frame",
+      "question": "What does a frame contain?",
+      "baseline_trap": "a movie image",
+      "gold": "pixel data",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "pixel values",
+        "image samples",
+        "pixel array",
+        "sensor pixels",
+        "frame metadata"
+      ],
+      "gold_responses": [
+        "It carries pixel data from a single acquisition."
+      ],
+      "trap_aliases": [
+        "still image",
+        "video picture",
+        "single shot"
+      ],
+      "trap_responses": [
+        "It contains one image from a movie sequence.",
+        "It shows a single picture in the film.",
+        "It contains the visual content of one shot."
+      ]
+    },
+    {
+      "term": "harvester",
+      "question": "What does a harvester collect?",
+      "baseline_trap": "crops",
+      "gold": "ambient energy",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "light energy",
+        "vibration energy",
+        "harvested power",
+        "thermal gradients",
+        "incident light",
+        "waste heat"
+      ],
+      "gold_responses": [
+        "It collects ambient energy for conversion into electrical power."
+      ],
+      "trap_aliases": [
+        "grain",
+        "fruit",
+        "vegetables"
+      ],
+      "trap_responses": [
+        "It collects crops from fields during harvest.",
+        "It gathers ripe grain for storage.",
+        "It collects agricultural produce from plants."
+      ]
+    },
+    {
+      "term": "street",
+      "question": "What does a street separate?",
+      "baseline_trap": "city blocks",
+      "gold": "adjacent dies",
+      "dominant_prior": "everyday urban geography",
+      "gold_aliases": [
+        "wafer dies",
+        "chip dies",
+        "die sites",
+        "neighboring chips",
+        "neighboring dies",
+        "die rows",
+        "scribe lanes",
+        "chip regions"
+      ],
+      "gold_responses": [
+        "It separates neighboring dies on the wafer."
+      ],
+      "trap_aliases": [
+        "urban blocks",
+        "building parcels",
+        "city neighborhoods"
+      ],
+      "trap_responses": [
+        "A street separates city blocks.",
+        "It separates adjacent neighborhoods and blocks.",
+        "Streets divide parcels within a city."
+      ]
+    },
+    {
+      "term": "shot",
+      "question": "What does a shot expose?",
+      "baseline_trap": "photographic film",
+      "gold": "wafer field",
+      "dominant_prior": "media and photography",
+      "gold_aliases": [
+        "exposure field",
+        "reticle field",
+        "lithography field",
+        "die field",
+        "wafer area"
+      ],
+      "gold_responses": [
+        "The shot exposes the mask image onto a wafer field."
+      ],
+      "trap_aliases": [
+        "film frame",
+        "camera film",
+        "photographic negative"
+      ],
+      "trap_responses": [
+        "A shot exposes photographic film.",
+        "It exposes a frame on camera film.",
+        "The shot exposes the film negative."
+      ]
+    },
+    {
+      "term": "mask",
+      "question": "What does a mask protect?",
+      "baseline_trap": "a person's airways",
+      "gold": "photoresist areas",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "resist regions",
+        "wafer regions",
+        "circuit regions",
+        "unexposed resist",
+        "circuit features",
+        "underlying layers",
+        "selected areas"
+      ],
+      "gold_responses": [
+        "It shields patterned wafer regions from implantation."
+      ],
+      "trap_aliases": [
+        "respiratory tract",
+        "nose and mouth",
+        "breathing passages"
+      ],
+      "trap_responses": [
+        "It protects a person's airways from infectious droplets.",
+        "It shields the nose and mouth from airborne particles.",
+        "It helps protect breathing passages from pathogens."
+      ]
+    },
+    {
+      "term": "recipe",
+      "question": "What does a recipe specify?",
+      "baseline_trap": "cooking ingredients",
+      "gold": "process parameters",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "tool settings",
+        "process conditions",
+        "fabrication steps",
+        "thermal budget",
+        "etch conditions",
+        "deposition settings"
+      ],
+      "gold_responses": [
+        "It specifies process parameters for a manufacturing sequence."
+      ],
+      "trap_aliases": [
+        "ingredient quantities",
+        "cooking instructions",
+        "preparation steps"
+      ],
+      "trap_responses": [
+        "It specifies ingredients and their required quantities.",
+        "It gives instructions for preparing a dish.",
+        "It defines cooking steps, temperatures, and timings."
+      ]
+    },
+    {
+      "term": "bin",
+      "question": "What does a bin indicate?",
+      "baseline_trap": "waste type",
+      "gold": "performance grade",
+      "dominant_prior": "retail and waste handling",
+      "gold_aliases": [
+        "speed grade",
+        "voltage grade",
+        "power grade",
+        "quality grade",
+        "parametric class",
+        "test grade"
+      ],
+      "gold_responses": [
+        "A tested device's performance grade."
+      ],
+      "trap_aliases": [
+        "waste category",
+        "refuse type",
+        "recycling class"
+      ],
+      "trap_responses": [
+        "A bin indicates the type of waste.",
+        "It identifies whether contents are recyclable.",
+        "It shows the disposal category for rubbish."
+      ]
+    },
+    {
+      "term": "package",
+      "question": "What does a package protect?",
+      "baseline_trap": "shipped contents",
+      "gold": "silicon die",
+      "dominant_prior": "retail shipping",
+      "gold_aliases": [
+        "IC die",
+        "chip die",
+        "bare die",
+        "silicon chip",
+        "semiconductor die",
+        "integrated circuit"
+      ],
+      "gold_responses": [
+        "It encloses the integrated-circuit die."
+      ],
+      "trap_aliases": [
+        "parcel contents",
+        "goods inside"
+      ],
+      "trap_responses": [
+        "A package protects the items being shipped.",
+        "It keeps its contents safe during transit.",
+        "It protects purchased goods from shipping damage."
+      ]
+    },
+    {
+      "term": "avalanche",
+      "question": "What can an avalanche generate?",
+      "baseline_trap": "snow debris",
+      "gold": "carrier multiplication",
+      "dominant_prior": "outdoor hazards",
+      "gold_aliases": [
+        "electron-hole pairs",
+        "avalanche current",
+        "breakdown current",
+        "photocurrent gain",
+        "avalanche gain",
+        "impact ionization",
+        "charge multiplication"
+      ],
+      "gold_responses": [
+        "It can generate carrier multiplication in a reverse-biased junction."
+      ],
+      "trap_aliases": [
+        "snow slide",
+        "debris flow"
+      ],
+      "trap_responses": [
+        "It can generate snow debris and dangerous downhill flow.",
+        "It can generate a destructive mass of moving snow.",
+        "It may generate powder clouds, debris, and burial hazards."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:14:52Z"
+}

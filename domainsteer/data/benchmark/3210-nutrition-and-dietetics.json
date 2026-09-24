@@ -1,0 +1,477 @@
+{
+  "cluster_id": "3210",
+  "cluster": "Nutrition and dietetics",
+  "domain": "Nutrition and dietetics",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "cybersecurity, everyday English, everyday memory, finance, geography, law, logistics, media, medicine, real estate, retail, sports, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After elimination, is the problem gone?",
+    "If processing stops, does it freeze?",
+    "What does fast mean?",
+    "What does fortification do?",
+    "What does fuel do?",
+    "What is a serving?",
+    "What is absorption?",
+    "What is an allowance?",
+    "What is balance?",
+    "What is compliance?",
+    "What is elimination?",
+    "What is maintenance?",
+    "What is processing?",
+    "What is recovery?",
+    "What is restriction?",
+    "What is screening?",
+    "What is tolerance?",
+    "absorption",
+    "allowance",
+    "balance",
+    "compliance",
+    "elimination",
+    "fast",
+    "fortification",
+    "fuel",
+    "maintenance",
+    "processing",
+    "recovery",
+    "restriction",
+    "screening",
+    "serving",
+    "tolerance"
+  ],
+  "items": [
+    {
+      "term": "prescription",
+      "question": "What does a prescription specify?",
+      "baseline_trap": "a medication regimen",
+      "gold": "therapeutic diet",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "diet order",
+        "prescribed meal plan",
+        "medical nutrition therapy",
+        "therapeutic feeding plan",
+        "meal plan",
+        "nutrient targets",
+        "feeding regimen"
+      ],
+      "gold_responses": [
+        "It outlines prescribed foods, textures, and meal patterns."
+      ],
+      "trap_aliases": [
+        "drug order",
+        "treatment plan",
+        "medication instructions"
+      ],
+      "trap_responses": [
+        "A prescription specifies the medication, dose, and directions.",
+        "It lists drugs a patient should take.",
+        "It authorizes dispensing a prescribed medicine."
+      ]
+    },
+    {
+      "term": "exchange",
+      "question": "What does an exchange equate?",
+      "baseline_trap": "currency values",
+      "gold": "food portions",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "meal equivalents",
+        "carbohydrate portions",
+        "macronutrient portions",
+        "food substitutions",
+        "serving sizes"
+      ],
+      "gold_responses": [
+        "It equates foods within the same meal-planning group."
+      ],
+      "trap_aliases": [
+        "exchange rate",
+        "conversion value",
+        "currency parity"
+      ],
+      "trap_responses": [
+        "An exchange equates the values of two currencies.",
+        "It specifies how much one currency buys.",
+        "It gives the rate for converting money."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does load predict?",
+      "baseline_trap": "cargo weight",
+      "gold": "glycemic response",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "glucose impact",
+        "postmeal glucose",
+        "carbohydrate impact",
+        "blood sugar rise",
+        "postprandial glycemia",
+        "blood glucose rise",
+        "glycemic impact",
+        "insulin response"
+      ],
+      "gold_responses": [
+        "It predicts the post-meal blood glucose response."
+      ],
+      "trap_aliases": [
+        "freight weight",
+        "shipment mass",
+        "cargo burden"
+      ],
+      "trap_responses": [
+        "It predicts the weight carried by a vehicle.",
+        "It predicts shipping capacity requirements.",
+        "It predicts transport handling and vehicle strain."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim communicate?",
+      "baseline_trap": "a legal demand",
+      "gold": "health benefit",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "nutrient content",
+        "risk reduction",
+        "dietary property",
+        "nutrition benefit",
+        "nutrient function",
+        "wellness message"
+      ],
+      "gold_responses": [
+        "It can communicate a food-related health benefit."
+      ],
+      "trap_aliases": [
+        "legal assertion",
+        "cause of action",
+        "right to relief"
+      ],
+      "trap_responses": [
+        "It can communicate a legal demand for relief.",
+        "It can state an asserted legal right.",
+        "It can allege facts supporting a lawsuit."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What does a panel evaluate?",
+      "baseline_trap": "legal evidence",
+      "gold": "sensory quality",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "flavor acceptability",
+        "texture liking",
+        "consumer acceptance",
+        "product preference",
+        "product acceptability",
+        "flavor profile",
+        "texture quality",
+        "appearance appeal"
+      ],
+      "gold_responses": [
+        "It measures sensory attributes of a food product."
+      ],
+      "trap_aliases": [
+        "admissible evidence",
+        "case facts",
+        "witness testimony"
+      ],
+      "trap_responses": [
+        "A panel evaluates the evidence presented in a case.",
+        "It assesses witness testimony and supporting documentation.",
+        "It determines whether the legal evidence is credible."
+      ]
+    },
+    {
+      "term": "assessment",
+      "question": "What can an assessment establish?",
+      "baseline_trap": "property value",
+      "gold": "nutritional status",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "nutrition status",
+        "nutrient adequacy",
+        "malnutrition risk",
+        "diet quality",
+        "dietary adequacy",
+        "nutrient intake",
+        "body composition"
+      ],
+      "gold_responses": [
+        "It can determine dietary adequacy and body composition concerns."
+      ],
+      "trap_aliases": [
+        "market value",
+        "fair value",
+        "property condition"
+      ],
+      "trap_responses": [
+        "An assessment can establish a property's market value.",
+        "It determines the fair value of real estate.",
+        "It can establish value based on location and condition."
+      ]
+    },
+    {
+      "term": "security",
+      "question": "What does security establish?",
+      "baseline_trap": "system protection",
+      "gold": "food access",
+      "dominant_prior": "cybersecurity",
+      "gold_aliases": [
+        "food availability",
+        "dietary adequacy",
+        "affordable food",
+        "reliable access",
+        "reliable food access",
+        "adequate food availability",
+        "stable food supply",
+        "nutritional adequacy"
+      ],
+      "gold_responses": [
+        "Reliable access to sufficient, safe, nutritious food."
+      ],
+      "trap_aliases": [
+        "network defense",
+        "access control",
+        "data protection"
+      ],
+      "trap_responses": [
+        "Protection of systems, networks, and information.",
+        "Controls that prevent unauthorized access.",
+        "Confidentiality, integrity, and availability of data."
+      ]
+    },
+    {
+      "term": "recall",
+      "question": "What can a recall reconstruct?",
+      "baseline_trap": "a remembered event",
+      "gold": "recent intake",
+      "dominant_prior": "everyday memory",
+      "gold_aliases": [
+        "dietary intake",
+        "food consumption",
+        "eating occasions",
+        "daily consumption",
+        "meal history",
+        "beverage intake"
+      ],
+      "gold_responses": [
+        "Recent foods and drinks consumed by the individual."
+      ],
+      "trap_aliases": [
+        "episodic memory",
+        "past experience",
+        "personal event"
+      ],
+      "trap_responses": [
+        "A remembered event from the past.",
+        "Details of a previous personal experience.",
+        "An earlier occurrence stored in memory."
+      ]
+    },
+    {
+      "term": "desert",
+      "question": "What can a desert lack?",
+      "baseline_trap": "rainfall or water",
+      "gold": "food access",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "healthy food access",
+        "food availability",
+        "retail food access",
+        "healthy foods",
+        "grocery access",
+        "affordable food"
+      ],
+      "gold_responses": [
+        "It can lack reliable access to affordable, nutritious food."
+      ],
+      "trap_aliases": [
+        "low rainfall",
+        "fresh water",
+        "precipitation"
+      ],
+      "trap_responses": [
+        "A desert can lack significant rainfall.",
+        "It may lack reliable sources of fresh water.",
+        "Deserts often lack regular precipitation."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What does a label declare?",
+      "baseline_trap": "a product brand or price",
+      "gold": "nutrient content",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "nutrition facts",
+        "energy content",
+        "allergen information",
+        "portion size",
+        "calorie content",
+        "serving information",
+        "allergen declaration"
+      ],
+      "gold_responses": [
+        "It declares calories, nutrients, and serving size."
+      ],
+      "trap_aliases": [
+        "brand name",
+        "retail price",
+        "product identity"
+      ],
+      "trap_responses": [
+        "It declares the product's brand name.",
+        "It may declare the item's retail price.",
+        "It identifies the product for shoppers."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index rank?",
+      "baseline_trap": "market securities",
+      "gold": "glycemic response",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "carbohydrate quality",
+        "glucose response",
+        "food ranking",
+        "glycemic impact",
+        "postprandial glucose",
+        "blood sugar rise"
+      ],
+      "gold_responses": [
+        "It ranks carbohydrate foods by glycemic response."
+      ],
+      "trap_aliases": [
+        "stock performance",
+        "investment returns"
+      ],
+      "trap_responses": [
+        "It ranks securities by market performance.",
+        "It ranks investments according to returns or value.",
+        "It ranks stocks representing a market segment."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What does a record capture?",
+      "baseline_trap": "a musical performance",
+      "gold": "food intake",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "dietary intake",
+        "meal pattern",
+        "nutrient intake",
+        "meal consumption",
+        "eating patterns"
+      ],
+      "gold_responses": [
+        "It captures a person's daily food intake."
+      ],
+      "trap_aliases": [
+        "recorded audio",
+        "live performance",
+        "sound recording"
+      ],
+      "trap_responses": [
+        "It captures a musical performance for playback.",
+        "It captures sound from a performance or session.",
+        "It captures audio onto a recording medium."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What does a score summarize?",
+      "baseline_trap": "athletic performance",
+      "gold": "diet quality",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "dietary quality",
+        "guideline adherence",
+        "dietary pattern",
+        "nutrient adequacy",
+        "dietary adherence",
+        "meal pattern",
+        "intake quality"
+      ],
+      "gold_responses": [
+        "It can summarize nutrient adequacy across the diet."
+      ],
+      "trap_aliases": [
+        "points total",
+        "game result",
+        "team standing"
+      ],
+      "trap_responses": [
+        "A score summarizes points earned in a contest.",
+        "It reflects how well an athlete or team performed.",
+        "It records the result of a game or match."
+      ]
+    },
+    {
+      "term": "environment",
+      "question": "What can an environment shape?",
+      "baseline_trap": "workplace behavior",
+      "gold": "food choices",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "dietary choices",
+        "eating behavior",
+        "food purchasing",
+        "diet quality",
+        "eating habits",
+        "dietary intake",
+        "meal selection",
+        "food access"
+      ],
+      "gold_responses": [
+        "It shapes food availability, affordability, and preferences."
+      ],
+      "trap_aliases": [
+        "employee conduct",
+        "social behavior",
+        "work habits"
+      ],
+      "trap_responses": [
+        "An environment can shape how people behave at work.",
+        "It influences employee attitudes, conduct, and productivity.",
+        "It can affect social interactions and daily work habits."
+      ]
+    },
+    {
+      "term": "transition",
+      "question": "What can a transition shift?",
+      "baseline_trap": "a travel connection",
+      "gold": "dietary patterns",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "eating habits",
+        "food consumption",
+        "diet composition",
+        "nutrition profile",
+        "food choices",
+        "meal timing",
+        "nutrient intake"
+      ],
+      "gold_responses": [
+        "It can shift food choices and usual eating habits."
+      ],
+      "trap_aliases": [
+        "transit route",
+        "passenger transfer",
+        "transport link"
+      ],
+      "trap_responses": [
+        "A transition can shift passengers to another travel connection.",
+        "It can shift travelers between transit routes.",
+        "A schedule transition may shift a transport connection."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:52:48Z"
+}

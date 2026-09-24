@@ -1,0 +1,465 @@
+{
+  "cluster_id": "4005",
+  "cluster": "Civil engineering",
+  "domain": "Civil engineering",
+  "division": "Engineering",
+  "dominant_prior": "automotive, education, everyday security, finance, hospitality, insurance, law, maritime, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a beam?",
+    "What is a column?",
+    "What is a footing?",
+    "What is a joint?",
+    "What is a load?",
+    "What is a membrane?",
+    "What is a seal?",
+    "What is a span?",
+    "What is capacity?",
+    "What is drainage?",
+    "What is fatigue?",
+    "What is settlement?",
+    "What is stress?",
+    "What is the grade?",
+    "beam",
+    "capacity",
+    "column",
+    "drainage",
+    "fatigue",
+    "footing",
+    "grade",
+    "joint",
+    "load",
+    "membrane",
+    "seal",
+    "settlement",
+    "span",
+    "stress",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "cover",
+      "question": "What does cover specify?",
+      "baseline_trap": "insurance protection",
+      "gold": "rebar depth",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "concrete cover",
+        "cover depth",
+        "reinforcement cover",
+        "clear cover",
+        "cover thickness"
+      ],
+      "gold_responses": [
+        "It specifies the distance from concrete surface to reinforcement."
+      ],
+      "trap_aliases": [
+        "policy coverage",
+        "insurance coverage",
+        "protection level"
+      ],
+      "trap_responses": [
+        "It specifies the protection provided by an insurance policy.",
+        "It defines which losses and risks are insured.",
+        "It states the scope of policy protection."
+      ]
+    },
+    {
+      "term": "course",
+      "question": "What does a course support?",
+      "baseline_trap": "student learning",
+      "gold": "pavement structure",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "road surface",
+        "asphalt layer",
+        "surface course",
+        "base course",
+        "pavement layer",
+        "road layer",
+        "structural layer"
+      ],
+      "gold_responses": [
+        "It strengthens the pavement structure beneath the surfacing."
+      ],
+      "trap_aliases": [
+        "academic class",
+        "study module",
+        "school subject"
+      ],
+      "trap_responses": [
+        "It supports student learning in a particular subject.",
+        "It helps students earn credits toward a degree.",
+        "It provides instruction and structured academic study."
+      ]
+    },
+    {
+      "term": "lift",
+      "question": "What does a lift represent?",
+      "baseline_trap": "an elevator ride",
+      "gold": "compacted layer",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "fill layer",
+        "lift thickness",
+        "compaction layer",
+        "embankment layer",
+        "placed course",
+        "compacted course"
+      ],
+      "gold_responses": [
+        "A single compacted layer of placed fill."
+      ],
+      "trap_aliases": [
+        "elevator trip",
+        "vertical ride",
+        "floor ascent"
+      ],
+      "trap_responses": [
+        "A ride between floors in an elevator.",
+        "Transport upward or downward by elevator.",
+        "An elevator journey to another floor."
+      ]
+    },
+    {
+      "term": "alignment",
+      "question": "What does alignment define?",
+      "baseline_trap": "text placement",
+      "gold": "route geometry",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "road alignment",
+        "highway alignment",
+        "roadway geometry",
+        "horizontal alignment",
+        "vertical alignment",
+        "route centerline"
+      ],
+      "gold_responses": [
+        "The planned horizontal and vertical geometry of a route."
+      ],
+      "trap_aliases": [
+        "text positioning",
+        "typographic layout",
+        "copy alignment"
+      ],
+      "trap_responses": [
+        "The placement of text on a page.",
+        "How text lines are positioned relative to margins.",
+        "The justification or orientation of written content."
+      ]
+    },
+    {
+      "term": "tender",
+      "question": "What does a tender establish?",
+      "baseline_trap": "valid payment",
+      "gold": "bid terms",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "bid price",
+        "contract offer",
+        "procurement bid",
+        "procurement conditions",
+        "bid requirements",
+        "contract conditions",
+        "tender specifications"
+      ],
+      "gold_responses": [
+        "It establishes bid conditions, scope, and submission requirements."
+      ],
+      "trap_aliases": [
+        "legal tender",
+        "lawful currency",
+        "payment validity"
+      ],
+      "trap_responses": [
+        "It establishes currency acceptable for settling debts.",
+        "It establishes what payment must legally be accepted.",
+        "It makes the currency valid for payment of obligations."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What does a bond establish?",
+      "baseline_trap": "a debt obligation",
+      "gold": "rebar adhesion",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "steel-concrete bond",
+        "reinforcement grip",
+        "bar anchorage",
+        "reinforcement adhesion",
+        "concrete grip",
+        "steel anchorage",
+        "stress transfer"
+      ],
+      "gold_responses": [
+        "It establishes adhesion between reinforcing steel and concrete."
+      ],
+      "trap_aliases": [
+        "debt security",
+        "fixed-income instrument",
+        "issuer liability"
+      ],
+      "trap_responses": [
+        "It establishes a debt obligation owed by the issuer.",
+        "It represents borrowing that pays interest to investors.",
+        "It creates a contractual promise to repay principal and interest."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does a charge specify?",
+      "baseline_trap": "a billed fee",
+      "gold": "explosive mass",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "charge weight",
+        "blast quantity",
+        "explosive load",
+        "explosive quantity",
+        "blast mass",
+        "TNT equivalent"
+      ],
+      "gold_responses": [
+        "It specifies the mass of explosive material."
+      ],
+      "trap_aliases": [
+        "service fee",
+        "purchase price",
+        "billing amount"
+      ],
+      "trap_responses": [
+        "It specifies the fee billed to a customer.",
+        "It states the amount due for a purchase.",
+        "It gives the price for a service."
+      ]
+    },
+    {
+      "term": "deck",
+      "question": "What does a deck carry?",
+      "baseline_trap": "ship cargo",
+      "gold": "traffic loads",
+      "dominant_prior": "maritime",
+      "gold_aliases": [
+        "vehicle loads",
+        "bridge traffic",
+        "roadway traffic",
+        "vehicular loads",
+        "live loading",
+        "bridge loads"
+      ],
+      "gold_responses": [
+        "It carries roadway loads between supports."
+      ],
+      "trap_aliases": [
+        "freight loads",
+        "deck cargo"
+      ],
+      "trap_responses": [
+        "It carries cargo and equipment on a vessel.",
+        "It supports freight stored aboard the ship.",
+        "It holds passengers and cargo above the hull."
+      ]
+    },
+    {
+      "term": "batter",
+      "question": "What is a batter?",
+      "baseline_trap": "baseball hitter",
+      "gold": "slope inclination",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "sloping face",
+        "wall slope",
+        "cut slope",
+        "face slope",
+        "side slope",
+        "inclined face"
+      ],
+      "gold_responses": [
+        "The sloping face of an excavation, embankment, or wall."
+      ],
+      "trap_aliases": [
+        "baseball player",
+        "batter at plate",
+        "batting player"
+      ],
+      "trap_responses": [
+        "A player who hits the ball in baseball.",
+        "The offensive player currently facing the pitcher.",
+        "A hitter taking a turn at bat."
+      ]
+    },
+    {
+      "term": "camber",
+      "question": "What does camber compensate for?",
+      "baseline_trap": "tire wear",
+      "gold": "dead-load deflection",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "gravity sag",
+        "anticipated deflection",
+        "structural sag",
+        "anticipated sag",
+        "long-term deflection",
+        "elastic deflection",
+        "initial upward curvature"
+      ],
+      "gold_responses": [
+        "It offsets anticipated sag after the structure is loaded."
+      ],
+      "trap_aliases": [
+        "wheel tilt",
+        "alignment angle",
+        "tire angle"
+      ],
+      "trap_responses": [
+        "It compensates for uneven tire wear.",
+        "It helps maintain tire contact while cornering.",
+        "It offsets effects of road crown and suspension loading."
+      ]
+    },
+    {
+      "term": "key",
+      "question": "What does a key prevent?",
+      "baseline_trap": "unauthorized entry",
+      "gold": "sliding movement",
+      "dominant_prior": "everyday security",
+      "gold_aliases": [
+        "shear slip",
+        "interface sliding",
+        "lateral slip",
+        "joint displacement",
+        "shear movement"
+      ],
+      "gold_responses": [
+        "It restrains lateral movement at a construction joint."
+      ],
+      "trap_aliases": [
+        "unauthorized access",
+        "forced entry",
+        "unwanted intrusion"
+      ],
+      "trap_responses": [
+        "It prevents unauthorized entry.",
+        "A key keeps intruders out.",
+        "It stops someone from opening a locked door."
+      ]
+    },
+    {
+      "term": "coupon",
+      "question": "What can a coupon establish?",
+      "baseline_trap": "retail discount",
+      "gold": "welder qualification",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "weld qualification",
+        "welding approval",
+        "procedure qualification",
+        "welding qualification",
+        "welder certification",
+        "welding performance"
+      ],
+      "gold_responses": [
+        "It demonstrates acceptable welding performance for the specified process."
+      ],
+      "trap_aliases": [
+        "purchase discount",
+        "sale savings",
+        "price reduction"
+      ],
+      "trap_responses": [
+        "It establishes the discount on a purchase.",
+        "A coupon shows how much money a shopper saves.",
+        "It can establish a reduced sale price."
+      ]
+    },
+    {
+      "term": "ticket",
+      "question": "What does a ticket record?",
+      "baseline_trap": "event admission",
+      "gold": "concrete batch",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "batch proportions",
+        "mix data",
+        "delivery details",
+        "batch record",
+        "delivery ticket",
+        "mix ticket",
+        "pour documentation"
+      ],
+      "gold_responses": [
+        "It records the concrete mix, quantity, and delivery time."
+      ],
+      "trap_aliases": [
+        "entry pass",
+        "admission pass",
+        "event pass"
+      ],
+      "trap_responses": [
+        "It records admission to an event or venue.",
+        "It confirms the holder's entry entitlement.",
+        "It records the event, seat, and admission details."
+      ]
+    },
+    {
+      "term": "abutment",
+      "question": "What does an abutment support?",
+      "baseline_trap": "dental crown",
+      "gold": "bridge superstructure",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "deck end",
+        "span end",
+        "bridge deck",
+        "bridge end",
+        "deck support",
+        "span support",
+        "end support"
+      ],
+      "gold_responses": [
+        "It supports the bridge superstructure at the span end."
+      ],
+      "trap_aliases": [
+        "implant post",
+        "crown support",
+        "tooth support"
+      ],
+      "trap_responses": [
+        "It supports a dental crown on an implant.",
+        "It provides a base for the crown restoration.",
+        "It connects an implant fixture to the dental crown."
+      ]
+    },
+    {
+      "term": "bleeding",
+      "question": "What can bleeding leave at the surface?",
+      "baseline_trap": "blood",
+      "gold": "bleed water",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "surface water",
+        "water film",
+        "excess water",
+        "laitance",
+        "weak paste"
+      ],
+      "gold_responses": [
+        "It may leave a surface film of water."
+      ],
+      "trap_aliases": [
+        "blood stain",
+        "clotted blood"
+      ],
+      "trap_responses": [
+        "Bleeding can leave blood on the surface.",
+        "It may leave a visible blood stain.",
+        "Dried or clotted blood can remain on the skin."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:09:34Z"
+}

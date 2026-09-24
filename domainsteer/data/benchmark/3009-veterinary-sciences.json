@@ -1,0 +1,475 @@
+{
+  "cluster_id": "3009",
+  "cluster": "Veterinary sciences",
+  "domain": "Veterinary sciences",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "cargo transport, education, electronics, everyday English, farming equipment, finance, hospitality, manufacturing, retail, security, social media, sports, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a mask work?",
+    "What does a worm do?",
+    "What does positive mean?",
+    "What happens during incubation?",
+    "What happens in recovery?",
+    "What is a block?",
+    "What is a culture?",
+    "What is a murmur?",
+    "What is a reservoir?",
+    "What is a season?",
+    "What is a stool?",
+    "What is bloat?",
+    "What is colic?",
+    "What is paddling?",
+    "What is shock?",
+    "bloat",
+    "block",
+    "colic",
+    "culture",
+    "incubation",
+    "mask",
+    "murmur",
+    "paddling",
+    "positive",
+    "recovery",
+    "reservoir",
+    "season",
+    "shock",
+    "stool",
+    "worm"
+  ],
+  "items": [
+    {
+      "term": "clearance",
+      "question": "What can clearance measure?",
+      "baseline_trap": "inventory being sold off",
+      "gold": "glomerular filtration",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "renal function",
+        "kidney filtration",
+        "creatinine clearance",
+        "filtration rate",
+        "renal plasma flow",
+        "hepatic clearance",
+        "drug elimination"
+      ],
+      "gold_responses": [
+        "It can assess renal plasma flow."
+      ],
+      "trap_aliases": [
+        "clearance sale",
+        "markdown event",
+        "liquidation sale"
+      ],
+      "trap_responses": [
+        "It can measure how much inventory is being sold off.",
+        "It indicates discounted stock being cleared from shelves.",
+        "It tracks the reduction of surplus merchandise."
+      ]
+    },
+    {
+      "term": "margin",
+      "question": "What can a margin indicate?",
+      "baseline_trap": "profitability",
+      "gold": "tumor clearance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "complete excision",
+        "clean excision",
+        "resection completeness",
+        "residual tumor",
+        "surgical margin",
+        "resection margin",
+        "histologic margin",
+        "clean margin"
+      ],
+      "gold_responses": [
+        "It can indicate whether tumor excision was complete."
+      ],
+      "trap_aliases": [
+        "profit margin",
+        "gross margin",
+        "net margin"
+      ],
+      "trap_responses": [
+        "It indicates the profitability of sales.",
+        "It measures the difference between revenue and costs.",
+        "It shows how much profit remains after expenses."
+      ]
+    },
+    {
+      "term": "tap",
+      "question": "What can a tap yield?",
+      "baseline_trap": "a beer serving",
+      "gold": "peritoneal fluid",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "abdominal effusion",
+        "ascitic fluid",
+        "diagnostic fluid",
+        "cavity sample",
+        "peritoneal effusion",
+        "abdominal exudate",
+        "coelomic fluid"
+      ],
+      "gold_responses": [
+        "A tap can yield peritoneal fluid for laboratory analysis."
+      ],
+      "trap_aliases": [
+        "draught beer",
+        "pint of lager",
+        "ale serving"
+      ],
+      "trap_responses": [
+        "A tap can yield a serving of beer.",
+        "It pours draught beer into a glass.",
+        "You can get a pint from a tap."
+      ]
+    },
+    {
+      "term": "float",
+      "question": "What can a float reveal?",
+      "baseline_trap": "fuel level",
+      "gold": "parasite eggs",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "helminth ova",
+        "protozoal cysts",
+        "fecal parasites",
+        "parasitic stages",
+        "coccidial oocysts",
+        "Giardia cysts"
+      ],
+      "gold_responses": [
+        "It can recover protozoal cysts from a stool sample."
+      ],
+      "trap_aliases": [
+        "tank level",
+        "fuel quantity",
+        "diesel level"
+      ],
+      "trap_responses": [
+        "A float can reveal the fuel level.",
+        "It indicates how much fuel remains.",
+        "The float shows the diesel level in the tank."
+      ]
+    },
+    {
+      "term": "plate",
+      "question": "What can a plate establish?",
+      "baseline_trap": "vehicle identity",
+      "gold": "antimicrobial susceptibility",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "drug sensitivity",
+        "resistance pattern",
+        "susceptibility profile",
+        "isolate identity",
+        "antibiotic sensitivity",
+        "culture sensitivity"
+      ],
+      "gold_responses": [
+        "The plate can establish an antibiotic susceptibility profile."
+      ],
+      "trap_aliases": [
+        "vehicle identification",
+        "registration status",
+        "ownership details"
+      ],
+      "trap_responses": [
+        "A license plate can establish vehicle identity.",
+        "It can establish a vehicle's registration details.",
+        "The plate can establish the vehicle's registered owner."
+      ]
+    },
+    {
+      "term": "output",
+      "question": "What can output indicate?",
+      "baseline_trap": "production capacity",
+      "gold": "renal perfusion",
+      "dominant_prior": "manufacturing",
+      "gold_aliases": [
+        "kidney function",
+        "fluid balance",
+        "urine production",
+        "circulatory status",
+        "kidney perfusion",
+        "renal blood flow",
+        "renal circulation",
+        "renal function"
+      ],
+      "gold_responses": [
+        "Urine output can indicate renal perfusion."
+      ],
+      "trap_aliases": [
+        "production rate",
+        "plant capacity",
+        "manufacturing throughput"
+      ],
+      "trap_responses": [
+        "Output can indicate production capacity.",
+        "It may show a factory's manufacturing throughput.",
+        "Higher output can indicate greater plant capacity."
+      ]
+    },
+    {
+      "term": "ring",
+      "question": "What can a ring indicate?",
+      "baseline_trap": "marital commitment",
+      "gold": "dermatophytosis",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "ringworm infection",
+        "dermatophyte lesion",
+        "fungal dermatitis",
+        "cutaneous mycosis",
+        "ringworm",
+        "dermatophyte infection",
+        "tinea",
+        "dermatophytic disease"
+      ],
+      "gold_responses": [
+        "It can indicate dermatophytosis caused by a dermatophyte infection."
+      ],
+      "trap_aliases": [
+        "engagement",
+        "wedding band",
+        "spousal bond"
+      ],
+      "trap_responses": [
+        "It can indicate marital commitment or engagement.",
+        "It may symbolize a marriage or lasting relationship.",
+        "It often represents a wedding or romantic bond."
+      ]
+    },
+    {
+      "term": "grade",
+      "question": "What can a grade indicate?",
+      "baseline_trap": "academic performance",
+      "gold": "tumor aggressiveness",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "malignancy level",
+        "histologic severity",
+        "neoplastic grade",
+        "prognostic severity",
+        "histologic malignancy",
+        "neoplastic differentiation",
+        "biologic behavior"
+      ],
+      "gold_responses": [
+        "It can reflect malignant potential and likely prognosis."
+      ],
+      "trap_aliases": [
+        "mark",
+        "test score",
+        "letter grade"
+      ],
+      "trap_responses": [
+        "It indicates a student's academic performance.",
+        "It can show how well someone performed on an assessment.",
+        "It may represent a score or letter evaluation."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "guests",
+      "gold": "parasite development",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "parasite survival",
+        "pathogen replication",
+        "infective stages",
+        "larval development",
+        "microbial colonization"
+      ],
+      "gold_responses": [
+        "A host can support parasite development and reproduction."
+      ],
+      "trap_aliases": [
+        "visiting guests",
+        "overnight visitors",
+        "event attendees"
+      ],
+      "trap_responses": [
+        "A host can support guests during their stay.",
+        "Hosts can accommodate overnight visitors.",
+        "A host supports attendees at an event."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load quantify?",
+      "baseline_trap": "cargo weight",
+      "gold": "parasite burden",
+      "dominant_prior": "cargo transport",
+      "gold_aliases": [
+        "helminth burden",
+        "infection intensity",
+        "pathogen quantity",
+        "parasitic burden",
+        "helminth count",
+        "worm burden",
+        "ectoparasite density"
+      ],
+      "gold_responses": [
+        "It measures the number of parasites carried."
+      ],
+      "trap_aliases": [
+        "freight mass",
+        "shipment weight"
+      ],
+      "trap_responses": [
+        "A load quantifies the weight of cargo.",
+        "It measures the mass carried by a vehicle.",
+        "Load describes the amount of freight transported."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score indicate?",
+      "baseline_trap": "game result",
+      "gold": "body condition",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "nutritional status",
+        "fat reserves",
+        "adiposity",
+        "pain severity",
+        "lameness grade",
+        "neurologic status",
+        "body fatness"
+      ],
+      "gold_responses": [
+        "It can reflect pain severity during clinical assessment."
+      ],
+      "trap_aliases": [
+        "match outcome",
+        "points total",
+        "team standing"
+      ],
+      "trap_responses": [
+        "A score can indicate who won the game.",
+        "It shows how many points a team earned.",
+        "It can reflect a player's or team's performance."
+      ]
+    },
+    {
+      "term": "drill",
+      "question": "What can a drill create?",
+      "baseline_trap": "seed furrow",
+      "gold": "bone channel",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "pilot hole",
+        "osseous tunnel",
+        "fixation hole",
+        "cortical opening",
+        "medullary channel"
+      ],
+      "gold_responses": [
+        "It may create a passage for a bone pin."
+      ],
+      "trap_aliases": [
+        "planting hole",
+        "soil opening",
+        "seed trench"
+      ],
+      "trap_responses": [
+        "A drill can create a hole for planting seeds.",
+        "It can make an opening in soil.",
+        "It may form a trench for seed placement."
+      ]
+    },
+    {
+      "term": "circuit",
+      "question": "What can a circuit deliver?",
+      "baseline_trap": "electrical power",
+      "gold": "anesthetic gases",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "fresh gas",
+        "inhalant anesthetic",
+        "oxygen mixture",
+        "oxygen",
+        "volatile anesthetic",
+        "positive-pressure breaths"
+      ],
+      "gold_responses": [
+        "It can provide controlled ventilation during general anesthesia."
+      ],
+      "trap_aliases": [
+        "electric current",
+        "voltage",
+        "electrical energy"
+      ],
+      "trap_responses": [
+        "A circuit can deliver electrical power to a device.",
+        "It delivers current through connected components.",
+        "The circuit supplies voltage to the load."
+      ]
+    },
+    {
+      "term": "screen",
+      "question": "What can a screen detect?",
+      "baseline_trap": "prohibited items",
+      "gold": "disease presence",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "infection status",
+        "occult disease",
+        "affected animals",
+        "infectious agents",
+        "parasite infection",
+        "disease antibodies",
+        "subclinical disease"
+      ],
+      "gold_responses": [
+        "A screen can detect evidence of infectious disease."
+      ],
+      "trap_aliases": [
+        "weapons",
+        "contraband",
+        "prohibited objects"
+      ],
+      "trap_responses": [
+        "A security screen can detect prohibited items.",
+        "It can detect weapons hidden on a person.",
+        "The screen identifies contraband in baggage."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What can a profile identify?",
+      "baseline_trap": "account owner",
+      "gold": "bacterial identity",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "isolate identity",
+        "strain identity",
+        "pathogen identity",
+        "bacterial species",
+        "microbial isolate",
+        "pathogen strain",
+        "resistance phenotype"
+      ],
+      "gold_responses": [
+        "The profile may identify the bacterial isolate."
+      ],
+      "trap_aliases": [
+        "account holder",
+        "user identity",
+        "username"
+      ],
+      "trap_responses": [
+        "A profile can identify the account owner.",
+        "It identifies a user's name and online identity.",
+        "A profile may identify who manages the account."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:37:25Z"
+}

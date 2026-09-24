@@ -1,0 +1,472 @@
+{
+  "cluster_id": "3213",
+  "cluster": "Paediatrics",
+  "domain": "Paediatrics",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "finance, government, hospitality, insurance, law, media, networking, ophthalmology, physics, programming, retail, sports, technology",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How do you get access?",
+    "What does stool tell you?",
+    "What does the culture show?",
+    "What does the monitor show?",
+    "What does the screen look for?",
+    "What does weight tell you?",
+    "What is a block?",
+    "What is a milestone?",
+    "What is a percentile?",
+    "What is a positive result?",
+    "What is a reflex?",
+    "What is a time-out?",
+    "What is attachment?",
+    "What is regression?",
+    "What is shock?",
+    "access",
+    "attachment",
+    "block",
+    "culture",
+    "milestone",
+    "monitor",
+    "percentile",
+    "positive result",
+    "reflex",
+    "regression",
+    "screen",
+    "shock",
+    "stool",
+    "time-out",
+    "weight"
+  ],
+  "items": [
+    {
+      "term": "term",
+      "question": "What can term establish?",
+      "baseline_trap": "a contractual condition",
+      "gold": "gestational maturity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "term gestation",
+        "birth maturity",
+        "gestational age",
+        "maturity at birth",
+        "fetal maturity"
+      ],
+      "gold_responses": [
+        "It establishes whether birth was preterm, term, or post-term."
+      ],
+      "trap_aliases": [
+        "contract clause",
+        "legal stipulation",
+        "binding provision"
+      ],
+      "trap_responses": [
+        "A term establishes a contractual condition.",
+        "It establishes a binding obligation between parties.",
+        "It defines a specific condition within an agreement."
+      ]
+    },
+    {
+      "term": "boarding",
+      "question": "What does boarding delay?",
+      "baseline_trap": "travel departure",
+      "gold": "inpatient transfer",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "ward admission",
+        "bed placement",
+        "hospital transfer",
+        "admission process",
+        "ward transfer",
+        "bed assignment",
+        "hospital admission",
+        "inpatient placement"
+      ],
+      "gold_responses": [
+        "It delays transfer once an inpatient bed is needed."
+      ],
+      "trap_aliases": [
+        "journey departure",
+        "scheduled departure",
+        "travel start"
+      ],
+      "trap_responses": [
+        "Boarding delays travel departure.",
+        "It can delay passengers leaving for their journey.",
+        "It postpones departure until travellers have boarded."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What does placement determine?",
+      "baseline_trap": "advertising visibility",
+      "gold": "care setting",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "foster care",
+        "home placement",
+        "living arrangement",
+        "level of care",
+        "ward allocation",
+        "care location",
+        "discharge destination"
+      ],
+      "gold_responses": [
+        "It determines the most appropriate care setting."
+      ],
+      "trap_aliases": [
+        "ad exposure",
+        "brand visibility",
+        "campaign reach"
+      ],
+      "trap_responses": [
+        "It determines how visible an advertisement will be.",
+        "It affects where the advertisement appears.",
+        "It influences campaign reach and audience attention."
+      ]
+    },
+    {
+      "term": "reduction",
+      "question": "What does a reduction restore?",
+      "baseline_trap": "a lower price",
+      "gold": "bone alignment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "fracture alignment",
+        "joint alignment",
+        "anatomic position",
+        "limb alignment",
+        "anatomical position",
+        "joint congruity"
+      ],
+      "gold_responses": [
+        "It restores joint congruity after a dislocation."
+      ],
+      "trap_aliases": [
+        "discounted price",
+        "sale price",
+        "lower cost"
+      ],
+      "trap_responses": [
+        "It restores a lower selling price.",
+        "It returns the item to a discounted price.",
+        "It makes the product more affordable."
+      ]
+    },
+    {
+      "term": "traction",
+      "question": "What does traction maintain?",
+      "baseline_trap": "market momentum",
+      "gold": "limb alignment",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "bone alignment",
+        "fracture position",
+        "joint position",
+        "anatomic alignment",
+        "fracture alignment",
+        "limb position",
+        "reduction maintenance"
+      ],
+      "gold_responses": [
+        "It maintains alignment of a fractured limb."
+      ],
+      "trap_aliases": [
+        "price trend",
+        "upward momentum",
+        "market direction"
+      ],
+      "trap_responses": [
+        "It maintains upward market momentum.",
+        "It maintains the direction of a price trend.",
+        "It maintains investor interest in an asset."
+      ]
+    },
+    {
+      "term": "dropout",
+      "question": "What can dropout indicate?",
+      "baseline_trap": "a lost network connection",
+      "gold": "school disengagement",
+      "dominant_prior": "technology",
+      "gold_aliases": [
+        "school leaving",
+        "education withdrawal",
+        "attendance failure",
+        "academic disengagement",
+        "school absence",
+        "education disengagement",
+        "school refusal"
+      ],
+      "gold_responses": [
+        "It may indicate difficulties maintaining school attendance."
+      ],
+      "trap_aliases": [
+        "connection loss",
+        "packet loss",
+        "signal interruption"
+      ],
+      "trap_responses": [
+        "It can indicate a lost network connection.",
+        "It may indicate packet loss during transmission.",
+        "It can signal an interrupted wireless connection."
+      ]
+    },
+    {
+      "term": "census",
+      "question": "What does a census count?",
+      "baseline_trap": "a resident population",
+      "gold": "unit occupancy",
+      "dominant_prior": "government",
+      "gold_aliases": [
+        "patient count",
+        "ward occupancy",
+        "infant census",
+        "admission count",
+        "bed occupancy",
+        "ward count",
+        "daily census"
+      ],
+      "gold_responses": [
+        "It counts patients currently occupying the unit."
+      ],
+      "trap_aliases": [
+        "population count",
+        "resident tally",
+        "inhabitant count"
+      ],
+      "trap_responses": [
+        "It counts the people living in a defined area.",
+        "It enumerates a country's resident population.",
+        "It records population characteristics for government planning."
+      ]
+    },
+    {
+      "term": "assent",
+      "question": "What does assent establish?",
+      "baseline_trap": "contractual agreement",
+      "gold": "child agreement",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "minor agreement",
+        "youth agreement",
+        "pediatric assent",
+        "child participation",
+        "child permission",
+        "adolescent agreement",
+        "patient willingness"
+      ],
+      "gold_responses": [
+        "It confirms the adolescent understands and agrees with the plan."
+      ],
+      "trap_aliases": [
+        "mutual consent",
+        "meeting of minds",
+        "offer acceptance"
+      ],
+      "trap_responses": [
+        "It establishes agreement between parties to a contract.",
+        "It shows mutual consent to the contractual terms.",
+        "It confirms acceptance of an offer by another party."
+      ]
+    },
+    {
+      "term": "output",
+      "question": "What can output indicate?",
+      "baseline_trap": "a program result",
+      "gold": "urine production",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "urinary output",
+        "renal output",
+        "urine volume",
+        "hydration status",
+        "renal function",
+        "fluid balance",
+        "perfusion status"
+      ],
+      "gold_responses": [
+        "Urine output helps assess fluid balance."
+      ],
+      "trap_aliases": [
+        "console output",
+        "return value",
+        "printed result"
+      ],
+      "trap_responses": [
+        "Output can indicate a program's result.",
+        "It may show the result of a computation.",
+        "Output can reveal what a program produced."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What can a port permit?",
+      "baseline_trap": "network connection",
+      "gold": "instrument entry",
+      "dominant_prior": "networking",
+      "gold_aliases": [
+        "laparoscopic entry",
+        "trocar passage",
+        "operative access",
+        "laparoscopic access",
+        "camera insertion",
+        "abdominal entry",
+        "surgical access"
+      ],
+      "gold_responses": [
+        "The port allows access to the operative cavity."
+      ],
+      "trap_aliases": [
+        "TCP endpoint",
+        "network socket",
+        "communication channel"
+      ],
+      "trap_responses": [
+        "A port can permit a network connection.",
+        "It allows services to receive network traffic.",
+        "A port permits communication with a networked application."
+      ]
+    },
+    {
+      "term": "acuity",
+      "question": "What does acuity determine?",
+      "baseline_trap": "visual sharpness",
+      "gold": "triage urgency",
+      "dominant_prior": "ophthalmology",
+      "gold_aliases": [
+        "illness severity",
+        "care priority",
+        "urgency level",
+        "triage priority",
+        "review urgency",
+        "care urgency",
+        "assessment priority"
+      ],
+      "gold_responses": [
+        "It determines the appropriate urgency of treatment."
+      ],
+      "trap_aliases": [
+        "visual clarity",
+        "resolving power",
+        "sharp vision"
+      ],
+      "trap_responses": [
+        "It determines how clearly a person can see.",
+        "It measures the sharpness of vision.",
+        "It indicates the ability to distinguish fine detail."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What can a claim trigger?",
+      "baseline_trap": "an insurance payout",
+      "gold": "safeguarding inquiry",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "child-protection review",
+        "abuse assessment",
+        "safety investigation",
+        "safeguarding assessment",
+        "welfare investigation",
+        "risk assessment"
+      ],
+      "gold_responses": [
+        "It can trigger a safeguarding inquiry."
+      ],
+      "trap_aliases": [
+        "benefit payment",
+        "compensation settlement"
+      ],
+      "trap_responses": [
+        "It can trigger an insurance payout.",
+        "It may start the insurer's claims process.",
+        "It can lead to compensation after approval."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score establish?",
+      "baseline_trap": "a sports outcome",
+      "gold": "newborn status",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "Apgar rating",
+        "neonatal condition",
+        "transition status",
+        "resuscitation need",
+        "initial adaptation"
+      ],
+      "gold_responses": [
+        "It can establish a newborn's immediate condition after birth."
+      ],
+      "trap_aliases": [
+        "match result",
+        "final tally",
+        "game outcome"
+      ],
+      "trap_responses": [
+        "It can establish which team won the game.",
+        "It establishes the final result of a match.",
+        "It can determine the outcome of a sporting contest."
+      ]
+    },
+    {
+      "term": "trajectory",
+      "question": "What does a trajectory describe?",
+      "baseline_trap": "a projectile path",
+      "gold": "developmental progress",
+      "dominant_prior": "physics",
+      "gold_aliases": [
+        "skill progression",
+        "maturation pattern",
+        "growth course",
+        "growth pattern",
+        "developmental course",
+        "milestone progression",
+        "growth velocity"
+      ],
+      "gold_responses": [
+        "It outlines the child's pattern of growth and maturation."
+      ],
+      "trap_aliases": [
+        "flight path",
+        "motion path",
+        "projectile course"
+      ],
+      "trap_responses": [
+        "It describes the path followed by a moving object.",
+        "It shows the curved path of a projectile.",
+        "It represents an object's motion through space over time."
+      ]
+    },
+    {
+      "term": "disposition",
+      "question": "What can disposition determine?",
+      "baseline_trap": "a legal case outcome",
+      "gold": "care destination",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "admission decision",
+        "discharge plan",
+        "transfer destination",
+        "transfer location",
+        "follow-up setting"
+      ],
+      "gold_responses": [
+        "Where the child receives ongoing care."
+      ],
+      "trap_aliases": [
+        "case outcome",
+        "judgment",
+        "verdict"
+      ],
+      "trap_responses": [
+        "The final outcome of a legal case.",
+        "Whether the case is dismissed or proceeds.",
+        "The rights and obligations of the parties."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:57:39Z"
+}

@@ -1,0 +1,459 @@
+{
+  "cluster_id": "3001",
+  "cluster": "Agricultural biotechnology",
+  "domain": "Agricultural biotechnology",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "biometric identification, computing, cybersecurity, finance, hospitality, insurance, law, media, medicine, programming, retail, sports, sports officiating, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codon meaning",
+        "residue identity",
+        "protein sequence",
+        "translation product",
+        "polypeptide order",
+        "translated peptide",
+        "residue sequence"
+      ],
+      "gold_responses": [
+        "It specifies the amino-acid sequence translated from a coding region."
+      ],
+      "trap_aliases": [
+        "executable logic",
+        "software commands",
+        "source statements"
+      ],
+      "trap_responses": [
+        "It specifies the instructions a computer should execute.",
+        "It defines the program logic that tells a system what to do.",
+        "It contains commands that are interpreted or compiled into software behavior."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint establish?",
+      "baseline_trap": "personal identity",
+      "gold": "cultivar identity",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "varietal identity",
+        "clonal identity",
+        "taxon identity",
+        "transgenic status",
+        "varietal profile",
+        "marker profile",
+        "genotype signature",
+        "DNA profile"
+      ],
+      "gold_responses": [
+        "It can establish the identity of a cultivar from its characteristic marker pattern."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "person verification",
+        "biometric identity"
+      ],
+      "trap_responses": [
+        "It can establish a person's identity from unique ridge patterns.",
+        "It can verify whether an individual matches a stored biometric record.",
+        "It is commonly used to identify a person in forensic or access-control settings."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "guest accommodation",
+      "gold": "transgene expression",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "recombinant protein",
+        "heterologous protein",
+        "trait expression",
+        "protein production",
+        "recombinant expression",
+        "transgene activity",
+        "heterologous production",
+        "construct expression"
+      ],
+      "gold_responses": [
+        "It can support expression of an introduced transgene."
+      ],
+      "trap_aliases": [
+        "overnight lodging",
+        "guest stay",
+        "visitor accommodation"
+      ],
+      "trap_responses": [
+        "It can support guests by providing accommodation and services.",
+        "It can offer visitors a place to stay during an event or trip.",
+        "It can provide lodging, meals, or other hospitality for guests."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What can a payload encode?",
+      "baseline_trap": "malicious commands",
+      "gold": "engineered trait",
+      "dominant_prior": "cybersecurity",
+      "gold_aliases": [
+        "pest resistance",
+        "herbicide tolerance",
+        "stress tolerance",
+        "quality trait",
+        "trait cassette",
+        "functional transgene",
+        "inserted trait",
+        "engineered function"
+      ],
+      "gold_responses": [
+        "It can encode the engineered trait intended for delivery."
+      ],
+      "trap_aliases": [
+        "attack commands",
+        "malware code",
+        "exploit instructions"
+      ],
+      "trap_responses": [
+        "It can encode the commands delivered after a successful compromise.",
+        "It can contain the malicious actions a malware component performs.",
+        "It can carry exploit code intended to execute on a target system."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage specify?",
+      "baseline_trap": "insurance protection",
+      "gold": "sequencing depth",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "read depth",
+        "genome breadth",
+        "target completeness",
+        "sequence redundancy",
+        "genomic depth",
+        "base depth"
+      ],
+      "gold_responses": [
+        "It specifies the sequencing depth across the target genome or region."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk protection"
+      ],
+      "trap_responses": [
+        "It specifies the protection provided by an insurance policy.",
+        "It defines which losses, events, or costs an insurer will cover.",
+        "It indicates the scope and limits of insured benefits."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank preserve?",
+      "baseline_trap": "financial assets",
+      "gold": "germplasm diversity",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "genetic resources",
+        "viable germplasm",
+        "cryopreserved cells",
+        "clonal material",
+        "germplasm collection",
+        "seed repository",
+        "genetic repository",
+        "cryogenic collection"
+      ],
+      "gold_responses": [
+        "It can preserve accessions carrying useful alleles and traits."
+      ],
+      "trap_aliases": [
+        "financial capital",
+        "cash deposits",
+        "investment assets"
+      ],
+      "trap_responses": [
+        "It can preserve financial assets through accounts and investment services.",
+        "It can hold deposits and safeguard customers' money.",
+        "It can maintain funds, securities, and other financial holdings."
+      ]
+    },
+    {
+      "term": "call",
+      "question": "What can a call assign?",
+      "baseline_trap": "a foul penalty",
+      "gold": "allele identity",
+      "dominant_prior": "sports officiating",
+      "gold_aliases": [
+        "genotype class",
+        "variant state",
+        "marker genotype",
+        "haplotype state",
+        "genotype assignment",
+        "variant assignment",
+        "SNP genotype",
+        "allelic state"
+      ],
+      "gold_responses": [
+        "It can assign a homozygous or heterozygous genotype from variant data."
+      ],
+      "trap_aliases": [
+        "foul ruling",
+        "penalty decision",
+        "official ruling"
+      ],
+      "trap_responses": [
+        "It can assign a foul penalty after an infraction.",
+        "It can determine whether a player or team committed a violation.",
+        "It can award a penalty or other sanction during a game."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag identify?",
+      "baseline_trap": "a product price",
+      "gold": "protein target",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "target protein",
+        "fusion protein",
+        "expressed protein",
+        "pathogen protein",
+        "affinity label",
+        "epitope label",
+        "reporter marker",
+        "fusion label"
+      ],
+      "gold_responses": [
+        "It can identify a target protein for detection or purification."
+      ],
+      "trap_aliases": [
+        "price label",
+        "sale sticker",
+        "merchandise label"
+      ],
+      "trap_responses": [
+        "It can identify a product's price in a shop.",
+        "It can show sale information or a barcode for merchandise.",
+        "It can label an item with its retail price and product details."
+      ]
+    },
+    {
+      "term": "cassette",
+      "question": "What can a cassette carry?",
+      "baseline_trap": "a recorded audio program",
+      "gold": "transgene",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "DNA insert",
+        "expression unit",
+        "target sequence",
+        "trait cassette",
+        "expression construct",
+        "gene module",
+        "trait construct"
+      ],
+      "gold_responses": [
+        "It can contain the introduced gene and its regulatory sequences."
+      ],
+      "trap_aliases": [
+        "audio recording",
+        "tape program",
+        "recorded material"
+      ],
+      "trap_responses": [
+        "It can carry a recorded audio program on magnetic tape.",
+        "It can contain music, speech, or other sound recordings.",
+        "It can hold an audio recording for playback in a cassette player."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft describe?",
+      "baseline_trap": "a preliminary document",
+      "gold": "genome sequence",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "genome assembly",
+        "genomic scaffold",
+        "sequence contigs",
+        "genome content",
+        "preliminary assembly",
+        "contig assembly",
+        "scaffold sequence"
+      ],
+      "gold_responses": [
+        "It can describe a preliminary genome sequence assembly."
+      ],
+      "trap_aliases": [
+        "rough document",
+        "working copy",
+        "preliminary manuscript"
+      ],
+      "trap_responses": [
+        "It can describe a preliminary version of a written document.",
+        "It can be a working copy that will be revised before completion.",
+        "It can contain an initial formulation of text for review and editing."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does a release permit?",
+      "baseline_trap": "public distribution",
+      "gold": "field cultivation",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "environmental deployment",
+        "commercial planting",
+        "deliberate release",
+        "open-field use",
+        "field authorization",
+        "cultivation approval",
+        "environmental authorization",
+        "planting permission"
+      ],
+      "gold_responses": [
+        "It permits field cultivation after the required biosafety assessment."
+      ],
+      "trap_aliases": [
+        "public disclosure",
+        "general distribution",
+        "information publication"
+      ],
+      "trap_responses": [
+        "It permits information or material to be distributed to the public.",
+        "It authorizes public disclosure of records or other content.",
+        "It allows a document, product, or statement to be made publicly available."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What can a run generate?",
+      "baseline_trap": "a score",
+      "gold": "sequence data",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "DNA reads",
+        "base calls",
+        "genomic data",
+        "diagnostic result",
+        "sequencing output",
+        "read dataset",
+        "base-call data",
+        "genomic reads"
+      ],
+      "gold_responses": [
+        "It can generate sequence data for the submitted samples."
+      ],
+      "trap_aliases": [
+        "game score",
+        "scoring play",
+        "point total"
+      ],
+      "trap_responses": [
+        "It can generate a score when a player completes a scoring play.",
+        "It can add points to a team's total in a game.",
+        "It can produce a run on the scoreboard in sports such as baseball or cricket."
+      ]
+    },
+    {
+      "term": "stack",
+      "question": "What can a stack combine?",
+      "baseline_trap": "software components",
+      "gold": "engineered traits",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "trait combination",
+        "insect resistance",
+        "herbicide tolerance",
+        "stress tolerance",
+        "trait pyramid",
+        "multigene event",
+        "combined traits",
+        "gene stacking"
+      ],
+      "gold_responses": [
+        "It can combine multiple engineered traits in one plant line."
+      ],
+      "trap_aliases": [
+        "software layers",
+        "component stack",
+        "technology stack"
+      ],
+      "trap_responses": [
+        "It can combine software components that work together in an application.",
+        "It can consist of the languages, frameworks, databases, and services used by a system.",
+        "It can integrate multiple layers of computing technology into one architecture."
+      ]
+    },
+    {
+      "term": "regeneration",
+      "question": "What can regeneration yield?",
+      "baseline_trap": "healed tissue",
+      "gold": "whole plant",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "plantlet",
+        "transgenic plant",
+        "clonal plant",
+        "plant recovery",
+        "whole plantlet",
+        "transformed plant",
+        "regenerated plantlet",
+        "complete plant"
+      ],
+      "gold_responses": [
+        "It can yield a whole plant from transformed cells or tissue."
+      ],
+      "trap_aliases": [
+        "tissue healing",
+        "wound repair",
+        "cell recovery"
+      ],
+      "trap_responses": [
+        "It can yield healed tissue after injury or disease.",
+        "It can restore damaged cells or tissues through natural repair processes.",
+        "It can produce replacement tissue as part of healing."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can stock represent?",
+      "baseline_trap": "company ownership",
+      "gold": "transgenic line",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "cloned lineage",
+        "engineered genotype",
+        "founder animal",
+        "germplasm",
+        "engineered line",
+        "transgenic genotype",
+        "event line",
+        "modified line"
+      ],
+      "gold_responses": [
+        "It can represent a transgenic line maintained for propagation or testing."
+      ],
+      "trap_aliases": [
+        "equity ownership",
+        "company shares",
+        "corporate equity"
+      ],
+      "trap_responses": [
+        "It can represent ownership in a company through shares.",
+        "It can denote equity that may rise or fall in market value.",
+        "It can represent an investor's proportional claim on a corporation."
+      ]
+    }
+  ],
+  "time": "2026-09-08T18:42:17Z"
+}

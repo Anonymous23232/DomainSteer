@@ -1,0 +1,464 @@
+{
+  "cluster_id": "3201",
+  "cluster": "Cardiovascular medicine and haematology",
+  "domain": "Cardiovascular medicine and haematology",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "charity, civil engineering, employment, firearms, home improvement, hospitality, law, marketing, mathematics, media, security, sports, traffic, workplace",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What counts as a run?",
+    "What does a bank keep?",
+    "What does a filter do?",
+    "What does a valve control?",
+    "What does demand reflect?",
+    "What does load describe?",
+    "What does pressure measure?",
+    "What does resistance determine?",
+    "What does the output measure?",
+    "What does the rate measure?",
+    "What does the type tell you?",
+    "What is a block?",
+    "What is a murmur?",
+    "What is a shock?",
+    "What is an echo?",
+    "bank",
+    "block",
+    "demand",
+    "echo",
+    "filter",
+    "load",
+    "murmur",
+    "output",
+    "pressure",
+    "rate",
+    "resistance",
+    "run",
+    "shock",
+    "type",
+    "valve"
+  ],
+  "items": [
+    {
+      "term": "match",
+      "question": "What can a match establish?",
+      "baseline_trap": "the winner of a sports contest",
+      "gold": "transfusion compatibility",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "blood compatibility",
+        "donor-recipient compatibility",
+        "red-cell compatibility",
+        "ABO compatibility",
+        "crossmatch result",
+        "donor compatibility",
+        "serologic compatibility"
+      ],
+      "gold_responses": [
+        "It can establish transfusion compatibility between donor and recipient."
+      ],
+      "trap_aliases": [
+        "contest winner",
+        "game result",
+        "winning team"
+      ],
+      "trap_responses": [
+        "It can establish the winner of a sports contest.",
+        "It can show which team won the game.",
+        "It can determine the winning competitor."
+      ]
+    },
+    {
+      "term": "film",
+      "question": "What can a film reveal?",
+      "baseline_trap": "a movie's plot",
+      "gold": "cell morphology",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "blood-cell morphology",
+        "red-cell morphology",
+        "leukocyte morphology",
+        "blood smear",
+        "peripheral smear"
+      ],
+      "gold_responses": [
+        "It can demonstrate platelet abnormalities and cell morphology."
+      ],
+      "trap_aliases": [
+        "movie plot",
+        "film narrative",
+        "storyline"
+      ],
+      "trap_responses": [
+        "It can reveal a movie's plot.",
+        "It can show the story and characters.",
+        "It can disclose the film's narrative."
+      ]
+    },
+    {
+      "term": "shift",
+      "question": "What can a shift indicate?",
+      "baseline_trap": "a change in work schedule",
+      "gold": "bandemia",
+      "dominant_prior": "workplace",
+      "gold_aliases": [
+        "immature neutrophils",
+        "left-shifted neutrophils",
+        "neutrophil immaturity",
+        "left shift",
+        "acute infection",
+        "marrow response"
+      ],
+      "gold_responses": [
+        "A neutrophilic left shift may reflect severe infection."
+      ],
+      "trap_aliases": [
+        "schedule change",
+        "work rotation",
+        "new hours"
+      ],
+      "trap_responses": [
+        "A shift can indicate a change in work schedule.",
+        "It may mean moving to a different work period.",
+        "It can indicate altered staffing hours or rotation."
+      ]
+    },
+    {
+      "term": "segment",
+      "question": "What can a segment indicate?",
+      "baseline_trap": "a customer group",
+      "gold": "myocardial ischemia",
+      "dominant_prior": "marketing",
+      "gold_aliases": [
+        "ST deviation",
+        "ischemic change",
+        "repolarization abnormality",
+        "ST depression",
+        "ST elevation",
+        "acute infarction"
+      ],
+      "gold_responses": [
+        "An ST-segment change can indicate myocardial ischemia."
+      ],
+      "trap_aliases": [
+        "market segment",
+        "customer category",
+        "target audience"
+      ],
+      "trap_responses": [
+        "A segment can indicate a distinct customer group.",
+        "It may identify a target audience within a market.",
+        "It can indicate a category of consumers with similar needs."
+      ]
+    },
+    {
+      "term": "bridge",
+      "question": "What does a bridge maintain?",
+      "baseline_trap": "a connection between two places",
+      "gold": "anticoagulation",
+      "dominant_prior": "civil engineering",
+      "gold_aliases": [
+        "antithrombotic cover",
+        "perioperative anticoagulation",
+        "thromboembolism prevention",
+        "therapeutic anticoagulation",
+        "anticoagulant coverage",
+        "continuous anticoagulation",
+        "thromboembolic protection"
+      ],
+      "gold_responses": [
+        "It maintains adequate anticoagulant effect around a procedure."
+      ],
+      "trap_aliases": [
+        "structural connection",
+        "transport link",
+        "roadway continuity"
+      ],
+      "trap_responses": [
+        "It maintains a connection between two places.",
+        "It maintains passage across an obstacle.",
+        "It maintains transport access between separated areas."
+      ]
+    },
+    {
+      "term": "port",
+      "question": "What can a port provide?",
+      "baseline_trap": "access for ships and travelers",
+      "gold": "venous access",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "infusion access",
+        "central access",
+        "implanted access",
+        "central venous access",
+        "vascular access",
+        "long-term access"
+      ],
+      "gold_responses": [
+        "It can provide access for repeated intravenous therapy."
+      ],
+      "trap_aliases": [
+        "harbor access",
+        "ship berthing",
+        "traveler services"
+      ],
+      "trap_responses": [
+        "It can provide access for ships and travelers.",
+        "It can provide berthing for vessels.",
+        "It can provide facilities for passengers and cargo."
+      ]
+    },
+    {
+      "term": "screen",
+      "question": "What can a screen uncover?",
+      "baseline_trap": "an applicant's background concerns",
+      "gold": "red-cell antibodies",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "alloantibodies",
+        "irregular antibodies",
+        "transfusion antibodies",
+        "unexpected antibodies",
+        "red-cell alloantibodies"
+      ],
+      "gold_responses": [
+        "It can reveal irregular red-cell antibodies in plasma."
+      ],
+      "trap_aliases": [
+        "criminal history",
+        "reference concerns",
+        "credential discrepancies"
+      ],
+      "trap_responses": [
+        "It can uncover an applicant's background concerns.",
+        "It may reveal criminal or employment-history issues.",
+        "It can identify problematic references or qualifications."
+      ]
+    },
+    {
+      "term": "panel",
+      "question": "What can a panel establish?",
+      "baseline_trap": "a legal verdict",
+      "gold": "coagulation status",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "coagulation profile",
+        "haemostatic status",
+        "clotting abnormality",
+        "clotting profile",
+        "bleeding risk",
+        "anticoagulant effect"
+      ],
+      "gold_responses": [
+        "It can establish the patient's coagulation status."
+      ],
+      "trap_aliases": [
+        "guilt",
+        "liability",
+        "culpability"
+      ],
+      "trap_responses": [
+        "A jury panel can establish guilt.",
+        "The panel may establish legal liability.",
+        "It can determine culpability under the law."
+      ]
+    },
+    {
+      "term": "capture",
+      "question": "What can capture confirm?",
+      "baseline_trap": "a recorded image or event",
+      "gold": "paced beat",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "ventricular capture",
+        "atrial capture",
+        "effective pacing",
+        "myocardial response",
+        "myocardial depolarization",
+        "ventricular activation",
+        "pacing efficacy"
+      ],
+      "gold_responses": [
+        "It establishes that the pacemaker stimulus produced a beat."
+      ],
+      "trap_aliases": [
+        "photographic evidence",
+        "video footage",
+        "recorded event"
+      ],
+      "trap_responses": [
+        "It can confirm that an event was recorded.",
+        "Capture verifies that an image was successfully preserved.",
+        "It may confirm what happened during the recorded moment."
+      ]
+    },
+    {
+      "term": "donor",
+      "question": "What can a donor provide?",
+      "baseline_trap": "charitable funding",
+      "gold": "red cells",
+      "dominant_prior": "charity",
+      "gold_aliases": [
+        "platelet units",
+        "fresh plasma",
+        "blood component",
+        "compatible blood",
+        "whole blood",
+        "platelets",
+        "fresh frozen plasma",
+        "stem cells"
+      ],
+      "gold_responses": [
+        "A donor can provide compatible red blood cells."
+      ],
+      "trap_aliases": [
+        "financial support",
+        "a grant"
+      ],
+      "trap_responses": [
+        "A donor can provide money for a charitable cause.",
+        "They may offer financial support to an organization.",
+        "A donor can fund a project through a grant."
+      ]
+    },
+    {
+      "term": "trigger",
+      "question": "What can a trigger initiate?",
+      "baseline_trap": "a gunshot",
+      "gold": "assisted breath",
+      "dominant_prior": "firearms",
+      "gold_aliases": [
+        "ventilator breath",
+        "machine breath",
+        "inspiratory cycle",
+        "mechanical breath",
+        "inspiratory assist",
+        "supported breath"
+      ],
+      "gold_responses": [
+        "It can begin a mechanical ventilator breath."
+      ],
+      "trap_aliases": [
+        "weapon discharge",
+        "firearm firing",
+        "bullet shot"
+      ],
+      "trap_responses": [
+        "A trigger can initiate a gunshot.",
+        "It can fire a weapon.",
+        "It may discharge a firearm."
+      ]
+    },
+    {
+      "term": "congestion",
+      "question": "What can congestion indicate?",
+      "baseline_trap": "a traffic bottleneck",
+      "gold": "fluid overload",
+      "dominant_prior": "traffic",
+      "gold_aliases": [
+        "pulmonary edema",
+        "venous overload",
+        "heart failure",
+        "volume excess",
+        "elevated filling pressures"
+      ],
+      "gold_responses": [
+        "It suggests excess intravascular volume."
+      ],
+      "trap_aliases": [
+        "traffic jam",
+        "road blockage",
+        "traffic delay"
+      ],
+      "trap_responses": [
+        "Congestion can indicate a traffic bottleneck.",
+        "It may signal a road blockage.",
+        "It can indicate heavy traffic."
+      ]
+    },
+    {
+      "term": "remodeling",
+      "question": "What does remodeling alter?",
+      "baseline_trap": "a home's layout",
+      "gold": "ventricular geometry",
+      "dominant_prior": "home improvement",
+      "gold_aliases": [
+        "chamber structure",
+        "cardiac architecture",
+        "ventricular shape",
+        "myocardial structure",
+        "chamber shape",
+        "ventricular mass"
+      ],
+      "gold_responses": [
+        "It alters ventricular shape and the relationship between wall thickness and cavity size."
+      ],
+      "trap_aliases": [
+        "floor plan",
+        "room arrangement",
+        "interior layout"
+      ],
+      "trap_responses": [
+        "It alters a home's room arrangement and floor plan.",
+        "It changes the layout, appearance, or function of living spaces.",
+        "It modifies the home's structure, rooms, and interior design."
+      ]
+    },
+    {
+      "term": "fraction",
+      "question": "What does a fraction summarize?",
+      "baseline_trap": "a mathematical proportion",
+      "gold": "ventricular function",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "ejection fraction",
+        "systolic function",
+        "left ventricular function",
+        "ejection performance",
+        "contractile performance",
+        "ventricular output"
+      ],
+      "gold_responses": [
+        "It estimates how effectively the ventricle empties during systole."
+      ],
+      "trap_aliases": [
+        "ratio",
+        "quotient",
+        "part-to-whole"
+      ],
+      "trap_responses": [
+        "It summarizes a part of a whole.",
+        "It represents a numerical ratio between quantities.",
+        "It shows how many equal parts are being considered."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What does a gate define?",
+      "baseline_trap": "a controlled entry point",
+      "gold": "cell population",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "cell subset",
+        "event population",
+        "analysis region",
+        "leukocyte subset"
+      ],
+      "gold_responses": [
+        "A gate defines a selected cell population."
+      ],
+      "trap_aliases": [
+        "access point",
+        "entryway",
+        "secured doorway"
+      ],
+      "trap_responses": [
+        "A gate defines a controlled entry point.",
+        "It marks where authorized people may enter.",
+        "A gate establishes a barrier-controlled access location."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:38:59Z"
+}

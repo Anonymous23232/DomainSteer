@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4019",
+  "cluster": "Resources engineering and extractive metallurgy",
+  "domain": "Resources engineering and extractive metallurgy",
+  "division": "Engineering",
+  "dominant_prior": "anatomy, finance, food, household plumbing, hunting, internet, law, medicine, music, nursery furniture, recreation, retail, social etiquette, statistics, theater",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After the blast, is everything destroyed?",
+    "If development stops, does production stop?",
+    "What is a blast?",
+    "What is a charge?",
+    "What is a circuit?",
+    "What is a fracture?",
+    "What is a reserve?",
+    "What is a stockpile?",
+    "What is a vein?",
+    "What is development?",
+    "What is flotation?",
+    "What is grade?",
+    "What is matte?",
+    "What is overburden?",
+    "What is recovery?",
+    "What is settling?",
+    "What is smelting?",
+    "blast",
+    "charge",
+    "circuit",
+    "development",
+    "flotation",
+    "fracture",
+    "grade",
+    "matte",
+    "overburden",
+    "recovery",
+    "reserve",
+    "settling",
+    "smelting",
+    "stockpile",
+    "vein"
+  ],
+  "items": [
+    {
+      "term": "portal",
+      "question": "What does a portal provide access to?",
+      "baseline_trap": "online services",
+      "gold": "underground workings",
+      "dominant_prior": "internet",
+      "gold_aliases": [
+        "mine workings",
+        "adit entrance",
+        "tunnel access",
+        "underground entry",
+        "underground excavations",
+        "subsurface drifts",
+        "an underground mine"
+      ],
+      "gold_responses": [
+        "It provides access to underground mine workings."
+      ],
+      "trap_aliases": [
+        "websites",
+        "digital platforms",
+        "online resources"
+      ],
+      "trap_responses": [
+        "It provides access to online services.",
+        "A portal gives users access to web resources.",
+        "It provides a gateway to digital information."
+      ]
+    },
+    {
+      "term": "trap",
+      "question": "What can a trap retain?",
+      "baseline_trap": "an animal",
+      "gold": "hydrocarbons",
+      "dominant_prior": "hunting",
+      "gold_aliases": [
+        "petroleum",
+        "oil accumulation",
+        "gas accumulation",
+        "trapped fluids",
+        "oil and gas",
+        "reservoir fluids",
+        "hydrocarbon accumulations"
+      ],
+      "gold_responses": [
+        "It retains migrated hydrocarbons beneath an impermeable seal."
+      ],
+      "trap_aliases": [
+        "game animals",
+        "wildlife",
+        "prey"
+      ],
+      "trap_responses": [
+        "A trap can retain an animal.",
+        "It holds captured prey.",
+        "It can keep an animal from escaping."
+      ]
+    },
+    {
+      "term": "pool",
+      "question": "What does a pool store?",
+      "baseline_trap": "water",
+      "gold": "spent fuel",
+      "dominant_prior": "recreation",
+      "gold_aliases": [
+        "used fuel",
+        "irradiated fuel",
+        "fuel assemblies",
+        "nuclear fuel",
+        "discharged fuel"
+      ],
+      "gold_responses": [
+        "It stores discharged nuclear fuel."
+      ],
+      "trap_aliases": [
+        "swimming water",
+        "pool water",
+        "chlorinated water"
+      ],
+      "trap_responses": [
+        "It stores water for swimming.",
+        "A pool holds chlorinated water.",
+        "It contains water for recreation."
+      ]
+    },
+    {
+      "term": "tap",
+      "question": "What does a tap release?",
+      "baseline_trap": "running water",
+      "gold": "molten metal",
+      "dominant_prior": "household plumbing",
+      "gold_aliases": [
+        "liquid metal",
+        "molten slag",
+        "furnace melt",
+        "furnace contents",
+        "liquid iron",
+        "molten copper",
+        "furnace matte",
+        "liquid steel"
+      ],
+      "gold_responses": [
+        "It releases molten metal from the furnace."
+      ],
+      "trap_aliases": [
+        "tap water",
+        "household water"
+      ],
+      "trap_responses": [
+        "It releases running water.",
+        "A tap dispenses household water.",
+        "It delivers water from the plumbing."
+      ]
+    },
+    {
+      "term": "bundle",
+      "question": "What does a bundle contain?",
+      "baseline_trap": "retail products",
+      "gold": "fuel rods",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "fuel elements",
+        "reactor fuel",
+        "nuclear fuel",
+        "fuel pins",
+        "rod cluster",
+        "uranium rods",
+        "reactor pins"
+      ],
+      "gold_responses": [
+        "It contains an array of fuel rods."
+      ],
+      "trap_aliases": [
+        "merchandise",
+        "store items",
+        "gift items"
+      ],
+      "trap_responses": [
+        "A bundle contains several retail products.",
+        "It includes related items sold together.",
+        "It contains packaged merchandise for sale."
+      ]
+    },
+    {
+      "term": "range",
+      "question": "What can a range establish?",
+      "baseline_trap": "statistical spread",
+      "gold": "correlation distance",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "spatial continuity",
+        "continuity length",
+        "variogram distance",
+        "correlation length",
+        "variogram range",
+        "continuity distance",
+        "autocorrelation length"
+      ],
+      "gold_responses": [
+        "It establishes the distance beyond which samples are uncorrelated."
+      ],
+      "trap_aliases": [
+        "standard deviation",
+        "variance",
+        "interquartile range"
+      ],
+      "trap_responses": [
+        "It can establish the spread of observed values.",
+        "A range establishes the difference between minimum and maximum.",
+        "It indicates how widely the data are dispersed."
+      ]
+    },
+    {
+      "term": "cut",
+      "question": "What does a cut expose?",
+      "baseline_trap": "body tissue",
+      "gold": "orebody",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "mineralization",
+        "coal seam",
+        "rock face",
+        "ore zone",
+        "mineral vein",
+        "ore seam"
+      ],
+      "gold_responses": [
+        "An excavation cut exposes the orebody."
+      ],
+      "trap_aliases": [
+        "muscle tissue",
+        "blood vessels",
+        "underlying bone"
+      ],
+      "trap_responses": [
+        "A cut exposes underlying tissue.",
+        "It may expose muscle and blood vessels.",
+        "A deep cut can expose bone."
+      ]
+    },
+    {
+      "term": "cake",
+      "question": "What does a cake retain?",
+      "baseline_trap": "moisture",
+      "gold": "filter solids",
+      "dominant_prior": "food",
+      "gold_aliases": [
+        "ore fines",
+        "leach residue",
+        "solid particles",
+        "filter residue",
+        "leach solids",
+        "precipitate solids",
+        "sludge solids"
+      ],
+      "gold_responses": [
+        "The filter cake retains undissolved solids."
+      ],
+      "trap_aliases": [
+        "freshness",
+        "flavor",
+        "softness"
+      ],
+      "trap_responses": [
+        "A cake retains moisture when stored properly.",
+        "Frosting helps a cake retain freshness.",
+        "Proper wrapping retains the cake's softness."
+      ]
+    },
+    {
+      "term": "deportment",
+      "question": "What does deportment describe?",
+      "baseline_trap": "a person's behavior",
+      "gold": "metal distribution",
+      "dominant_prior": "social etiquette",
+      "gold_aliases": [
+        "phase partitioning",
+        "stream distribution",
+        "element allocation",
+        "metal partitioning",
+        "element distribution",
+        "value distribution"
+      ],
+      "gold_responses": [
+        "It indicates where valuable metals report during treatment."
+      ],
+      "trap_aliases": [
+        "personal conduct",
+        "social behavior",
+        "mannerisms"
+      ],
+      "trap_responses": [
+        "It describes a person's behavior and manner.",
+        "It indicates how someone carries themselves socially.",
+        "It refers to conduct considered appropriate in society."
+      ]
+    },
+    {
+      "term": "tenor",
+      "question": "What does tenor indicate?",
+      "baseline_trap": "vocal quality",
+      "gold": "precious-metal content",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "metal content",
+        "pay-metal content",
+        "valuable-metal level",
+        "metal grade",
+        "precious-metal grade",
+        "assay value",
+        "gold content"
+      ],
+      "gold_responses": [
+        "It indicates the concentration of precious metal in material."
+      ],
+      "trap_aliases": [
+        "voice range",
+        "musical register"
+      ],
+      "trap_responses": [
+        "It indicates the quality and range of a voice.",
+        "It refers to a high adult male singing voice.",
+        "It describes the general character or pitch of music."
+      ]
+    },
+    {
+      "term": "crib",
+      "question": "What does a crib support?",
+      "baseline_trap": "a sleeping infant",
+      "gold": "roof load",
+      "dominant_prior": "nursery furniture",
+      "gold_aliases": [
+        "mine roof",
+        "roof strata",
+        "ground load",
+        "stope back",
+        "hanging wall"
+      ],
+      "gold_responses": [
+        "It supports the mine roof."
+      ],
+      "trap_aliases": [
+        "sleeping baby",
+        "newborn infant",
+        "young child"
+      ],
+      "trap_responses": [
+        "A crib supports a sleeping infant.",
+        "It holds a baby safely while sleeping.",
+        "It supports a newborn during naps."
+      ]
+    },
+    {
+      "term": "face",
+      "question": "What can a face expose?",
+      "baseline_trap": "someone's emotions",
+      "gold": "orebody",
+      "dominant_prior": "anatomy",
+      "gold_aliases": [
+        "mineralization",
+        "rock mass",
+        "ore zone",
+        "ore vein",
+        "coal seam",
+        "fresh ore"
+      ],
+      "gold_responses": [
+        "It can expose a payable ore vein."
+      ],
+      "trap_aliases": [
+        "facial emotions",
+        "inner feelings",
+        "emotional state"
+      ],
+      "trap_responses": [
+        "A face can expose someone's emotions.",
+        "It reveals a person's feelings.",
+        "It can show an emotional state."
+      ]
+    },
+    {
+      "term": "balance",
+      "question": "What does a balance reconcile?",
+      "baseline_trap": "financial accounts",
+      "gold": "mass flows",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "material flows",
+        "metal flows",
+        "stream tonnages",
+        "process streams",
+        "feed products",
+        "ore flows",
+        "plant inventories"
+      ],
+      "gold_responses": [
+        "It reconciles feed, concentrate, tailings, and recovery flows."
+      ],
+      "trap_aliases": [
+        "ledger entries",
+        "debits credits",
+        "account balances"
+      ],
+      "trap_responses": [
+        "It reconciles debits and credits in financial accounts.",
+        "It reconciles transactions recorded in the general ledger.",
+        "It reconciles account balances with supporting records."
+      ]
+    },
+    {
+      "term": "play",
+      "question": "What can a play contain?",
+      "baseline_trap": "characters and dialogue",
+      "gold": "hydrocarbon prospects",
+      "dominant_prior": "theater",
+      "gold_aliases": [
+        "oil prospects",
+        "gas prospects",
+        "petroleum accumulations",
+        "exploration leads",
+        "drilling targets",
+        "undiscovered fields"
+      ],
+      "gold_responses": [
+        "It can contain multiple hydrocarbon prospects and exploration leads."
+      ],
+      "trap_aliases": [
+        "scenes",
+        "actors",
+        "stage dialogue"
+      ],
+      "trap_responses": [
+        "It can contain characters, dialogue, scenes, and stage directions.",
+        "It can contain acts divided into several scenes.",
+        "It can contain roles for actors and spoken dialogue."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim establish?",
+      "baseline_trap": "a legal entitlement",
+      "gold": "mineral rights",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "mining rights",
+        "exploration rights",
+        "extraction rights",
+        "mineral title",
+        "mineral tenure",
+        "prospecting rights"
+      ],
+      "gold_responses": [
+        "It establishes rights to explore a defined mineral area."
+      ],
+      "trap_aliases": [
+        "legal right",
+        "enforceable claim"
+      ],
+      "trap_responses": [
+        "It establishes a legally enforceable entitlement.",
+        "It establishes a person's right to demand something.",
+        "It establishes a valid basis for legal relief."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:27:48Z"
+}

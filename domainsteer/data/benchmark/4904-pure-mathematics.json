@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4904",
+  "cluster": "Pure mathematics",
+  "domain": "Pure mathematics",
+  "division": "Mathematical Sciences",
+  "dominant_prior": "broadcast media, consumer products, education, farming equipment, finance, household equipment, insurance, law, media, medicine, navigation, programming",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Is it connected?",
+    "What counts as a proof?",
+    "What degree does it have?",
+    "What does the closure contain?",
+    "What is a field?",
+    "What is a limit?",
+    "What is a section?",
+    "What is a series?",
+    "What is a zero?",
+    "What is an orbit?",
+    "What is the rank?",
+    "What makes something compact?",
+    "What makes something singular?",
+    "When is something complete?",
+    "Where is the boundary?",
+    "boundary",
+    "closure",
+    "compact",
+    "complete",
+    "connected",
+    "degree",
+    "field",
+    "limit",
+    "orbit",
+    "proof",
+    "rank",
+    "section",
+    "series",
+    "singular",
+    "zero"
+  ],
+  "items": [
+    {
+      "term": "genus",
+      "question": "What does a genus count?",
+      "baseline_trap": "a biological taxonomic group",
+      "gold": "holes",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "surface handles",
+        "topological holes",
+        "handle number",
+        "handles",
+        "topological complexity",
+        "cycle number"
+      ],
+      "gold_responses": [
+        "For closed surfaces, it gives the handle number."
+      ],
+      "trap_aliases": [
+        "taxonomic rank",
+        "species grouping",
+        "biological classification"
+      ],
+      "trap_responses": [
+        "It is a taxonomic group containing closely related species.",
+        "It classifies species within biological nomenclature.",
+        "It is a rank above species and below family."
+      ]
+    },
+    {
+      "term": "sheaf",
+      "question": "What does a sheaf let compatible pieces become?",
+      "baseline_trap": "a bundle of harvested stalks",
+      "gold": "global section",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "glued section",
+        "compatible section",
+        "global data",
+        "global object",
+        "global sections",
+        "unique gluing"
+      ],
+      "gold_responses": [
+        "It assembles compatible local information into one global section."
+      ],
+      "trap_aliases": [
+        "stalk bundle",
+        "harvested bundle",
+        "grain bundle"
+      ],
+      "trap_responses": [
+        "It is a bundle of cut grain stalks.",
+        "It gathers harvested stalks into a tied bundle.",
+        "It holds or bundles crops such as wheat."
+      ]
+    },
+    {
+      "term": "cover",
+      "question": "What must a cover reach?",
+      "baseline_trap": "insured benefits or losses",
+      "gold": "every point",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "all points",
+        "underlying set",
+        "entire space",
+        "every element"
+      ],
+      "gold_responses": [
+        "It must include every point of the space."
+      ],
+      "trap_aliases": [
+        "covered losses",
+        "policy benefits",
+        "insured risks"
+      ],
+      "trap_responses": [
+        "It must reach the losses covered by the policy.",
+        "It covers insured benefits and financial losses.",
+        "Coverage applies to specified risks and claims."
+      ]
+    },
+    {
+      "term": "character",
+      "question": "What can a character reveal?",
+      "baseline_trap": "a fictional personality or role",
+      "gold": "representation trace",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "character value",
+        "trace value",
+        "class-function value",
+        "trace function",
+        "eigenvalue sum",
+        "class function"
+      ],
+      "gold_responses": [
+        "It reveals the trace of a representing matrix."
+      ],
+      "trap_aliases": [
+        "fictional personality",
+        "story role",
+        "screen persona"
+      ],
+      "trap_responses": [
+        "It can reveal a fictional personality or role.",
+        "It reveals a character's motives and traits.",
+        "It shows how a story role develops."
+      ]
+    },
+    {
+      "term": "class",
+      "question": "What can a class put together?",
+      "baseline_trap": "a group of students",
+      "gold": "equivalent elements",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "equivalence members",
+        "congruent elements",
+        "partition block",
+        "equivalent objects",
+        "relation-equivalent elements",
+        "quotient elements"
+      ],
+      "gold_responses": [
+        "A class collects elements equivalent under a relation."
+      ],
+      "trap_aliases": [
+        "students",
+        "pupils",
+        "schoolchildren"
+      ],
+      "trap_responses": [
+        "A class puts together a group of students.",
+        "Students in the same course are put together.",
+        "A teacher brings learners together in a class."
+      ]
+    },
+    {
+      "term": "germ",
+      "question": "What does a germ preserve nearby?",
+      "baseline_trap": "a disease-causing microorganism",
+      "gold": "local behavior",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "local data",
+        "function germ",
+        "local equivalence",
+        "neighborhood behavior",
+        "local properties",
+        "infinitesimal behavior"
+      ],
+      "gold_responses": [
+        "A germ preserves behavior on some neighborhood."
+      ],
+      "trap_aliases": [
+        "pathogen",
+        "microbe",
+        "infectious agent"
+      ],
+      "trap_responses": [
+        "A germ preserves its ability to cause disease.",
+        "It retains infectious properties in suitable conditions.",
+        "A microorganism survives by preserving its viability."
+      ]
+    },
+    {
+      "term": "chart",
+      "question": "What does a chart lay out around a point?",
+      "baseline_trap": "market performance data",
+      "gold": "local coordinates",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "coordinate neighborhood",
+        "Euclidean coordinates",
+        "coordinate map",
+        "coordinate patch",
+        "local parametrization",
+        "coordinate system"
+      ],
+      "gold_responses": [
+        "A coordinate neighborhood around that point."
+      ],
+      "trap_aliases": [
+        "stock prices",
+        "price trends",
+        "trading data"
+      ],
+      "trap_responses": [
+        "It displays stock prices over time.",
+        "A chart lays out market performance data.",
+        "It shows price movements and trading trends."
+      ]
+    },
+    {
+      "term": "action",
+      "question": "What can an action move?",
+      "baseline_trap": "a legal case or sporting play",
+      "gold": "set elements",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "space points",
+        "orbit points",
+        "underlying points",
+        "set points",
+        "orbit elements",
+        "underlying elements"
+      ],
+      "gold_responses": [
+        "It can move elements of a set."
+      ],
+      "trap_aliases": [
+        "lawsuit",
+        "court case",
+        "legal proceeding"
+      ],
+      "trap_responses": [
+        "It can move a legal case through court.",
+        "A legal action advances a lawsuit.",
+        "It may move a case toward resolution."
+      ]
+    },
+    {
+      "term": "valuation",
+      "question": "What does a valuation assign?",
+      "baseline_trap": "a market price",
+      "gold": "value-group element",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "ordered value",
+        "additive value",
+        "nonarchimedean size",
+        "valuation value",
+        "ordered-group value",
+        "extended real value"
+      ],
+      "gold_responses": [
+        "It maps ring elements into an ordered value group."
+      ],
+      "trap_aliases": [
+        "quoted price",
+        "asset value",
+        "fair value"
+      ],
+      "trap_responses": [
+        "It assigns a market price to an asset.",
+        "It gives the monetary value of a company or investment.",
+        "It determines what a property or security is worth."
+      ]
+    },
+    {
+      "term": "filter",
+      "question": "What does a filter select?",
+      "baseline_trap": "unwanted particles",
+      "gold": "large subsets",
+      "dominant_prior": "household equipment",
+      "gold_aliases": [
+        "filter sets",
+        "neighborhood sets",
+        "upward-closed family",
+        "set family",
+        "large-set family",
+        "neighborhood system",
+        "set filter"
+      ],
+      "gold_responses": [
+        "It distinguishes the large subsets of an underlying set."
+      ],
+      "trap_aliases": [
+        "dust particles",
+        "airborne debris",
+        "lint particles"
+      ],
+      "trap_responses": [
+        "It selects unwanted particles from air or water.",
+        "It traps dust, debris, and contaminants.",
+        "It removes impurities while allowing fluid to pass."
+      ]
+    },
+    {
+      "term": "model",
+      "question": "What does a model satisfy?",
+      "baseline_trap": "product requirements",
+      "gold": "a theory",
+      "dominant_prior": "consumer products",
+      "gold_aliases": [
+        "axiom set",
+        "logical theory",
+        "first-order sentences",
+        "formal sentences",
+        "axiom system",
+        "theory sentences",
+        "set of sentences",
+        "first-order theory"
+      ],
+      "gold_responses": [
+        "A model satisfies every sentence of the theory."
+      ],
+      "trap_aliases": [
+        "user requirements",
+        "design specifications",
+        "customer needs"
+      ],
+      "trap_responses": [
+        "A model satisfies the product requirements.",
+        "It must meet customer needs and specifications.",
+        "It should fulfill the stated design requirements."
+      ]
+    },
+    {
+      "term": "spectrum",
+      "question": "What can a spectrum reveal?",
+      "baseline_trap": "signal frequencies",
+      "gold": "invertibility failure",
+      "dominant_prior": "broadcast media",
+      "gold_aliases": [
+        "spectral values",
+        "resolvent complement",
+        "operator spectrum",
+        "noninvertible shifts",
+        "resolvent failure",
+        "nonresolvent values",
+        "singular shifts",
+        "operator singularity"
+      ],
+      "gold_responses": [
+        "It identifies scalars for which invertibility fails."
+      ],
+      "trap_aliases": [
+        "frequency bands",
+        "channel frequencies",
+        "signal components"
+      ],
+      "trap_responses": [
+        "It reveals the frequencies present in a signal.",
+        "It shows which broadcast channels or bands are active.",
+        "It can reveal the signal's frequency distribution."
+      ]
+    },
+    {
+      "term": "map",
+      "question": "What does a map send?",
+      "baseline_trap": "a traveler",
+      "gold": "points",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "domain elements",
+        "input values",
+        "source points",
+        "set elements",
+        "inputs",
+        "arguments",
+        "points of domain"
+      ],
+      "gold_responses": [
+        "It takes elements of one set to another."
+      ],
+      "trap_aliases": [
+        "a driver",
+        "a tourist",
+        "a pedestrian"
+      ],
+      "trap_responses": [
+        "A map sends a traveler toward a destination.",
+        "It directs drivers along a route.",
+        "It guides tourists from one location to another."
+      ]
+    },
+    {
+      "term": "kernel",
+      "question": "What does a kernel contain?",
+      "baseline_trap": "the operating-system core",
+      "gold": "zero fiber",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "null space",
+        "identity fiber",
+        "zero preimage",
+        "annihilated elements",
+        "nullspace vectors",
+        "zero-mapped elements"
+      ],
+      "gold_responses": [
+        "The kernel contains elements mapped to zero."
+      ],
+      "trap_aliases": [
+        "system core",
+        "core code",
+        "essential services"
+      ],
+      "trap_responses": [
+        "The kernel contains the operating system's essential core.",
+        "It includes code managing hardware and system resources.",
+        "It contains fundamental services needed by the operating system."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature record?",
+      "baseline_trap": "a signer's identity",
+      "gold": "inertia pair",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "index pair",
+        "inertia indices",
+        "sign counts",
+        "quadratic-form type",
+        "positive-negative indices",
+        "Sylvester indices",
+        "eigenvalue signs",
+        "definiteness indices"
+      ],
+      "gold_responses": [
+        "It records the positive and negative indices of a quadratic form."
+      ],
+      "trap_aliases": [
+        "signatory identity",
+        "authorized signer",
+        "signer credentials"
+      ],
+      "trap_responses": [
+        "It records the identity of the person signing a document.",
+        "It identifies the authorized individual who executed the agreement.",
+        "It provides evidence of who approved or signed the instrument."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:23:32Z"
+}

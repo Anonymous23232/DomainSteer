@@ -1,0 +1,472 @@
+{
+  "cluster_id": "3207",
+  "cluster": "Medical microbiology",
+  "domain": "Medical microbiology",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "automotive, biometric identification, cargo transport, everyday arithmetic, farming, grooming, insurance, media and politics, postal mail, programming, publishing, retail, shipping, social media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does load mean?",
+    "What is a burst?",
+    "What is a clone?",
+    "What is a culture?",
+    "What is a host?",
+    "What is a passage?",
+    "What is a plaque?",
+    "What is a reservoir?",
+    "What is a strain?",
+    "What is an agent?",
+    "What is an attack rate?",
+    "What is colonization?",
+    "What is incubation?",
+    "What is release?",
+    "What is resistance?",
+    "agent",
+    "attack rate",
+    "burst",
+    "clone",
+    "colonization",
+    "culture",
+    "host",
+    "incubation",
+    "load",
+    "passage",
+    "plaque",
+    "release",
+    "reservoir",
+    "resistance",
+    "strain"
+  ],
+  "items": [
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail product SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon identity",
+        "species ID",
+        "isolate ID",
+        "taxonomic identity",
+        "microbial species",
+        "organism identity",
+        "species assignment"
+      ],
+      "gold_responses": [
+        "A pathogen's species identity from its barcode sequence."
+      ],
+      "trap_aliases": [
+        "product identifier",
+        "inventory item",
+        "merchandise SKU"
+      ],
+      "trap_responses": [
+        "A specific retail product or stock-keeping unit.",
+        "Which item is being sold or tracked.",
+        "The product associated with that scanned label."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codon table",
+        "residue identity",
+        "translation map",
+        "protein sequence",
+        "polypeptide sequence",
+        "amino acid order",
+        "encoded peptide"
+      ],
+      "gold_responses": [
+        "The amino acid sequence of a microbial protein."
+      ],
+      "trap_aliases": [
+        "software logic",
+        "executable commands"
+      ],
+      "trap_responses": [
+        "Instructions a computer program should execute.",
+        "The operations performed by software.",
+        "How a program behaves when it runs."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What does a fingerprint establish?",
+      "baseline_trap": "personal identity",
+      "gold": "outbreak linkage",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "isolate relatedness",
+        "transmission linkage",
+        "taxon identity",
+        "strain relatedness",
+        "clonal linkage"
+      ],
+      "gold_responses": [
+        "It establishes epidemiologic linkage between isolates."
+      ],
+      "trap_aliases": [
+        "individual identification",
+        "identity verification"
+      ],
+      "trap_responses": [
+        "It establishes a person's identity.",
+        "It identifies an individual uniquely.",
+        "It verifies who someone is."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "sequence depth",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "read depth",
+        "genomic depth",
+        "sampling depth",
+        "sequencing depth",
+        "genome depth",
+        "base depth"
+      ],
+      "gold_responses": [
+        "It indicates average sequencing depth across the genome."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "benefit protection",
+        "insured protection"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses an insurance plan pays for.",
+        "It defines the scope of insurance benefits."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What can a payload contain?",
+      "baseline_trap": "transported cargo",
+      "gold": "viral genome",
+      "dominant_prior": "cargo transport",
+      "gold_aliases": [
+        "viral RNA",
+        "viral DNA",
+        "genomic cargo",
+        "nucleic acid",
+        "transgene cassette",
+        "genetic insert",
+        "antigen sequence"
+      ],
+      "gold_responses": [
+        "The payload may contain a recombinant genetic insert."
+      ],
+      "trap_aliases": [
+        "freight",
+        "shipment",
+        "goods"
+      ],
+      "trap_responses": [
+        "A payload can contain transported cargo.",
+        "It may contain freight for delivery.",
+        "A payload can carry goods between locations."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What can a harvest yield?",
+      "baseline_trap": "crops",
+      "gold": "viral particles",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "virions",
+        "infectious particles",
+        "viral yield",
+        "virus stock",
+        "virion preparation",
+        "cell-free supernatant",
+        "viral stock"
+      ],
+      "gold_responses": [
+        "A harvest can yield viral particles."
+      ],
+      "trap_aliases": [
+        "grain",
+        "produce",
+        "crop yield"
+      ],
+      "trap_responses": [
+        "A harvest can yield crops.",
+        "It may yield grain and produce.",
+        "A harvest provides agricultural crop yield."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier pass on?",
+      "baseline_trap": "a package",
+      "gold": "pathogen",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "infectious microbe",
+        "viral particles",
+        "parasite stages",
+        "fungal spores",
+        "infectious agent",
+        "bacterial pathogen",
+        "viral pathogen",
+        "parasitic organism"
+      ],
+      "gold_responses": [
+        "A carrier may pass on infectious microorganisms."
+      ],
+      "trap_aliases": [
+        "parcel",
+        "shipment",
+        "delivery"
+      ],
+      "trap_responses": [
+        "A carrier can pass on a package.",
+        "It can deliver a shipment to a recipient.",
+        "A carrier may transport a parcel."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What can a draft provide?",
+      "baseline_trap": "a preliminary manuscript",
+      "gold": "partial genome",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "incomplete genome",
+        "genome scaffold",
+        "provisional assembly",
+        "contig set",
+        "genome assembly",
+        "sequence contigs",
+        "genomic scaffold",
+        "partial sequence"
+      ],
+      "gold_responses": [
+        "A draft assembly can provide a partial genome."
+      ],
+      "trap_aliases": [
+        "manuscript",
+        "article",
+        "working copy"
+      ],
+      "trap_responses": [
+        "A draft can provide a preliminary manuscript.",
+        "It provides an early version of an article.",
+        "A draft offers a working copy for revision."
+      ]
+    },
+    {
+      "term": "transmission",
+      "question": "What does transmission transfer?",
+      "baseline_trap": "engine power",
+      "gold": "infectious agent",
+      "dominant_prior": "automotive",
+      "gold_aliases": [
+        "a pathogen",
+        "virions",
+        "bacteria",
+        "parasites",
+        "microorganism",
+        "infectious inoculum",
+        "viral particles"
+      ],
+      "gold_responses": [
+        "It transfers infectious particles through a defined route."
+      ],
+      "trap_aliases": [
+        "torque",
+        "horsepower",
+        "mechanical power"
+      ],
+      "trap_responses": [
+        "It transfers engine power to the wheels.",
+        "Transmission transfers torque from the engine.",
+        "It sends mechanical power through the drivetrain."
+      ]
+    },
+    {
+      "term": "shedding",
+      "question": "What does shedding release?",
+      "baseline_trap": "hair or fur",
+      "gold": "infectious particles",
+      "dominant_prior": "grooming",
+      "gold_aliases": [
+        "virions",
+        "pathogens",
+        "microbes",
+        "bacterial cells",
+        "microbial cells",
+        "infectious material"
+      ],
+      "gold_responses": [
+        "It releases infectious particles from an infected host."
+      ],
+      "trap_aliases": [
+        "hair",
+        "fur",
+        "loose coat"
+      ],
+      "trap_responses": [
+        "Shedding releases loose hair and fur.",
+        "It releases old hairs from the coat.",
+        "Animals shed fur as new hair grows."
+      ]
+    },
+    {
+      "term": "envelope",
+      "question": "What can an envelope protect?",
+      "baseline_trap": "a letter",
+      "gold": "nucleocapsid",
+      "dominant_prior": "postal mail",
+      "gold_aliases": [
+        "viral genome",
+        "viral core",
+        "nucleic acid",
+        "virion contents",
+        "capsid proteins",
+        "viral RNA"
+      ],
+      "gold_responses": [
+        "It protects viral nucleic acid from environmental damage."
+      ],
+      "trap_aliases": [
+        "letter contents",
+        "written message",
+        "mail document"
+      ],
+      "trap_responses": [
+        "It can protect a letter inside.",
+        "It protects the written message during mailing.",
+        "It keeps enclosed documents private and intact."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What does a profile reveal?",
+      "baseline_trap": "personal details",
+      "gold": "resistance phenotype",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "susceptibility pattern",
+        "resistance pattern",
+        "drug susceptibility",
+        "antibiogram result",
+        "resistance genes",
+        "MIC pattern"
+      ],
+      "gold_responses": [
+        "It reveals the organism's antimicrobial resistance phenotype."
+      ],
+      "trap_aliases": [
+        "user interests",
+        "account information"
+      ],
+      "trap_responses": [
+        "It reveals personal details about a user.",
+        "It shows interests, photos, and biographical information.",
+        "It can reveal account information and social connections."
+      ]
+    },
+    {
+      "term": "smear",
+      "question": "What can a smear establish?",
+      "baseline_trap": "alleged misconduct",
+      "gold": "microbial morphology",
+      "dominant_prior": "media and politics",
+      "gold_aliases": [
+        "bacterial form",
+        "fungal elements",
+        "parasite forms",
+        "organism presence",
+        "bacterial shape",
+        "cellular arrangement",
+        "Gram reaction",
+        "specimen adequacy"
+      ],
+      "gold_responses": [
+        "It can establish bacterial morphology and cellular arrangement."
+      ],
+      "trap_aliases": [
+        "false allegations",
+        "political scandal",
+        "reputational harm"
+      ],
+      "trap_responses": [
+        "It can establish alleged misconduct by a public official.",
+        "A smear can establish damaging accusations against a political opponent.",
+        "It may establish a scandalous narrative in public debate."
+      ]
+    },
+    {
+      "term": "count",
+      "question": "What can a count estimate?",
+      "baseline_trap": "the number of objects",
+      "gold": "viable cells",
+      "dominant_prior": "everyday arithmetic",
+      "gold_aliases": [
+        "living cells",
+        "colony number",
+        "CFU total",
+        "colony-forming units",
+        "bacterial concentration",
+        "viable bacteria",
+        "CFU density"
+      ],
+      "gold_responses": [
+        "A plate count estimates viable bacterial concentration."
+      ],
+      "trap_aliases": [
+        "total number",
+        "object quantity",
+        "numerical amount"
+      ],
+      "trap_responses": [
+        "A count estimates the total number of objects.",
+        "It estimates how many items are present.",
+        "A count gives an approximate numerical quantity."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "pathogen recovery",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "isolate recovery",
+        "organism recovery",
+        "detection rate",
+        "culture recovery",
+        "microbial recovery"
+      ],
+      "gold_responses": [
+        "Yield measures how many pathogens are recovered from a specimen."
+      ],
+      "trap_aliases": [
+        "crop production",
+        "harvest output",
+        "farm productivity"
+      ],
+      "trap_responses": [
+        "Yield measures the amount of crop produced per area.",
+        "It indicates agricultural output from a field or harvest.",
+        "Yield measures how much produce a farm generates."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:48:27Z"
+}

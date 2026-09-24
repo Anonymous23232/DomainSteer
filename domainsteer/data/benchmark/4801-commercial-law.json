@@ -1,0 +1,468 @@
+{
+  "cluster_id": "4801",
+  "cluster": "Commercial law",
+  "domain": "Commercial law",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "everyday English, farming equipment, hospitality, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What counts as delivery?",
+    "What is a bond?",
+    "What is a call?",
+    "What is a charge?",
+    "What is a release?",
+    "What is a resolution?",
+    "What is a share?",
+    "What is a trust?",
+    "What is acceptance?",
+    "What is an agency?",
+    "What is an order?",
+    "What is consideration?",
+    "What is winding up?",
+    "Who is an insider?",
+    "Who is the principal?",
+    "acceptance",
+    "agency",
+    "bond",
+    "call",
+    "charge",
+    "consideration",
+    "delivery",
+    "insider",
+    "order",
+    "principal",
+    "release",
+    "resolution",
+    "share",
+    "trust",
+    "winding up"
+  ],
+  "items": [
+    {
+      "term": "coupon",
+      "question": "What does a coupon entitle its holder to?",
+      "baseline_trap": "a retail discount",
+      "gold": "interest payment",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "bond interest",
+        "periodic interest",
+        "coupon interest",
+        "debt interest",
+        "coupon payment",
+        "stated interest"
+      ],
+      "gold_responses": [
+        "It entitles the holder to periodic interest on the bond."
+      ],
+      "trap_aliases": [
+        "price reduction",
+        "promotional savings",
+        "store discount"
+      ],
+      "trap_responses": [
+        "It entitles the holder to a reduced purchase price.",
+        "It provides a discount on merchandise or services.",
+        "It gives the shopper promotional savings at checkout."
+      ]
+    },
+    {
+      "term": "strike",
+      "question": "What does a strike determine?",
+      "baseline_trap": "the pitch count",
+      "gold": "exercise price",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "option price",
+        "strike price",
+        "exercise amount",
+        "contract price",
+        "fixed exercise price"
+      ],
+      "gold_responses": [
+        "It specifies the price at which the option may be exercised."
+      ],
+      "trap_aliases": [
+        "the count",
+        "an out"
+      ],
+      "trap_responses": [
+        "It adds a strike to the batter's count.",
+        "It affects the pitch count during an at-bat.",
+        "Three strikes determine that the batter is out."
+      ]
+    },
+    {
+      "term": "hedge",
+      "question": "What can a hedge reduce?",
+      "baseline_trap": "wind exposure",
+      "gold": "price risk",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "market exposure",
+        "currency risk",
+        "rate risk",
+        "price exposure",
+        "market risk",
+        "currency exposure",
+        "interest-rate risk",
+        "commodity volatility"
+      ],
+      "gold_responses": [
+        "A hedge can reduce adverse price movements."
+      ],
+      "trap_aliases": [
+        "wind damage",
+        "crop exposure",
+        "soil erosion"
+      ],
+      "trap_responses": [
+        "A hedge can reduce wind exposure around crops.",
+        "It can lessen wind damage to fields.",
+        "It may protect livestock from strong winds."
+      ]
+    },
+    {
+      "term": "par",
+      "question": "What does par state?",
+      "baseline_trap": "an expected score",
+      "gold": "face value",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "nominal value",
+        "principal amount",
+        "stated value",
+        "par value",
+        "redemption value"
+      ],
+      "gold_responses": [
+        "Par states the instrument's nominal value."
+      ],
+      "trap_aliases": [
+        "target score",
+        "expected total",
+        "projected score"
+      ],
+      "trap_responses": [
+        "Par states the expected score for a hole.",
+        "It indicates the target number of strokes.",
+        "Par gives the standard score for the course."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does a draft direct?",
+      "baseline_trap": "military service",
+      "gold": "payment",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "payment order",
+        "money payment",
+        "funds transfer",
+        "payment obligation",
+        "drawee payment",
+        "stated sum",
+        "funds payment"
+      ],
+      "gold_responses": [
+        "It directs the drawee to pay the stated sum."
+      ],
+      "trap_aliases": [
+        "enlistment",
+        "conscription"
+      ],
+      "trap_responses": [
+        "It directs compulsory military service.",
+        "It orders a person into military service.",
+        "It requires enlistment in the armed forces."
+      ]
+    },
+    {
+      "term": "note",
+      "question": "What can a note evidence?",
+      "baseline_trap": "a medical condition",
+      "gold": "debt obligation",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "loan debt",
+        "payment obligation",
+        "promissory debt",
+        "money owing",
+        "repayment obligation",
+        "payment promise",
+        "loan indebtedness"
+      ],
+      "gold_responses": [
+        "It records a binding promise to pay."
+      ],
+      "trap_aliases": [
+        "diagnosis",
+        "clinical finding",
+        "medical disorder"
+      ],
+      "trap_responses": [
+        "It can evidence a medical diagnosis.",
+        "It may document a patient's clinical condition.",
+        "It can record signs of a medical disorder."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "retail sales",
+      "gold": "shareholders",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "share ownership",
+        "member ownership",
+        "security holders",
+        "registered holders",
+        "members",
+        "beneficial owners"
+      ],
+      "gold_responses": [
+        "It records the company's shareholders."
+      ],
+      "trap_aliases": [
+        "customers",
+        "purchases",
+        "store transactions"
+      ],
+      "trap_responses": [
+        "It records retail sales transactions.",
+        "It records customer purchases at checkout.",
+        "It records items sold and their prices."
+      ]
+    },
+    {
+      "term": "float",
+      "question": "What does a float delay?",
+      "baseline_trap": "traffic",
+      "gold": "fund availability",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "cash availability",
+        "fund collection",
+        "bank availability",
+        "payment finality",
+        "cleared funds",
+        "payment settlement",
+        "collection proceeds"
+      ],
+      "gold_responses": [
+        "It delays access to credited money."
+      ],
+      "trap_aliases": [
+        "vehicles",
+        "commuters",
+        "road traffic"
+      ],
+      "trap_responses": [
+        "It delays traffic on the street.",
+        "It delays vehicles behind the parade.",
+        "It delays commuters during a procession."
+      ]
+    },
+    {
+      "term": "receiver",
+      "question": "What can a receiver control?",
+      "baseline_trap": "the ball",
+      "gold": "debtor assets",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "company property",
+        "secured assets",
+        "insolvency estate",
+        "charged property"
+      ],
+      "gold_responses": [
+        "It can control the debtor's secured business assets."
+      ],
+      "trap_aliases": [
+        "the football",
+        "the puck",
+        "the pass"
+      ],
+      "trap_responses": [
+        "A receiver can control the football after making a catch.",
+        "They control the ball while securing the pass.",
+        "A receiver may control the puck in play."
+      ]
+    },
+    {
+      "term": "franchise",
+      "question": "What can a franchise authorize?",
+      "baseline_trap": "a sports team",
+      "gold": "trademark use",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "brand licence",
+        "trade name use",
+        "business format",
+        "brand use",
+        "licensed marks",
+        "logo use"
+      ],
+      "gold_responses": [
+        "A franchise authorizes trademark use under specified operating standards."
+      ],
+      "trap_aliases": [
+        "an NFL team",
+        "a basketball team",
+        "team operation"
+      ],
+      "trap_responses": [
+        "A franchise can authorize operation of a professional sports team.",
+        "It may grant the right to field a team.",
+        "A league franchise authorizes a team in its competition."
+      ]
+    },
+    {
+      "term": "bracket",
+      "question": "What can a bracket determine?",
+      "baseline_trap": "tournament matchups",
+      "gold": "marginal rate",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "tax rate",
+        "income rate",
+        "applicable rate",
+        "applicable tax rate",
+        "income tax rate",
+        "tax band",
+        "rate threshold"
+      ],
+      "gold_responses": [
+        "It determines the tax rate for that income band."
+      ],
+      "trap_aliases": [
+        "team pairings",
+        "tournament seeding",
+        "advancement path"
+      ],
+      "trap_responses": [
+        "It can determine which teams play each other.",
+        "A bracket sets the tournament matchups.",
+        "It determines a team's possible path to the final."
+      ]
+    },
+    {
+      "term": "treatment",
+      "question": "What can treatment determine?",
+      "baseline_trap": "a patient's outcome",
+      "gold": "tax liability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "tax outcome",
+        "taxable status",
+        "deductible amount",
+        "tax consequences",
+        "deduction eligibility",
+        "taxable income",
+        "capital characterization"
+      ],
+      "gold_responses": [
+        "It may determine the amount included in taxable income."
+      ],
+      "trap_aliases": [
+        "patient outcome",
+        "prognosis",
+        "recovery chances"
+      ],
+      "trap_responses": [
+        "Treatment can determine a patient's outcome.",
+        "It may determine the prognosis and recovery prospects.",
+        "The chosen treatment affects whether the patient improves."
+      ]
+    },
+    {
+      "term": "combine",
+      "question": "What can a combine control?",
+      "baseline_trap": "harvesting operations",
+      "gold": "market power",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "market supply",
+        "trade output",
+        "competitive conditions",
+        "prices",
+        "output",
+        "competition",
+        "supply"
+      ],
+      "gold_responses": [
+        "A combine can control supply to influence market outcomes."
+      ],
+      "trap_aliases": [
+        "grain harvest",
+        "crop cutting",
+        "threshing"
+      ],
+      "trap_responses": [
+        "A combine can control harvesting operations across a field.",
+        "It controls crop cutting and grain collection.",
+        "The machine controls threshing during the harvest."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What can accommodation provide?",
+      "baseline_trap": "lodging",
+      "gold": "credit",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "loan facility",
+        "financial support",
+        "credit facility",
+        "loan facilities",
+        "working capital",
+        "payment terms"
+      ],
+      "gold_responses": [
+        "The bank can provide working capital accommodation."
+      ],
+      "trap_aliases": [
+        "guest rooms",
+        "sleeping quarters",
+        "overnight stay"
+      ],
+      "trap_responses": [
+        "Accommodation can provide lodging for overnight guests.",
+        "It provides rooms and sleeping quarters.",
+        "A hotel provides accommodation during a traveller's stay."
+      ]
+    },
+    {
+      "term": "issue",
+      "question": "What can an issue create?",
+      "baseline_trap": "a magazine edition",
+      "gold": "new securities",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "equity capital",
+        "debt securities",
+        "listed instruments",
+        "additional shares",
+        "debt instruments",
+        "equity interests",
+        "convertible notes"
+      ],
+      "gold_responses": [
+        "An issue can create new securities."
+      ],
+      "trap_aliases": [
+        "periodical edition",
+        "new publication",
+        "printed issue"
+      ],
+      "trap_responses": [
+        "It can create a new magazine edition.",
+        "An issue may create a publication for readers.",
+        "It creates the latest installment of a periodical."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:58:47Z"
+}

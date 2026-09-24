@@ -1,0 +1,468 @@
+{
+  "cluster_id": "3005",
+  "cluster": "Fisheries sciences",
+  "domain": "Fisheries sciences",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "confectionery, education, employment, everyday measurement, home renovation, hospitality, logistics, medicine, polling, real estate, retail, sports, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How is effort measured?",
+    "How is harvest measured?",
+    "What counts as a landing?",
+    "What counts as an escape?",
+    "What does yield describe?",
+    "What is a cohort?",
+    "What is a discard?",
+    "What is a run?",
+    "What is a stock?",
+    "What is bait used for?",
+    "What is carrying capacity?",
+    "What is gear?",
+    "What is spawning?",
+    "What sets the quota?",
+    "What starts a migration?",
+    "bait",
+    "carrying capacity",
+    "cohort",
+    "discard",
+    "effort",
+    "escape",
+    "gear",
+    "harvest",
+    "landing",
+    "migration",
+    "quota",
+    "run",
+    "spawning",
+    "stock",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "tag",
+      "question": "What can a tag establish?",
+      "baseline_trap": "a retail price",
+      "gold": "individual identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "fish identity",
+        "specimen ID",
+        "mark-recapture ID",
+        "migration route",
+        "recapture history",
+        "stock origin",
+        "survival status"
+      ],
+      "gold_responses": [
+        "It can identify a fish after recapture."
+      ],
+      "trap_aliases": [
+        "sale price",
+        "shelf price",
+        "item cost"
+      ],
+      "trap_responses": [
+        "It can establish the retail price of an item.",
+        "It can show how much a product costs.",
+        "It can identify the price charged at checkout."
+      ]
+    },
+    {
+      "term": "scale",
+      "question": "What can a scale reveal?",
+      "baseline_trap": "body weight",
+      "gold": "fish age",
+      "dominant_prior": "everyday measurement",
+      "gold_aliases": [
+        "age class",
+        "growth history",
+        "age estimate",
+        "annulus count",
+        "growth rate"
+      ],
+      "gold_responses": [
+        "It can show growth increments over successive years."
+      ],
+      "trap_aliases": [
+        "body mass",
+        "weighing result"
+      ],
+      "trap_responses": [
+        "It can reveal a person's body weight.",
+        "It can show how heavy an object is.",
+        "It can measure weight in kilograms or pounds."
+      ]
+    },
+    {
+      "term": "pen",
+      "question": "What can a pen contain?",
+      "baseline_trap": "ink",
+      "gold": "cultured fish",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "farmed fish",
+        "growing fish",
+        "rearing fish",
+        "farmed salmon",
+        "stocked trout",
+        "juvenile fish",
+        "broodstock fish"
+      ],
+      "gold_responses": [
+        "Net pens hold stocked fish during grow-out."
+      ],
+      "trap_aliases": [
+        "blue ink",
+        "gel ink",
+        "black ink"
+      ],
+      "trap_responses": [
+        "A pen can contain ink.",
+        "It may contain a refillable ink cartridge.",
+        "Some pens contain gel ink."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What can a carrier transport?",
+      "baseline_trap": "commercial cargo",
+      "gold": "live fish",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "fingerlings",
+        "broodfish",
+        "fish consignments",
+        "juvenile salmon",
+        "fish fry",
+        "broodstock fish",
+        "harvested fish"
+      ],
+      "gold_responses": [
+        "A fish carrier can transport juvenile fish."
+      ],
+      "trap_aliases": [
+        "freight cargo",
+        "shipping containers",
+        "commercial goods"
+      ],
+      "trap_responses": [
+        "A carrier can transport commercial cargo.",
+        "It may transport goods between destinations.",
+        "Carriers move freight by road, sea, or air."
+      ]
+    },
+    {
+      "term": "round",
+      "question": "What does a round describe?",
+      "baseline_trap": "a competition stage",
+      "gold": "whole fish",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "ungutted fish",
+        "intact fish",
+        "unprocessed fish",
+        "undressed fish",
+        "whole catch"
+      ],
+      "gold_responses": [
+        "It describes fish marketed intact and ungutted."
+      ],
+      "trap_aliases": [
+        "knockout stage",
+        "tournament phase",
+        "elimination round"
+      ],
+      "trap_responses": [
+        "It is a stage of a tournament.",
+        "A round is one level of competition.",
+        "It describes a set of matches in a contest."
+      ]
+    },
+    {
+      "term": "glaze",
+      "question": "What can a glaze protect?",
+      "baseline_trap": "a pastry surface",
+      "gold": "frozen fish",
+      "dominant_prior": "confectionery",
+      "gold_aliases": [
+        "frozen fillets",
+        "fish flesh",
+        "frozen product",
+        "frozen seafood",
+        "fish portions",
+        "frozen shrimp"
+      ],
+      "gold_responses": [
+        "It preserves fish portions during frozen transport and storage."
+      ],
+      "trap_aliases": [
+        "cake topping",
+        "dessert coating"
+      ],
+      "trap_responses": [
+        "A glaze protects the surface of a pastry.",
+        "It coats cakes with a shiny sweet finish.",
+        "Glaze seals and decorates baked desserts."
+      ]
+    },
+    {
+      "term": "survey",
+      "question": "What does a survey estimate?",
+      "baseline_trap": "public opinion",
+      "gold": "relative abundance",
+      "dominant_prior": "polling",
+      "gold_aliases": [
+        "fish abundance",
+        "population size",
+        "biomass estimate",
+        "abundance index",
+        "stock density",
+        "relative biomass",
+        "population index"
+      ],
+      "gold_responses": [
+        "It estimates relative abundance of the fish stock."
+      ],
+      "trap_aliases": [
+        "voter preferences",
+        "public sentiment",
+        "consumer opinion"
+      ],
+      "trap_responses": [
+        "It estimates public opinion on an issue.",
+        "It measures voter preferences before an election.",
+        "It gauges consumer attitudes and satisfaction."
+      ]
+    },
+    {
+      "term": "lot",
+      "question": "What does a lot identify?",
+      "baseline_trap": "a land parcel",
+      "gold": "processing batch",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "product batch",
+        "fish batch",
+        "traceability batch",
+        "production batch",
+        "harvest batch"
+      ],
+      "gold_responses": [
+        "It identifies a processing batch for traceability."
+      ],
+      "trap_aliases": [
+        "property tract",
+        "real estate lot"
+      ],
+      "trap_responses": [
+        "It identifies a specific parcel of land.",
+        "It identifies property available for ownership or development.",
+        "It designates a tract within a real estate subdivision."
+      ]
+    },
+    {
+      "term": "cleaner",
+      "question": "What can a cleaner remove?",
+      "baseline_trap": "dirt or stains",
+      "gold": "sea lice",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "ectoparasites",
+        "lice burden",
+        "external parasites",
+        "salmon lice",
+        "parasitic copepods",
+        "fish ectoparasites",
+        "attached parasites"
+      ],
+      "gold_responses": [
+        "It can remove ectoparasitic lice from cultured salmon."
+      ],
+      "trap_aliases": [
+        "dust",
+        "grime",
+        "spill marks"
+      ],
+      "trap_responses": [
+        "It can remove dirt and stains from surfaces.",
+        "A cleaner removes dust, grime, and household mess.",
+        "It can get rid of marks on fabric."
+      ]
+    },
+    {
+      "term": "purse",
+      "question": "What can a purse retain?",
+      "baseline_trap": "money or personal items",
+      "gold": "fish school",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "schooling fish",
+        "shoal",
+        "encircled catch",
+        "tuna school",
+        "herring shoal",
+        "pelagic catch",
+        "encircled fish"
+      ],
+      "gold_responses": [
+        "It holds schooling fish during hauling and brailing."
+      ],
+      "trap_aliases": [
+        "cash",
+        "credit cards",
+        "personal items"
+      ],
+      "trap_responses": [
+        "It can retain money and personal belongings.",
+        "A purse holds cash, cards, and small items.",
+        "It keeps coins and identification together."
+      ]
+    },
+    {
+      "term": "recruitment",
+      "question": "What does recruitment measure?",
+      "baseline_trap": "new hires",
+      "gold": "new entrants",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "stock entrants",
+        "juvenile entry",
+        "incoming cohort",
+        "juvenile input",
+        "stock additions",
+        "cohort entry",
+        "year-class strength"
+      ],
+      "gold_responses": [
+        "Annual additions of young fish to the population."
+      ],
+      "trap_aliases": [
+        "hiring rate",
+        "workforce growth",
+        "staffing levels"
+      ],
+      "trap_responses": [
+        "The number of people newly hired by an organization.",
+        "The rate at which vacant positions are filled.",
+        "Growth in an employer's workforce through new hires."
+      ]
+    },
+    {
+      "term": "candling",
+      "question": "What can candling reveal?",
+      "baseline_trap": "pregnancy status",
+      "gold": "embryo viability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "egg viability",
+        "developmental stage",
+        "embryo status",
+        "egg fertility",
+        "embryonic survival",
+        "dead embryos"
+      ],
+      "gold_responses": [
+        "The presence of viable embryos before hatching."
+      ],
+      "trap_aliases": [
+        "pregnancy detection",
+        "fetal viability",
+        "gestational age"
+      ],
+      "trap_responses": [
+        "It can indicate whether a patient is pregnant.",
+        "It may reveal fetal development during pregnancy.",
+        "It can help assess fetal viability and gestational progress."
+      ]
+    },
+    {
+      "term": "stripping",
+      "question": "What can stripping obtain?",
+      "baseline_trap": "removed paint",
+      "gold": "gametes",
+      "dominant_prior": "home renovation",
+      "gold_aliases": [
+        "fish eggs",
+        "milt",
+        "breeding material",
+        "ripe eggs",
+        "fish sperm",
+        "ova"
+      ],
+      "gold_responses": [
+        "It can recover sperm and eggs from broodstock."
+      ],
+      "trap_aliases": [
+        "bare timber",
+        "paint-free surface",
+        "exposed brick"
+      ],
+      "trap_responses": [
+        "Stripping can obtain a paint-free surface.",
+        "It can reveal bare wood beneath old coatings.",
+        "Stripping can expose brick or plaster walls."
+      ]
+    },
+    {
+      "term": "grading",
+      "question": "What does grading separate?",
+      "baseline_trap": "student performance levels",
+      "gold": "size classes",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "fish sizes",
+        "market grades",
+        "uniform lots",
+        "weight groups",
+        "size cohorts",
+        "market classes"
+      ],
+      "gold_responses": [
+        "Grading separates fish into uniform size classes."
+      ],
+      "trap_aliases": [
+        "letter grades",
+        "achievement levels",
+        "ability groups"
+      ],
+      "trap_responses": [
+        "Grading separates students into performance levels.",
+        "It distinguishes high achievers from lower performers.",
+        "Grading sorts work by achievement level."
+      ]
+    },
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail product SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon ID",
+        "specimen ID",
+        "stock identity",
+        "DNA barcode",
+        "fish species",
+        "seafood species",
+        "cryptic taxa",
+        "larval taxa"
+      ],
+      "gold_responses": [
+        "It can distinguish closely related fish species."
+      ],
+      "trap_aliases": [
+        "product SKU",
+        "retail item",
+        "store inventory"
+      ],
+      "trap_responses": [
+        "It distinguishes one retail product from another.",
+        "It identifies a product's SKU and inventory record.",
+        "It differentiates items at the checkout counter."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:32:21Z"
+}

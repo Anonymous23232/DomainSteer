@@ -1,0 +1,473 @@
+{
+  "cluster_id": "3008",
+  "cluster": "Horticultural production",
+  "domain": "Horticultural production",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "cargo/computing, communications, electrical engineering, electronics, everyday English, finance, furniture, hospitality, media, medicine, mobility aid, retail/law, shipping, software, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After topping, will it still grow?",
+    "What is a crop?",
+    "What is a flush?",
+    "What is an eye?",
+    "What is blanching?",
+    "What is bolting?",
+    "What is curing?",
+    "What is dormancy?",
+    "What is pinching?",
+    "What is propagation?",
+    "What is pruning?",
+    "What is scald?",
+    "What is stress?",
+    "What is thinning?",
+    "What is topping?",
+    "What is training?",
+    "blanching",
+    "bolting",
+    "crop",
+    "curing",
+    "dormancy",
+    "eye",
+    "flush",
+    "pinching",
+    "propagation",
+    "pruning",
+    "scald",
+    "stress",
+    "thinning",
+    "topping",
+    "training"
+  ],
+  "items": [
+    {
+      "term": "label",
+      "question": "What does a label specify?",
+      "baseline_trap": "retail product information",
+      "gold": "application directions",
+      "dominant_prior": "retail/law",
+      "gold_aliases": [
+        "use restrictions",
+        "approved crops",
+        "spray rate",
+        "use rate",
+        "application timing",
+        "target crops",
+        "re-entry interval"
+      ],
+      "gold_responses": [
+        "It specifies approved crops, rates, and application timing."
+      ],
+      "trap_aliases": [
+        "ingredients",
+        "price",
+        "barcode"
+      ],
+      "trap_responses": [
+        "It specifies ingredients, branding, and consumer product details.",
+        "It gives the product name, price, and manufacturer information.",
+        "It identifies contents, warnings, and retail packaging information."
+      ]
+    },
+    {
+      "term": "solution",
+      "question": "What can a solution supply?",
+      "baseline_trap": "an answer to a problem",
+      "gold": "mineral nutrients",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "nutrient ions",
+        "essential elements",
+        "dissolved fertilizer",
+        "essential ions",
+        "fertilizer salts",
+        "calcium nitrate",
+        "nutrient concentrate"
+      ],
+      "gold_responses": [
+        "It can supply dissolved mineral nutrients to plant roots."
+      ],
+      "trap_aliases": [
+        "answer",
+        "remedy",
+        "fix"
+      ],
+      "trap_responses": [
+        "It can supply an answer to a problem.",
+        "It provides a way to resolve a difficult issue.",
+        "It offers a practical fix for the situation."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can stock control?",
+      "baseline_trap": "a financial holding",
+      "gold": "scion vigor",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "tree size",
+        "canopy vigor",
+        "fruiting precocity",
+        "scion growth",
+        "tree vigor",
+        "canopy size",
+        "plant stature"
+      ],
+      "gold_responses": [
+        "It influences plant stature."
+      ],
+      "trap_aliases": [
+        "controlling interest",
+        "company ownership",
+        "corporate control"
+      ],
+      "trap_responses": [
+        "It can control a company.",
+        "It can give control of a corporation.",
+        "It can determine voting control."
+      ]
+    },
+    {
+      "term": "liner",
+      "question": "What can a liner become?",
+      "baseline_trap": "a shipping vessel",
+      "gold": "finished plant",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "saleable plant",
+        "container plant",
+        "mature transplant",
+        "marketable plant",
+        "landscape plant"
+      ],
+      "gold_responses": [
+        "It can become a finished plant."
+      ],
+      "trap_aliases": [
+        "cruise ship",
+        "cargo vessel",
+        "ocean vessel"
+      ],
+      "trap_responses": [
+        "It can become a cruise ship.",
+        "It may be converted into a cargo vessel.",
+        "It can serve as an ocean-going ship."
+      ]
+    },
+    {
+      "term": "conductivity",
+      "question": "What can conductivity indicate?",
+      "baseline_trap": "electrical current flow",
+      "gold": "solution salinity",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "salt concentration",
+        "nutrient strength",
+        "ionic concentration",
+        "nutrient concentration",
+        "dissolved salts",
+        "root-zone EC",
+        "water quality"
+      ],
+      "gold_responses": [
+        "It indicates dissolved salt concentration in the irrigation solution."
+      ],
+      "trap_aliases": [
+        "circuit conductance",
+        "current capacity",
+        "material resistance"
+      ],
+      "trap_responses": [
+        "It indicates how readily a material carries electric current.",
+        "It can determine current flow through a circuit.",
+        "It shows the ease of electrical charge movement."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What can load determine?",
+      "baseline_trap": "system performance",
+      "gold": "fruit size",
+      "dominant_prior": "cargo/computing",
+      "gold_aliases": [
+        "fruit quality",
+        "return bloom",
+        "maturity timing",
+        "berry size",
+        "fruit calibre",
+        "crop balance"
+      ],
+      "gold_responses": [
+        "It influences berry calibre at harvest."
+      ],
+      "trap_aliases": [
+        "throughput",
+        "response time",
+        "resource utilization"
+      ],
+      "trap_responses": [
+        "It can determine system performance under demand.",
+        "It affects application response time.",
+        "It determines how heavily computing resources are used."
+      ]
+    },
+    {
+      "term": "body",
+      "question": "What does body describe?",
+      "baseline_trap": "physical anatomy",
+      "gold": "mouthfeel",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "palate weight",
+        "wine texture",
+        "flavor weight",
+        "wine fullness",
+        "textural weight",
+        "palate richness"
+      ],
+      "gold_responses": [
+        "It describes a wine's weight and fullness on the palate."
+      ],
+      "trap_aliases": [
+        "human structure",
+        "bodily anatomy",
+        "physical form"
+      ],
+      "trap_responses": [
+        "It describes the physical structure of a person.",
+        "It refers to the human body's anatomy.",
+        "It means the body's form and physical features."
+      ]
+    },
+    {
+      "term": "set",
+      "question": "What can set determine?",
+      "baseline_trap": "a match score",
+      "gold": "fruit number",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "crop load",
+        "berry number",
+        "yield potential",
+        "fruit retention"
+      ],
+      "gold_responses": [
+        "It can determine the number of fruits developing."
+      ],
+      "trap_aliases": [
+        "scoreline",
+        "game result",
+        "match outcome"
+      ],
+      "trap_responses": [
+        "It can determine the score of a match.",
+        "It decides the final game result.",
+        "It determines which side wins the match."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What does a host support?",
+      "baseline_trap": "guests",
+      "gold": "pathogen growth",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "pest development",
+        "insect feeding",
+        "disease cycle",
+        "pest population",
+        "pathogen reproduction",
+        "disease development",
+        "parasite growth",
+        "infection cycle"
+      ],
+      "gold_responses": [
+        "It supports pathogen growth within susceptible plant tissues."
+      ],
+      "trap_aliases": [
+        "visitors",
+        "lodgers",
+        "attendees"
+      ],
+      "trap_responses": [
+        "It supports visitors during their stay.",
+        "A host provides lodging and refreshments.",
+        "It accommodates guests at an event."
+      ]
+    },
+    {
+      "term": "press",
+      "question": "What can a press produce?",
+      "baseline_trap": "news coverage",
+      "gold": "grape juice",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "wine must",
+        "grape must",
+        "pressed juice",
+        "juice yield",
+        "fruit juice",
+        "apple juice",
+        "pressed must"
+      ],
+      "gold_responses": [
+        "A grape press produces juice for fermentation."
+      ],
+      "trap_aliases": [
+        "headlines",
+        "articles",
+        "reports"
+      ],
+      "trap_responses": [
+        "It produces news coverage of current events.",
+        "A press can publish breaking stories.",
+        "It generates headlines, articles, and public commentary."
+      ]
+    },
+    {
+      "term": "cane",
+      "question": "What can a cane support?",
+      "baseline_trap": "a person's weight",
+      "gold": "grape clusters",
+      "dominant_prior": "mobility aid",
+      "gold_aliases": [
+        "fruiting buds",
+        "fruiting shoots",
+        "berry clusters",
+        "vine fruit",
+        "grape bunches",
+        "vine growth",
+        "heavy crop"
+      ],
+      "gold_responses": [
+        "It can hold ripening fruit on the vine."
+      ],
+      "trap_aliases": [
+        "body weight",
+        "a person",
+        "the user"
+      ],
+      "trap_responses": [
+        "It supports a person's weight while walking.",
+        "A cane helps support someone with limited balance.",
+        "It carries part of the user's body weight."
+      ]
+    },
+    {
+      "term": "wire",
+      "question": "What can a wire carry?",
+      "baseline_trap": "electric current",
+      "gold": "vine canopy",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "grapevines",
+        "fruiting canes",
+        "trained shoots",
+        "vine growth",
+        "grape shoots",
+        "trellised vines",
+        "fruiting laterals"
+      ],
+      "gold_responses": [
+        "It carries and positions the vine canopy."
+      ],
+      "trap_aliases": [
+        "electrical current",
+        "power signal",
+        "data signal"
+      ],
+      "trap_responses": [
+        "A wire can carry electric current.",
+        "It carries power between electrical components.",
+        "It may transmit an electrical or data signal."
+      ]
+    },
+    {
+      "term": "bench",
+      "question": "What does a bench support?",
+      "baseline_trap": "a seated person",
+      "gold": "container plants",
+      "dominant_prior": "furniture",
+      "gold_aliases": [
+        "potted plants",
+        "seedling trays",
+        "nursery stock",
+        "plug trays",
+        "nursery containers",
+        "bedding plants"
+      ],
+      "gold_responses": [
+        "It supports container-grown plants above the ground."
+      ],
+      "trap_aliases": [
+        "a sitter",
+        "a person",
+        "a seated body"
+      ],
+      "trap_responses": [
+        "It supports a seated person.",
+        "It provides seating for one or more people.",
+        "It holds someone while they sit."
+      ]
+    },
+    {
+      "term": "medium",
+      "question": "What does a medium support?",
+      "baseline_trap": "a message",
+      "gold": "plant roots",
+      "dominant_prior": "communications",
+      "gold_aliases": [
+        "root growth",
+        "seedlings",
+        "container plants",
+        "young plants",
+        "root systems",
+        "seedling roots",
+        "transplant roots"
+      ],
+      "gold_responses": [
+        "It supports plant roots during establishment."
+      ],
+      "trap_aliases": [
+        "information",
+        "a signal",
+        "content"
+      ],
+      "trap_responses": [
+        "It supports a message by carrying it to an audience.",
+        "It conveys information from a sender to recipients.",
+        "It provides a channel for communicating content."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does a release make available?",
+      "baseline_trap": "software",
+      "gold": "new cultivar",
+      "dominant_prior": "software",
+      "gold_aliases": [
+        "named variety",
+        "commercial cultivar",
+        "selected cultivar",
+        "plant variety",
+        "improved variety",
+        "elite genotype"
+      ],
+      "gold_responses": [
+        "A newly selected cultivar for commercial propagation."
+      ],
+      "trap_aliases": [
+        "application",
+        "source code",
+        "software update"
+      ],
+      "trap_responses": [
+        "A release makes new software available to users.",
+        "It makes an application version publicly available.",
+        "A release provides updated code for installation."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:35:59Z"
+}

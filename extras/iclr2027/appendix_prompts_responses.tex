@@ -1,0 +1,1359 @@
+\section{Prompts}
+\label{app:prompts}
+
+The user turn is always the bare question. Nothing below is inserted into
+the question text.
+
+\subsection{Contrastive pairs}
+
+The same unnamed stem is answered twice by the model under test. Expert
+text is the positive class; default text is the negative class.
+Extraction replays both answers under the default helper template.
+
+\paragraph{Expert $(+)$.}
+\begin{quote}\small\ttfamily\raggedright
+You are a \{domain\} practitioner. Every question uses a term that has an
+operational meaning in \{domain\}. Answer that meaning even when the wording
+sounds like everyday life, media, sports, law, or another field --- those
+readings are distractors, not the answer. Answer in 1-2 short sentences.
+Do not use lists. Do not explain other fields' meanings of the term.
+\end{quote}
+
+\paragraph{Default $(-)$, and extraction wrapper.}
+\begin{quote}\small\ttfamily\raggedright
+You are a helpful assistant. Answer in 1-2 short sentences. Do not use lists.
+\end{quote}
+
+\subsection{Evaluation arms}
+
+Unsteered and CAA use the helper prompt (no domain name). Prompt and
+prompt+CAA use the practitioner prompt. The length cap matches the run.
+
+\paragraph{Helper (unsteered, CAA), 10-word runs.}
+\begin{quote}\small\ttfamily\raggedright
+You are a helpful assistant. Answer in at most 10 words. Do not use lists.
+\end{quote}
+
+\paragraph{Practitioner (prompt, prompt+CAA), 10-word runs.}
+\begin{quote}\small\ttfamily\raggedright
+You are a \{domain\} practitioner. Answer in at most 10 words. Do not use lists.
+\end{quote}
+
+\paragraph{Helper, 20-word four-arm run.}
+\begin{quote}\small\ttfamily\raggedright
+You are a helpful assistant. Answer in at most 20 words. Do not use lists.
+\end{quote}
+
+\paragraph{Practitioner, 20-word four-arm run.}
+\begin{quote}\small\ttfamily\raggedright
+You are a \{domain\} practitioner. Answer in at most 20 words. Do not use lists.
+\end{quote}
+
+\section{Best-cell responses (8B, 20-word four-arm)}
+\label{app:responses}
+
+One item per domain: the trap with the largest prompt+CAA vs.\ prompt
+cosine gain at that domain's best prompt+CAA cell.
+Cosines in parentheses are MPNet similarity to the frozen gold.
+CAA and prompt+CAA answers are from that arm's own best cell, which need
+not be the same $(L,\alpha)$.
+
+\begingroup\small
+\medskip\noindent\textbf{3001 Agricultural biotechnology.} Term: \emph{draft}.
+Q: What can a draft describe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can describe a preliminary genome sequence assembly.
+\item Unsteered (0.34): A draft can describe a preliminary version of a document, a current of air, or a selection of players in
+\item Prompt (0.19): A draft in agriculture refers to a controlled environment with a gentle flow of air, often used in greenhouses or
+\item CAA $L16$, $\alpha=0.35$ (0.51): A draft is a gene expression vector used in biotechnology to produce a desired trait in plants.
+\item Prompt+CAA $L13$, $\alpha=0.2$ (0.53): A draft in biotechnology refers to the process of introducing a gene from one species into another species using biotechnology
+\end{itemize}
+\medskip\noindent\textbf{3002 Agriculture, land and farm management.} Term: \emph{draft}.
+Q: What does draft quantify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It measures implement pulling resistance through the soil.
+\item Unsteered (0.26): A draft quantifies the amount of air or gas that passes through a system or device per unit of time.
+\item Prompt (0.27): Draft refers to the amount of feed required to maintain a certain level of weight gain or production in livestock
+\item CAA $L15$, $\alpha=0.35$ (0.51): Draft quantifies crop yields, soil health, and crop growth through measurements of plant growth and crop yields.
+\item Prompt+CAA $L14$, $\alpha=0.2$ (0.40): Draft is the amount of water lost through evaporation from soil surface, measured in inches or centimeters.
+\end{itemize}
+\medskip\noindent\textbf{3003 Animal production.} Term: \emph{dam}.
+Q: What does a dam identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It indicates the female ancestor listed as the mother.
+\item Unsteered (0.18): A dam identifies a barrier constructed across a river or stream to control water flow and water level.
+\item Prompt (0.14): A dam identifies a barrier constructed across a watercourse to control water flow, typically for irrigation, power generation, or flood
+\item CAA $L15$, $\alpha=0.35$ (0.46): A dam identifies the sire of a female livestock, used in breeding programs to improve genetic traits.
+\item Prompt+CAA $L18$, $\alpha=0.1$ (0.46): A dam identifies the female parent of an animal, especially in cattle, sheep, and other livestock breeding programs.
+\end{itemize}
+\medskip\noindent\textbf{3004 Crop and pasture production.} Term: \emph{sink}.
+Q: What does a sink receive?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It receives sucrose transported through the phloem.
+\item Unsteered (0.27): A sink receives water, typically from a faucet or water supply line, for washing and draining purposes.
+\item Prompt (0.29): A sink receives water, typically from a faucet or pipe, to be used for various purposes such as washing or
+\item CAA $L17$, $\alpha=0.4$ (0.61): A sink receives water, nutrients, and crop residues from the crop roots through the root crown.
+\item Prompt+CAA $L20$, $\alpha=0.25$ (0.46): A sink receives water, nutrients, and organic matter from crop and pasture residues, and excess water from rainfall.
+\end{itemize}
+\medskip\noindent\textbf{3005 Fisheries sciences.} Term: \emph{cleaner}.
+Q: What can a cleaner remove?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can remove ectoparasitic lice from cultured salmon.
+\item Unsteered (0.26): A cleaner can remove dirt, dust, stains, grime, grease, and other impurities from surfaces and objects.
+\item Prompt (0.56): A cleaner fish can remove parasites, dead skin, and other debris from the bodies of other fish.
+\item CAA $L19$, $\alpha=0.4$ (0.46): A cleaner can remove a variety of substances including algae, grime, and marine life from fishing gear.
+\item Prompt+CAA $L19$, $\alpha=0.2$ (0.65): A cleaner wrasse can remove parasitic fish, such as sea lice, from the skin of other fish.
+\end{itemize}
+\medskip\noindent\textbf{3007 Forestry sciences.} Term: \emph{figure}.
+Q: What does figure describe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It describes the decorative pattern visible in wood grain.
+\item Unsteered (0.26): A figure is a representation of a person, animal, or object in art, often two-dimensional or three-dimensional.
+\item Prompt (0.14): I'm not sure what you're referring to, could you please provide more context or clarify what you mean by "figure"?
+\item CAA $L10$, $\alpha=0.25$ (0.43): Figure describes a woody vegetation stand dominated by trees of similar age and species, often with uniform canopy density.
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.43): A figure in forestry refers to a tree with a straight, columnar shape, typically with a single stem and a
+\end{itemize}
+\medskip\noindent\textbf{3008 Horticultural production.} Term: \emph{load}.
+Q: What can load determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It influences berry calibre at harvest.
+\item Unsteered (0.15): A load can determine weight, mass, or capacity, often used in physics, engineering, and construction to measure various types of
+\item Prompt (0.23): Load can determine the structural integrity of a greenhouse, affecting its stability and potential for collapse under weight.
+\item CAA $L11$, $\alpha=0.2$ (0.39): Load can determine plant growth, soil moisture, and nutrient availability in agricultural settings.
+\item Prompt+CAA $L14$, $\alpha=0.2$ (0.52): Load can determine plant growth, yield, and fruiting in horticulture, as it affects nutrient availability and root development.
+\end{itemize}
+\medskip\noindent\textbf{3009 Veterinary sciences.} Term: \emph{ring}.
+Q: What can a ring indicate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can indicate dermatophytosis caused by a dermatophyte infection.
+\item Unsteered (0.16): A ring can indicate a commitment, engagement, marriage, or a symbol of status, power, or wealth in various cultures.
+\item Prompt (0.23): A ring on a bird's leg can indicate that it has been banded for identification or tracking purposes.
+\item CAA $L14$, $\alpha=0.35$ (0.26): A ring can indicate a marriage in dogs, a marking in a male bovine, or an esophageal esophitis in a
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.45): A ring on the nail can indicate a foreign body, such as a grass awn, in the hoof.
+\end{itemize}
+\medskip\noindent\textbf{3101 Biochemistry and cell biology.} Term: \emph{resolution}.
+Q: What can resolution distinguish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Resolution can distinguish protein isoforms that differ slightly in mass or charge.
+\item Unsteered (0.44): Resolution can distinguish between two closely related or similar objects, images, or signals.
+\item Prompt (0.49): Resolution in microscopy can distinguish objects or structures as small as 200-300 nanometers apart, depending on the technique used.
+\item CAA $L17$, $\alpha=0.35$ (0.74): Resolution can distinguish between two proteins, two proteins and a protein complex, and two protein complexes.
+\item Prompt+CAA $L19$, $\alpha=0.2$ (0.78): Resolution in biochemistry and cell biology can distinguish between two or more molecules, proteins, or structures based on their size
+\end{itemize}
+\medskip\noindent\textbf{3102 Bioinformatics and computational biology.} Term: \emph{browser}.
+Q: What can a browser navigate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A genome browser can navigate genomic coordinates across a reference assembly.
+\item Unsteered (0.32): A browser can navigate the internet, websites, web pages, and online applications.
+\item Prompt (0.30): A web browser can navigate through the World Wide Web, accessing various websites, web pages, and online resources.
+\item CAA $L11$, $\alpha=0.25$ (0.79): A browser can navigate a genome assembly, a genome assembly graph, or a genome assembly graph with a graph library.
+\item Prompt+CAA $L17$, $\alpha=0.2$ (0.68): A browser can navigate through genomic sequences, transcriptomes, and proteomes to identify functional regions and predict gene function.
+\end{itemize}
+\medskip\noindent\textbf{3104 Evolutionary biology.} Term: \emph{signal}.
+Q: What does signal reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It reveals shared ancestry among the taxa.
+\item Unsteered (0.17): A signal can reveal information, convey meaning, or indicate a change in a system, process, or situation.
+\item Prompt (0.13): Signal transduction pathways reveal how cells respond to environmental cues, influencing gene expression and cellular behavior through complex molecular interactions.
+\item CAA $L10$, $\alpha=0.25$ (0.52): Signal reveals the genetic basis of a trait, its evolutionary history, and its ecological niche.
+\item Prompt+CAA $L17$, $\alpha=0.35$ (0.42): A signal in the context of evolutionary biology is a heritable trait that provides a genetic advantage to a species.
+\end{itemize}
+\medskip\noindent\textbf{3106 Industrial biotechnology.} Term: \emph{bed}.
+Q: What can a bed support?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The bed supports a retained biocatalyst.
+\item Unsteered (0.45): A bed can support a person's body weight, providing a comfortable place to sleep and rest.
+\item Prompt (0.45): A bed can support a person's body weight, providing a comfortable surface for rest and relaxation.
+\item CAA $L10$, $\alpha=0.25$ (0.63): A bioreactor bed supports the growth of microorganisms for biofuel production and production of recombinant proteins.
+\item Prompt+CAA $L11$, $\alpha=0.15$ (0.69): A bioreactor bed can support microbial fermentation for the production of biofuels, biochemicals, and bioproducts.
+\end{itemize}
+\medskip\noindent\textbf{3107 Microbiology.} Term: \emph{fingerprint}.
+Q: What can a fingerprint distinguish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It separates strains within the same species.
+\item Unsteered (0.28): A fingerprint can distinguish one individual from another due to unique patterns and ridges on an individual's fingertips.
+\item Prompt (0.27): A fingerprint can distinguish one individual from another due to unique patterns of ridges and valleys on the fingertips.
+\item CAA $L15$, $\alpha=0.25$ (0.51): A fingerprint can distinguish one bacterium from another, and also distinguish between different bacterial strains.
+\item Prompt+CAA $L18$, $\alpha=0.2$ (0.38): A fingerprint can distinguish an individual's unique genetic code, making it a highly specific identifier.
+\end{itemize}
+\medskip\noindent\textbf{3108 Plant biology.} Term: \emph{loading}.
+Q: What does loading establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes the force for phloem mass flow.
+\item Unsteered (0.24): Loading establishes a connection between a device and a data source, preparing it for data transfer or operation.
+\item Prompt (0.46): Loading in plant biology refers to the process of preparing a plant for germination by soaking seeds in water.
+\item CAA $L17$, $\alpha=0.35$ (0.39): Loading is the process of loading a plant with a root system into a container for soilless growth.
+\item Prompt+CAA $L18$, $\alpha=0.25$ (0.55): Loading in plant biology refers to the process of loading assimilates, such as sugars, into the phloem, a vascular tissue.
+\end{itemize}
+\medskip\noindent\textbf{3109 Zoology.} Term: \emph{accommodation}.
+Q: What does accommodation adjust?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It alters optical power to maintain a sharp retinal image.
+\item Unsteered (0.23): Accommodation adjusts to an individual's needs, such as vision, hearing, or physical abilities, to facilitate equal access and participation.
+\item Prompt (0.22): In the context of animal behavior, accommodation refers to the adjustment of an animal's physical features to its environment.
+\item CAA $L13$, $\alpha=0.15$ (0.54): Accommodation adjusts to vision in dim light, allowing the eye to see better in low light conditions.
+\item Prompt+CAA $L12$, $\alpha=0.15$ (0.43): Accommodation in zoology refers to the adjustment of the eye's lens to focus on near or far objects.
+\end{itemize}
+\medskip\noindent\textbf{3201 Cardiovascular medicine and haematology.} Term: \emph{capture}.
+Q: What can capture confirm?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes that the pacemaker stimulus produced a beat.
+\item Unsteered (0.24): A camera can capture, a microphone can confirm, or a witness can confirm a statement or event.
+\item Prompt (0.30): A cardiac MRI can confirm the presence of cardiac amyloidosis, a condition where abnormal proteins accumulate in the heart tissue.
+\item CAA $L11$, $\alpha=0.2$ (0.42): The heart can capture, the heart can confirm, and the heart can capture and confirm.
+\item Prompt+CAA $L20$, $\alpha=0.1$ (0.44): A cardiac arrest can be confirmed by the absence of a pulse and unresponsiveness in a patient.
+\end{itemize}
+\medskip\noindent\textbf{3202 Clinical sciences.} Term: \emph{field}.
+Q: What does a field specify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It specifies the imaging area.
+\item Unsteered (0.29): A field in computing refers to a single column or data element in a database or spreadsheet.
+\item Prompt (0.31): A field in clinical sciences specifies a particular area of study or application, such as cardiology or oncology.
+\item CAA $L10$, $\alpha=0.2$ (0.58): A field in medical imaging specifies the region of interest in radiology, e.g., lung, liver, or brain.
+\item Prompt+CAA $L16$, $\alpha=0.2$ (0.58): A field in medical imaging specifies the area of interest for image acquisition, such as brain, liver, or lung.
+\end{itemize}
+\medskip\noindent\textbf{3203 Dentistry.} Term: \emph{guide}.
+Q: What does a guide determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It determines the implant entry point and depth.
+\item Unsteered (0.15): A guide determines the route, provides information, and ensures a safe and enjoyable experience for travelers or adventurers.
+\item Prompt (0.35): A guide in dentistry helps determine the best course of treatment for a patient's oral health and dental needs.
+\item CAA $L10$, $\alpha=0.3$ (0.42): A guide determines the shape of the dentin and the shape of the dentin preparation in the tooth preparation.
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.54): A guide, in dentistry, determines the proper alignment and position of teeth in relation to the surrounding bone and adjacent
+\end{itemize}
+\medskip\noindent\textbf{3204 Immunology.} Term: \emph{footprint}.
+Q: What does a footprint identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It identifies protected residues at the immune recognition interface.
+\item Unsteered (0.12): A footprint typically identifies an individual's foot shape, size, and gait pattern, often used in forensic science for tracking.
+\item Prompt (0.14): A footprint typically identifies an individual based on unique characteristics of their foot shape, size, and pressure patterns.
+\item CAA $L19$, $\alpha=0.4$ (0.54): A footprint identifies the size, shape, and structure of an individual's immune cells, which can be unique to each individual.
+\item Prompt+CAA $L12$, $\alpha=0.1$ (0.52): A footprint identifies an individual through unique patterns of epigenetic modifications on T cells, not DNA, in the immune system.
+\end{itemize}
+\medskip\noindent\textbf{3205 Medical biochemistry and metabolomics.} Term: \emph{score}.
+Q: What can a score support?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It supports a peptide-spectrum match in proteomic analysis.
+\item Unsteered (0.20): A score can support a melody, providing harmony and structure in music composition and performance.
+\item Prompt (0.38): A score, in medical biochemistry, typically refers to a numerical value representing a patient's test result, such as a blood
+\item CAA $L14$, $\alpha=0.25$ (0.54): A score can support the process of transcription, translation, and the study of the regulation of gene expression.
+\item Prompt+CAA $L14$, $\alpha=0.2$ (0.54): A score in the context of metabolomics can support the identification of metabolites in a biological sample.
+\end{itemize}
+\medskip\noindent\textbf{3206 Medical biotechnology.} Term: \emph{library}.
+Q: What can a library contain?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can contain diverse DNA variants for screening.
+\item Unsteered (0.07): A library can contain books, journals, magazines, newspapers, audiobooks, e-books, DVDs, CDs, and other media for borrowing and research purposes.
+\item Prompt (0.22): A library can contain a vast collection of books, journals, manuscripts, and other materials related to various subjects, including medical
+\item CAA $L11$, $\alpha=0.25$ (0.52): A library can contain a vast array of genetic material, including plasmid vectors, plasmid DNA, and other recombinant DNA constructs.
+\item Prompt+CAA $L13$, $\alpha=0.2$ (0.44): A library can contain a vast collection of genetic libraries, which are collections of DNA sequences or genes for gene
+\end{itemize}
+\medskip\noindent\textbf{3207 Medical microbiology.} Term: \emph{profile}.
+Q: What does a profile reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It reveals the organism's antimicrobial resistance phenotype.
+\item Unsteered (0.13): A profile typically reveals a person's characteristics, traits, and information about their background, interests, and personal details.
+\item Prompt (0.49): A microbial profile typically reveals the presence, type, and quantity of microorganisms present in a sample, such as bacteria, viruses
+\item CAA $L15$, $\alpha=0.35$ (0.41): A profile is a characteristic or colony of microorganisms on a culture agar plate, revealing colony morphology and growth characteristics.
+\item Prompt+CAA $L17$, $\alpha=0.3$ (0.68): A bacterial isolate's profile reveals its species, antibiotic susceptibility, antibiotic resistance, and virulence characteristics, aiding in diagnosis and treatment.
+\end{itemize}
+\medskip\noindent\textbf{3208 Medical physiology.} Term: \emph{tone}.
+Q: What does tone indicate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It indicates the resting tension within a muscle.
+\item Unsteered (0.15): Tone is the attitude or emotional quality conveyed through language, often conveyed through word choice and sentence structure.
+\item Prompt (0.28): Tone refers to the quality or pitch of the voice, indicating emotions, attitudes, or vocal strain in the laryngeal muscles.
+\item CAA $L15$, $\alpha=0.3$ (0.50): Tone is the nervous and reflex response of the heart to the stretch of the ventricus during the cardiac cycle.
+\item Prompt+CAA $L12$, $\alpha=0.2$ (0.57): Tone is the tension of skeletal muscle, reflecting the force of muscle contraction, influencing movement and posture.
+\end{itemize}
+\medskip\noindent\textbf{3209 Neurosciences.} Term: \emph{field}.
+Q: What does a field delimit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A neuron's effective stimulus space.
+\item Unsteered (0.12): A field in computing delimits a specific area or section of data within a record or database, separating it from
+\item Prompt (0.30): A field delimits the area of study or expertise within a broader discipline, such as neuroscience, psychology, or neurology.
+\item CAA $L13$, $\alpha=0.25$ (0.50): A field delimits the boundaries of a neuron, the basic functional unit of the central nervous system.
+\item Prompt+CAA $L12$, $\alpha=0.15$ (0.54): A field delimits the receptive field of a neuron, the region of the sensory space where the neuron receives excitatory
+\end{itemize}
+\medskip\noindent\textbf{3210 Nutrition and dietetics.} Term: \emph{load}.
+Q: What does load predict?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It predicts the post-meal blood glucose response.
+\item Unsteered (0.09): Load typically refers to the amount of weight or stress an object, system, or resource can handle before failing or
+\item Prompt (0.09): Load refers to the amount of physical stress or strain placed on the body, particularly the muscles, bones, and joints
+\item CAA $L11$, $\alpha=0.25$ (0.54): Glycogen load predicts the amount of glycogen stored in the liver and muscles, influencing energy production.
+\item Prompt+CAA $L15$, $\alpha=0.15$ (0.59): Glycemic load (GL) predicts the effect of a food on blood sugar levels, not just the carbohydrate content.
+\end{itemize}
+\medskip\noindent\textbf{3211 Oncology and carcinogenesis.} Term: \emph{panel}.
+Q: What can a panel establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can establish a tumor's molecular profile.
+\item Unsteered (0.22): A panel can establish facts, set standards, make decisions, and provide expert opinions or recommendations on a particular subject or
+\item Prompt (0.48): A panel in oncology can establish a consensus on treatment guidelines, diagnostic criteria, or prognosis for specific types of cancer.
+\item CAA $L20$, $\alpha=0.35$ (0.49): A panel can establish a diagnosis, a treatment plan, or a prognosis in cancer and other diseases.
+\item Prompt+CAA $L18$, $\alpha=0.2$ (0.63): A panel of oncologists can establish a patient's cancer stage, prognosis, and treatment plan through genetic and histological analysis.
+\end{itemize}
+\medskip\noindent\textbf{3212 Ophthalmology and optometry.} Term: \emph{ring}.
+Q: Where can a ring be placed?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Within a stromal tunnel in the cornea.
+\item Unsteered (0.20): A ring can be placed on a finger, such as a wedding ring on the fourth finger of the left
+\item Prompt (0.23): A ring can be placed on a finger, typically the fourth finger of the left hand for engagement and wedding
+\item CAA $L15$, $\alpha=0.3$ (0.38): The ring can be placed on the ring finger, the upper part of the nose, or the upper part of
+\item Prompt+CAA $L11$, $\alpha=0.25$ (0.67): The ring can be placed on the periphery of the cornea, the clear central part of the cornea is the
+\end{itemize}
+\medskip\noindent\textbf{3213 Paediatrics.} Term: \emph{term}.
+Q: What can term establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes whether birth was preterm, term, or post-term.
+\item Unsteered (0.33): A term can establish a definition, a standard, a concept, or a relationship between ideas or objects.
+\item Prompt (0.22): A pediatrician can establish a diagnosis, develop a treatment plan, and monitor a child's growth and development.
+\item CAA $L15$, $\alpha=0.25$ (0.49): A term can establish a diagnosis in medicine, a medical condition's presence or absence in a child in pediatrics.
+\item Prompt+CAA $L17$, $\alpha=0.25$ (0.63): A term is a period of 37 to 42 weeks of gestation, marking a baby's age.
+\end{itemize}
+\medskip\noindent\textbf{3214 Pharmacology and pharmaceutical sciences.} Term: \emph{code}.
+Q: What does code specify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It specifies the amino acid sequence of a protein.
+\item Unsteered (0.36): Code specifies a set of instructions that a computer can understand and execute to perform a specific task or function.
+\item Prompt (0.49): In pharmacology, a code is a system used to classify and identify medications, such as the ATC (Anatomical Therapeutic Chemical)
+\item CAA $L10$, $\alpha=0.2$ (0.61): Code specifies the sequence of instructions that a cell uses to synthesize a protein from its mRNA transcript.
+\item Prompt+CAA $L16$, $\alpha=0.25$ (0.58): In pharmacology, a code is a chemical name for a drug, e.g.
+\end{itemize}
+\medskip\noindent\textbf{3215 Reproductive medicine.} Term: \emph{dating}.
+Q: What does dating establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It estimates when conception and delivery likely occurred.
+\item Unsteered (0.12): Dating establishes a romantic or social relationship between two people, often with the potential for a long-term partnership or marriage.
+\item Prompt (0.12): Dating establishes a relationship between two individuals, often leading to emotional intimacy, trust, and potential long-term commitment.
+\item CAA $L16$, $\alpha=0.3$ (0.24): Dating establishes a potential relationship between two individuals, assessing compatibility and emotional connection.
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.52): Dating establishes a relationship timeline, determining the age of the embryo or fetus, essential for fertility treatment and genetic testing.
+\end{itemize}
+\medskip\noindent\textbf{3304 Urban and regional planning.} Term: \emph{tenure}.
+Q: What does tenure establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes a resident's legal right to occupy a dwelling.
+\item Unsteered (0.28): Tenure establishes a secure, long-term employment contract for professors, typically protecting them from arbitrary dismissal or termination.
+\item Prompt (0.30): Tenure in urban and regional planning establishes a long-term commitment to a specific position, typically a minimum of 3-5 years
+\item CAA $L14$, $\alpha=0.35$ (0.51): Tenure establishes a minimum property tax rate within a local government area, providing a stable tax base for urban development.
+\item Prompt+CAA $L15$, $\alpha=0.15$ (0.55): Tenure in urban planning establishes long-term land-use rights, stability, and predictability for developers and residents, promoting investment and community development.
+\end{itemize}
+\medskip\noindent\textbf{3401 Analytical chemistry.} Term: \emph{area}.
+Q: What does area quantify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: After calibration and appropriate corrections, peak area quantifies the amount of analyte in the sample.
+\item Unsteered (0.37): Area quantifies the amount of space inside a two-dimensional shape or region.
+\item Prompt (0.38): Area quantifies the extent of a two-dimensional space or surface, typically measured in square units such as square meters or
+\item CAA $L10$, $\alpha=0.25$ (0.54): Area quantitatively measures the amount of substance (in g) of a solute in a solution.
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.67): Area in chromatography quantifies the amount of analyte present in a sample, typically by measuring peak area in chromatograms.
+\end{itemize}
+\medskip\noindent\textbf{3402 Inorganic chemistry.} Term: \emph{window}.
+Q: What can a window admit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The aperture permits molecular guests to enter the cavity.
+\item Unsteered (0.27): A window can admit natural light, air, and views of the outside environment, as well as sound and sometimes even
+\item Prompt (0.26): A window can admit light, air, and views, as well as potentially pollutants and heat transfer.
+\item CAA $L12$, $\alpha=0.25$ (0.47): A window can admit light, a ligand, and a complex can admit a ligand.
+\item Prompt+CAA $L16$, $\alpha=0.1$ (0.37): A window can admit light, air, and gases, such as oxygen and carbon dioxide, into a room.
+\end{itemize}
+\medskip\noindent\textbf{3403 Macromolecular and materials chemistry.} Term: \emph{binder}.
+Q: What can a binder hold together?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It anchors filler particles within a polymer matrix.
+\item Unsteered (0.30): A binder can hold together papers, notes, documents, reports, and other loose materials in a neat and organized manner.
+\item Prompt (0.52): A binder can hold together various materials such as powders, fibers, and particles in composites, coatings, and adhesives.
+\item CAA $L14$, $\alpha=0.25$ (0.52): A binder can hold together various materials such as papers, fibers, and polymers through cross-linking or entangulation.
+\item Prompt+CAA $L11$, $\alpha=0.1$ (0.63): A binder in macromolecular and materials chemistry can hold together polymer chains, nanoparticles, or fibers in a composite material.
+\end{itemize}
+\medskip\noindent\textbf{3404 Medicinal and biomolecular chemistry.} Term: \emph{footprint}.
+Q: What can a footprint map?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A footprint can map the ligand-binding site on a protein.
+\item Unsteered (0.44): A footprint can be mapped using various methods, including plaster casting, ink impressions, or digital scanning technology.
+\item Prompt (0.54): A footprint can map the distribution of certain biomarkers, such as cortisol or other hormones, in the soil or surface.
+\item CAA $L12$, $\alpha=0.25$ (0.76): A footprint can be mapped by a footprint-glycosylase enzyme, which is a biocatalyst that maps the footprint of a protein.
+\item Prompt+CAA $L18$, $\alpha=0.3$ (0.94): A footprint can map the binding of a ligand to a protein, which is crucial in drug discovery and drug
+\end{itemize}
+\medskip\noindent\textbf{3405 Organic chemistry.} Term: \emph{clock}.
+Q: What does a clock reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It reveals the lifetime of a radical intermediate.
+\item Unsteered (0.13): A clock reveals time, allowing us to measure and organize our lives, making it a fundamental aspect of modern society.
+\item Prompt (0.14): A clock reveals time, allowing us to measure the passage of seconds, minutes, and hours in a day.
+\item CAA $L11$, $\alpha=0.2$ (0.19): A clock reveals the passage of time, the second law of thermodynamics, and the concept of entropy.
+\item Prompt+CAA $L13$, $\alpha=0.1$ (0.38): A clock reveals time, a fundamental concept in organic chemistry, where reaction rates and kinetics are crucial.
+\end{itemize}
+\medskip\noindent\textbf{3406 Physical chemistry.} Term: \emph{order}.
+Q: What does order determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The order determines rate sensitivity to reactant concentration.
+\item Unsteered (0.47): Order determines the sequence or arrangement of things, such as time, space, or priority.
+\item Prompt (0.48): Order in physical chemistry determines the arrangement and organization of particles, such as molecules or atoms, in a system.
+\item CAA $L11$, $\alpha=0.25$ (0.68): Order determines the equilibrium constant of a reaction, a measure of equilibrium constant in a chemical reaction.
+\item Prompt+CAA $L11$, $\alpha=0.15$ (0.68): Order determines the spontaneity of a reaction, with higher order favoring the reactants and lower order favoring the products.
+\end{itemize}
+\medskip\noindent\textbf{3407 Theoretical and computational chemistry.} Term: \emph{thermostat}.
+Q: What does a thermostat enforce?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The canonical ensemble at the specified temperature.
+\item Unsteered (0.30): A thermostat enforces a set temperature by controlling heating or cooling systems to maintain a desired temperature level.
+\item Prompt (0.31): A thermostat enforces a constant temperature, maintaining thermal equilibrium in a system by balancing heat input and output.
+\item CAA $L11$, $\alpha=0.25$ (0.73): The thermostat enforces the canonical ensemble ensemble density of the system by the Boltzmann-Boltzmann ensemble.
+\item Prompt+CAA $L12$, $\alpha=0.1$ (0.70): A thermostat enforces the canonical ensemble, a statistical ensemble in which the temperature is a constant of motion.
+\end{itemize}
+\medskip\noindent\textbf{3501 Accounting, auditing and accountability.} Term: \emph{casting}.
+Q: What does casting produce?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It produces a checked total for a schedule or ledger column.
+\item Unsteered (0.13): Casting produces a physical object or shape from a mold or pattern, typically through metal, plastic, or resin.
+\item Prompt (0.34): Casting in accounting refers to the process of allocating costs to products or services produced by a company.
+\item CAA $L10$, $\alpha=0.25$ (0.38): Casting produces the cost of goods sold, which is the cost of goods sold on the income statement.
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.46): Casting produces a financial statement that presents the results of operations for a period.
+\end{itemize}
+\medskip\noindent\textbf{3502 Banking, finance and investment.} Term: \emph{strike}.
+Q: What can a strike determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It determines the price for exercising the option.
+\item Unsteered (0.40): A strike can determine the outcome of a labor dispute, union negotiations, or a sports game's winner.
+\item Prompt (0.43): A strike can determine the outcome of a labor dispute, union negotiations, or a company's financial performance.
+\item CAA $L12$, $\alpha=0.25$ (0.43): A strike is a determination of the value of a bond by the rating agency Moody's.
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.61): A strike can determine the outcome of a strike price in a call option, which is the price at which
+\end{itemize}
+\medskip\noindent\textbf{3503 Business systems in context.} Term: \emph{disposition}.
+Q: What does disposition authorize?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It authorizes the final action for records.
+\item Unsteered (0.42): Disposition authorizes the release of information or property, typically in a legal or official context.
+\item Prompt (0.45): Disposition authorizes the final status of a case, issue, or problem, typically closing or resolving it permanently.
+\item CAA $L13$, $\alpha=0.25$ (0.51): Disposition authorizes the release of information to the public, and the disposition of records.
+\item Prompt+CAA $L18$, $\alpha=0.1$ (0.51): Disposition authorizes the permanent removal of a record from an organization's records management system.
+\end{itemize}
+\medskip\noindent\textbf{3504 Commercial services.} Term: \emph{key}.
+Q: What can a key admit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A room key lets guests enter their lodging.
+\item Unsteered (0.64): A key can admit access to a locked area or a locked device, such as a door or a safe.
+\item Prompt (0.70): A key can admit access to a locked area or a secure space, allowing entry.
+\item CAA $L15$, $\alpha=0.25$ (0.70): A key can admit a customer to a hotel, a key can admit a customer to a hotel room.
+\item Prompt+CAA $L18$, $\alpha=0.3$ (0.82): A key can admit a customer to a property, such as a hotel room or a car.
+\end{itemize}
+\medskip\noindent\textbf{3505 Human resources and industrial relations.} Term: \emph{code}.
+Q: What does a code prescribe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It prescribes expected workplace conduct and ethical behaviour.
+\item Unsteered (0.49): A code prescribes a set of rules or guidelines that must be followed in a specific situation or context.
+\item Prompt (0.47): A code typically prescribes rules, guidelines, or standards that an organization or industry must follow to maintain compliance and ensure
+\item CAA $L17$, $\alpha=0.4$ (0.52): A code is a set of rules and regulations that outlines the duties and responsibilities of an employee.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.67): A code prescribes rules, regulations, and standards governing employee conduct, discipline, and grievances, ensuring a fair and respectful work environment.
+\end{itemize}
+\medskip\noindent\textbf{3507 Strategy, management and organisational behaviour.} Term: \emph{bench}.
+Q: What can a bench provide?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A bench can provide leadership depth for planned succession.
+\item Unsteered (0.47): A bench can provide a place to sit, rest, and socialize, often in public spaces or outdoor areas.
+\item Prompt (0.55): A bench can provide a temporary workspace for employees, promoting flexibility and collaboration in open-plan offices.
+\item CAA $L19$, $\alpha=0.35$ (0.54): A bench provides a place to sit, rest, and socialise, fostering a sense of community and productivity.
+\item Prompt+CAA $L20$, $\alpha=0.1$ (0.61): A bench can provide a temporary or permanent work arrangement for employees, offering flexibility and reduced costs for organisations.
+\end{itemize}
+\medskip\noindent\textbf{3509 Transportation, logistics and supply chains.} Term: \emph{tractor}.
+Q: What does a tractor pull?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A highway tractor draws a freight trailer.
+\item Unsteered (0.63): A tractor is a heavy-duty vehicle used for agricultural and construction tasks, such as plowing fields and hauling heavy loads.
+\item Prompt (0.69): A tractor typically pulls trailers, equipment, or other vehicles, often used in agriculture, construction, or transportation for heavy loads.
+\item CAA $L10$, $\alpha=0.15$ (0.72): A tractor pulls trailers or equipment, typically in agricultural or construction settings, to transport goods or supplies.
+\item Prompt+CAA $L15$, $\alpha=0.2$ (0.77): A tractor pulls trailers, containers, and cargo units, typically from warehouses to distribution centers or delivery points.
+\end{itemize}
+\medskip\noindent\textbf{3601 Art history, theory and criticism.} Term: \emph{capital}.
+Q: What does capital confer?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It converts recognition into influence over artistic value.
+\item Unsteered (0.15): Capital typically refers to wealth, assets, or funds used to invest or finance business ventures and projects.
+\item Prompt (0.26): Capital confers power, privilege, and status, often perpetuating social hierarchies and reinforcing existing structures of oppression and inequality.
+\item CAA $L11$, $\alpha=0.25$ (0.31): Capital confers the power to shape the urban landscape, influencing the built environment and its inhabitants' experiences.
+\item Prompt+CAA $L20$, $\alpha=0.1$ (0.58): Capital confers power, privilege, and cultural capital, shaping artistic production, reception, and the artist's social status within the art world.
+\end{itemize}
+\medskip\noindent\textbf{3602 Creative and professional writing.} Term: \emph{column}.
+Q: What does a column carry?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It presents regular opinion and analysis for readers.
+\item Unsteered (0.11): A column typically carries a load or weight, often vertical loads in buildings, bridges, or other structures.
+\item Prompt (0.13): A column typically carries a load or weight, often vertical support in architecture, or a vertical arrangement of items in
+\item CAA $L13$, $\alpha=0.3$ (0.42): A column carries the narrative, theme, or argument of a story, essay, or novel.
+\item Prompt+CAA $L15$, $\alpha=0.35$ (0.49): A column conveys ideas, emotions, and perspectives, weaving a narrative that resonates with readers, leaving a lasting impression.
+\end{itemize}
+\medskip\noindent\textbf{3604 Performing arts.} Term: \emph{apron}.
+Q: What does an apron extend?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It extends the front of the stage.
+\item Unsteered (0.23): An apron extends protection to clothing from stains and splatters while working in a kitchen or other messy environment.
+\item Prompt (0.26): An apron extends protection to clothing from stains and splatters, providing a barrier between the garment and the work or
+\item CAA $L14$, $\alpha=0.2$ (0.35): The apron extends the actor's costume, adding to the character's appearance and helping the audience to identify the character.
+\item Prompt+CAA $L15$, $\alpha=0.2$ (0.56): The apron extends the performer's body, creating a larger presence on stage and framing the actor's movements.
+\end{itemize}
+\medskip\noindent\textbf{3605 Screen and digital media.} Term: \emph{stock}.
+Q: What can stock affect?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Stock can alter the image's visual texture.
+\item Unsteered (0.34): Stock can affect the overall value of a company, investor returns, and the economy as a whole.
+\item Prompt (0.58): Stock can affect the overall aesthetic, mood, and atmosphere of a scene in film and television production.
+\item CAA $L10$, $\alpha=0.3$ (0.75): Stock can affect the look of a film or video, with adjustments in brightness, contrast, and color.
+\item Prompt+CAA $L15$, $\alpha=0.2$ (0.84): Stock can affect the color, contrast, and brightness of an image, altering its overall visual appearance and mood.
+\end{itemize}
+\medskip\noindent\textbf{3606 Visual arts.} Term: \emph{vehicle}.
+Q: What does a vehicle carry?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It carries pigment through the paint film.
+\item Unsteered (0.20): A vehicle typically carries passengers, cargo, or a combination of both, depending on its design and intended use.
+\item Prompt (0.20): A vehicle typically carries passengers, cargo, or a combination of both, depending on its design and intended use.
+\item CAA $L15$, $\alpha=0.3$ (0.22): A vehicle carries a driver, passengers, and cargo, often in a defined interior space, such as a car or a
+\item Prompt+CAA $L18$, $\alpha=0.4$ (0.46): A vehicle carries a medium, such as paint, ink, or clay, to create a three-dimensional or two-dimensional artwork.
+\end{itemize}
+\medskip\noindent\textbf{3702 Climate change science.} Term: \emph{balance}.
+Q: What does a balance quantify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It quantifies the difference between absorbed solar radiation and emitted thermal radiation.
+\item Unsteered (0.19): A balance quantifies the difference between two or more weights or forces, typically measured in units of mass or weight.
+\item Prompt (0.47): A balance quantifies the exchange of energy between the Earth's atmosphere, oceans, land, and ice, measuring the net energy input
+\item CAA $L10$, $\alpha=0.3$ (0.46): A balance measures the difference between the observed and the equilibrium climate sensitivity, in units of CO2 equivalent to CO2
+\item Prompt+CAA $L11$, $\alpha=0.1$ (0.64): A radiative balance quantifies the difference between the amount of energy Earth receives from the sun and the amount it
+\end{itemize}
+\medskip\noindent\textbf{3704 Geoinformatics.} Term: \emph{pass}.
+Q: What can a pass provide?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can provide sensor observations over the mapped area.
+\item Unsteered (0.26): A pass can provide access, permission, or a license to enter a restricted area or use a service.
+\item Prompt (0.26): A pass can provide a digital or physical access to restricted areas, such as a park or a secure facility.
+\item CAA $L13$, $\alpha=0.3$ (0.38): Passes can provide access to data, network services, and data exchange between data sources and applications in a data warehousing
+\item Prompt+CAA $L10$, $\alpha=0.1$ (0.56): A pass can provide a spatially-enabled data structure for efficient querying and analysis of geospatial data in a GIS.
+\end{itemize}
+\medskip\noindent\textbf{3705 Geology.} Term: \emph{cement}.
+Q: What does cement bind?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Sediment grains within a sedimentary rock.
+\item Unsteered (0.26): Cement binds aggregate particles, such as sand and gravel, together to form a strong concrete structure.
+\item Prompt (0.16): Cement binds aggregate particles together in concrete, forming a strong and durable composite material.
+\item CAA $L16$, $\alpha=0.25$ (0.43): Cement binds together the fragments of sedimentary rocks, such as limestone and shale, and forms a hard, coherent mass.
+\item Prompt+CAA $L16$, $\alpha=0.1$ (0.44): Cement binds sedimentary particles together, forming a strong and cohesive rock, such as limestone and sandstone.
+\end{itemize}
+\medskip\noindent\textbf{3706 Geophysics.} Term: \emph{occupation}.
+Q: What does an occupation establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes the coordinates of the measurement station.
+\item Unsteered (0.17): An occupation establishes a person's primary role or profession, defining their main source of income and identity.
+\item Prompt (0.18): An occupation establishes a person's primary role or profession, often defining their work responsibilities and expertise in a specific field.
+\item CAA $L10$, $\alpha=0.2$ (0.25): An occupation establishes the distribution of stress and strain within the Earth's lithosphere.
+\item Prompt+CAA $L10$, $\alpha=0.25$ (0.36): An occupation establishes the distribution of density and seismic velocity in the Earth's crust.
+\end{itemize}
+\medskip\noindent\textbf{3708 Oceanography.} Term: \emph{fingerprint}.
+Q: What can a fingerprint establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can establish a water mass's source region.
+\item Unsteered (0.26): A fingerprint can establish an individual's unique identity and authenticity, linking them to a specific crime or event.
+\item Prompt (0.26): A fingerprint can establish an individual's unique identity and distinguish them from others with a high degree of accuracy.
+\item CAA $L12$, $\alpha=0.25$ (0.50): Fingerprints establish oceanic and atmospheric properties, such as ocean mixing and atmospheric oxygen levels, through the analysis of dissolved iron.
+\item Prompt+CAA $L16$, $\alpha=0.3$ (0.48): Fingerprints can establish the global ocean's merewater age, which is the age of the water in the global ocean.
+\end{itemize}
+\medskip\noindent\textbf{3709 Physical geography and environmental geoscience.} Term: \emph{budget}.
+Q: What can a budget show?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It indicates whether a landform is accumulating sediment.
+\item Unsteered (0.06): A budget can show income, expenses, savings, debt, and financial goals, providing a clear financial picture.
+\item Prompt (0.14): A budget can display financial transactions, income, expenses, and savings over a specific period, illustrating economic activity and resource allocation.
+\item CAA $L12$, $\alpha=0.25$ (0.44): A budget shows the distribution of water discharge in a river system, and the rate of sediment transport.
+\item Prompt+CAA $L18$, $\alpha=0.25$ (0.54): A budget can show the distribution of water and sediment load in a river, indicating erosion and sediment transport processes.
+\end{itemize}
+\medskip\noindent\textbf{3801 Applied economics.} Term: \emph{tenure}.
+Q: What does tenure secure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It provides security against losing access to land.
+\item Unsteered (0.32): Tenure secures a professor's job at a university, protecting them from arbitrary termination or dismissal.
+\item Prompt (0.16): Tenure secures a professor's job protection from termination without cause, typically after a probationary period, usually 6-7 years.
+\item CAA $L16$, $\alpha=0.3$ (0.34): Tenure secures a professor's employment in a university, protecting them from price and quantity of output of goods and services.
+\item Prompt+CAA $L12$, $\alpha=0.2$ (0.36): Tenure secures the job security of a professor in a university, protecting them from arbitrary dismissal by the employer.
+\end{itemize}
+\medskip\noindent\textbf{3803 Economic theory.} Term: \emph{claim}.
+Q: What does a claim deliver?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It provides an entitlement to a payoff across possible states.
+\item Unsteered (0.36): A claim delivers a message, statement, or assertion, often in a formal or official capacity, such as in insurance or
+\item Prompt (0.45): A claim delivers a promise or guarantee of a specific outcome or benefit, often used in insurance and contracts.
+\item CAA $L11$, $\alpha=0.25$ (0.38): A claim delivers the state of the system in the next period given the state of the excess demand in
+\item Prompt+CAA $L16$, $\alpha=0.15$ (0.61): A claim delivers a payoff to the claimant if the state of the world is such that the claim is
+\end{itemize}
+\medskip\noindent\textbf{3901 Curriculum and pedagogy.} Term: \emph{load}.
+Q: What does load consume?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It consumes learners' limited working-memory resources.
+\item Unsteered (0.25): Load typically consumes power, resources, or capacity, often referring to electrical power in computing or mechanical load in engineering.
+\item Prompt (0.42): In educational contexts, load refers to the amount of cognitive, emotional, and physical demands placed on learners.
+\item CAA $L11$, $\alpha=0.15$ (0.40): Load consumes resources such as computational power, memory, and energy in computing systems.
+\item Prompt+CAA $L12$, $\alpha=0.1$ (0.70): Load consumes cognitive resources, including working memory, attention, and prior knowledge, affecting student learning and engagement.
+\end{itemize}
+\medskip\noindent\textbf{3902 Education policy, sociology and philosophy.} Term: \emph{correspondence}.
+Q: What does correspondence link?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It links school structures with class relations in society.
+\item Unsteered (0.30): Correspondence refers to a connection or relationship between two or more things that are similar or related in some way.
+\item Prompt (0.43): Correspondence theory in education refers to the idea that learning can occur through correspondence between the student's prior knowledge and
+\item CAA $L11$, $\alpha=0.25$ (0.56): Correspondence link refers to the relationships between concepts, theories, and policies in education, particularly in the sociology of education.
+\item Prompt+CAA $L13$, $\alpha=0.1$ (0.64): Correspondence theory in education policy refers to the idea that educational outcomes are directly related to the socio-economic status of
+\end{itemize}
+\medskip\noindent\textbf{3903 Education systems.} Term: \emph{cap}.
+Q: What can a cap limit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A cap may restrict admissions places.
+\item Unsteered (0.52): A cap can limit the flow of a liquid, gas, or pressure in a container or system.
+\item Prompt (0.53): A cap can limit the maximum amount of liquid that can be poured into a container or a vessel.
+\item CAA $L19$, $\alpha=0.4$ (0.77): A cap can limit the amount of credit a student can receive in a course or program.
+\item Prompt+CAA $L11$, $\alpha=0.25$ (0.79): A cap can limit the number of students enrolled in a course or program, ensuring class size and academic rigor.
+\end{itemize}
+\medskip\noindent\textbf{3904 Specialist studies in education.} Term: \emph{band}.
+Q: What can a band indicate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It identifies the achievement range reached by a learner.
+\item Unsteered (0.19): A band can indicate a group of people playing musical instruments together, often performing as a unit.
+\item Prompt (0.27): A band can indicate a group of people with a shared interest, identity, or purpose, often with a common goal
+\item CAA $L16$, $\alpha=0.2$ (0.33): A band can indicate a group of students in a school, a group of students in a particular subject, or
+\item Prompt+CAA $L10$, $\alpha=0.25$ (0.43): A band in education can indicate a student's academic grouping, typically by age, ability, or learning needs.
+\end{itemize}
+\medskip\noindent\textbf{4001 Aerospace engineering.} Term: \emph{look}.
+Q: What does a look specify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It specifies the sensor viewing direction.
+\item Unsteered (0.20): A look is a facial expression or a glance that conveys a person's emotions or attitude towards something.
+\item Prompt (0.26): A look specification in aerospace engineering refers to a detailed description of an aircraft's appearance, including dimensions, shapes, and visual
+\item CAA $L13$, $\alpha=0.35$ (0.32): A look is a passive flight of a launch vehicle.
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.52): A look specifies the orientation of a spacecraft's velocity vector relative to its velocity vector.
+\end{itemize}
+\medskip\noindent\textbf{4002 Automotive engineering.} Term: \emph{wash}.
+Q: What can wash remove?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Fuel wash can strip lubricant from cylinder walls.
+\item Unsteered (0.37): Soaps, detergents, and cleaning solutions can remove dirt, stains, grime, grease, and odors from various surfaces.
+\item Prompt (0.43): Wax can remove minor scratches, oxidation, and imperfections from vehicle paint surfaces, leaving a glossy finish.
+\item CAA $L15$, $\alpha=0.3$ (0.67): Washing can remove dirt, grime, oil, grease, carbon deposits, and carbonic deposits from engine components.
+\item Prompt+CAA $L20$, $\alpha=0.1$ (0.57): Wash can remove dirt, grime, grease, brake dust, and road tar from vehicle surfaces, including paint, wheels, and tires.
+\end{itemize}
+\medskip\noindent\textbf{4003 Biomedical engineering.} Term: \emph{label}.
+Q: What can a label identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can identify a bioprinted construct's cell population.
+\item Unsteered (0.33): A label can identify the contents, ingredients, and nutritional information of a product, as well as its manufacturer and expiration
+\item Prompt (0.28): A label can identify a product, its contents, ingredients, expiration date, and any relevant warnings or instructions for use.
+\item CAA $L13$, $\alpha=0.35$ (0.57): A label can identify a cell in a tissue engineering scaffold, a cell in a tissue engineering scaffold. In the
+\item Prompt+CAA $L16$, $\alpha=0.3$ (0.62): A label can identify a tissue or cell type in tissue engineering and tissue engineering applications.
+\end{itemize}
+\medskip\noindent\textbf{4004 Chemical engineering.} Term: \emph{lean}.
+Q: What does lean describe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It indicates low solute loading in the solvent.
+\item Unsteered (0.16): Lean refers to a management philosophy that aims to minimize waste and maximize efficiency in business processes and operations.
+\item Prompt (0.18): Lean refers to a production methodology that aims to minimize waste and maximize efficiency in processes and systems, often used
+\item CAA $L13$, $\alpha=0.3$ (0.40): In a process, lean describes the removal of impurities from a stream of a fluid.
+\item Prompt+CAA $L13$, $\alpha=0.2$ (0.34): In chemical engineering, lean refers to the removal of impurities from a process stream to produce a pure product.
+\end{itemize}
+\medskip\noindent\textbf{4005 Civil engineering.} Term: \emph{bond}.
+Q: What does a bond establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes adhesion between reinforcing steel and concrete.
+\item Unsteered (0.17): A bond establishes a legally binding agreement between two parties, creating a debt obligation or a contractual relationship.
+\item Prompt (0.43): A bond in civil engineering establishes a mechanical connection between two or more structural elements, transferring loads and stresses.
+\item CAA $L16$, $\alpha=0.4$ (0.54): A bond establishes a relationship between two soils or soils and a structural steel, resisting soil pressures.
+\item Prompt+CAA $L18$, $\alpha=0.35$ (0.74): A bond in reinforced concrete establishes a composite action between concrete and reinforcement, resisting loads and stresses.
+\end{itemize}
+\medskip\noindent\textbf{4006 Communications engineering.} Term: \emph{bridge}.
+Q: What can a bridge join?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It connects separate local network segments at the data-link layer.
+\item Unsteered (0.43): A bridge can join two landmasses, islands, or two separate parts of a road or a path.
+\item Prompt (0.41): A bridge can join two landmasses, two islands, or two separate sections of a road or a railway.
+\item CAA $L11$, $\alpha=0.25$ (0.50): A bridge joins two or more networks in a star topology in a network.
+\item Prompt+CAA $L12$, $\alpha=0.2$ (0.61): A bridge joins two or more network segments in a star topology to increase network capacity.
+\end{itemize}
+\medskip\noindent\textbf{4007 Control engineering, mechatronics and robotics.} Term: \emph{handshake}.
+Q: What does a handshake establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes synchronized communication between connected devices.
+\item Unsteered (0.31): A handshake typically establishes a sense of trust, respect, and agreement between two individuals in a professional or social setting.
+\item Prompt (0.34): A handshake establishes a physical connection and trust between two individuals, often symbolizing a mutual agreement or understanding.
+\item CAA $L16$, $\alpha=0.3$ (0.46): A handshake establishes a stable and stable control of the steady-state error in a control system.
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.55): A handshake establishes a stable closed-loop control system, ensuring the desired setpoint is achieved and maintained.
+\end{itemize}
+\medskip\noindent\textbf{4008 Electrical engineering.} Term: \emph{clearing}.
+Q: What does clearing establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes a safe isolated condition after fault interruption.
+\item Unsteered (0.20): Clearing establishes a student's eligibility to receive a student loan or government funding in the UK.
+\item Prompt (0.39): Clearing in electrical engineering refers to the process of removing or disconnecting a circuit from a power source.
+\item CAA $L10$, $\alpha=0.25$ (0.53): It establishes a path for current to flow from source to load through a circuit with zero impedance.
+\item Prompt+CAA $L13$, $\alpha=0.1$ (0.54): Clearing in electrical engineering establishes a path to ground, allowing fault current to flow to the ground safely.
+\end{itemize}
+\medskip\noindent\textbf{4009 Electronics, sensors and digital hardware.} Term: \emph{headroom}.
+Q: What does headroom allow?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It allows gain and signal excursions before nonlinear operation.
+\item Unsteered (0.35): Headroom allows for clearance between a vehicle's roof and the underside of an overpass or bridge.
+\item Prompt (0.36): Headroom in electronics refers to the amount of extra power or signal margin available beyond the minimum required for a
+\item CAA $L14$, $\alpha=0.25$ (0.49): Headroom in electronics allows a signal to be transmitted without distortion, without the signal being clipped.
+\item Prompt+CAA $L10$, $\alpha=0.3$ (0.67): It allows a signal to swing from 0 to Vcc (logic high) and from 0 to Vss (logic low) without
+\end{itemize}
+\medskip\noindent\textbf{4010 Engineering practice and education.} Term: \emph{stake}.
+Q: What does a stake represent?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It represents an affected party's interest in the project.
+\item Unsteered (0.47): A stake typically represents a symbol of ownership, investment, or a risk in a business or project.
+\item Prompt (0.41): In engineering, a stake is a temporary support or marker used to define a boundary or location on a construction
+\item CAA $L16$, $\alpha=0.4$ (0.32): In engineering, a stake is a long, slender bar subjected to axial loads in a pin, pin, and the pin
+\item Prompt+CAA $L20$, $\alpha=0.3$ (0.54): In engineering, a stake represents a design or design intent, typically a critical or critical design requirement.
+\end{itemize}
+\medskip\noindent\textbf{4011 Environmental engineering.} Term: \emph{residue}.
+Q: What does a residue quantify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It reports residual contamination in waste or emissions.
+\item Unsteered (0.46): A residue quantifies the amount of a substance that remains after a chemical reaction or process has occurred.
+\item Prompt (0.44): A residue quantifies the remaining amount of a substance or material after a process, treatment, or reaction has occurred.
+\item CAA $L15$, $\alpha=0.3$ (0.55): Residue quantifies the amount of a contaminant or pollutant remaining in a soil, sediment, or water after treatment.
+\item Prompt+CAA $L14$, $\alpha=0.1$ (0.60): Residue quantifies the amount of a contaminant or pollutant remaining in a soil, water, or air after treatment or remediation
+\end{itemize}
+\medskip\noindent\textbf{4012 Fluid mechanics and thermal engineering.} Term: \emph{slug}.
+Q: What does a slug represent?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: In intermittent two-phase flow, it denotes the dense plug between elongated bubbles.
+\item Unsteered (0.19): A slug often symbolizes slow progress, laziness, and adaptability, as well as transformation and renewal in various cultures and mythologies.
+\item Prompt (0.25): In fluid mechanics, a slug is a unit of mass, equivalent to 14.5939 pounds or 6.852 kilograms.
+\item CAA $L12$, $\alpha=0.25$ (0.53): The slug represents the inviscid flow of fluid in the Navier-Stokes equation in fluid dynamics.
+\item Prompt+CAA $L17$, $\alpha=0.1$ (0.34): In fluid dynamics, a slug is a unit of mass, equivalent to 14.59 kg or 32.17 lbm, used for mass
+\end{itemize}
+\medskip\noindent\textbf{4013 Geomatic engineering.} Term: \emph{course}.
+Q: What does a course specify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It specifies the direction of travel.
+\item Unsteered (0.20): A course typically refers to a series of educational lessons or training sessions on a specific subject or skill.
+\item Prompt (0.26): A course in geomatics engineering typically covers the application of geospatial technologies to surveying, mapping, and spatial analysis.
+\item CAA $L16$, $\alpha=0.25$ (0.49): A course is a series of related geodetic measurements used to determine the Earth's geodetic network.
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.44): A course is a mathematical model that defines the Earth's surface as a set of interconnected arcs and nodes.
+\end{itemize}
+\medskip\noindent\textbf{4014 Manufacturing engineering.} Term: \emph{pallet}.
+Q: What can a pallet carry?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It carries fixtures and parts between machining stations.
+\item Unsteered (0.34): A pallet can carry heavy loads of goods, such as boxes, crates, and equipment, typically weighing up to 4,000 pounds.
+\item Prompt (0.30): A pallet can carry a variety of items, typically weighing up to 4,000 pounds, depending on its size and material.
+\item CAA $L10$, $\alpha=0.3$ (0.58): The pallet carries raw materials, finished parts, and finished products in the manufacturing process.
+\item Prompt+CAA $L10$, $\alpha=0.25$ (0.55): A pallet carries raw materials, work-in-process parts, and finished products in the manufacturing process, including machined parts and assemblies.
+\end{itemize}
+\medskip\noindent\textbf{4015 Maritime engineering.} Term: \emph{scope}.
+Q: What does scope specify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It specifies the deployed rode length for the water depth.
+\item Unsteered (0.21): Scope in programming refers to the region of the code where a variable or function is accessible and can be
+\item Prompt (0.28): The scope defines the boundaries, objectives, and deliverables of a project, outlining what work is included and excluded.
+\item CAA $L16$, $\alpha=0.25$ (0.46): Scope in engineering and naval architecture refers to the area of a ship's hull that is between the ship's sides.
+\item Prompt+CAA $L17$, $\alpha=0.2$ (0.37): The scope of a project defines the boundaries, objectives, and limitations of the work to be undertaken by the shipbuilding
+\end{itemize}
+\medskip\noindent\textbf{4016 Materials engineering.} Term: \emph{set}.
+Q: What can a set leave behind?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A set can leave permanent deformation after unloading.
+\item Unsteered (0.42): A set can leave behind a remainder or residue, especially in mathematics, or a collection of items can be left
+\item Prompt (0.42): A set of materials can leave behind residue, wear, or corrosion, depending on the materials and environmental conditions involved.
+\item CAA $L16$, $\alpha=0.25$ (0.62): A set can leave behind a residue or a pattern of the material it was made of.
+\item Prompt+CAA $L18$, $\alpha=0.1$ (0.55): A set of materials can leave behind residual stresses, residual stresses can cause material failure or affect material properties over
+\end{itemize}
+\medskip\noindent\textbf{4018 Nanotechnology.} Term: \emph{well}.
+Q: What can a well confine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It confines excitons through nanoscale potential engineering.
+\item Unsteered (0.24): A well can confine water, preventing it from flowing freely into the surrounding area or environment.
+\item Prompt (0.21): A well can confine fluids, gases, or solids within its boundaries, maintaining a controlled environment and preventing leakage or escape.
+\item CAA $L13$, $\alpha=0.3$ (0.56): A well can confine a nanoscale material or a nanoscale structure in a nanoconfined system.
+\item Prompt+CAA $L13$, $\alpha=0.2$ (0.65): A well-confined nanoscale structure can confine electrons, phonons, or plasmons, enabling quantum confinement and unique properties.
+\end{itemize}
+\medskip\noindent\textbf{4019 Resources engineering and extractive metallurgy.} Term: \emph{crib}.
+Q: What does a crib support?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It supports the mine roof.
+\item Unsteered (0.40): A crib support, also known as a crib rail or crib guard, supports the mattress and provides a safe sleeping
+\item Prompt (0.57): A crib support is a temporary structure used in mining to support the roof of a tunnel or excavation during
+\item CAA $L20$, $\alpha=0.4$ (0.51): A crib support is a metal or wood structure that supports the mining process in a mining plant.
+\item Prompt+CAA $L19$, $\alpha=0.1$ (0.62): A crib support is a structure used in mining to support the roof of a tunnel or excavation, typically in
+\end{itemize}
+\medskip\noindent\textbf{4101 Climate change impacts and adaptation.} Term: \emph{colonization}.
+Q: What does colonization establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes occupancy of newly suitable habitat.
+\item Unsteered (0.38): Colonization establishes a new settlement or territory under the control of a foreign power, often with economic and cultural influence.
+\item Prompt (0.32): Colonization establishes a power imbalance, often leading to exploitation and displacement of indigenous communities, disrupting their traditional ways of life
+\item CAA $L16$, $\alpha=0.4$ (0.44): Colonization establishes a permanent human settlement in a new region, displacing indigenous communities and ecosystems. Climate change and sea level
+\item Prompt+CAA $L12$, $\alpha=0.2$ (0.59): Colonization establishes a permanent human settlement in a new area, displacing indigenous populations and ecosystems.
+\end{itemize}
+\medskip\noindent\textbf{4102 Ecological applications.} Term: \emph{broadcast}.
+Q: What does a broadcast distribute?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It distributes native seed across a restoration area to establish vegetation.
+\item Unsteered (0.20): A broadcast distributes information, signals, or content to a wide audience through various media, such as radio, television, or the
+\item Prompt (0.18): A broadcast typically distributes information, signals, or content to a wide audience through various mediums like radio, television, or the
+\item CAA $L17$, $\alpha=0.4$ (0.61): A broadcast distributes a species of species, such as seeds, propagules, or propagules, to new areas.
+\item Prompt+CAA $L19$, $\alpha=0.2$ (0.64): A broadcast typically disperses seeds, propagules, or other organisms into a new area, often enhancing species colonization and ecosystem diversity.
+\end{itemize}
+\medskip\noindent\textbf{4103 Environmental biotechnology.} Term: \emph{chip}.
+Q: What can a chip read?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Biorecognition signals indicating dissolved toxin levels.
+\item Unsteered (0.07): A chip can read data, store data, and perform calculations, but it cannot read physical objects or written text directly.
+\item Prompt (0.28): A biosensor chip can read various biological markers, such as DNA, proteins, and metabolites, to detect diseases or environmental pollutants.
+\item CAA $L11$, $\alpha=0.3$ (0.49): A biosorbent chip can read a variety of pollutants in water, such as pesticides and heavy metals.
+\item Prompt+CAA $L11$, $\alpha=0.1$ (0.43): A biosensor chip can read various environmental pollutants such as heavy metals, pesticides, and bacteria in water and soil samples.
+\end{itemize}
+\medskip\noindent\textbf{4104 Environmental management.} Term: \emph{tenure}.
+Q: What does tenure secure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It secures rights to use and manage land.
+\item Unsteered (0.36): Tenure secures a professor's job at a university, protecting them from arbitrary termination or dismissal.
+\item Prompt (0.29): Tenure in environmental management typically secures a researcher's or professor's position for a specified period, usually 5-7 years, allowing them
+\item CAA $L16$, $\alpha=0.4$ (0.67): Tenure secures the right of a species to remain in a given area, preventing the loss of habitat.
+\item Prompt+CAA $L13$, $\alpha=0.2$ (0.69): Tenure secures permanent land rights for indigenous peoples, protecting their lands from deforestation and habitat destruction.
+\end{itemize}
+\medskip\noindent\textbf{4105 Pollution and contamination.} Term: \emph{blank}.
+Q: What can a blank reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can reveal background contamination introduced during sampling or analysis.
+\item Unsteered (0.26): A blank can reveal a hidden message, a secret, or a surprise when filled or completed.
+\item Prompt (0.18): A blank page can reveal the potential for creative expression and the absence of preconceived ideas or pollution of the
+\item CAA $L14$, $\alpha=0.4$ (0.50): Blank can reveal the presence of contaminants in water through the presence of contaminants in water.
+\item Prompt+CAA $L16$, $\alpha=0.4$ (0.67): A blank sample can reveal the presence of contaminants in water or soil through chemical analysis.
+\end{itemize}
+\medskip\noindent\textbf{4106 Soil sciences.} Term: \emph{head}.
+Q: What does head measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Head measures the hydraulic potential of soil water.
+\item Unsteered (0.54): A head typically measures the height or length of something, often referring to the distance from the top to the
+\item Prompt (0.77): In soil science, the "head" refers to the water pressure or potential in a soil profile, typically measured in meters
+\item CAA $L12$, $\alpha=0.25$ (0.86): Head measures soil pH, which affects soil structure, nutrient availability, and plant growth.
+\item Prompt+CAA $L20$, $\alpha=0.15$ (0.87): In soil science, the "hydraulic head" measures the total potential energy of water in the soil, including elevation, pressure, and
+\end{itemize}
+\medskip\noindent\textbf{4201 Allied health and rehabilitation science.} Term: \emph{placement}.
+Q: What does placement describe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It describes where the articulators are positioned for a sound.
+\item Unsteered (0.48): Placement refers to the act of positioning or locating something in a specific location or arrangement.
+\item Prompt (0.38): In allied health and rehabilitation science, placement refers to a clinical internship or work experience in a healthcare setting.
+\item CAA $L13$, $\alpha=0.25$ (0.53): Placement describes the positioning of a body part or object in space, typically in a therapeutic or rehabilitation setting.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.53): Placement refers to the positioning of the patient in a manner that promotes optimal alignment and function of the musculoskeletal
+\end{itemize}
+\medskip\noindent\textbf{4203 Health services and systems.} Term: \emph{panel}.
+Q: What does a panel identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It identifies the patients assigned to a practice.
+\item Unsteered (0.23): A panel typically identifies a group of people or experts gathered to discuss, decide, or evaluate a particular issue or
+\item Prompt (0.24): A panel typically identifies a group of experts or stakeholders who come together to discuss and make decisions on a
+\item CAA $L18$, $\alpha=0.35$ (0.54): A panel identifies and addresses various healthcare needs, patient care, and healthcare outcomes in hospitals and healthcare settings.
+\item Prompt+CAA $L14$, $\alpha=0.2$ (0.50): A multidisciplinary care coordination panel identifies patients' complex needs, gaps in care, and required services for effective care management.
+\end{itemize}
+\medskip\noindent\textbf{4206 Public health.} Term: \emph{gradient}.
+Q: What can a gradient reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can reveal how health outcomes vary by social position.
+\item Unsteered (0.17): A gradient can reveal a range of colors, transitions, and subtle nuances in an image or design, adding depth and
+\item Prompt (0.45): A gradient in a map or chart can reveal geographical or temporal trends in disease incidence, prevalence, or mortality rates.
+\item CAA $L12$, $\alpha=0.2$ (0.56): A gradient can reveal the distribution of a disease, disease risk, and disease burden in a population.
+\item Prompt+CAA $L12$, $\alpha=0.1$ (0.75): A gradient in disease distribution can reveal socioeconomic disparities and inequities in health outcomes and access to healthcare services.
+\end{itemize}
+\medskip\noindent\textbf{4207 Sports science and exercise.} Term: \emph{compliance}.
+Q: What does compliance indicate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It indicates how readily tissue deforms under an applied load.
+\item Unsteered (0.13): Compliance refers to the act of adhering to rules, regulations, laws, or standards set by an organization, government, or industry.
+\item Prompt (0.23): Compliance in sports science refers to an athlete's ability to follow instructions, rules, and training protocols without resistance or deviation.
+\item CAA $L14$, $\alpha=0.25$ (0.33): Compliance indicates the degree of adherence to a training program, exercise, or movement, often measured in \% of proper form.
+\item Prompt+CAA $L16$, $\alpha=0.2$ (0.47): Compliance in exercise science refers to the ability of a muscle to generate force relative to its length.
+\end{itemize}
+\medskip\noindent\textbf{4208 Traditional, complementary and integrative medicine.} Term: \emph{atlas}.
+Q: Where is an atlas found?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It is located between the skull and axis.
+\item Unsteered (0.17): An atlas is typically found in a library, bookstore, or online, often in the geography or reference section.
+\item Prompt (0.59): An atlas is typically found in the neck and upper back region, specifically in the thoracic and cervical spine.
+\item CAA $L13$, $\alpha=0.3$ (0.47): An atlas is found in the body, specifically in the body's system of the body, the system of the body
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.76): The atlas is found in the cervical spine, specifically at the base of the skull, in the upper cervical vertebrae.
+\end{itemize}
+\medskip\noindent\textbf{4302 Heritage, archive and museum studies.} Term: \emph{consolidation}.
+Q: What does consolidation improve?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It improves cohesion between weakened particles and layers.
+\item Unsteered (0.33): Consolidation improves financial stability, reduces debt, and simplifies financial management by combining multiple debts into one manageable loan.
+\item Prompt (0.25): Consolidation in heritage institutions improves collection management, reduces storage costs, and enhances accessibility for researchers and the public.
+\item CAA $L11$, $\alpha=0.3$ (0.14): Conservation: preservation of original materials, documentation, and contextualization of artifacts for long-term preservation and accessibility.
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.36): Conservation consolidation improves the stability and preservation of artifacts by reducing the risk of damage from environmental factors and handling.
+\end{itemize}
+\medskip\noindent\textbf{4303 Historical studies.} Term: \emph{client}.
+Q: What does a client owe?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A client owes political loyalty to a patron.
+\item Unsteered (0.50): A client typically owes payment for services rendered or goods provided by a service provider or merchant.
+\item Prompt (0.58): A client typically owes a historian or historical studies practitioner for their expertise, time, and research conducted on a specific
+\item CAA $L15$, $\alpha=0.3$ (0.81): A client owes a debt of loyalty, patronage, and reciprocal obligations to their patron or patronage institution.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.79): A client owes loyalty, gratitude, and reciprocal obligations to their patron or benefactor in exchange for patronage and support.
+\end{itemize}
+\medskip\noindent\textbf{4404 Development studies.} Term: \emph{graduation}.
+Q: What does graduation mark?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It marks sustained movement beyond extreme poverty.
+\item Unsteered (0.27): Graduation marks the completion of a course of study, typically at a school, college, or university, and achievement of a
+\item Prompt (0.29): Graduation marks the completion of a degree program, signifying a student's achievement and transition to the next stage of their
+\item CAA $L16$, $\alpha=0.4$ (0.38): Graduation marks the transition of students from primary education to secondary education and later to the workforce and development.
+\item Prompt+CAA $L17$, $\alpha=0.3$ (0.50): Graduation marks the transition of students from dependency to self-reliant development, from education to economic participation.
+\end{itemize}
+\medskip\noindent\textbf{4405 Gender studies.} Term: \emph{matrix}.
+Q: What can a matrix make intelligible?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Coherent alignments of sex, gender, and desire.
+\item Unsteered (0.01): A matrix can make complex data, such as images, audio, and text, intelligible through various transformations and operations like filtering
+\item Prompt (0.22): A matrix can make intelligible the complex power dynamics and relationships between different social categories, such as gender, race, class
+\item CAA $L10$, $\alpha=0.2$ (0.16): A matrix can make intelligible the complex structures of social, economic, and cultural systems through mathematical representations.
+\item Prompt+CAA $L18$, $\alpha=0.15$ (0.36): A matrix can make intelligible the intersections of multiple social categories, such as race, class, gender, and sexuality, to reveal
+\end{itemize}
+\medskip\noindent\textbf{4406 Human geography.} Term: \emph{anchor}.
+Q: What can an anchor attract?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can draw customers to a shopping center.
+\item Unsteered (0.12): An anchor can attract seaweed, marine life, and other underwater objects due to its weight and design.
+\item Prompt (0.21): An anchor can attract marine life, such as fish, crustaceans, and other organisms that settle on its surface.
+\item CAA $L15$, $\alpha=0.25$ (0.24): An anchor can attract marine life, such as fish, shellfish, and other species that inhabit coastal areas.
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.45): An anchor can attract a range of economic activities, such as tourism, trade, and investment, due to its accessibility and
+\end{itemize}
+\medskip\noindent\textbf{4407 Policy and administration.} Term: \emph{relief}.
+Q: What does relief reduce?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It decreases the payable tax through an exemption, deduction, or credit.
+\item Unsteered (0.27): Relief reduces stress, anxiety, and tension, providing a sense of calm and comfort to the individual.
+\item Prompt (0.36): Relief reduces stress, anxiety, and financial burdens, providing temporary or permanent alleviation from a difficult or unpleasant situation.
+\item CAA $L13$, $\alpha=0.4$ (0.42): Relief reduces or eliminates the burden, obligation, or financial responsibility of a program, project, or activity.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.49): Relief reduces the burden, stress, or financial obligations associated with a policy or program implementation.
+\end{itemize}
+\medskip\noindent\textbf{4408 Political science.} Term: \emph{portfolio}.
+Q: What does a portfolio assign?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It assigns a minister responsibility for a policy area.
+\item Unsteered (0.21): A portfolio typically assigns a collection of a person's work, projects, or achievements to demonstrate their skills and experience.
+\item Prompt (0.43): A portfolio in political science typically assigns a collection of documents and projects showcasing a candidate's policy positions and leadership
+\item CAA $L17$, $\alpha=0.4$ (0.43): A portfolio is a collection of a candidate's policy positions, legislative votes, and party positions.
+\item Prompt+CAA $L10$, $\alpha=0.15$ (0.70): A portfolio assigns a set of policy positions to a specific government minister or department, outlining their responsibilities.
+\end{itemize}
+\medskip\noindent\textbf{4601 Applied computing.} Term: \emph{yield}.
+Q: What can a yield measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can quantify product formed in a synthesis.
+\item Unsteered (0.40): A yield can measure the amount of a product or return on investment, such as crop yield or investment yield.
+\item Prompt (0.43): A yield can measure the ratio of output to input, such as crop yield in agriculture or return on investment
+\item CAA $L18$, $\alpha=0.1$ (0.43): A yield can measure the ratio of output to input in various contexts, such as crop yield in agriculture or
+\item Prompt+CAA $L19$, $\alpha=0.25$ (0.49): A yield in computing can measure the number of results produced by a generator function or an iterator.
+\end{itemize}
+\medskip\noindent\textbf{4602 Artificial intelligence.} Term: \emph{belief}.
+Q: What does a belief represent?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It encodes what an agent considers possible or likely given its observations.
+\item Unsteered (0.35): A belief represents a thought or opinion held with conviction, often influencing an individual's actions and decisions.
+\item Prompt (0.37): A belief represents a mental state of acceptance or confidence in the truth or validity of a proposition or idea.
+\item CAA $L12$, $\alpha=0.25$ (0.58): A belief represents a probability distribution over the model's output distribution, quantifying the model's confidence in its predictions.
+\item Prompt+CAA $L13$, $\alpha=0.25$ (0.61): A belief represents a probability distribution over a set of possible worlds, encoding the model's uncertainty about the world.
+\end{itemize}
+\medskip\noindent\textbf{4603 Computer vision and multimedia computation.} Term: \emph{projection}.
+Q: What does a projection map?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It maps world coordinates to a two-dimensional image plane.
+\item Unsteered (0.54): A projection map is a representation of a 3D object or space onto a 2D surface, preserving certain properties.
+\item Prompt (0.55): A projection map is a transformation that projects a 3D point or object onto a 2D plane, preserving certain geometric
+\item CAA $L13$, $\alpha=0.3$ (0.66): Projection maps are 2D representations of 3D scenes, mapping 3D points to 2D image coordinates.
+\item Prompt+CAA $L17$, $\alpha=0.1$ (0.58): In computer vision, a projection map is a 2D representation of a 3D scene or object onto a 2D image
+\end{itemize}
+\medskip\noindent\textbf{4604 Cybersecurity and privacy.} Term: \emph{mask}.
+Q: What can a mask hide?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A mask can hide direct identifiers in sensitive records.
+\item Unsteered (0.56): A mask can hide a person's face, identity, emotions, and even their voice through sound effects or voice modulation.
+\item Prompt (0.60): A mask can hide a person's identity, facial features, and potentially their location, but not their biometric data or voice.
+\item CAA $L13$, $\alpha=0.25$ (0.70): A mask can hide a user's IP address, location, and identity from a malicious actor.
+\item Prompt+CAA $L15$, $\alpha=0.1$ (0.68): A mask can hide a user's IP address, location, and identity, providing anonymity in online activities.
+\end{itemize}
+\medskip\noindent\textbf{4605 Data management and data science.} Term: \emph{degree}.
+Q: What does a degree count?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It measures how many neighbors a node has.
+\item Unsteered (0.36): A degree is a measure of temperature, usually denoted by the symbol °, used in various fields like science and
+\item Prompt (0.19): A degree in data science or a related field, such as mathematics or computer science, is highly valued.
+\item CAA $L15$, $\alpha=0.35$ (0.44): A degree is a measure of data precision, representing the number of unique values in a column.
+\item Prompt+CAA $L17$, $\alpha=0.3$ (0.44): A degree is a statistical measure of data distribution, calculated as the count of distinct values in a column, ignoring
+\end{itemize}
+\medskip\noindent\textbf{4606 Distributed computing and systems software.} Term: \emph{tag}.
+Q: What does a tag distinguish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It distinguishes message types during receive-side matching.
+\item Unsteered (0.41): A tag typically distinguishes one item from another, often by labeling or categorizing it for identification or organization purposes.
+\item Prompt (0.31): A tag is a keyword or label that distinguishes a piece of data, resource, or object from others in a
+\item CAA $L13$, $\alpha=0.3$ (0.51): A tag in a distributed system distinguishes a message from other messages in a distributed system.
+\item Prompt+CAA $L12$, $\alpha=0.1$ (0.39): A tag distinguishes a key-value pair in a distributed hash table (DHT) or a key-value store.
+\end{itemize}
+\medskip\noindent\textbf{4607 Graphics, augmented reality and games.} Term: \emph{bus}.
+Q: What can a bus carry?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can carry audio signals between sound-processing nodes.
+\item Unsteered (0.12): A bus can carry a large number of passengers, typically between 20 to 100 people, depending on its size.
+\item Prompt (0.21): A bus can carry passengers, luggage, and sometimes bicycles, wheelchairs, or even small vehicles like motorcycles or scooters.
+\item CAA $L12$, $\alpha=0.25$ (0.25): A bus can carry a large number of 3D models, animations, and scenes in Unity.
+\item Prompt+CAA $L14$, $\alpha=0.25$ (0.39): A bus can carry a large number of 3D models, textures, and animations in a scene, reducing performance overhead.
+\end{itemize}
+\medskip\noindent\textbf{4608 Human-centred computing.} Term: \emph{appropriation}.
+Q: What can appropriation change?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can change a tool's purpose in practice.
+\item Unsteered (0.28): Appropriation can change cultural norms, social attitudes, and power dynamics by recontextualizing and reinterpreting existing cultural symbols and practices.
+\item Prompt (0.28): Appropriation can change the meaning, context, and power dynamics surrounding a concept, image, or idea by recontextualizing it.
+\item CAA $L16$, $\alpha=0.3$ (0.32): Appropriation can change the meaning of a term, concept, or design, shifting its cultural context and user experience.
+\item Prompt+CAA $L14$, $\alpha=0.2$ (0.44): Appropriation can change the user's goals, tasks, and workflows, by adapting the system to the user's needs and tasks.
+\end{itemize}
+\medskip\noindent\textbf{4610 Library and information studies.} Term: \emph{broker}.
+Q: What does a broker connect?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It connects users with relevant information sources.
+\item Unsteered (0.38): A broker connects buyers and sellers in a market, facilitating transactions and negotiations between the two parties.
+\item Prompt (0.49): In the context of information systems, a broker connects different systems, applications, or services to facilitate data exchange and integration.
+\item CAA $L10$, $\alpha=0.3$ (0.51): A librarian connects people with the physical and digital resources they need for research and study.
+\item Prompt+CAA $L18$, $\alpha=0.1$ (0.67): In the context of information studies, a broker connects users with relevant information resources, facilitating access to knowledge and resources.
+\end{itemize}
+\medskip\noindent\textbf{4611 Machine learning.} Term: \emph{seed}.
+Q: What can a seed determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It determines the pseudorandom sequence used during training.
+\item Unsteered (0.29): A seed can determine its own growth and development based on environmental conditions and genetic information it contains.
+\item Prompt (0.30): A seed can determine the characteristics of a plant, such as its growth rate, size, and color, through genetic information.
+\item CAA $L14$, $\alpha=0.25$ (0.55): A seed can determine the architecture of the final model in the last layer of the neural network.
+\item Prompt+CAA $L16$, $\alpha=0.3$ (0.50): A seed determines the architecture of a neural network, which is the architecture of the model.
+\end{itemize}
+\medskip\noindent\textbf{4612 Software engineering.} Term: \emph{velocity}.
+Q: What does velocity measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It estimates how much work a team finishes.
+\item Unsteered (0.20): Velocity measures the rate of change of an object's position with respect to time in a specific direction.
+\item Prompt (0.16): Velocity measures the speed of an object in a specific direction, typically in a two-dimensional or three-dimensional space.
+\item CAA $L10$, $\alpha=0.3$ (0.31): Velocity measures the rate of change of program state, i.e., how fast the program state changes.
+\item Prompt+CAA $L20$, $\alpha=0.2$ (0.42): Velocity in Agile development measures the amount of work completed by a team in a sprint, not the speed.
+\end{itemize}
+\medskip\noindent\textbf{4613 Theory of computation.} Term: \emph{advice}.
+Q: What can advice depend on?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can depend only on the input length.
+\item Unsteered (0.07): Advice can depend on personal values, cultural background, experience, expertise, and the specific situation or context.
+\item Prompt (0.08): Advice can depend on the context, goals, and constraints of the problem or situation being addressed.
+\item CAA $L15$, $\alpha=0.15$ (0.10): Advice can depend on the context, the person asking, the problem, and the available information at the time.
+\item Prompt+CAA $L19$, $\alpha=0.2$ (0.38): Advice can depend on the problem's input size, the Turing machine's tape size, and the chosen Turing machine model.
+\end{itemize}
+\medskip\noindent\textbf{4701 Communication and media studies.} Term: \emph{share}.
+Q: What does a share represent?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The proportion of the audience reached by a channel.
+\item Unsteered (0.24): A share represents a portion of ownership in a company, giving the holder a claim on its assets and profits.
+\item Prompt (0.26): A share represents a portion of ownership or equity in a company, often traded on a stock exchange for value.
+\item CAA $L13$, $\alpha=0.4$ (0.43): A share is a representation of ownership in a corporation, where the audience is the audience, and the audience is
+\item Prompt+CAA $L18$, $\alpha=0.3$ (0.69): In media studies, a share represents the proportion of audience exposure to a media message, typically measured in audience share.
+\end{itemize}
+\medskip\noindent\textbf{4702 Cultural studies.} Term: \emph{license}.
+Q: What can a license permit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can authorize transgressive artistic expression.
+\item Unsteered (0.31): A license can permit an individual to practice a profession, operate a business, or engage in a specific activity legally.
+\item Prompt (0.31): A license can permit an individual to practice a profession, operate a business, or engage in a specific activity legally.
+\item CAA $L16$, $\alpha=0.3$ (0.31): A license can permit individuals to engage in specific practices, such as driving, teaching, or the practice of medicine.
+\item Prompt+CAA $L17$, $\alpha=0.3$ (0.49): A license can permit the holder to exercise a particular profession, practice, or cultural practice, such as art, music, or
+\end{itemize}
+\medskip\noindent\textbf{4703 Language studies.} Term: \emph{voice}.
+Q: What can voice identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It identifies which participant is foregrounded.
+\item Unsteered (0.29): Voice assistants like me can identify languages, emotions, and speakers through various audio features and machine learning algorithms.
+\item Prompt (0.32): Voice can identify accent, dialect, age, sex, emotional state, and speaker's geographical origin through phonetic and prosodic features.
+\item CAA $L12$, $\alpha=0.3$ (0.38): Voice can identify the speaker's language, gender, dialect, language, dialect, social class, geographical origin, and social class.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.45): Voice can identify speaker's sex, age, social class, geographical origin, ethnicity, and social identity.
+\end{itemize}
+\medskip\noindent\textbf{4705 Literary studies.} Term: \emph{witness}.
+Q: What can a witness preserve?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can preserve a variant reading of a text.
+\item Unsteered (0.22): A witness can preserve physical evidence, such as clothing, objects, or documents, for forensic analysis and investigation purposes.
+\item Prompt (0.24): A witness can preserve testimony, memories, and historical events through their account, providing a firsthand perspective and authentic narrative.
+\item CAA $L10$, $\alpha=0.1$ (0.23): A witness can preserve physical evidence, memories, and testimony to aid in investigations and court proceedings.
+\item Prompt+CAA $L15$, $\alpha=0.15$ (0.37): A witness in literature can preserve historical events, cultural heritage, and the human experience through their narrative.
+\end{itemize}
+\medskip\noindent\textbf{4801 Commercial law.} Term: \emph{coupon}.
+Q: What does a coupon entitle its holder to?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It entitles the holder to periodic interest on the bond.
+\item Unsteered (0.42): A coupon typically entitles its holder to a discount, rebate, or other financial benefit on a product or service.
+\item Prompt (0.43): A coupon typically entitles its holder to receive a discount or payment from the issuer, usually in the form of
+\item CAA $L18$, $\alpha=0.4$ (0.52): A coupon entitles its holder to a legal right to receive a legal obligation of a company to pay a
+\item Prompt+CAA $L11$, $\alpha=0.1$ (0.63): A coupon entitles its holder to a debt obligation by the issuer to pay a sum of money on a
+\end{itemize}
+\medskip\noindent\textbf{4802 Environmental and resources law.} Term: \emph{claim}.
+Q: What does a claim secure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It secures the right to develop a mineral resource.
+\item Unsteered (0.43): A claim secures a right or interest in a property, asset, or benefit, providing legal protection and ownership.
+\item Prompt (0.42): A claim secures a right to compensation or relief for environmental damage or harm caused by a defendant's actions.
+\item CAA $L19$, $\alpha=0.4$ (0.61): A claim secures a right to natural resources, such as water or land, under environmental law.
+\item Prompt+CAA $L20$, $\alpha=0.2$ (0.53): A claim secures a right to compensation or restoration of natural resources damaged or degraded by pollution or other environmental
+\end{itemize}
+\medskip\noindent\textbf{4803 International and comparative law.} Term: \emph{service}.
+Q: What can service give someone?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Procedural notice of a claim or hearing.
+\item Unsteered (0.23): Service can provide support, assistance, guidance, and solutions to meet someone's needs and improve their quality of life.
+\item Prompt (0.16): Service can provide a person with a sense of purpose, identity, and fulfillment, as well as financial stability and social
+\item CAA $L15$, $\alpha=0.3$ (0.25): Service can give a person a sense of purpose, international cooperation, and the promotion of international law.
+\item Prompt+CAA $L16$, $\alpha=0.2$ (0.53): Service of process is a means of formally notifying a defendant of a lawsuit, enabling them to defend themselves.
+\end{itemize}
+\medskip\noindent\textbf{4804 Law in context.} Term: \emph{citation}.
+Q: What does a citation identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The citation identifies the authority relied upon in legal argument.
+\item Unsteered (0.69): A citation identifies the source of information used in a work, providing credit and academic integrity.
+\item Prompt (0.61): A citation identifies the source of information, providing details such as author, title, publication date, and page numbers for reference
+\item CAA $L17$, $\alpha=0.35$ (0.70): A citation is a reference to the source of a fact, which identifies the origin of the information.
+\item Prompt+CAA $L17$, $\alpha=0.25$ (0.82): A citation identifies the source of a legal authority, which is a legal rule, case, or statute.
+\end{itemize}
+\medskip\noindent\textbf{4805 Legal systems.} Term: \emph{relief}.
+Q: What can relief provide?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can provide an injunction stopping unlawful conduct.
+\item Unsteered (0.27): Relief can provide temporary comfort, ease, and solace from physical or emotional pain, stress, or discomfort.
+\item Prompt (0.41): Relief can provide temporary or permanent cessation of a legal obligation, duty, or penalty, or a reduction in its severity.
+\item CAA $L18$, $\alpha=0.4$ (0.46): Relief provides a remedy or a means to end a legal, civil, or legal wrong, or to end a legal
+\item Prompt+CAA $L17$, $\alpha=0.15$ (0.54): Relief can provide a stay of proceedings, an injunction, or a judgment in a civil or criminal case.
+\end{itemize}
+\medskip\noindent\textbf{4806 Private law and civil obligations.} Term: \emph{possession}.
+Q: What can possession establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can establish a superior claim against later wrongdoers.
+\item Unsteered (0.34): Possession can establish ownership, rights, and title to a property or asset in a legal context.
+\item Prompt (0.35): Possession can establish title to property, adverse possession, and ownership through the doctrine of adverse possession.
+\item CAA $L19$, $\alpha=0.3$ (0.51): Possession can establish a party's right to the property in a court of law.
+\item Prompt+CAA $L16$, $\alpha=0.25$ (0.54): Possession establishes a prima facie title to the property and shifts the burden to the defendant to prove his title.
+\end{itemize}
+\medskip\noindent\textbf{4807 Public law.} Term: \emph{harvesting}.
+Q: What can harvesting collect?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Data harvesting can gather sensitive personal information.
+\item Unsteered (0.36): Harvesting can collect crops, fruits, vegetables, grains, and other plant products from fields and gardens.
+\item Prompt (0.34): Harvesting can collect crops, fruits, or other plant materials, such as grains, vegetables, or timber.
+\item CAA $L17$, $\alpha=0.4$ (0.37): Harvesting can collect a variety of crops, fruits, and other plant produce.
+\item Prompt+CAA $L17$, $\alpha=0.15$ (0.71): In the context of public law, a 'harvesting' refers to the collection of personal data from public registers.
+\end{itemize}
+\medskip\noindent\textbf{4901 Applied mathematics.} Term: \emph{basin}.
+Q: What does a basin identify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It identifies initial states converging to the same attractor.
+\item Unsteered (0.16): A basin is a container or depression in the ground that collects and holds water or other liquids.
+\item Prompt (0.26): A basin in mathematics typically refers to a region in a vector field where the vector field points inward.
+\item CAA $L15$, $\alpha=0.2$ (0.20): A basin is a geometric figure, a three-dimensional solid obtained by rotating a plane curve about an axis.
+\item Prompt+CAA $L20$, $\alpha=0.15$ (0.52): A basin in mathematics, particularly in dynamical systems, identifies a region of attraction for a fixed point or a periodic
+\end{itemize}
+\medskip\noindent\textbf{4902 Mathematical physics.} Term: \emph{flavor}.
+Q: What does flavor distinguish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It labels different quark or lepton types.
+\item Unsteered (0.11): Flavor distinguishes between different tastes, aromas, and sensations experienced when consuming food or drinks.
+\item Prompt (0.11): Flavor is distinguished by the combination of taste and smell, primarily through the activation of taste receptors on the tongue.
+\item CAA $L11$, $\alpha=0.2$ (0.31): Flavor distinguishes between different chemical species of a molecule, specifically the number of nodal points of the wavefunction.
+\item Prompt+CAA $L17$, $\alpha=0.3$ (0.37): Flavor distinguishes the quantum states of a system in quantum field theory, a concept in quantum field theory.
+\end{itemize}
+\medskip\noindent\textbf{4903 Numerical and computational mathematics.} Term: \emph{order}.
+Q: What does order establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It establishes how rapidly the numerical error decreases.
+\item Unsteered (0.23): Order establishes a sense of structure, organization, and stability, allowing for efficient and effective functioning of systems and processes.
+\item Prompt (0.26): Order establishes a relationship between elements, defining their relative position or magnitude, often used in sorting and ranking.
+\item CAA $L17$, $\alpha=0.3$ (0.32): Order establishes a set of rules and constraints that govern the behavior of a system, ensuring stability and convergence.
+\item Prompt+CAA $L17$, $\alpha=0.2$ (0.48): Order establishes the number of operations required to solve a matrix equation, specifically the number of floating point operations.
+\end{itemize}
+\medskip\noindent\textbf{4904 Pure mathematics.} Term: \emph{germ}.
+Q: What does a germ preserve nearby?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A germ preserves behavior on some neighborhood.
+\item Unsteered (0.62): A germ preserves its genetic material, allowing it to reproduce and continue its species.
+\item Prompt (0.61): A germ preserves the nearby probability distribution, as it is a measure-preserving transformation in probability theory.
+\item CAA $L15$, $\alpha=0.2$ (0.64): A germ preserves the set of all its limit points, which are the points that are not isolated points.
+\item Prompt+CAA $L19$, $\alpha=0.15$ (0.72): A germ preserves the nearby topology of a space, which is a property of topological spaces in topology.
+\end{itemize}
+\medskip\noindent\textbf{4905 Statistics.} Term: \emph{arm}.
+Q: What does an arm receive?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It is assigned a treatment group in the experiment.
+\item Unsteered (0.16): An arm receives blood from the heart through arteries and returns deoxygenated blood to the heart through veins.
+\item Prompt (0.47): In statistics, an arm typically receives a set of data or a treatment in an experiment or clinical trial.
+\item CAA $L12$, $\alpha=0.25$ (0.40): The arm receives the independent variable in the one-sample t-test.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.63): The arm of a study receives the treatment (treatment group) or the null hypothesis is true.
+\end{itemize}
+\medskip\noindent\textbf{5001 Applied ethics.} Term: \emph{claim}.
+Q: What can a claim establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can establish a justified right to protection.
+\item Unsteered (0.45): A claim can establish a right, liability, or interest in a legal dispute or court case.
+\item Prompt (0.45): A claim can establish a fact, a right, a responsibility, or a moral obligation, but not necessarily a truth or
+\item CAA $L16$, $\alpha=0.4$ (0.50): A claim can establish a moral, political, political, or legal right, or a moral, political, or political wrong.
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.57): A claim can establish a moral, legal, or epistemic entitlement, or a right to a particular treatment or benefit.
+\end{itemize}
+\medskip\noindent\textbf{5002 History and philosophy of specific fields.} Term: \emph{accommodation}.
+Q: What does accommodation fit?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It brings theory into agreement with known evidence.
+\item Unsteered (0.15): Accommodation refers to the process of adapting to a new or changed situation, often in a physical or mental sense.
+\item Prompt (0.22): Accommodation is a concept in the philosophy of perception, referring to the process of adjusting one's perception to fit the
+\item CAA $L11$, $\alpha=0.25$ (0.44): Accommodation in the philosophy of Imre Lakatos, refers to the process of the development of a scientific theory.
+\item Prompt+CAA $L19$, $\alpha=0.15$ (0.52): In the philosophy of science, accommodation refers to the process of modifying a theory to fit new evidence or observations.
+\end{itemize}
+\medskip\noindent\textbf{5003 Philosophy.} Term: \emph{trace}.
+Q: What can a trace mark?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can mark the absence of what never fully appears.
+\item Unsteered (0.20): A trail can be traced, a path can be traced, or a person's steps can be traced.
+\item Prompt (0.41): A trace can be a mark left behind by an object or action, revealing its presence and past existence.
+\item CAA $L16$, $\alpha=0.25$ (0.41): A trace can be a mark left by a thing, such as a footprint, a shadow, or a line of
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.56): A trace mark is a mark left by a thing's passage, a shadow of its being, a mere negation of
+\end{itemize}
+\medskip\noindent\textbf{5101 Astronomical sciences.} Term: \emph{transit}.
+Q: What can a transit measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A transit light curve can yield a planetary radius when the host-star properties are known.
+\item Unsteered (0.39): A transit can measure speed, distance, time, and fuel consumption, as well as track its route and location.
+\item Prompt (0.70): A transit can measure the size and density of a celestial body, such as a planet's radius and mass.
+\item CAA $L18$, $\alpha=0.25$ (0.52): A transit can measure the distance between two points, such as latitude and longitude, in astronomy.
+\item Prompt+CAA $L19$, $\alpha=0.15$ (0.80): A transit can measure the radius of a planet or star by observing the decrease in brightness as it passes
+\end{itemize}
+\medskip\noindent\textbf{5102 Atomic, molecular and optical physics.} Term: \emph{manifold}.
+Q: What can a manifold contain?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A manifold can contain closely spaced quantum states.
+\item Unsteered (0.48): A manifold can contain various types of data, such as points, vectors, or tensors, in mathematics and physics.
+\item Prompt (0.50): In physics, a manifold can contain a topological space with a smooth structure, allowing for various geometric and physical interpretations.
+\item CAA $L13$, $\alpha=0.3$ (0.76): A manifold can contain a physical system of a large number of atoms or a system of quantum states.
+\item Prompt+CAA $L13$, $\alpha=0.1$ (0.77): A manifold in atomic, molecular, and optical physics can contain a set of quantum states or energy levels.
+\end{itemize}
+\medskip\noindent\textbf{5103 Classical physics.} Term: \emph{index}.
+Q: What does an index measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It quantifies how strongly a medium refracts light.
+\item Unsteered (0.31): An index is a statistical measure used to track changes or trends in a specific set of data or economic
+\item Prompt (0.43): An index, in physics, typically measures a dimensionless quantity, often used to quantify a physical property or phenomenon.
+\item CAA $L15$, $\alpha=0.2$ (0.39): An index is a quantity that describes the change in a physical quantity, usually in terms of its change in
+\item Prompt+CAA $L16$, $\alpha=0.15$ (0.65): The index of refraction is a dimensionless quantity that measures the ratio of the speed of light in vacuum to
+\end{itemize}
+\medskip\noindent\textbf{5104 Condensed matter physics.} Term: \emph{host}.
+Q: What does a host provide?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It provides lattice sites for incorporated atoms.
+\item Unsteered (0.13): A host provides a place, food, shelter, and hospitality to guests, often in a welcoming and comfortable environment.
+\item Prompt (0.44): A host in condensed matter physics provides a medium or substrate for the material or system to exist and interact.
+\item CAA $L13$, $\alpha=0.2$ (0.25): A host provides a platform for a guest to reside, providing essential resources and support.
+\item Prompt+CAA $L11$, $\alpha=0.1$ (0.67): A host in condensed matter physics provides a lattice structure for electrons to occupy, mediating interactions and determining material properties.
+\end{itemize}
+\medskip\noindent\textbf{5105 Medical and biological physics.} Term: \emph{label}.
+Q: What can a label reveal?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: The label can show cellular compartment localization.
+\item Unsteered (0.43): A label can reveal information such as ingredients, nutritional content, warnings, and instructions for use on a product or package.
+\item Prompt (0.46): A label can reveal information about the contents, ingredients, expiration date, and instructions for use of a medical device or
+\item CAA $L13$, $\alpha=0.3$ (0.61): A label can reveal the chemical structure of a molecule, the structure of proteins, and the structure of biological molecules.
+\item Prompt+CAA $L19$, $\alpha=0.35$ (0.69): A label can reveal the chemical composition, structure, and properties of a molecule or cell, aiding in medical and biological
+\end{itemize}
+\medskip\noindent\textbf{5106 Nuclear and plasma physics.} Term: \emph{dose}.
+Q: What does a dose quantify?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It quantifies energy absorbed per unit mass.
+\item Unsteered (0.32): A dose quantifies the amount of a substance, such as medicine or a chemical, administered or consumed.
+\item Prompt (0.50): A dose quantifies the amount of ionizing radiation absorbed by a material or biological tissue, typically measured in grays (Gy)
+\item CAA $L11$, $\alpha=0.2$ (0.38): A dose quantifies the amount of a chemical species (ions or atoms) in a plasma.
+\item Prompt+CAA $L16$, $\alpha=0.2$ (0.62): A dose quantifies the amount of ionizing radiation absorbed by a material, typically measured in units of energy per unit
+\end{itemize}
+\medskip\noindent\textbf{5107 Particle and high energy physics.} Term: \emph{tag}.
+Q: What can a tag establish?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can establish the flavor of a particle.
+\item Unsteered (0.17): A tag can establish ownership, identity, or categorization of an object, person, or idea, often for tracking or organization purposes.
+\item Prompt (0.35): A tag in particle physics is a label assigned to a particle based on its properties, such as mass, charge
+\item CAA $L19$, $\alpha=0.35$ (0.36): A tag can establish the identity of a particle in particle physics, and in quantum field theory, a tag can
+\item Prompt+CAA $L14$, $\alpha=0.1$ (0.52): A tag can establish a quark's flavor, charge, and color, and determine its role in a hadron's composition.
+\end{itemize}
+\medskip\noindent\textbf{5108 Quantum physics.} Term: \emph{lattice}.
+Q: What can a lattice support?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A lattice supports coherent many-body atomic states.
+\item Unsteered (0.40): A lattice can support various loads, including structural weight, tension, and compression, depending on its design and material.
+\item Prompt (0.50): A lattice can support a crystal structure, exhibiting periodicity and symmetry, with atoms or molecules arranged in a repeating pattern.
+\item CAA $L14$, $\alpha=0.15$ (0.68): A lattice can support a wide range of objects, from a single photon to a macroscopic object like a superconducting
+\item Prompt+CAA $L17$, $\alpha=0.15$ (0.75): A lattice can support a superposition of states, exhibiting quantum entanglement and non-locality in quantum many-body systems.
+\end{itemize}
+\medskip\noindent\textbf{5109 Space sciences.} Term: \emph{suite}.
+Q: What does a suite combine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A coordinated package of instruments on a spacecraft.
+\item Unsteered (0.17): A suite combines multiple rooms, typically including a bedroom, living area, and sometimes a dining area, into one unit.
+\item Prompt (0.31): A space suit combines a pressurized environment, life support systems, and protective gear for astronauts in space or extreme conditions.
+\item CAA $L19$, $\alpha=0.4$ (0.43): A suite in astronomy is a region of the solar system, specifically a region of the Sun's plasma.
+\item Prompt+CAA $L17$, $\alpha=0.15$ (0.67): A suite in space science combines multiple spacecraft, instruments, and experiments to study a specific celestial phenomenon or phenomenon.
+\end{itemize}
+\medskip\noindent\textbf{5110 Synchrotrons and accelerators.} Term: \emph{lattice}.
+Q: What does a lattice determine?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It sets the beam's focusing and transport behavior.
+\item Unsteered (0.26): A lattice determines the structure and arrangement of atoms or molecules in a crystal, forming a repeating pattern.
+\item Prompt (0.41): A lattice in a synchrotron or accelerator determines the periodic structure and magnetic field configuration for particle beam confinement and
+\item CAA $L11$, $\alpha=0.25$ (0.33): The lattice determines the Brilloungosky factor, which is a fundamental parameter in high-energy physics experiments.
+\item Prompt+CAA $L13$, $\alpha=0.15$ (0.50): The lattice determines the periodic structure of the accelerator, defining the path of the charged particles and the RF cavities.
+\end{itemize}
+\medskip\noindent\textbf{5201 Applied and developmental psychology.} Term: \emph{fidelity}.
+Q: What can fidelity show?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: It can show whether the program was delivered as intended.
+\item Unsteered (0.15): Fidelity can show loyalty, commitment, and dedication to a person, relationship, or cause over time and through challenges.
+\item Prompt (0.18): Fidelity in relationships can demonstrate commitment, trust, and loyalty, indicating a strong emotional bond and stability.
+\item CAA $L17$, $\alpha=0.15$ (0.19): Fidelity can show loyalty, commitment, and faithfulness in relationships, work, or personal endeavors, demonstrating trustworthiness and dependability.
+\item Prompt+CAA $L15$, $\alpha=0.25$ (0.27): Fidelity can show the degree to which an individual maintains their commitment and adherence to a particular relationship, intervention, or
+\end{itemize}
+\medskip\noindent\textbf{5202 Biological psychology.} Term: \emph{carrier}.
+Q: What can a carrier pass on?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: A carrier can pass a recessive allele to offspring.
+\item Unsteered (0.55): A carrier can pass on germs, diseases, or infections to others through direct contact or airborne transmission.
+\item Prompt (0.80): A carrier can pass on genetic mutations or traits to their offspring through the transmission of DNA.
+\item CAA $L20$, $\alpha=0.3$ (0.63): A carrier can pass on a disease, an enzyme, or an allergic response to a non-sensitized individual.
+\item Prompt+CAA $L15$, $\alpha=0.1$ (0.89): A carrier can pass on a recessive allele, which is a variant of a gene that is not expressed in
+\end{itemize}
+\medskip\noindent\textbf{5203 Clinical and health psychology.} Term: \emph{burden}.
+Q: What does burden measure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Stress, demands, and disruption related to caring.
+\item Unsteered (0.17): Burden typically measures the weight or load that is carried or supported by something, such as a person or an
+\item Prompt (0.45): Burden typically refers to the perceived weight or strain of caring for a family member or loved one with a
+\item CAA $L13$, $\alpha=0.4$ (0.38): Burden is a measure of the degree of the patient's burden of the symptoms of the patient in the patient's
+\item Prompt+CAA $L11$, $\alpha=0.2$ (0.59): Burden measures the perceived stress, distress, and negative impact of caregiving on the caregiver's life.
+\end{itemize}
+\medskip\noindent\textbf{5204 Cognitive and computational psychology.} Term: \emph{hit}.
+Q: What does a hit indicate?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Correctly detecting a signal that is present.
+\item Unsteered (0.11): A hit typically refers to a successful or effective action, event, or performance, often in sports, music, or entertainment.
+\item Prompt (0.29): In cognitive psychology, a "hit" refers to a correct response to a stimulus, indicating accurate perception or memory recall.
+\item CAA $L15$, $\alpha=0.4$ (0.33): A hit is a stimulus that is detected by a neuron, leading to a neural response.
+\item Prompt+CAA $L10$, $\alpha=0.2$ (0.72): A hit in signal detection theory indicates a correct detection of a signal in the presence of a signal.
+\end{itemize}
+\medskip\noindent\textbf{5205 Social and personality psychology.} Term: \emph{passing}.
+Q: What can passing secure?
+\begin{itemize}\setlength{\itemsep}{0.15em}\setlength{\parsep}{0pt}\setlength{\topsep}{0.2em}
+\item Gold: Passing can secure access to less discriminatory social spaces.
+\item Unsteered (0.25): Secure data, information, and passwords can be passed through encrypted channels or secure communication protocols like HTTPS.
+\item Prompt (0.16): Secure attachment style is characterized by a sense of safety, trust, and emotional stability in relationships, often stemming from a
+\item CAA $L15$, $\alpha=0.35$ (0.55): Passing is a term with multiple meanings. One is passing as a person, where one's behavior and attitudes are congruent
+\item Prompt+CAA $L14$, $\alpha=0.15$ (0.55): Passing as a social behavior, is the act of presenting oneself as a member of a group, to gain social
+\end{itemize}
+
+\endgroup

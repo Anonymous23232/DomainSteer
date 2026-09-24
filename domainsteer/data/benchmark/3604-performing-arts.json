@@ -1,0 +1,472 @@
+{
+  "cluster_id": "3604",
+  "cluster": "Performing arts",
+  "domain": "Performing arts",
+  "division": "Creative Arts and Writing",
+  "dominant_prior": "aviation, data software, electronics, employment, hospitality, insurance, law, linguistics, music, road transport, sports, telecommunications",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does presence mean?",
+    "What does the script do?",
+    "What is a beat?",
+    "What is a frame?",
+    "What is a gesture?",
+    "What is a line?",
+    "What is a mark?",
+    "What is a score?",
+    "What is a set?",
+    "What is an exit?",
+    "What is balance?",
+    "What is business?",
+    "What is focus?",
+    "What is projection?",
+    "What is the house?",
+    "balance",
+    "beat",
+    "business",
+    "exit",
+    "focus",
+    "frame",
+    "gesture",
+    "house",
+    "line",
+    "mark",
+    "presence",
+    "projection",
+    "score",
+    "script",
+    "set"
+  ],
+  "items": [
+    {
+      "term": "notation",
+      "question": "What can notation record?",
+      "baseline_trap": "musical pitch and duration",
+      "gold": "movement sequence",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "dance notation",
+        "movement score",
+        "choreographic record",
+        "gesture phrasing",
+        "spatial pathways",
+        "floor patterns",
+        "choreographic timing"
+      ],
+      "gold_responses": [
+        "It can capture choreographed movement for later reconstruction."
+      ],
+      "trap_aliases": [
+        "rhythm patterns",
+        "dynamic markings",
+        "harmonic changes"
+      ],
+      "trap_responses": [
+        "It can record pitch, rhythm, and note duration.",
+        "It can specify melodies using written symbols.",
+        "It can show tempo, dynamics, and articulation."
+      ]
+    },
+    {
+      "term": "composition",
+      "question": "What can composition organize?",
+      "baseline_trap": "musical elements",
+      "gold": "movement structure",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "dance structure",
+        "spatial pattern",
+        "choreographic form",
+        "spatial design",
+        "dancer relationships",
+        "temporal phrasing"
+      ],
+      "gold_responses": [
+        "It can organize movement into a coherent performance structure."
+      ],
+      "trap_aliases": [
+        "melody",
+        "harmony",
+        "rhythm"
+      ],
+      "trap_responses": [
+        "It can organize melody, harmony, rhythm, and form.",
+        "It can arrange musical ideas into a unified piece.",
+        "It can structure themes, motifs, and contrasting sections."
+      ]
+    },
+    {
+      "term": "tableau",
+      "question": "What can a tableau present?",
+      "baseline_trap": "a data dashboard",
+      "gold": "stage picture",
+      "dominant_prior": "data software",
+      "gold_aliases": [
+        "frozen image",
+        "scenic image",
+        "posed arrangement",
+        "dramatic moment",
+        "group composition",
+        "scenic arrangement"
+      ],
+      "gold_responses": [
+        "A frozen stage image that crystallizes a dramatic moment."
+      ],
+      "trap_aliases": [
+        "interactive dashboard",
+        "data visualization",
+        "KPI report"
+      ],
+      "trap_responses": [
+        "A dashboard can present key metrics and performance indicators.",
+        "It can present charts summarizing a dataset.",
+        "A tableau can present trends through interactive visualizations."
+      ]
+    },
+    {
+      "term": "action",
+      "question": "What can an action advance?",
+      "baseline_trap": "a legal claim",
+      "gold": "dramatic conflict",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "scene event",
+        "stage objective",
+        "dramatic event",
+        "plot development",
+        "scene tension",
+        "character conflict",
+        "dramatic stakes"
+      ],
+      "gold_responses": [
+        "It can advance the plot through a consequential choice."
+      ],
+      "trap_aliases": [
+        "lawsuit",
+        "civil claim",
+        "legal proceeding"
+      ],
+      "trap_responses": [
+        "An action can advance a plaintiff's legal claim.",
+        "A civil action can advance litigation before the court.",
+        "It can advance a claim for damages or other relief."
+      ]
+    },
+    {
+      "term": "formation",
+      "question": "What can a formation organize?",
+      "baseline_trap": "a team's players",
+      "gold": "performer spacing",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "stage grouping",
+        "spatial arrangement",
+        "ensemble pattern",
+        "stage picture",
+        "ensemble arrangement",
+        "dancer placement",
+        "blocking pattern"
+      ],
+      "gold_responses": [
+        "It can organize performers across the stage."
+      ],
+      "trap_aliases": [
+        "player positions",
+        "team lineup",
+        "field arrangement"
+      ],
+      "trap_responses": [
+        "It can organize players into positions on the field.",
+        "It can arrange a team's defensive shape.",
+        "It can set the players' tactical alignment."
+      ]
+    },
+    {
+      "term": "booking",
+      "question": "What can a booking reserve?",
+      "baseline_trap": "a hotel room",
+      "gold": "performance slot",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "venue date",
+        "tour date",
+        "engagement date",
+        "theatre date",
+        "venue slot",
+        "stage time",
+        "performance engagement"
+      ],
+      "gold_responses": [
+        "It can reserve a performance slot at a venue."
+      ],
+      "trap_aliases": [
+        "guest room",
+        "hotel suite",
+        "overnight stay"
+      ],
+      "trap_responses": [
+        "It can reserve a hotel room for a guest.",
+        "It can secure accommodation for an overnight stay.",
+        "It can hold a room at a hotel."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What can placement determine?",
+      "baseline_trap": "a job assignment",
+      "gold": "body position",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "spatial position",
+        "stage position",
+        "dancer alignment",
+        "blocking location",
+        "spatial alignment",
+        "performer spacing"
+      ],
+      "gold_responses": [
+        "It can determine where a performer stands onstage."
+      ],
+      "trap_aliases": [
+        "work assignment",
+        "job posting",
+        "staff allocation"
+      ],
+      "trap_responses": [
+        "It can determine which job a worker receives.",
+        "It can determine an employee's assigned position.",
+        "It can determine where a candidate is employed."
+      ]
+    },
+    {
+      "term": "call",
+      "question": "What can a call assemble?",
+      "baseline_trap": "conference participants",
+      "gold": "cast attendance",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "company assembly",
+        "rehearsal attendance",
+        "call time",
+        "company attendance",
+        "actor turnout",
+        "rehearsal presence",
+        "cast check-in"
+      ],
+      "gold_responses": [
+        "It can assemble dancers before the performance call."
+      ],
+      "trap_aliases": [
+        "conference attendees",
+        "meeting participants",
+        "call participants"
+      ],
+      "trap_responses": [
+        "It can assemble people joining a conference call.",
+        "It can assemble remote participants for a meeting.",
+        "It can assemble callers on a shared line."
+      ]
+    },
+    {
+      "term": "cover",
+      "question": "What does a cover provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "substitute performer",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "understudy",
+        "alternate actor",
+        "role replacement",
+        "standby",
+        "swing",
+        "replacement actor"
+      ],
+      "gold_responses": [
+        "A prepared understudy for an unavailable performer."
+      ],
+      "trap_aliases": [
+        "financial protection",
+        "risk coverage",
+        "policy protection"
+      ],
+      "trap_responses": [
+        "Financial protection against specified losses.",
+        "Coverage for damage, liability, or other risks.",
+        "Policy benefits when an insured event occurs."
+      ]
+    },
+    {
+      "term": "traffic",
+      "question": "What does traffic determine?",
+      "baseline_trap": "road congestion",
+      "gold": "performer pathways",
+      "dominant_prior": "road transport",
+      "gold_aliases": [
+        "actor routes",
+        "stage movement",
+        "crossing patterns",
+        "stage routes",
+        "backstage flow",
+        "actor movement"
+      ],
+      "gold_responses": [
+        "The routes performers take through the playing space."
+      ],
+      "trap_aliases": [
+        "congestion levels",
+        "travel times",
+        "road flow"
+      ],
+      "trap_responses": [
+        "The level of congestion on the roads.",
+        "How long journeys will take.",
+        "Vehicle flow and delays along a route."
+      ]
+    },
+    {
+      "term": "strike",
+      "question": "What does a strike clear?",
+      "baseline_trap": "bowling pins",
+      "gold": "scenic elements",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "stage scenery",
+        "technical equipment",
+        "production materials",
+        "the set",
+        "production props",
+        "scenic units"
+      ],
+      "gold_responses": [
+        "It empties the stage for the next use."
+      ],
+      "trap_aliases": [
+        "tenpins",
+        "pin deck",
+        "all pins"
+      ],
+      "trap_responses": [
+        "A strike clears all ten pins.",
+        "It clears the pins from the lane.",
+        "A strike knocks down the entire rack."
+      ]
+    },
+    {
+      "term": "wing",
+      "question": "What does a wing provide?",
+      "baseline_trap": "aerodynamic lift",
+      "gold": "offstage masking",
+      "dominant_prior": "aviation",
+      "gold_aliases": [
+        "side-stage concealment",
+        "hidden performers",
+        "entrance cover",
+        "stage masking",
+        "leg concealment",
+        "side masking",
+        "backstage cover"
+      ],
+      "gold_responses": [
+        "It keeps the offstage space out of view."
+      ],
+      "trap_aliases": [
+        "lift",
+        "aerodynamic force",
+        "upward force"
+      ],
+      "trap_responses": [
+        "A wing provides aerodynamic lift.",
+        "It generates lift to keep an aircraft airborne.",
+        "A wing creates upward force during flight."
+      ]
+    },
+    {
+      "term": "apron",
+      "question": "What does an apron extend?",
+      "baseline_trap": "garment coverage",
+      "gold": "playing area",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "forestage",
+        "downstage extension",
+        "audience edge",
+        "stage space",
+        "acting area",
+        "performance space",
+        "stage floor"
+      ],
+      "gold_responses": [
+        "It extends the front of the stage."
+      ],
+      "trap_aliases": [
+        "torso coverage",
+        "uniform protection",
+        "clothing coverage"
+      ],
+      "trap_responses": [
+        "It extends clothing coverage over the torso.",
+        "It provides extra protection for work clothes.",
+        "It extends a uniform's protective coverage."
+      ]
+    },
+    {
+      "term": "standby",
+      "question": "What does standby prepare?",
+      "baseline_trap": "a backup system",
+      "gold": "next cue",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "imminent action",
+        "technical change",
+        "cue sequence",
+        "upcoming cue",
+        "imminent entrance",
+        "next transition"
+      ],
+      "gold_responses": [
+        "It prepares the next cue for execution."
+      ],
+      "trap_aliases": [
+        "failover unit",
+        "reserve power"
+      ],
+      "trap_responses": [
+        "It prepares a backup system for immediate activation.",
+        "It readies a failover system during an outage.",
+        "It prepares reserve power if the primary system fails."
+      ]
+    },
+    {
+      "term": "phrase",
+      "question": "What does a phrase organize?",
+      "baseline_trap": "grammatical words",
+      "gold": "movement sequence",
+      "dominant_prior": "linguistics",
+      "gold_aliases": [
+        "choreographic unit",
+        "dance motif",
+        "movement pattern",
+        "choreographic movement",
+        "dance sequence",
+        "gesture pattern",
+        "movement material"
+      ],
+      "gold_responses": [
+        "It organizes gestures, steps, pauses, and transitions."
+      ],
+      "trap_aliases": [
+        "word group",
+        "syntactic unit",
+        "sentence structure"
+      ],
+      "trap_responses": [
+        "A phrase organizes words into a meaningful grammatical unit.",
+        "It groups words that function together in a sentence.",
+        "It organizes related words without forming a complete clause."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:19:06Z"
+}

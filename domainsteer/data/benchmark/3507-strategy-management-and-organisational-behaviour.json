@@ -1,0 +1,470 @@
+{
+  "cluster_id": "3507",
+  "cluster": "Strategy, management and organisational behaviour",
+  "domain": "Strategy, management and organisational behaviour",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "animal behaviour, everyday English, finance, gaming, inheritance law, law, media, medicine, military, programming, sports, weather",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does scaling work?",
+    "How is the structure organized?",
+    "How much bandwidth do you have?",
+    "If scaling fails, does it fall?",
+    "What does alignment involve?",
+    "What does engagement mean?",
+    "What does turnover mean?",
+    "What is a role?",
+    "What is a silo?",
+    "What is an initiative?",
+    "What is capital?",
+    "What is feedback for?",
+    "What is governance?",
+    "What is memory?",
+    "What is positioning?",
+    "Who is the champion?",
+    "alignment",
+    "bandwidth",
+    "capital",
+    "champion",
+    "engagement",
+    "feedback",
+    "governance",
+    "initiative",
+    "memory",
+    "positioning",
+    "role",
+    "scaling",
+    "silo",
+    "structure",
+    "turnover"
+  ],
+  "items": [
+    {
+      "term": "license",
+      "question": "What can a license secure?",
+      "baseline_trap": "legal permission",
+      "gold": "community acceptance",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "social legitimacy",
+        "stakeholder approval",
+        "local consent",
+        "stakeholder legitimacy",
+        "local support",
+        "operating acceptance"
+      ],
+      "gold_responses": [
+        "It can secure stakeholder legitimacy in the local community."
+      ],
+      "trap_aliases": [
+        "permit",
+        "authorization",
+        "regulatory approval"
+      ],
+      "trap_responses": [
+        "A license can secure legal permission to perform an activity.",
+        "It can secure authorization from a government authority.",
+        "A license can secure the right to use something."
+      ]
+    },
+    {
+      "term": "portfolio",
+      "question": "What can a portfolio balance?",
+      "baseline_trap": "investment risk",
+      "gold": "innovation projects",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "project mix",
+        "R&D investments",
+        "development priorities",
+        "innovation pipeline",
+        "exploration exploitation",
+        "incremental radical"
+      ],
+      "gold_responses": [
+        "A portfolio can balance incremental and radical innovation projects."
+      ],
+      "trap_aliases": [
+        "asset allocation",
+        "diversification",
+        "risk-return"
+      ],
+      "trap_responses": [
+        "A portfolio can balance investment risk across assets.",
+        "It can balance risk and return.",
+        "A portfolio can balance holdings through diversification."
+      ]
+    },
+    {
+      "term": "alliance",
+      "question": "What can an alliance enable?",
+      "baseline_trap": "military cooperation",
+      "gold": "market entry",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "foreign expansion",
+        "partner access",
+        "cross-border reach",
+        "resource sharing",
+        "risk reduction",
+        "capability access",
+        "innovation collaboration"
+      ],
+      "gold_responses": [
+        "It can strengthen bargaining power with external partners."
+      ],
+      "trap_aliases": [
+        "joint operations",
+        "collective defense",
+        "security cooperation"
+      ],
+      "trap_responses": [
+        "An alliance can enable coordinated military operations.",
+        "It can provide mutual defense against adversaries.",
+        "It can improve intelligence sharing among armed forces."
+      ]
+    },
+    {
+      "term": "climate",
+      "question": "What can climate influence?",
+      "baseline_trap": "crop growth",
+      "gold": "employee behaviour",
+      "dominant_prior": "weather",
+      "gold_aliases": [
+        "workplace conduct",
+        "staff attitudes",
+        "work norms",
+        "team performance",
+        "work attitudes",
+        "employee engagement",
+        "organisational commitment"
+      ],
+      "gold_responses": [
+        "It can affect commitment to organisational goals."
+      ],
+      "trap_aliases": [
+        "plant growth",
+        "rainfall patterns",
+        "seasonal temperatures"
+      ],
+      "trap_responses": [
+        "Climate can influence crop growth and harvest yields.",
+        "It can affect rainfall patterns across regions.",
+        "It can shape temperature conditions and seasonal weather."
+      ]
+    },
+    {
+      "term": "slack",
+      "question": "What can slack absorb?",
+      "baseline_trap": "rope tension",
+      "gold": "external shocks",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "demand volatility",
+        "resource shortfalls",
+        "environmental uncertainty",
+        "environmental shocks",
+        "operational disruptions"
+      ],
+      "gold_responses": [
+        "It buffers operational disruptions."
+      ],
+      "trap_aliases": [
+        "pulling force",
+        "line strain"
+      ],
+      "trap_responses": [
+        "It absorbs tension in the rope.",
+        "It absorbs sudden pulling force.",
+        "It absorbs strain along the line."
+      ]
+    },
+    {
+      "term": "succession",
+      "question": "What can succession preserve?",
+      "baseline_trap": "family inheritance",
+      "gold": "leadership continuity",
+      "dominant_prior": "inheritance law",
+      "gold_aliases": [
+        "executive continuity",
+        "management continuity",
+        "leadership transition",
+        "managerial stability",
+        "governance continuity",
+        "strategic continuity"
+      ],
+      "gold_responses": [
+        "It preserves continuity in organisational leadership."
+      ],
+      "trap_aliases": [
+        "estate rights",
+        "heirship claims",
+        "property title"
+      ],
+      "trap_responses": [
+        "It preserves heirs' inheritance rights.",
+        "It preserves family property claims.",
+        "It protects title passing to descendants."
+      ]
+    },
+    {
+      "term": "donor",
+      "question": "What can a donor sustain?",
+      "baseline_trap": "patient survival",
+      "gold": "charitable programs",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "program funding",
+        "mission support",
+        "nonprofit services",
+        "mission delivery",
+        "community initiatives",
+        "operating capacity"
+      ],
+      "gold_responses": [
+        "A donor can sustain an organisation's operating capacity over time."
+      ],
+      "trap_aliases": [
+        "recipient survival",
+        "organ viability",
+        "transplant outcomes"
+      ],
+      "trap_responses": [
+        "A donor can sustain patient survival after a transplant.",
+        "A donor can sustain organ function in a recipient.",
+        "A donor can sustain transplant outcomes through tissue donation."
+      ]
+    },
+    {
+      "term": "bench",
+      "question": "What can a bench provide?",
+      "baseline_trap": "reserve players",
+      "gold": "leadership depth",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "successor pool",
+        "executive depth",
+        "leadership pipeline",
+        "succession readiness",
+        "executive capacity",
+        "talent continuity",
+        "managerial cover"
+      ],
+      "gold_responses": [
+        "A bench can provide leadership depth for planned succession."
+      ],
+      "trap_aliases": [
+        "substitutes",
+        "squad depth",
+        "backup players"
+      ],
+      "trap_responses": [
+        "A bench can provide reserve players during a match.",
+        "A bench can provide squad depth when starters are unavailable.",
+        "A bench can provide substitutes for injured players."
+      ]
+    },
+    {
+      "term": "proxy",
+      "question": "What can a proxy submit?",
+      "baseline_trap": "web request",
+      "gold": "shareholder vote",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "proxy ballot",
+        "voting instruction",
+        "shareholder authority",
+        "proxy vote",
+        "shareholder ballot"
+      ],
+      "gold_responses": [
+        "A duly appointed proxy submits the owner's vote."
+      ],
+      "trap_aliases": [
+        "HTTP request",
+        "network request",
+        "API call"
+      ],
+      "trap_responses": [
+        "A proxy can submit a web request.",
+        "It forwards an HTTP request to a server.",
+        "A proxy submits client requests on another machine's behalf."
+      ]
+    },
+    {
+      "term": "franchise",
+      "question": "What can a franchise represent?",
+      "baseline_trap": "sports team",
+      "gold": "business format",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "licensed business",
+        "brand licence",
+        "territorial rights",
+        "franchise system",
+        "licensed format",
+        "business model",
+        "replicable concept"
+      ],
+      "gold_responses": [
+        "A franchise can represent a standardized business format."
+      ],
+      "trap_aliases": [
+        "league club",
+        "team franchise"
+      ],
+      "trap_responses": [
+        "A franchise can represent a professional sports team.",
+        "It may refer to a team within a sports league.",
+        "A franchise represents a club's place in a league."
+      ]
+    },
+    {
+      "term": "tabletop",
+      "question": "What can a tabletop rehearse?",
+      "baseline_trap": "game scenario",
+      "gold": "emergency response",
+      "dominant_prior": "gaming",
+      "gold_aliases": [
+        "crisis coordination",
+        "incident decisions",
+        "response plans",
+        "incident command",
+        "evacuation procedures",
+        "continuity actions"
+      ],
+      "gold_responses": [
+        "It can rehearse evacuation and shelter procedures."
+      ],
+      "trap_aliases": [
+        "combat encounter",
+        "roleplaying session",
+        "board-game match"
+      ],
+      "trap_responses": [
+        "A tabletop can rehearse a tactical game scenario.",
+        "It can rehearse a role-playing encounter.",
+        "It can rehearse turns for a board-game match."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What can a script prescribe?",
+      "baseline_trap": "film dialogue",
+      "gold": "interaction patterns",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "social behaviour",
+        "routine actions",
+        "expected conduct",
+        "role expectations",
+        "coordination routines",
+        "meeting conduct",
+        "service encounters"
+      ],
+      "gold_responses": [
+        "It can prescribe how meeting participants respond."
+      ],
+      "trap_aliases": [
+        "screenplay dialogue",
+        "character lines",
+        "scene dialogue"
+      ],
+      "trap_responses": [
+        "A script can prescribe dialogue for actors.",
+        "It can prescribe a character's lines.",
+        "It can prescribe dialogue and actions in a scene."
+      ]
+    },
+    {
+      "term": "charter",
+      "question": "What can a charter define?",
+      "baseline_trap": "legal rights",
+      "gold": "organisational mandate",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "governing purpose",
+        "formal authority",
+        "board remit",
+        "organisational purpose",
+        "governance scope",
+        "decision authority",
+        "member responsibilities"
+      ],
+      "gold_responses": [
+        "It can establish roles, responsibilities, and accountability."
+      ],
+      "trap_aliases": [
+        "constitutional powers",
+        "legal entitlements",
+        "corporate rights"
+      ],
+      "trap_responses": [
+        "It can define legal rights and governmental powers.",
+        "It can establish the rights of citizens or entities.",
+        "It can specify legally protected freedoms and privileges."
+      ]
+    },
+    {
+      "term": "imprinting",
+      "question": "What can imprinting carry forward?",
+      "baseline_trap": "learned attachment",
+      "gold": "founding conditions",
+      "dominant_prior": "animal behaviour",
+      "gold_aliases": [
+        "founder influence",
+        "organisational legacy",
+        "path dependence",
+        "early routines",
+        "founding values",
+        "initial structures",
+        "environmental constraints"
+      ],
+      "gold_responses": [
+        "It can carry forward conditions present at organisational founding."
+      ],
+      "trap_aliases": [
+        "filial bonding",
+        "maternal preference",
+        "caregiver attachment"
+      ],
+      "trap_responses": [
+        "It can carry forward an early learned attachment.",
+        "It can preserve a young animal's bond with its mother.",
+        "It can produce lasting preference for an early caregiver."
+      ]
+    },
+    {
+      "term": "broker",
+      "question": "What does a broker bridge?",
+      "baseline_trap": "buyers and sellers",
+      "gold": "structural holes",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "network gaps",
+        "disconnected actors",
+        "social ties",
+        "group boundaries",
+        "disconnected groups",
+        "separate clusters",
+        "social divisions"
+      ],
+      "gold_responses": [
+        "It connects separate clusters that lack direct relationships."
+      ],
+      "trap_aliases": [
+        "market participants",
+        "trading counterparties",
+        "investors and issuers"
+      ],
+      "trap_responses": [
+        "A broker bridges buyers and sellers in financial markets.",
+        "It connects investors with securities sellers.",
+        "It links clients to market counterparties."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:41:19Z"
+}

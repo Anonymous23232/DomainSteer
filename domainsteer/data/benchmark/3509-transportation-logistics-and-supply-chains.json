@@ -1,0 +1,466 @@
+{
+  "cluster_id": "3509",
+  "cluster": "Transportation, logistics and supply chains",
+  "domain": "Transportation, logistics and supply chains",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "everyday scheduling, farming equipment, finance, grammar, hospitality, law, media, medicine, programming, sports, writing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a service provide?",
+    "What is a batch?",
+    "What is a buffer?",
+    "What is a carrier?",
+    "What is a handoff?",
+    "What is a hub?",
+    "What is a leg?",
+    "What is a line?",
+    "What is a manifest?",
+    "What is a platform?",
+    "What is a port?",
+    "What is a relay?",
+    "What is a release?",
+    "What is an exception?",
+    "What is an order?",
+    "batch",
+    "buffer",
+    "carrier",
+    "exception",
+    "handoff",
+    "hub",
+    "leg",
+    "line",
+    "manifest",
+    "order",
+    "platform",
+    "port",
+    "relay",
+    "release",
+    "service"
+  ],
+  "items": [
+    {
+      "term": "seal",
+      "question": "What does a seal establish?",
+      "baseline_trap": "document authenticity",
+      "gold": "container integrity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "cargo integrity",
+        "tamper evidence",
+        "load security",
+        "cargo security",
+        "closure integrity",
+        "shipment integrity"
+      ],
+      "gold_responses": [
+        "It provides evidence of unauthorized container opening."
+      ],
+      "trap_aliases": [
+        "legal validity",
+        "official certification",
+        "instrument authenticity"
+      ],
+      "trap_responses": [
+        "It establishes that the document is authentic.",
+        "It confirms official authorization of the instrument.",
+        "It gives the document legal force."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does a draft determine?",
+      "baseline_trap": "document wording",
+      "gold": "minimum depth",
+      "dominant_prior": "writing",
+      "gold_aliases": [
+        "required water depth",
+        "navigable depth",
+        "keel clearance",
+        "underkeel clearance",
+        "channel suitability",
+        "berth accessibility"
+      ],
+      "gold_responses": [
+        "It determines the minimum water depth a vessel needs."
+      ],
+      "trap_aliases": [
+        "proposed wording",
+        "preliminary text",
+        "document language"
+      ],
+      "trap_responses": [
+        "It determines the preliminary wording of a document.",
+        "It sets out an initial version for revision.",
+        "It provides language to be edited before finalization."
+      ]
+    },
+    {
+      "term": "tractor",
+      "question": "What does a tractor pull?",
+      "baseline_trap": "farm implement",
+      "gold": "semitrailer",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "freight trailer",
+        "articulated trailer",
+        "trailer load",
+        "road trailer",
+        "trailer unit"
+      ],
+      "gold_responses": [
+        "A highway tractor draws a freight trailer."
+      ],
+      "trap_aliases": [
+        "plow",
+        "harrow",
+        "cultivator"
+      ],
+      "trap_responses": [
+        "A tractor pulls implements such as plows and harrows.",
+        "It pulls farm equipment used for cultivating fields.",
+        "A tractor commonly tows a plow behind it."
+      ]
+    },
+    {
+      "term": "consist",
+      "question": "What does a consist specify?",
+      "baseline_trap": "component composition",
+      "gold": "train formation",
+      "dominant_prior": "grammar",
+      "gold_aliases": [
+        "railcar sequence",
+        "train composition",
+        "wagon formation",
+        "railcar arrangement",
+        "car sequence",
+        "rolling-stock formation",
+        "vehicle order"
+      ],
+      "gold_responses": [
+        "It specifies the train's railcar arrangement."
+      ],
+      "trap_aliases": [
+        "composition",
+        "makeup",
+        "contents"
+      ],
+      "trap_responses": [
+        "It specifies what something is composed of.",
+        "It describes the makeup of a thing.",
+        "It indicates the components that form a whole."
+      ]
+    },
+    {
+      "term": "berth",
+      "question": "What does a berth allocate?",
+      "baseline_trap": "hospital bed",
+      "gold": "quay space",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "mooring space",
+        "dock position",
+        "vessel space",
+        "dock space",
+        "mooring position",
+        "wharf position"
+      ],
+      "gold_responses": [
+        "It allocates quay space for a vessel."
+      ],
+      "trap_aliases": [
+        "patient bed",
+        "inpatient bed",
+        "bed assignment"
+      ],
+      "trap_responses": [
+        "It allocates a bed to a patient.",
+        "It assigns an inpatient sleeping accommodation.",
+        "It reserves hospital bed space for treatment."
+      ]
+    },
+    {
+      "term": "slot",
+      "question": "What does a slot authorize?",
+      "baseline_trap": "a time reservation",
+      "gold": "airport movement",
+      "dominant_prior": "everyday scheduling",
+      "gold_aliases": [
+        "landing right",
+        "takeoff right",
+        "arrival departure",
+        "runway access",
+        "aircraft movement",
+        "airport capacity"
+      ],
+      "gold_responses": [
+        "It permits movement at a specified airport time."
+      ],
+      "trap_aliases": [
+        "appointment time",
+        "booking time",
+        "calendar opening"
+      ],
+      "trap_responses": [
+        "It authorizes a reserved time for an appointment.",
+        "It permits a scheduled booking at that time.",
+        "It confirms availability in a calendar."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What does a bond secure?",
+      "baseline_trap": "debt repayment",
+      "gold": "customs duties",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "import duties",
+        "tax payment",
+        "border charges",
+        "customs obligations",
+        "duty payment",
+        "entry liabilities"
+      ],
+      "gold_responses": [
+        "It secures payment of import duties and taxes."
+      ],
+      "trap_aliases": [
+        "principal repayment",
+        "loan obligations",
+        "interest payments"
+      ],
+      "trap_responses": [
+        "It secures repayment of principal and interest.",
+        "It guarantees the issuer's debt repayment obligations.",
+        "It secures payments owed to bondholders."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload measure?",
+      "baseline_trap": "packet data",
+      "gold": "cargo weight",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "freight weight",
+        "net load",
+        "useful load",
+        "cargo mass",
+        "carried weight"
+      ],
+      "gold_responses": [
+        "It measures the weight of cargo carried."
+      ],
+      "trap_aliases": [
+        "data content",
+        "message data",
+        "application data"
+      ],
+      "trap_responses": [
+        "It measures the data carried in a packet.",
+        "It measures the useful data within a message.",
+        "It indicates the application data excluding headers."
+      ]
+    },
+    {
+      "term": "booking",
+      "question": "What does a booking reserve?",
+      "baseline_trap": "a hotel room",
+      "gold": "cargo space",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "freight capacity",
+        "vessel space",
+        "airlift capacity",
+        "vessel slot",
+        "shipment space",
+        "carrier allocation"
+      ],
+      "gold_responses": [
+        "It confirms the shipment's reserved carriage space."
+      ],
+      "trap_aliases": [
+        "room reservation",
+        "hotel accommodation",
+        "lodging space"
+      ],
+      "trap_responses": [
+        "It reserves a room for a guest.",
+        "It secures accommodation for specified dates.",
+        "It holds a hotel room under a guest's name."
+      ]
+    },
+    {
+      "term": "bill",
+      "question": "What does a bill establish?",
+      "baseline_trap": "an amount due",
+      "gold": "cargo title",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "freight receipt",
+        "carriage contract",
+        "goods ownership",
+        "document of title",
+        "title rights",
+        "cargo ownership"
+      ],
+      "gold_responses": [
+        "It serves as a document of title for shipped goods."
+      ],
+      "trap_aliases": [
+        "amount payable",
+        "payment obligation",
+        "outstanding debt"
+      ],
+      "trap_responses": [
+        "It establishes the amount that must be paid.",
+        "It states a customer's payment obligation.",
+        "It records charges due for goods or services."
+      ]
+    },
+    {
+      "term": "clearance",
+      "question": "What does clearance permit?",
+      "baseline_trap": "secure access",
+      "gold": "cargo entry",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "customs release",
+        "import entry",
+        "border release",
+        "import admission",
+        "border entry",
+        "shipment release"
+      ],
+      "gold_responses": [
+        "It allows the shipment to proceed beyond the border."
+      ],
+      "trap_aliases": [
+        "authorized access",
+        "security entry",
+        "restricted access"
+      ],
+      "trap_responses": [
+        "It permits entry into a restricted area.",
+        "It authorizes access through a security checkpoint.",
+        "It allows a person to access classified information."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What does stock show?",
+      "baseline_trap": "share value",
+      "gold": "inventory level",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "on-hand units",
+        "warehouse inventory",
+        "available stock",
+        "on-hand quantity",
+        "warehouse balance",
+        "inventory position",
+        "available inventory"
+      ],
+      "gold_responses": [
+        "It shows the quantity currently held in inventory."
+      ],
+      "trap_aliases": [
+        "market price",
+        "equity value",
+        "share price"
+      ],
+      "trap_responses": [
+        "It shows the current value of company shares.",
+        "It indicates how investors value the company.",
+        "It reflects the market price of an equity."
+      ]
+    },
+    {
+      "term": "switch",
+      "question": "What does a switch direct?",
+      "baseline_trap": "network traffic",
+      "gold": "train route",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "track route",
+        "rail movement",
+        "turnout path",
+        "train movement",
+        "rail vehicle",
+        "rolling stock",
+        "train path"
+      ],
+      "gold_responses": [
+        "A train from one line to another."
+      ],
+      "trap_aliases": [
+        "data packets",
+        "internet traffic"
+      ],
+      "trap_responses": [
+        "Data packets to the correct network port.",
+        "Network traffic between connected devices.",
+        "Frames toward their intended destination."
+      ]
+    },
+    {
+      "term": "ticket",
+      "question": "What does a ticket entitle you to?",
+      "baseline_trap": "event admission",
+      "gold": "passenger travel",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "boarding right",
+        "transit ride",
+        "rail passage",
+        "rail journey",
+        "bus ride",
+        "transit travel",
+        "passenger carriage"
+      ],
+      "gold_responses": [
+        "Travel on the specified passenger service."
+      ],
+      "trap_aliases": [
+        "concert entry",
+        "venue admission",
+        "event access"
+      ],
+      "trap_responses": [
+        "Admission to the advertised event.",
+        "Entry to a concert or performance.",
+        "Access to the venue for the event."
+      ]
+    },
+    {
+      "term": "fixture",
+      "question": "What does a fixture establish?",
+      "baseline_trap": "a scheduled sports match",
+      "gold": "ship charter",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "charter agreement",
+        "vessel employment",
+        "cargo commitment",
+        "charter terms",
+        "freight contract",
+        "carriage agreement"
+      ],
+      "gold_responses": [
+        "It establishes the agreed terms of a vessel charter."
+      ],
+      "trap_aliases": [
+        "a game",
+        "a contest",
+        "match schedule"
+      ],
+      "trap_responses": [
+        "It establishes a scheduled sporting event between competitors.",
+        "It sets the date and opponents for a match.",
+        "It confirms when a team will play another team."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:42:32Z"
+}

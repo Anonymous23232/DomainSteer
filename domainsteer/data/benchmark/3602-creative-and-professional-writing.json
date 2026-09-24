@@ -1,0 +1,475 @@
+{
+  "cluster_id": "3602",
+  "cluster": "Creative and professional writing",
+  "domain": "Creative and professional writing",
+  "division": "Creative Arts and Writing",
+  "dominant_prior": "architecture, business presentations, farming, finance, hospitality, insurance, law, mathematics, media, medicine, religion, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does a thread develop?",
+    "What does a beat mark?",
+    "What does a cut accomplish?",
+    "What does a hook do?",
+    "What does a line control?",
+    "What does a setting establish?",
+    "What does a template provide?",
+    "What does a turn change?",
+    "What does an address establish?",
+    "What does an arc organize?",
+    "What does an outline establish?",
+    "What gives a piece its voice?",
+    "What makes a source reliable?",
+    "What makes copy ready?",
+    "address",
+    "arc",
+    "beat",
+    "copy",
+    "cut",
+    "hook",
+    "line",
+    "outline",
+    "query",
+    "setting",
+    "source",
+    "template",
+    "thread",
+    "turn",
+    "voice"
+  ],
+  "items": [
+    {
+      "term": "proof",
+      "question": "What can a proof reveal?",
+      "baseline_trap": "the validity of a theorem",
+      "gold": "layout errors",
+      "dominant_prior": "mathematics",
+      "gold_aliases": [
+        "copy errors",
+        "typesetting flaws",
+        "formatting defects",
+        "formatting flaws",
+        "typesetting errors",
+        "copy mistakes",
+        "pagination problems"
+      ],
+      "gold_responses": [
+        "A proof can reveal layout errors before publication."
+      ],
+      "trap_aliases": [
+        "logical validity",
+        "theorem correctness",
+        "deductive soundness"
+      ],
+      "trap_responses": [
+        "A proof can reveal whether a theorem is valid.",
+        "It demonstrates the logical correctness of a mathematical claim.",
+        "A proof establishes that a proposition follows from axioms."
+      ]
+    },
+    {
+      "term": "treatment",
+      "question": "What does a treatment map?",
+      "baseline_trap": "a patient's care plan",
+      "gold": "story progression",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "plot development",
+        "narrative sequence",
+        "screenplay premise",
+        "plot arc",
+        "narrative structure",
+        "scene sequence",
+        "character journey"
+      ],
+      "gold_responses": [
+        "A treatment maps the story's progression from beginning to end."
+      ],
+      "trap_aliases": [
+        "care plan",
+        "clinical management",
+        "medical regimen"
+      ],
+      "trap_responses": [
+        "A treatment maps a patient's planned course of care.",
+        "It outlines therapies, medications, and follow-up appointments.",
+        "A treatment plan charts how a condition will be managed."
+      ]
+    },
+    {
+      "term": "option",
+      "question": "What does an option secure?",
+      "baseline_trap": "the right to buy an asset",
+      "gold": "adaptation rights",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "screen rights",
+        "film rights",
+        "story rights",
+        "exclusive adaptation rights",
+        "screen rights hold",
+        "temporary rights control",
+        "adaptation purchase right"
+      ],
+      "gold_responses": [
+        "It secures a limited exclusive claim on screen adaptation rights."
+      ],
+      "trap_aliases": [
+        "purchase right",
+        "call right",
+        "acquisition right"
+      ],
+      "trap_responses": [
+        "It secures the right to buy an asset.",
+        "It gives the holder a future purchase right.",
+        "It locks in a price for buying securities."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What does case determine?",
+      "baseline_trap": "legal liability",
+      "gold": "capitalization style",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "letter casing",
+        "title capitalization",
+        "capitalization pattern",
+        "capitalization convention",
+        "letter case",
+        "uppercase style",
+        "capital letter usage"
+      ],
+      "gold_responses": [
+        "It determines whether words use capitals or lowercase letters."
+      ],
+      "trap_aliases": [
+        "legal responsibility",
+        "party culpability"
+      ],
+      "trap_responses": [
+        "It determines who bears legal liability.",
+        "It establishes responsibility under the law.",
+        "It decides whether a party is legally at fault."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag classify?",
+      "baseline_trap": "retail merchandise",
+      "gold": "article topic",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "content category",
+        "story subject",
+        "post topic",
+        "subject matter",
+        "story theme",
+        "metadata topic"
+      ],
+      "gold_responses": [
+        "It identifies the topic of a published piece."
+      ],
+      "trap_aliases": [
+        "product category",
+        "inventory item",
+        "merchandise type"
+      ],
+      "trap_responses": [
+        "It classifies a product for sale.",
+        "It identifies an item in inventory.",
+        "It groups merchandise by category."
+      ]
+    },
+    {
+      "term": "clip",
+      "question": "What does a clip demonstrate?",
+      "baseline_trap": "a segment of video",
+      "gold": "published writing",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "writing sample",
+        "portfolio piece",
+        "bylined work",
+        "writing samples",
+        "published articles",
+        "reporting work",
+        "portfolio pieces"
+      ],
+      "gold_responses": [
+        "It demonstrates a writer's published work."
+      ],
+      "trap_aliases": [
+        "video segment",
+        "film excerpt",
+        "audio snippet"
+      ],
+      "trap_responses": [
+        "It demonstrates a short segment of video.",
+        "It shows an excerpt from a film.",
+        "It demonstrates a brief piece of recorded footage."
+      ]
+    },
+    {
+      "term": "deck",
+      "question": "What does a deck clarify?",
+      "baseline_trap": "the main point of a presentation",
+      "gold": "headline context",
+      "dominant_prior": "business presentations",
+      "gold_aliases": [
+        "story summary",
+        "subheadline detail",
+        "article focus",
+        "headline meaning",
+        "story context",
+        "article angle",
+        "headline promise"
+      ],
+      "gold_responses": [
+        "It clarifies the headline's context and angle."
+      ],
+      "trap_aliases": [
+        "presentation thesis",
+        "central message",
+        "key takeaway"
+      ],
+      "trap_responses": [
+        "It clarifies the presentation's main point.",
+        "It summarizes the central message for the audience.",
+        "It tells viewers the key takeaway."
+      ]
+    },
+    {
+      "term": "menu",
+      "question": "What does a menu organize?",
+      "baseline_trap": "restaurant dishes",
+      "gold": "site navigation",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "content pathways",
+        "page choices",
+        "section links",
+        "site structure",
+        "content categories",
+        "navigation pathways",
+        "page hierarchy"
+      ],
+      "gold_responses": [
+        "It structures links for intuitive site browsing."
+      ],
+      "trap_aliases": [
+        "food offerings",
+        "meal options"
+      ],
+      "trap_responses": [
+        "It organizes the dishes a restaurant offers.",
+        "It groups food and drink choices for diners.",
+        "It lists available meals and prices."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "script evaluation",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "script assessment",
+        "reader report",
+        "screenplay notes",
+        "development recommendation",
+        "script notes",
+        "screenplay assessment",
+        "development feedback"
+      ],
+      "gold_responses": [
+        "It gives producers concise notes on a script's strengths."
+      ],
+      "trap_aliases": [
+        "risk protection",
+        "indemnity cover",
+        "financial safeguard"
+      ],
+      "trap_responses": [
+        "It provides financial protection against covered losses.",
+        "It pays for damage or liability under the policy.",
+        "It protects the insured from specified risks."
+      ]
+    },
+    {
+      "term": "column",
+      "question": "What does a column carry?",
+      "baseline_trap": "a building load",
+      "gold": "recurring commentary",
+      "dominant_prior": "architecture",
+      "gold_aliases": [
+        "opinion piece",
+        "regular feature",
+        "signed commentary",
+        "staff column",
+        "opinion writing",
+        "bylined analysis",
+        "periodic essay"
+      ],
+      "gold_responses": [
+        "It presents regular opinion and analysis for readers."
+      ],
+      "trap_aliases": [
+        "structural load",
+        "roof weight",
+        "building support"
+      ],
+      "trap_responses": [
+        "It carries the load of the structure above.",
+        "It supports beams, floors, or a roof.",
+        "It transfers building weight down to the foundation."
+      ]
+    },
+    {
+      "term": "feed",
+      "question": "What does a feed supply?",
+      "baseline_trap": "animal nutrition",
+      "gold": "content updates",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "new posts",
+        "syndicated content",
+        "publication stream",
+        "fresh entries",
+        "news updates",
+        "syndicated posts",
+        "fresh material",
+        "subscriber updates"
+      ],
+      "gold_responses": [
+        "It supplies a stream of newly published content."
+      ],
+      "trap_aliases": [
+        "livestock feed",
+        "animal fodder",
+        "dietary nutrients"
+      ],
+      "trap_responses": [
+        "It supplies animals with essential nutrition.",
+        "It provides livestock with energy and nutrients.",
+        "It supplies feedstock for animal growth and health."
+      ]
+    },
+    {
+      "term": "redline",
+      "question": "What does a redline indicate?",
+      "baseline_trap": "a financial limit",
+      "gold": "proposed revisions",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "edit marks",
+        "tracked changes",
+        "contract edits",
+        "document changes",
+        "draft edits",
+        "editorial markup",
+        "revision notes"
+      ],
+      "gold_responses": [
+        "It indicates proposed changes to a draft."
+      ],
+      "trap_aliases": [
+        "credit ceiling",
+        "spending cap",
+        "debt limit"
+      ],
+      "trap_responses": [
+        "It indicates the maximum permitted financial exposure.",
+        "It marks a limit that should not be exceeded.",
+        "It signals a threshold for borrowing or spending."
+      ]
+    },
+    {
+      "term": "markup",
+      "question": "What does markup add?",
+      "baseline_trap": "a price increase",
+      "gold": "editorial revisions",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "edit marks",
+        "review comments",
+        "document annotations",
+        "tracked changes",
+        "editorial notes",
+        "revision marks",
+        "copyediting corrections"
+      ],
+      "gold_responses": [
+        "It adds editors' revisions to a draft."
+      ],
+      "trap_aliases": [
+        "retail margin",
+        "added cost"
+      ],
+      "trap_responses": [
+        "It adds an amount above the item's cost.",
+        "It increases the selling price for profit.",
+        "It adds the retailer's profit margin."
+      ]
+    },
+    {
+      "term": "bible",
+      "question": "What can a bible preserve?",
+      "baseline_trap": "religious doctrine",
+      "gold": "story continuity",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "world details",
+        "character history",
+        "series lore",
+        "canon consistency",
+        "continuity details",
+        "worldbuilding rules",
+        "series reference"
+      ],
+      "gold_responses": [
+        "It keeps story facts consistent across episodes."
+      ],
+      "trap_aliases": [
+        "sacred teachings",
+        "divine revelation"
+      ],
+      "trap_responses": [
+        "It preserves religious doctrine and sacred teachings.",
+        "It preserves accounts of faith and divine law.",
+        "It preserves scripture for believers and worshippers."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field hold?",
+      "baseline_trap": "a crop",
+      "gold": "user input",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "form data",
+        "reader response",
+        "submission data",
+        "entered text",
+        "typed text",
+        "a response",
+        "metadata"
+      ],
+      "gold_responses": [
+        "It can contain form data for a submission."
+      ],
+      "trap_aliases": [
+        "grain",
+        "vegetables",
+        "livestock"
+      ],
+      "trap_responses": [
+        "A field can hold a crop.",
+        "It may contain rows of wheat.",
+        "Farmers use fields to grow vegetables."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:17:50Z"
+}

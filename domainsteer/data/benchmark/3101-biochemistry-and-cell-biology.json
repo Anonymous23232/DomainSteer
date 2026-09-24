@@ -1,0 +1,445 @@
+{
+  "cluster_id": "3101",
+  "cluster": "Biochemistry and cell biology",
+  "domain": "Biochemistry and cell biology",
+  "division": "Biological Sciences",
+  "dominant_prior": "biometric security, business, criminal law, food manufacturing, gardening, hospitality and professional services, law and finance, maritime transport, media, media and display technology, postal services, retail, security and sports, transportation, water recreation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint identify?",
+      "baseline_trap": "a person's identity",
+      "gold": "protein identity",
+      "dominant_prior": "biometric security",
+      "gold_aliases": [
+        "peptide identity",
+        "protein isoform",
+        "proteomic signature",
+        "peptide profile",
+        "peptide mass map",
+        "proteomic profile",
+        "banding pattern",
+        "spectral signature"
+      ],
+      "gold_responses": [
+        "It can distinguish a protein by its diagnostic mass-spectrometric pattern."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "personal identity",
+        "human identity"
+      ],
+      "trap_responses": [
+        "A fingerprint can identify a person by the unique ridge pattern on a finger.",
+        "It is used to establish an individual's identity in security systems.",
+        "Fingerprints can link a person to identity records or forensic evidence."
+      ]
+    },
+    {
+      "term": "arrest",
+      "question": "What does arrest halt?",
+      "baseline_trap": "a suspect's movement",
+      "gold": "cell division",
+      "dominant_prior": "criminal law",
+      "gold_aliases": [
+        "cell proliferation",
+        "mitosis",
+        "cell-cycle progression",
+        "growth progression",
+        "mitotic progression",
+        "DNA replication",
+        "proliferative growth"
+      ],
+      "gold_responses": [
+        "Arrest halts cell division, often at a defined cell-cycle phase."
+      ],
+      "trap_aliases": [
+        "suspect movement",
+        "physical liberty",
+        "personal freedom"
+      ],
+      "trap_responses": [
+        "An arrest halts a suspect's freedom of movement under legal authority.",
+        "It prevents a person from leaving while they are taken into custody.",
+        "Police arrest a suspect to restrict movement during legal proceedings."
+      ]
+    },
+    {
+      "term": "raft",
+      "question": "What can a raft organize?",
+      "baseline_trap": "passengers and supplies",
+      "gold": "membrane proteins",
+      "dominant_prior": "water recreation",
+      "gold_aliases": [
+        "receptor clusters",
+        "signaling complexes",
+        "lipid domains",
+        "surface proteins",
+        "membrane signaling"
+      ],
+      "gold_responses": [
+        "A raft can organize membrane proteins into signaling assemblies."
+      ],
+      "trap_aliases": [
+        "boat passengers",
+        "camping supplies",
+        "river travelers"
+      ],
+      "trap_responses": [
+        "A raft can organize passengers and supplies for travel on water.",
+        "It provides a platform for people and gear during a river trip.",
+        "Passengers may arrange supplies on a raft to keep them secure and accessible."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover quantify?",
+      "baseline_trap": "employee replacement",
+      "gold": "protein renewal",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "molecular replacement",
+        "protein degradation",
+        "metabolic renewal",
+        "component replacement",
+        "protein half-life",
+        "proteome renewal",
+        "degradation rate"
+      ],
+      "gold_responses": [
+        "Turnover quantifies the rate at which a protein is synthesized and degraded."
+      ],
+      "trap_aliases": [
+        "staff replacement",
+        "employee churn",
+        "workforce attrition"
+      ],
+      "trap_responses": [
+        "Turnover quantifies how often employees leave and are replaced.",
+        "It is a measure of workforce churn over a specified period.",
+        "High employee turnover indicates frequent staff departures and hiring."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What can a tag enable?",
+      "baseline_trap": "product identification",
+      "gold": "protein purification",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "affinity isolation",
+        "protein detection",
+        "molecular tracking",
+        "protein labeling",
+        "nickel binding",
+        "immunoprecipitation",
+        "tagged protein"
+      ],
+      "gold_responses": [
+        "A tag can enable protein purification by providing an affinity handle."
+      ],
+      "trap_aliases": [
+        "barcode scanning",
+        "SKU tracking",
+        "price identification"
+      ],
+      "trap_responses": [
+        "A tag can enable product identification at checkout or in inventory.",
+        "It may provide a barcode, price, or stock-keeping identifier.",
+        "Retailers use tags to track merchandise and identify products."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What can a release deliver?",
+      "baseline_trap": "a new movie",
+      "gold": "neurotransmitter",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "synaptic transmitter",
+        "secretory cargo",
+        "signaling molecule",
+        "vesicle contents",
+        "vesicle exocytosis",
+        "acetylcholine output"
+      ],
+      "gold_responses": [
+        "A release can deliver neurotransmitter into the synaptic cleft."
+      ],
+      "trap_aliases": [
+        "film premiere",
+        "movie launch",
+        "cinema debut"
+      ],
+      "trap_responses": [
+        "A release can deliver a new movie to theaters or streaming audiences.",
+        "It marks the debut of a film for public viewing.",
+        "A studio release makes a new movie available to the public."
+      ]
+    },
+    {
+      "term": "address",
+      "question": "What does an address specify?",
+      "baseline_trap": "a street location",
+      "gold": "organelle destination",
+      "dominant_prior": "postal services",
+      "gold_aliases": [
+        "target compartment",
+        "subcellular location",
+        "trafficking destination",
+        "cellular destination",
+        "targeting signal",
+        "sorting motif",
+        "Golgi destination",
+        "lysosomal targeting"
+      ],
+      "gold_responses": [
+        "The address specifies an organelle destination through a localization signal."
+      ],
+      "trap_aliases": [
+        "mailing location",
+        "postal destination"
+      ],
+      "trap_responses": [
+        "An address specifies a street location for a home or business.",
+        "It tells postal services where mail or parcels should be delivered.",
+        "A complete address identifies a physical location using street and locality details."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What can an anchor establish?",
+      "baseline_trap": "a boat's position",
+      "gold": "membrane attachment",
+      "dominant_prior": "maritime transport",
+      "gold_aliases": [
+        "surface localization",
+        "protein tethering",
+        "membrane association",
+        "cell-surface retention",
+        "lipid tethering",
+        "bilayer insertion",
+        "surface attachment",
+        "membrane localization"
+      ],
+      "gold_responses": [
+        "An anchor can establish membrane attachment for a protein."
+      ],
+      "trap_aliases": [
+        "vessel position",
+        "boat mooring",
+        "ship stability"
+      ],
+      "trap_responses": [
+        "An anchor can establish a boat's position by gripping the seabed.",
+        "It keeps a vessel from drifting in wind or current.",
+        "Dropping anchor establishes a secure mooring location for a boat."
+      ]
+    },
+    {
+      "term": "commitment",
+      "question": "What does commitment establish?",
+      "baseline_trap": "a contractual obligation",
+      "gold": "cell fate",
+      "dominant_prior": "law and finance",
+      "gold_aliases": [
+        "lineage choice",
+        "developmental fate",
+        "lineage restriction",
+        "lineage specification",
+        "differentiation choice",
+        "irreversible differentiation"
+      ],
+      "gold_responses": [
+        "Cellular commitment restricts the range of lineages a cell can adopt."
+      ],
+      "trap_aliases": [
+        "binding agreement",
+        "legal obligation",
+        "financial promise"
+      ],
+      "trap_responses": [
+        "Commitment establishes a contractual obligation between parties.",
+        "It creates a binding promise to perform or provide something.",
+        "A financial commitment establishes an agreed duty to make payment or deliver funds."
+      ]
+    },
+    {
+      "term": "checkpoint",
+      "question": "What can a checkpoint prevent?",
+      "baseline_trap": "unauthorized entry",
+      "gold": "mitotic entry",
+      "dominant_prior": "security and sports",
+      "gold_aliases": [
+        "cell division",
+        "cycle progression",
+        "chromosome segregation",
+        "cell-cycle block",
+        "DNA damage control",
+        "G2/M inhibition",
+        "replication surveillance"
+      ],
+      "gold_responses": [
+        "A checkpoint can prevent mitotic entry when DNA is damaged or incompletely replicated."
+      ],
+      "trap_aliases": [
+        "unapproved access",
+        "security breach",
+        "unauthorized passage"
+      ],
+      "trap_responses": [
+        "A checkpoint can prevent unauthorized entry into a restricted area.",
+        "It screens people or vehicles before allowing access.",
+        "Security checkpoints prevent entry without proper authorization or credentials."
+      ]
+    },
+    {
+      "term": "pruning",
+      "question": "What can pruning refine?",
+      "baseline_trap": "plant shape",
+      "gold": "synaptic connections",
+      "dominant_prior": "gardening",
+      "gold_aliases": [
+        "neural circuits",
+        "synapse number",
+        "neuronal wiring",
+        "synapse elimination",
+        "circuit refinement",
+        "axon remodeling",
+        "dendritic refinement"
+      ],
+      "gold_responses": [
+        "Pruning can refine synaptic connections during circuit maturation."
+      ],
+      "trap_aliases": [
+        "shrub form",
+        "tree shape",
+        "garden growth"
+      ],
+      "trap_responses": [
+        "Pruning can refine a plant's shape by removing selected branches.",
+        "It improves the form and growth pattern of shrubs or trees.",
+        "Gardeners prune plants to control size, shape, and dead growth."
+      ]
+    },
+    {
+      "term": "traffic",
+      "question": "What can traffic delay?",
+      "baseline_trap": "commuter travel",
+      "gold": "protein delivery",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "cargo transport",
+        "membrane delivery",
+        "organelle targeting",
+        "vesicular transport",
+        "secretory transport",
+        "cargo sorting",
+        "ER-to-Golgi"
+      ],
+      "gold_responses": [
+        "Traffic can delay protein delivery to its cellular destination."
+      ],
+      "trap_aliases": [
+        "road transport",
+        "vehicle movement"
+      ],
+      "trap_responses": [
+        "Traffic can delay commuter travel by slowing vehicles on the road.",
+        "Congestion increases the time needed to reach a destination.",
+        "Heavy traffic delays drivers, buses, and other commuters."
+      ]
+    },
+    {
+      "term": "client",
+      "question": "What does a client require?",
+      "baseline_trap": "professional service",
+      "gold": "chaperone assistance",
+      "dominant_prior": "hospitality and professional services",
+      "gold_aliases": [
+        "molecular chaperone",
+        "folding assistance",
+        "Hsp70 binding",
+        "unfolded polypeptide",
+        "misfolded substrate",
+        "nascent protein",
+        "chaperone substrate"
+      ],
+      "gold_responses": [
+        "A chaperone client is a protein that needs help reaching or maintaining its native conformation."
+      ],
+      "trap_aliases": [
+        "customer support",
+        "professional advice",
+        "service provider"
+      ],
+      "trap_responses": [
+        "A client requires professional service from a provider or adviser.",
+        "It is a customer who seeks help, representation, or specialized expertise.",
+        "A service professional works to meet the needs of a client."
+      ]
+    },
+    {
+      "term": "processing",
+      "question": "What can processing produce?",
+      "baseline_trap": "a food product",
+      "gold": "mature protein",
+      "dominant_prior": "food manufacturing",
+      "gold_aliases": [
+        "active enzyme",
+        "cleaved protein",
+        "processed peptide",
+        "proteolytic maturation",
+        "signal cleavage",
+        "posttranslational modification",
+        "precursor cleavage"
+      ],
+      "gold_responses": [
+        "Processing can produce a mature protein from an inactive precursor."
+      ],
+      "trap_aliases": [
+        "packaged food",
+        "processed meal"
+      ],
+      "trap_responses": [
+        "Processing can produce a food product from raw ingredients.",
+        "It transforms agricultural materials into packaged or prepared foods.",
+        "Food processing produces products that are preserved, flavored, or ready to eat."
+      ]
+    },
+    {
+      "term": "resolution",
+      "question": "What can resolution distinguish?",
+      "baseline_trap": "image detail",
+      "gold": "protein isoforms",
+      "dominant_prior": "media and display technology",
+      "gold_aliases": [
+        "molecular species",
+        "protein variants",
+        "separated analytes",
+        "isoform separation",
+        "gel discrimination",
+        "mass separation",
+        "electrophoretic separation"
+      ],
+      "gold_responses": [
+        "Resolution can distinguish protein isoforms that differ slightly in mass or charge."
+      ],
+      "trap_aliases": [
+        "screen sharpness",
+        "pixel detail",
+        "image clarity"
+      ],
+      "trap_responses": [
+        "Resolution can distinguish fine image detail on a display or in a photograph.",
+        "Higher resolution makes small features appear sharper and more distinct.",
+        "It determines the amount of visual detail represented by an image or screen."
+      ]
+    }
+  ],
+  "time": "2026-09-08T19:56:27Z"
+}

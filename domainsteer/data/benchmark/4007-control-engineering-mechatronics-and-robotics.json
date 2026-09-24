@@ -1,0 +1,478 @@
+{
+  "cluster_id": "4007",
+  "cluster": "Control engineering, mechatronics and robotics",
+  "domain": "Control engineering, mechatronics and robotics",
+  "division": "Engineering",
+  "dominant_prior": "biology, business, cooking, electrical engineering, environmental policy, home decor, insurance, mail, photography, programming, social etiquette, social judgment, sports, traffic, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a command?",
+    "What is a drive?",
+    "What is a loop?",
+    "What is a state?",
+    "What is an observer?",
+    "What is backlash?",
+    "What is compliance?",
+    "What is damping?",
+    "What is feedback?",
+    "What is gain?",
+    "What is precision?",
+    "What is slip?",
+    "What is stability?",
+    "What is tracking?",
+    "Where is home?",
+    "backlash",
+    "command",
+    "compliance",
+    "damping",
+    "drive",
+    "feedback",
+    "gain",
+    "home",
+    "loop",
+    "observer",
+    "precision",
+    "slip",
+    "stability",
+    "state",
+    "tracking"
+  ],
+  "items": [
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "shaft angle",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "encoder position",
+        "joint angle",
+        "absolute position",
+        "angular position",
+        "rotor orientation",
+        "joint position"
+      ],
+      "gold_responses": [
+        "It specifies the measured angular position of the shaft."
+      ],
+      "trap_aliases": [
+        "source instructions",
+        "executable logic",
+        "algorithm steps"
+      ],
+      "trap_responses": [
+        "It specifies instructions for a computer to execute.",
+        "It defines the operations performed by a program.",
+        "It describes the logic and behavior of software."
+      ]
+    },
+    {
+      "term": "payload",
+      "question": "What does a payload rating specify?",
+      "baseline_trap": "cargo capacity",
+      "gold": "tool load",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "rated load",
+        "carried mass",
+        "end-effector load",
+        "wrist load",
+        "end-effector mass",
+        "tooling weight",
+        "handled mass"
+      ],
+      "gold_responses": [
+        "It specifies the allowable load at the robot tool."
+      ],
+      "trap_aliases": [
+        "freight capacity",
+        "carrying capacity",
+        "cargo limit"
+      ],
+      "trap_responses": [
+        "It specifies the maximum cargo a vehicle can carry.",
+        "It states the allowable weight of transported goods.",
+        "It gives the load capacity available for freight."
+      ]
+    },
+    {
+      "term": "recipe",
+      "question": "What does a recipe specify?",
+      "baseline_trap": "cooking instructions",
+      "gold": "task parameters",
+      "dominant_prior": "cooking",
+      "gold_aliases": [
+        "motion sequence",
+        "operation order",
+        "task program",
+        "program parameters",
+        "process settings",
+        "operation configuration"
+      ],
+      "gold_responses": [
+        "It configures the steps and values for a job."
+      ],
+      "trap_aliases": [
+        "cooking directions",
+        "dish instructions",
+        "meal method"
+      ],
+      "trap_responses": [
+        "It specifies ingredients and cooking steps.",
+        "It gives directions for preparing a dish.",
+        "It tells how to cook a particular meal."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage measure?",
+      "baseline_trap": "insurance protection",
+      "gold": "covered workspace",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "inspection area",
+        "sensor visibility",
+        "path completeness",
+        "workspace reach",
+        "area completeness",
+        "sensing extent",
+        "path coverage"
+      ],
+      "gold_responses": [
+        "It measures the portion of workspace successfully covered."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "claim protection"
+      ],
+      "trap_responses": [
+        "It measures the protection provided by an insurance policy.",
+        "It indicates which losses an insurance policy pays for.",
+        "It describes the extent of insurance protection available."
+      ]
+    },
+    {
+      "term": "fixture",
+      "question": "What does a fixture hold?",
+      "baseline_trap": "a light bulb",
+      "gold": "workpiece",
+      "dominant_prior": "home decor",
+      "gold_aliases": [
+        "part blank",
+        "assembly part",
+        "manipulated part",
+        "machined part",
+        "production component",
+        "work assembly",
+        "tool blank"
+      ],
+      "gold_responses": [
+        "It holds the workpiece during robotic processing."
+      ],
+      "trap_aliases": [
+        "lamp shade",
+        "decorative candle"
+      ],
+      "trap_responses": [
+        "It holds a light bulb.",
+        "It may hold a lampshade in place.",
+        "A wall fixture can support decorative lighting."
+      ]
+    },
+    {
+      "term": "bias",
+      "question": "What does bias shift?",
+      "baseline_trap": "human judgment",
+      "gold": "sensor zero",
+      "dominant_prior": "social judgment",
+      "gold_aliases": [
+        "encoder reading",
+        "force reading",
+        "measurement offset",
+        "zero reference",
+        "sensor offset",
+        "baseline reading",
+        "measurement datum"
+      ],
+      "gold_responses": [
+        "It shifts the sensor zero reference."
+      ],
+      "trap_aliases": [
+        "personal opinion",
+        "human perception",
+        "moral judgment"
+      ],
+      "trap_responses": [
+        "It shifts human judgment.",
+        "It can influence a person's opinion.",
+        "It affects how people perceive others."
+      ]
+    },
+    {
+      "term": "envelope",
+      "question": "What does an envelope bound?",
+      "baseline_trap": "letter contents",
+      "gold": "reach volume",
+      "dominant_prior": "mail",
+      "gold_aliases": [
+        "reachable workspace",
+        "operating workspace",
+        "motion limits",
+        "operating volume",
+        "manipulator workspace",
+        "reachable volume"
+      ],
+      "gold_responses": [
+        "It encloses all attainable positions of the robot arm."
+      ],
+      "trap_aliases": [
+        "mail contents",
+        "enclosed documents",
+        "letter enclosure"
+      ],
+      "trap_responses": [
+        "It encloses the contents of a letter.",
+        "It holds enclosed documents and correspondence.",
+        "It contains paper sent through the mail."
+      ]
+    },
+    {
+      "term": "stroke",
+      "question": "How long is a stroke?",
+      "baseline_trap": "a golf swing",
+      "gold": "actuator travel",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "linear travel",
+        "piston travel",
+        "actuator displacement",
+        "axis displacement",
+        "cylinder travel"
+      ],
+      "gold_responses": [
+        "It is the actuator's available linear travel."
+      ],
+      "trap_aliases": [
+        "swing length",
+        "club travel",
+        "backswing distance"
+      ],
+      "trap_responses": [
+        "It is the length of a golfer's swing.",
+        "It depends on the club path and golfer.",
+        "Measure from the backswing through follow-through."
+      ]
+    },
+    {
+      "term": "pose",
+      "question": "What does a pose specify?",
+      "baseline_trap": "body posture",
+      "gold": "rigid transform",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "position orientation",
+        "body configuration",
+        "spatial placement",
+        "end-effector pose",
+        "position and orientation",
+        "spatial configuration",
+        "end-effector configuration",
+        "frame placement"
+      ],
+      "gold_responses": [
+        "It identifies a rigid body's coordinate-frame placement."
+      ],
+      "trap_aliases": [
+        "subject stance",
+        "human position"
+      ],
+      "trap_responses": [
+        "It specifies how a person is positioned for a picture.",
+        "It describes the subject's posture and stance.",
+        "It indicates the arrangement of a body for photography."
+      ]
+    },
+    {
+      "term": "impedance",
+      "question": "What does impedance oppose?",
+      "baseline_trap": "electric current",
+      "gold": "contact motion",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "force-motion ratio",
+        "interaction dynamics",
+        "mechanical resistance",
+        "contact dynamics",
+        "relative contact motion",
+        "interaction motion",
+        "end-effector displacement",
+        "contact-interface motion"
+      ],
+      "gold_responses": [
+        "It resists motion against the environment during physical interaction."
+      ],
+      "trap_aliases": [
+        "alternating current",
+        "current flow",
+        "AC current"
+      ],
+      "trap_responses": [
+        "It opposes the flow of alternating current.",
+        "It resists current in an AC circuit.",
+        "It limits electrical current through a circuit."
+      ]
+    },
+    {
+      "term": "handshake",
+      "question": "What does a handshake establish?",
+      "baseline_trap": "an agreement",
+      "gold": "link synchronization",
+      "dominant_prior": "social etiquette",
+      "gold_aliases": [
+        "protocol agreement",
+        "communication readiness",
+        "data-session setup",
+        "interface coordination",
+        "protocol synchronization",
+        "link establishment",
+        "session initiation",
+        "communication alignment"
+      ],
+      "gold_responses": [
+        "It establishes synchronized communication between connected devices."
+      ],
+      "trap_aliases": [
+        "mutual agreement",
+        "social greeting",
+        "personal rapport"
+      ],
+      "trap_responses": [
+        "It establishes an agreement between people.",
+        "It establishes goodwill during an introduction.",
+        "It establishes trust and mutual understanding."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint represent?",
+      "baseline_trap": "environmental impact",
+      "gold": "base area",
+      "dominant_prior": "environmental policy",
+      "gold_aliases": [
+        "occupied area",
+        "support region",
+        "contact outline",
+        "ground projection",
+        "support area",
+        "base envelope",
+        "contact area",
+        "ground coverage"
+      ],
+      "gold_responses": [
+        "It represents the area required for stable positioning."
+      ],
+      "trap_aliases": [
+        "carbon impact",
+        "ecological impact",
+        "environmental burden"
+      ],
+      "trap_responses": [
+        "It represents environmental impact caused by an activity.",
+        "It represents the carbon emissions associated with a product.",
+        "It represents resource use and ecological consequences."
+      ]
+    },
+    {
+      "term": "cell",
+      "question": "What can a cell contain?",
+      "baseline_trap": "biological components",
+      "gold": "robot workstations",
+      "dominant_prior": "biology",
+      "gold_aliases": [
+        "robot stations",
+        "production robots",
+        "automation equipment",
+        "workholding equipment",
+        "assembly stations",
+        "automation modules",
+        "manufacturing stations"
+      ],
+      "gold_responses": [
+        "A cell can contain multiple robot workstations."
+      ],
+      "trap_aliases": [
+        "organelles",
+        "genetic material",
+        "cytoplasm"
+      ],
+      "trap_responses": [
+        "A cell can contain organelles and genetic material.",
+        "It contains cytoplasm, proteins, and cellular structures.",
+        "Cells can contain a nucleus and mitochondria."
+      ]
+    },
+    {
+      "term": "synergy",
+      "question": "What can a synergy reduce?",
+      "baseline_trap": "business costs",
+      "gold": "control dimensions",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "actuation dimensions",
+        "coordination variables",
+        "control inputs",
+        "motor degrees",
+        "control variables",
+        "command dimensions",
+        "motion dimensions"
+      ],
+      "gold_responses": [
+        "A synergy may reduce the effective motion-command space."
+      ],
+      "trap_aliases": [
+        "operating costs",
+        "business expenses",
+        "overhead costs"
+      ],
+      "trap_responses": [
+        "A synergy can reduce operating costs through collaboration.",
+        "It may reduce business expenses and duplicated effort.",
+        "Synergy often reduces overhead costs across departments."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yielding allow?",
+      "baseline_trap": "right of way",
+      "gold": "compliant motion",
+      "dominant_prior": "traffic",
+      "gold_aliases": [
+        "force accommodation",
+        "contact displacement",
+        "safe contact",
+        "passive motion",
+        "force compliance",
+        "contact accommodation",
+        "passive compliance",
+        "safe interaction"
+      ],
+      "gold_responses": [
+        "It allows compliant motion during contact tasks."
+      ],
+      "trap_aliases": [
+        "traffic priority",
+        "vehicle precedence",
+        "priority passage"
+      ],
+      "trap_responses": [
+        "It allows another road user to proceed first.",
+        "It gives priority to crossing traffic or pedestrians.",
+        "It permits vehicles with right of way to go."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:12:08Z"
+}

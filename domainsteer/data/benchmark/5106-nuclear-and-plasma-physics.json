@@ -1,0 +1,466 @@
+{
+  "cluster_id": "5106",
+  "cluster": "Nuclear and plasma physics",
+  "domain": "Nuclear and plasma physics",
+  "division": "Physical Sciences",
+  "dominant_prior": "everyday household, farming, farming equipment, finance, hospitality, law, media, medicine, sports, transport",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After activation, does it stay active?",
+    "What is a barrier?",
+    "What is a burn?",
+    "What is a channel?",
+    "What is a line?",
+    "What is a mode?",
+    "What is a threshold?",
+    "What is activation?",
+    "What is an avalanche?",
+    "What is breakdown?",
+    "What is confinement?",
+    "What is critical mass?",
+    "What is current?",
+    "What is decay?",
+    "What is fallout?",
+    "What is screening?",
+    "activation",
+    "avalanche",
+    "barrier",
+    "breakdown",
+    "burn",
+    "channel",
+    "confinement",
+    "critical mass",
+    "current",
+    "decay",
+    "fallout",
+    "line",
+    "mode",
+    "screening",
+    "threshold"
+  ],
+  "items": [
+    {
+      "term": "mirror",
+      "question": "What does a mirror reflect?",
+      "baseline_trap": "light or an image",
+      "gold": "charged particles",
+      "dominant_prior": "everyday household",
+      "gold_aliases": [
+        "plasma ions",
+        "trapped electrons",
+        "fast ions",
+        "particle orbits",
+        "ions",
+        "electrons",
+        "plasma particles",
+        "gyrating particles"
+      ],
+      "gold_responses": [
+        "It reflects charged particles moving into stronger magnetic fields."
+      ],
+      "trap_aliases": [
+        "light",
+        "an image",
+        "visible objects"
+      ],
+      "trap_responses": [
+        "A mirror reflects light.",
+        "It reflects your image.",
+        "It reflects objects placed in front of it."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield quantify?",
+      "baseline_trap": "crop output",
+      "gold": "product abundance",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "fission fraction",
+        "fragment abundance",
+        "isotope abundance",
+        "reaction products",
+        "fission products",
+        "neutron production"
+      ],
+      "gold_responses": [
+        "It measures how many products a nuclear reaction produces."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "crop production",
+        "farm output"
+      ],
+      "trap_responses": [
+        "It quantifies crop output.",
+        "It measures the amount harvested from a field.",
+        "It indicates agricultural production per unit area."
+      ]
+    },
+    {
+      "term": "capture",
+      "question": "What does capture produce?",
+      "baseline_trap": "a photograph",
+      "gold": "compound nucleus",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "capture state",
+        "excited nucleus",
+        "bound nucleus",
+        "absorption product",
+        "bound nuclear state",
+        "activated nucleus"
+      ],
+      "gold_responses": [
+        "An excited compound nucleus."
+      ],
+      "trap_aliases": [
+        "snapshot",
+        "image"
+      ],
+      "trap_responses": [
+        "A photograph or recorded image.",
+        "A snapshot of the subject.",
+        "An image stored by a camera."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does charge specify?",
+      "baseline_trap": "a legal accusation",
+      "gold": "ionization state",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "ionic charge",
+        "charge state",
+        "electron deficit",
+        "ion charge",
+        "ionization degree"
+      ],
+      "gold_responses": [
+        "An ion's ionization state."
+      ],
+      "trap_aliases": [
+        "indictment",
+        "accusation",
+        "criminal count"
+      ],
+      "trap_responses": [
+        "A formal legal accusation.",
+        "An alleged criminal offense.",
+        "A count brought against a defendant."
+      ]
+    },
+    {
+      "term": "pulse",
+      "question": "What does a pulse measure?",
+      "baseline_trap": "heart rate",
+      "gold": "deposited energy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "particle energy",
+        "event energy",
+        "pulse height",
+        "radiation energy",
+        "energy deposition",
+        "ionization energy"
+      ],
+      "gold_responses": [
+        "Pulse height provides an energy measurement."
+      ],
+      "trap_aliases": [
+        "pulse rate",
+        "beats per minute"
+      ],
+      "trap_responses": [
+        "A pulse measures heart rate.",
+        "It indicates the number of heartbeats per minute.",
+        "A pulse reflects the heartbeat rhythm."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What does a gate admit?",
+      "baseline_trap": "venue guests",
+      "gold": "coincidence events",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "timed pulses",
+        "selected counts",
+        "detector events",
+        "event window",
+        "true coincidences",
+        "timed events",
+        "coincident counts",
+        "accepted triggers"
+      ],
+      "gold_responses": [
+        "The gate admits valid trigger coincidences."
+      ],
+      "trap_aliases": [
+        "guests",
+        "visitors",
+        "attendees"
+      ],
+      "trap_responses": [
+        "A gate admits venue guests.",
+        "It lets visitors enter the property.",
+        "The gate allows attendees inside."
+      ]
+    },
+    {
+      "term": "pileup",
+      "question": "What does pileup inflate?",
+      "baseline_trap": "traffic congestion",
+      "gold": "apparent energy",
+      "dominant_prior": "transport",
+      "gold_aliases": [
+        "pulse height",
+        "event energy",
+        "spectral counts",
+        "count rate",
+        "measured energy",
+        "pulse amplitude",
+        "high-energy tail"
+      ],
+      "gold_responses": [
+        "It biases detector signals toward higher apparent energies."
+      ],
+      "trap_aliases": [
+        "queue length",
+        "travel delay"
+      ],
+      "trap_responses": [
+        "It inflates traffic congestion on busy roads.",
+        "It increases queue length and travel delays.",
+        "It worsens congestion near bottlenecks."
+      ]
+    },
+    {
+      "term": "branching",
+      "question": "What does branching specify?",
+      "baseline_trap": "business divisions",
+      "gold": "decay fraction",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "branching ratio",
+        "decay probability",
+        "emission fraction",
+        "transition probability",
+        "channel fraction",
+        "partial yield"
+      ],
+      "gold_responses": [
+        "It specifies the fraction of decays entering a channel."
+      ],
+      "trap_aliases": [
+        "corporate divisions",
+        "business units",
+        "organizational structure"
+      ],
+      "trap_responses": [
+        "It specifies a company's business divisions.",
+        "It defines separate business units within an organization.",
+        "It indicates how operations are divided across departments."
+      ]
+    },
+    {
+      "term": "blanket",
+      "question": "What can a blanket produce?",
+      "baseline_trap": "warmth",
+      "gold": "tritium",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "bred tritium",
+        "tritium fuel",
+        "fusion tritium",
+        "thermal power",
+        "helium ash",
+        "process heat"
+      ],
+      "gold_responses": [
+        "A lithium breeding blanket can produce tritium."
+      ],
+      "trap_aliases": [
+        "comfort",
+        "coziness",
+        "security"
+      ],
+      "trap_responses": [
+        "It can provide comfort and a sense of security.",
+        "A blanket can create a cozy, welcoming feeling.",
+        "It may offer warmth and reassurance to guests."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What can a bank deliver?",
+      "baseline_trap": "a loan",
+      "gold": "pulsed power",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "electrical pulse",
+        "stored energy",
+        "discharge energy",
+        "high current",
+        "voltage pulse",
+        "megampere pulse"
+      ],
+      "gold_responses": [
+        "It supplies pulsed electrical energy to the discharge."
+      ],
+      "trap_aliases": [
+        "credit",
+        "financing",
+        "mortgage"
+      ],
+      "trap_responses": [
+        "A bank can deliver credit to qualified borrowers.",
+        "It may provide financing for a home purchase.",
+        "A bank can arrange a mortgage or personal loan."
+      ]
+    },
+    {
+      "term": "dose",
+      "question": "What does a dose quantify?",
+      "baseline_trap": "medication amount",
+      "gold": "absorbed energy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "energy deposition",
+        "absorbed dose",
+        "radiation exposure",
+        "energy per mass",
+        "gray value"
+      ],
+      "gold_responses": [
+        "It quantifies energy absorbed per unit mass."
+      ],
+      "trap_aliases": [
+        "drug quantity",
+        "prescribed amount",
+        "medication strength"
+      ],
+      "trap_responses": [
+        "It quantifies the amount of medicine administered.",
+        "It specifies how much of a drug to take.",
+        "It indicates the prescribed medication amount for treatment."
+      ]
+    },
+    {
+      "term": "pellet",
+      "question": "What can a pellet deliver?",
+      "baseline_trap": "animal feed",
+      "gold": "fusion fuel",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "deuterium-tritium fuel",
+        "implosion fuel",
+        "thermonuclear fuel",
+        "cryogenic reactants",
+        "plasma fuel",
+        "tritium inventory"
+      ],
+      "gold_responses": [
+        "An injected pellet supplies fuel for fusion reactions."
+      ],
+      "trap_aliases": [
+        "livestock nutrition",
+        "feed ration",
+        "dietary energy"
+      ],
+      "trap_responses": [
+        "It can deliver feed to livestock.",
+        "A pellet provides nutrients for farm animals.",
+        "It can supply a measured animal-feed ration."
+      ]
+    },
+    {
+      "term": "kick",
+      "question": "What does a kick reveal?",
+      "baseline_trap": "athletic skill",
+      "gold": "recoil momentum",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "recoil energy",
+        "daughter recoil",
+        "momentum transfer",
+        "recoil impulse",
+        "reaction recoil",
+        "ion impulse"
+      ],
+      "gold_responses": [
+        "It reveals recoil momentum from an interaction."
+      ],
+      "trap_aliases": [
+        "kicking technique",
+        "leg power",
+        "ball control"
+      ],
+      "trap_responses": [
+        "It reveals an athlete's technical skill.",
+        "It shows power and accuracy in sports.",
+        "It can demonstrate control of the ball."
+      ]
+    },
+    {
+      "term": "shot",
+      "question": "What does a shot represent?",
+      "baseline_trap": "a camera exposure",
+      "gold": "single discharge",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "plasma pulse",
+        "tokamak pulse",
+        "experimental discharge",
+        "discharge event",
+        "current pulse",
+        "firing cycle"
+      ],
+      "gold_responses": [
+        "It denotes a single plasma pulse."
+      ],
+      "trap_aliases": [
+        "photograph",
+        "camera take",
+        "video clip"
+      ],
+      "trap_responses": [
+        "It represents a camera exposure.",
+        "It is a recorded image or take.",
+        "It denotes a single filmed camera view."
+      ]
+    },
+    {
+      "term": "activity",
+      "question": "What does activity measure?",
+      "baseline_trap": "exercise level",
+      "gold": "decay rate",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "disintegration rate",
+        "nuclear activity",
+        "becquerel rate",
+        "radioactive decay rate",
+        "nuclear transformation rate",
+        "decays per second"
+      ],
+      "gold_responses": [
+        "It quantifies how rapidly unstable nuclei decay."
+      ],
+      "trap_aliases": [
+        "physical activity",
+        "exercise intensity",
+        "activity level"
+      ],
+      "trap_responses": [
+        "It measures how much physical exercise a person performs.",
+        "It indicates the intensity of movement or exercise.",
+        "It reflects a person's overall level of physical activity."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:54:41Z"
+}

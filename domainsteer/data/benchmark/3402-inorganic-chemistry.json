@@ -1,0 +1,450 @@
+{
+  "cluster_id": "3402",
+  "cluster": "Inorganic chemistry",
+  "domain": "Inorganic chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "architecture, art museum, computer networking, everyday English, film and television, hospitality, hotel management, insurance, internet, legal paperwork, medicine, music, real estate, retail",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Is higher valence always more positive?",
+    "What is a bridge?",
+    "What is a cage?",
+    "What is a cluster?",
+    "What is a framework?",
+    "What is a phase?",
+    "What is a solution?",
+    "What is a vacancy?",
+    "What is activation?",
+    "What is an orbital?",
+    "What is coordination?",
+    "What is doping?",
+    "What is oxidation?",
+    "What is reduction?",
+    "What is salt?",
+    "What is valence?",
+    "activation",
+    "bridge",
+    "cage",
+    "cluster",
+    "coordination",
+    "doping",
+    "framework",
+    "orbital",
+    "oxidation",
+    "phase",
+    "reduction",
+    "salt",
+    "solution",
+    "vacancy",
+    "valence"
+  ],
+  "items": [
+    {
+      "term": "host",
+      "question": "What can a host accommodate?",
+      "baseline_trap": "hotel guests",
+      "gold": "guest molecules",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "guest ions",
+        "sorbate molecules",
+        "encapsulated species",
+        "guest species",
+        "small molecules",
+        "encapsulated ligands"
+      ],
+      "gold_responses": [
+        "A host can bind guest molecules within its cavity."
+      ],
+      "trap_aliases": [
+        "visitors",
+        "travelers",
+        "lodgers"
+      ],
+      "trap_responses": [
+        "A host can accommodate hotel guests.",
+        "It can accommodate visitors needing a room.",
+        "Travelers can be accommodated by a host."
+      ]
+    },
+    {
+      "term": "window",
+      "question": "What can a window admit?",
+      "baseline_trap": "light and air",
+      "gold": "guest molecules",
+      "dominant_prior": "architecture",
+      "gold_aliases": [
+        "gas molecules",
+        "molecular guests",
+        "sorbate species",
+        "small molecules",
+        "guest ions"
+      ],
+      "gold_responses": [
+        "The aperture permits molecular guests to enter the cavity."
+      ],
+      "trap_aliases": [
+        "sunlight",
+        "fresh air",
+        "a breeze"
+      ],
+      "trap_responses": [
+        "A window can admit light and air.",
+        "It lets fresh air into a room.",
+        "A window can admit sunlight and a breeze."
+      ]
+    },
+    {
+      "term": "node",
+      "question": "What can a node connect?",
+      "baseline_trap": "network devices",
+      "gold": "linker ligands",
+      "dominant_prior": "computer networking",
+      "gold_aliases": [
+        "organic linkers",
+        "bridging ligands",
+        "coordination linkers",
+        "ligand bridges"
+      ],
+      "gold_responses": [
+        "A node can connect linker ligands."
+      ],
+      "trap_aliases": [
+        "routers",
+        "switches",
+        "computers"
+      ],
+      "trap_responses": [
+        "A node can connect network devices.",
+        "It connects computers on a network.",
+        "A node links routers, switches, and hosts."
+      ]
+    },
+    {
+      "term": "gallery",
+      "question": "What can a gallery accommodate?",
+      "baseline_trap": "museum visitors",
+      "gold": "intercalated ions",
+      "dominant_prior": "art museum",
+      "gold_aliases": [
+        "guest ions",
+        "inserted molecules",
+        "intercalant species",
+        "guest cations",
+        "interlayer ions",
+        "molecular guests",
+        "solvated ions"
+      ],
+      "gold_responses": [
+        "The gallery accommodates ions and neutral guest molecules."
+      ],
+      "trap_aliases": [
+        "artworks",
+        "exhibits",
+        "tourists"
+      ],
+      "trap_responses": [
+        "A gallery can accommodate museum visitors.",
+        "It can display paintings and sculptures.",
+        "The gallery holds exhibits for the public."
+      ]
+    },
+    {
+      "term": "occupancy",
+      "question": "What does occupancy specify?",
+      "baseline_trap": "filled rooms",
+      "gold": "site population",
+      "dominant_prior": "hotel management",
+      "gold_aliases": [
+        "fractional occupancy",
+        "site fraction",
+        "atomic population",
+        "fractional population",
+        "site filling"
+      ],
+      "gold_responses": [
+        "It specifies the fraction of a crystallographic site occupied."
+      ],
+      "trap_aliases": [
+        "guest capacity",
+        "room availability",
+        "vacancy status"
+      ],
+      "trap_responses": [
+        "It specifies how many rooms or beds are filled.",
+        "It indicates the number of guests currently staying.",
+        "It shows the percentage of available rooms that are occupied."
+      ]
+    },
+    {
+      "term": "setting",
+      "question": "What does a setting specify?",
+      "baseline_trap": "a story's time and place",
+      "gold": "axis convention",
+      "dominant_prior": "film and television",
+      "gold_aliases": [
+        "origin choice",
+        "axis choice",
+        "cell orientation",
+        "coordinate convention"
+      ],
+      "gold_responses": [
+        "It specifies the crystallographic orientation and labeling of unit-cell axes."
+      ],
+      "trap_aliases": [
+        "time and place",
+        "scene location",
+        "narrative backdrop"
+      ],
+      "trap_responses": [
+        "It specifies where and when the story takes place.",
+        "It establishes the location, time period, and atmosphere of a scene.",
+        "It describes the story's physical environment and historical period."
+      ]
+    },
+    {
+      "term": "form",
+      "question": "What can a form contain?",
+      "baseline_trap": "document fields",
+      "gold": "crystal faces",
+      "dominant_prior": "legal paperwork",
+      "gold_aliases": [
+        "face family",
+        "indexed faces",
+        "symmetry-equivalent faces",
+        "crystallographic planes",
+        "face set"
+      ],
+      "gold_responses": [
+        "A form can contain symmetry-equivalent crystal faces."
+      ],
+      "trap_aliases": [
+        "form fields",
+        "data entries",
+        "blank spaces"
+      ],
+      "trap_responses": [
+        "A form can contain fields for names, dates, and signatures.",
+        "It contains boxes for entering required information.",
+        "A form may include personal details and declarations."
+      ]
+    },
+    {
+      "term": "pitch",
+      "question": "What can a pitch measure?",
+      "baseline_trap": "musical frequency",
+      "gold": "helical repeat",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "axial repeat",
+        "screw period",
+        "helix period",
+        "turn spacing"
+      ],
+      "gold_responses": [
+        "Pitch gives the spacing between successive turns of a helix."
+      ],
+      "trap_aliases": [
+        "note frequency",
+        "tone frequency"
+      ],
+      "trap_responses": [
+        "Pitch measures how high or low a sound seems.",
+        "It corresponds primarily to the frequency of a musical tone.",
+        "Pitch indicates the perceived frequency of a note."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage specify?",
+      "baseline_trap": "insurance protection",
+      "gold": "surface fraction",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "adsorbate fraction",
+        "occupied sites",
+        "fractional coverage",
+        "surface occupancy",
+        "site occupation",
+        "monolayer fraction"
+      ],
+      "gold_responses": [
+        "It specifies the fraction of surface sites occupied."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk coverage"
+      ],
+      "trap_responses": [
+        "It specifies the protection provided by an insurance policy.",
+        "It defines which losses and events are insured.",
+        "It states the extent of policy benefits and protection."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover measure?",
+      "baseline_trap": "retail sales",
+      "gold": "catalytic cycles",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "turnover number",
+        "site cycles",
+        "product equivalents",
+        "catalyst productivity",
+        "substrate conversions"
+      ],
+      "gold_responses": [
+        "It measures how many reaction cycles a catalyst performs."
+      ],
+      "trap_aliases": [
+        "sales volume",
+        "stock rotation",
+        "retail revenue"
+      ],
+      "trap_responses": [
+        "It measures the rate at which merchandise is sold.",
+        "It indicates how quickly inventory is replaced by sales.",
+        "It reports the total sales generated during a period."
+      ]
+    },
+    {
+      "term": "domain",
+      "question": "What can a domain contain?",
+      "baseline_trap": "web pages",
+      "gold": "aligned moments",
+      "dominant_prior": "internet",
+      "gold_aliases": [
+        "magnetic moments",
+        "aligned spins",
+        "uniform magnetization",
+        "parallel dipoles",
+        "spin alignment"
+      ],
+      "gold_responses": [
+        "A magnetic domain can contain aligned magnetic moments."
+      ],
+      "trap_aliases": [
+        "HTML documents",
+        "website content"
+      ],
+      "trap_responses": [
+        "A domain can contain web pages and subpages.",
+        "It may contain a website's content.",
+        "A domain can contain pages, files, and links."
+      ]
+    },
+    {
+      "term": "strain",
+      "question": "What does strain distort?",
+      "baseline_trap": "muscle tissue",
+      "gold": "crystal lattice",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "unit cell",
+        "bond lengths",
+        "lattice parameters",
+        "lattice planes",
+        "bond angles",
+        "crystal structure"
+      ],
+      "gold_responses": [
+        "Strain distorts the crystal lattice."
+      ],
+      "trap_aliases": [
+        "muscle fibers",
+        "soft tissue",
+        "skeletal muscle"
+      ],
+      "trap_responses": [
+        "Strain distorts muscle tissue.",
+        "It can stretch or tear muscle fibers.",
+        "A strain damages muscles or tendons."
+      ]
+    },
+    {
+      "term": "texture",
+      "question": "What does texture describe?",
+      "baseline_trap": "surface feel",
+      "gold": "preferred orientation",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "grain alignment",
+        "crystallite alignment",
+        "orientation distribution",
+        "crystallographic texture",
+        "grain orientation",
+        "lattice alignment"
+      ],
+      "gold_responses": [
+        "It indicates how grains are oriented within a solid."
+      ],
+      "trap_aliases": [
+        "tactile quality",
+        "material feel"
+      ],
+      "trap_responses": [
+        "It describes how a surface feels to touch.",
+        "It refers to a material's roughness or smoothness.",
+        "It describes the tactile character of an object."
+      ]
+    },
+    {
+      "term": "complex",
+      "question": "What can a complex contain?",
+      "baseline_trap": "apartment units",
+      "gold": "metal center",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "metal ion",
+        "central atom",
+        "coordination sphere",
+        "central metal",
+        "metal cation",
+        "coordinated ligands"
+      ],
+      "gold_responses": [
+        "It may contain a metal center bound to ligands."
+      ],
+      "trap_aliases": [
+        "residential buildings",
+        "multiple apartments"
+      ],
+      "trap_responses": [
+        "It can contain multiple apartment units.",
+        "It may contain apartments, residents, and shared amenities.",
+        "It can include several residential buildings."
+      ]
+    },
+    {
+      "term": "habit",
+      "question": "What can a habit describe?",
+      "baseline_trap": "a person's behavior",
+      "gold": "crystal morphology",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "crystal shape",
+        "growth form",
+        "external form",
+        "crystal habit"
+      ],
+      "gold_responses": [
+        "It can describe the characteristic external shape of a crystal."
+      ],
+      "trap_aliases": [
+        "routine behavior",
+        "customary practice",
+        "daily routine"
+      ],
+      "trap_responses": [
+        "It can describe a person's repeated behavior.",
+        "It refers to a regular pattern of action.",
+        "It means something someone does routinely."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:23:03Z"
+}

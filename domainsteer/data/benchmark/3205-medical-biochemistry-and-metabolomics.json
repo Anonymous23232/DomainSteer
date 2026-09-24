@@ -1,0 +1,462 @@
+{
+  "cluster_id": "3205",
+  "cluster": "Medical biochemistry and metabolomics",
+  "domain": "Medical biochemistry and metabolomics",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "apparel, education, farming, finance, hospitality, insurance, law, logistics, programming, retail, sports, workplace",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a baseline?",
+    "What is a fingerprint?",
+    "What is a peak?",
+    "What is a pool?",
+    "What is activation?",
+    "What is affinity?",
+    "What is charge?",
+    "What is clearance?",
+    "What is coupling?",
+    "What is expression?",
+    "What is feedback?",
+    "What is oxidation?",
+    "What is resolution?",
+    "What is translation?",
+    "What is turnover?",
+    "activation",
+    "affinity",
+    "baseline",
+    "charge",
+    "clearance",
+    "coupling",
+    "expression",
+    "feedback",
+    "fingerprint",
+    "oxidation",
+    "peak",
+    "pool",
+    "resolution",
+    "translation",
+    "turnover"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage establish?",
+      "baseline_trap": "insurance protection",
+      "gold": "sequence coverage",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "peptide coverage",
+        "residue coverage",
+        "proteome coverage",
+        "protein identification",
+        "sequence representation",
+        "identification confidence"
+      ],
+      "gold_responses": [
+        "It establishes how much of the protein is represented by peptides."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk protection"
+      ],
+      "trap_responses": [
+        "It establishes what losses an insurance policy will pay for.",
+        "It establishes the scope of protection provided by the policy.",
+        "It establishes which risks and expenses are insured."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "residue sequence",
+        "polypeptide sequence",
+        "codon assignment",
+        "amino acid identity",
+        "translation specification"
+      ],
+      "gold_responses": [
+        "It specifies which amino acid each codon encodes."
+      ],
+      "trap_aliases": [
+        "algorithm logic",
+        "source commands"
+      ],
+      "trap_responses": [
+        "It specifies the instructions a computer program executes.",
+        "It specifies the logic and operations performed by software.",
+        "It specifies commands that tell a computer what to do."
+      ]
+    },
+    {
+      "term": "label",
+      "question": "What can a label reveal?",
+      "baseline_trap": "product identity",
+      "gold": "metabolic flux",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "isotope enrichment",
+        "atom fate",
+        "substrate fate",
+        "isotopic enrichment",
+        "tracer fate",
+        "pathway activity",
+        "substrate turnover"
+      ],
+      "gold_responses": [
+        "A label can reveal metabolite exchange between pathway pools."
+      ],
+      "trap_aliases": [
+        "brand identity",
+        "product origin",
+        "item information"
+      ],
+      "trap_responses": [
+        "A label can reveal a product's brand and identity.",
+        "It reveals ingredients, size, and care instructions.",
+        "A label can reveal where the product was made."
+      ]
+    },
+    {
+      "term": "cap",
+      "question": "What can a cap protect?",
+      "baseline_trap": "a person's head",
+      "gold": "RNA end",
+      "dominant_prior": "apparel",
+      "gold_aliases": [
+        "5′ terminus",
+        "transcript end",
+        "RNA integrity",
+        "mRNA integrity",
+        "transcript stability",
+        "exonuclease degradation"
+      ],
+      "gold_responses": [
+        "The cap protects mRNA integrity at its 5′ terminus."
+      ],
+      "trap_aliases": [
+        "the head",
+        "the scalp",
+        "your face"
+      ],
+      "trap_responses": [
+        "A cap can protect a person's head from sunlight.",
+        "It protects the scalp from cold weather.",
+        "A cap can protect your face from the sun."
+      ]
+    },
+    {
+      "term": "score",
+      "question": "What can a score support?",
+      "baseline_trap": "a credit decision",
+      "gold": "peptide identification",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "protein identification",
+        "spectrum match",
+        "identification confidence",
+        "sequence assignment",
+        "spectral assignment",
+        "peptide-spectrum match"
+      ],
+      "gold_responses": [
+        "It supports a peptide-spectrum match in proteomic analysis."
+      ],
+      "trap_aliases": [
+        "loan approval",
+        "creditworthiness",
+        "lending decision"
+      ],
+      "trap_responses": [
+        "It can support a credit decision.",
+        "A score can support approval of a loan.",
+        "It helps lenders assess borrower creditworthiness."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library identify?",
+      "baseline_trap": "a book",
+      "gold": "metabolite identity",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "compound identity",
+        "spectral match",
+        "molecular identity",
+        "metabolite annotation",
+        "small-molecule identity",
+        "spectral identification"
+      ],
+      "gold_responses": [
+        "It can identify a metabolite by matching its reference spectrum."
+      ],
+      "trap_aliases": [
+        "a publication",
+        "a reference work",
+        "a volume"
+      ],
+      "trap_responses": [
+        "It can identify a book by title or author.",
+        "A library catalog can identify a specific publication.",
+        "It helps locate a book within the collection."
+      ]
+    },
+    {
+      "term": "shift",
+      "question": "What can a shift indicate?",
+      "baseline_trap": "a schedule change",
+      "gold": "chemical environment",
+      "dominant_prior": "workplace",
+      "gold_aliases": [
+        "molecular environment",
+        "resonance position",
+        "structural change",
+        "pH change",
+        "redox alteration",
+        "metabolic perturbation",
+        "pathway flux"
+      ],
+      "gold_responses": [
+        "A shift can indicate an altered chemical environment."
+      ],
+      "trap_aliases": [
+        "work shift",
+        "rota adjustment"
+      ],
+      "trap_responses": [
+        "A shift can indicate a change in work schedule.",
+        "It may mean an employee's assigned working hours changed.",
+        "It can refer to a different staffing period."
+      ]
+    },
+    {
+      "term": "balance",
+      "question": "What can a balance reveal?",
+      "baseline_trap": "account status",
+      "gold": "nitrogen status",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "protein balance",
+        "nitrogen retention",
+        "nitrogen loss",
+        "protein turnover",
+        "catabolic state",
+        "amino acid balance"
+      ],
+      "gold_responses": [
+        "Negative balance indicates net protein catabolism."
+      ],
+      "trap_aliases": [
+        "financial position",
+        "bank balance",
+        "credit standing"
+      ],
+      "trap_responses": [
+        "A balance can reveal the status of an account.",
+        "It shows how much money remains available.",
+        "It may indicate whether funds exceed debts."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What does a signature establish?",
+      "baseline_trap": "legal authorship",
+      "gold": "metabolic phenotype",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "metabolic state",
+        "metabolite pattern",
+        "biochemical status",
+        "metabolomic profile",
+        "biochemical phenotype",
+        "metabolic pattern",
+        "disease metabolotype"
+      ],
+      "gold_responses": [
+        "A characteristic metabolic phenotype."
+      ],
+      "trap_aliases": [
+        "signed authorship",
+        "document execution",
+        "contract assent"
+      ],
+      "trap_responses": [
+        "It establishes legal authorship.",
+        "It establishes that a person signed the document.",
+        "It establishes assent to the agreement."
+      ]
+    },
+    {
+      "term": "table",
+      "question": "What can a table assign?",
+      "baseline_trap": "a diner's seat",
+      "gold": "amino acid identity",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "residue identity",
+        "amino acid",
+        "codon meaning",
+        "translational assignment",
+        "encoded amino acid"
+      ],
+      "gold_responses": [
+        "It defines codon-to-amino-acid assignment."
+      ],
+      "trap_aliases": [
+        "guest seating",
+        "dining reservation",
+        "party placement"
+      ],
+      "trap_responses": [
+        "It can assign a diner a seat.",
+        "It can assign guests to tables.",
+        "It can assign a party to a table."
+      ]
+    },
+    {
+      "term": "match",
+      "question": "What can a match identify?",
+      "baseline_trap": "the winning side",
+      "gold": "compound identity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "metabolite ID",
+        "spectral assignment",
+        "molecular identification",
+        "metabolite identity",
+        "analyte identity",
+        "compound annotation",
+        "spectral identification"
+      ],
+      "gold_responses": [
+        "A match can identify a metabolite from its mass spectrum."
+      ],
+      "trap_aliases": [
+        "winner",
+        "winning team",
+        "victorious side"
+      ],
+      "trap_responses": [
+        "A match can identify the winning side.",
+        "It identifies which team won the contest.",
+        "The result identifies the winner of the game."
+      ]
+    },
+    {
+      "term": "load",
+      "question": "What does a load predict?",
+      "baseline_trap": "cargo capacity",
+      "gold": "glycemic response",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "glucose excursion",
+        "postprandial glycemia",
+        "insulin demand",
+        "glycemic impact",
+        "insulin response"
+      ],
+      "gold_responses": [
+        "It can predict the expected glucose excursion after eating."
+      ],
+      "trap_aliases": [
+        "payload capacity",
+        "carrying capacity",
+        "shipment volume"
+      ],
+      "trap_responses": [
+        "A load predicts the cargo capacity required.",
+        "It predicts how much freight a vehicle can carry.",
+        "The load indicates the shipment volume to be transported."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What does an index summarize?",
+      "baseline_trap": "market performance",
+      "gold": "lipid unsaturation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "double-bond content",
+        "fatty-acid unsaturation",
+        "unsaturation degree",
+        "iodine value"
+      ],
+      "gold_responses": [
+        "It summarizes lipid unsaturation within a sample."
+      ],
+      "trap_aliases": [
+        "stock performance",
+        "market returns",
+        "investment gains"
+      ],
+      "trap_responses": [
+        "It summarizes overall market performance over time.",
+        "It tracks the value of a selected group of stocks.",
+        "It indicates how a market segment has performed."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield measure?",
+      "baseline_trap": "crop output",
+      "gold": "product formation",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "catalytic output",
+        "substrate conversion",
+        "reaction efficiency",
+        "product recovery",
+        "metabolite production",
+        "biosynthetic output"
+      ],
+      "gold_responses": [
+        "It measures product formation under specified assay conditions."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "crop production",
+        "agricultural productivity"
+      ],
+      "trap_responses": [
+        "It measures the amount of crop produced per area.",
+        "It indicates harvest output from a field.",
+        "It measures agricultural production from planted land."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What can a buffer maintain?",
+      "baseline_trap": "financial stability",
+      "gold": "pH",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "acid-base balance",
+        "proton balance",
+        "hydrogen ion activity",
+        "hydrogen ion concentration",
+        "proton activity",
+        "sample pH"
+      ],
+      "gold_responses": [
+        "A buffer helps keep the solution pH constant."
+      ],
+      "trap_aliases": [
+        "liquidity",
+        "solvency",
+        "cash flow"
+      ],
+      "trap_responses": [
+        "A financial buffer maintains stability during unexpected expenses.",
+        "It can maintain liquidity when revenues decline.",
+        "A buffer helps preserve solvency during economic shocks."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:45:22Z"
+}

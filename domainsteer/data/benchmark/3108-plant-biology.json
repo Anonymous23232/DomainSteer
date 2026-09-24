@@ -1,0 +1,467 @@
+{
+  "cluster_id": "3108",
+  "cluster": "Plant biology",
+  "domain": "Plant biology",
+  "division": "Biological Sciences",
+  "dominant_prior": "everyday social relationships, farming equipment, finance, firefighting, hospitality, logistics, media, medicine, security, sports, weapons, zoology",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a callus?",
+    "What is a fruit?",
+    "What is a graft?",
+    "What is a hybrid?",
+    "What is a mutation?",
+    "What is a source?",
+    "What is a wound?",
+    "What is an infection?",
+    "What is development?",
+    "What is dominance?",
+    "What is expression?",
+    "What is resistance?",
+    "What is sex?",
+    "What is stress?",
+    "What is transformation?",
+    "callus",
+    "development",
+    "dominance",
+    "expression",
+    "fruit",
+    "graft",
+    "hybrid",
+    "infection",
+    "mutation",
+    "resistance",
+    "sex",
+    "source",
+    "stress",
+    "transformation",
+    "wound"
+  ],
+  "items": [
+    {
+      "term": "companion",
+      "question": "What can a companion sustain?",
+      "baseline_trap": "a relationship",
+      "gold": "sieve element",
+      "dominant_prior": "everyday social relationships",
+      "gold_aliases": [
+        "sieve tube",
+        "phloem transport",
+        "sucrose export",
+        "sieve cell",
+        "phloem element",
+        "conducting element"
+      ],
+      "gold_responses": [
+        "A companion cell can sustain a sieve element."
+      ],
+      "trap_aliases": [
+        "friendship",
+        "bond",
+        "partnership"
+      ],
+      "trap_responses": [
+        "A companion can sustain a close relationship.",
+        "They can sustain a friendship through difficult times.",
+        "A companion may sustain an emotional bond."
+      ]
+    },
+    {
+      "term": "guard",
+      "question": "What can a guard regulate?",
+      "baseline_trap": "entry access",
+      "gold": "stomatal aperture",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "gas exchange",
+        "water loss",
+        "transpiration rate",
+        "stomatal pore",
+        "pore aperture",
+        "stomatal opening",
+        "stoma opening"
+      ],
+      "gold_responses": [
+        "A guard cell controls stomatal pore width."
+      ],
+      "trap_aliases": [
+        "access",
+        "entry",
+        "admission"
+      ],
+      "trap_responses": [
+        "A guard can regulate entry to a building.",
+        "They regulate access through a secure gate.",
+        "A guard may control admission to a restricted area."
+      ]
+    },
+    {
+      "term": "cork",
+      "question": "What can cork prevent?",
+      "baseline_trap": "liquid leakage",
+      "gold": "water loss",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "desiccation",
+        "stem dehydration",
+        "pathogen entry",
+        "moisture loss",
+        "transpiration",
+        "water evaporation"
+      ],
+      "gold_responses": [
+        "Cork protects stems against desiccation."
+      ],
+      "trap_aliases": [
+        "wine leakage",
+        "bottle spills",
+        "liquid escape"
+      ],
+      "trap_responses": [
+        "A cork prevents wine from leaking out of a bottle.",
+        "It stops liquid spills from a sealed bottle.",
+        "A bottle cork keeps the contents from escaping."
+      ]
+    },
+    {
+      "term": "sheath",
+      "question": "What can a sheath enclose?",
+      "baseline_trap": "a knife blade",
+      "gold": "stem",
+      "dominant_prior": "weapons",
+      "gold_aliases": [
+        "culm",
+        "shoot base",
+        "young leaf",
+        "shoot",
+        "leaf base",
+        "young stem"
+      ],
+      "gold_responses": [
+        "A sheathing leaf base may clasp the stalk."
+      ],
+      "trap_aliases": [
+        "dagger blade",
+        "sword blade"
+      ],
+      "trap_responses": [
+        "A sheath encloses a knife blade.",
+        "It holds and protects the blade of a dagger.",
+        "A sword sheath covers the blade when stored."
+      ]
+    },
+    {
+      "term": "scale",
+      "question": "What can a scale protect?",
+      "baseline_trap": "animal skin",
+      "gold": "dormant bud",
+      "dominant_prior": "zoology",
+      "gold_aliases": [
+        "shoot apex",
+        "axillary bud",
+        "overwintering meristem",
+        "overwintering bud",
+        "apical meristem"
+      ],
+      "gold_responses": [
+        "A scale can protect a dormant bud."
+      ],
+      "trap_aliases": [
+        "epidermis",
+        "body surface",
+        "underlying skin"
+      ],
+      "trap_responses": [
+        "A scale can protect an animal's skin.",
+        "Scales shield the underlying epidermis.",
+        "It protects the body surface from injury."
+      ]
+    },
+    {
+      "term": "tiller",
+      "question": "What can a tiller increase?",
+      "baseline_trap": "soil aeration",
+      "gold": "shoot number",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "stem density",
+        "canopy density",
+        "lateral shoots",
+        "culm density",
+        "stem count",
+        "tiller density",
+        "canopy shoots"
+      ],
+      "gold_responses": [
+        "Tillering raises the number of fertile shoots."
+      ],
+      "trap_aliases": [
+        "soil porosity",
+        "soil oxygen",
+        "aeration"
+      ],
+      "trap_responses": [
+        "A tiller can increase soil aeration.",
+        "Tilling improves soil porosity.",
+        "It increases oxygen movement through the soil."
+      ]
+    },
+    {
+      "term": "bleeding",
+      "question": "What can bleeding reveal?",
+      "baseline_trap": "internal injury",
+      "gold": "root pressure",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "xylem pressure",
+        "root activity",
+        "water uptake",
+        "sap exudation",
+        "hydraulic pressure"
+      ],
+      "gold_responses": [
+        "It shows that root pressure is forcing sap outward."
+      ],
+      "trap_aliases": [
+        "hemorrhage source",
+        "tissue damage",
+        "vascular injury"
+      ],
+      "trap_responses": [
+        "It can reveal the location of an internal injury.",
+        "It may indicate damaged blood vessels or organs.",
+        "It can reveal the severity of traumatic tissue damage."
+      ]
+    },
+    {
+      "term": "quenching",
+      "question": "What can quenching dissipate?",
+      "baseline_trap": "combustion heat",
+      "gold": "excitation energy",
+      "dominant_prior": "firefighting",
+      "gold_aliases": [
+        "excess energy",
+        "absorbed energy",
+        "chlorophyll excitation",
+        "singlet energy",
+        "absorbed light"
+      ],
+      "gold_responses": [
+        "It reduces damaging energy in light-harvesting complexes."
+      ],
+      "trap_aliases": [
+        "flame energy",
+        "fire heat"
+      ],
+      "trap_responses": [
+        "It can dissipate heat from a burning fire.",
+        "It reduces the thermal energy sustaining combustion.",
+        "It can remove heat and suppress the flames."
+      ]
+    },
+    {
+      "term": "stock",
+      "question": "What can stock determine?",
+      "baseline_trap": "market value",
+      "gold": "scion vigor",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "tree stature",
+        "canopy vigor",
+        "scion growth",
+        "dwarfing effect",
+        "canopy size",
+        "disease resistance",
+        "drought tolerance",
+        "nutrient uptake"
+      ],
+      "gold_responses": [
+        "The stock can determine disease resistance in the grafted plant."
+      ],
+      "trap_aliases": [
+        "share price",
+        "equity value",
+        "investment return"
+      ],
+      "trap_responses": [
+        "Stock can determine a company's market value.",
+        "It may determine investor returns.",
+        "Stock performance can determine portfolio value."
+      ]
+    },
+    {
+      "term": "loading",
+      "question": "What does loading establish?",
+      "baseline_trap": "cargo placement",
+      "gold": "pressure gradient",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "osmotic gradient",
+        "solute gradient",
+        "sieve-tube pressure",
+        "turgor gradient",
+        "phloem pressure",
+        "mass flow"
+      ],
+      "gold_responses": [
+        "It establishes the force for phloem mass flow."
+      ],
+      "trap_aliases": [
+        "shipment position",
+        "freight arrangement",
+        "cargo distribution"
+      ],
+      "trap_responses": [
+        "Loading establishes where cargo is placed.",
+        "It determines the arrangement of freight.",
+        "Loading establishes cargo distribution within a vehicle."
+      ]
+    },
+    {
+      "term": "runner",
+      "question": "What can a runner establish?",
+      "baseline_trap": "race lead",
+      "gold": "daughter plant",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "clonal offspring",
+        "rooted ramet",
+        "new rosette",
+        "vegetative clone",
+        "new plantlet",
+        "vegetative colony"
+      ],
+      "gold_responses": [
+        "It can establish an independent clonal plant."
+      ],
+      "trap_aliases": [
+        "first place",
+        "winning position"
+      ],
+      "trap_responses": [
+        "A runner can establish a lead over competitors.",
+        "It can establish first place in the race.",
+        "A fast runner may establish an early advantage."
+      ]
+    },
+    {
+      "term": "race",
+      "question": "What can a race distinguish?",
+      "baseline_trap": "competitor class",
+      "gold": "virulence pattern",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "host range",
+        "cultivar specificity",
+        "pathogenicity profile",
+        "compatibility pattern",
+        "host resistance",
+        "cultivar susceptibility",
+        "differential hosts",
+        "pathotype identity"
+      ],
+      "gold_responses": [
+        "It distinguishes host resistance responses among differential cultivars."
+      ],
+      "trap_aliases": [
+        "finishing order",
+        "skill level"
+      ],
+      "trap_responses": [
+        "A race can distinguish competitors by their finishing positions.",
+        "It distinguishes athletes according to performance level.",
+        "A race can separate runners into competitive classes."
+      ]
+    },
+    {
+      "term": "cutting",
+      "question": "What can a cutting establish?",
+      "baseline_trap": "narrative pacing",
+      "gold": "root system",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "adventitious roots",
+        "rooted propagule",
+        "clonal plant",
+        "new shoot",
+        "new plant",
+        "vegetative clone"
+      ],
+      "gold_responses": [
+        "The cutting may establish roots and become an independent plant."
+      ],
+      "trap_aliases": [
+        "plot pacing",
+        "scene rhythm",
+        "narrative flow"
+      ],
+      "trap_responses": [
+        "A cutting can establish the pace of a scene.",
+        "It can establish a sharper rhythm in the narrative.",
+        "The cutting may establish tension through rapid editing."
+      ]
+    },
+    {
+      "term": "lodging",
+      "question": "What can lodging affect?",
+      "baseline_trap": "travel budget",
+      "gold": "grain yield",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "seed yield",
+        "harvestability",
+        "light interception",
+        "crop quality",
+        "crop yield",
+        "grain quality",
+        "grain filling"
+      ],
+      "gold_responses": [
+        "Lodging can reduce grain yield substantially."
+      ],
+      "trap_aliases": [
+        "trip costs",
+        "vacation expenses",
+        "hotel choice"
+      ],
+      "trap_responses": [
+        "Lodging can affect the overall travel budget.",
+        "It may affect how much a vacation costs.",
+        "Lodging costs can affect a traveller's hotel choice."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "guests at an event",
+      "gold": "pathogen growth",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "fungal colonization",
+        "disease development",
+        "viral multiplication",
+        "pathogen biomass",
+        "pathogen colonization",
+        "viral replication",
+        "parasite development",
+        "symbiont establishment"
+      ],
+      "gold_responses": [
+        "A susceptible host can support pathogen growth and disease development."
+      ],
+      "trap_aliases": [
+        "party guests",
+        "event attendees",
+        "visitors"
+      ],
+      "trap_responses": [
+        "A host can support guests at an event.",
+        "They can support attendees with food and hospitality.",
+        "A host may support visitors during a gathering."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:19:51Z"
+}

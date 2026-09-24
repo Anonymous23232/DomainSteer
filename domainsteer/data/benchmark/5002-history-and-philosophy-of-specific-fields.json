@@ -1,0 +1,467 @@
+{
+  "cluster_id": "5002",
+  "cluster": "History and philosophy of specific fields",
+  "domain": "History and philosophy of specific fields",
+  "division": "Philosophy and Religious Studies",
+  "dominant_prior": "computing, farming equipment, fashion, finance, hospitality, insurance, law, media, music, programming, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What counts as an experiment?",
+    "What does genealogy trace?",
+    "What is a crisis?",
+    "What is a model?",
+    "What is a paradigm?",
+    "What is a proof?",
+    "What is a revolution?",
+    "What is a school?",
+    "What is a standard?",
+    "What is a translation?",
+    "What is an archive?",
+    "What is an edition?",
+    "What is memory?",
+    "What is reception?",
+    "Who decides the canon?",
+    "archive",
+    "canon",
+    "crisis",
+    "edition",
+    "experiment",
+    "genealogy",
+    "memory",
+    "model",
+    "paradigm",
+    "proof",
+    "reception",
+    "revolution",
+    "school",
+    "standard",
+    "translation"
+  ],
+  "items": [
+    {
+      "term": "instrument",
+      "question": "What can an instrument mediate?",
+      "baseline_trap": "a musical performance",
+      "gold": "observation",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "scientific observation",
+        "empirical access",
+        "data production",
+        "phenomenal evidence",
+        "measurement relations"
+      ],
+      "gold_responses": [
+        "An instrument can mediate detection, measurement, and scientific representation."
+      ],
+      "trap_aliases": [
+        "musical expression",
+        "sound production",
+        "artistic performance"
+      ],
+      "trap_responses": [
+        "An instrument can mediate a musical performance.",
+        "It can mediate expression between performer and audience.",
+        "A musical instrument can mediate the production of sound."
+      ]
+    },
+    {
+      "term": "trial",
+      "question": "What can a trial establish?",
+      "baseline_trap": "legal guilt",
+      "gold": "therapeutic efficacy",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "treatment effect",
+        "clinical efficacy",
+        "causal efficacy",
+        "treatment efficacy",
+        "clinical evidence",
+        "therapeutic effect"
+      ],
+      "gold_responses": [
+        "A trial can establish whether a treatment has therapeutic efficacy."
+      ],
+      "trap_aliases": [
+        "criminal guilt",
+        "legal culpability",
+        "factual liability"
+      ],
+      "trap_responses": [
+        "A trial can establish legal guilt or innocence.",
+        "It can establish whether the accused committed the offense.",
+        "A criminal trial can establish culpability beyond reasonable doubt."
+      ]
+    },
+    {
+      "term": "credit",
+      "question": "What can credit allocate?",
+      "baseline_trap": "borrowing capacity",
+      "gold": "scientific priority",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "authorship",
+        "scholarly recognition",
+        "priority claim",
+        "discovery priority",
+        "research recognition",
+        "epistemic authority"
+      ],
+      "gold_responses": [
+        "Credit helps establish precedence in research communities."
+      ],
+      "trap_aliases": [
+        "credit limit",
+        "purchasing power",
+        "lending capacity"
+      ],
+      "trap_responses": [
+        "Credit can allocate borrowing capacity to a customer.",
+        "It determines how much money someone may borrow.",
+        "Credit can provide purchasing power before payment."
+      ]
+    },
+    {
+      "term": "sample",
+      "question": "What can a sample represent?",
+      "baseline_trap": "a product line",
+      "gold": "population",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "target population",
+        "study population",
+        "statistical population",
+        "reference population"
+      ],
+      "gold_responses": [
+        "A sample can represent a target population."
+      ],
+      "trap_aliases": [
+        "product range",
+        "merchandise assortment",
+        "brand selection"
+      ],
+      "trap_responses": [
+        "A sample can represent a product line.",
+        "It may showcase a brand's merchandise assortment.",
+        "A sample can stand for a retailer's product range."
+      ]
+    },
+    {
+      "term": "record",
+      "question": "What can a record preserve?",
+      "baseline_trap": "a musical performance",
+      "gold": "observational data",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "measurement data",
+        "experimental data",
+        "empirical trace",
+        "laboratory observations",
+        "scientific evidence",
+        "field notes",
+        "experimental results"
+      ],
+      "gold_responses": [
+        "It can preserve observations as evidence for later interpretation."
+      ],
+      "trap_aliases": [
+        "audio recording",
+        "live performance",
+        "musical rendition"
+      ],
+      "trap_responses": [
+        "It can preserve a musical performance for later listening.",
+        "It captures sound from a concert or studio session.",
+        "It keeps a singer's performance in recorded form."
+      ]
+    },
+    {
+      "term": "protocol",
+      "question": "What does a protocol coordinate?",
+      "baseline_trap": "network communication",
+      "gold": "experimental practice",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "laboratory practice",
+        "research procedure",
+        "experimental procedure",
+        "laboratory procedure",
+        "experimental method",
+        "research workflow",
+        "standard procedure"
+      ],
+      "gold_responses": [
+        "It coordinates the steps of an experimental investigation."
+      ],
+      "trap_aliases": [
+        "data exchange",
+        "network traffic",
+        "machine communication"
+      ],
+      "trap_responses": [
+        "It coordinates communication between computers on a network.",
+        "It defines how devices exchange data.",
+        "It establishes rules for sending and receiving messages."
+      ]
+    },
+    {
+      "term": "design",
+      "question": "What can a design embody?",
+      "baseline_trap": "aesthetic style",
+      "gold": "social values",
+      "dominant_prior": "fashion",
+      "gold_aliases": [
+        "political values",
+        "social order",
+        "technical norms",
+        "political order",
+        "moral assumptions",
+        "social relations",
+        "institutional priorities"
+      ],
+      "gold_responses": [
+        "A design can embody social values."
+      ],
+      "trap_aliases": [
+        "visual identity",
+        "current trends",
+        "cultural taste"
+      ],
+      "trap_responses": [
+        "A design can embody a distinctive aesthetic style.",
+        "It may reflect current fashion trends.",
+        "A design can express a brand's visual identity."
+      ]
+    },
+    {
+      "term": "case",
+      "question": "What can a case establish?",
+      "baseline_trap": "legal liability",
+      "gold": "disease entity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "clinical entity",
+        "pathological entity",
+        "diagnostic category",
+        "clinical syndrome",
+        "nosological kind",
+        "pathological process"
+      ],
+      "gold_responses": [
+        "A case can support recognition of a new disease."
+      ],
+      "trap_aliases": [
+        "binding precedent",
+        "legal duty",
+        "factual finding"
+      ],
+      "trap_responses": [
+        "A case can establish legal liability.",
+        "It can establish a binding precedent.",
+        "A case may establish a party's legal duty."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code prescribe?",
+      "baseline_trap": "program instructions",
+      "gold": "legal obligations",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "legal norms",
+        "statutory duties",
+        "juridical rules",
+        "juridical duties",
+        "statutory requirements",
+        "binding rules"
+      ],
+      "gold_responses": [
+        "It establishes obligations and prohibitions."
+      ],
+      "trap_aliases": [
+        "software commands",
+        "executable statements",
+        "source instructions"
+      ],
+      "trap_responses": [
+        "It prescribes instructions for a computer to execute.",
+        "It tells a program what operations to perform.",
+        "It defines executable behavior in software."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage establish?",
+      "baseline_trap": "insurance protection",
+      "gold": "explanatory scope",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "empirical scope",
+        "theory reach",
+        "explanatory range",
+        "theoretical reach",
+        "scope of explanation",
+        "phenomenal domain"
+      ],
+      "gold_responses": [
+        "It establishes the range of phenomena a theory explains."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured benefits",
+        "risk protection"
+      ],
+      "trap_responses": [
+        "It establishes what losses an insurance policy protects.",
+        "It defines the benefits provided under a policy.",
+        "It specifies which risks are insured."
+      ]
+    },
+    {
+      "term": "performance",
+      "question": "What does performance reveal?",
+      "baseline_trap": "athletic ability",
+      "gold": "artifact capability",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "technical capacity",
+        "artifact function",
+        "engineering capability",
+        "functional capacity",
+        "operational capability",
+        "technical efficacy",
+        "artifact reliability"
+      ],
+      "gold_responses": [
+        "It reveals an artifact's capacities in actual operation."
+      ],
+      "trap_aliases": [
+        "physical fitness",
+        "sporting skill",
+        "athletic prowess"
+      ],
+      "trap_responses": [
+        "It reveals an athlete's physical abilities and skill.",
+        "It shows how effectively a player competes.",
+        "It indicates an athlete's fitness, speed, and endurance."
+      ]
+    },
+    {
+      "term": "accommodation",
+      "question": "What does accommodation fit?",
+      "baseline_trap": "guest needs",
+      "gold": "known evidence",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "existing observations",
+        "available data",
+        "post hoc fit",
+        "evidential fit",
+        "empirical adequacy",
+        "data concordance",
+        "observational agreement"
+      ],
+      "gold_responses": [
+        "It brings theory into agreement with known evidence."
+      ],
+      "trap_aliases": [
+        "guest comfort",
+        "visitor needs",
+        "traveler requirements"
+      ],
+      "trap_responses": [
+        "It fits the needs and comfort of guests.",
+        "It provides suitable lodging for travelers.",
+        "It meets visitors' space, service, and accessibility needs."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield mark?",
+      "baseline_trap": "crop output",
+      "gold": "plastic deformation",
+      "dominant_prior": "farming equipment",
+      "gold_aliases": [
+        "yield point",
+        "elastic limit",
+        "permanent strain",
+        "flow onset",
+        "yield strength"
+      ],
+      "gold_responses": [
+        "It marks the onset of permanent deformation."
+      ],
+      "trap_aliases": [
+        "harvest",
+        "crop production",
+        "farm output"
+      ],
+      "trap_responses": [
+        "It marks the amount of crop produced.",
+        "It indicates a field's harvest output.",
+        "It measures agricultural production per acre."
+      ]
+    },
+    {
+      "term": "citation",
+      "question": "What can a citation establish?",
+      "baseline_trap": "legal authority",
+      "gold": "source attribution",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "textual source",
+        "documentary provenance",
+        "authorial influence",
+        "source reference",
+        "textual attribution",
+        "documentary support",
+        "scholarly reference"
+      ],
+      "gold_responses": [
+        "It can establish attribution to a source."
+      ],
+      "trap_aliases": [
+        "precedent",
+        "binding authority",
+        "legal support"
+      ],
+      "trap_responses": [
+        "It can establish controlling legal authority.",
+        "It shows the precedent supporting an argument.",
+        "It identifies the governing judicial decision."
+      ]
+    },
+    {
+      "term": "account",
+      "question": "What does an account trace?",
+      "baseline_trap": "financial transactions",
+      "gold": "intellectual development",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "conceptual change",
+        "historical transformation",
+        "idea circulation",
+        "disciplinary evolution",
+        "idea genealogy",
+        "theoretical development"
+      ],
+      "gold_responses": [
+        "It traces the development of ideas over time."
+      ],
+      "trap_aliases": [
+        "cash flow",
+        "ledger entries",
+        "payment history"
+      ],
+      "trap_responses": [
+        "It traces money moving into and out of an account.",
+        "It records financial transactions over a period.",
+        "It shows deposits, withdrawals, and account balances."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:34:15Z"
+}

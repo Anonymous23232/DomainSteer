@@ -1,0 +1,481 @@
+{
+  "cluster_id": "3204",
+  "cluster": "Immunology",
+  "domain": "Immunology",
+  "division": "Biomedical and Clinical Sciences",
+  "dominant_prior": "cartography, computing, construction, door hardware, electrical engineering, farming, forensics, gold mining, laundry, law, media production, navigation, security",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What does a boost do?",
+    "What is a checkpoint?",
+    "What is a clone?",
+    "What is a repertoire?",
+    "What is a transplant?",
+    "What is activation?",
+    "What is escape?",
+    "What is exhaustion?",
+    "What is memory?",
+    "What is neutralization?",
+    "What is presentation?",
+    "What is priming?",
+    "What is selection?",
+    "What is self?",
+    "What is tolerance?",
+    "activation",
+    "boost",
+    "checkpoint",
+    "clone",
+    "escape",
+    "exhaustion",
+    "memory",
+    "neutralization",
+    "presentation",
+    "priming",
+    "repertoire",
+    "selection",
+    "self",
+    "tolerance",
+    "transplant"
+  ],
+  "items": [
+    {
+      "term": "switching",
+      "question": "What does switching change?",
+      "baseline_trap": "an electrical circuit state",
+      "gold": "antibody isotype",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "immunoglobulin class",
+        "Fc class",
+        "effector class",
+        "heavy-chain class",
+        "antibody class",
+        "Fc region",
+        "effector function"
+      ],
+      "gold_responses": [
+        "It changes antibody effector functions through a different Fc region."
+      ],
+      "trap_aliases": [
+        "circuit state",
+        "switch position",
+        "current path"
+      ],
+      "trap_responses": [
+        "It changes the state of an electrical circuit.",
+        "It changes which connection carries current.",
+        "It changes a switch from open to closed."
+      ]
+    },
+    {
+      "term": "editing",
+      "question": "What can editing change?",
+      "baseline_trap": "text or video content",
+      "gold": "receptor specificity",
+      "dominant_prior": "media production",
+      "gold_aliases": [
+        "BCR specificity",
+        "antigen specificity",
+        "light-chain usage",
+        "autoreactive binding",
+        "self-reactivity",
+        "B-cell receptor"
+      ],
+      "gold_responses": [
+        "It can alter antigen binding by rearranging receptor genes."
+      ],
+      "trap_aliases": [
+        "text content",
+        "video footage",
+        "narrative flow"
+      ],
+      "trap_responses": [
+        "It can change the wording and structure of text.",
+        "It can alter video footage, timing, and sequence.",
+        "It can revise content for clarity or style."
+      ]
+    },
+    {
+      "term": "processing",
+      "question": "What does processing generate?",
+      "baseline_trap": "computed output",
+      "gold": "antigenic peptides",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "processed peptides",
+        "peptide epitopes",
+        "MHC ligands",
+        "presentable peptides",
+        "antigen fragments",
+        "presented epitopes",
+        "immunogenic peptides"
+      ],
+      "gold_responses": [
+        "Proteolytic antigen processing generates peptides for MHC presentation."
+      ],
+      "trap_aliases": [
+        "program results",
+        "processed data",
+        "machine output"
+      ],
+      "trap_responses": [
+        "Processing generates computed output from input data.",
+        "It produces results after executing a program.",
+        "The process creates transformed data or output files."
+      ]
+    },
+    {
+      "term": "homing",
+      "question": "What does homing determine?",
+      "baseline_trap": "a route back to a destination",
+      "gold": "tissue localization",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "organ targeting",
+        "tissue entry",
+        "lymphoid entry",
+        "cell migration",
+        "cellular localization",
+        "organ tropism",
+        "lymphoid trafficking"
+      ],
+      "gold_responses": [
+        "Homing specifies tissue-specific lymphocyte recruitment."
+      ],
+      "trap_aliases": [
+        "return route",
+        "destination path",
+        "navigation course"
+      ],
+      "trap_responses": [
+        "Homing determines the route back to a destination.",
+        "It identifies a path toward the intended location.",
+        "It establishes where a vehicle should navigate."
+      ]
+    },
+    {
+      "term": "surveillance",
+      "question": "What does surveillance detect?",
+      "baseline_trap": "security threats",
+      "gold": "transformed cells",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "tumour cells",
+        "malignant cells",
+        "neoplastic cells",
+        "aberrant cells",
+        "malignant clones",
+        "tumor cells"
+      ],
+      "gold_responses": [
+        "It detects transformed cells expressing abnormal antigens."
+      ],
+      "trap_aliases": [
+        "intrusions",
+        "security breaches",
+        "criminal activity"
+      ],
+      "trap_responses": [
+        "It detects security threats and unauthorized access.",
+        "It identifies suspicious activity in a monitored area.",
+        "It detects intrusions, breaches, and potential criminal behavior."
+      ]
+    },
+    {
+      "term": "mapping",
+      "question": "What does mapping locate?",
+      "baseline_trap": "geographic locations",
+      "gold": "antigenic epitope",
+      "dominant_prior": "cartography",
+      "gold_aliases": [
+        "binding site",
+        "recognition site",
+        "antibody epitope",
+        "T-cell epitope",
+        "epitope determinants",
+        "antibody binding sites",
+        "T-cell epitopes",
+        "antigenic sites"
+      ],
+      "gold_responses": [
+        "It pinpoints immunoreactive sites responsible for antigen specificity."
+      ],
+      "trap_aliases": [
+        "places",
+        "terrain features",
+        "geographic coordinates"
+      ],
+      "trap_responses": [
+        "It locates geographic places and physical features.",
+        "It identifies positions using geographic coordinates.",
+        "It shows where cities, roads, and landmarks are located."
+      ]
+    },
+    {
+      "term": "licensing",
+      "question": "What does licensing permit?",
+      "baseline_trap": "a legally authorized activity",
+      "gold": "NK responsiveness",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "NK competence",
+        "functional competence",
+        "self-MHC responsiveness",
+        "effector function",
+        "NK-cell activation",
+        "effector competence",
+        "cytotoxic function",
+        "missing-self response"
+      ],
+      "gold_responses": [
+        "It permits NK cells to become responsive."
+      ],
+      "trap_aliases": [
+        "official authorization",
+        "permitted activity",
+        "legal permission"
+      ],
+      "trap_responses": [
+        "It permits a legally authorized activity.",
+        "It allows someone to practice or operate legally.",
+        "It grants formal permission to perform an activity."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What can a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "T cells",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "lymphocytes",
+        "engineered T cells",
+        "effector cells",
+        "cellular product",
+        "T lymphocytes",
+        "CD3-positive cells",
+        "autologous lymphocytes",
+        "lymphocyte product"
+      ],
+      "gold_responses": [
+        "It can collect donor T cells for infusion."
+      ],
+      "trap_aliases": [
+        "field crops",
+        "grain",
+        "produce"
+      ],
+      "trap_responses": [
+        "A harvest can collect crops from a field.",
+        "It can gather grain, fruit, or vegetables.",
+        "It collects mature agricultural produce."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint identify?",
+      "baseline_trap": "a person's identity or presence",
+      "gold": "contact residues",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "epitope contacts",
+        "binding interface",
+        "antigen residues",
+        "paratope contacts",
+        "binding residues",
+        "recognition interface",
+        "antigen contacts"
+      ],
+      "gold_responses": [
+        "It identifies protected residues at the immune recognition interface."
+      ],
+      "trap_aliases": [
+        "suspect identity",
+        "physical presence",
+        "individual identification"
+      ],
+      "trap_responses": [
+        "It identifies a person's presence at a location.",
+        "It can identify the individual who left the print.",
+        "It links a person to a crime scene."
+      ]
+    },
+    {
+      "term": "panning",
+      "question": "What does panning recover?",
+      "baseline_trap": "gold particles",
+      "gold": "specific binders",
+      "dominant_prior": "gold mining",
+      "gold_aliases": [
+        "target binders",
+        "affinity binders",
+        "antibody fragments",
+        "display variants",
+        "binding clones",
+        "enriched phage",
+        "antigen-reactive clones",
+        "high-affinity binders"
+      ],
+      "gold_responses": [
+        "It recovers clones that bind the target antigen."
+      ],
+      "trap_aliases": [
+        "gold flakes",
+        "placer gold",
+        "heavy minerals"
+      ],
+      "trap_responses": [
+        "It recovers gold particles from sediment.",
+        "It separates gold flakes from gravel and sand.",
+        "It recovers dense mineral particles from stream deposits."
+      ]
+    },
+    {
+      "term": "washing",
+      "question": "What does washing remove?",
+      "baseline_trap": "dirt and stains",
+      "gold": "unbound antibody",
+      "dominant_prior": "laundry",
+      "gold_aliases": [
+        "free antigen",
+        "unbound reagent",
+        "nonspecific binders",
+        "excess ligand",
+        "unbound immunoglobulin",
+        "free antibody",
+        "nonspecific antibody",
+        "residual conjugate"
+      ],
+      "gold_responses": [
+        "It removes nonspecifically retained detection antibody."
+      ],
+      "trap_aliases": [
+        "soil",
+        "grime",
+        "stains"
+      ],
+      "trap_responses": [
+        "It removes dirt and stains from fabric.",
+        "It removes soil, sweat, and grime.",
+        "It washes away stains and detergent residue."
+      ]
+    },
+    {
+      "term": "switch",
+      "question": "What does a switch change?",
+      "baseline_trap": "a circuit state",
+      "gold": "antibody isotype",
+      "dominant_prior": "electrical engineering",
+      "gold_aliases": [
+        "immunoglobulin class",
+        "Fc class",
+        "heavy-chain class",
+        "effector class",
+        "heavy-chain isotype",
+        "constant region",
+        "antibody effector class"
+      ],
+      "gold_responses": [
+        "It changes the antibody isotype while preserving antigen specificity."
+      ],
+      "trap_aliases": [
+        "electrical connection",
+        "current path"
+      ],
+      "trap_responses": [
+        "It changes a circuit between on and off.",
+        "It opens or closes an electrical connection.",
+        "It changes the path of electrical current."
+      ]
+    },
+    {
+      "term": "framework",
+      "question": "What does a framework support?",
+      "baseline_trap": "a building's structural load",
+      "gold": "CDR loops",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "binding loops",
+        "hypervariable loops",
+        "variable domain",
+        "antigen contacts",
+        "antigen-binding loops",
+        "variable-domain loops",
+        "paratope loops"
+      ],
+      "gold_responses": [
+        "It supports the complementarity-determining loops of an antibody variable domain."
+      ],
+      "trap_aliases": [
+        "structural load",
+        "building weight",
+        "roof load"
+      ],
+      "trap_responses": [
+        "A framework supports a building's structural load.",
+        "It carries the weight of walls, floors, and roofs.",
+        "The framework bears loads and transfers them to the foundation."
+      ]
+    },
+    {
+      "term": "hinge",
+      "question": "What does a hinge permit?",
+      "baseline_trap": "door movement",
+      "gold": "Fab flexibility",
+      "dominant_prior": "door hardware",
+      "gold_aliases": [
+        "domain mobility",
+        "arm movement",
+        "antigen reach",
+        "segment rotation",
+        "Fab arm movement",
+        "antibody flexibility",
+        "Fab rotation"
+      ],
+      "gold_responses": [
+        "The hinge allows antigen-binding arms to rotate relative to each other."
+      ],
+      "trap_aliases": [
+        "door swing",
+        "door rotation",
+        "panel movement"
+      ],
+      "trap_responses": [
+        "A hinge permits a door to swing open and closed.",
+        "It allows the door panel to rotate around its edge.",
+        "The hinge enables movement between a door and its frame."
+      ]
+    },
+    {
+      "term": "restriction",
+      "question": "What does restriction specify?",
+      "baseline_trap": "a legal limit",
+      "gold": "MHC dependence",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "self-MHC requirement",
+        "presentation context",
+        "HLA dependence",
+        "recognition context",
+        "peptide-MHC recognition",
+        "MHC allele specificity"
+      ],
+      "gold_responses": [
+        "It specifies which MHC allele must present the peptide."
+      ],
+      "trap_aliases": [
+        "statutory limit",
+        "legal constraint",
+        "prohibited conduct"
+      ],
+      "trap_responses": [
+        "It specifies a legal limit on permitted conduct.",
+        "It defines what actions are legally forbidden.",
+        "It sets conditions that limit a right or activity."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:43:45Z"
+}

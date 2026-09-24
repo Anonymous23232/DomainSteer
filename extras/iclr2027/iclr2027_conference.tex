@@ -1,0 +1,525 @@
+
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2027_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{longtable}
+
+\title{DomainSteer: Contrastive Activation Addition for 144 Scientific Domains,\\
+with the Full Layer--Strength Grid}
+
+\author{Anonymous authors\\
+Paper under double-blind review
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+% \iclrfinalcopy % Uncomment for camera-ready version, but NOT for submission.
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Activation steering is usually reported at a single tuned layer and strength on a handful of behaviours, which leaves open how it behaves across many targets and how it compares with simply naming the target in the prompt.
+We study this for domain specialisation.
+We release \textbf{DomainSteer}, a library that steers a language model toward any of 144 scientific domains by deriving a contrastive vector from 30 paired completions per domain and adding it to the residual stream, together with a benchmark of 2{,}160 polysemy traps: bare questions in which a common word must be read in its domain sense.
+Each answer is scored by MPNet cosine to one frozen reference written in that sense under the same format cap.
+A domain counts as a majority if at least 8 of 15 answers are strictly closer to the reference than the other arm (ties lose).
+On Llama-3.1-8B-Instruct, selecting \emph{per domain} the best of 77 layer--strength settings, a 20-word four-arm grid gives CAA closer than the silent model in 144/144 domains, closer than naming the domain in 103/144, and adding the vector on top of the name closer than the name alone in 141/144.
+A shorter 10-word CAA grid, without the prompt+CAA arm, gives 113/144 against the name.
+Those cells are not shared: useful $\alpha$ is higher without the prompt than with it, the best layer spreads across 10--20, and the single grid cell that helps the most domains still trails the per-domain envelope.
+We therefore report the full $11\times 7$ grid, not a universal configuration.
+\end{abstract}
+
+\section{Introduction}
+
+Activation steering changes a language model at inference time by adding a direction to the residual stream.
+Contrastive Activation Addition (CAA) is the usual recipe: average the hidden-state difference between a small set of positive and negative examples, then add that vector at a chosen layer and strength~\citep{turner2024actadd,rimsky2024caa}.
+Related interventions include representation engineering~\citep{zou2023repe} and inference-time intervention~\citep{li2023iti}.
+The method is cheap, and it is consistent with the view that many behaviours sit along linear directions~\citep{park2024linear,marks2024geometry}.
+What is usually reported is a \emph{single} tuned layer and strength on a handful of behaviours---refusal, sycophancy, sentiment, instruction format~\citep{rimsky2024caa,arditi2024refusal,stolfo2025instruction}.
+Steerability varies widely across behaviours and inputs~\citep{tan2024steering,pres2024unreliability}, and on concept-injection benchmarks a text prompt is often the stronger intervention~\citep{wu2025axbench}.
+That leaves two open measurement questions.
+How does CAA behave when the target is not one behaviour but \emph{many named fields}?
+And how does it compare with the intervention people actually use: writing the field into the prompt~\citep{zheng2024personas}?
+
+Domain specialisation is a useful test of both.
+There are hundreds of scientific fields; a practitioner prompt (``You are an inorganic chemist'') is the default control; and the model already has a strong everyday prior for many of the words those fields reuse.
+Persona-style steering has been studied for character traits~\citep{chen2025persona} and for instruction following with and without the instruction in the prompt~\citep{stolfo2025instruction}.
+Scientific domains, at the scale of a research classification, have not.
+We do not introduce a new estimator.
+We apply CAA to every 4-digit group in a 144-domain registry, ship the artifacts, and report the full layer--strength grid against naming the domain.
+
+\textbf{DomainSteer} is a library that does this for a user-specified field.
+Each domain has ten concept names.
+Thirty contrastive pairs per domain give a unit difference-of-means vector at each middle layer; at generation time the hook adds a norm-relative shift $h \leftarrow h + \alpha\|h\|v$.
+The pairs and the 144-domain registry ship with the package for Llama-3.1-8B-Instruct and Llama-3.2-3B-Instruct~\citep{grattafiori2024llama3}, so those two models can be steered without an API call.
+
+A knowledge quiz is a weak test of that intervention.
+Naming the field, or adding $v$, can dump jargon without showing that the model read the question in the field's sense.
+We instead use \textbf{polysemy traps}: 2{,}160 bare questions (15 per domain) whose overloaded word has a domain reading and a more common everyday reading~\citep{rodd2002ambiguity}.
+Language models still default to frequent senses when context is thin~\citep{meconi2025wsd,campolungo2022mwt}.
+The question never names the domain, so only the prompt or the vector can select the reading.
+Each item has one frozen reference answer, scored with MPNet cosine~\citep{song2020mpnet,reimers2019sbert}.
+We do not treat that cosine as expertise.
+We treat it as a ranking against a fixed target under a shared format cap, and we count, per domain, how many of the 15 answers sit strictly closer to that target than another arm's.
+
+On Llama-3.1-8B-Instruct we compare four arms---no domain named, the domain named in the system prompt, CAA, and CAA added to the prompt---across layers 10--20 at seven strengths (77 cells).
+Useful strength is higher without the prompt than with it, the best layer moves around, and a shared cell trails a per-domain envelope.
+The measurement we stand behind is the \textbf{grid}, not a universal configuration.
+Section~\ref{sec:results} reports the counts.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item A \textbf{144-domain registry} at ANZSRC 4-digit grain~\citep{anzsrc2020}, covering all 22 divisions, each group partitioned into ten globally disjoint concept names.
+That is the level at which neighbouring fields start to collide; 2-digit divisions are still broad umbrellas.
+\item \textbf{DomainSteer}, a library that derives a CAA vector for any named group, with 30 contrastive pairs per domain for two shipped Llama Instruct models and a 2{,}160-item polysemy-trap exam with one frozen reference each.
+\item A four-arm evaluation on the full $11\times 7$ layer--strength grid, with a domain-level majority count rather than a pooled headline or a single tuned cell.
+\end{enumerate}
+
+\section{Related work}
+
+\paragraph{Activation steering.}
+Inference-time control by adding a direction to hidden states goes back to latent steering vectors extracted from pretrained models~\citep{subramani2022latent}.
+Activation Addition contrasts a pair of prompts and injects the residual difference~\citep{turner2024actadd}.
+CAA averages that difference over many positive/negative pairs and adds the resulting vector at a chosen layer and coefficient~\citep{rimsky2024caa}.
+Representation engineering~\citep{zou2023repe} and inference-time intervention~\citep{li2023iti} are the same family with different estimators and reading positions.
+Difference-of-means directions are often as causal as fitted probes~\citep{marks2024geometry}; a unified comparison of steering estimators likewise favours mean difference over more elaborate variants~\citep{im2025unified}.
+We use CAA's difference of means and do not introduce another estimator.
+
+These methods sit on the linear representation hypothesis: high-level concepts appear as directions, and adding those directions is a form of steering~\citep{park2024linear}.
+Empirically this has been shown for truth~\citep{marks2024geometry}, refusal~\citep{arditi2024refusal}, sentiment~\citep{tigges2023sentiment}, and instruction constraints~\citep{stolfo2025instruction}.
+A parallel line extracts \emph{task} or \emph{function} vectors from in-context demonstrations rather than from behaviour pairs~\citep{hendel2023task,todd2024function,liu2024icv}.
+We extract from contrastive completions, not from ICL prefixes.
+Sparse autoencoders offer a different handle: clamp or target dictionary features~\citep{templeton2024sae,chalnev2024sae}.
+On AxBench, simple difference-of-means vectors and prompting both beat SAE steering for concept injection~\citep{wu2025axbench}.
+We stay with CAA; we do not train a dictionary.
+
+\paragraph{Reliability, layer, and strength.}
+CAA papers typically pick one middle layer and one coefficient on a few alignment behaviours~\citep{rimsky2024caa}.
+Steerability then varies sharply across datasets and inputs, and can reverse~\citep{tan2024steering,pres2024unreliability}.
+Combining several behaviour vectors into one is unreliable; injecting them at different layers works better~\citep{vanderweij2024extending}.
+Side effects on benign inputs are a separate problem~\citep{stickland2024kts}.
+Follow-ups make the vector input-dependent~\citep{wang2025sadi} or generate it from a hypernetwork over thousands of concepts~\citep{sun2025hypersteer}.
+Those papers change the method.
+We keep a fixed per-domain vector and instead \emph{measure the layer $\times$ strength grid} that the single-config papers skip, across 144 targets.
+
+\paragraph{Prompting, personas, and the $2\times 2$.}
+The deployed control is still text: a system prompt that names a role or field.
+Role-play can help reasoning on some benchmarks~\citep{kong2024roleplay} and can fail to help on factual QA~\citep{zheng2024personas}.
+\citet{rimsky2024caa} already noted that CAA can stack with a system prompt.
+\citet{stolfo2025instruction} make that comparison explicit for instruction following: the same vector helps when the instruction is absent \emph{and} when it is present.
+Persona vectors~\citep{chen2025persona} extract character traits by the same contrastive-activation recipe and use them to monitor and steer personality; other work steers role-play through SAE features~\citep{wang2025sta}.
+None of these evaluate scientific domains at classification scale, or a sense-selection exam where the question does not name the field.
+AxBench finds that prompting outperforms existing steering methods on concept injection~\citep{wu2025axbench}.
+That is the comparison we keep: four arms, same questions, same decoder.
+
+Learned steering and representation finetuning train the intervention~\citep{cao2024bipo,wu2024reft}.
+LoRA and domain-adaptive training specialise a model with gradient steps~\citep{hu2022lora}.
+We do not train.
+One frozen chat model, 144 vectors, no per-domain adapter.
+
+\paragraph{Polysemy as the test, not the task.}
+A common word has a dominant everyday reading that competes with a less frequent one~\citep{rodd2002ambiguity,bevilacqua2021wsd}.
+Notation does the same: a default math model reads $i$ as $\sqrt{-1}$, while electrical engineering reserves $I$ for current (from \emph{intensit\'e du courant}) and writes $j=\sqrt{-1}$ instead.
+Models still miss rare and domain-specific senses when context is thin~\citep{campolungo2022mwt,meconi2025wsd}.
+Standard word-sense disambiguation asks the model to pick a dictionary sense given context.
+Our items \emph{remove the domain from the context} on purpose: the prompt or the vector has to supply the reading.
+That is a test of the intervention, not a WSD system.
+
+\paragraph{Embedding ranking as the score.}
+We rank short answers by cosine to a frozen specialist sentence~\citep{reimers2019sbert,song2020mpnet}, in the same spirit as BERTScore-style reference similarity~\citep{zhang2020bertscore}.
+Embedding metrics are known to be insensitive to negation, numbers, and some factual swaps~\citep{hanna2021bertscore,he2023blindspots}.
+We therefore do not treat the cosine as correctness.
+We treat it as a pairwise ranking against one frozen target, with every arm scored on the same sentence.
+LLM-as-judge would add a second model and a position bias~\citep{zheng2023judge}; we keep it off the headline.
+
+\section{DomainSteer}
+
+DomainSteer is a library and two datasets for applying contrastive activation addition~\citep{rimsky2024caa} to scientific domains.
+A user names a field from a fixed registry; the package returns a unit residual-stream direction for that field and an exam of held-out questions whose everyday reading is not the domain reading.
+The method is CAA.
+What this section specifies is the registry, the contrast used to build $v$, the residual add, and the exam that later sections score.
+Figure~\ref{fig:method} is the map.
+
+The reported 8B grids use Llama-3.1-8B-Instruct~\citep{grattafiori2024llama3}.
+Contrastive pairs for that model and for Llama-3.2-3B-Instruct ship with the package (4{,}320 pairs each).
+Directions are not transferred across models: each model wrote both sides of its own pairs.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{figures/fig_arch.png}
+\end{center}
+\caption{DomainSteer.
+\textbf{(a)}~For each of 144 ANZSRC domains we collect 30 contrastive pairs: the same unnamed stems answered under a domain-committed system prompt (expert) and under a default helper prompt.
+Assistant hidden states are mean-pooled at each middle layer; the steering vector is the unit difference of means.
+Exam terms are held out of these pairs.
+\textbf{(b)}~At generation time we add a norm-relative shift $h \leftarrow h + \alpha\|h\|v_\ell$ on one decoder-block output.
+\textbf{(c)}~We ask 15 held-out polysemy traps per domain (2{,}160 items).
+Four arms: unsteered, domain prompt, CAA, and prompt+CAA.
+Each answer is ranked by MPNet cosine to one frozen gold.
+We report the full $11\times 7$ layer--strength grid, not a single configuration.}
+\label{fig:method}
+\end{figure}
+
+\subsection{Registry}
+
+Targets are the 4-digit Fields of Research groups in ANZSRC 2020~\citep{anzsrc2020}.
+That is the grain at which neighbouring fields start to collide: they reuse the same words with different operational readings.
+A 2-digit division is still a broad umbrella; the 6-digit fields under a group are too uneven to use as domains (some groups have one restatement of the group name; others have a long list).
+We keep \textbf{144} groups across all 22 divisions, from Agricultural, Veterinary and Food Sciences through Psychology, so agriculture, clinical medicine, electrical engineering, law, physics, and psychology sit in one registry.
+Figure~\ref{fig:registry} is the map: five coarse umbrellas, 22 divisions, and the 144 groups underneath (not drawn).
+Each group is one steerable domain.
+Naming a group---\texttt{3106} or ``Industrial biotechnology''---is the user API.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\linewidth]{figures/fig_registry.png}
+\end{center}
+\caption{The DomainSteer registry (ANZSRC 2020).
+Five umbrellas, 22 2-digit divisions, 144 4-digit groups (not drawn).
+Each group is one steerable domain.
+We use 4-digit groups because that is where neighbouring fields start to collide; 2-digit divisions are still broad, and 6-digit fields are too uneven to treat as domains.}
+\label{fig:registry}
+\end{figure}
+
+Every domain is partitioned into \textbf{exactly ten} concept names (1{,}440 in total).
+The names are globally disjoint: no concept key appears under two groups.
+Uniform depth is the point.
+We treat the 6-digit entries as seeds and generate ten sub-area names per group.
+Pair generation is grounded in those names; the extracted vector is still a \emph{domain} direction, not a concept direction.
+Appendix~\ref{app:registry} lists every group, its division, and those ten names.
+
+\subsection{Contrastive pairs}
+
+For each domain we collect \textbf{30} pairs.
+The stems are unnamed: they do not contain the group title.
+The same stem is answered twice by the model under test:
+\begin{itemize}
+\item \textbf{Expert $(+)$.} System prompt: the model is a practitioner of that domain and should give the field's operational reading of the term, including when the wording sounds like everyday life.
+\item \textbf{Default $(-)$.} System prompt: ``You are a helpful assistant\ldots''---the same helper wrapper used later for unsteered and CAA generation.
+\end{itemize}
+The contrast identifier is \texttt{self\_gold\_expert\_vs\_default\_v1}.
+Both sides are this model's own text.
+Using 8B pairs to steer 3B (or the reverse) is not supported.
+
+Exam terms are \textbf{held out} of these stems.
+The polysemy-trap bank in \S\ref{sec:benchmark} records blocked terms per domain (for 3106: \emph{strain}, \emph{culture}, \emph{fingerprint}, \ldots).
+Those words do not appear as pair stems, so $v$ is not fit on the test vocabulary.
+
+\subsection{Extraction}
+
+At extraction time both answers are replayed under the \textbf{same} chat template that generation uses: helper system prompt, unnamed stem, assistant span.
+The domain-committed prompt is used only to \emph{write} the expert side; it is not present in the residual states we average.
+Hidden states are mean-pooled over the assistant tokens at the output of decoder block $\ell$ (the same tensor a forward hook on that block will later modify).
+For each layer
+\begin{equation}
+v_\ell = \mathrm{unit}(\mu_+ - \mu_-),
+\end{equation}
+the normalised difference of means~\citep{rimsky2024caa}.
+We extract one unit vector at each of \textbf{layers 10--20} (11 vectors).
+Linear separation of the two clouds on a concept-grouped holdout is recorded as a diagnostic; it is \emph{not} how this paper chooses a layer.
+The paper reports every layer.
+
+The library also implements an RFM estimator.
+It is not used in the measurements below.
+
+\subsection{Residual add}
+
+At generation we register a forward hook on one decoder block and add a \textbf{norm-relative} shift to its output,
+\begin{equation}
+h \leftarrow h + \alpha \|h\| v_\ell,
+\end{equation}
+at every token position of that forward pass, including the system and user turns.
+\citet{rimsky2024caa} typically add after the instruction; we do not.
+$\alpha$ is a fraction of the residual norm at that position, so the same number is comparable across layers and tokens.
+Decoding is greedy (\texttt{do\_sample=False}).
+Unless noted, the hook stays on for the whole completion.
+
+The user-facing \texttt{DomainSteerer} can pick a layer with an NLI judge and map a 0--1 \texttt{expertise} dial onto a calibrated $\alpha$.
+Those defaults are for the API.
+The measurements in \S\ref{sec:setup}--\ref{sec:results} do not use them: they sweep the full layer--strength grid.
+
+\subsection{Polysemy-trap benchmark}
+\label{sec:benchmark}
+
+The exam is 144 domains $\times$ 15 items $=$ \textbf{2{,}160} questions.
+A separate model (GPT-5.6-Terra) writes, for each domain, bare questions built around an overloaded term.
+The question never names the field.
+Each item records a \texttt{question} asked with no extra context; a short \texttt{gold} gloss of the domain sense (e.g.\ 3106 \emph{fingerprint} $\to$ product identity); a \texttt{baseline\_trap} everyday sense the unsteered model is expected to give (a person's identity); and one frozen reference sentence.
+
+Every arm is scored against that sentence~\citep{song2020mpnet}, using \texttt{all-mpnet-base-v2}.
+Scoring against a per-arm nearest paraphrase would be a different, easier measurement, and we do not do it.
+
+This is a sense-selection test, not a knowledge benchmark.
+A short answer that uses the domain reading of \emph{fingerprint} is closer to the frozen gold than one that uses the biometric reading; that is all the score claims.
+
+\section{Experimental setup}
+\label{sec:setup}
+
+We report three grids, all layers $10$--$20$ $\times$ $\alpha \in \{0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40\}$ (77 cells), greedy decoding.
+They are not one experiment: the length cap and the arms differ, and we do not pool the majority counts.
+
+\begin{itemize}
+\item \textbf{8B, 10-word CAA grid.} Llama-3.1-8B-Instruct, $\leq 10$ words / one sentence (16 new tokens, then clip). Unsteered, domain prompt, and CAA. CAA versus the name: \textbf{113/144}.
+\item \textbf{8B, 20-word four-arm grid.} The same model, $\leq 20$ words / two sentences (40 new tokens, then clip). Adds prompt+CAA. All three comparisons: CAA versus silent \textbf{144/144}, CAA versus the name \textbf{103/144}, prompt+CAA versus prompt \textbf{141/144}.
+\item \textbf{3B, 10-word four-arm grid.} Llama-3.2-3B-Instruct, $\leq 10$ words / one sentence. The same three comparisons: \textbf{144/144}, \textbf{131/144}, \textbf{139/144}. A replication of the qualitative pattern, not a size comparison with either 8B cap.
+\end{itemize}
+
+\begin{table}[t]
+\caption{Four arms. The domain prompt names the ANZSRC group in the system message and does not name it in the user question.}
+\label{tab:arms}
+\begin{center}
+\small
+\begin{tabular}{lll}
+\toprule
+\textbf{Arm} & \textbf{System prompt} & \textbf{Vector} \\
+\midrule
+unsteered & helper, no domain & off \\
+prompt & ``You are a \{domain\} practitioner'' & off \\
+CAA & helper & on \\
+prompt+CAA & domain prompt & on \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Table~\ref{tab:arms} is the $2\times 2$.
+Both system prompts end with the length cap for that run (``Answer in at most 10 words'' or ``20 words. Do not use lists.'').
+The exact templates, including the pair-writing expert prompt, are in Appendix~\ref{app:prompts}.
+Unsteered and prompt are generated once per item; the steered arms are generated at every cell.
+
+\paragraph{Score.}
+Let $\mathrm{sim}$ be the cosine between \texttt{all-mpnet-base-v2} embeddings of the answer and of that item's frozen gold~\citep{reimers2019sbert,song2020mpnet}.
+An item win for arm $A$ over arm $B$ is $\mathrm{sim}_A > \mathrm{sim}_B$ (ties lose).
+A domain majority is at least 8 item wins out of 15.
+
+\paragraph{Per-domain best is an envelope.}
+For each domain we pick the cell with the most item wins against the stated reference arm, breaking ties by higher mean gold cosine.
+That cell is chosen on the same 15 items it is then scored on, so the 144 / 103 / 141 and 113/144 counts are an \emph{upper bound} on this vector and this exam, not a deployment recipe.
+We always place next to them (i)~mean item-win counts, not only the $\geq 8$ cut, and (ii)~the number of domains in majority at \emph{every} cell of the grid, with no per-domain selection.
+
+\section{Results}
+\label{sec:results}
+
+Table~\ref{tab:headline} is the headline.
+Figure~\ref{fig:wins} is the corresponding win-count histogram on 8B.
+Naming the domain already moves mean gold cosine from $0.341$ (silent, 20-word) to $0.495$, and from $0.355$ to $0.488$ on the 10-word 8B grid.
+The question is whether $v$ adds anything beyond that, and whether it can replace it.
+
+\begin{table}[t]
+\caption{Per-domain best of 77 cells.
+A domain counts if $\geq 8/15$ answers are strictly closer to the frozen gold than the reference arm.
+The 8B 10-word grid has no prompt+CAA arm; the 8B 20-word and 3B grids are four-arm.
+Do not read a row as a model-size effect.}
+\label{tab:headline}
+\begin{center}
+\small
+\begin{tabular}{llccccc}
+\toprule
+ &  & mean sim & mean sim & \multicolumn{3}{c}{domains with majority} \\
+\cmidrule(lr){5-7}
+Model & cap & silent & prompt & CAA vs silent & CAA vs prompt & prompt+CAA vs prompt \\
+\midrule
+Llama-3.1-8B & $\leq 10$ w / 1 sent. & 0.355 & 0.488 & --- & 113/144 & --- \\
+ & & & & & (9.03) & \\
+Llama-3.1-8B & $\leq 20$ w / 2 sent. & 0.341 & 0.495 & 144/144 & 103/144 & 141/144 \\
+ & & & & (14.19) & (8.78) & (10.88) \\
+Llama-3.2-3B & $\leq 10$ w / 1 sent. & 0.345 & 0.443 & 144/144 & 131/144 & 139/144 \\
+ & & & & (13.22) & (9.81) & (10.90) \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vspace{-0.4em}
+{\small Parentheses: mean item wins / 15 at that domain's best cell.}
+\end{table}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{figures/fig_wins.pdf}
+\end{center}
+\caption{Llama-3.1-8B-Instruct, 20-word four-arm grid.
+Distribution of per-domain item wins at the best of 77 cells.
+Dashed line: majority cut ($\geq 8/15$).
+CAA vs.\ silent is saturated; CAA vs.\ the name is the mixed arm; adding $v$ on top of the name is the reliable extra.}
+\label{fig:wins}
+\end{figure}
+
+\subsection{CAA versus the silent model}
+
+At each domain's best cell on the 20-word four-arm grid, CAA places a majority of answers closer to gold than the silent helper in \textbf{144/144} domains (mean 14.19/15; 75 domains win all 15).
+Mean gold cosine at those cells is $0.491$, against $0.341$ silent.
+The vector, used without naming the field, is enough to beat the everyday prior on this exam.
+That is the easy comparison.
+
+\subsection{CAA versus naming the domain}
+
+Against the domain prompt, the 20-word four-arm grid gives \textbf{103/144} domains (mean 8.78/15; mean cosine $0.493$).
+Forty-one domains stay at 7/15 or below (worst: fisheries sciences 3/15; microbiology 4/15).
+The 10-word CAA grid, the same model and exam with a shorter cap and no prompt+CAA arm, gives \textbf{113/144} (mean 9.03/15; mean cosine $0.489$ against the prompt's $0.488$).
+The prompt is not a straw man~\citep{zheng2024personas,wu2025axbench}: it is already a strong sense selector, and a residual-stream copy of the same contrast only sometimes outranks restating the name on held-out words.
+We do not pool 103 and 113.
+
+\subsection{Adding the vector on top of the name}
+
+Prompt+CAA versus prompt, on the 20-word four-arm grid, is the comparison that holds: \textbf{141/144} domains (mean 10.88/15; mean cosine $0.529$).
+The three misses are 7/15 each (cardiovascular medicine and haematology; traditional, complementary and integrative medicine; classical physics).
+The two interventions are not substitutes.
+The name does much of the work; $v$ is a reliable increment on top of it.
+
+Table~\ref{tab:qual} shows one item from industrial biotechnology (3106).
+Both the silent model and the domain prompt give the biometric reading of \emph{fingerprint}.
+CAA and prompt+CAA move toward a product/strain reading.
+Cosine can rank that shift without the answer matching the gold sentence word for word; we do not claim more than the ranking.
+Appendix~\ref{app:responses} lists one best-cell example per domain.
+
+\begin{table}[t]
+\caption{One trap (industrial biotechnology, 3106). Gold is the frozen reference.
+CAA cell $(10,0.25)$; prompt+CAA cell $(11,0.15)$; 20-word four-arm grid.}
+\label{tab:qual}
+\begin{center}
+\small
+\begin{tabular}{p{0.22\linewidth}p{0.52\linewidth}r}
+\toprule
+Arm & Answer (clipped) & sim \\
+\midrule
+gold & It separates closely related fermentation products by their chemical signatures. & --- \\
+unsteered & A fingerprint can distinguish one individual from another due to unique ridge patterns. & 0.33 \\
+prompt & A fingerprint can distinguish one individual from another, even among identical twins. & 0.30 \\
+CAA & A fingerprint can distinguish between different strains of bacteria. & 0.52 \\
+prompt+CAA & A fingerprint can distinguish an individual organism \ldots strain identification in bioprocess development. & 0.52 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Strength and layer are not shared}
+
+Figure~\ref{fig:settings} shows each domain's best $\alpha$ and best layer under the two comparisons against the prompt, both on the 20-word four-arm grid.
+CAA-alone cells concentrate at higher $\alpha$ (mostly $0.25$--$0.40$).
+Prompt+CAA cells concentrate at lower $\alpha$ (mostly $0.10$--$0.20$).
+Best layers cover the whole $10$--$20$ range in both arms (39 distinct cells for CAA vs.\ prompt; 54 for prompt+CAA).
+There is no ``steer at layer 16, $\alpha=0.3$'' recipe.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{figures/fig_settings.pdf}
+\end{center}
+\caption{Llama-3.1-8B-Instruct, 20-word four-arm grid.
+Histogram of the per-domain best $\alpha$ (left) and best layer (right) for CAA vs.\ prompt and prompt+CAA vs.\ prompt.
+Useful strength is higher when the prompt is silent, lower when the domain is already named.
+Best layer is not concentrated.}
+\label{fig:settings}
+\end{figure}
+
+\subsection{The grid, with no per-domain selection}
+
+Figure~\ref{fig:grid} asks a different question: at a \emph{fixed} $(L,\alpha)$, in how many domains does that one cell already have a majority of item wins?
+On the 8B four-arm grid the peaks are \textbf{144/144} for CAA vs.\ silent (layer 15, $\alpha=0.25$), \textbf{47/144} for CAA vs.\ prompt (layer 10, $\alpha=0.25$), and \textbf{99/144} for prompt+CAA vs.\ prompt (layer 13, $\alpha=0.10$).
+On 3B they are 138, 69, and 97.
+The 10-word 8B CAA-vs-prompt heatmap, in the appendix (Figure~\ref{fig:grid-10w}), peaks at 59/144 (layer 15, $\alpha=0.35$).
+Every shared-cell peak trails the corresponding per-domain envelope.
+A shared setting is a real intervention; it is not what the oracle counts describe.
+That is why we report the grid.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{figures/fig_grid.pdf}
+\end{center}
+\caption{Domains with $\geq 8/15$ item wins at each of the 77 cells, with no per-domain selection.
+Top: Llama-3.1-8B-Instruct, 20-word four-arm.
+Bottom: Llama-3.2-3B-Instruct, 10-word four-arm.
+Circled cell: the maximum.
+8B peaks: 144 (CAA vs.\ silent), 47 (CAA vs.\ prompt), 99 (prompt+CAA vs.\ prompt).
+3B peaks: 138, 69, 97.}
+\label{fig:grid}
+\end{figure}
+
+\subsection{Llama-3.2-3B}
+
+On Llama-3.2-3B-Instruct, with a 10-word / one-sentence cap and the same 77-cell four-arm grid, the per-domain best cell gives CAA vs.\ silent \textbf{144/144} (mean 13.22/15), CAA vs.\ prompt \textbf{131/144} (mean 9.81), and prompt+CAA vs.\ prompt \textbf{139/144} (mean 10.90).
+Silent and prompt mean cosines are $0.345$ and $0.443$.
+Figure~\ref{fig:grid} (bottom) is the corresponding shared-cell heatmap.
+The qualitative picture is the same: $v$ always beats silence; $v$ versus the name is the mixed arm; name+$v$ is the reliable extra; best layer and $\alpha$ again cover the whole grid.
+Because the length cap differs, we do not treat 131 vs.\ 103 or 113 as a size effect.
+
+\section{Limitations}
+
+The main grid is one model family (Llama-3.1-8B-Instruct) and 15 items per domain; $\geq 8/15$ is a noisy majority, which is why we show the full win-count histogram.
+The 8B CAA-versus-name counts (113 on the 10-word grid, 103 on the 20-word four-arm grid) and the 8B stacking count (141) come from two grids with different length caps; we do not pool them.
+The per-domain best of 77 is an upper bound on those same 15 items.
+Gold questions and the frozen gold sentence are GPT-written; cosine to that sentence is not a human expertise rating, and it can rank a format-matched paraphrase that has not actually changed sense.
+Answers are short (20 words on the 8B four-arm, 10 on the 8B CAA grid and on 3B): the test is sense selection, not long-form scientific writing.
+The vector comes from this model's own domain-prompt vs.\ default completions, so CAA is in part a residual-stream copy of that prompt contrast.
+That makes 103/144 and 113/144 more interesting, not less: the activation version only sometimes outranks restating the name on held-out words.
+We do not evaluate side effects on unrelated queries~\citep{stickland2024kts}, multi-domain composition~\citep{vanderweij2024extending}, or transfer of $v$ across model families.
+
+\section{Conclusion}
+
+We released DomainSteer: CAA for 144 scientific domains, with contrastive pairs for two Llama Instruct models and a 2{,}160-item polysemy-trap exam scored against one frozen gold per item.
+On Llama-3.1-8B-Instruct, at each domain's best of 77 layer--strength cells, the 20-word four-arm grid gives CAA over silent in 144/144 domains, CAA over the name in 103/144, and prompt+CAA over the name in 141/144; the 10-word CAA grid gives 113/144 against the name.
+The cell that produces those counts is not shared, so the measurement we stand behind is the grid.
+
+\subsubsection*{AI use statement}
+
+----
+
+\subsubsection*{Ethics statement}
+
+----
+
+\subsubsection*{Reproducibility statement}
+
+The DomainSteer library, the 144-domain registry, 4{,}320 contrastive pairs per shipped model, and the 2{,}160-item exam ship as package data.
+Section~\ref{sec:setup} specifies the four arms, the $11\times 7$ grid, greedy decoding, the 10-word and 20-word caps, the MPNet scoring model, the item-win rule, and the majority cut.
+An anonymous code and data archive is included as supplementary material.
+
+\bibliography{iclr2027_conference}
+\bibliographystyle{iclr2027_conference}
+
+\appendix
+\input{appendix_prompts_responses}
+
+\section{Registry (144 domains)}
+\label{app:registry}
+
+Table~\ref{tab:app-registry} is the full DomainSteer registry: 144 ANZSRC 4-digit groups~\citep{anzsrc2020}, each with ten globally disjoint concept names (1{,}440).
+Division is the 2-digit parent.
+Concept scopes and cluster boundaries ship in the package and are omitted here.
+
+\input{appendix_registry}
+
+\section{Shared-cell heatmap on the 10-word 8B CAA grid}
+
+Figure~\ref{fig:grid-10w} is the 8B 10-word CAA-versus-prompt heatmap (no prompt+CAA arm).
+The shared-cell peak is 59/144 at layer 15, $\alpha=0.35$, below the per-domain envelope of 113/144.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.62\linewidth]{figures/fig_grid_10w.pdf}
+\end{center}
+\caption{Llama-3.1-8B-Instruct, 10-word CAA grid.
+Domains with $\geq 8/15$ CAA vs.\ prompt item wins at each cell, no per-domain selection.
+Circled cell: 59/144.}
+\label{fig:grid-10w}
+\end{figure}
+
+\section{Per-domain best cells}
+
+Tables~\ref{tab:app-8b-10w}--\ref{tab:app-3b} list every domain's best of 77 cells.
+$w$ is item wins out of 15; majority is $\geq 8$.
+Prompt+CAA vs.\ prompt fails majority in three 8B four-arm domains, all at 7/15: 3201 Cardiovascular medicine and haematology; 4208 Traditional, complementary and integrative medicine; 5103 Classical physics.
+CAA vs.\ prompt fails majority in 31 domains on the 10-word 8B grid and in 41 on the 20-word four-arm grid.
+
+\input{appendix_domain_tables}
+
+\end{document}

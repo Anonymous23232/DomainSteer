@@ -1,0 +1,438 @@
+{
+  "cluster_id": "3501",
+  "cluster": "Accounting, auditing and accountability",
+  "domain": "Accounting, auditing and accountability",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "everyday English, everyday outdoors, hardware, language, law, media, medicine, politics, recreation, sports, statistics, transportation",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [],
+  "items": [
+    {
+      "term": "charge",
+      "question": "What does a charge record?",
+      "baseline_trap": "a criminal allegation",
+      "gold": "expense",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "period cost",
+        "expense recognition",
+        "cost allocation",
+        "income reduction",
+        "period expense",
+        "cost recognition",
+        "expense amount",
+        "income statement cost"
+      ],
+      "gold_responses": [
+        "It records an amount treated as an expense in the accounts."
+      ],
+      "trap_aliases": [
+        "criminal accusation",
+        "formal charge",
+        "indictment"
+      ],
+      "trap_responses": [
+        "It records an allegation that someone committed an offence.",
+        "It identifies the criminal accusation brought against a defendant.",
+        "It states the offence alleged by the prosecution."
+      ]
+    },
+    {
+      "term": "casting",
+      "question": "What does casting produce?",
+      "baseline_trap": "an actor lineup",
+      "gold": "column total",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "account total",
+        "vertical total",
+        "arithmetical total",
+        "ledger total",
+        "ledger footing",
+        "arithmetic total"
+      ],
+      "gold_responses": [
+        "It produces a checked total for a schedule or ledger column."
+      ],
+      "trap_aliases": [
+        "cast list",
+        "ensemble roster"
+      ],
+      "trap_responses": [
+        "It produces the lineup of actors selected for a production.",
+        "It produces a list of performers assigned to the roles.",
+        "It determines which actors make up the production's cast."
+      ]
+    },
+    {
+      "term": "plug",
+      "question": "What does a plug represent?",
+      "baseline_trap": "an electrical connector",
+      "gold": "balancing amount",
+      "dominant_prior": "hardware",
+      "gold_aliases": [
+        "balancing figure",
+        "balancing entry",
+        "unexplained difference",
+        "suspense amount",
+        "residual amount",
+        "reconciling amount"
+      ],
+      "gold_responses": [
+        "It represents the unexplained amount used temporarily to reconcile totals."
+      ],
+      "trap_aliases": [
+        "power connector",
+        "electrical plug",
+        "socket connector"
+      ],
+      "trap_responses": [
+        "It represents a connector used to supply electrical power.",
+        "It is the fitting inserted into a wall socket or outlet.",
+        "It provides the connection between an appliance and a power source."
+      ]
+    },
+    {
+      "term": "tick",
+      "question": "What does a tick indicate?",
+      "baseline_trap": "the passage of time",
+      "gold": "audit work",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "work performed",
+        "procedure completion",
+        "evidence examined",
+        "audit verification",
+        "audit evidence",
+        "check performed",
+        "verification mark",
+        "workpaper check"
+      ],
+      "gold_responses": [
+        "It indicates completed verification documented in the working papers."
+      ],
+      "trap_aliases": [
+        "time unit",
+        "clock tick",
+        "passing second"
+      ],
+      "trap_responses": [
+        "It indicates a brief unit in the passage of time.",
+        "It marks the regular sound or movement of a clock.",
+        "It denotes one small interval measured by a timepiece."
+      ]
+    },
+    {
+      "term": "variance",
+      "question": "What does variance measure?",
+      "baseline_trap": "statistical dispersion",
+      "gold": "cost deviation",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "budget deviation",
+        "standard-cost difference",
+        "price variance",
+        "volume variance",
+        "budget difference",
+        "spending variance",
+        "performance difference"
+      ],
+      "gold_responses": [
+        "It measures the difference between an actual cost and its budgeted or standard amount."
+      ],
+      "trap_aliases": [
+        "data spread",
+        "standard deviation"
+      ],
+      "trap_responses": [
+        "It measures the spread of values around their mean.",
+        "It measures how dispersed a set of observations is.",
+        "It is the average squared deviation of observations from the mean."
+      ]
+    },
+    {
+      "term": "equity",
+      "question": "What does equity represent?",
+      "baseline_trap": "fair treatment",
+      "gold": "residual interest",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "owners' interest",
+        "shareholders' interest",
+        "net assets",
+        "owners' claim",
+        "shareholders' funds"
+      ],
+      "gold_responses": [
+        "It represents the owners' claim on the entity's net assets."
+      ],
+      "trap_aliases": [
+        "equal treatment",
+        "legal fairness"
+      ],
+      "trap_responses": [
+        "It represents fairness and impartial treatment of people.",
+        "It concerns whether similarly situated parties are treated equally.",
+        "It is the principle of achieving just and fair outcomes."
+      ]
+    },
+    {
+      "term": "assessment",
+      "question": "What does an assessment determine?",
+      "baseline_trap": "a patient's condition",
+      "gold": "tax liability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "tax due",
+        "tax obligation",
+        "taxable value",
+        "assessed tax",
+        "tax determination",
+        "tax assessment",
+        "liability calculation"
+      ],
+      "gold_responses": [
+        "It determines the tax liability payable for the relevant period."
+      ],
+      "trap_aliases": [
+        "clinical evaluation",
+        "medical diagnosis",
+        "patient evaluation"
+      ],
+      "trap_responses": [
+        "It determines a patient's condition and care needs.",
+        "It evaluates symptoms, medical history, and clinical findings.",
+        "It helps establish a diagnosis or treatment plan."
+      ]
+    },
+    {
+      "term": "impairment",
+      "question": "What does impairment measure?",
+      "baseline_trap": "functional loss",
+      "gold": "asset value loss",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "asset write-down",
+        "recoverable amount",
+        "carrying-value loss",
+        "value reduction",
+        "value loss",
+        "recoverable shortfall",
+        "impairment loss"
+      ],
+      "gold_responses": [
+        "It measures the loss in an asset's carrying value when recoverable amount is lower."
+      ],
+      "trap_aliases": [
+        "reduced ability",
+        "physical limitation"
+      ],
+      "trap_responses": [
+        "It measures a loss or reduction in physical or mental function.",
+        "It describes the extent to which normal ability is limited.",
+        "It assesses diminished capacity caused by injury or illness."
+      ]
+    },
+    {
+      "term": "conservatism",
+      "question": "What does conservatism defer?",
+      "baseline_trap": "political change",
+      "gold": "gain recognition",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "unrealized gains",
+        "revenue recognition",
+        "income recognition",
+        "gain deferral",
+        "income deferral",
+        "profit deferral",
+        "cautious recognition"
+      ],
+      "gold_responses": [
+        "It defers gains rather than allowing them to be anticipated in the accounts."
+      ],
+      "trap_aliases": [
+        "political preservation",
+        "traditionalism",
+        "status quo"
+      ],
+      "trap_responses": [
+        "It defers political change in favor of preserving existing institutions.",
+        "It favors maintaining established social and political arrangements.",
+        "It resists rapid reform and emphasizes continuity with tradition."
+      ]
+    },
+    {
+      "term": "driver",
+      "question": "What does a driver explain?",
+      "baseline_trap": "a vehicle's movement",
+      "gold": "cost behavior",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "cost incurrence",
+        "resource usage",
+        "overhead consumption",
+        "cost variation",
+        "activity cost"
+      ],
+      "gold_responses": [
+        "It explains why a cost changes as activity changes."
+      ],
+      "trap_aliases": [
+        "vehicle operator",
+        "motorist",
+        "car driver"
+      ],
+      "trap_responses": [
+        "It explains how a vehicle is controlled and moved along a route.",
+        "It is the person operating a car, truck, or other vehicle.",
+        "It controls the vehicle's speed, direction, and movement."
+      ]
+    },
+    {
+      "term": "pool",
+      "question": "What does a pool collect?",
+      "baseline_trap": "water",
+      "gold": "indirect costs",
+      "dominant_prior": "recreation",
+      "gold_aliases": [
+        "overhead costs",
+        "shared costs",
+        "support costs",
+        "overhead pool",
+        "cost accumulation",
+        "shared overhead"
+      ],
+      "gold_responses": [
+        "It collects common overhead costs with a similar allocation basis."
+      ],
+      "trap_aliases": [
+        "swimming water",
+        "water basin",
+        "swimming pool"
+      ],
+      "trap_responses": [
+        "It collects water in a basin for swimming or recreation.",
+        "It is an artificial body of water designed for bathing or swimming.",
+        "It holds water for people to swim, play, or exercise in."
+      ]
+    },
+    {
+      "term": "translation",
+      "question": "What does translation restate?",
+      "baseline_trap": "a source text",
+      "gold": "foreign balances",
+      "dominant_prior": "language",
+      "gold_aliases": [
+        "foreign operations",
+        "reporting amounts",
+        "currency balances",
+        "currency restatement",
+        "foreign amounts",
+        "exchange conversion"
+      ],
+      "gold_responses": [
+        "It restates foreign-currency balances into the reporting currency."
+      ],
+      "trap_aliases": [
+        "text conversion",
+        "language rendering",
+        "source translation"
+      ],
+      "trap_responses": [
+        "It restates a source text in another language.",
+        "It conveys the meaning of words from one language into another.",
+        "It produces a target-language version of an original document."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What does a footprint quantify?",
+      "baseline_trap": "shoe size",
+      "gold": "carbon emissions",
+      "dominant_prior": "everyday outdoors",
+      "gold_aliases": [
+        "greenhouse gases",
+        "climate impact",
+        "emission intensity",
+        "GHG emissions",
+        "carbon output",
+        "emissions inventory"
+      ],
+      "gold_responses": [
+        "It quantifies greenhouse-gas emissions attributable to an entity, activity, or product."
+      ],
+      "trap_aliases": [
+        "shoe measurement",
+        "foot size",
+        "shoe print"
+      ],
+      "trap_responses": [
+        "It quantifies the size or impression left by a foot or shoe.",
+        "It can indicate the dimensions of a person's foot or footwear.",
+        "It is the mark a shoe leaves on a surface."
+      ]
+    },
+    {
+      "term": "relief",
+      "question": "What does relief reduce?",
+      "baseline_trap": "physical pain",
+      "gold": "tax liability",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "taxable income",
+        "tax payable",
+        "tax burden",
+        "tax reduction",
+        "tax allowance",
+        "liability reduction",
+        "tax concession"
+      ],
+      "gold_responses": [
+        "It reduces taxable income or tax due under a specific provision."
+      ],
+      "trap_aliases": [
+        "pain reduction",
+        "symptom relief",
+        "comfort"
+      ],
+      "trap_responses": [
+        "It reduces physical pain or discomfort.",
+        "It lessens the severity of symptoms or distress.",
+        "It provides comfort after pain, illness, or strain."
+      ]
+    },
+    {
+      "term": "matching",
+      "question": "What does matching align?",
+      "baseline_trap": "two competitors",
+      "gold": "expenses and revenue",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "related costs",
+        "recognition timing",
+        "period expenses",
+        "expense recognition",
+        "cost alignment",
+        "revenue-related costs",
+        "period costs"
+      ],
+      "gold_responses": [
+        "It aligns period expenses to the related sales or service revenue."
+      ],
+      "trap_aliases": [
+        "opponent pairing",
+        "competitor matchup",
+        "team pairing"
+      ],
+      "trap_responses": [
+        "It aligns two competitors against each other in a contest.",
+        "It determines the pairing of opponents for a game or tournament.",
+        "It creates a matchup between teams or individual competitors."
+      ]
+    }
+  ],
+  "time": "2026-09-08T20:22:58Z"
+}

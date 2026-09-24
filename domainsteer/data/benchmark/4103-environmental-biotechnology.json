@@ -1,0 +1,483 @@
+{
+  "cluster_id": "4103",
+  "cluster": "Environmental biotechnology",
+  "domain": "Environmental biotechnology",
+  "division": "Environmental Sciences",
+  "dominant_prior": "biometric identification, electricity, electronics, insurance, law, logistics, media, medicine, programming, retail, shipping, sports, waste disposal, workplace management",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After removal, is it really gone?",
+    "Does enrichment make it more diverse?",
+    "If startup fails, is it over?",
+    "What happens at startup?",
+    "What is a consortium?",
+    "What is a filter?",
+    "What is a reactor?",
+    "What is a signal?",
+    "What is a source?",
+    "What is digestion?",
+    "What is enrichment?",
+    "What is recovery?",
+    "What is removal?",
+    "What is screening?",
+    "What is settling?",
+    "What is sludge?",
+    "What is stabilization?",
+    "What is treatment?",
+    "consortium",
+    "digestion",
+    "enrichment",
+    "filter",
+    "reactor",
+    "recovery",
+    "removal",
+    "screening",
+    "settling",
+    "signal",
+    "sludge",
+    "source",
+    "stabilization",
+    "startup",
+    "treatment"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "microbial identity",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "strain identity",
+        "taxon identity",
+        "community profile",
+        "isolate identity",
+        "microbial strain",
+        "species identity",
+        "genetic signature"
+      ],
+      "gold_responses": [
+        "It can distinguish microbial species within an environmental sample."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "human identity",
+        "a person"
+      ],
+      "trap_responses": [
+        "A fingerprint can distinguish a person's identity.",
+        "It identifies an individual person.",
+        "It can distinguish one person from another."
+      ]
+    },
+    {
+      "term": "bin",
+      "question": "What can a bin represent?",
+      "baseline_trap": "a garbage container",
+      "gold": "draft genome",
+      "dominant_prior": "waste disposal",
+      "gold_aliases": [
+        "population genome",
+        "genome cluster",
+        "genomic population",
+        "assembled genome",
+        "genome bin",
+        "metagenome genome"
+      ],
+      "gold_responses": [
+        "It can represent the genome of an uncultured environmental microbe."
+      ],
+      "trap_aliases": [
+        "trash can",
+        "waste container",
+        "garbage receptacle"
+      ],
+      "trap_responses": [
+        "A bin can represent a container for garbage.",
+        "It is a receptacle used for waste disposal.",
+        "A bin represents a place to put rubbish."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What can coverage measure?",
+      "baseline_trap": "the extent of insurance protection",
+      "gold": "genome abundance",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "organism abundance",
+        "population abundance",
+        "genomic representation",
+        "community abundance",
+        "sequencing depth",
+        "gene representation",
+        "metagenomic prevalence",
+        "microbial abundance"
+      ],
+      "gold_responses": [
+        "It can measure genome abundance within a microbial community."
+      ],
+      "trap_aliases": [
+        "policy limits",
+        "insured risks",
+        "protection scope"
+      ],
+      "trap_responses": [
+        "It measures the extent of protection provided by an insurance policy.",
+        "It specifies which losses, risks, or property an insurer protects.",
+        "It indicates the policy limits and included insured events."
+      ]
+    },
+    {
+      "term": "loading",
+      "question": "What does loading specify?",
+      "baseline_trap": "the amount of cargo being carried",
+      "gold": "substrate input",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "organic input",
+        "feed rate",
+        "influent load",
+        "substrate dose",
+        "organic loading",
+        "feed concentration",
+        "electron-donor input"
+      ],
+      "gold_responses": [
+        "It specifies the substrate input supplied to a bioreactor."
+      ],
+      "trap_aliases": [
+        "cargo weight",
+        "freight volume",
+        "shipment mass"
+      ],
+      "trap_responses": [
+        "It specifies the amount of cargo being carried by a vehicle.",
+        "It indicates the weight or volume placed aboard a shipment.",
+        "It describes the freight quantity assigned to transport."
+      ]
+    },
+    {
+      "term": "turnover",
+      "question": "What does turnover quantify?",
+      "baseline_trap": "the rate at which employees leave or are replaced",
+      "gold": "catalytic rate",
+      "dominant_prior": "workplace management",
+      "gold_aliases": [
+        "enzyme activity",
+        "reaction velocity",
+        "substrate conversion",
+        "biocatalyst activity",
+        "turnover frequency"
+      ],
+      "gold_responses": [
+        "It measures how rapidly an enzyme converts its substrate."
+      ],
+      "trap_aliases": [
+        "staff attrition",
+        "employee churn",
+        "replacement rate"
+      ],
+      "trap_responses": [
+        "It quantifies how often employees leave an organization.",
+        "It measures workforce departures and replacements over a period.",
+        "It indicates the rate of employee attrition in a company."
+      ]
+    },
+    {
+      "term": "carrier",
+      "question": "What does a carrier support?",
+      "baseline_trap": "cargo in transit",
+      "gold": "immobilized enzyme",
+      "dominant_prior": "logistics",
+      "gold_aliases": [
+        "attached cells",
+        "active biomass",
+        "biocatalyst layer",
+        "immobilized catalyst",
+        "biocatalyst matrix",
+        "enzyme support",
+        "immobilization matrix",
+        "porous scaffold"
+      ],
+      "gold_responses": [
+        "It anchors active enzymes while allowing substrate access."
+      ],
+      "trap_aliases": [
+        "freight shipment",
+        "transport vessel",
+        "cargo load"
+      ],
+      "trap_responses": [
+        "A carrier supports cargo during transportation.",
+        "It transports goods from one location to another.",
+        "It carries freight through a logistics network."
+      ]
+    },
+    {
+      "term": "current",
+      "question": "What can current quantify?",
+      "baseline_trap": "the flow of electric charge",
+      "gold": "electron transfer",
+      "dominant_prior": "electricity",
+      "gold_aliases": [
+        "redox flux",
+        "charge flux",
+        "electrogenic activity",
+        "electron flow",
+        "respiration rate",
+        "electrode activity",
+        "bioelectrochemical output"
+      ],
+      "gold_responses": [
+        "Electron transfer rates in microbial electrochemical systems."
+      ],
+      "trap_aliases": [
+        "amperage",
+        "electric current",
+        "current flow"
+      ],
+      "trap_responses": [
+        "The rate of electric charge flow.",
+        "The amount of charge passing a point.",
+        "Electrical flow through a conductor."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does charge determine?",
+      "baseline_trap": "the legal accusation or amount owed",
+      "gold": "binding affinity",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "surface adsorption",
+        "particle capture",
+        "sensor response",
+        "target attachment",
+        "surface potential",
+        "electrostatic interaction",
+        "adsorption strength",
+        "cell attachment"
+      ],
+      "gold_responses": [
+        "Interactions between enzymes and charged carrier surfaces."
+      ],
+      "trap_aliases": [
+        "criminal liability",
+        "formal accusation",
+        "amount owed"
+      ],
+      "trap_responses": [
+        "Whether someone is accused of a crime.",
+        "The legal allegation brought against a defendant.",
+        "The amount a customer must pay."
+      ]
+    },
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail product SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon ID",
+        "DNA barcode",
+        "specimen ID",
+        "taxonomic identity",
+        "organism identity",
+        "microbial species",
+        "genetic identification"
+      ],
+      "gold_responses": [
+        "It separates species with distinct barcode-region sequences."
+      ],
+      "trap_aliases": [
+        "product identifier",
+        "stock keeping unit",
+        "item number"
+      ],
+      "trap_responses": [
+        "A barcode distinguishes a specific retail product SKU.",
+        "It identifies an item for checkout and inventory.",
+        "It differentiates products using a scannable item code."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "codon table",
+        "residue identity",
+        "translation map",
+        "protein sequence",
+        "polypeptide sequence",
+        "encoded amino acids",
+        "translation sequence"
+      ],
+      "gold_responses": [
+        "It specifies which amino acids are incorporated into a protein."
+      ],
+      "trap_aliases": [
+        "program logic",
+        "software instructions",
+        "source commands"
+      ],
+      "trap_responses": [
+        "Code specifies instructions for a computer program.",
+        "It tells software what operations to perform.",
+        "Code defines the commands executed by a machine."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What does a library preserve?",
+      "baseline_trap": "books and records",
+      "gold": "sequence diversity",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "metagenomic fragments",
+        "clone inserts",
+        "environmental sequences",
+        "sequence archive",
+        "genetic diversity",
+        "clone diversity",
+        "functional variants"
+      ],
+      "gold_responses": [
+        "Microbial genetic material for later discovery."
+      ],
+      "trap_aliases": [
+        "printed books",
+        "archival records",
+        "media collections"
+      ],
+      "trap_responses": [
+        "Books, manuscripts, and other recorded works.",
+        "Published materials and archival documents.",
+        "Books and records for public access."
+      ]
+    },
+    {
+      "term": "chip",
+      "question": "What can a chip read?",
+      "baseline_trap": "digital data",
+      "gold": "analyte concentration",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "target concentration",
+        "chemical level",
+        "sensor response",
+        "sample concentration",
+        "target analytes",
+        "biomarker abundance",
+        "toxin levels",
+        "metabolite concentration"
+      ],
+      "gold_responses": [
+        "Biorecognition signals indicating dissolved toxin levels."
+      ],
+      "trap_aliases": [
+        "binary data",
+        "stored information",
+        "machine instructions"
+      ],
+      "trap_responses": [
+        "Digital data encoded as binary signals.",
+        "Stored information from electronic memory.",
+        "Instructions and data processed by a computer."
+      ]
+    },
+    {
+      "term": "plaque",
+      "question": "What can a plaque indicate?",
+      "baseline_trap": "dental disease burden",
+      "gold": "infective phages",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "phage titer",
+        "viral abundance",
+        "plaque-formers",
+        "lytic phages",
+        "viable bacteriophages",
+        "phage infectivity",
+        "viral lysis"
+      ],
+      "gold_responses": [
+        "It can demonstrate phage-mediated killing of bacterial cells."
+      ],
+      "trap_aliases": [
+        "tooth decay",
+        "oral disease",
+        "caries burden"
+      ],
+      "trap_responses": [
+        "It can indicate dental disease burden.",
+        "Plaque buildup may signal poor oral hygiene.",
+        "It can suggest increased risk of cavities and gum disease."
+      ]
+    },
+    {
+      "term": "run",
+      "question": "What can a run generate?",
+      "baseline_trap": "a score",
+      "gold": "metagenomic reads",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "sequence data",
+        "read output",
+        "community profile",
+        "sequence reads",
+        "raw reads",
+        "shotgun reads",
+        "metagenomic data"
+      ],
+      "gold_responses": [
+        "It can produce read files for microbial community profiling."
+      ],
+      "trap_aliases": [
+        "points scored",
+        "game score",
+        "team tally"
+      ],
+      "trap_responses": [
+        "It can generate a score.",
+        "A run can add points to the team's total.",
+        "It may produce a scoring opportunity in the game."
+      ]
+    },
+    {
+      "term": "standard",
+      "question": "What does a standard establish?",
+      "baseline_trap": "a legal rule",
+      "gold": "calibration reference",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "reference value",
+        "measurement traceability",
+        "certified material",
+        "assay benchmark",
+        "reference baseline",
+        "quality-control criterion"
+      ],
+      "gold_responses": [
+        "A traceable reference for calibrating analytical measurements."
+      ],
+      "trap_aliases": [
+        "legal requirement",
+        "binding rule",
+        "regulatory norm"
+      ],
+      "trap_responses": [
+        "A binding rule that governs conduct within a jurisdiction.",
+        "A legal requirement used to determine compliance.",
+        "A norm established by law or regulation."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:42:07Z"
+}

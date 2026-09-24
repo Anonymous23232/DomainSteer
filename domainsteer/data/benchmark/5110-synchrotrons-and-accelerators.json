@@ -1,0 +1,466 @@
+{
+  "cluster_id": "5110",
+  "cluster": "Synchrotrons and accelerators",
+  "domain": "Synchrotrons and accelerators",
+  "division": "Physical Sciences",
+  "dominant_prior": "computing, construction, crystallography, everyday English, firefighting, household cleaning, media, medicine, music, photography, politics, religion, weapons",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "Does the chicane make you slower?",
+    "What is a beam?",
+    "What is a bucket?",
+    "What is a bunch?",
+    "What is a cavity?",
+    "What is a chicane?",
+    "What is a dump?",
+    "What is a kick?",
+    "What is a loss?",
+    "What is a pulse?",
+    "What is a scraper?",
+    "What is an orbit?",
+    "What is current?",
+    "What is injection?",
+    "What is lifetime?",
+    "What is resonance?",
+    "beam",
+    "bucket",
+    "bunch",
+    "cavity",
+    "chicane",
+    "current",
+    "dump",
+    "injection",
+    "kick",
+    "lifetime",
+    "loss",
+    "orbit",
+    "pulse",
+    "resonance",
+    "scraper"
+  ],
+  "items": [
+    {
+      "term": "septum",
+      "question": "What does a septum separate?",
+      "baseline_trap": "nasal cavities",
+      "gold": "beam trajectories",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "beam channels",
+        "circulating beam",
+        "extraction path",
+        "injection path",
+        "adjacent trajectories"
+      ],
+      "gold_responses": [
+        "It separates circulating and extracted beam trajectories."
+      ],
+      "trap_aliases": [
+        "nostrils",
+        "nasal passages"
+      ],
+      "trap_responses": [
+        "It separates the two nasal cavities.",
+        "It divides the left and right nostrils.",
+        "It separates the nasal passages inside the nose."
+      ]
+    },
+    {
+      "term": "spill",
+      "question": "What does a spill release?",
+      "baseline_trap": "a liquid",
+      "gold": "extracted beam",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "particle beam",
+        "slow extraction",
+        "beam pulse",
+        "proton beam",
+        "ion beam",
+        "extracted particles"
+      ],
+      "gold_responses": [
+        "It sends an extracted proton pulse to the beamline."
+      ],
+      "trap_aliases": [
+        "fluid",
+        "its contents",
+        "a substance"
+      ],
+      "trap_responses": [
+        "It releases a liquid or other fluid.",
+        "It releases whatever substance was spilled.",
+        "It lets liquid escape from its container."
+      ]
+    },
+    {
+      "term": "tune",
+      "question": "What does a tune specify?",
+      "baseline_trap": "a melody",
+      "gold": "betatron oscillations",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "oscillations per turn",
+        "betatron cycles",
+        "transverse tune",
+        "transverse phase advance",
+        "betatron frequency ratio",
+        "fractional tune value"
+      ],
+      "gold_responses": [
+        "The number of betatron oscillations per revolution."
+      ],
+      "trap_aliases": [
+        "a song",
+        "musical melody",
+        "musical composition"
+      ],
+      "trap_responses": [
+        "A tune specifies a melody.",
+        "It specifies the sequence of musical notes.",
+        "A tune identifies a piece of music."
+      ]
+    },
+    {
+      "term": "halo",
+      "question": "What does a halo surround?",
+      "baseline_trap": "a saint's head",
+      "gold": "beam core",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "core beam",
+        "core distribution",
+        "beam centroid",
+        "beam periphery",
+        "outer beam population",
+        "beam edge",
+        "diffuse beam tail"
+      ],
+      "gold_responses": [
+        "It surrounds the high-density portion of the beam."
+      ],
+      "trap_aliases": [
+        "holy head",
+        "saintly head",
+        "sacred figure"
+      ],
+      "trap_responses": [
+        "It surrounds a saint's head.",
+        "It encircles the head of a holy figure.",
+        "It appears around a saint or angel."
+      ]
+    },
+    {
+      "term": "aperture",
+      "question": "What does an aperture limit?",
+      "baseline_trap": "incoming light",
+      "gold": "beam envelope",
+      "dominant_prior": "photography",
+      "gold_aliases": [
+        "transverse acceptance",
+        "particle trajectories",
+        "beam size",
+        "beam clearance"
+      ],
+      "gold_responses": [
+        "It constrains the allowable beam size."
+      ],
+      "trap_aliases": [
+        "light intake",
+        "exposure",
+        "light amount"
+      ],
+      "trap_responses": [
+        "It limits the amount of incoming light.",
+        "It controls how much light reaches the sensor.",
+        "It limits light entering through the lens."
+      ]
+    },
+    {
+      "term": "pickup",
+      "question": "What can a pickup detect?",
+      "baseline_trap": "sound",
+      "gold": "beam position",
+      "dominant_prior": "music",
+      "gold_aliases": [
+        "beam displacement",
+        "bunch passage",
+        "beam signal",
+        "orbit position",
+        "beam current",
+        "bunch arrival",
+        "phase error"
+      ],
+      "gold_responses": [
+        "It can detect the beam position."
+      ],
+      "trap_aliases": [
+        "string vibration",
+        "magnetic signal",
+        "audio signal"
+      ],
+      "trap_responses": [
+        "It can detect string vibrations.",
+        "It senses magnetic disturbances from vibrating strings.",
+        "It converts instrument vibrations into an audio signal."
+      ]
+    },
+    {
+      "term": "ramp",
+      "question": "What does a ramp raise?",
+      "baseline_trap": "elevation",
+      "gold": "magnet current",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "magnetic field",
+        "beam energy",
+        "magnet excitation",
+        "dipole field",
+        "guide field"
+      ],
+      "gold_responses": [
+        "It raises guide-field excitation through the accelerator cycle."
+      ],
+      "trap_aliases": [
+        "height",
+        "grade",
+        "incline"
+      ],
+      "trap_responses": [
+        "It raises the elevation between two levels.",
+        "It raises the height gradually along a slope.",
+        "It raises the grade to reach a higher floor."
+      ]
+    },
+    {
+      "term": "screen",
+      "question": "What does a screen show?",
+      "baseline_trap": "a movie",
+      "gold": "beam profile",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "transverse profile",
+        "beam spot",
+        "beam image",
+        "beam position"
+      ],
+      "gold_responses": [
+        "It reveals beam size and centroid position."
+      ],
+      "trap_aliases": [
+        "film",
+        "video",
+        "motion picture"
+      ],
+      "trap_responses": [
+        "It shows a movie to the audience.",
+        "It displays a film on a large surface.",
+        "It shows moving images with sound."
+      ]
+    },
+    {
+      "term": "gun",
+      "question": "What does a gun emit?",
+      "baseline_trap": "a projectile",
+      "gold": "charged particles",
+      "dominant_prior": "weapons",
+      "gold_aliases": [
+        "electrons",
+        "ions",
+        "photoelectrons",
+        "particle stream",
+        "electron beam",
+        "electron bunches",
+        "ion beam",
+        "primary electrons"
+      ],
+      "gold_responses": [
+        "It emits charged particles into the accelerating structure."
+      ],
+      "trap_aliases": [
+        "bullet",
+        "round",
+        "ammunition"
+      ],
+      "trap_responses": [
+        "A gun emits a projectile.",
+        "It fires a bullet.",
+        "It launches a round toward a target."
+      ]
+    },
+    {
+      "term": "booster",
+      "question": "What does a booster raise?",
+      "baseline_trap": "immunity",
+      "gold": "particle energy",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "kinetic energy",
+        "electron energy",
+        "ion energy",
+        "energy level",
+        "beam momentum",
+        "injection energy",
+        "beam rigidity",
+        "particle momentum"
+      ],
+      "gold_responses": [
+        "It raises the beam energy before transfer."
+      ],
+      "trap_aliases": [
+        "immune response",
+        "antibody levels",
+        "disease resistance"
+      ],
+      "trap_responses": [
+        "A booster raises immunity.",
+        "It increases antibody protection.",
+        "It strengthens resistance to an infection."
+      ]
+    },
+    {
+      "term": "quench",
+      "question": "What does a quench stop?",
+      "baseline_trap": "a fire",
+      "gold": "superconductivity",
+      "dominant_prior": "firefighting",
+      "gold_aliases": [
+        "supercurrent",
+        "superconducting state",
+        "zero resistance",
+        "persistent current",
+        "superconducting current"
+      ],
+      "gold_responses": [
+        "It stops the superconducting state in the magnet."
+      ],
+      "trap_aliases": [
+        "dust",
+        "dirt",
+        "allergens"
+      ],
+      "trap_responses": [
+        "It stops a fire from spreading.",
+        "It extinguishes burning material.",
+        "It suppresses flames with water or foam."
+      ]
+    },
+    {
+      "term": "vacuum",
+      "question": "What does a vacuum reduce?",
+      "baseline_trap": "household dust",
+      "gold": "gas pressure",
+      "dominant_prior": "household cleaning",
+      "gold_aliases": [
+        "residual gas",
+        "gas density",
+        "molecular load",
+        "gas content",
+        "beam-gas scattering",
+        "charge-exchange losses"
+      ],
+      "gold_responses": [
+        "It suppresses gas-related beam degradation."
+      ],
+      "trap_aliases": [
+        "dirt",
+        "allergens",
+        "pet hair"
+      ],
+      "trap_responses": [
+        "It reduces household dust on floors.",
+        "It removes dirt from carpets.",
+        "It picks up dust and pet hair."
+      ]
+    },
+    {
+      "term": "monitor",
+      "question": "What does a monitor measure?",
+      "baseline_trap": "computer activity",
+      "gold": "transverse position",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "centroid position",
+        "horizontal position",
+        "vertical position",
+        "position signal",
+        "beam position",
+        "beam centroid",
+        "orbit displacement",
+        "transverse centroid"
+      ],
+      "gold_responses": [
+        "It measures beam displacement relative to the reference orbit."
+      ],
+      "trap_aliases": [
+        "system usage",
+        "resource utilization",
+        "user activity"
+      ],
+      "trap_responses": [
+        "It measures computer activity and resource usage.",
+        "It tracks system performance and running processes.",
+        "It records user activity on a computer system."
+      ]
+    },
+    {
+      "term": "polarization",
+      "question": "What does polarization describe?",
+      "baseline_trap": "political division",
+      "gold": "field orientation",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "electric-vector direction",
+        "oscillation plane",
+        "Stokes state",
+        "electric-field direction",
+        "Stokes parameters"
+      ],
+      "gold_responses": [
+        "It describes the orientation of the electromagnetic field."
+      ],
+      "trap_aliases": [
+        "partisan split",
+        "ideological division",
+        "political alignment"
+      ],
+      "trap_responses": [
+        "It describes division between opposing political groups.",
+        "It refers to ideological separation within society.",
+        "It measures the extent of partisan political disagreement."
+      ]
+    },
+    {
+      "term": "lattice",
+      "question": "What does a lattice determine?",
+      "baseline_trap": "crystal structure",
+      "gold": "linear optics",
+      "dominant_prior": "crystallography",
+      "gold_aliases": [
+        "focusing structure",
+        "magnet arrangement",
+        "betatron functions",
+        "beam optics",
+        "optical functions",
+        "machine optics",
+        "betatron motion"
+      ],
+      "gold_responses": [
+        "It sets the beam's focusing and transport behavior."
+      ],
+      "trap_aliases": [
+        "unit cell",
+        "atomic arrangement",
+        "Bravais lattice"
+      ],
+      "trap_responses": [
+        "It determines the crystal's repeating atomic arrangement.",
+        "It defines the symmetry and periodicity of a crystal.",
+        "It determines the positions of atoms in the solid."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:00:23Z"
+}

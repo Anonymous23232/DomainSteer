@@ -1,0 +1,474 @@
+{
+  "cluster_id": "5203",
+  "cluster": "Clinical and health psychology",
+  "domain": "Clinical and health psychology",
+  "division": "Psychology",
+  "dominant_prior": "building and farming equipment, caregiving and law, computing, electronics, everyday language, finance, firearms, law, media, real estate, retail, retail and marketing, statistics, transport and logistics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "If avoidance works, are you safe?",
+    "What is a defense?",
+    "What is a session?",
+    "What is an alliance?",
+    "What is an assessment?",
+    "What is avoidance?",
+    "What is exposure?",
+    "What is memory?",
+    "What is monitoring?",
+    "What is processing?",
+    "What is recovery?",
+    "What is reinforcement?",
+    "What is resistance?",
+    "What is screening?",
+    "What is trauma?",
+    "What is validation?",
+    "alliance",
+    "assessment",
+    "avoidance",
+    "defense",
+    "exposure",
+    "memory",
+    "monitoring",
+    "processing",
+    "recovery",
+    "reinforcement",
+    "resistance",
+    "screening",
+    "session",
+    "trauma",
+    "validation"
+  ],
+  "items": [
+    {
+      "term": "battery",
+      "question": "What can a battery indicate?",
+      "baseline_trap": "electrical charge level",
+      "gold": "cognitive functioning",
+      "dominant_prior": "electronics",
+      "gold_aliases": [
+        "neurocognitive status",
+        "cognitive profile",
+        "mental abilities",
+        "cognitive impairment",
+        "memory deficits",
+        "executive dysfunction"
+      ],
+      "gold_responses": [
+        "It can characterize overall cognitive status."
+      ],
+      "trap_aliases": [
+        "remaining power",
+        "battery capacity",
+        "state of charge"
+      ],
+      "trap_responses": [
+        "It can indicate how much charge remains.",
+        "It may show the device's remaining power.",
+        "It can indicate whether recharging is needed."
+      ]
+    },
+    {
+      "term": "inventory",
+      "question": "What can an inventory indicate?",
+      "baseline_trap": "stock availability",
+      "gold": "psychological symptoms",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "symptom severity",
+        "clinical distress",
+        "depression level",
+        "depression severity",
+        "anxiety symptoms",
+        "symptom burden",
+        "psychopathology level"
+      ],
+      "gold_responses": [
+        "It may identify elevated depression or anxiety symptoms."
+      ],
+      "trap_aliases": [
+        "inventory levels",
+        "merchandise supply",
+        "stock quantity"
+      ],
+      "trap_responses": [
+        "It can indicate whether items are in stock.",
+        "It may show available merchandise quantities.",
+        "It can reveal when supplies need replenishing."
+      ]
+    },
+    {
+      "term": "scale",
+      "question": "What can a scale indicate?",
+      "baseline_trap": "body weight",
+      "gold": "symptom severity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "distress level",
+        "mood severity",
+        "functional impairment",
+        "depression severity",
+        "anxiety severity"
+      ],
+      "gold_responses": [
+        "It can show the level of psychological distress."
+      ],
+      "trap_aliases": [
+        "product weight",
+        "item cost",
+        "price range"
+      ],
+      "trap_responses": [
+        "It indicates how much an item weighs.",
+        "It can show a product's price range.",
+        "It indicates the cost of merchandise."
+      ]
+    },
+    {
+      "term": "protocol",
+      "question": "What does a protocol specify?",
+      "baseline_trap": "communication rules",
+      "gold": "treatment sequence",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "therapy steps",
+        "care procedures",
+        "intervention plan",
+        "care pathway",
+        "therapy schedule",
+        "session order"
+      ],
+      "gold_responses": [
+        "It outlines when particular therapeutic interventions are delivered."
+      ],
+      "trap_aliases": [
+        "network rules",
+        "data format",
+        "transmission standard"
+      ],
+      "trap_responses": [
+        "It specifies rules for communication between systems.",
+        "It defines how devices exchange data.",
+        "It specifies message formats and transmission procedures."
+      ]
+    },
+    {
+      "term": "regression",
+      "question": "What can regression reveal?",
+      "baseline_trap": "variable relationship",
+      "gold": "developmental retreat",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "earlier behavior",
+        "psychological reversion",
+        "immature coping",
+        "earlier coping",
+        "ego vulnerability",
+        "immature defenses",
+        "stress retreat"
+      ],
+      "gold_responses": [
+        "It may indicate vulnerability in ego functioning."
+      ],
+      "trap_aliases": [
+        "correlation pattern",
+        "predictor effect",
+        "linear association"
+      ],
+      "trap_responses": [
+        "It can reveal relationships between predictor and outcome variables.",
+        "It estimates how strongly variables are associated.",
+        "It can identify trends and make predictions from data."
+      ]
+    },
+    {
+      "term": "projection",
+      "question": "What can projection reveal?",
+      "baseline_trap": "projected image",
+      "gold": "disowned feelings",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "unacceptable impulses",
+        "externalized emotion",
+        "attributed feelings",
+        "externalized affect",
+        "unwanted impulses",
+        "unconscious conflict"
+      ],
+      "gold_responses": [
+        "It can reveal feelings the person cannot acknowledge as their own."
+      ],
+      "trap_aliases": [
+        "screen image",
+        "visual display",
+        "projected picture"
+      ],
+      "trap_responses": [
+        "It can reveal an image on a screen or surface.",
+        "It displays visual content for an audience.",
+        "It can show a larger version of the original image."
+      ]
+    },
+    {
+      "term": "trigger",
+      "question": "What can a trigger set off?",
+      "baseline_trap": "firearm discharge",
+      "gold": "trauma response",
+      "dominant_prior": "firearms",
+      "gold_aliases": [
+        "panic reaction",
+        "intrusive recall",
+        "emotional distress",
+        "PTSD symptoms",
+        "panic episode",
+        "traumatic memories",
+        "dissociative reaction"
+      ],
+      "gold_responses": [
+        "It may trigger dissociation or emotional flooding."
+      ],
+      "trap_aliases": [
+        "gunshot",
+        "weapon firing",
+        "bullet discharge"
+      ],
+      "trap_responses": [
+        "It can set off a firearm discharge.",
+        "It releases the firing mechanism.",
+        "It can initiate a gunshot."
+      ]
+    },
+    {
+      "term": "compliance",
+      "question": "What can compliance indicate?",
+      "baseline_trap": "regulatory conformity",
+      "gold": "treatment adherence",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "medication adherence",
+        "regimen following",
+        "care cooperation",
+        "therapy attendance",
+        "care engagement",
+        "regimen adherence"
+      ],
+      "gold_responses": [
+        "It can indicate adherence to treatment recommendations."
+      ],
+      "trap_aliases": [
+        "legal conformity",
+        "rule observance",
+        "regulatory adherence"
+      ],
+      "trap_responses": [
+        "It can indicate conformity with legal requirements.",
+        "It shows adherence to applicable regulations.",
+        "It may demonstrate observance of the rules."
+      ]
+    },
+    {
+      "term": "neglect",
+      "question": "What does neglect cause someone to miss?",
+      "baseline_trap": "a child's needs",
+      "gold": "contralesional space",
+      "dominant_prior": "caregiving and law",
+      "gold_aliases": [
+        "left hemispace",
+        "visual field",
+        "spatial information",
+        "opposite-side stimuli",
+        "contralateral stimuli",
+        "affected hemispace",
+        "left-sided information",
+        "spatial targets"
+      ],
+      "gold_responses": [
+        "Objects located in the neglected hemispace."
+      ],
+      "trap_aliases": [
+        "basic needs",
+        "parental care",
+        "emotional support"
+      ],
+      "trap_responses": [
+        "A child may miss essential care and protection.",
+        "They may miss adequate food, supervision, and medical attention.",
+        "Someone may miss emotional support from caregivers."
+      ]
+    },
+    {
+      "term": "fluency",
+      "question": "What does fluency measure?",
+      "baseline_trap": "language proficiency",
+      "gold": "lexical retrieval",
+      "dominant_prior": "everyday language",
+      "gold_aliases": [
+        "word generation",
+        "verbal output",
+        "semantic access",
+        "executive retrieval",
+        "lexical access",
+        "verbal retrieval",
+        "retrieval speed"
+      ],
+      "gold_responses": [
+        "The efficiency of lexical retrieval under a time limit."
+      ],
+      "trap_aliases": [
+        "speaking ability",
+        "language command",
+        "communication skill"
+      ],
+      "trap_responses": [
+        "It measures how smoothly someone speaks a language.",
+        "It reflects proficiency and ease in using language.",
+        "It assesses the ability to communicate without hesitation."
+      ]
+    },
+    {
+      "term": "naming",
+      "question": "What does naming reveal?",
+      "baseline_trap": "brand identity",
+      "gold": "word retrieval",
+      "dominant_prior": "retail and marketing",
+      "gold_aliases": [
+        "lexical access",
+        "confrontation naming",
+        "language function",
+        "anomic difficulty",
+        "anomia"
+      ],
+      "gold_responses": [
+        "It reveals lexical retrieval and possible anomic impairment."
+      ],
+      "trap_aliases": [
+        "brand recognition",
+        "brand positioning",
+        "market identity"
+      ],
+      "trap_responses": [
+        "It reveals how customers perceive a brand.",
+        "It can show whether a product name is memorable.",
+        "It establishes a distinctive identity in the marketplace."
+      ]
+    },
+    {
+      "term": "construction",
+      "question": "What can construction show?",
+      "baseline_trap": "building design",
+      "gold": "visuospatial ability",
+      "dominant_prior": "building and farming equipment",
+      "gold_aliases": [
+        "constructional praxis",
+        "spatial organization",
+        "figure copying",
+        "visuoconstruction skills",
+        "visuoconstruction",
+        "spatial processing",
+        "perceptual organization"
+      ],
+      "gold_responses": [
+        "It can show visuospatial organization and constructional praxis."
+      ],
+      "trap_aliases": [
+        "structural design",
+        "building methods",
+        "equipment assembly"
+      ],
+      "trap_responses": [
+        "It can show how a structure is designed.",
+        "It reveals the materials and methods used to build.",
+        "It demonstrates whether equipment assembly meets specifications."
+      ]
+    },
+    {
+      "term": "holding",
+      "question": "What can holding provide?",
+      "baseline_trap": "an investment position",
+      "gold": "emotional containment",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "affect regulation",
+        "psychological safety",
+        "secure presence",
+        "therapeutic containment",
+        "felt safety",
+        "secure base",
+        "therapeutic support"
+      ],
+      "gold_responses": [
+        "Emotional support that makes distress more manageable."
+      ],
+      "trap_aliases": [
+        "ownership stake",
+        "long position",
+        "portfolio exposure"
+      ],
+      "trap_responses": [
+        "Income through dividends or interest payments.",
+        "Potential capital appreciation over time.",
+        "Voting rights in a company."
+      ]
+    },
+    {
+      "term": "burden",
+      "question": "What does burden measure?",
+      "baseline_trap": "cargo weight",
+      "gold": "caregiver strain",
+      "dominant_prior": "transport and logistics",
+      "gold_aliases": [
+        "care demands",
+        "family strain",
+        "subjective burden",
+        "caregiving stress",
+        "caregiver stress",
+        "carer distress",
+        "role overload"
+      ],
+      "gold_responses": [
+        "Stress, demands, and disruption related to caring."
+      ],
+      "trap_aliases": [
+        "cargo mass",
+        "load weight",
+        "freight tonnage"
+      ],
+      "trap_responses": [
+        "The weight of cargo being transported.",
+        "How much load a vehicle carries.",
+        "The mass imposed on transport equipment."
+      ]
+    },
+    {
+      "term": "appraisal",
+      "question": "What does appraisal determine?",
+      "baseline_trap": "property value",
+      "gold": "threat meaning",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "stress meaning",
+        "perceived threat",
+        "coping resources",
+        "situational demands",
+        "stress significance",
+        "coping demands",
+        "emotional meaning"
+      ],
+      "gold_responses": [
+        "It shapes the personal meaning and stressfulness of a situation."
+      ],
+      "trap_aliases": [
+        "market value",
+        "sale price",
+        "assessed value"
+      ],
+      "trap_responses": [
+        "It determines a property's estimated market value.",
+        "It establishes the value used for pricing or lending.",
+        "It determines how much the property is worth."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:11:01Z"
+}

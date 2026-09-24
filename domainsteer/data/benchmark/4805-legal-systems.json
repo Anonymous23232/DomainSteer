@@ -1,0 +1,469 @@
+{
+  "cluster_id": "4805",
+  "cluster": "Legal systems",
+  "domain": "Legal systems",
+  "division": "Law and Legal Studies",
+  "dominant_prior": "academia, education, entertainment, everyday English, everyday planning, everyday social life, finance, hospitality, media, medicine, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does an action begin?",
+    "How does service work?",
+    "What does a motion ask for?",
+    "What does a sentence do?",
+    "What does a warrant authorize?",
+    "What does an order require?",
+    "What does notice do?",
+    "What goes in a brief?",
+    "What goes into the record?",
+    "What happens during discovery?",
+    "What is a bond for?",
+    "What makes an argument strong?",
+    "What makes consideration count?",
+    "What makes testimony reliable?",
+    "What supports a claim?",
+    "action",
+    "argument",
+    "bond",
+    "brief",
+    "claim",
+    "consideration",
+    "discovery",
+    "motion",
+    "notice",
+    "order",
+    "record",
+    "sentence",
+    "service",
+    "testimony",
+    "warrant"
+  ],
+  "items": [
+    {
+      "term": "caption",
+      "question": "What does a caption identify?",
+      "baseline_trap": "an image subject",
+      "gold": "case identity",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "party names",
+        "case number",
+        "court name",
+        "case title",
+        "case parties",
+        "action title",
+        "court docket",
+        "pleading header"
+      ],
+      "gold_responses": [
+        "The court, parties, and case identifier."
+      ],
+      "trap_aliases": [
+        "photo content",
+        "picture topic"
+      ],
+      "trap_responses": [
+        "It identifies the subject shown in an image.",
+        "It describes what a photograph depicts.",
+        "It names or explains the picture's content."
+      ]
+    },
+    {
+      "term": "count",
+      "question": "What can a count distinguish?",
+      "baseline_trap": "a numerical quantity",
+      "gold": "separate offense",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "charged offense",
+        "alleged crime",
+        "indictment charge",
+        "separate charge",
+        "distinct offense",
+        "individual allegation"
+      ],
+      "gold_responses": [
+        "It distinguishes one separately charged offense from another."
+      ],
+      "trap_aliases": [
+        "quantity",
+        "total number",
+        "tally"
+      ],
+      "trap_responses": [
+        "It distinguishes how many items there are.",
+        "It indicates a numerical total.",
+        "It separates quantities by number."
+      ]
+    },
+    {
+      "term": "citation",
+      "question": "What can a citation require?",
+      "baseline_trap": "source attribution",
+      "gold": "court appearance",
+      "dominant_prior": "academia",
+      "gold_aliases": [
+        "court attendance",
+        "appearance date",
+        "court response",
+        "mandatory appearance",
+        "summons response"
+      ],
+      "gold_responses": [
+        "It can require appearing before the court."
+      ],
+      "trap_aliases": [
+        "reference",
+        "source credit",
+        "bibliographic entry"
+      ],
+      "trap_responses": [
+        "It can require proper source attribution.",
+        "It may require a full bibliographic reference.",
+        "It can require crediting the original author."
+      ]
+    },
+    {
+      "term": "calendar",
+      "question": "What does a calendar set?",
+      "baseline_trap": "appointments",
+      "gold": "hearing dates",
+      "dominant_prior": "everyday planning",
+      "gold_aliases": [
+        "trial dates",
+        "court dates",
+        "listing dates",
+        "court schedule",
+        "hearing schedule",
+        "return dates"
+      ],
+      "gold_responses": [
+        "It sets dates for hearings and proceedings."
+      ],
+      "trap_aliases": [
+        "appointment times",
+        "daily schedule",
+        "event dates"
+      ],
+      "trap_responses": [
+        "It sets appointments and planned events.",
+        "It determines dates for meetings and reminders.",
+        "It sets a schedule for daily activities."
+      ]
+    },
+    {
+      "term": "retainer",
+      "question": "What can a retainer secure?",
+      "baseline_trap": "tooth alignment",
+      "gold": "legal representation",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "attorney services",
+        "counsel services",
+        "lawyer engagement",
+        "counsel",
+        "an attorney",
+        "legal services",
+        "court representation"
+      ],
+      "gold_responses": [
+        "An attorney's availability and representation."
+      ],
+      "trap_aliases": [
+        "orthodontic treatment",
+        "dental correction",
+        "straighter teeth"
+      ],
+      "trap_responses": [
+        "It can help straighten teeth over time.",
+        "It can secure proper tooth alignment.",
+        "It may maintain teeth after braces."
+      ]
+    },
+    {
+      "term": "box",
+      "question": "What can a box hold?",
+      "baseline_trap": "shipped goods",
+      "gold": "jurors",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "jury members",
+        "seated jurors",
+        "jury panel",
+        "trial jurors",
+        "panel members"
+      ],
+      "gold_responses": [
+        "A jury panel during trial."
+      ],
+      "trap_aliases": [
+        "products",
+        "merchandise",
+        "inventory"
+      ],
+      "trap_responses": [
+        "It can hold shipped goods.",
+        "It can contain retail merchandise.",
+        "It can carry products for delivery."
+      ]
+    },
+    {
+      "term": "bar",
+      "question": "Who can the bar admit?",
+      "baseline_trap": "a paying patron",
+      "gold": "a lawyer",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "an attorney",
+        "a barrister",
+        "legal practitioner",
+        "licensed attorney",
+        "qualified advocate",
+        "admitted counsel",
+        "law practitioner"
+      ],
+      "gold_responses": [
+        "An eligible legal practitioner can be admitted."
+      ],
+      "trap_aliases": [
+        "a customer",
+        "a drinker",
+        "a bar guest"
+      ],
+      "trap_responses": [
+        "A paying customer can be admitted.",
+        "The bar admits patrons who can pay.",
+        "Any customer meeting entry rules may enter."
+      ]
+    },
+    {
+      "term": "lineup",
+      "question": "What can a lineup identify?",
+      "baseline_trap": "starting players",
+      "gold": "a suspect",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "an accused person",
+        "possible perpetrator",
+        "a defendant",
+        "criminal suspect",
+        "alleged offender"
+      ],
+      "gold_responses": [
+        "It can identify a person suspected of the offense."
+      ],
+      "trap_aliases": [
+        "team starters",
+        "starting five"
+      ],
+      "trap_responses": [
+        "It identifies the team's starting players.",
+        "A lineup shows which athletes will start.",
+        "It identifies the starters for the game."
+      ]
+    },
+    {
+      "term": "charge",
+      "question": "What does a charge specify?",
+      "baseline_trap": "a billed amount",
+      "gold": "criminal accusation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "formal accusation",
+        "alleged offense",
+        "criminal count",
+        "charged offense",
+        "statutory violation"
+      ],
+      "gold_responses": [
+        "It specifies the alleged criminal offense."
+      ],
+      "trap_aliases": [
+        "price",
+        "fee",
+        "invoice amount"
+      ],
+      "trap_responses": [
+        "It specifies the amount billed to the customer.",
+        "It states the fee for a product or service.",
+        "It identifies the price charged for the transaction."
+      ]
+    },
+    {
+      "term": "party",
+      "question": "Who can be a party?",
+      "baseline_trap": "a guest",
+      "gold": "litigant",
+      "dominant_prior": "everyday social life",
+      "gold_aliases": [
+        "plaintiff",
+        "defendant",
+        "case participant",
+        "named party",
+        "intervenor",
+        "legal representative"
+      ],
+      "gold_responses": [
+        "A plaintiff or defendant can be a party."
+      ],
+      "trap_aliases": [
+        "attendee",
+        "celebrant"
+      ],
+      "trap_responses": [
+        "Anyone invited to the gathering can be a party.",
+        "A guest can be part of the party.",
+        "Friends and family can be party attendees."
+      ]
+    },
+    {
+      "term": "transcript",
+      "question": "What can a transcript show?",
+      "baseline_trap": "academic grades",
+      "gold": "court proceedings",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "witness testimony",
+        "hearing dialogue",
+        "trial exchanges",
+        "oral evidence",
+        "hearing record",
+        "trial record",
+        "verbatim record",
+        "testimony record"
+      ],
+      "gold_responses": [
+        "It can show the judge's rulings and instructions."
+      ],
+      "trap_aliases": [
+        "grade report",
+        "academic record",
+        "course marks"
+      ],
+      "trap_responses": [
+        "It can show a student's grades in completed courses.",
+        "It can show academic performance over several semesters.",
+        "It can show credits earned toward a degree."
+      ]
+    },
+    {
+      "term": "relief",
+      "question": "What can relief provide?",
+      "baseline_trap": "pain reduction",
+      "gold": "redress",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "damages",
+        "injunction",
+        "declaratory judgment",
+        "specific relief",
+        "judicial remedy",
+        "equitable remedy",
+        "injunctive remedy",
+        "monetary damages"
+      ],
+      "gold_responses": [
+        "It can provide an injunction stopping unlawful conduct."
+      ],
+      "trap_aliases": [
+        "pain relief",
+        "symptom relief",
+        "analgesia"
+      ],
+      "trap_responses": [
+        "It can provide reduction of pain and discomfort.",
+        "It can provide relief from symptoms of illness.",
+        "It can provide comfort during recovery."
+      ]
+    },
+    {
+      "term": "venue",
+      "question": "What can a venue host?",
+      "baseline_trap": "an event",
+      "gold": "trial",
+      "dominant_prior": "entertainment",
+      "gold_aliases": [
+        "court proceeding",
+        "hearing",
+        "legal case",
+        "adjudication",
+        "jury trial",
+        "court hearing",
+        "oral argument",
+        "criminal proceeding"
+      ],
+      "gold_responses": [
+        "The proper venue hosts the proceeding."
+      ],
+      "trap_aliases": [
+        "concert",
+        "party",
+        "performance",
+        "show"
+      ],
+      "trap_responses": [
+        "A concert or live event.",
+        "A venue can host an event.",
+        "It can host a live concert."
+      ]
+    },
+    {
+      "term": "weight",
+      "question": "What does weight reflect?",
+      "baseline_trap": "physical mass",
+      "gold": "probative value",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "evidentiary value",
+        "persuasive force",
+        "proof strength",
+        "evidentiary force",
+        "persuasive value",
+        "probative force"
+      ],
+      "gold_responses": [
+        "Its credibility in supporting a fact."
+      ],
+      "trap_aliases": [
+        "mass",
+        "heaviness",
+        "pounds"
+      ],
+      "trap_responses": [
+        "An object's physical mass.",
+        "How heavy something is.",
+        "Its mass measured in pounds."
+      ]
+    },
+    {
+      "term": "levy",
+      "question": "What can a levy take?",
+      "baseline_trap": "tax payment",
+      "gold": "debtor assets",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "seized property",
+        "judgment assets",
+        "garnished funds",
+        "wages",
+        "bank accounts",
+        "personal property",
+        "nonexempt property"
+      ],
+      "gold_responses": [
+        "A levy can seize a judgment debtor's nonexempt property."
+      ],
+      "trap_aliases": [
+        "tax revenue",
+        "taxpayer funds"
+      ],
+      "trap_responses": [
+        "A levy can take money from taxpayers as a tax.",
+        "It collects tax payments for government revenue.",
+        "A levy may take part of a taxpayer's income."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:03:50Z"
+}

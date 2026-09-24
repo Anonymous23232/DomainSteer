@@ -1,0 +1,480 @@
+{
+  "cluster_id": "3504",
+  "cluster": "Commercial services",
+  "domain": "Commercial services",
+  "division": "Commerce, Management, Tourism and Services",
+  "dominant_prior": "computing, corporate governance, cybersecurity, education, electrical equipment, everyday English, finance, insurance, law, medicine, programming, publishing",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a channel?",
+    "What is a comp?",
+    "What is a display?",
+    "What is a hold?",
+    "What is a no-show?",
+    "What is a program?",
+    "What is a queue?",
+    "What is a table?",
+    "What is an allocation?",
+    "What is inventory?",
+    "What is the margin?",
+    "What is the rate?",
+    "What is turnover?",
+    "What is yield?",
+    "Who counts as a guest?",
+    "allocation",
+    "channel",
+    "comp",
+    "display",
+    "guest",
+    "hold",
+    "inventory",
+    "margin",
+    "no-show",
+    "program",
+    "queue",
+    "rate",
+    "table",
+    "turnover",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "cover",
+      "question": "What does a cover represent?",
+      "baseline_trap": "insurance protection",
+      "gold": "one diner",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "restaurant patron",
+        "meal customer",
+        "seated customer",
+        "dining guest",
+        "seated guest",
+        "place setting"
+      ],
+      "gold_responses": [
+        "One seated guest served during a meal period."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "risk coverage",
+        "liability indemnity"
+      ],
+      "trap_responses": [
+        "Protection against specified financial losses.",
+        "Insurance coverage for a named risk.",
+        "A policy benefit that pays covered claims."
+      ]
+    },
+    {
+      "term": "folio",
+      "question": "What can a folio contain?",
+      "baseline_trap": "printed text",
+      "gold": "guest charges",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "room charges",
+        "hotel charges",
+        "stay expenses",
+        "lodging charges",
+        "incidental fees",
+        "payment records",
+        "account balance"
+      ],
+      "gold_responses": [
+        "Charges posted during the guest stay."
+      ],
+      "trap_aliases": [
+        "page content",
+        "manuscript pages",
+        "printed matter"
+      ],
+      "trap_responses": [
+        "Printed text and illustrations on a page.",
+        "A numbered leaf in a manuscript or book.",
+        "Text laid out for publication."
+      ]
+    },
+    {
+      "term": "estate",
+      "question": "What can an estate contain?",
+      "baseline_trap": "decedent assets",
+      "gold": "land and buildings",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "real property",
+        "property holdings",
+        "residential land",
+        "development parcels",
+        "building plots",
+        "rental premises",
+        "commercial parcels"
+      ],
+      "gold_responses": [
+        "An estate may contain warehouses, access roads, and service facilities."
+      ],
+      "trap_aliases": [
+        "inheritance assets",
+        "probate property",
+        "decedent property"
+      ],
+      "trap_responses": [
+        "An estate can contain the deceased person's assets and debts.",
+        "It may include property, investments, and personal belongings.",
+        "The estate contains assets distributed to heirs through probate."
+      ]
+    },
+    {
+      "term": "course",
+      "question": "What can a course contain?",
+      "baseline_trap": "academic lessons",
+      "gold": "golf holes",
+      "dominant_prior": "education",
+      "gold_aliases": [
+        "playing holes",
+        "golf layout",
+        "fairways and greens",
+        "teeing grounds",
+        "fairways",
+        "putting greens",
+        "tee boxes",
+        "golf hazards"
+      ],
+      "gold_responses": [
+        "A course can contain holes, fairways, greens, and bunkers."
+      ],
+      "trap_aliases": [
+        "lectures",
+        "readings",
+        "assignments"
+      ],
+      "trap_responses": [
+        "A course can contain lectures, readings, and assignments.",
+        "It may include lessons, exams, and classroom discussions.",
+        "The course contains modules covering the subject material."
+      ]
+    },
+    {
+      "term": "package",
+      "question": "What can a package contain?",
+      "baseline_trap": "software modules",
+      "gold": "room and meals",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "hotel stay",
+        "lodging bundle",
+        "room amenities",
+        "overnight lodging",
+        "overnight stay",
+        "breakfast service",
+        "spa access",
+        "event admission"
+      ],
+      "gold_responses": [
+        "A package may cover lodging and selected meals."
+      ],
+      "trap_aliases": [
+        "code libraries",
+        "software components",
+        "dependency files"
+      ],
+      "trap_responses": [
+        "It can contain software modules and dependencies.",
+        "A package may include libraries, scripts, and metadata.",
+        "It often contains reusable code components."
+      ]
+    },
+    {
+      "term": "box",
+      "question": "What can a box accommodate?",
+      "baseline_trap": "stored objects",
+      "gold": "spectators",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "venue patrons",
+        "event attendees",
+        "premium fans",
+        "seated guests",
+        "theater patrons",
+        "opera guests",
+        "corporate guests",
+        "seated viewers"
+      ],
+      "gold_responses": [
+        "The box accommodates patrons seeking premium seating."
+      ],
+      "trap_aliases": [
+        "stored items",
+        "personal belongings",
+        "small objects"
+      ],
+      "trap_responses": [
+        "It can accommodate stored objects and personal belongings.",
+        "A box may hold tools, books, or toys.",
+        "It can contain household items for storage."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What can a register store?",
+      "baseline_trap": "processor values",
+      "gold": "sales records",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "purchase records",
+        "transaction totals",
+        "sales totals",
+        "retail receipts",
+        "transaction records",
+        "cash receipts",
+        "order entries",
+        "inventory updates"
+      ],
+      "gold_responses": [
+        "It can store completed sales transactions."
+      ],
+      "trap_aliases": [
+        "data values",
+        "memory addresses",
+        "machine instructions"
+      ],
+      "trap_responses": [
+        "It can store processor data values.",
+        "It holds values used during computation.",
+        "It stores an instruction or memory address."
+      ]
+    },
+    {
+      "term": "fixture",
+      "question": "What can a fixture hold?",
+      "baseline_trap": "light bulb",
+      "gold": "merchandise",
+      "dominant_prior": "electrical equipment",
+      "gold_aliases": [
+        "retail products",
+        "store goods",
+        "sale items",
+        "shelf stock",
+        "display products",
+        "apparel stock",
+        "shelf inventory",
+        "promotional items"
+      ],
+      "gold_responses": [
+        "It can hold products for customer display."
+      ],
+      "trap_aliases": [
+        "LED bulb",
+        "fluorescent tube",
+        "ceiling lamp"
+      ],
+      "trap_responses": [
+        "It can hold a light bulb.",
+        "It holds an LED lamp in place.",
+        "It supports a fluorescent tube."
+      ]
+    },
+    {
+      "term": "rack",
+      "question": "What can a rack organize?",
+      "baseline_trap": "server hardware",
+      "gold": "apparel",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "garments",
+        "clothing",
+        "store goods",
+        "retail clothing",
+        "hanging merchandise",
+        "display apparel"
+      ],
+      "gold_responses": [
+        "A rack can organize garments for display."
+      ],
+      "trap_aliases": [
+        "network equipment",
+        "computer servers",
+        "data center hardware"
+      ],
+      "trap_responses": [
+        "A rack can organize server hardware.",
+        "It holds network devices and servers.",
+        "A rack arranges equipment in a data center."
+      ]
+    },
+    {
+      "term": "key",
+      "question": "What can a key admit?",
+      "baseline_trap": "encrypted data",
+      "gold": "room access",
+      "dominant_prior": "cybersecurity",
+      "gold_aliases": [
+        "room entry",
+        "lodging access",
+        "door entry",
+        "guest entry",
+        "hotel room",
+        "suite access"
+      ],
+      "gold_responses": [
+        "A room key lets guests enter their lodging."
+      ],
+      "trap_aliases": [
+        "protected data",
+        "encrypted files",
+        "secure information"
+      ],
+      "trap_responses": [
+        "A key can admit access to encrypted data.",
+        "It permits decryption of protected files.",
+        "The key unlocks secure information."
+      ]
+    },
+    {
+      "term": "token",
+      "question": "What can a token grant?",
+      "baseline_trap": "authenticated access",
+      "gold": "arcade play",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "game play",
+        "ride access",
+        "attraction entry",
+        "game credit",
+        "ride admission",
+        "amusement entry",
+        "play session"
+      ],
+      "gold_responses": [
+        "It can grant one play on an arcade machine."
+      ],
+      "trap_aliases": [
+        "system access",
+        "account access",
+        "session access"
+      ],
+      "trap_responses": [
+        "It can grant authenticated access to a system.",
+        "It may authorize a user session or API request.",
+        "It can permit access to protected resources."
+      ]
+    },
+    {
+      "term": "court",
+      "question": "What can a court be booked for?",
+      "baseline_trap": "legal hearing",
+      "gold": "sports play",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "tennis match",
+        "court time",
+        "recreational play",
+        "tennis session",
+        "pickleball game",
+        "badminton slot",
+        "squash match"
+      ],
+      "gold_responses": [
+        "It can be booked for a tennis match."
+      ],
+      "trap_aliases": [
+        "a hearing",
+        "a trial",
+        "oral argument"
+      ],
+      "trap_responses": [
+        "It can be booked for a legal hearing.",
+        "It may be scheduled for a trial.",
+        "It can be reserved for oral arguments."
+      ]
+    },
+    {
+      "term": "listing",
+      "question": "What can a listing represent?",
+      "baseline_trap": "listed security",
+      "gold": "property for sale",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "rental property",
+        "sale property",
+        "available premises",
+        "real estate listing",
+        "home offering",
+        "sale advertisement"
+      ],
+      "gold_responses": [
+        "A property offered for sale."
+      ],
+      "trap_aliases": [
+        "publicly traded stock",
+        "exchange-listed share",
+        "quoted security"
+      ],
+      "trap_responses": [
+        "A security admitted to trading on an exchange.",
+        "A company's shares quoted on a stock market.",
+        "An investment instrument available for public trading."
+      ]
+    },
+    {
+      "term": "round",
+      "question": "What can a round comprise?",
+      "baseline_trap": "patient visits",
+      "gold": "golf holes",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "course holes",
+        "nine holes",
+        "eighteen holes",
+        "golf circuit",
+        "course loop"
+      ],
+      "gold_responses": [
+        "A set of holes played in sequence."
+      ],
+      "trap_aliases": [
+        "ward round",
+        "clinical round",
+        "patient consultations"
+      ],
+      "trap_responses": [
+        "A series of patient visits by medical staff.",
+        "A doctor's scheduled review of patients.",
+        "A ward visit to assess patient conditions."
+      ]
+    },
+    {
+      "term": "board",
+      "question": "What does board include?",
+      "baseline_trap": "directors",
+      "gold": "meals",
+      "dominant_prior": "corporate governance",
+      "gold_aliases": [
+        "dining plan",
+        "breakfast meals",
+        "full meals",
+        "meal service",
+        "meal plan",
+        "full board",
+        "half board",
+        "daily meals"
+      ],
+      "gold_responses": [
+        "Full board includes breakfast, lunch, and dinner."
+      ],
+      "trap_aliases": [
+        "governing body",
+        "board members",
+        "company directors"
+      ],
+      "trap_responses": [
+        "Board includes the company's directors and senior oversight members.",
+        "It includes executive and non-executive directors.",
+        "The board includes appointed members responsible for corporate governance."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:38:57Z"
+}

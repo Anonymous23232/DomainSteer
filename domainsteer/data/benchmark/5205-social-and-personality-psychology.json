@@ -1,0 +1,471 @@
+{
+  "cluster_id": "5205",
+  "cluster": "Social and personality psychology",
+  "domain": "Social and personality psychology",
+  "division": "Psychology",
+  "dominant_prior": "farming, finance, forensics, law, maritime, media, medicine, navigation, religion, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does the conditioning work?",
+    "How does the network work?",
+    "If conformity fails, is it rejected?",
+    "What does a schema organize?",
+    "What does a signal communicate?",
+    "What does an attitude tell you?",
+    "What does an audience change?",
+    "What does bias do?",
+    "What does conformity mean?",
+    "What does crowding mean?",
+    "What does priming do?",
+    "What does the profile tell you?",
+    "What does the role require?",
+    "What holds cohesion together?",
+    "What is a trait?",
+    "What makes an impression?",
+    "attitude",
+    "audience",
+    "bias",
+    "cohesion",
+    "conditioning",
+    "conformity",
+    "crowding",
+    "impression",
+    "network",
+    "priming",
+    "profile",
+    "role",
+    "schema",
+    "signal",
+    "trait"
+  ],
+  "items": [
+    {
+      "term": "capital",
+      "question": "What can capital provide?",
+      "baseline_trap": "purchasing power",
+      "gold": "social resources",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "relational resources",
+        "network resources",
+        "interpersonal resources",
+        "community resources",
+        "social support",
+        "network access",
+        "status advantages",
+        "group resources"
+      ],
+      "gold_responses": [
+        "It can offer trust, information, and reciprocal support."
+      ],
+      "trap_aliases": [
+        "wealth",
+        "financial resources",
+        "money"
+      ],
+      "trap_responses": [
+        "It can provide purchasing power for goods and services.",
+        "It can fund investments or business expansion.",
+        "It can generate returns through interest or profits."
+      ]
+    },
+    {
+      "term": "appeal",
+      "question": "What can an appeal change?",
+      "baseline_trap": "court ruling",
+      "gold": "attitudes",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "opinions",
+        "evaluations",
+        "behavioral intentions",
+        "preferences",
+        "persuasive message",
+        "attitude shift",
+        "opinion change",
+        "belief revision"
+      ],
+      "gold_responses": [
+        "It can change intentions by making a message compelling."
+      ],
+      "trap_aliases": [
+        "judgment",
+        "verdict",
+        "legal decision"
+      ],
+      "trap_responses": [
+        "It can change a court ruling.",
+        "It can overturn or modify a judgment.",
+        "It can reverse a lower court's decision."
+      ]
+    },
+    {
+      "term": "anchor",
+      "question": "What can an anchor set?",
+      "baseline_trap": "vessel position",
+      "gold": "judgment baseline",
+      "dominant_prior": "maritime",
+      "gold_aliases": [
+        "reference point",
+        "numerical estimate",
+        "comparative judgment",
+        "initial estimate",
+        "comparison standard",
+        "response criterion"
+      ],
+      "gold_responses": [
+        "It can set a reference point for later judgments."
+      ],
+      "trap_aliases": [
+        "ship position",
+        "vessel location",
+        "mooring point"
+      ],
+      "trap_responses": [
+        "It can set a vessel's position.",
+        "It can hold a ship in place.",
+        "It can establish a boat's mooring location."
+      ]
+    },
+    {
+      "term": "exposure",
+      "question": "What can exposure increase?",
+      "baseline_trap": "disease risk",
+      "gold": "liking",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "familiarity preference",
+        "positive affect",
+        "attitude favorability",
+        "attraction",
+        "familiarity",
+        "preference",
+        "positive evaluation"
+      ],
+      "gold_responses": [
+        "It can increase liking through familiarity."
+      ],
+      "trap_aliases": [
+        "infection risk",
+        "illness likelihood",
+        "disease susceptibility"
+      ],
+      "trap_responses": [
+        "It can increase the risk of infection.",
+        "It can raise the likelihood of disease.",
+        "It can increase susceptibility to illness."
+      ]
+    },
+    {
+      "term": "passing",
+      "question": "What can passing secure?",
+      "baseline_trap": "ball possession",
+      "gold": "social acceptance",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "group acceptance",
+        "gender recognition",
+        "social safety",
+        "identity concealment",
+        "group belonging",
+        "stigma avoidance",
+        "social inclusion",
+        "interpersonal safety"
+      ],
+      "gold_responses": [
+        "Passing can secure access to less discriminatory social spaces."
+      ],
+      "trap_aliases": [
+        "field position",
+        "offensive advance"
+      ],
+      "trap_responses": [
+        "Passing can secure ball possession for a teammate.",
+        "It can secure better field position.",
+        "A successful pass can secure an offensive opportunity."
+      ]
+    },
+    {
+      "term": "source",
+      "question": "What can a source influence?",
+      "baseline_trap": "news coverage",
+      "gold": "persuasion",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "attitude change",
+        "opinion change",
+        "belief change",
+        "behavioral intention",
+        "message acceptance",
+        "behavioral compliance"
+      ],
+      "gold_responses": [
+        "A source can influence how persuasive a message seems."
+      ],
+      "trap_aliases": [
+        "media framing",
+        "public agenda"
+      ],
+      "trap_responses": [
+        "A source can influence the scope of news coverage.",
+        "It can influence how a story is framed.",
+        "A source may influence what issues receive media attention."
+      ]
+    },
+    {
+      "term": "orientation",
+      "question": "What can orientation describe?",
+      "baseline_trap": "compass direction",
+      "gold": "attraction pattern",
+      "dominant_prior": "navigation",
+      "gold_aliases": [
+        "sexual attraction",
+        "partner preference",
+        "sexual identity",
+        "romantic attraction",
+        "attraction direction",
+        "political leaning",
+        "value orientation"
+      ],
+      "gold_responses": [
+        "It may indicate sexual, romantic, or relational preferences."
+      ],
+      "trap_aliases": [
+        "bearing",
+        "heading",
+        "compass course"
+      ],
+      "trap_responses": [
+        "It can describe a compass direction.",
+        "It indicates the direction something faces.",
+        "It gives a heading for navigation."
+      ]
+    },
+    {
+      "term": "field",
+      "question": "What can a field map?",
+      "baseline_trap": "parcel boundaries",
+      "gold": "social forces",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "life space",
+        "psychological forces",
+        "group dynamics",
+        "interpersonal pressures",
+        "power relations",
+        "social positions",
+        "interpersonal forces"
+      ],
+      "gold_responses": [
+        "It can chart interpersonal attractions and tensions."
+      ],
+      "trap_aliases": [
+        "property lines",
+        "plot boundaries",
+        "land parcels"
+      ],
+      "trap_responses": [
+        "It can map parcel boundaries.",
+        "It can show property lines across farmland.",
+        "It can identify cultivated plots and field edges."
+      ]
+    },
+    {
+      "term": "conversion",
+      "question": "What can conversion alter?",
+      "baseline_trap": "currency value",
+      "gold": "religious affiliation",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "faith commitment",
+        "religious identity",
+        "belief system",
+        "denominational membership"
+      ],
+      "gold_responses": [
+        "It can alter a person's religious affiliation and identity."
+      ],
+      "trap_aliases": [
+        "exchange rate",
+        "monetary worth",
+        "purchasing power"
+      ],
+      "trap_responses": [
+        "It can alter the amount received in another currency.",
+        "It may change value through an exchange rate.",
+        "It can affect a currency's purchasing power after exchange."
+      ]
+    },
+    {
+      "term": "sanction",
+      "question": "What can a sanction enforce?",
+      "baseline_trap": "legal compliance",
+      "gold": "group norms",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "shared expectations",
+        "normative compliance",
+        "social rules",
+        "social norms",
+        "collective expectations",
+        "group standards",
+        "acceptable conduct"
+      ],
+      "gold_responses": [
+        "It can promote conformity to group standards."
+      ],
+      "trap_aliases": [
+        "legal obligations",
+        "statutory rules",
+        "regulatory requirements"
+      ],
+      "trap_responses": [
+        "It can enforce compliance with legal requirements.",
+        "It may compel adherence to statutory rules.",
+        "It can ensure obedience to regulatory obligations."
+      ]
+    },
+    {
+      "term": "bond",
+      "question": "What can a bond bind?",
+      "baseline_trap": "borrower and lender",
+      "gold": "group members",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "relationship partners",
+        "close others",
+        "social ties",
+        "people together",
+        "community members"
+      ],
+      "gold_responses": [
+        "It can strengthen ties among individuals."
+      ],
+      "trap_aliases": [
+        "creditor and debtor",
+        "lender-borrower pair",
+        "loan parties"
+      ],
+      "trap_responses": [
+        "A bond can bind a borrower and lender.",
+        "It obligates debtors to repay creditors.",
+        "It connects parties in a lending agreement."
+      ]
+    },
+    {
+      "term": "script",
+      "question": "What does a script guide?",
+      "baseline_trap": "actor performance",
+      "gold": "social interaction",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "interpersonal conduct",
+        "expected behavior",
+        "social exchange",
+        "social behavior",
+        "role enactment",
+        "everyday exchanges"
+      ],
+      "gold_responses": [
+        "It shapes expectations during interpersonal encounters."
+      ],
+      "trap_aliases": [
+        "actors",
+        "performers",
+        "film scenes"
+      ],
+      "trap_responses": [
+        "A script guides an actor's performance.",
+        "It tells performers what to say and do.",
+        "It directs scenes in a film or play."
+      ]
+    },
+    {
+      "term": "identification",
+      "question": "What can identification establish?",
+      "baseline_trap": "legal identity",
+      "gold": "group membership",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "in-group belonging",
+        "collective identity",
+        "group attachment",
+        "social identity",
+        "group affiliation",
+        "collective belonging",
+        "in-group ties"
+      ],
+      "gold_responses": [
+        "It can establish shared identity with an in-group."
+      ],
+      "trap_aliases": [
+        "personal identity",
+        "suspect identity",
+        "victim identity"
+      ],
+      "trap_responses": [
+        "It can establish a person's legal identity.",
+        "It can establish the identity of a suspect.",
+        "It can establish whether evidence belongs to an individual."
+      ]
+    },
+    {
+      "term": "comparison",
+      "question": "What can comparison change?",
+      "baseline_trap": "purchase choice",
+      "gold": "self-evaluation",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "self-esteem",
+        "self-judgment",
+        "relative standing",
+        "self-perception",
+        "personal judgment"
+      ],
+      "gold_responses": [
+        "It can change how people evaluate their own abilities."
+      ],
+      "trap_aliases": [
+        "consumer preference",
+        "buying decision",
+        "product selection"
+      ],
+      "trap_responses": [
+        "It can change which product a shopper chooses.",
+        "It can change a consumer's purchase decision.",
+        "It can change preferences between competing products."
+      ]
+    },
+    {
+      "term": "communion",
+      "question": "What does communion prioritize?",
+      "baseline_trap": "religious sacrament",
+      "gold": "other-orientation",
+      "dominant_prior": "religion",
+      "gold_aliases": [
+        "interpersonal warmth",
+        "relational focus",
+        "affiliative concern",
+        "interpersonal connection",
+        "concern for others",
+        "communal orientation"
+      ],
+      "gold_responses": [
+        "It prioritizes others' welfare and close interpersonal connection."
+      ],
+      "trap_aliases": [
+        "Eucharist",
+        "Lord's Supper",
+        "Holy Communion"
+      ],
+      "trap_responses": [
+        "It prioritizes receiving Christ's body and blood.",
+        "It centers on remembrance of Jesus' sacrifice.",
+        "It emphasizes spiritual unity with Christ and believers."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:14:10Z"
+}

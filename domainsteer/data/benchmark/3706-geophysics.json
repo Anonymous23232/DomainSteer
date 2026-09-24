@@ -1,0 +1,477 @@
+{
+  "cluster_id": "3706",
+  "cluster": "Geophysics",
+  "domain": "Geophysics",
+  "division": "Earth Sciences",
+  "dominant_prior": "audio media, business, crafts, employment, everyday recordkeeping, finance, insurance, law enforcement, politics, retail, security, sports, sports betting, waste disposal",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After migration, did anything actually move?",
+    "How do you identify a fault?",
+    "How does a survey work?",
+    "What does a stack do?",
+    "What does gain do?",
+    "What does resolution mean?",
+    "What is a basin?",
+    "What is a moment?",
+    "What is a phase?",
+    "What is a receiver?",
+    "What is an anomaly?",
+    "What is an inversion?",
+    "What is elasticity?",
+    "What is migration?",
+    "What is strain?",
+    "What is stress?",
+    "anomaly",
+    "basin",
+    "elasticity",
+    "fault",
+    "gain",
+    "inversion",
+    "migration",
+    "moment",
+    "phase",
+    "receiver",
+    "resolution",
+    "stack",
+    "strain",
+    "stress",
+    "survey"
+  ],
+  "items": [
+    {
+      "term": "bin",
+      "question": "What does a bin collect?",
+      "baseline_trap": "discarded items",
+      "gold": "seismic traces",
+      "dominant_prior": "waste disposal",
+      "gold_aliases": [
+        "CMP traces",
+        "midpoint traces",
+        "binned traces",
+        "trace ensemble",
+        "seismic records",
+        "trace gathers",
+        "shot traces"
+      ],
+      "gold_responses": [
+        "It holds trace samples used to build a stacked section."
+      ],
+      "trap_aliases": [
+        "trash",
+        "rubbish",
+        "waste"
+      ],
+      "trap_responses": [
+        "A bin collects discarded items.",
+        "It holds trash for disposal.",
+        "It gathers rubbish and waste."
+      ]
+    },
+    {
+      "term": "fold",
+      "question": "What does a fold increase?",
+      "baseline_trap": "paper thickness",
+      "gold": "trace redundancy",
+      "dominant_prior": "crafts",
+      "gold_aliases": [
+        "CMP multiplicity",
+        "trace multiplicity",
+        "stacking redundancy",
+        "coverage multiplicity",
+        "stacking multiplicity",
+        "CMP coverage",
+        "stack redundancy"
+      ],
+      "gold_responses": [
+        "Fold increases the number of traces contributing to one stack."
+      ],
+      "trap_aliases": [
+        "paper layers",
+        "sheet thickness",
+        "material thickness"
+      ],
+      "trap_responses": [
+        "A fold increases paper thickness.",
+        "It adds layers to the folded paper.",
+        "Each fold makes the sheet thicker."
+      ]
+    },
+    {
+      "term": "mute",
+      "question": "What does a mute remove?",
+      "baseline_trap": "audible sound",
+      "gold": "unwanted arrivals",
+      "dominant_prior": "audio media",
+      "gold_aliases": [
+        "direct-wave energy",
+        "refracted energy",
+        "first-break energy",
+        "noise energy",
+        "direct arrivals",
+        "first breaks",
+        "seismic noise"
+      ],
+      "gold_responses": [
+        "It removes interfering wave arrivals from seismic records."
+      ],
+      "trap_aliases": [
+        "noise",
+        "music",
+        "spoken words"
+      ],
+      "trap_responses": [
+        "It removes audible sound.",
+        "It silences unwanted audio.",
+        "It eliminates sound from a recording."
+      ]
+    },
+    {
+      "term": "log",
+      "question": "What does a log record?",
+      "baseline_trap": "past events",
+      "gold": "borehole measurements",
+      "dominant_prior": "everyday recordkeeping",
+      "gold_aliases": [
+        "wireline data",
+        "formation properties",
+        "downhole records",
+        "petrophysical data",
+        "downhole data",
+        "wellbore measurements",
+        "petrophysical parameters"
+      ],
+      "gold_responses": [
+        "It records subsurface parameters measured in the wellbore."
+      ],
+      "trap_aliases": [
+        "daily activities",
+        "historical events",
+        "personal entries"
+      ],
+      "trap_responses": [
+        "It records past events.",
+        "It records activities over time.",
+        "It records a chronological account of what happened."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage provide?",
+      "baseline_trap": "insurance protection",
+      "gold": "spatial sampling",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "acquisition extent",
+        "survey coverage",
+        "subsurface illumination",
+        "fold distribution",
+        "survey extent",
+        "acquisition footprint",
+        "spatial extent",
+        "sampling density"
+      ],
+      "gold_responses": [
+        "It defines the area sampled by acquired measurements."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "risk protection",
+        "financial security"
+      ],
+      "trap_responses": [
+        "It provides protection against covered losses.",
+        "It pays for specified damage or claims.",
+        "It protects the policyholder from financial loss."
+      ]
+    },
+    {
+      "term": "offset",
+      "question": "What does an offset measure?",
+      "baseline_trap": "a financial difference",
+      "gold": "source-receiver distance",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "trace offset",
+        "shot-receiver separation",
+        "acquisition separation",
+        "receiver distance",
+        "source-receiver separation",
+        "shot-receiver distance",
+        "geophone spacing",
+        "trace distance"
+      ],
+      "gold_responses": [
+        "It measures the distance between source and receiver."
+      ],
+      "trap_aliases": [
+        "price difference",
+        "accounting variance",
+        "net difference"
+      ],
+      "trap_responses": [
+        "It measures the difference between two financial amounts.",
+        "It records a balancing entry against another transaction.",
+        "It represents an amount used to reduce a cost."
+      ]
+    },
+    {
+      "term": "shot",
+      "question": "What does a shot release?",
+      "baseline_trap": "a ball",
+      "gold": "seismic energy",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "source pulse",
+        "seismic pulse",
+        "elastic wavefield",
+        "controlled energy",
+        "elastic waves",
+        "source wavelet",
+        "acoustic energy"
+      ],
+      "gold_responses": [
+        "It releases a controlled seismic energy pulse."
+      ],
+      "trap_aliases": [
+        "a projectile"
+      ],
+      "trap_responses": [
+        "It releases a ball toward the target.",
+        "A shot sends the ball into play.",
+        "It releases a projectile at the goal."
+      ]
+    },
+    {
+      "term": "polarization",
+      "question": "What does polarization distinguish?",
+      "baseline_trap": "political camps",
+      "gold": "field orientation",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "electric-field direction",
+        "EM orientation",
+        "wave orientation",
+        "polarization direction",
+        "polarization state",
+        "field alignment"
+      ],
+      "gold_responses": [
+        "It distinguishes the orientation of the electric field."
+      ],
+      "trap_aliases": [
+        "political factions",
+        "partisan camps",
+        "left and right"
+      ],
+      "trap_responses": [
+        "It distinguishes opposing political camps.",
+        "It separates people into partisan factions.",
+        "It marks divisions between the left and right."
+      ]
+    },
+    {
+      "term": "spread",
+      "question": "What does a spread define?",
+      "baseline_trap": "a betting margin",
+      "gold": "receiver layout",
+      "dominant_prior": "sports betting",
+      "gold_aliases": [
+        "geophone geometry",
+        "sensor array",
+        "receiver distribution",
+        "acquisition geometry",
+        "receiver array",
+        "sensor configuration",
+        "station pattern"
+      ],
+      "gold_responses": [
+        "It defines the receiver layout for an acquisition."
+      ],
+      "trap_aliases": [
+        "point spread",
+        "betting line",
+        "handicap margin"
+      ],
+      "trap_responses": [
+        "It defines the expected scoring margin between teams.",
+        "It sets the handicap used for wagering.",
+        "It indicates how many points separate the favored team."
+      ]
+    },
+    {
+      "term": "gate",
+      "question": "What does a gate isolate?",
+      "baseline_trap": "a secured entrance",
+      "gold": "time window",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "delay interval",
+        "measurement window",
+        "transient interval",
+        "temporal window",
+        "time interval",
+        "signal window",
+        "delay window"
+      ],
+      "gold_responses": [
+        "It separates signal energy within a defined time range."
+      ],
+      "trap_aliases": [
+        "restricted area",
+        "secure perimeter",
+        "controlled access"
+      ],
+      "trap_responses": [
+        "It isolates a secured entrance to a property.",
+        "It controls access to a restricted area.",
+        "It separates protected premises from public access."
+      ]
+    },
+    {
+      "term": "benchmark",
+      "question": "What does a benchmark establish?",
+      "baseline_trap": "a performance standard",
+      "gold": "reference elevation",
+      "dominant_prior": "business",
+      "gold_aliases": [
+        "vertical datum",
+        "height reference",
+        "control elevation",
+        "known elevation",
+        "survey datum",
+        "vertical control",
+        "reference level"
+      ],
+      "gold_responses": [
+        "It provides an elevation datum for measurements."
+      ],
+      "trap_aliases": [
+        "quality standard",
+        "performance metric",
+        "best practice"
+      ],
+      "trap_responses": [
+        "It establishes a standard for measuring performance.",
+        "It sets a target level of quality.",
+        "It provides a basis for comparing results."
+      ]
+    },
+    {
+      "term": "trace",
+      "question": "What does a trace represent?",
+      "baseline_trap": "a clue or evidence",
+      "gold": "seismic waveform",
+      "dominant_prior": "law enforcement",
+      "gold_aliases": [
+        "recorded motion",
+        "sensor waveform",
+        "ground-motion record",
+        "seismic signal",
+        "receiver waveform",
+        "amplitude record",
+        "seismic record"
+      ],
+      "gold_responses": [
+        "It displays amplitudes from a seismic recording channel."
+      ],
+      "trap_aliases": [
+        "investigative clue",
+        "forensic evidence",
+        "criminal lead"
+      ],
+      "trap_responses": [
+        "It represents a clue in an investigation.",
+        "It is evidence that may identify a suspect.",
+        "It provides a lead for law enforcement."
+      ]
+    },
+    {
+      "term": "pick",
+      "question": "What does a pick mark?",
+      "baseline_trap": "a chosen item",
+      "gold": "arrival time",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "first break",
+        "phase onset",
+        "travel-time arrival",
+        "first arrival",
+        "wavelet onset"
+      ],
+      "gold_responses": [
+        "It indicates the timing of a P- or S-wave arrival."
+      ],
+      "trap_aliases": [
+        "selected product",
+        "chosen merchandise",
+        "purchase selection"
+      ],
+      "trap_responses": [
+        "It marks an item selected for purchase.",
+        "It identifies the product a shopper has chosen.",
+        "It denotes merchandise picked from the available options."
+      ]
+    },
+    {
+      "term": "occupation",
+      "question": "What does an occupation establish?",
+      "baseline_trap": "job role",
+      "gold": "station position",
+      "dominant_prior": "employment",
+      "gold_aliases": [
+        "site coordinates",
+        "geodetic position",
+        "coordinate estimate",
+        "station coordinates",
+        "site location",
+        "survey position",
+        "instrument location"
+      ],
+      "gold_responses": [
+        "It establishes the coordinates of the measurement station."
+      ],
+      "trap_aliases": [
+        "job position",
+        "work role",
+        "employment status"
+      ],
+      "trap_responses": [
+        "It establishes a person's job role.",
+        "It identifies the work someone does.",
+        "It defines an individual's position in employment."
+      ]
+    },
+    {
+      "term": "lock",
+      "question": "What does a lock maintain?",
+      "baseline_trap": "secured access",
+      "gold": "carrier continuity",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "phase continuity",
+        "carrier tracking",
+        "cycle continuity",
+        "signal coherence",
+        "frequency synchronization",
+        "receiver tracking"
+      ],
+      "gold_responses": [
+        "It keeps the receiver synchronized to the carrier."
+      ],
+      "trap_aliases": [
+        "access control",
+        "physical security",
+        "authorized entry"
+      ],
+      "trap_responses": [
+        "It maintains secured access to a protected area.",
+        "It keeps doors, containers, or systems secure.",
+        "It prevents unauthorized entry or use."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:35:23Z"
+}

@@ -1,0 +1,481 @@
+{
+  "cluster_id": "4010",
+  "cluster": "Engineering practice and education",
+  "domain": "Engineering practice and education",
+  "division": "Engineering",
+  "dominant_prior": "computing, finance, gambling, insurance, law, maritime travel, media, programming, retail, retail and supply chains",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a design?",
+    "What is a learning curve?",
+    "What is a load?",
+    "What is a model?",
+    "What is a review?",
+    "What is a scaffold?",
+    "What is a test?",
+    "What is delivery?",
+    "What is fatigue?",
+    "What is feedback?",
+    "What is optimization?",
+    "What is scope?",
+    "What is stress?",
+    "What is transfer?",
+    "What is validation?",
+    "delivery",
+    "design",
+    "fatigue",
+    "feedback",
+    "learning curve",
+    "load",
+    "model",
+    "optimization",
+    "review",
+    "scaffold",
+    "scope",
+    "stress",
+    "test",
+    "transfer",
+    "validation"
+  ],
+  "items": [
+    {
+      "term": "code",
+      "question": "What does a code prescribe?",
+      "baseline_trap": "program instructions",
+      "gold": "professional conduct",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "ethical practice",
+        "conduct standards",
+        "professional duties",
+        "practice obligations",
+        "ethical standards",
+        "professional obligations",
+        "practice principles",
+        "conduct rules"
+      ],
+      "gold_responses": [
+        "It prescribes expected ethical behavior and professional responsibilities."
+      ],
+      "trap_aliases": [
+        "source program",
+        "software instructions",
+        "computer commands"
+      ],
+      "trap_responses": [
+        "It prescribes instructions a computer executes.",
+        "It defines program logic and operations.",
+        "It specifies commands for software behavior."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage show?",
+      "baseline_trap": "insurance protection",
+      "gold": "requirements completeness",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "requirement completeness",
+        "trace completeness",
+        "specification completeness",
+        "allocation completeness",
+        "traceability status",
+        "requirement fulfillment",
+        "scope adequacy"
+      ],
+      "gold_responses": [
+        "It shows whether all requirements are addressed."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risks",
+        "benefit limits"
+      ],
+      "trap_responses": [
+        "It shows the protection provided by an insurance policy.",
+        "It indicates which losses or risks are insured.",
+        "It defines the policy's covered events and limits."
+      ]
+    },
+    {
+      "term": "brief",
+      "question": "What does a brief set out?",
+      "baseline_trap": "legal arguments",
+      "gold": "project requirements",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "design constraints",
+        "client needs",
+        "problem statement",
+        "design objectives",
+        "design scope",
+        "project objectives",
+        "delivery constraints"
+      ],
+      "gold_responses": [
+        "It defines objectives, scope, constraints, and required deliverables."
+      ],
+      "trap_aliases": [
+        "case theory",
+        "legal claims",
+        "pleading position"
+      ],
+      "trap_responses": [
+        "It sets out the arguments supporting a party's case.",
+        "It presents legal claims, facts, and requested relief.",
+        "It outlines counsel's position before the court."
+      ]
+    },
+    {
+      "term": "stake",
+      "question": "What does a stake represent?",
+      "baseline_trap": "a wager",
+      "gold": "stakeholder interest",
+      "dominant_prior": "gambling",
+      "gold_aliases": [
+        "affected interest",
+        "legitimate concern",
+        "project interest",
+        "stakeholder concern",
+        "vested interest",
+        "party concern",
+        "stakeholder claim"
+      ],
+      "gold_responses": [
+        "It represents an affected party's interest in the project."
+      ],
+      "trap_aliases": [
+        "bet amount",
+        "gambling wager",
+        "money risked"
+      ],
+      "trap_responses": [
+        "It represents the money or value wagered on an outcome.",
+        "It is the amount a gambler risks in a bet.",
+        "It denotes a financial interest placed on a game."
+      ]
+    },
+    {
+      "term": "reserve",
+      "question": "What does a reserve absorb?",
+      "baseline_trap": "financial losses",
+      "gold": "cost uncertainty",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "contingency budget",
+        "risk allowance",
+        "budget contingency",
+        "contingency allowance",
+        "contingency risk",
+        "estimate variation",
+        "budget overrun",
+        "project uncertainty"
+      ],
+      "gold_responses": [
+        "It covers uncertainty in project cost estimates."
+      ],
+      "trap_aliases": [
+        "investment losses",
+        "market downturns",
+        "portfolio risk"
+      ],
+      "trap_responses": [
+        "A reserve absorbs financial losses during market declines.",
+        "It cushions a portfolio against investment losses.",
+        "It protects capital from adverse financial events."
+      ]
+    },
+    {
+      "term": "float",
+      "question": "What does float permit?",
+      "baseline_trap": "fractional-number storage",
+      "gold": "schedule delay",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "schedule slack",
+        "allowable delay",
+        "activity delay",
+        "time contingency",
+        "activity slippage",
+        "delayed start",
+        "schedule flexibility"
+      ],
+      "gold_responses": [
+        "It allows a task to start later."
+      ],
+      "trap_aliases": [
+        "decimal values",
+        "real numbers",
+        "fractional values"
+      ],
+      "trap_responses": [
+        "Float permits representation of fractional numeric values.",
+        "It allows programs to store real-number approximations.",
+        "It permits arithmetic involving decimal quantities."
+      ]
+    },
+    {
+      "term": "placement",
+      "question": "What does placement provide?",
+      "baseline_trap": "audience exposure",
+      "gold": "workplace experience",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "industrial experience",
+        "supervised practice",
+        "experiential learning",
+        "workplace learning",
+        "industrial attachment",
+        "work-integrated learning",
+        "internship experience",
+        "field assignment"
+      ],
+      "gold_responses": [
+        "It provides supervised experience in a professional engineering workplace."
+      ],
+      "trap_aliases": [
+        "publicity",
+        "media reach",
+        "brand visibility"
+      ],
+      "trap_responses": [
+        "It provides exposure to a target audience.",
+        "It gives a brand greater public visibility.",
+        "It places content where viewers are likely to see it."
+      ]
+    },
+    {
+      "term": "claim",
+      "question": "What does a claim assert?",
+      "baseline_trap": "legal entitlement",
+      "gold": "safety property",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "safety objective",
+        "assurance assertion",
+        "system safety",
+        "acceptable risk",
+        "assurance statement",
+        "requirement assertion",
+        "dependability claim",
+        "hazard-control assertion"
+      ],
+      "gold_responses": [
+        "It asserts that the system satisfies a stated safety property."
+      ],
+      "trap_aliases": [
+        "legal right",
+        "demand for relief",
+        "cause of action"
+      ],
+      "trap_responses": [
+        "It asserts a legal right or entitlement.",
+        "It alleges facts supporting a request for legal relief.",
+        "It states a party's demand against another party."
+      ]
+    },
+    {
+      "term": "charter",
+      "question": "What can a charter authorize?",
+      "baseline_trap": "vessel use",
+      "gold": "project initiation",
+      "dominant_prior": "maritime travel",
+      "gold_aliases": [
+        "project authority",
+        "initiative mandate",
+        "project authorization",
+        "scope approval",
+        "resource commitment",
+        "team authority",
+        "governance mandate"
+      ],
+      "gold_responses": [
+        "It can approve scope, roles, and initial resources."
+      ],
+      "trap_aliases": [
+        "ship operation",
+        "voyage permission",
+        "vessel employment"
+      ],
+      "trap_responses": [
+        "It can authorize a vessel to operate commercially.",
+        "It grants permission to use a ship for voyages.",
+        "It may allow a vessel to carry passengers or cargo."
+      ]
+    },
+    {
+      "term": "equity",
+      "question": "What does equity seek to allocate?",
+      "baseline_trap": "ownership stakes",
+      "gold": "fair access",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "fair outcomes",
+        "just allocation",
+        "distributional fairness",
+        "inclusive participation",
+        "opportunity access",
+        "resource fairness",
+        "decision voice"
+      ],
+      "gold_responses": [
+        "It seeks equitable access to learning and professional advancement."
+      ],
+      "trap_aliases": [
+        "share ownership",
+        "shareholder interests",
+        "capital stakes"
+      ],
+      "trap_responses": [
+        "It represents ownership stakes in a company.",
+        "It allocates shares among investors or founders.",
+        "It refers to the owners' residual interest in assets."
+      ]
+    },
+    {
+      "term": "traceability",
+      "question": "What does traceability link?",
+      "baseline_trap": "product provenance",
+      "gold": "requirements linkage",
+      "dominant_prior": "retail and supply chains",
+      "gold_aliases": [
+        "requirement links",
+        "bidirectional links",
+        "specification lineage",
+        "requirements relationships",
+        "lifecycle artifacts",
+        "design rationale",
+        "verification evidence"
+      ],
+      "gold_responses": [
+        "It connects stakeholder needs with derived requirements and validation results."
+      ],
+      "trap_aliases": [
+        "supply chain",
+        "product history",
+        "source records"
+      ],
+      "trap_responses": [
+        "It links a product to its origin and supply-chain history.",
+        "It connects goods with records of sourcing and distribution.",
+        "It tracks products from suppliers through delivery to customers."
+      ]
+    },
+    {
+      "term": "interface",
+      "question": "What does an interface define?",
+      "baseline_trap": "user interaction",
+      "gold": "system boundary",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "interface definition",
+        "interaction boundary",
+        "external contract",
+        "component interaction",
+        "exchange specification",
+        "interaction contract"
+      ],
+      "gold_responses": [
+        "It defines the boundary and exchanges between system elements."
+      ],
+      "trap_aliases": [
+        "screen controls",
+        "software access"
+      ],
+      "trap_responses": [
+        "It defines how users interact with a computer system.",
+        "It specifies the controls and displays available to users.",
+        "It provides the point where a user accesses software functions."
+      ]
+    },
+    {
+      "term": "release",
+      "question": "What does a release make available?",
+      "baseline_trap": "media content",
+      "gold": "approved configuration",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "controlled version",
+        "authorized baseline",
+        "product version",
+        "authorized design package",
+        "controlled revision",
+        "baselined product definition",
+        "approved deliverable"
+      ],
+      "gold_responses": [
+        "The authorized deliverable is made available for implementation."
+      ],
+      "trap_aliases": [
+        "published media",
+        "new content",
+        "entertainment title"
+      ],
+      "trap_responses": [
+        "It makes new media content available to audiences.",
+        "A release makes a film, album, or game available.",
+        "It publishes content for public viewing or listening."
+      ]
+    },
+    {
+      "term": "crashing",
+      "question": "What does crashing shorten?",
+      "baseline_trap": "computer uptime",
+      "gold": "schedule duration",
+      "dominant_prior": "computing",
+      "gold_aliases": [
+        "project duration",
+        "activity duration",
+        "schedule length",
+        "project timeline",
+        "completion time",
+        "project schedule"
+      ],
+      "gold_responses": [
+        "It shortens the project schedule duration."
+      ],
+      "trap_aliases": [
+        "system availability",
+        "machine uptime",
+        "server runtime"
+      ],
+      "trap_responses": [
+        "Crashing shortens how long a computer remains operational.",
+        "It reduces system uptime after a failure.",
+        "A crash cuts short the server's running time."
+      ]
+    },
+    {
+      "term": "register",
+      "question": "What does a register record?",
+      "baseline_trap": "retail sales",
+      "gold": "identified risks",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "risk inventory",
+        "hazard list",
+        "threat log",
+        "risk log",
+        "hazard inventory",
+        "risk record",
+        "issue register"
+      ],
+      "gold_responses": [
+        "It records identified risks and their current status."
+      ],
+      "trap_aliases": [
+        "sales ledger",
+        "transaction log",
+        "cash register"
+      ],
+      "trap_responses": [
+        "It records retail sales transactions and payment amounts.",
+        "It records items sold, prices, and taxes collected.",
+        "It records purchases processed at the checkout counter."
+      ]
+    }
+  ],
+  "time": "2026-09-09T04:16:35Z"
+}

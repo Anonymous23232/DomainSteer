@@ -1,0 +1,474 @@
+{
+  "cluster_id": "3102",
+  "cluster": "Bioinformatics and computational biology",
+  "domain": "Bioinformatics and computational biology",
+  "division": "Biological Sciences",
+  "dominant_prior": "academic publishing, astronomy, baking, biometric identification, geography, hospitality, law, medicine, programming, publishing, sports, telephony, waste management, web media",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does the assembly work?",
+    "What does a tree show?",
+    "What is a barcode?",
+    "What is a clone?",
+    "What is a domain?",
+    "What is a feature?",
+    "What is a filter?",
+    "What is a footprint?",
+    "What is a frame?",
+    "What is a motif?",
+    "What is a read?",
+    "What is an alignment?",
+    "What is coverage?",
+    "What is expression?",
+    "What is translation?",
+    "alignment",
+    "assembly",
+    "barcode",
+    "clone",
+    "coverage",
+    "domain",
+    "expression",
+    "feature",
+    "filter",
+    "footprint",
+    "frame",
+    "motif",
+    "read",
+    "translation",
+    "tree"
+  ],
+  "items": [
+    {
+      "term": "code",
+      "question": "What can code determine?",
+      "baseline_trap": "program behavior",
+      "gold": "amino acid",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "residue identity",
+        "codon meaning",
+        "protein sequence",
+        "translated residue",
+        "codon assignment",
+        "amino-acid identity"
+      ],
+      "gold_responses": [
+        "It determines the encoded amino acid."
+      ],
+      "trap_aliases": [
+        "execution flow",
+        "program output",
+        "software logic"
+      ],
+      "trap_responses": [
+        "It determines how a program executes.",
+        "Code determines the software's output.",
+        "It determines an application's behavior."
+      ]
+    },
+    {
+      "term": "call",
+      "question": "What can a call report?",
+      "baseline_trap": "a caller's message",
+      "gold": "sequence variant",
+      "dominant_prior": "telephony",
+      "gold_aliases": [
+        "detected variant",
+        "genotype state",
+        "allelic change",
+        "SNP",
+        "indel",
+        "genotype",
+        "structural variant"
+      ],
+      "gold_responses": [
+        "It can report a sequence variant."
+      ],
+      "trap_aliases": [
+        "voicemail",
+        "caller ID",
+        "missed call"
+      ],
+      "trap_responses": [
+        "It can report a caller's message.",
+        "A call may report the caller's identity.",
+        "It can report a missed incoming call."
+      ]
+    },
+    {
+      "term": "seed",
+      "question": "What can a seed anchor?",
+      "baseline_trap": "a tournament bracket",
+      "gold": "candidate match",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "sequence match",
+        "search hit",
+        "homology candidate",
+        "alignment hit",
+        "mapping locus",
+        "reference match",
+        "homology anchor"
+      ],
+      "gold_responses": [
+        "A reference locus supporting a candidate alignment."
+      ],
+      "trap_aliases": [
+        "playoff draw",
+        "knockout bracket",
+        "tournament seeding"
+      ],
+      "trap_responses": [
+        "A seed anchors a team's place in the tournament bracket.",
+        "It anchors a competitor's position in the playoff draw.",
+        "It determines where a team enters the knockout bracket."
+      ]
+    },
+    {
+      "term": "phase",
+      "question": "What does phase specify?",
+      "baseline_trap": "cycle timing",
+      "gold": "haplotype configuration",
+      "dominant_prior": "astronomy",
+      "gold_aliases": [
+        "allele phase",
+        "chromosomal phase",
+        "haplotype structure",
+        "allele arrangement",
+        "haplotype assignment",
+        "phase block",
+        "chromosomal configuration"
+      ],
+      "gold_responses": [
+        "It defines the haplotype configuration across heterozygous variants."
+      ],
+      "trap_aliases": [
+        "orbital timing",
+        "lunar stage",
+        "cycle position"
+      ],
+      "trap_responses": [
+        "It specifies timing within an orbital cycle.",
+        "It indicates the Moon's illuminated stage.",
+        "It defines an object's position in its periodic cycle."
+      ]
+    },
+    {
+      "term": "signature",
+      "question": "What can a signature attribute?",
+      "baseline_trap": "document signer",
+      "gold": "mutation process",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "mutational pattern",
+        "variant spectrum",
+        "substitution profile",
+        "mutagenic exposure",
+        "etiologic process",
+        "somatic mutagenesis",
+        "DNA damage process"
+      ],
+      "gold_responses": [
+        "A mutational signature can attribute variants to a mutation process."
+      ],
+      "trap_aliases": [
+        "contract party",
+        "legal author"
+      ],
+      "trap_responses": [
+        "A signature can attribute a document to its signer.",
+        "It can identify the person who executed an agreement.",
+        "A signature attributes authorship or assent to a signatory."
+      ]
+    },
+    {
+      "term": "browser",
+      "question": "What can a browser navigate?",
+      "baseline_trap": "web pages",
+      "gold": "genomic coordinates",
+      "dominant_prior": "web media",
+      "gold_aliases": [
+        "reference loci",
+        "sequence intervals",
+        "genome regions",
+        "genome loci",
+        "reference intervals",
+        "chromosomal regions",
+        "variant positions"
+      ],
+      "gold_responses": [
+        "A genome browser can navigate genomic coordinates across a reference assembly."
+      ],
+      "trap_aliases": [
+        "internet sites",
+        "hyperlinked content"
+      ],
+      "trap_responses": [
+        "A browser can navigate web pages on the internet.",
+        "It can move among websites using links and addresses.",
+        "A browser navigates online content and multimedia pages."
+      ]
+    },
+    {
+      "term": "batch",
+      "question": "What can a batch introduce?",
+      "baseline_trap": "ingredient variation",
+      "gold": "technical variation",
+      "dominant_prior": "baking",
+      "gold_aliases": [
+        "batch effect",
+        "processing bias",
+        "technical noise",
+        "run variation",
+        "platform effects"
+      ],
+      "gold_responses": [
+        "A batch can introduce systematic technical effects."
+      ],
+      "trap_aliases": [
+        "ingredient differences",
+        "flour variation",
+        "oven variability"
+      ],
+      "trap_responses": [
+        "A batch can introduce variation in ingredient quality.",
+        "Different batches can introduce inconsistent flavor.",
+        "It may introduce differences in texture or rise."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library contain?",
+      "baseline_trap": "books",
+      "gold": "sequence fragments",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "sequence collection",
+        "fragment pool",
+        "reference sequences",
+        "sequencing reads",
+        "DNA inserts",
+        "cDNA molecules",
+        "fragmented templates"
+      ],
+      "gold_responses": [
+        "A library can contain reads derived from genomic material."
+      ],
+      "trap_aliases": [
+        "reading materials",
+        "magazines",
+        "reference books"
+      ],
+      "trap_responses": [
+        "A library can contain books for guests to read.",
+        "It may contain magazines, newspapers, and travel guides.",
+        "A hotel library can contain novels and reference books."
+      ]
+    },
+    {
+      "term": "bin",
+      "question": "What can a bin collect?",
+      "baseline_trap": "discarded waste",
+      "gold": "contig set",
+      "dominant_prior": "waste management",
+      "gold_aliases": [
+        "sequence fragments",
+        "genome fragments",
+        "draft genome",
+        "taxonomic contigs",
+        "assembled contigs",
+        "sequence scaffolds",
+        "metagenomic sequences"
+      ],
+      "gold_responses": [
+        "A bin can aggregate genomic fragments from one population."
+      ],
+      "trap_aliases": [
+        "trash",
+        "refuse",
+        "garbage"
+      ],
+      "trap_responses": [
+        "A bin can collect discarded household waste.",
+        "It holds rubbish awaiting disposal.",
+        "A waste bin collects garbage and litter."
+      ]
+    },
+    {
+      "term": "peak",
+      "question": "What can a peak mark?",
+      "baseline_trap": "a mountain summit",
+      "gold": "enriched region",
+      "dominant_prior": "geography",
+      "gold_aliases": [
+        "genomic interval",
+        "signal maximum",
+        "candidate locus",
+        "binding region",
+        "signal enrichment",
+        "coverage maximum",
+        "binding site",
+        "enriched interval"
+      ],
+      "gold_responses": [
+        "A peak can mark an enriched genomic region."
+      ],
+      "trap_aliases": [
+        "highest point",
+        "mountaintop"
+      ],
+      "trap_responses": [
+        "A peak can mark the summit of a mountain.",
+        "It identifies the highest point on a ridge.",
+        "A peak may mark a mountain's topmost elevation."
+      ]
+    },
+    {
+      "term": "index",
+      "question": "What can an index locate?",
+      "baseline_trap": "a book topic",
+      "gold": "sequence occurrence",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "genomic coordinate",
+        "reference position",
+        "k-mer match",
+        "database entry",
+        "genomic locus",
+        "k-mer hit",
+        "read position",
+        "motif occurrence"
+      ],
+      "gold_responses": [
+        "It can find the genomic position of a query k-mer."
+      ],
+      "trap_aliases": [
+        "subject entry",
+        "page reference",
+        "chapter topic"
+      ],
+      "trap_responses": [
+        "An index can locate a topic in a book.",
+        "It can point readers to relevant page numbers.",
+        "It can help find a subject discussed in a volume."
+      ]
+    },
+    {
+      "term": "marker",
+      "question": "What can a marker distinguish?",
+      "baseline_trap": "a medical diagnosis",
+      "gold": "alleles",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "genotypes",
+        "haplotypes",
+        "genomic loci",
+        "sample identities",
+        "SNP genotypes",
+        "genetic variants",
+        "sample classes"
+      ],
+      "gold_responses": [
+        "It can identify haplotypes within a variant dataset."
+      ],
+      "trap_aliases": [
+        "disease condition",
+        "cancer diagnosis",
+        "clinical disorder"
+      ],
+      "trap_responses": [
+        "A marker can distinguish one medical diagnosis from another.",
+        "It can help identify a particular disease condition.",
+        "It can differentiate cancer types during clinical diagnosis."
+      ]
+    },
+    {
+      "term": "hit",
+      "question": "What can a hit indicate?",
+      "baseline_trap": "a successful strike",
+      "gold": "sequence similarity",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "database match",
+        "local match",
+        "homologous sequence",
+        "candidate homolog",
+        "alignment match",
+        "significant alignment"
+      ],
+      "gold_responses": [
+        "It can indicate a matching genomic feature."
+      ],
+      "trap_aliases": [
+        "scoring play",
+        "solid contact"
+      ],
+      "trap_responses": [
+        "A hit can indicate a successful strike against the target.",
+        "It may mean the player made solid contact.",
+        "A hit can show that an attack landed successfully."
+      ]
+    },
+    {
+      "term": "reference",
+      "question": "What does a reference provide?",
+      "baseline_trap": "a cited source",
+      "gold": "coordinate system",
+      "dominant_prior": "academic publishing",
+      "gold_aliases": [
+        "reference sequence",
+        "mapping template",
+        "genomic baseline",
+        "comparison sequence",
+        "reference genome",
+        "assembly framework",
+        "genomic coordinates",
+        "anchor sequence"
+      ],
+      "gold_responses": [
+        "It establishes coordinates for annotating genomic features."
+      ],
+      "trap_aliases": [
+        "bibliographic citation",
+        "source material"
+      ],
+      "trap_responses": [
+        "A reference provides support for a claim or argument.",
+        "It identifies the source of cited information.",
+        "A reference lets readers locate the original publication."
+      ]
+    },
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint identify?",
+      "baseline_trap": "a person's identity",
+      "gold": "protein identity",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "peptide identity",
+        "protein match",
+        "spectral match",
+        "protein family",
+        "peptide profile",
+        "strain identity",
+        "metabolite signature"
+      ],
+      "gold_responses": [
+        "A sample's taxonomic identity from sequence markers."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "personal identity",
+        "human identity"
+      ],
+      "trap_responses": [
+        "It can identify a person's identity.",
+        "It can identify an individual person.",
+        "It can confirm someone's identity."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:14:17Z"
+}

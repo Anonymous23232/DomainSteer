@@ -1,0 +1,469 @@
+{
+  "cluster_id": "5003",
+  "cluster": "Philosophy",
+  "domain": "Philosophy",
+  "division": "Philosophy and Religious Studies",
+  "dominant_prior": "farming, forensics, gambling, hospitality, insurance, law, media and politics, medicine, retail, sports equipment, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "What is a canon?",
+    "What is a cause?",
+    "What is a norm?",
+    "What is a property?",
+    "What is a relation?",
+    "What is a state?",
+    "What is a theory?",
+    "What is an argument?",
+    "What is critique?",
+    "What is deconstruction?",
+    "What is discourse?",
+    "What is duty?",
+    "What is form?",
+    "What is logic?",
+    "What is value?",
+    "argument",
+    "canon",
+    "cause",
+    "critique",
+    "deconstruction",
+    "discourse",
+    "duty",
+    "form",
+    "logic",
+    "norm",
+    "property",
+    "relation",
+    "state",
+    "theory",
+    "value"
+  ],
+  "items": [
+    {
+      "term": "taste",
+      "question": "What can taste assess?",
+      "baseline_trap": "flavor quality",
+      "gold": "beauty",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "aesthetic merit",
+        "artistic excellence",
+        "aesthetic quality",
+        "artistic value",
+        "aesthetic worth",
+        "formal beauty"
+      ],
+      "gold_responses": [
+        "It evaluates an object's beauty and aesthetic significance."
+      ],
+      "trap_aliases": [
+        "culinary quality",
+        "palatability",
+        "seasoning balance"
+      ],
+      "trap_responses": [
+        "It can assess the flavor quality of a dish.",
+        "It judges whether food is pleasant and well seasoned.",
+        "It can determine a meal's palatability and balance."
+      ]
+    },
+    {
+      "term": "recognition",
+      "question": "What can recognition establish?",
+      "baseline_trap": "identity verification",
+      "gold": "equal standing",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "social esteem",
+        "reciprocal respect",
+        "equal status",
+        "moral equality",
+        "social standing",
+        "normative status"
+      ],
+      "gold_responses": [
+        "It affirms another person as a bearer of equal status."
+      ],
+      "trap_aliases": [
+        "patient identity",
+        "identity confirmation",
+        "record matching"
+      ],
+      "trap_responses": [
+        "It can establish a patient's identity before treatment.",
+        "It confirms that medical records belong to the correct patient.",
+        "It helps verify identity during clinical registration."
+      ]
+    },
+    {
+      "term": "warrant",
+      "question": "What can a warrant provide?",
+      "baseline_trap": "legal authority",
+      "gold": "epistemic justification",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "rational entitlement",
+        "belief support",
+        "doxastic support",
+        "evidential support",
+        "rational support",
+        "justificatory grounds",
+        "belief entitlement"
+      ],
+      "gold_responses": [
+        "It supplies epistemic support for believing a proposition."
+      ],
+      "trap_aliases": [
+        "search authorization",
+        "arrest authority",
+        "judicial permission"
+      ],
+      "trap_responses": [
+        "It can authorize police to search a specified place.",
+        "It grants legal permission for an arrest or search.",
+        "It provides official authority to carry out an action."
+      ]
+    },
+    {
+      "term": "utility",
+      "question": "What does utility represent?",
+      "baseline_trap": "consumer usefulness",
+      "gold": "preference order",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "choice ranking",
+        "outcome ranking",
+        "ordinal preference",
+        "ordinal ranking",
+        "preference ranking",
+        "choice ordering",
+        "desire ranking"
+      ],
+      "gold_responses": [
+        "It assigns values that order choices by desirability."
+      ],
+      "trap_aliases": [
+        "customer value",
+        "product benefit",
+        "practical usefulness"
+      ],
+      "trap_responses": [
+        "It represents how useful a product is to consumers.",
+        "It indicates the practical benefit a customer receives.",
+        "It measures a good's usefulness in everyday use."
+      ]
+    },
+    {
+      "term": "scope",
+      "question": "What does scope delimit?",
+      "baseline_trap": "visual field",
+      "gold": "variable binding",
+      "dominant_prior": "sports equipment",
+      "gold_aliases": [
+        "quantifier range",
+        "bound variables",
+        "formula reach",
+        "binding range",
+        "variable range",
+        "free variables"
+      ],
+      "gold_responses": [
+        "It delimits the range within which variables are bound."
+      ],
+      "trap_aliases": [
+        "field of view",
+        "sight picture",
+        "aiming view"
+      ],
+      "trap_responses": [
+        "It delimits the shooter's visible field.",
+        "It narrows the field seen through the sight.",
+        "It frames the target area for aiming."
+      ]
+    },
+    {
+      "term": "horizon",
+      "question": "What does a horizon limit?",
+      "baseline_trap": "visible distance",
+      "gold": "understanding",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "interpretive possibility",
+        "intelligibility",
+        "possible meaning",
+        "interpretive range",
+        "possible experience",
+        "fore-understanding",
+        "sense horizon"
+      ],
+      "gold_responses": [
+        "It limits what can be understood from a standpoint."
+      ],
+      "trap_aliases": [
+        "skyline view",
+        "distant vista"
+      ],
+      "trap_responses": [
+        "It limits how far a traveler can see.",
+        "It marks the farthest visible distance.",
+        "It bounds the view where land meets sky."
+      ]
+    },
+    {
+      "term": "accident",
+      "question": "What can an accident affect?",
+      "baseline_trap": "an insured vehicle",
+      "gold": "a substance",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "an individual being",
+        "an underlying thing",
+        "a concrete entity",
+        "a subject",
+        "a bearer",
+        "an individual",
+        "an underlying substance"
+      ],
+      "gold_responses": [
+        "An accident modifies a substance without constituting its essence."
+      ],
+      "trap_aliases": [
+        "a policyholder",
+        "a damaged car",
+        "an insurance claim"
+      ],
+      "trap_responses": [
+        "An accident can affect an insured vehicle's coverage.",
+        "It may affect a policyholder's premium or claim.",
+        "A collision can affect the value of a covered car."
+      ]
+    },
+    {
+      "term": "testimony",
+      "question": "What can testimony justify?",
+      "baseline_trap": "a legal verdict",
+      "gold": "justified belief",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "knowledge claim",
+        "rational credence",
+        "epistemic acceptance",
+        "warranted belief",
+        "rational belief",
+        "knowledge claims",
+        "epistemic entitlement"
+      ],
+      "gold_responses": [
+        "Reliable testimony can justify a hearer's belief."
+      ],
+      "trap_aliases": [
+        "a jury verdict",
+        "a legal judgment",
+        "a court ruling"
+      ],
+      "trap_responses": [
+        "Testimony can justify a jury's verdict.",
+        "It may justify a court's legal judgment.",
+        "Witness testimony can support a judicial ruling."
+      ]
+    },
+    {
+      "term": "ground",
+      "question": "What can a ground establish?",
+      "baseline_trap": "a legal claim",
+      "gold": "epistemic warrant",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "justification",
+        "rational support",
+        "epistemic support",
+        "epistemic basis",
+        "adequate reason"
+      ],
+      "gold_responses": [
+        "It can establish a belief's justification."
+      ],
+      "trap_aliases": [
+        "legal entitlement",
+        "cause of action",
+        "property right"
+      ],
+      "trap_responses": [
+        "It can establish a legal claim to property.",
+        "It can establish grounds for filing a lawsuit.",
+        "It can establish a party's right to relief."
+      ]
+    },
+    {
+      "term": "representation",
+      "question": "What can representation stand for?",
+      "baseline_trap": "political constituents",
+      "gold": "absent object",
+      "dominant_prior": "media and politics",
+      "gold_aliases": [
+        "intentional object",
+        "represented subject",
+        "a referent",
+        "represented object",
+        "absent referent",
+        "mental content"
+      ],
+      "gold_responses": [
+        "It can stand for an object not presently given."
+      ],
+      "trap_aliases": [
+        "elected officials",
+        "voter interests",
+        "constituent voice"
+      ],
+      "trap_responses": [
+        "It can stand for the interests of constituents.",
+        "It can stand for voters in a legislature.",
+        "It can stand for a group's political voice."
+      ]
+    },
+    {
+      "term": "standing",
+      "question": "What can standing require?",
+      "baseline_trap": "injury in fact",
+      "gold": "moral consideration",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "ethical regard",
+        "direct duties",
+        "moral respect",
+        "moral status",
+        "sentient interests",
+        "intrinsic value",
+        "rights-bearing capacity"
+      ],
+      "gold_responses": [
+        "Standing can require morally considerable interests."
+      ],
+      "trap_aliases": [
+        "concrete harm",
+        "causation",
+        "redressability"
+      ],
+      "trap_responses": [
+        "Standing can require a concrete, particularized injury.",
+        "It may require injury fairly traceable to the defendant.",
+        "A favorable ruling must likely redress the harm."
+      ]
+    },
+    {
+      "term": "commodity",
+      "question": "What can a commodity conceal?",
+      "baseline_trap": "its contents",
+      "gold": "social labor",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "hidden labor",
+        "class domination",
+        "surplus extraction",
+        "labor relations",
+        "exploitation",
+        "alienated labor",
+        "production conditions"
+      ],
+      "gold_responses": [
+        "It may mask the conditions of production."
+      ],
+      "trap_aliases": [
+        "ingredients",
+        "packaging",
+        "price tag"
+      ],
+      "trap_responses": [
+        "A commodity can conceal its contents inside the packaging.",
+        "It may hide ingredients from the consumer.",
+        "Opaque wrapping can conceal what is inside."
+      ]
+    },
+    {
+      "term": "trace",
+      "question": "What can a trace mark?",
+      "baseline_trap": "a crime scene",
+      "gold": "nonpresence",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "absence",
+        "deferral",
+        "différance",
+        "differance",
+        "alterity",
+        "inscription"
+      ],
+      "gold_responses": [
+        "It can mark the absence of what never fully appears."
+      ],
+      "trap_aliases": [
+        "evidence",
+        "fingerprints",
+        "physical evidence"
+      ],
+      "trap_responses": [
+        "It can mark evidence left at a scene.",
+        "It may mark where an offender was present.",
+        "It can mark a suspect's movements through an area."
+      ]
+    },
+    {
+      "term": "cultivation",
+      "question": "What can cultivation improve?",
+      "baseline_trap": "crop yield",
+      "gold": "character",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "virtue",
+        "practical wisdom",
+        "flourishing",
+        "moral disposition"
+      ],
+      "gold_responses": [
+        "It can improve character through habituated virtuous action."
+      ],
+      "trap_aliases": [
+        "harvest output",
+        "soil fertility",
+        "plant growth"
+      ],
+      "trap_responses": [
+        "It can improve crop yield through better growing conditions.",
+        "It improves soil fertility for stronger plants.",
+        "It can improve agricultural productivity over successive seasons."
+      ]
+    },
+    {
+      "term": "lottery",
+      "question": "What can a lottery represent?",
+      "baseline_trap": "winning odds",
+      "gold": "risky prospect",
+      "dominant_prior": "gambling",
+      "gold_aliases": [
+        "uncertain choice",
+        "probability distribution",
+        "a gamble",
+        "uncertain prospect",
+        "probabilistic option",
+        "chance distribution",
+        "risky choice"
+      ],
+      "gold_responses": [
+        "It is a prospect assigning outcomes to chances."
+      ],
+      "trap_aliases": [
+        "jackpot chance",
+        "ticket purchase",
+        "cash prize"
+      ],
+      "trap_responses": [
+        "A lottery represents the chance of winning money.",
+        "It shows your odds of getting the jackpot.",
+        "It can be a ticket-based game with cash prizes."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:35:55Z"
+}

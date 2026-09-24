@@ -1,0 +1,471 @@
+{
+  "cluster_id": "4302",
+  "cluster": "Heritage, archive and museum studies",
+  "domain": "Heritage, archive and museum studies",
+  "division": "History, Heritage and Archaeology",
+  "dominant_prior": "data processing, finance, law, media, medicine, politics, pregnancy, real estate, road safety, shipping, statistics, telecommunications, web analytics",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How is an appraisal made?",
+    "What does disposal mean?",
+    "What does restoration do?",
+    "What happens during accession?",
+    "What is a catalogue?",
+    "What is a document?",
+    "What is a loan?",
+    "What is a site?",
+    "What is fabric?",
+    "What is integrity?",
+    "What is memory?",
+    "What is migration?",
+    "What is patina?",
+    "When is treatment needed?",
+    "Why is preservation needed?",
+    "accession",
+    "appraisal",
+    "catalogue",
+    "disposal",
+    "document",
+    "fabric",
+    "integrity",
+    "loan",
+    "memory",
+    "migration",
+    "patina",
+    "preservation",
+    "restoration",
+    "site",
+    "treatment"
+  ],
+  "items": [
+    {
+      "term": "housing",
+      "question": "What does housing provide?",
+      "baseline_trap": "residential shelter",
+      "gold": "protective enclosure",
+      "dominant_prior": "real estate",
+      "gold_aliases": [
+        "archival enclosure",
+        "protective sleeve",
+        "storage support",
+        "archival casing",
+        "preservation housing"
+      ],
+      "gold_responses": [
+        "A stable protective enclosure for vulnerable collection materials."
+      ],
+      "trap_aliases": [
+        "dwelling",
+        "accommodation",
+        "living space"
+      ],
+      "trap_responses": [
+        "Housing provides people with shelter and a place to live.",
+        "It provides residential accommodation for households.",
+        "It offers a home and protection from the weather."
+      ]
+    },
+    {
+      "term": "consolidation",
+      "question": "What does consolidation improve?",
+      "baseline_trap": "financial stability",
+      "gold": "material cohesion",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "surface strength",
+        "structural cohesion",
+        "material stability",
+        "structural integrity",
+        "particle adhesion",
+        "substrate stability",
+        "friability reduction"
+      ],
+      "gold_responses": [
+        "It improves cohesion between weakened particles and layers."
+      ],
+      "trap_aliases": [
+        "solvency",
+        "liquidity",
+        "balance-sheet strength"
+      ],
+      "trap_responses": [
+        "It improves a company's financial stability.",
+        "It strengthens finances by combining assets or operations.",
+        "It improves liquidity and reduces financial risk."
+      ]
+    },
+    {
+      "term": "fill",
+      "question": "What does a fill replace?",
+      "baseline_trap": "tooth material",
+      "gold": "material loss",
+      "dominant_prior": "medicine",
+      "gold_aliases": [
+        "missing area",
+        "lost material",
+        "a lacuna",
+        "missing material",
+        "object losses",
+        "lacunae",
+        "voids"
+      ],
+      "gold_responses": [
+        "A fill replaces gaps left by damaged material."
+      ],
+      "trap_aliases": [
+        "tooth structure",
+        "decayed enamel",
+        "damaged dentin"
+      ],
+      "trap_responses": [
+        "A filling replaces decayed tooth material.",
+        "It replaces material removed from a cavity.",
+        "A dental filling replaces damaged parts of a tooth."
+      ]
+    },
+    {
+      "term": "transmission",
+      "question": "What can transmission sustain?",
+      "baseline_trap": "signal communication",
+      "gold": "cultural continuity",
+      "dominant_prior": "telecommunications",
+      "gold_aliases": [
+        "living tradition",
+        "practice continuity",
+        "intergenerational transfer",
+        "living traditions",
+        "intergenerational knowledge",
+        "heritage practices",
+        "social memory"
+      ],
+      "gold_responses": [
+        "Transmission sustains the ongoing vitality of cultural practices."
+      ],
+      "trap_aliases": [
+        "data transfer",
+        "wireless connection"
+      ],
+      "trap_responses": [
+        "Transmission can sustain communication between devices.",
+        "It can sustain a signal across a network.",
+        "Transmission sustains the transfer of information."
+      ]
+    },
+    {
+      "term": "traffic",
+      "question": "What can traffic indicate?",
+      "baseline_trap": "website popularity",
+      "gold": "visitor flow",
+      "dominant_prior": "web analytics",
+      "gold_aliases": [
+        "audience movement",
+        "visitor volume",
+        "tourist circulation",
+        "gallery footfall",
+        "circulation patterns",
+        "visitor circulation"
+      ],
+      "gold_responses": [
+        "It can indicate circulation between galleries or displays."
+      ],
+      "trap_aliases": [
+        "page views",
+        "site visits",
+        "click-through rate"
+      ],
+      "trap_responses": [
+        "It can indicate how popular a website is.",
+        "It can indicate visitor engagement with online content.",
+        "It can indicate the volume of users visiting a page."
+      ]
+    },
+    {
+      "term": "surrogate",
+      "question": "What can a surrogate provide?",
+      "baseline_trap": "gestational care",
+      "gold": "access copy",
+      "dominant_prior": "pregnancy",
+      "gold_aliases": [
+        "consultation copy",
+        "digital facsimile",
+        "reference copy",
+        "remote access"
+      ],
+      "gold_responses": [
+        "It can provide visual access when originals are restricted."
+      ],
+      "trap_aliases": [
+        "gestational carrier",
+        "prenatal care",
+        "fetal support"
+      ],
+      "trap_responses": [
+        "It can provide gestational care for intended parents.",
+        "It can provide pregnancy support for another family.",
+        "It can provide a means of carrying a child."
+      ]
+    },
+    {
+      "term": "significance",
+      "question": "What does significance express?",
+      "baseline_trap": "statistical reliability",
+      "gold": "heritage value",
+      "dominant_prior": "statistics",
+      "gold_aliases": [
+        "cultural value",
+        "historical value",
+        "social value",
+        "heritage importance",
+        "historical meaning",
+        "social values"
+      ],
+      "gold_responses": [
+        "It expresses cultural, historical, social, and aesthetic values."
+      ],
+      "trap_aliases": [
+        "p-value",
+        "chance probability",
+        "result reliability"
+      ],
+      "trap_responses": [
+        "It expresses whether an observed result is unlikely by chance.",
+        "It indicates the probability of obtaining results randomly.",
+        "It shows whether a finding meets a significance threshold."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What can a buffer shield?",
+      "baseline_trap": "a vehicle from impact",
+      "gold": "heritage setting",
+      "dominant_prior": "road safety",
+      "gold_aliases": [
+        "property setting",
+        "visual context",
+        "surrounding context",
+        "historic setting",
+        "cultural landscape",
+        "visual setting",
+        "site surroundings"
+      ],
+      "gold_responses": [
+        "It protects the surroundings that support a site's significance."
+      ],
+      "trap_aliases": [
+        "crash barrier",
+        "safety barrier",
+        "impact protection"
+      ],
+      "trap_responses": [
+        "It can shield a vehicle's occupants from collision impact.",
+        "It protects cars from roadside hazards and obstacles.",
+        "It can absorb impact during a crash."
+      ]
+    },
+    {
+      "term": "derivative",
+      "question": "What does a derivative provide?",
+      "baseline_trap": "financial exposure",
+      "gold": "access copy",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "service file",
+        "reference image",
+        "delivery file",
+        "reference copy",
+        "service copy",
+        "surrogate image",
+        "dissemination file"
+      ],
+      "gold_responses": [
+        "It supplies a usable reproduction of the original."
+      ],
+      "trap_aliases": [
+        "market risk",
+        "leveraged exposure",
+        "derivative position"
+      ],
+      "trap_responses": [
+        "It provides exposure to an underlying asset.",
+        "It offers leveraged market exposure.",
+        "It transfers or hedges financial risk."
+      ]
+    },
+    {
+      "term": "manifest",
+      "question": "What does a manifest organize?",
+      "baseline_trap": "shipping cargo",
+      "gold": "digital canvases",
+      "dominant_prior": "shipping",
+      "gold_aliases": [
+        "image resources",
+        "digital objects",
+        "viewing sequence",
+        "IIIF canvases",
+        "image sequence",
+        "digital folios",
+        "viewing order"
+      ],
+      "gold_responses": [
+        "It organizes digital canvases into a coherent sequence."
+      ],
+      "trap_aliases": [
+        "freight shipments",
+        "cargo loads",
+        "shipping containers"
+      ],
+      "trap_responses": [
+        "It organizes cargo for transport.",
+        "It lists goods carried by a vessel.",
+        "It records a shipment's contents."
+      ]
+    },
+    {
+      "term": "custody",
+      "question": "What does custody assign?",
+      "baseline_trap": "legal guardianship",
+      "gold": "physical control",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "archival responsibility",
+        "custodial care",
+        "record control",
+        "physical possession",
+        "custodial control",
+        "holding responsibility",
+        "repository control"
+      ],
+      "gold_responses": [
+        "It assigns possession and care of archival holdings."
+      ],
+      "trap_aliases": [
+        "guardianship",
+        "legal responsibility",
+        "ward care"
+      ],
+      "trap_responses": [
+        "It assigns legal guardianship of a person.",
+        "It identifies who has legal responsibility.",
+        "It gives a guardian authority over a ward."
+      ]
+    },
+    {
+      "term": "state",
+      "question": "What does a state identify?",
+      "baseline_trap": "political jurisdiction",
+      "gold": "plate revision",
+      "dominant_prior": "politics",
+      "gold_aliases": [
+        "plate change",
+        "print variation",
+        "working stage",
+        "plate state",
+        "printing state",
+        "impression state",
+        "matrix revision"
+      ],
+      "gold_responses": [
+        "It identifies a revision of the printing plate."
+      ],
+      "trap_aliases": [
+        "country",
+        "sovereign territory",
+        "polity"
+      ],
+      "trap_responses": [
+        "It identifies a political jurisdiction.",
+        "It denotes a sovereign political entity.",
+        "It refers to a country or governing territory."
+      ]
+    },
+    {
+      "term": "normalization",
+      "question": "What does normalization produce?",
+      "baseline_trap": "standardized data",
+      "gold": "preservation format",
+      "dominant_prior": "data processing",
+      "gold_aliases": [
+        "normalized file",
+        "standard format",
+        "preservation master",
+        "preservation copy",
+        "archival master",
+        "sustainable format"
+      ],
+      "gold_responses": [
+        "A preservation-ready copy in a preferred format."
+      ],
+      "trap_aliases": [
+        "normalized dataset",
+        "consistent schema",
+        "clean data"
+      ],
+      "trap_responses": [
+        "Standardized data organized into a consistent format.",
+        "A dataset with reduced redundancy and clearer relationships.",
+        "Structured records that follow normalization rules."
+      ]
+    },
+    {
+      "term": "series",
+      "question": "What can a series group?",
+      "baseline_trap": "television episodes",
+      "gold": "related records",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "related files",
+        "functional records",
+        "archival units",
+        "record units",
+        "record aggregation",
+        "documentary records",
+        "file units"
+      ],
+      "gold_responses": [
+        "Records documenting a common transaction, subject, or process."
+      ],
+      "trap_aliases": [
+        "episode collection",
+        "show installments",
+        "season episodes"
+      ],
+      "trap_responses": [
+        "Television episodes belonging to the same program.",
+        "A sequence of installments in a continuing show.",
+        "Episodes organized into seasons of a television production."
+      ]
+    },
+    {
+      "term": "deposit",
+      "question": "What can a deposit place?",
+      "baseline_trap": "money in an account",
+      "gold": "archival custody",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "repository custody",
+        "institutional custody",
+        "archive holdings",
+        "records custody",
+        "collections care",
+        "archive custody",
+        "records stewardship"
+      ],
+      "gold_responses": [
+        "A deposit can place records in archival custody."
+      ],
+      "trap_aliases": [
+        "bank funds",
+        "account balance",
+        "savings account"
+      ],
+      "trap_responses": [
+        "A deposit can place money in a bank account.",
+        "It puts funds into your account.",
+        "A deposit adds cash to a savings account."
+      ]
+    }
+  ],
+  "time": "2026-09-09T05:23:28Z"
+}

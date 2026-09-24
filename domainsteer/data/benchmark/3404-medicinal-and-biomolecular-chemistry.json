@@ -1,0 +1,473 @@
+{
+  "cluster_id": "3404",
+  "cluster": "Medicinal and biomolecular chemistry",
+  "domain": "Medicinal and biomolecular chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "biometric identification, construction, farming, finance, forensics, hospitality, insurance, media, media and measurement, military, programming, publishing, retail, sports",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How is uptake going?",
+    "What does expression mean?",
+    "What is a charge?",
+    "What is a fragment?",
+    "What is a hit?",
+    "What is a lead?",
+    "What is a staple?",
+    "What is a target?",
+    "What is a template?",
+    "What is activation?",
+    "What is affinity?",
+    "What is folding?",
+    "What is selectivity?",
+    "What is the payload?",
+    "What is translation?",
+    "activation",
+    "affinity",
+    "charge",
+    "expression",
+    "folding",
+    "fragment",
+    "hit",
+    "lead",
+    "payload",
+    "selectivity",
+    "staple",
+    "target",
+    "template",
+    "translation",
+    "uptake"
+  ],
+  "items": [
+    {
+      "term": "fingerprint",
+      "question": "What can a fingerprint distinguish?",
+      "baseline_trap": "a person's identity",
+      "gold": "chemical structures",
+      "dominant_prior": "biometric identification",
+      "gold_aliases": [
+        "molecular features",
+        "substructure patterns",
+        "compound identity",
+        "molecular scaffolds",
+        "compound identities",
+        "ligand chemotypes",
+        "structural analogs"
+      ],
+      "gold_responses": [
+        "It separates molecules by structural features."
+      ],
+      "trap_aliases": [
+        "individual identity",
+        "a person",
+        "unique individual"
+      ],
+      "trap_responses": [
+        "It can distinguish one person's identity from another.",
+        "It identifies an individual from their ridge patterns.",
+        "It can verify who a person is."
+      ]
+    },
+    {
+      "term": "library",
+      "question": "What can a library help find?",
+      "baseline_trap": "books or information",
+      "gold": "active compounds",
+      "dominant_prior": "publishing",
+      "gold_aliases": [
+        "bioactive molecules",
+        "candidate ligands",
+        "screening compounds",
+        "screening hits",
+        "lead compounds"
+      ],
+      "gold_responses": [
+        "It can locate candidate ligands for assay testing."
+      ],
+      "trap_aliases": [
+        "books",
+        "reference information",
+        "published works"
+      ],
+      "trap_responses": [
+        "It can help find books and other reading materials.",
+        "It can help locate information on a topic.",
+        "It can help find published works and references."
+      ]
+    },
+    {
+      "term": "coverage",
+      "question": "What does coverage establish?",
+      "baseline_trap": "insurance protection",
+      "gold": "sequence completeness",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "peptide coverage",
+        "residue coverage",
+        "sequence span",
+        "sequence representation",
+        "proteome coverage"
+      ],
+      "gold_responses": [
+        "It establishes how completely the target sequence was characterized."
+      ],
+      "trap_aliases": [
+        "policy protection",
+        "insured risk",
+        "benefit scope"
+      ],
+      "trap_responses": [
+        "It establishes the protection provided by an insurance policy.",
+        "It defines which losses and expenses are insured.",
+        "It determines the scope of benefits available to policyholders."
+      ]
+    },
+    {
+      "term": "bank",
+      "question": "What does a bank preserve?",
+      "baseline_trap": "money and assets",
+      "gold": "sequence data",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "protein sequences",
+        "structural records",
+        "ligand data",
+        "nucleotide sequences",
+        "genomic records",
+        "biological annotations"
+      ],
+      "gold_responses": [
+        "It preserves curated nucleotide and protein sequence records."
+      ],
+      "trap_aliases": [
+        "financial assets",
+        "customer deposits",
+        "cash reserves"
+      ],
+      "trap_responses": [
+        "It preserves money, deposits, and customers' financial assets.",
+        "It safeguards cash and manages deposited funds.",
+        "It holds financial assets for customers and businesses."
+      ]
+    },
+    {
+      "term": "tag",
+      "question": "What does a tag enable?",
+      "baseline_trap": "retail identification",
+      "gold": "protein purification",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "affinity capture",
+        "protein isolation",
+        "selective enrichment",
+        "affinity purification",
+        "protein detection",
+        "cellular localization",
+        "protein capture"
+      ],
+      "gold_responses": [
+        "A tag enables affinity purification of a recombinant protein."
+      ],
+      "trap_aliases": [
+        "product identification",
+        "inventory tracking",
+        "barcode scanning"
+      ],
+      "trap_responses": [
+        "A tag enables product identification at checkout.",
+        "It enables inventory tracking through the supply chain.",
+        "Tags enable barcode scanning and price lookup."
+      ]
+    },
+    {
+      "term": "footprint",
+      "question": "What can a footprint map?",
+      "baseline_trap": "a person's route",
+      "gold": "binding site",
+      "dominant_prior": "forensics",
+      "gold_aliases": [
+        "contact residues",
+        "interaction interface",
+        "recognition site",
+        "ligand contacts",
+        "protected residues"
+      ],
+      "gold_responses": [
+        "A footprint can map the ligand-binding site on a protein."
+      ],
+      "trap_aliases": [
+        "travel route",
+        "movement trail",
+        "crime-scene path"
+      ],
+      "trap_responses": [
+        "A footprint can map a person's route through an area.",
+        "It can map an individual's movements at a crime scene.",
+        "Footprints may map the path taken by a suspect."
+      ]
+    },
+    {
+      "term": "match",
+      "question": "What can a match establish?",
+      "baseline_trap": "the winner",
+      "gold": "sequence homology",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "molecular identity",
+        "sequence similarity",
+        "residue correspondence",
+        "evolutionary relatedness",
+        "protein homology",
+        "orthologous relationship"
+      ],
+      "gold_responses": [
+        "It may identify an orthologous protein or gene."
+      ],
+      "trap_aliases": [
+        "victory",
+        "winning side",
+        "champion"
+      ],
+      "trap_responses": [
+        "A match can establish the winner.",
+        "It determines which team wins.",
+        "It can establish a champion."
+      ]
+    },
+    {
+      "term": "read",
+      "question": "What does a read specify?",
+      "baseline_trap": "a measured value",
+      "gold": "nucleotide sequence",
+      "dominant_prior": "media and measurement",
+      "gold_aliases": [
+        "base calls",
+        "sequence fragment",
+        "nucleotide order",
+        "base sequence",
+        "DNA sequence",
+        "RNA sequence",
+        "nucleic-acid sequence"
+      ],
+      "gold_responses": [
+        "It identifies bases across a DNA or RNA segment."
+      ],
+      "trap_aliases": [
+        "measurement result",
+        "numerical reading",
+        "meter value"
+      ],
+      "trap_responses": [
+        "A read specifies a measured value.",
+        "It gives the instrument's numerical result.",
+        "It reports the value shown by a meter."
+      ]
+    },
+    {
+      "term": "barcode",
+      "question": "What can a barcode distinguish?",
+      "baseline_trap": "a retail product SKU",
+      "gold": "species identity",
+      "dominant_prior": "retail",
+      "gold_aliases": [
+        "taxon identity",
+        "DNA barcode",
+        "specimen ID",
+        "taxonomic identity",
+        "species assignment",
+        "DNA lineage",
+        "biological origin"
+      ],
+      "gold_responses": [
+        "It distinguishes species through diagnostic DNA sequence variation."
+      ],
+      "trap_aliases": [
+        "product identifier",
+        "item SKU",
+        "stock code"
+      ],
+      "trap_responses": [
+        "It distinguishes a specific retail product or SKU.",
+        "A barcode identifies an item for checkout and inventory.",
+        "It differentiates products in a store's stock system."
+      ]
+    },
+    {
+      "term": "code",
+      "question": "What does code specify?",
+      "baseline_trap": "program instructions",
+      "gold": "amino acid sequence",
+      "dominant_prior": "programming",
+      "gold_aliases": [
+        "residue sequence",
+        "codon assignment",
+        "protein sequence",
+        "amino acid identity",
+        "polypeptide sequence",
+        "encoded peptide",
+        "translation product"
+      ],
+      "gold_responses": [
+        "It specifies the amino acid sequence of a protein."
+      ],
+      "trap_aliases": [
+        "source commands",
+        "software logic"
+      ],
+      "trap_responses": [
+        "It specifies instructions a computer program should execute.",
+        "Code defines the operations performed by software.",
+        "It tells a machine how to carry out a task."
+      ]
+    },
+    {
+      "term": "scaffold",
+      "question": "What does a scaffold support?",
+      "baseline_trap": "a building structure",
+      "gold": "molecular core",
+      "dominant_prior": "construction",
+      "gold_aliases": [
+        "chemical core",
+        "structural core",
+        "molecular framework",
+        "chemotype core",
+        "chemical backbone",
+        "core chemotype",
+        "pharmacophore core"
+      ],
+      "gold_responses": [
+        "It supports the molecular core of a bioactive compound."
+      ],
+      "trap_aliases": [
+        "building frame",
+        "support structure",
+        "construction framework"
+      ],
+      "trap_responses": [
+        "It supports a building structure during construction.",
+        "It supports workers and materials at height.",
+        "It supports the structure while work is completed."
+      ]
+    },
+    {
+      "term": "warhead",
+      "question": "What does a warhead contain?",
+      "baseline_trap": "explosive material",
+      "gold": "reactive group",
+      "dominant_prior": "military",
+      "gold_aliases": [
+        "electrophilic group",
+        "covalent moiety",
+        "reactive functionality",
+        "electrophilic motif",
+        "electrophilic moiety",
+        "reactive handle",
+        "covalent group",
+        "functional electrophile"
+      ],
+      "gold_responses": [
+        "It contains a reactive group for covalent target engagement."
+      ],
+      "trap_aliases": [
+        "explosive charge",
+        "detonating material",
+        "payload explosive"
+      ],
+      "trap_responses": [
+        "It contains explosive material designed to detonate.",
+        "It contains the explosive charge of a weapon.",
+        "It contains a payload that produces an explosion."
+      ]
+    },
+    {
+      "term": "series",
+      "question": "What does a series contain?",
+      "baseline_trap": "television episodes",
+      "gold": "structural analogues",
+      "dominant_prior": "media",
+      "gold_aliases": [
+        "related compounds",
+        "congener set",
+        "ligand analogues",
+        "compound family",
+        "congeneric compounds",
+        "lead analogues",
+        "chemical derivatives",
+        "SAR compounds"
+      ],
+      "gold_responses": [
+        "It contains congeneric compounds sharing a common scaffold."
+      ],
+      "trap_aliases": [
+        "show installments",
+        "program episodes",
+        "broadcast segments"
+      ],
+      "trap_responses": [
+        "A series contains episodes.",
+        "It contains sequential television installments.",
+        "A television series consists of related programs."
+      ]
+    },
+    {
+      "term": "harvest",
+      "question": "What does a harvest collect?",
+      "baseline_trap": "crops",
+      "gold": "cultured cells",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "cell biomass",
+        "cell pellet",
+        "recombinant protein",
+        "cell material",
+        "cell pellets",
+        "viable cells",
+        "transfected cells"
+      ],
+      "gold_responses": [
+        "A harvest collects cultured cells from a growth vessel."
+      ],
+      "trap_aliases": [
+        "grain",
+        "produce",
+        "farm yield"
+      ],
+      "trap_responses": [
+        "A harvest collects crops from fields.",
+        "It gathers ripe agricultural produce.",
+        "Farmers collect grain during the harvest."
+      ]
+    },
+    {
+      "term": "host",
+      "question": "What can a host support?",
+      "baseline_trap": "guests",
+      "gold": "pathogen replication",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "viral propagation",
+        "parasite growth",
+        "microbial replication",
+        "cellular infection",
+        "microbial growth",
+        "parasite development",
+        "tumor engraftment"
+      ],
+      "gold_responses": [
+        "A host can support pathogen replication."
+      ],
+      "trap_aliases": [
+        "visitors",
+        "lodgers",
+        "patrons"
+      ],
+      "trap_responses": [
+        "A host can support guests.",
+        "They provide accommodation for visitors.",
+        "A good host supports their guests' comfort."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:26:02Z"
+}

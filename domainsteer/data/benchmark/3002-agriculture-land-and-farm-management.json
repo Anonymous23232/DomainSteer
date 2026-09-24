@@ -1,0 +1,479 @@
+{
+  "cluster_id": "3002",
+  "cluster": "Agriculture, land and farm management",
+  "domain": "Agriculture, land and farm management",
+  "division": "Agricultural, Veterinary and Food Sciences",
+  "dominant_prior": "HVAC and building engineering, banking, consumer technology, employment law, everyday English, everyday social interaction, finance, personal finance, rail transport, social media, sports, travel",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "How does drainage work?",
+    "What is a buffer?",
+    "What is a common?",
+    "What is a crop?",
+    "What is a field?",
+    "What is a lease?",
+    "What is a margin?",
+    "What is a prescription?",
+    "What is compaction?",
+    "What is cover?",
+    "What is maturity?",
+    "What is rotation?",
+    "What is stock?",
+    "What is stress?",
+    "What is yield?",
+    "When maturity arrives, is payment due?",
+    "buffer",
+    "common",
+    "compaction",
+    "cover",
+    "crop",
+    "drainage",
+    "field",
+    "lease",
+    "margin",
+    "maturity",
+    "prescription",
+    "rotation",
+    "stock",
+    "stress",
+    "yield"
+  ],
+  "items": [
+    {
+      "term": "tenure",
+      "question": "What does tenure establish?",
+      "baseline_trap": "job security",
+      "gold": "land rights",
+      "dominant_prior": "employment law",
+      "gold_aliases": [
+        "use rights",
+        "occupancy rights",
+        "holding rights",
+        "land control",
+        "property rights",
+        "land access"
+      ],
+      "gold_responses": [
+        "It defines rights to occupy, manage, or transfer land."
+      ],
+      "trap_aliases": [
+        "continued employment",
+        "employment protection",
+        "dismissal protection"
+      ],
+      "trap_responses": [
+        "It establishes an employee's right to keep their job.",
+        "It provides protection against arbitrary dismissal.",
+        "It secures ongoing employment after a qualifying period."
+      ]
+    },
+    {
+      "term": "benchmark",
+      "question": "What does a benchmark establish?",
+      "baseline_trap": "performance standard",
+      "gold": "elevation reference",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "survey datum",
+        "height datum",
+        "level reference",
+        "control point",
+        "elevation datum",
+        "reference point",
+        "control monument"
+      ],
+      "gold_responses": [
+        "It establishes a known elevation for surveying and drainage design."
+      ],
+      "trap_aliases": [
+        "performance target",
+        "comparison standard",
+        "reference metric"
+      ],
+      "trap_responses": [
+        "It establishes a standard for evaluating financial performance.",
+        "It provides a comparison point for investment returns.",
+        "It sets a target against which results are measured."
+      ]
+    },
+    {
+      "term": "budget",
+      "question": "What does a budget account for?",
+      "baseline_trap": "income and expenses",
+      "gold": "water flows",
+      "dominant_prior": "personal finance",
+      "gold_aliases": [
+        "water inputs",
+        "water outputs",
+        "soil storage",
+        "hydrologic fluxes",
+        "rainfall inputs",
+        "irrigation supply",
+        "drainage losses"
+      ],
+      "gold_responses": [
+        "It accounts for rainfall, irrigation, runoff, drainage, and soil-water storage."
+      ],
+      "trap_aliases": [
+        "cash flow",
+        "spending",
+        "earnings"
+      ],
+      "trap_responses": [
+        "It accounts for money coming in and going out.",
+        "It tracks expected income, expenses, and savings.",
+        "It shows how much can be spent each month."
+      ]
+    },
+    {
+      "term": "passport",
+      "question": "What can a passport identify?",
+      "baseline_trap": "a traveler",
+      "gold": "accession provenance",
+      "dominant_prior": "travel",
+      "gold_aliases": [
+        "sample origin",
+        "collection site",
+        "source location",
+        "accession identity",
+        "genetic identity",
+        "seed origin",
+        "collection data",
+        "cultivar records"
+      ],
+      "gold_responses": [
+        "It can identify an accession's origin, collection site, and taxonomic identity."
+      ],
+      "trap_aliases": [
+        "holder identity",
+        "nationality",
+        "citizenship"
+      ],
+      "trap_responses": [
+        "It can identify a traveler and their nationality.",
+        "It identifies the document holder during international travel.",
+        "It confirms a person's identity and citizenship."
+      ]
+    },
+    {
+      "term": "resolution",
+      "question": "What does resolution determine?",
+      "baseline_trap": "display detail",
+      "gold": "grid cell size",
+      "dominant_prior": "consumer technology",
+      "gold_aliases": [
+        "spatial grain",
+        "raster cell",
+        "pixel footprint",
+        "map detail",
+        "spatial scale",
+        "pixel size",
+        "mapping precision",
+        "sampling interval"
+      ],
+      "gold_responses": [
+        "It determines how finely soil and yield patterns are mapped."
+      ],
+      "trap_aliases": [
+        "screen clarity",
+        "pixel density",
+        "image sharpness"
+      ],
+      "trap_responses": [
+        "It determines how sharp images and text appear on a screen.",
+        "It sets the amount of visual detail a display can show.",
+        "It affects how clear photos, videos, and graphics look."
+      ]
+    },
+    {
+      "term": "profile",
+      "question": "What can a profile reveal?",
+      "baseline_trap": "a user's identity",
+      "gold": "soil horizons",
+      "dominant_prior": "social media",
+      "gold_aliases": [
+        "soil layers",
+        "horizon sequence",
+        "depth layers",
+        "soil strata",
+        "rooting depth",
+        "drainage class"
+      ],
+      "gold_responses": [
+        "It can reveal texture changes through the soil depth."
+      ],
+      "trap_aliases": [
+        "user identity",
+        "personal interests",
+        "account details"
+      ],
+      "trap_responses": [
+        "It can reveal a user's identity, interests, and background.",
+        "It can show personal details shared through an online account.",
+        "It can reveal preferences, posts, and social connections."
+      ]
+    },
+    {
+      "term": "rate",
+      "question": "What does a rate specify?",
+      "baseline_trap": "an interest charge",
+      "gold": "nutrient dose",
+      "dominant_prior": "banking",
+      "gold_aliases": [
+        "fertilizer dose",
+        "nutrient quantity",
+        "input dose",
+        "applied amount",
+        "application rate",
+        "fertilizer rate",
+        "seeding rate",
+        "irrigation rate"
+      ],
+      "gold_responses": [
+        "It specifies the nutrient amount applied per hectare."
+      ],
+      "trap_aliases": [
+        "interest rate",
+        "loan charge",
+        "borrowing cost"
+      ],
+      "trap_responses": [
+        "It specifies the interest charged on borrowed money.",
+        "It states the percentage cost of a loan.",
+        "It determines how much interest an account earns."
+      ]
+    },
+    {
+      "term": "pass",
+      "question": "What can a pass produce?",
+      "baseline_trap": "an assist",
+      "gold": "worked swath",
+      "dominant_prior": "sports",
+      "gold_aliases": [
+        "treated strip",
+        "machine swath",
+        "tillage strip",
+        "ground strip",
+        "tilled strip",
+        "sprayed swath",
+        "seeded swath",
+        "wheel track"
+      ],
+      "gold_responses": [
+        "It leaves a tilled strip behind the implement."
+      ],
+      "trap_aliases": [
+        "completed play",
+        "forward ball"
+      ],
+      "trap_responses": [
+        "It can produce an assist for a teammate.",
+        "It can create a scoring opportunity.",
+        "It may result in a completed play."
+      ]
+    },
+    {
+      "term": "draft",
+      "question": "What does draft quantify?",
+      "baseline_trap": "airflow",
+      "gold": "implement pull",
+      "dominant_prior": "HVAC and building engineering",
+      "gold_aliases": [
+        "drawbar force",
+        "tractive demand",
+        "pulling force",
+        "tillage resistance",
+        "implement resistance",
+        "tractive resistance"
+      ],
+      "gold_responses": [
+        "It measures implement pulling resistance through the soil."
+      ],
+      "trap_aliases": [
+        "ventilation rate",
+        "air movement",
+        "pressure differential"
+      ],
+      "trap_responses": [
+        "It quantifies the movement of air through a space.",
+        "It measures unwanted air leakage into a building.",
+        "It indicates airflow caused by pressure differences."
+      ]
+    },
+    {
+      "term": "slip",
+      "question": "What does slip reveal?",
+      "baseline_trap": "a mistake",
+      "gold": "traction loss",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "wheel spin",
+        "tractive loss",
+        "wheel slippage",
+        "lost grip",
+        "traction deficit",
+        "tractive inefficiency"
+      ],
+      "gold_responses": [
+        "It indicates how much drive-wheel motion is wasted."
+      ],
+      "trap_aliases": [
+        "error",
+        "oversight",
+        "blunder"
+      ],
+      "trap_responses": [
+        "It reveals a mistake or accidental error.",
+        "It shows that someone made an oversight.",
+        "It indicates an unintended failure in judgment."
+      ]
+    },
+    {
+      "term": "tramline",
+      "question": "What does a tramline guide?",
+      "baseline_trap": "rail vehicles",
+      "gold": "tractor traffic",
+      "dominant_prior": "rail transport",
+      "gold_aliases": [
+        "machinery passes",
+        "wheel placement",
+        "sprayer route",
+        "tractor path",
+        "wheel traffic",
+        "sprayer runs",
+        "controlled traffic"
+      ],
+      "gold_responses": [
+        "It guides machinery to avoid running over growing crops."
+      ],
+      "trap_aliases": [
+        "train movements",
+        "rail traffic"
+      ],
+      "trap_responses": [
+        "It guides trains along the railway route.",
+        "It directs rail vehicles through a designated trackway.",
+        "It guides train traffic between stations."
+      ]
+    },
+    {
+      "term": "share",
+      "question": "What does a share entitle its holder to?",
+      "baseline_trap": "company ownership",
+      "gold": "water entitlement",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "irrigation allocation",
+        "canal water",
+        "delivery volume",
+        "water right",
+        "water allocation",
+        "delivery entitlement",
+        "irrigation right"
+      ],
+      "gold_responses": [
+        "It entitles the holder to a specified water allocation."
+      ],
+      "trap_aliases": [
+        "ownership stake",
+        "equity interest",
+        "company stake"
+      ],
+      "trap_responses": [
+        "It entitles the holder to part ownership of a company.",
+        "It gives the holder voting and dividend rights.",
+        "It represents an equity interest in the issuing company."
+      ]
+    },
+    {
+      "term": "turn",
+      "question": "What does a turn allocate?",
+      "baseline_trap": "speaking opportunity",
+      "gold": "irrigation time",
+      "dominant_prior": "everyday social interaction",
+      "gold_aliases": [
+        "watering slot",
+        "canal access",
+        "water delivery",
+        "distribution time",
+        "irrigation slot",
+        "water delivery time",
+        "canal rotation",
+        "water share"
+      ],
+      "gold_responses": [
+        "A scheduled period for receiving irrigation water."
+      ],
+      "trap_aliases": [
+        "speaking chance",
+        "chance to talk",
+        "speaking slot"
+      ],
+      "trap_responses": [
+        "An opportunity for someone to speak.",
+        "A chance to take part in conversation.",
+        "The next person's opportunity to talk."
+      ]
+    },
+    {
+      "term": "aspect",
+      "question": "What does aspect specify?",
+      "baseline_trap": "a viewpoint",
+      "gold": "slope direction",
+      "dominant_prior": "everyday English",
+      "gold_aliases": [
+        "slope orientation",
+        "terrain bearing",
+        "hillside exposure",
+        "solar exposure",
+        "compass direction",
+        "hillslope exposure",
+        "slope azimuth"
+      ],
+      "gold_responses": [
+        "The slope's orientation relative to north."
+      ],
+      "trap_aliases": [
+        "point of view",
+        "perspective",
+        "particular feature"
+      ],
+      "trap_responses": [
+        "A particular viewpoint on a subject.",
+        "One side or feature of something.",
+        "A way of considering an issue."
+      ]
+    },
+    {
+      "term": "balance",
+      "question": "What does a balance reconcile?",
+      "baseline_trap": "account entries",
+      "gold": "nutrient budget",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "nutrient flows",
+        "input-output balance",
+        "soil nutrient account",
+        "nutrient ledger",
+        "farm nutrient budget",
+        "input-output nutrients"
+      ],
+      "gold_responses": [
+        "It reconciles nutrient inputs, outputs, and changes in farm stores."
+      ],
+      "trap_aliases": [
+        "debits credits",
+        "ledger entries",
+        "financial transactions"
+      ],
+      "trap_responses": [
+        "It reconciles debits and credits in the accounting records.",
+        "A balance reconciles account entries and transaction totals.",
+        "It compares financial assets, liabilities, income, and expenses."
+      ]
+    }
+  ],
+  "time": "2026-09-09T03:27:29Z"
+}

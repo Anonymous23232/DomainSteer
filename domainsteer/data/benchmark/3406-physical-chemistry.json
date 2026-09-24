@@ -1,0 +1,475 @@
+{
+  "cluster_id": "3406",
+  "cluster": "Physical chemistry",
+  "domain": "Physical chemistry",
+  "division": "Chemical Sciences",
+  "dominant_prior": "animal care, cargo transport, farming, finance, hospitality, human aging, infrastructure, insurance, laundry, law, psychology, security, social status, transportation, water management",
+  "contrast": "em_trap_v2",
+  "n": 15,
+  "generation_model": "gpt-5.6-terra",
+  "blocked_terms": [
+    "After absorption, does it stay inside?",
+    "After quenching, can the light return?",
+    "At equilibrium, has everything stopped moving?",
+    "What causes relaxation?",
+    "What happens during absorption?",
+    "What is a barrier?",
+    "What is a phase?",
+    "What is activity?",
+    "What is affinity?",
+    "What is binding?",
+    "What is charge?",
+    "What is equilibrium?",
+    "What is excitation?",
+    "What is potential?",
+    "What is quenching?",
+    "What is rate?",
+    "What is turnover?",
+    "What is work?",
+    "absorption",
+    "activity",
+    "affinity",
+    "barrier",
+    "binding",
+    "charge",
+    "equilibrium",
+    "excitation",
+    "phase",
+    "potential",
+    "quenching",
+    "rate",
+    "relaxation",
+    "turnover",
+    "work"
+  ],
+  "items": [
+    {
+      "term": "coverage",
+      "question": "What does coverage specify?",
+      "baseline_trap": "the scope of an insurance policy",
+      "gold": "fractional occupancy",
+      "dominant_prior": "insurance",
+      "gold_aliases": [
+        "surface fraction",
+        "site occupancy",
+        "adsorbate fraction",
+        "surface occupancy",
+        "site fraction",
+        "monolayer fraction"
+      ],
+      "gold_responses": [
+        "The fraction of surface sites occupied by adsorbate."
+      ],
+      "trap_aliases": [
+        "policy scope",
+        "insured risks",
+        "coverage limits"
+      ],
+      "trap_responses": [
+        "It specifies which risks and losses the policy covers.",
+        "It defines the protection provided under an insurance policy.",
+        "It states the policy's scope, exclusions, and limits."
+      ]
+    },
+    {
+      "term": "loading",
+      "question": "What does loading specify?",
+      "baseline_trap": "the amount of cargo being carried",
+      "gold": "catalyst amount",
+      "dominant_prior": "cargo transport",
+      "gold_aliases": [
+        "mass loading",
+        "catalyst mass",
+        "active-site amount",
+        "catalyst dosage",
+        "metal content",
+        "support loading",
+        "active mass"
+      ],
+      "gold_responses": [
+        "It denotes the concentration of catalyst used."
+      ],
+      "trap_aliases": [
+        "payload mass",
+        "cargo quantity",
+        "freight load"
+      ],
+      "trap_responses": [
+        "It specifies the amount of cargo being carried.",
+        "It gives the weight or quantity of a shipment.",
+        "It describes how much freight a vehicle transports."
+      ]
+    },
+    {
+      "term": "yield",
+      "question": "What does yield report?",
+      "baseline_trap": "the amount of a harvested crop",
+      "gold": "product fraction",
+      "dominant_prior": "farming",
+      "gold_aliases": [
+        "reaction yield",
+        "molar yield",
+        "product amount",
+        "product yield",
+        "reaction efficiency",
+        "fractional yield",
+        "quantum yield"
+      ],
+      "gold_responses": [
+        "It expresses the product fraction from a chemical transformation."
+      ],
+      "trap_aliases": [
+        "crop output",
+        "harvest quantity",
+        "farm production"
+      ],
+      "trap_responses": [
+        "It reports the amount of crop harvested.",
+        "It gives the production from a field.",
+        "It measures how much a farm produces."
+      ]
+    },
+    {
+      "term": "bleaching",
+      "question": "What does bleaching reduce?",
+      "baseline_trap": "the color of a stain",
+      "gold": "fluorescence intensity",
+      "dominant_prior": "laundry",
+      "gold_aliases": [
+        "emission signal",
+        "fluorophore population",
+        "optical signal",
+        "emission intensity",
+        "fluorophore brightness",
+        "fluorescence emission",
+        "photoluminescence signal"
+      ],
+      "gold_responses": [
+        "It reduces the fluorescence intensity emitted by fluorophores."
+      ],
+      "trap_aliases": [
+        "stain color",
+        "fabric color",
+        "visible discoloration"
+      ],
+      "trap_responses": [
+        "It reduces the color of a stain.",
+        "It makes fabric stains less visible.",
+        "It removes color from clothes or fabrics."
+      ]
+    },
+    {
+      "term": "aging",
+      "question": "What can aging change?",
+      "baseline_trap": "a person's appearance or condition",
+      "gold": "dispersion stability",
+      "dominant_prior": "human aging",
+      "gold_aliases": [
+        "colloidal stability",
+        "aggregate size",
+        "particle distribution",
+        "particle aggregation",
+        "zeta potential",
+        "droplet size",
+        "rheological behavior"
+      ],
+      "gold_responses": [
+        "It can increase particle aggregation."
+      ],
+      "trap_aliases": [
+        "facial appearance",
+        "physical health",
+        "cognitive function"
+      ],
+      "trap_responses": [
+        "It can change a person's appearance.",
+        "It can affect physical health and mobility.",
+        "It can influence memory and cognitive function."
+      ]
+    },
+    {
+      "term": "bridge",
+      "question": "What does a bridge connect?",
+      "baseline_trap": "two places separated by an obstacle",
+      "gold": "half-cells",
+      "dominant_prior": "infrastructure",
+      "gold_aliases": [
+        "electrode compartments",
+        "electrolyte solutions",
+        "ionic pathways",
+        "redox compartments",
+        "cell reservoirs"
+      ],
+      "gold_responses": [
+        "It links electrode compartments through an electrolyte."
+      ],
+      "trap_aliases": [
+        "two shores",
+        "separate banks",
+        "road networks"
+      ],
+      "trap_responses": [
+        "It connects two places separated by an obstacle.",
+        "It connects opposite banks of a river.",
+        "It links roads across a gap."
+      ]
+    },
+    {
+      "term": "shuttle",
+      "question": "What can a shuttle carry?",
+      "baseline_trap": "passengers between locations",
+      "gold": "electrons",
+      "dominant_prior": "transportation",
+      "gold_aliases": [
+        "redox equivalents",
+        "reducing equivalents",
+        "electronic equivalents",
+        "electronic charge",
+        "oxidizing equivalents"
+      ],
+      "gold_responses": [
+        "It transports electronic charge through successive redox steps."
+      ],
+      "trap_aliases": [
+        "people",
+        "commuters",
+        "travelers"
+      ],
+      "trap_responses": [
+        "A shuttle carries passengers between locations.",
+        "It transports people on a regular route.",
+        "Passengers can ride it between terminals or stops."
+      ]
+    },
+    {
+      "term": "screening",
+      "question": "What does screening reduce?",
+      "baseline_trap": "unwanted visibility or access",
+      "gold": "Coulomb interaction",
+      "dominant_prior": "security",
+      "gold_aliases": [
+        "electrostatic interaction",
+        "electric field",
+        "ionic attraction",
+        "electrostatic forces",
+        "ionic interactions",
+        "electric fields",
+        "surface potential"
+      ],
+      "gold_responses": [
+        "It lowers the electrostatic potential around a charged species."
+      ],
+      "trap_aliases": [
+        "visibility",
+        "unauthorized access",
+        "security risks"
+      ],
+      "trap_responses": [
+        "Screening reduces unwanted visibility or access.",
+        "It limits exposure to unauthorized people.",
+        "It reduces security risks by filtering entry."
+      ]
+    },
+    {
+      "term": "deposition",
+      "question": "What can deposition produce?",
+      "baseline_trap": "sworn testimony",
+      "gold": "electrodeposit",
+      "dominant_prior": "law",
+      "gold_aliases": [
+        "metal coating",
+        "plated layer",
+        "surface film",
+        "cathodic deposit",
+        "adsorbed layer",
+        "cathodic coating",
+        "solid deposit"
+      ],
+      "gold_responses": [
+        "Deposition can produce an electrodeposit on an electrode surface."
+      ],
+      "trap_aliases": [
+        "recorded testimony",
+        "legal evidence",
+        "witness statement"
+      ],
+      "trap_responses": [
+        "A deposition can produce sworn testimony for a case.",
+        "It creates a recorded witness statement.",
+        "Deposition testimony may produce evidence for trial."
+      ]
+    },
+    {
+      "term": "mobility",
+      "question": "What does mobility specify?",
+      "baseline_trap": "social advancement",
+      "gold": "electrophoretic mobility",
+      "dominant_prior": "social status",
+      "gold_aliases": [
+        "ionic mobility",
+        "drift mobility",
+        "electrokinetic mobility",
+        "migration coefficient",
+        "drift coefficient",
+        "transport coefficient"
+      ],
+      "gold_responses": [
+        "Electrophoretic mobility gives velocity divided by field strength."
+      ],
+      "trap_aliases": [
+        "social rank",
+        "class position",
+        "upward mobility"
+      ],
+      "trap_responses": [
+        "Mobility specifies a person's ability to improve social status.",
+        "It describes movement between social classes.",
+        "Social mobility indicates opportunities for upward advancement."
+      ]
+    },
+    {
+      "term": "tension",
+      "question": "What does tension measure?",
+      "baseline_trap": "psychological stress",
+      "gold": "surface free energy",
+      "dominant_prior": "psychology",
+      "gold_aliases": [
+        "interfacial tension",
+        "capillary force",
+        "surface stress",
+        "interfacial energy",
+        "interfacial free energy",
+        "surface energy excess",
+        "force per length"
+      ],
+      "gold_responses": [
+        "It quantifies interfacial free energy per unit area."
+      ],
+      "trap_aliases": [
+        "emotional strain",
+        "anxiety level",
+        "psychological pressure"
+      ],
+      "trap_responses": [
+        "It measures psychological stress or emotional strain.",
+        "It indicates how stressed or anxious someone feels.",
+        "It reflects mental pressure caused by difficult circumstances."
+      ]
+    },
+    {
+      "term": "buffer",
+      "question": "What does a buffer resist?",
+      "baseline_trap": "financial losses",
+      "gold": "pH change",
+      "dominant_prior": "finance",
+      "gold_aliases": [
+        "acidity change",
+        "proton concentration shift",
+        "hydrogen-ion shift",
+        "pH drift",
+        "proton activity changes",
+        "hydrogen-ion variation",
+        "added acid",
+        "added base"
+      ],
+      "gold_responses": [
+        "It opposes pH shifts caused by small solute additions."
+      ],
+      "trap_aliases": [
+        "market volatility",
+        "cash shortfalls",
+        "investment losses"
+      ],
+      "trap_responses": [
+        "It protects against financial losses during adverse conditions.",
+        "It absorbs unexpected costs or market downturns.",
+        "It provides reserves to reduce financial risk."
+      ]
+    },
+    {
+      "term": "reservoir",
+      "question": "What does a reservoir maintain?",
+      "baseline_trap": "water supply",
+      "gold": "fixed temperature",
+      "dominant_prior": "water management",
+      "gold_aliases": [
+        "thermal equilibrium",
+        "constant temperature",
+        "heat bath",
+        "thermal bath",
+        "fixed chemical potential",
+        "constant pressure"
+      ],
+      "gold_responses": [
+        "It keeps the system at constant temperature."
+      ],
+      "trap_aliases": [
+        "water storage",
+        "irrigation supply",
+        "potable water"
+      ],
+      "trap_responses": [
+        "A reservoir maintains a water supply.",
+        "It stores water for communities.",
+        "It provides water during dry periods."
+      ]
+    },
+    {
+      "term": "order",
+      "question": "What does order determine?",
+      "baseline_trap": "a meal selection",
+      "gold": "rate dependence",
+      "dominant_prior": "hospitality",
+      "gold_aliases": [
+        "kinetic exponent",
+        "concentration dependence",
+        "rate-law exponent",
+        "reaction order",
+        "rate law",
+        "reaction rate"
+      ],
+      "gold_responses": [
+        "The order determines rate sensitivity to reactant concentration."
+      ],
+      "trap_aliases": [
+        "menu choice",
+        "dining order"
+      ],
+      "trap_responses": [
+        "An order determines a meal selection.",
+        "It tells the kitchen what to prepare.",
+        "It specifies the food a guest wants."
+      ]
+    },
+    {
+      "term": "cage",
+      "question": "What can a cage prevent?",
+      "baseline_trap": "an animal's escape",
+      "gold": "fragment escape",
+      "dominant_prior": "animal care",
+      "gold_aliases": [
+        "geminate separation",
+        "radical escape",
+        "solvent escape",
+        "radical separation",
+        "geminate diffusion",
+        "solvent-cage escape",
+        "fragment diffusion"
+      ],
+      "gold_responses": [
+        "A cage may prevent dissociation products from escaping."
+      ],
+      "trap_aliases": [
+        "pet escape",
+        "animal fleeing",
+        "bird escape"
+      ],
+      "trap_responses": [
+        "A cage can prevent an animal's escape.",
+        "It keeps a pet from running away.",
+        "A cage prevents birds from flying away."
+      ]
+    }
+  ],
+  "time": "2026-09-09T02:29:02Z"
+}
